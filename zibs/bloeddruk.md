@@ -8,7 +8,7 @@ zib:
     url: https://zibs.nl/wiki/Bloeddruk-v3.2(2019NL)
 openEHR:
     template: Bloeddruk-v3.2(2019NL)
-    ckm: 
+    ckm: https://ckm.openehr.org/ckm/archetypes/1013.1.3574
     archetypes: [openEHR-EHR-COMPOSITION.report.v1, openEHR-EHR-OBSERVATION.blood_pressure.v2]
 status:
     mapping: Ontwikkelen
