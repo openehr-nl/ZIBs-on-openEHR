@@ -1,6 +1,6 @@
 ---
-layout: zib
-parent: Mappings
+layout: template
+parent: Templates
 title: Bloeddruk
 version: 0.1
 zib:
@@ -8,13 +8,10 @@ zib:
     url: https://zibs.nl/wiki/Bloeddruk-v3.2(2019NL)
 openEHR:
     template: Bloeddruk-v3.2(2019NL)
-    ckm: https://ckm.openehr.org/ckm/archetypes/1013.1.3574
-    archetypes: [archetypes/openEHR-EHR-COMPOSITION.report.v1, archetypes/openEHR-EHR-OBSERVATION.blood_pressure.v2]
+    ckm: 
+    archetypes: [archetypes/openEHR-EHR-OBSERVATION.blood_pressure.v2]
 status:
-    mapping: Ontwikkelen
     template: Concept
-    translation: Concept
-    global: Ontwikkelen
 date: 2020-03-01T
 authors: [Wouter Zanen, Sebastian Iancu]
 categories: [BgZ, Metingen]

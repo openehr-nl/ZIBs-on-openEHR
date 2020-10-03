@@ -2,7 +2,7 @@
 layout: zib
 parent: Mappings
 title: Contact
-version: 1.0
+version: 0.1
 zib:
     name: Contact-v4.0
     url: https://zibs.nl/wiki/Contact-v4.0(2019NL)

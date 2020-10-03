@@ -2,7 +2,7 @@
 layout: zib
 parent: Mappings
 title: Zorgverlener
-version: 1.0
+version: 0.1
 zib:
     name: Zorgverlener-v3.4
     url: https://zibs.nl/wiki/Zorgverlener-v3.4(2019NL)

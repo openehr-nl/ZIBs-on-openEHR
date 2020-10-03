@@ -2,7 +2,7 @@
 layout: zib
 parent: Mappings
 title: Contactpersoon
-version: 1.0
+version: 0.1
 zib:
     name: Contactpersoon-v3.3
     url: https://zibs.nl/wiki/Contactpersoon-v3.3(2019NL)
