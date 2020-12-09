@@ -1,7 +1,7 @@
 ---
 layout: zib
 parent: Mappings
-title: Ademhaling
+title: Lichaamslengte
 version: 0.1
 zib:
     name: Lichaamslengte-v3.1.1
@@ -24,5 +24,3 @@ authors:
 categories: [BgZ, Metingen]
 tags: [measurements, length]
 ---
-
-
