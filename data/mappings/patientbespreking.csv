@@ -1,0 +1,13 @@
+ZIB_Id,ZIB_Naam,ZIB_Type,ZIB_Card,ZIB_DefCode,ZIB_Verwijzing,openEHR_Path,openEHR_Naam,openEHR_Type,openEHR_Card,openEHR_Term,Commentaar
+NL-CM:15.2.1,Patientbespreking,rootconcept,,SNOMED CT: 384682003 Multidisciplinair overleg,,,,,,,
+NL-CM:15.2.5,PatientbesprekingLabel,ST,1,,,,,,,,
+NL-CM:15.2.6,PatientbesprekingDatumTijd,TS,1,SNOMED CT: 439771001 Datum van gebeurtenis,,,,,,,
+NL-CM:15.2.13,Deelnemer,container,2 ..*,,,,,,,,
+NL-CM:15.2.14,RolDeelnemer,CD,0..*,,RolDeelnemerCodelijst,,,,,,
+NL-CM:15.2.3,Zorgverlener,"context,reference",(0..1),,Dit is een verwijzing naar het rootconcept van de bouwsteen Zorgverlener.,,,,,,
+NL-CM:15.2.15,Contactpersoon,"context,reference",(0..1),,Dit is een verwijzing naar het rootconcept van de bouwsteen Contactpersoon.,,,,,,
+NL-CM:15.2.16,Patient,"context,reference",(0..1),,Dit is een verwijzing naar het rootconcept van de bouwsteen Patient.,,,,,,
+NL-CM:15.2.10,Beleid,container,0..1,SNOMED CT: 423134005 Gedeelte betreffende behandelplan in status,,,,,,,
+NL-CM:15.2.12,VoorgesteldeBehandeling::Verrichting,"data,reference",0..*,,Dit is een verwijzing naar het rootconcept van de bouwsteen Verrichting.,,,,,,
+NL-CM:15.2.7,Aandoening::Probleem,"data,reference",0..1,SNOMED CT: 71388002 Verrichting,Dit is een verwijzing naar het rootconcept van de bouwsteen Probleem.,,,,,,
+NL-CM:15.2.11,IntentieBehandeling,CD,0..1,SNOMED CT: 395077000 Treatment intent,IntentieBehandelingCodelijst,,,,,,

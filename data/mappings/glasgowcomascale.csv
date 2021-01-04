@@ -1,0 +1,9 @@
+ZIB_Id,ZIB_Naam,ZIB_Type,ZIB_Card,ZIB_DefCode,ZIB_Verwijzing,openEHR_Path,openEHR_Naam,openEHR_Type,openEHR_Card,openEHR_Term,Commentaar
+NL-CM:12.8.1,GlasgowComaScale,rootconcept,,LOINC: 35088-4 Glasgow coma scale,,,,,,,
+NL-CM:12.8.8,GlasgowComaScaleDatumTijd,TS,1,,,,,,,,
+NL-CM:12.8.2,GCS_Eyes,CO,0..1,SNOMED CT: 281395000 Score op openen van ogen binnen glasgowcomaschaal,GCS_EyesCodelijst,,,,,,
+NL-CM:12.8.4,GCS_Motor,CO,0..1,SNOMED CT: 281396004 Score op motorische respons binnen glasgowcomaschaal,GCS_MotorCodelijst; GCS_MotorCodelijstBaby; GCS_MotorCodelijstKleuter,,,,,,
+NL-CM:12.8.6,GCS_Verbal,CO,0..1,SNOMED CT: 281397008 Verbale score binnen glasgowcomaschaal,GCS_VerbalCodelijst; GCS_VerbalCodelijstBaby; GCS_VerbalCodelijstKleuter,,,,,,
+NL-CM:12.8.10,TotaalScore,INT,0..1,SNOMED CT: 444323003 Modified Glasgow coma score,,,,,,,
+NL-CM:12.8.11,ConditiesTijdensMeting,CD,0..*,,ConditiesTijdensMetingCodelijst,,,,,,
+NL-CM:12.8.9,Toelichting,ST,0..1,LOINC: 48767-8 Annotation comment [Interpretation] Narrative,,,,,,,

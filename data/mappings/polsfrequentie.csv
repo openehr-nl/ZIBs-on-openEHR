@@ -1,0 +1,6 @@
+ZIB_Id,ZIB_Naam,ZIB_Type,ZIB_Card,ZIB_DefCode,ZIB_Verwijzing,openEHR_Path,openEHR_Naam,openEHR_Type,openEHR_Card,openEHR_Term,Commentaar
+NL-CM:12.7.1,Polsfrequentie,rootconcept,,,,,,,,,
+NL-CM:12.7.2,PolsfrequentieWaarde,PQ,1,LOINC: 8893-0 Heart rate Peripheral artery by palpation,,,,,,,
+NL-CM:12.7.3,PolsfrequentieDatumTijd,TS,1,,,,,,,,
+NL-CM:12.7.4,Toelichting,ST,0..1,LOINC: 48767-8 Annotation comment [Interpretation] Narrative,,,,,,,
+NL-CM:12.7.5,PolsRegelmatigheid,CD,0..1,LOINC: 44969-4 Heart rate rhythm palpation,PolsRegelmatigheidCodelijst,,,,,,

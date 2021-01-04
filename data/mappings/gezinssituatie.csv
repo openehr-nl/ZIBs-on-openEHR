@@ -1,0 +1,12 @@
+ZIB_Id,ZIB_Naam,ZIB_Type,ZIB_Card,ZIB_DefCode,ZIB_Verwijzing,openEHR_Path,openEHR_Naam,openEHR_Type,openEHR_Card,openEHR_Term,Commentaar
+NL-CM:7.13.1,Gezinssituatie,rootconcept,,SNOMED CT: 365470003 Bevinding betreffende gegevens over gezin en gezinssamenstelling,,,,,,,
+NL-CM:7.13.7,BurgerlijkeStaat,"data,reference",0..1,,Dit is een verwijzing naar het rootconcept van de bouwsteen BurgerlijkeStaat.,,,,,,
+NL-CM:7.13.8,Gezinssamenstelling,CD,0..1,SNOMED CT: 224130005 Household composition,GezinssamenstellingCodelijst,,,,,,
+NL-CM:7.13.2,AantalKinderen,INT,0..1,SNOMED CT: 224118004 Aantal nakomelingen,,,,,,,
+NL-CM:7.13.9,AantalKinderenInwonend,INT,0..1,SNOMED CT: 55811000146107 Number of children living at home,,,,,,,
+NL-CM:7.13.10,Zorgtaak,ST,0..*,,,,,,,,
+NL-CM:7.13.6,ToelichtingGezinssituatie,ST,0..1,LOINC: 48767-8 Annotation comment [Interpretation] Narrative,,,,,,,
+NL-CM:7.13.3,Kind,container,0..*,SNOMED CT: 67822003 Kind,,,,,,,
+NL-CM:7.13.4,Geboortedatum,TS,0..1,LOINC: 21112-8 Geboortedatum [tijdstempel] in ^patiënt,,,,,,,
+NL-CM:7.13.5,Inwonend,BL,0..1,SNOMED CT: 107541000146102 Child lives at home,,,,,,,
+NL-CM:7.13.11,ToelichtingKind,ST,0..1,LOINC: 48767-8 Annotation comment [Interpretation] Narrative,,,,,,,

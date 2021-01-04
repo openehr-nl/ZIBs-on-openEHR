@@ -1,0 +1,13 @@
+ZIB_Id,ZIB_Naam,ZIB_Type,ZIB_Card,ZIB_DefCode,ZIB_Verwijzing,openEHR_Path,openEHR_Naam,openEHR_Type,openEHR_Card,openEHR_Term,Commentaar
+NL-CM:9.8.20132,Toedieningsafspraak,rootconcept,,SNOMED CT: 422037009 Instrueren door zorgverlener over toediening van medicatie,,,,,,,
+NL-CM:9.8.22097,Verstrekker::Zorgaanbieder,"context,reference",0..1,,Dit is een verwijzing naar het rootconcept van de bouwsteen Zorgaanbieder.,,,,,,
+NL-CM:9.8.20237,GeneesmiddelBijToedieningsAfspraak::FarmaceutischProduct,"data,reference",1,,Dit is een verwijzing naar het rootconcept van de subbouwsteen FarmaceutischProduct.,,,,,,
+NL-CM:9.8.22098,Gebruiksinstructie,"data,reference",0..1,,Dit is een verwijzing naar het rootconcept van de sub-bouwsteen Gebruiksinstructie.,,,,,,
+NL-CM:9.8.20133,ToedieningsafspraakDatumTijd,TS,0..1,,,,,,,,
+NL-CM:9.8.22499,RedenAfspraak,ST,0..1,SNOMED CT: 112231000146109 Reden van toedieningsinstructies,,,,,,,
+NL-CM:9.8.22660,Gebruiksperiode::TijdsInterval,"data,reference",1,,Dit is een verwijzing naar het rootconcept in de sub-bouwsteen TijdsInterval.,,,,,,
+NL-CM:9.8.22394,Medicatieafspraak,"data,reference",0..1,,Dit is een verwijzing naar het rootconcept van de bouwsteen Medicatieafspraak.,,,,,,
+NL-CM:9.8.22498,ToedieningsafspraakStopType,CD,0..1,,ToedieningsafspraakStopTypeCodelijst,,,,,,
+NL-CM:9.8.23034,GeannuleerdIndicator,BL,0..1,,,,,,,,
+NL-CM:9.8.23284,ToedieningsafspraakAanvullendeInformatie,CD,0..*,,ToedieningsafspraakAanvullendeInformatieCodelijst,,,,,,
+NL-CM:9.8.22275,Toelichting,ST,0..1,LOINC: 48767-8 Annotation comment [Interpretation] Narrative,,,,,,,

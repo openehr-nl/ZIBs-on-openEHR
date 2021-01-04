@@ -1,0 +1,5 @@
+ZIB_Id,ZIB_Naam,ZIB_Type,ZIB_Card,ZIB_DefCode,ZIB_Verwijzing,openEHR_Path,openEHR_Naam,openEHR_Type,openEHR_Card,openEHR_Term,Commentaar
+NL-CM:4.13.1,VermogenTotMondverzorging,rootconcept,,,,,,,,,
+NL-CM:4.13.2,VerzorgenTanden,CD,1,SNOMED CT: 288470005 Vermogen tot mondverzorging,VerzorgenTandenCodelijst,,,,,,
+NL-CM:4.13.4,Prothese::MedischHulpmiddel,"data,reference",0..*,,Dit is een verwijzing naar het rootconcept van de bouwsteen MedischHulpmiddel.,,,,,,
+NL-CM:10.1.3,ProductType,CD,,,ProtheseTypeCodelijst,,,,,,

@@ -1,0 +1,8 @@
+ZIB_Id,ZIB_Naam,ZIB_Type,ZIB_Card,ZIB_DefCode,ZIB_Verwijzing,openEHR_Path,openEHR_Naam,openEHR_Type,openEHR_Card,openEHR_Term,Commentaar
+NL-CM:7.15.1,Wilsverklaring,rootconcept,,,,,,,,,
+NL-CM:7.15.2,WilsverklaringType,CD,1,,WilsverklaringTypeCodelijst,,,,,,
+NL-CM:7.15.7,WilsverklaringDatum,TS,1,,,,,,,,
+NL-CM:7.15.4,Aandoening::Probleem,"data,reference",0..*,,Dit is een verwijzing naar het rootconcept van de bouwsteen Probleem.,,,,,,
+NL-CM:7.15.3,Vertegenwoordiger::Contactpersoon,"data,reference",0..1,,Dit is een verwijzing naar het rootconcept van de bouwsteen Contactpersoon.,,,,,,
+NL-CM:7.15.5,WilsverklaringDocument,ED,0..1,,,,,,,,
+NL-CM:7.15.6,Toelichting,ST,0..1,LOINC: 48767-8 Annotation comment [Interpretation] Narrative,,,,,,,

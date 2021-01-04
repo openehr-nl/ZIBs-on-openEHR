@@ -1,0 +1,5 @@
+ZIB_Id,ZIB_Naam,ZIB_Type,ZIB_Card,ZIB_DefCode,ZIB_Verwijzing,openEHR_Path,openEHR_Naam,openEHR_Type,openEHR_Card,openEHR_Term,Commentaar
+NL-CM:18.5.1,Ziektebeleving,rootconcept,,SNOMED CT: 363910003 Kenmerk van psychosociaal functioneren,,,,,,,
+NL-CM:18.5.3,ZiekteInzichtVanPatiënt,ST,0..1,SNOMED CT: 27026000 Inzicht,,,,,,,
+NL-CM:18.5.4,OmgaanMetZiekteprocesDoorPatiënt,ST,0..1,SNOMED CT: 364667003 Vermogen tot coping,,,,,,,
+NL-CM:18.5.5,OmgaanMetZiekteprocesDoorNaasten,ST,0..1,SNOMED CT: 405199009 Copinggedrag van familie,,,,,,,

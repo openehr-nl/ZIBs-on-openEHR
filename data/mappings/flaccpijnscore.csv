@@ -1,0 +1,10 @@
+ZIB_Id,ZIB_Naam,ZIB_Type,ZIB_Card,ZIB_DefCode,ZIB_Verwijzing,openEHR_Path,openEHR_Naam,openEHR_Type,openEHR_Card,openEHR_Term,Commentaar
+NL-CM:12.13.1,FLACCpijnScore,rootconcept,,SNOMED CT: 108291000146105 FLACC-pijnmeetinstrument,,,,,,,
+NL-CM:12.13.2,TotaalScore,INT,0..1,SNOMED CT: 49091000146109 'faces, legs, activity, cry and consolability'-score,,,,,,,
+NL-CM:12.13.3,Gezicht,CO,0..1,12013003 FLACCpijnScore Gezicht,GezichtCodelijst,,,,,,
+NL-CM:12.13.4,Benen,CO,0..1,12013004 FLACCpijnScore Benen,BenenCodelijst,,,,,,
+NL-CM:12.13.5,Activiteit,CO,0..1,12013005 FLACCpijnScore Activiteit,ActiviteitCodelijst,,,,,,
+NL-CM:12.13.6,Huilen,CO,0..1,12013006 FLACCpijnScore Huilen,HuilenCodelijst,,,,,,
+NL-CM:12.13.9,Troostbaar,CO,0..1,12013009 FLACCpijnScore Troostbaar,TroostbaarCodelijst,,,,,,
+NL-CM:12.13.11,ScoreDatumTijd,TS,1,,,,,,,,
+NL-CM:12.13.12,Toelichting,ST,0..1,LOINC: 48767-8 Annotation comment [Interpretation] Narrative,,,,,,,

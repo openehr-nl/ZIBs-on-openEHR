@@ -1,0 +1,10 @@
+ZIB_Id,ZIB_Naam,ZIB_Type,ZIB_Card,ZIB_DefCode,ZIB_Verwijzing,openEHR_Path,openEHR_Naam,openEHR_Type,openEHR_Card,openEHR_Term,Commentaar
+NL-CM:20.6.1,Contactgegevens,rootconcept,,,,,,,,,
+NL-CM:20.6.2,Telefoonnummers,container,0..*,,,,,,,,
+NL-CM:20.6.4,Telefoonnummer,ST,1,,,,,,,,
+NL-CM:20.6.5,TelecomType,CD,0..1,,TelecomTypeCodelijst,,,,,,
+NL-CM:20.6.6,NummerSoort,CD,0..1,,NummerSoortCodelijst,,,,,,
+NL-CM:20.6.9,Toelichting,ST,0..1,LOINC: 48767-8 Annotation comment [Interpretation] Narrative,,,,,,,
+NL-CM:20.6.3,EmailAdressen,container,0..*,,,,,,,,
+NL-CM:20.6.7,EmailAdres,ST,1,,,,,,,,
+NL-CM:20.6.8,EmailSoort,CD,0..1,,EmailSoortCodelijst,,,,,,

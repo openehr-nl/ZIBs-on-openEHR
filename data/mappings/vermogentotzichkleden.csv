@@ -1,0 +1,4 @@
+ZIB_Id,ZIB_Naam,ZIB_Type,ZIB_Card,ZIB_DefCode,ZIB_Verwijzing,openEHR_Path,openEHR_Naam,openEHR_Type,openEHR_Card,openEHR_Term,Commentaar
+NL-CM:4.11.1,VermogenTotZichKleden,rootconcept,,,,,,,,,
+NL-CM:4.11.2,ZichKleden,CD,1,SNOMED CT: 165235000 Vermogen om zich aan te kleden,ZichKledenCodelijst,,,,,,
+NL-CM:4.11.3,TeKledenLichaamsdeel,CD,0..*,SNOMED CT: 38866009 Structuur van lichaamsdeel,TeKledenLichaamsdeelCodelijst,,,,,,

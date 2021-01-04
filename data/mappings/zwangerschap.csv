@@ -1,0 +1,11 @@
+ZIB_Id,ZIB_Naam,ZIB_Type,ZIB_Card,ZIB_DefCode,ZIB_Verwijzing,openEHR_Path,openEHR_Naam,openEHR_Type,openEHR_Card,openEHR_Term,Commentaar
+NL-CM:7.14.1,Zwangerschap,rootconcept,,SNOMED CT: 364320009 Observatie betreffende zwangerschap,,,,,,,
+NL-CM:7.14.4,Zwangerschapsduur,PQ,0..1,SNOMED CT: 57036006 Zwangerschapsduur,,,,,,,
+NL-CM:7.14.6,Pariteit,INT,0..1,SNOMED CT: 364325004 Pariteit,,,,,,,
+NL-CM:7.14.5,Graviditeit,INT,0..1,SNOMED CT: 161732006 Gravida,,,,,,,
+NL-CM:7.14.7,Toelichting,ST,0..1,LOINC: 48767-8 Annotation comment [Interpretation] Narrative,,,,,,,
+NL-CM:7.14.9,ATermeDatumItems,container,0..1,,,,,,,,
+NL-CM:7.14.3,ATermeDatum,TS,0..1,SNOMED CT: 161714006 Estimated date of delivery,,,,,,,
+NL-CM:7.14.10,BepalingsMethode,CD,0..1,,BepalingsMethodeCodelijst,,,,,,
+NL-CM:7.14.11,DatumBepaling,TS,0..1,,,,,,,,
+NL-CM:7.14.8,DatumLaatsteMenstruatie,TS,0..1,SNOMED CT: 21840007 Datum van laatste menstruatie,,,,,,,

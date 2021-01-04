@@ -1,0 +1,8 @@
+ZIB_Id,ZIB_Naam,ZIB_Type,ZIB_Card,ZIB_DefCode,ZIB_Verwijzing,openEHR_Path,openEHR_Naam,openEHR_Type,openEHR_Card,openEHR_Term,Commentaar
+NL-CM:7.12.1,Taalvaardigheid,rootconcept,,SNOMED CT: 284530008 Bevinding betreffende communicatie, spraak en taal,,,,,,,
+NL-CM:7.12.3,CommunicatieTaal,CD,1,SNOMED CT: 161139007 Language spoken,CommunicatieTaalCodelijst,,,,,,
+NL-CM:7.12.6,TaalvaardigheidBegrijpen,CD,0..1,SNOMED CT: 46977006 Language comprehension,TaalvaardigheidBegrijpenCodelijst,,,,,,
+NL-CM:7.12.7,TaalvaardigheidSpreken,CD,0..1,SNOMED CT: 286367001 Ability to speak,TaalvaardigheidSprekenCodelijst,,,,,,
+NL-CM:7.12.8,TaalvaardigheidLezen,CD,0..1,SNOMED CT: 309250007 Ability to read,TaalvaardigheidLezenCodelijst,,,,,,
+NL-CM:7.12.9,CommunicatieBijzonderheden,CD,0..*,SNOMED CT: 363912006 Observatie betreffende communicatie, spraak en taal,CommunicatieBijzonderhedenCodelijst,,,,,,
+NL-CM:7.12.5,Toelichting,ST,0..1,LOINC: 48767-8 Annotation comment [Interpretation] Narrative,,,,,,,

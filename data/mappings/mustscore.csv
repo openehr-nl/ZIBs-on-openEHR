@@ -1,0 +1,8 @@
+ZIB_Id,ZIB_Naam,ZIB_Type,ZIB_Card,ZIB_DefCode,ZIB_Verwijzing,openEHR_Path,openEHR_Naam,openEHR_Type,openEHR_Card,openEHR_Term,Commentaar
+NL-CM:4.5.1,MUSTScore,rootconcept,,SNOMED CT: 414648004 Malnutrition Universal Screening Tool,,,,,,,
+NL-CM:4.5.3,BMIScore,CO,0..1,4005003 MUSTScore BMIScore,BMIScoreCodelijst,,,,,,
+NL-CM:4.5.4,GewichtsverliesScore,CO,0..1,4005004 MUSTScore GewichtsverliesScore,MUSTGewichtsverliesScoreCodelijst,,,,,,
+NL-CM:4.5.5,ZiekteScore,CO,0..1,4005005 MUSTScore ZiekteScore,ZiekteScoreCodelijst,,,,,,
+NL-CM:4.5.2,TotaalScore,INT,0..1,SNOMED CT: 444297006 'Malnutrition Universal Screening Tool'-score,,,,,,,
+NL-CM:4.5.6,MUSTScoreDatumTijd,TS,1,,,,,,,,
+NL-CM:4.5.7,Toelichting,ST,0..1,LOINC: 48767-8 Annotation comment [Interpretation] Narrative,,,,,,,

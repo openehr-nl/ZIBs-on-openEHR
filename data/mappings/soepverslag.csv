@@ -1,0 +1,8 @@
+ZIB_Id,ZIB_Naam,ZIB_Type,ZIB_Card,ZIB_DefCode,ZIB_Verwijzing,openEHR_Path,openEHR_Naam,openEHR_Type,openEHR_Card,openEHR_Term,Commentaar
+NL-CM:13.6.1,SOEPVerslag,rootconcept,,,,,,,,,
+NL-CM:13.6.2,SOEPVerslagDatumTijd,TS,0..1,,,,,,,,
+NL-CM:13.6.3,Auteur::Zorgverlener,"context,reference",0..1,,Dit is een verwijzing naar het rootconcept van de bouwsteen Zorgverlener.,,,,,,
+NL-CM:13.6.4,SOEPRegel,container,1..4,,,,,,,,
+NL-CM:13.6.5,SOEPRegelCode,CD,0..1,,SOEPRegelCodeCodelijst,,,,,,
+NL-CM:13.6.6,SOEPRegelNaam,CD,1,,SOEPRegelNaamCodelijst,,,,,,
+NL-CM:13.6.7,SOEPRegelTekst,ST,1,SNOMED CT: 422813005 Document section,,,,,,,

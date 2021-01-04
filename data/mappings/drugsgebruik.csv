@@ -1,0 +1,10 @@
+ZIB_Id,ZIB_Naam,ZIB_Type,ZIB_Card,ZIB_DefCode,ZIB_Verwijzing,openEHR_Path,openEHR_Naam,openEHR_Type,openEHR_Card,openEHR_Term,Commentaar
+NL-CM:7.4.1,DrugsGebruik,rootconcept,,SNOMED CT: 228366006 Bevinding betreffende drugsgebruik,,,,,,,
+NL-CM:7.4.5,WaarnemingGebruik,container,0..1,,,,,,,,
+NL-CM:7.4.6,StartDatum,TS,0..1,,,,,,,,
+NL-CM:7.4.7,StopDatum,TS,0..1,,,,,,,,
+NL-CM:7.4.8,Hoeveelheid,ST,0..1,,,,,,,,
+NL-CM:7.4.9,Toelichting,ST,0..1,LOINC: 48767-8 Annotation comment [Interpretation] Narrative,,,,,,,
+NL-CM:7.4.2,DrugsOfGeneesmiddelSoort,CD,0..1,,DrugsOfGeneesmiddelSoortCodelijst,,,,,,
+NL-CM:7.4.3,DrugsGebruikStatus,CD,1,SNOMED CT: 228366006 Bevinding betreffende drugsgebruik,DrugsGebruikStatusCodelijst,,,,,,
+NL-CM:7.4.4,Toedieningsweg,CD,0..*,SNOMED CT: 410675002 Toedieningsweg,ToedieningswegCodelijst,,,,,,

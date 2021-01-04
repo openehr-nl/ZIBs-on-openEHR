@@ -1,0 +1,11 @@
+ZIB_Id,ZIB_Naam,ZIB_Type,ZIB_Card,ZIB_DefCode,ZIB_Verwijzing,openEHR_Path,openEHR_Naam,openEHR_Type,openEHR_Card,openEHR_Term,Commentaar
+NL-CM:4.32.1,OntwikkelingKind,rootconcept,,SNOMED CT: 251803000 Bevinding betreffende ontwikkeling van kind,,,,,,,
+NL-CM:4.32.2,OntwikkelingKindDatumTijd,TS,1,,,,,,,,
+NL-CM:4.32.4,ZindelijkheidUrine,CD,0..1,SNOMED CT: 275819003 Blaascontrole bij kind,ZindelijkheidUrineCodelijst,,,,,,
+NL-CM:4.32.5,ZindelijkheidFeces,CD,0..1,SNOMED CT: 275818006 Controle over defecatie op kinderleeftijd,ZindelijkheidFecesCodelijst,,,,,,
+NL-CM:4.32.7,LeeftijdEersteMenstruatie,PQ,0..1,LOINC: 42798-9 Leeftijd bij eerste menstruatie [tijd] in ^patiënt,,,,,,,
+NL-CM:4.32.6,OntwikkelingMotoriek,CD,0..1,SNOMED CT: 282716004 Grove motoriek,OntwikkelingMotoriekCodelijst,,,,,,
+NL-CM:4.32.8,OntwikkelingSociaal,CD,0..1,SNOMED CT: 225597007 Vermogen tot interactie met anderen,OntwikkelingSociaalCodelijst,,,,,,
+NL-CM:4.32.9,OntwikkelingTaal,CD,0..1,SNOMED CT: 61909002 Taalfunctie,OntwikkelingTaalCodelijst,,,,,,
+NL-CM:4.32.10,OntwikkelingVerstandelijk,CD,0..1,SNOMED CT: 311465003 Cognitive functions,OntwikkelingVerstandelijkCodelijst,,,,,,
+NL-CM:4.32.3,Toelichting,ST,0..1,LOINC: 48767-8 Annotation comment [Interpretation] Narrative,,,,,,,

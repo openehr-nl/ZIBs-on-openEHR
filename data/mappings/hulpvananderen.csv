@@ -1,0 +1,10 @@
+ZIB_Id,ZIB_Naam,ZIB_Type,ZIB_Card,ZIB_DefCode,ZIB_Verwijzing,openEHR_Path,openEHR_Naam,openEHR_Type,openEHR_Card,openEHR_Term,Commentaar
+NL-CM:3.2.1,HulpVanAnderen,rootconcept,,SNOMED CT: 243114000 Ondersteuning,,,,,,,
+NL-CM:3.2.5,Hulpverlener,container,0..1,,,,,,,,
+NL-CM:3.2.6,Zorgverlener,"data,reference",(0..1),,Dit is een verwijzing naar het rootconcept van de bouwsteen Zorgverlener.,,,,,,
+NL-CM:3.2.7,Mantelzorger::Contactpersoon,"data,reference",(0..1),,Dit is een verwijzing naar het rootconcept van de bouwsteen Contactpersoon.,,,,,,
+NL-CM:3.2.8,Zorgaanbieder,"data,reference",(0..1),,Dit is een verwijzing naar het rootconcept van de bouwsteen Zorgaanbieder.,,,,,,
+NL-CM:3.2.3,Aard,ST,0..1,,,,,,,,
+NL-CM:3.2.2,Frequentie,ST,0..1,SNOMED CT: 260866001 Frequentiepatroon,,,,,,,
+NL-CM:3.2.9,SoortHulp,CD,0..1,,SoortHulpCodelijst,,,,,,
+NL-CM:3.2.4,Toelichting,ST,0..1,LOINC: 48767-8 Annotation comment [Interpretation] Narrative,,,,,,,

@@ -1,0 +1,9 @@
+ZIB_Id,ZIB_Naam,ZIB_Type,ZIB_Card,ZIB_DefCode,ZIB_Verwijzing,openEHR_Path,openEHR_Naam,openEHR_Type,openEHR_Card,openEHR_Term,Commentaar
+NL-CM:4.30.1,SNAQ65+Score,rootconcept,,SNOMED CT: 108321000146101 SNAQ voor 65+,,,,,,,
+NL-CM:4.30.3,GewichtsverliesScore,CO,0..1,4030003 SNAQ65+Score GewichtsverliesScore,SNAQ65+GewichtsverliesScoreCodelijst,,,,,,
+NL-CM:4.30.8,BovenarmOmtrekScore,CO,0..1,4030008 SNAQ65+Score BovenarmOmtrekScore,SNAQ65+BovenarmOmtrekScoreCodelijst,,,,,,
+NL-CM:4.30.4,EetlustScore,CO,0..1,4030004 SNAQ65+Score EetlustScore,SNAQ65+EetlustScoreCodelijst,,,,,,
+NL-CM:4.30.5,InspanningsScore,CO,0..1,4030005 SNAQ65+Score InspanningsScore,SNAQ65+InspanningsScoreCodelijst,,,,,,
+NL-CM:4.30.2,TotaalScore,INT,0..1,SNOMED CT: 108891000146109 Short Nutritional Questionnaire for age 65+ total score,,,,,,,
+NL-CM:4.30.6,SNAQ65+ScoreDatumTijd,TS,1,,,,,,,,
+NL-CM:4.30.7,Toelichting,ST,0..1,LOINC: 48767-8 Annotation comment [Interpretation] Narrative,,,,,,,

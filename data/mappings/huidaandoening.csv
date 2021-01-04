@@ -1,0 +1,7 @@
+ZIB_Id,ZIB_Naam,ZIB_Type,ZIB_Card,ZIB_DefCode,ZIB_Verwijzing,openEHR_Path,openEHR_Naam,openEHR_Type,openEHR_Card,openEHR_Term,Commentaar
+NL-CM:19.3.1,Huidaandoening,rootconcept,,,,,,,,,
+NL-CM:19.3.2,SoortAandoening,CD,0..1,SNOMED CT: 95320005 Aandoening van huid,SoortAandoeningCodelijst,,,,,,
+NL-CM:19.3.3,OntstaansDatum,TS,0..1,,,,,,,,
+NL-CM:19.3.7,Oorzaak::Probleem,"data,reference",0..1,SNOMED CT: 47429007 Bij,Dit is een verwijzing naar het rootconcept van de bouwsteen Probleem.,,,,,,
+NL-CM:19.3.9,AnatomischeLocatie,"data,reference",0..1,SNOMED CT: 363698007 Locatie van bevinding,Dit is een verwijzing naar het rootconcept van de bouwsteen AnatomischeLocatie.,,,,,,
+NL-CM:19.3.6,Toelichting,ST,0..1,LOINC: 48767-8 Annotation comment [Interpretation] Narrative,,,,,,,

@@ -1,0 +1,6 @@
+ZIB_Id,ZIB_Naam,ZIB_Type,ZIB_Card,ZIB_DefCode,ZIB_Verwijzing,openEHR_Path,openEHR_Naam,openEHR_Type,openEHR_Card,openEHR_Term,Commentaar
+NL-CM:7.17.1,JuridischeSituatie,rootconcept,,,,,,,,,
+NL-CM:7.17.2,JuridischeStatus,CD,(0..1),SNOMED CT: 303186005 Juridische status van patiënt,JuridischeStatusCodelijst,,,,,,
+NL-CM:7.17.5,Vertegenwoordiging,CD,(0..1),,VertegenwoordigingCodelijst,,,,,,
+NL-CM:7.17.3,DatumAanvang,TS,0..1,,,,,,,,
+NL-CM:7.17.4,DatumEinde,TS,0..1,,,,,,,,

@@ -1,0 +1,4 @@
+ZIB_Id,ZIB_Naam,ZIB_Type,ZIB_Card,ZIB_DefCode,ZIB_Verwijzing,openEHR_Path,openEHR_Naam,openEHR_Type,openEHR_Card,openEHR_Term,Commentaar
+NL-CM:4.22.1,VermogenTotToiletgang,rootconcept,,SNOMED CT: 284779002 Vermogen tot persoonlijke hygiëne,,,,,,,
+NL-CM:4.22.6,Toiletgebruik,CD,0..1,SNOMED CT: 284899001 Vermogen tot toiletgang,ToiletgebruikCodelijst,,,,,,
+NL-CM:4.22.4,ZorgBijMenstruatie,CD,0..1,SNOMED CT: 284955009 Vermogen tot menstruatiehygiëne,ZorgBijMenstruatieCodelijst,,,,,,

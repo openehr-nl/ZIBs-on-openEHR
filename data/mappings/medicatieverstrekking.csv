@@ -1,0 +1,13 @@
+ZIB_Id,ZIB_Naam,ZIB_Type,ZIB_Card,ZIB_DefCode,ZIB_Verwijzing,openEHR_Path,openEHR_Naam,openEHR_Type,openEHR_Card,openEHR_Term,Commentaar
+NL-CM:9.9.20270,Medicatieverstrekking,rootconcept,,,,,,,,,
+NL-CM:9.9.20858,Verstrekker::Zorgaanbieder,"context,reference",0..1,,Dit is een verwijzing naar het rootconcept of de bouwsteen Zorgaanbieder.,,,,,,
+NL-CM:9.9.22396,Verstrekkingsverzoek,"context,reference",0..1,,Dit is een verwijzing naar het rootconcept van de bouwsteen Verstrekkingsverzoek.,,,,,,
+NL-CM:9.9.22259,VerstrektGeneesmiddel::FarmaceutischProduct,"data,reference",1,,Dit is een verwijzing naar het rootconcept van de sub-bouwsteen FarmaceutischProduct.,,,,,,
+NL-CM:9.9.20272,MedicatieverstrekkingsDatumTijd,TS,0..1,,,,,,,,
+NL-CM:9.9.22500,AanschrijfDatum,TS,0..1,,,,,,,,
+NL-CM:9.9.20927,Distributievorm,CD,0..1,,MedicatieverstrekkingDistributievormCodelijst,,,,,,
+NL-CM:9.9.20924,Verbruiksduur,PQ,0..1,,,,,,,,
+NL-CM:9.9.23285,MedicatieverstrekkingAanvullendeInformatie,CD,0..*,,MedicatieverstrekkingAanvullendeInformatieCodelijst,,,,,,
+NL-CM:9.9.20923,VerstrekteHoeveelheid,PQ,0..1,,,,,,,,
+NL-CM:9.9.20925,Afleverlocatie,ST,0..1,,,,,,,,
+NL-CM:9.9.22276,Toelichting,ST,0..1,,,,,,,,

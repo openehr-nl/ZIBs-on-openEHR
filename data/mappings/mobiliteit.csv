@@ -1,0 +1,9 @@
+ZIB_Id,ZIB_Naam,ZIB_Type,ZIB_Card,ZIB_DefCode,ZIB_Verwijzing,openEHR_Path,openEHR_Naam,openEHR_Type,openEHR_Card,openEHR_Term,Commentaar
+NL-CM:4.3.1,Mobiliteit,rootconcept,,SNOMED CT: 301438001 Vermogen om zich te verplaatsen,,,,,,,
+NL-CM:4.3.3,Lopen,CD,0..1,SNOMED CT: 282097004 Vermogen om te lopen,LopenCodelijst,,,,,,
+NL-CM:4.3.18,Traplopen,CD,0..1,SNOMED CT: 301587001 Vermogen om trap te lopen,TraplopenCodelijst,,,,,,
+NL-CM:4.3.8,HoudingVeranderen,CD,0..1,SNOMED CT: 282869009 Vermogen om van houding te veranderen,HoudingVeranderenCodelijst,,,,,,
+NL-CM:4.3.12,HoudingHandhaven,CD,0..1,SNOMED CT: 249868004 Vermogen om lichaamshouding te handhaven,HoudingHandhavenCodelijst,,,,,,
+NL-CM:4.3.5,UitvoerenTransfer,CD,0..1,SNOMED CT: 364666007 Vermogen tot transfer,UitvoerenTransferCodelijst,,,,,,
+NL-CM:4.3.4,MedischHulpmiddel,"data,reference",0..*,SNOMED CT: 183135000 Mobiliteitshulpmiddel,Dit is een verwijzing naar het rootconcept van de bouwsteen MedischHulpmiddel.,,,,,,
+NL-CM:4.3.16,Toelichting,ST,0..1,LOINC: 48767-8 Annotation comment [Interpretation] Narrative,,,,,,,

@@ -1,0 +1,12 @@
+ZIB_Id,ZIB_Naam,ZIB_Type,ZIB_Card,ZIB_DefCode,ZIB_Verwijzing,openEHR_Path,openEHR_Naam,openEHR_Type,openEHR_Card,openEHR_Term,Commentaar
+NL-CM:9.6.9580,Medicatieafspraak,rootconcept,,SNOMED CT: 16076005 Voorschrijven,,,,,,,
+NL-CM:9.6.1030,Voorschrijver::Zorgverlener,"context,reference",0..1,,Dit is een verwijzing naar het rootconcept van de bouwsteen Zorgverlener.,,,,,,
+NL-CM:9.6.23133,RedenVanVoorschrijven::Probleem,"context,reference",0..1,SNOMED CT: 112201000146104 Medische reden van voorschrijven,Dit is een verwijzing naar het rootconcept in de bouwsteen Probleem.,,,,,,
+NL-CM:9.6.19925,Afgesprokengeneesmiddel::FarmaceutischProduct,"data,reference",1,,Dit is een verwijzing naar het rootconcept van de sub-bouwsteen FarmaceutischProduct.,,,,,,
+NL-CM:9.6.23240,Gebruiksinstructie,"data,reference",0..1,,Dit is een verwijzing naar het rootconcept van de sub-bouwsteen Gebruiksinstructie.,,,,,,
+NL-CM:9.6.19757,MedicatieafspraakDatumTijd,TS,1,,,,,,,,
+NL-CM:9.6.19936,Gebruiksperiode::TijdsInterval,"data,reference",0..1,,Dit is een verwijzing naar het rootconcept in de sub-bouwsteen TijdsInterval.,,,,,,
+NL-CM:9.6.19954,MedicatieafspraakStopType,CD,0..1,SNOMED CT: 274512008 Behandeling met geneesmiddel stopgezet,MedicatieafspraakStopTypeCodelijst,,,,,,
+NL-CM:9.6.22094,RedenMedicatieafspraak,CD,0..1,SNOMED CT: 112241000146101 Reden voor voorschrift,RedenMedicatieafspraakCodelijst,,,,,,
+NL-CM:9.6.23283,MedicatieafspraakAanvullendeInformatie,CD,0..*,,MedicatieafspraakAanvullendeInformatieCodelijst,,,,,,
+NL-CM:9.6.22273,Toelichting,ST,0..1,LOINC: 48767-8 Annotation comment [Interpretation] Narrative,,,,,,,

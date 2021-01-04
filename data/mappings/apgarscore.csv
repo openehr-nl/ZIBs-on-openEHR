@@ -1,0 +1,10 @@
+ZIB_Id,ZIB_Naam,ZIB_Type,ZIB_Card,ZIB_DefCode,ZIB_Verwijzing,openEHR_Path,openEHR_Naam,openEHR_Type,openEHR_Card,openEHR_Term,Commentaar
+NL-CM:12.16.1,ApgarScore,rootconcept,,,,,,,,,
+NL-CM:12.16.3,ApgarScoreDatumTijd,TS,1,,,,,,,,
+NL-CM:12.16.2,ApgarScoreTotaal,INT,1,LOINC: 9271-8 10 minute Apgar Score; LOINC: 9272-6 1 minute Apgar Score; LOINC: 9274-2 5 minute Apgar Score,,,,,,,
+NL-CM:12.16.4,AdemhalingScore,CO,0..1,LOINC: 32405-3 10 minute Apgar Respiratory effort; LOINC: 32410-3 1 minute Apgar Respiratory effort; LOINC: 32415-2 5 minute Apgar Respiratory effort,AdemhalingScoreCodelijst,,,,,,
+NL-CM:12.16.7,HuidskleurScore,CO,0..1,LOINC: 32401-2 10 minute Apgar Color; LOINC: 32406-1 1 minute Apgar Color; LOINC: 32411-1 5 minute Apgar Color,HuidskleurScoreCodelijst,,,,,,
+NL-CM:12.16.5,HartslagScore,CO,0..1,LOINC: 32402-0 10 minute Apgar Heart rate; LOINC: 32407-9 1 minute Apgar Heart rate; LOINC: 32412-9 5 minute Apgar Heart rate,HartslagScoreCodelijst,,,,,,
+NL-CM:12.16.8,ReflexenScore,CO,0..1,LOINC: 32404-6 10 minute Apgar Reflex irritability; LOINC: 32409-5 1 minute Apgar Reflex irritability; LOINC: 32414-5 5 minute Apgar Reflex irritability,ReflexenScoreCodelijst,,,,,,
+NL-CM:12.16.6,SpierspanningScore,CO,0..1,LOINC: 32403-8 10 minute Apgar Muscle tone; LOINC: 32408-7 1 minute Apgar Muscle tone; LOINC: 32413-7 5 minute Apgar Muscle tone,SpierspanningScoreCodelijst,,,,,,
+NL-CM:12.16.9,Toelichting,ST,0..1,LOINC: 48767-8 Annotation comment [Interpretation] Narrative,,,,,,,

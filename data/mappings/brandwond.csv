@@ -1,0 +1,10 @@
+ZIB_Id,ZIB_Naam,ZIB_Type,ZIB_Card,ZIB_DefCode,ZIB_Verwijzing,openEHR_Path,openEHR_Naam,openEHR_Type,openEHR_Card,openEHR_Term,Commentaar
+NL-CM:19.4.1,Brandwond,rootconcept,,SNOMED CT: 125666000 Brandwond,,,,,,,
+NL-CM:19.4.3,OntstaansDatum,TS,0..1,,,,,,,,
+NL-CM:19.4.7,Uitgebreidheid,PQ,0..1,,,,,,,,
+NL-CM:19.4.12,AnatomischeLocatie,"data,reference",0..1,SNOMED CT: 363698007 Locatie van bevinding,Dit is een verwijzing naar het rootconcept van de bouwsteen AnatomischeLocatie.,,,,,,
+NL-CM:19.4.10,Lateraliteit,CD,0..1,SNOMED CT: 272741003 Lateraliteit,BrandwondLateraliteitCodelijst,,,,,,
+NL-CM:19.4.2,Dieptegraad,CO,1,SNOMED CT: 116676008 Gerelateerde morfologie,DieptegraadCodelijst,,,,,,
+NL-CM:19.4.5,Toelichting,ST,0..1,LOINC: 48767-8 Annotation comment [Interpretation] Narrative,,,,,,,
+NL-CM:19.4.8,DatumLaatsteVerbandwissel,TS,0..1,,,,,,,,
+NL-CM:19.4.11,Wondfoto,ED,0..*,LOINC: 72170-4 Photographic image,,,,,,,

@@ -1,0 +1,5 @@
+ZIB_Id,ZIB_Naam,ZIB_Type,ZIB_Card,ZIB_DefCode,ZIB_Verwijzing,openEHR_Path,openEHR_Naam,openEHR_Type,openEHR_Card,openEHR_Term,Commentaar
+NL-CM:13.4.1,UitkomstVanZorg,rootconcept,,SNOMED CT: 423100009 Results section,,,,,,,
+NL-CM:13.4.5,Zorgresultaat,ST,(0..1),,,,,,,,
+NL-CM:13.4.3,Gezondheidstoestand::FunctioneleOfMentaleStatus,"data,reference",(0..1),,Dit is een verwijzing naar het rootconcept van de bouwsteen FunctioneleOfMentaleStatus.,,,,,,
+NL-CM:13.4.4,Interventie::VerpleegkundigeInterventie,"data,reference",0..*,,Dit is een verwijzing naar het rootconcept van de bouwsteen VerpleegkundigeInterventie.,,,,,,

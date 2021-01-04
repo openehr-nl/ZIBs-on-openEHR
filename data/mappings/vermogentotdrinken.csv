@@ -1,0 +1,4 @@
+ZIB_Id,ZIB_Naam,ZIB_Type,ZIB_Card,ZIB_DefCode,ZIB_Verwijzing,openEHR_Path,openEHR_Naam,openEHR_Type,openEHR_Card,openEHR_Term,Commentaar
+NL-CM:4.8.1,VermogenTotDrinken,rootconcept,,,,,,,,,
+NL-CM:4.8.3,Drinken,CD,1,SNOMED CT: 288852001 Vermogen om te drinken,DrinkenCodelijst,,,,,,
+NL-CM:4.8.4,DrinkBeperkingen,CD,0..*,SNOMED CT: 288851008 Vaardigheid betreffende drinken,DrinkBeperkingenCodelijst,,,,,,

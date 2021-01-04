@@ -1,0 +1,7 @@
+ZIB_Id,ZIB_Naam,ZIB_Type,ZIB_Card,ZIB_DefCode,ZIB_Verwijzing,openEHR_Path,openEHR_Naam,openEHR_Type,openEHR_Card,openEHR_Term,Commentaar
+NL-CM:12.15.1,Vochtbalans,rootconcept,,SNOMED CT: 710853006 Evaluatie van vochtbalans,,,,,,,
+NL-CM:12.15.6,Toelichting,ST,0..1,LOINC: 48767-8 Annotation comment [Interpretation] Narrative,,,,,,,
+NL-CM:12.15.4,VochtTotaalIn,PQ,0..1,SNOMED CT: 251852001 Totale vochtinname,,,,,,,
+NL-CM:12.15.5,VochtTotaalUit,PQ,0..1,SNOMED CT: 251841007 Totale vochtuitscheiding,,,,,,,
+NL-CM:12.15.2,VochtbalansStarttijd,TS,1,SNOMED CT: 442371002 Start time of procedure,,,,,,,
+NL-CM:12.15.3,VochtbalansStoptijd,TS,1,SNOMED CT: 442137000 Completion time of procedure,,,,,,,

@@ -1,5 +1,5 @@
-﻿ZIB_Id,ZIB_Naam,ZIB_Type,ZIB_Card,ZIB_DefCode,ZIB_Verwijzing,openEHR_Path,openEHR_Naam,openEHR_Type,openEHR_Card,openEHR_Term,Commentaar
-NL-CM:3.1.1,Contactpersoon,rootconcept,,,,,,,,,
+ZIB_Id,ZIB_Naam,ZIB_Type,ZIB_Card,ZIB_DefCode,ZIB_Verwijzing,openEHR_Path,openEHR_Naam,openEHR_Type,openEHR_Card,openEHR_Term,Commentaar
+NL-CM:3.1.1,Contactpersoon,rootconcept,,SNOMED CT: 70862002 Contactpersoon,,,,,,,
 NL-CM:3.1.4,Naamgegevens,"data,reference",0..1,,Dit is een verwijzing naar het rootconcept van de sub-bouwsteen Naamgegevens.,,,,,,
 NL-CM:3.1.6,Contactgegevens,"data,reference",0..1,,Dit is een verwijzing naar het rootconcept van de sub-bouwsteen Contactgegevens.,,,,,,
 NL-CM:3.1.5,Adresgegevens,"data,reference",0..*,,Dit is een verwijzing naar het rootconcept van de sub-bouwsteen Adresgegevens .,,,,,,

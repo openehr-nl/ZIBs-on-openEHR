@@ -1,0 +1,10 @@
+ZIB_Id,ZIB_Naam,ZIB_Type,ZIB_Card,ZIB_DefCode,ZIB_Verwijzing,openEHR_Path,openEHR_Naam,openEHR_Type,openEHR_Card,openEHR_Term,Commentaar
+NL-CM:4.31.1,VoedingspatroonZuigeling,rootconcept,,SNOMED CT: 289145007 Bevinding betreffende voedingspatroon van zuigeling,,,,,,,
+NL-CM:4.31.6,VoedingspatroonZuigelingDatumTijd,TS,1,,,,,,,,
+NL-CM:4.31.7,VoedingToevoeging,ST,0..1,SNOMED CT: 373453009 Nutritional supplement,,,,,,,
+NL-CM:4.31.5,VoedingFrequentie,PQ,0..1,SNOMED CT: 364653007 Frequentie van voeding van zuigeling,,,,,,,
+NL-CM:4.31.8,Toelichting,ST,0..1,LOINC: 48767-8 Annotation comment [Interpretation] Narrative,,,,,,,
+NL-CM:4.31.9,Voedingsadvies,"context,reference",0..1,SNOMED CT: 386461003 Voorlichten over zuigelingenvoeding,Dit is een verwijzing naar het rootconcept van de bouwsteen Voedingsadvies.,,,,,,
+NL-CM:4.31.2,Voeding,container,0..*,SNOMED CT: 230126006 Bevinding betreffende voeden van zuigeling,,,,,,,
+NL-CM:4.31.3,VoedingSoort,CD,0..1,SNOMED CT: 109021000146107 Infant food type,VoedingSoortCodelijst,,,,,,
+NL-CM:4.31.4,VoedingMethode,CD,0..1,SNOMED CT: 169740003 Wijze van voeden van zuigeling,VoedingMethodeCodelijst,,,,,,

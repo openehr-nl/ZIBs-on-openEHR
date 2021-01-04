@@ -1,0 +1,11 @@
+ZIB_Id,ZIB_Naam,ZIB_Type,ZIB_Card,ZIB_DefCode,ZIB_Verwijzing,openEHR_Path,openEHR_Naam,openEHR_Type,openEHR_Card,openEHR_Term,Commentaar
+NL-CM:9.10.19963,Verstrekkingsverzoek,rootconcept,,SNOMED CT: 52711000146108 Verzoek om medicatie aan patiënt te verstrekken,,,,,,,
+NL-CM:9.10.19966,BeoogdVerstrekker::Zorgaanbieder,"context,reference",0..1,,Dit is een verwijzing naar het rootconcept van de bouwsteen Zorgaanbieder.,,,,,,
+NL-CM:9.10.22249,TeVerstrekkenGeneesmiddel::FarmaceutischProduct,"data,reference",1,,Dit is een verwijzing naar het rootconcept of de sub-bouwsteen FarmaceutischProduct.,,,,,,
+NL-CM:9.10.20060,VerstrekkingsverzoekDatum,TS,0..1,,,,,,,,
+NL-CM:9.10.20062,Verbruiksperiode::TijdsInterval,"data,reference",0..1,,Dit is een verwijzing naar het rootconcept in de sub-bouwsteen TijdsInterval.,,,,,,
+NL-CM:9.10.22120,AantalHerhalingen,INT,0..1,,,,,,,,
+NL-CM:9.10.19964,TeVerstrekkenHoeveelheid,PQ,0..1,,,,,,,,
+NL-CM:9.10.20068,Afleverlocatie,ST,0..1,,,,,,,,
+NL-CM:9.10.22759,AanvullendeWensen,CD,0..*,,AanvullendeWensenCodelijst,,,,,,
+NL-CM:9.10.22274,Toelichting,ST,0..1,LOINC: 48767-8 Annotation comment [Interpretation] Narrative,,,,,,,

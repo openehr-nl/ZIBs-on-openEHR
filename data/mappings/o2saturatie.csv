@@ -1,0 +1,6 @@
+ZIB_Id,ZIB_Naam,ZIB_Type,ZIB_Card,ZIB_DefCode,ZIB_Verwijzing,openEHR_Path,openEHR_Naam,openEHR_Type,openEHR_Card,openEHR_Term,Commentaar
+NL-CM:12.10.1,O2Saturatie,rootconcept,,,,,,,,,
+NL-CM:12.10.2,SpO2Waarde,PQ,1,LOINC: 59408-5 Oxygen saturation in Arterial blood by Pulse oximetry,,,,,,,
+NL-CM:12.10.3,O2SaturatieDatumTijd,TS,1,,,,,,,,
+NL-CM:12.10.4,Toelichting,ST,0..1,LOINC: 48767-8 Annotation comment [Interpretation] Narrative,,,,,,,
+NL-CM:12.10.5,ExtraZuurstofToediening,BL,0..1,,,,,,,,

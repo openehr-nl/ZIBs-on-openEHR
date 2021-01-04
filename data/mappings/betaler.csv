@@ -1,4 +1,4 @@
-﻿ZIB_Id,ZIB_Naam,ZIB_Type,ZIB_Card,ZIB_DefCode,ZIB_Verwijzing,openEHR_Path,openEHR_Naam,openEHR_Type,openEHR_Card,openEHR_Term,Commentaar
+ZIB_Id,ZIB_Naam,ZIB_Type,ZIB_Card,ZIB_DefCode,ZIB_Verwijzing,openEHR_Path,openEHR_Naam,openEHR_Type,openEHR_Card,openEHR_Term,Commentaar
 NL-CM:1.1.1,Betaler,rootconcept,,,,,,,,,
 NL-CM:1.1.2,BetalerPersoon,container,(0..1),,,,,,,,
 NL-CM:1.1.5,BetalerNaam,ST,0..1,,,,,,,,

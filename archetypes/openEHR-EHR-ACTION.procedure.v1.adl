@@ -213,21 +213,6 @@ Não deve ser usado para gravar detalhes sobre as atividades relacionadas, tais 
 
 Não deve ser usado para gravar uma operação ou procedimento relatório conjunto - usar um modelo em que esse arquétipo é apenas um componente do relatório completo.">
 		>
-		["sl"] = <
-			language = <[ISO_639-1::sl]>
-			purpose = <"Za beleženje podrobnosti o izvedeni aktivnosti">
-			keywords = <"aktivnosti","postopek">
-			copyright = <"© openEHR Foundation">
-			use = <"Za beleženje podrobnosto o izvedeni aktivnosti, ki zadeva posameznega pacienta/subjekt">
-			misuse = <"Podrobnosti o aktivnostih povezani z opisano kativnostjo, kot npr. dajanje zdravil, se zabeleži v arhetipih tipa ACTION">
-		>
-		["ar-sy"] = <
-			language = <[ISO_639-1::ar-sy]>
-			purpose = <"لتسجيل تفاصيل حول إجراء طبي تم بالفعل إجراؤه">
-			keywords = <"الإجراء الطبي", ...>
-			copyright = <"© openEHR Foundation">
-			use = <"لتسجيل معلومات تفصيلية حول إجراء طبي تم تنفيذه على شخص ما. و ينبغي تسجيل المعلومات حول النشاطات المتعلقة بالنشاطات المتعلقة بالإجراء الطبي, مثل التخدير أو إعطاء الأدوية في نماذج (فعل) منفردة.">
-		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"To record information about the activities required to carry out a procedure, including the planning, scheduling, performance, suspension, cancellation, documentation and completion.">
@@ -271,6 +256,21 @@ Not to be used to record details about administrative activities - use specific 
 Not to be used to record details about related activities such as the use of frozen sections taken during an operation, medication administered as part of the procedure or when imaging guidance is used during the procedure - use separate and specific ACTION archetypes within the same template for this purpose .
 
 Not to be used to record a whole operation or procedure report - use a template in which this archetype is only one component of the full report.">
+		>
+		["ar-sy"] = <
+			language = <[ISO_639-1::ar-sy]>
+			purpose = <"لتسجيل تفاصيل حول إجراء طبي تم بالفعل إجراؤه">
+			keywords = <"الإجراء الطبي", ...>
+			copyright = <"© openEHR Foundation">
+			use = <"لتسجيل معلومات تفصيلية حول إجراء طبي تم تنفيذه على شخص ما. و ينبغي تسجيل المعلومات حول النشاطات المتعلقة بالنشاطات المتعلقة بالإجراء الطبي, مثل التخدير أو إعطاء الأدوية في نماذج (فعل) منفردة.">
+		>
+		["sl"] = <
+			language = <[ISO_639-1::sl]>
+			purpose = <"Za beleženje podrobnosti o izvedeni aktivnosti">
+			keywords = <"aktivnosti","postopek">
+			copyright = <"© openEHR Foundation">
+			use = <"Za beleženje podrobnosto o izvedeni aktivnosti, ki zadeva posameznega pacienta/subjekt">
+			misuse = <"Podrobnosti o aktivnostih povezani z opisano kativnostjo, kot npr. dajanje zdravil, se zabeleži v arhetipih tipa ACTION">
 		>
 		["es"] = <
 			language = <[ISO_639-1::es]>

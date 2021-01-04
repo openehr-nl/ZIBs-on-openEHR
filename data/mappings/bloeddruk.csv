@@ -1,4 +1,4 @@
-﻿ZIB_Id,ZIB_Naam,ZIB_Type,ZIB_Card,ZIB_DefCode,ZIB_Verwijzing,openEHR_Path,openEHR_Naam,openEHR_Type,openEHR_Card,openEHR_Term,Commentaar
+ZIB_Id,ZIB_Naam,ZIB_Type,ZIB_Card,ZIB_DefCode,ZIB_Verwijzing,openEHR_Path,openEHR_Naam,openEHR_Type,openEHR_Card,openEHR_Term,Commentaar
 NL-CM:12.4.1,Bloeddruk,rootconcept,,LOINC: 85354-9 Blood pressure panel with all children optional; SNOMED CT: 46973005 Bloeddrukmeting,,/content[openEHR-EHR-OBSERVATION.blood_pressure.v2],Bloeddruk,OBSERVATION,1,,"CKM: CR-496, CR-497"
 NL-CM:12.4.7,Meetmethode,CD,0..1,,MeetmethodeCodelijst,/content[openEHR-EHR-OBSERVATION.blood_pressure.v2]/protocol[at0011]/items[at1035],Methodiek,DV_CODED_TEXT,0..1,,ZIB-2020: non-invasive and non-invasive with manchet value cannot be matched to openEHR
 NL-CM:12.4.9,ManchetType,CD,0..1,SNOMED CT: 70665002 Bloeddrukmanchet,ManchetTypeCodelijst,/content[openEHR-EHR-OBSERVATION.blood_pressure.v2]/protocol[at0011]/items[at0013],Manchet grootte,DV_CODED_TEXT,0..1,,CKM: CR-495

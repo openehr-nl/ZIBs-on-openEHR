@@ -1,0 +1,13 @@
+ZIB_Id,ZIB_Naam,ZIB_Type,ZIB_Card,ZIB_DefCode,ZIB_Verwijzing,openEHR_Path,openEHR_Naam,openEHR_Type,openEHR_Card,openEHR_Term,Commentaar
+NL-CM:9.11.21338,MedicatieGebruik,rootconcept,,SNOMED CT: 422979000 Bevinding betreffende gedrag met betrekking tot medicatieregime,,,,,,,
+NL-CM:9.11.23290,Voorschrijver::Zorgverlener,"context,reference",0..1,,Dit is een verwijzing naar het rootconcept van de bouwsteen Zorgverlener.,,,,,,
+NL-CM:9.11.21339,Gebruiksproduct::FarmaceutischProduct,"data,reference",1,,Dit is een verwijzing naar het rootconcept van de bouwsteen FarmaceutischProduct.,,,,,,
+NL-CM:9.11.22504,Gebruiksinstructie,"data,reference",0..1,,Dit is een verwijzing naar het rootconcept van de bouwsteen GebruiksInstructie.,,,,,,
+NL-CM:9.11.22398,MedicatieGebruikDatumTijd,TS,1,,,,,,,,
+NL-CM:9.11.22663,Gebruiksperiode::TijdsInterval,"data,reference",0..1,,Dit is een verwijzing naar het rootconcept in de subbouwsteen TijdsInterval.,,,,,,
+NL-CM:9.11.22492,VolgensAfspraakIndicator,BL,0..1,,,,,,,,
+NL-CM:9.11.22399,GebruikIndicator,BL,1,SNOMED CT: 112221000146107 Inname van medicatie door patiënt volgens afspraak,,,,,,,
+NL-CM:9.11.22491,RedenGebruik,ST,0..1,,,,,,,,
+NL-CM:9.11.23132,MedicatieGebruikStopType,CD,0..1,,MedicatiegebruikStopTypeCodelijst,,,,,,
+NL-CM:9.11.22493,RedenWijzigenOfStoppenGebruik,CD,0..*,,RedenWijzigenOfStoppenGebruikCodelijst,,,,,,
+NL-CM:9.11.21624,Toelichting,ST,0..1,LOINC: 48767-8 Annotation comment [Interpretation] Narrative,,,,,,,

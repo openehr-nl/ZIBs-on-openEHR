@@ -1,0 +1,13 @@
+ZIB_Id,ZIB_Naam,ZIB_Type,ZIB_Card,ZIB_DefCode,ZIB_Verwijzing,openEHR_Path,openEHR_Naam,openEHR_Type,openEHR_Card,openEHR_Term,Commentaar
+NL-CM:20.5.1,Adresgegevens,rootconcept,,,,,,,,,
+NL-CM:20.5.2,Straat,ST,0..1,,,,,,,,
+NL-CM:20.5.12,Huisnummer,ST,0..1,,,,,,,,
+NL-CM:20.5.11,Huisnummerletter,ST,0..1,,,,,,,,
+NL-CM:20.5.10,Huisnummertoevoeging,ST,0..1,,,,,,,,
+NL-CM:20.5.9,AanduidingBijNummer,CD,0..1,,AanduidingBijNummerCodelijst,,,,,,
+NL-CM:20.5.6,Postcode,ST,0..1,,,,,,,,
+NL-CM:20.5.3,Woonplaats,ST,0..1,,,,,,,,
+NL-CM:20.5.4,Gemeente,ST,0..1,,,,,,,,
+NL-CM:20.5.5,Land,CD,0..1,,LandGBACodelijst; LandISOCodelijst,,,,,,
+NL-CM:20.5.7,AdditioneleInformatie,ST,0..1,,,,,,,,
+NL-CM:20.5.8,AdresSoort,CD,0..1,,AdresSoortCodelijst,,,,,,

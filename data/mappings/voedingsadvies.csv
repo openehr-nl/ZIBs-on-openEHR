@@ -1,0 +1,6 @@
+ZIB_Id,ZIB_Naam,ZIB_Type,ZIB_Card,ZIB_DefCode,ZIB_Verwijzing,openEHR_Path,openEHR_Naam,openEHR_Type,openEHR_Card,openEHR_Term,Commentaar
+NL-CM:7.11.1,Voedingsadvies,rootconcept,,SNOMED CT: 11816003 Voorlichten over dieet,,,,,,,
+NL-CM:7.11.2,DieetType,ST,0..1,SNOMED CT: 41829006 Bevinding betreffende dieet,,,,,,,
+NL-CM:7.11.3,Consistentie,ST,0..1,SNOMED CT: 229961002 Consistentie van voeding,,,,,,,
+NL-CM:7.11.5,Indicatie::Probleem,"data,reference",0..1,SNOMED CT: 363702006 Heeft focus,Dit is een verwijzing naar het rootconcept van de bouwsteen Probleem.,,,,,,
+NL-CM:7.11.4,Toelichting,ST,0..1,LOINC: 48767-8 Annotation comment [Interpretation] Narrative,,,,,,,

@@ -1,0 +1,6 @@
+ZIB_Id,ZIB_Naam,ZIB_Type,ZIB_Card,ZIB_DefCode,ZIB_Verwijzing,openEHR_Path,openEHR_Naam,openEHR_Type,openEHR_Card,openEHR_Term,Commentaar
+NL-CM:12.14.1,Schedelomvang,rootconcept,,LOINC: 9843-4 Head Occipital-frontal circumference,,,,,,,
+NL-CM:12.14.4,Toelichting,ST,0..1,LOINC: 48767-8 Annotation comment [Interpretation] Narrative,,,,,,,
+NL-CM:12.14.2,SchedelomvangDatumTijd,TS,1,,,,,,,,
+NL-CM:12.14.3,SchedelomvangWaarde,PQ,1,SNOMED CT: 363812007 Hoofdomtrek,,,,,,,
+NL-CM:12.14.5,SchedelomvangMeetmethode,CD,0..1,SNOMED CT: 56792006 Bepalen van schedelomtrek,SchedelomvangMeetmethodeCodelijst,,,,,,

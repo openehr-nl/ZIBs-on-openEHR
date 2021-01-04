@@ -1,0 +1,6 @@
+ZIB_Id,ZIB_Naam,ZIB_Type,ZIB_Card,ZIB_DefCode,ZIB_Verwijzing,openEHR_Path,openEHR_Naam,openEHR_Type,openEHR_Card,openEHR_Term,Commentaar
+NL-CM:18.6.1,ParticipatieInMaatschappij,rootconcept,,SNOMED CT: 314845004 Status van participatie van patiënt,,,,,,,
+NL-CM:18.6.2,SociaalNetwerk,ST,0..1,SNOMED CT: 365469004 Bevinding betreffende netwerk van gezin, familie en ondersteuners,,,,,,,
+NL-CM:18.6.3,Vrijetijdsbesteding,ST,0..1,SNOMED CT: 405081003 Vrijetijdsgedrag,,,,,,,
+NL-CM:18.6.4,Arbeidssituatie,ST,0..1,SNOMED CT: 364703007 Arbeidssituatie,,,,,,,
+NL-CM:18.6.5,Toelichting,ST,0..1,LOINC: 48767-8 Annotation comment [Interpretation] Narrative,,,,,,,

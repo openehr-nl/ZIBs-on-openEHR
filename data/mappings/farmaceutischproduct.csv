@@ -1,0 +1,12 @@
+ZIB_Id,ZIB_Naam,ZIB_Type,ZIB_Card,ZIB_DefCode,ZIB_Verwijzing,openEHR_Path,openEHR_Naam,openEHR_Type,openEHR_Card,openEHR_Term,Commentaar
+NL-CM:9.7.19926,FarmaceutischProduct,rootconcept,,,,,,,,,
+NL-CM:9.7.19927,ProductCode,CD,0..1,,ProductCodeATCCodelijst; ProductCodeGPKCodelijst; ProductCodeGTINCodelijst; ProductCodeHPKCodelijst; ProductCodePRKCodelijst; ProductCodeZICodelijst,,,,,,
+NL-CM:9.7.19928,ProductSpecificatie,container,0..1,,,,,,,,
+NL-CM:9.7.19931,FarmaceutischeVorm,CD,0..1,,FarmaceutischeVormCodelijst,,,,,,
+NL-CM:9.7.19929,ProductNaam,ST,0..1,,,,,,,,
+NL-CM:9.7.19784,Omschrijving,ST,0..1,,,,,,,,
+NL-CM:9.7.19932,Ingredient,container,0..*,,,,,,,,
+NL-CM:9.7.19934,IngredientCode,CD,0..1,,IngredientCodeATCCodelijst; IngredientCodeGPKCodelijst; IngredientCodeGTINCodelijst; IngredientCodeHPKCodelijst; IngredientCodePRKCodelijst; IngredientCodeSNKCodelijst; IngredientCodeSSKCodelijst; IngredientCodeZICodelijst,,,,,,
+NL-CM:9.7.19933,Sterkte,container,0..1,,,,,,,,
+NL-CM:9.7.22277,IngredientHoeveelheid,PQ,0..1,,,,,,,,
+NL-CM:9.7.22278,ProductHoeveelheid,PQ,0..1,,,,,,,,
