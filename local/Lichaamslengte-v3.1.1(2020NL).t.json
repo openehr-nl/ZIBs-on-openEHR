@@ -1,0 +1,823 @@
+{
+  "@type": "TEMPLATE",
+  "uid": "df624fc4-d266-428f-9218-dd289be6fea9",
+  "description": {
+    "@type": "RESOURCE_DESCRIPTION",
+    "originalAuthor": {
+      "date": "2021-03-31"
+    },
+    "otherContributors": [],
+    "lifecycleState": {
+      "codeString": "unmanaged"
+    },
+    "ipAcknowledgements": {},
+    "references": {},
+    "conversionDetails": {},
+    "otherDetails": {
+      "licence": "",
+      "custodian_organisation": "",
+      "original_namespace": "",
+      "original_publisher": "",
+      "custodian_namespace": "",
+      "sem_ver": "0.1.0"
+    },
+    "details": {
+      "de": {
+        "@type": "RESOURCE_DESCRIPTION_ITEM",
+        "language": {
+          "terminologyId": {
+            "value": "ISO_639-1"
+          },
+          "codeString": "de"
+        },
+        "keywords": [],
+        "originalResourceUri": {},
+        "otherDetails": {}
+      },
+      "ru": {
+        "@type": "RESOURCE_DESCRIPTION_ITEM",
+        "language": {
+          "terminologyId": {
+            "value": "ISO_639-1"
+          },
+          "codeString": "ru"
+        },
+        "keywords": [],
+        "originalResourceUri": {},
+        "otherDetails": {}
+      },
+      "sv": {
+        "@type": "RESOURCE_DESCRIPTION_ITEM",
+        "language": {
+          "terminologyId": {
+            "value": "ISO_639-1"
+          },
+          "codeString": "sv"
+        },
+        "keywords": [],
+        "originalResourceUri": {},
+        "otherDetails": {}
+      },
+      "fi": {
+        "@type": "RESOURCE_DESCRIPTION_ITEM",
+        "language": {
+          "terminologyId": {
+            "value": "ISO_639-1"
+          },
+          "codeString": "fi"
+        },
+        "keywords": [],
+        "originalResourceUri": {},
+        "otherDetails": {}
+      },
+      "pt-br": {
+        "@type": "RESOURCE_DESCRIPTION_ITEM",
+        "language": {
+          "terminologyId": {
+            "value": "ISO_639-1"
+          },
+          "codeString": "pt-br"
+        },
+        "keywords": [],
+        "originalResourceUri": {},
+        "otherDetails": {}
+      },
+      "ar-sy": {
+        "@type": "RESOURCE_DESCRIPTION_ITEM",
+        "language": {
+          "terminologyId": {
+            "value": "ISO_639-1"
+          },
+          "codeString": "ar-sy"
+        },
+        "keywords": [],
+        "originalResourceUri": {},
+        "otherDetails": {}
+      },
+      "en": {
+        "@type": "RESOURCE_DESCRIPTION_ITEM",
+        "language": {
+          "terminologyId": {
+            "value": "ISO_639-1"
+          },
+          "codeString": "en"
+        },
+        "keywords": [],
+        "originalResourceUri": {},
+        "otherDetails": {}
+      },
+      "fr": {
+        "@type": "RESOURCE_DESCRIPTION_ITEM",
+        "language": {
+          "terminologyId": {
+            "value": "ISO_639-1"
+          },
+          "codeString": "fr"
+        },
+        "keywords": [],
+        "originalResourceUri": {},
+        "otherDetails": {}
+      },
+      "zh-cn": {
+        "@type": "RESOURCE_DESCRIPTION_ITEM",
+        "language": {
+          "terminologyId": {
+            "value": "ISO_639-1"
+          },
+          "codeString": "zh-cn"
+        },
+        "keywords": [],
+        "originalResourceUri": {},
+        "otherDetails": {}
+      },
+      "es-ar": {
+        "@type": "RESOURCE_DESCRIPTION_ITEM",
+        "language": {
+          "terminologyId": {
+            "value": "ISO_639-1"
+          },
+          "codeString": "es-ar"
+        },
+        "keywords": [],
+        "originalResourceUri": {},
+        "otherDetails": {}
+      },
+      "nb": {
+        "@type": "RESOURCE_DESCRIPTION_ITEM",
+        "language": {
+          "terminologyId": {
+            "value": "ISO_639-1"
+          },
+          "codeString": "nb"
+        },
+        "keywords": [],
+        "originalResourceUri": {},
+        "otherDetails": {}
+      },
+      "fa": {
+        "@type": "RESOURCE_DESCRIPTION_ITEM",
+        "language": {
+          "terminologyId": {
+            "value": "ISO_639-1"
+          },
+          "codeString": "fa"
+        },
+        "keywords": [],
+        "originalResourceUri": {},
+        "otherDetails": {}
+      },
+      "nl": {
+        "@type": "RESOURCE_DESCRIPTION_ITEM",
+        "language": {
+          "terminologyId": {
+            "value": "ISO_639-1"
+          },
+          "codeString": "nl"
+        },
+        "keywords": [],
+        "originalResourceUri": {},
+        "otherDetails": {}
+      }
+    }
+  },
+  "parentArchetypeId": "openEHR-EHR-OBSERVATION.height.v2",
+  "differential": true,
+  "archetypeId": {
+    "@type": "ARCHETYPE_HRID",
+    "value": "openEHR-EHR-OBSERVATION.height.v2"
+  },
+  "definition": {
+    "@type": "C_COMPLEX_OBJECT",
+    "rmTypeName": "OBSERVATION",
+    "nodeId": "at0000.1",
+    "attributes": [
+      {
+        "@type": "C_ATTRIBUTE",
+        "rmAttributeName": "data",
+        "children": [
+          {
+            "@type": "C_COMPLEX_OBJECT",
+            "rmTypeName": "HISTORY",
+            "nodeId": "at0001",
+            "attributes": [
+              {
+                "@type": "C_ATTRIBUTE",
+                "rmAttributeName": "events",
+                "children": [
+                  {
+                    "@type": "C_COMPLEX_OBJECT",
+                    "rmTypeName": "EVENT",
+                    "nodeId": "at0002",
+                    "attributes": [
+                      {
+                        "@type": "C_ATTRIBUTE",
+                        "rmAttributeName": "data",
+                        "children": [
+                          {
+                            "@type": "C_COMPLEX_OBJECT",
+                            "rmTypeName": "ITEM_TREE",
+                            "nodeId": "at0003.1",
+                            "attributes": [
+                              {
+                                "@type": "C_ATTRIBUTE",
+                                "rmAttributeName": "items",
+                                "children": [
+                                  {
+                                    "@type": "C_COMPLEX_OBJECT",
+                                    "rmTypeName": "ELEMENT",
+                                    "nodeId": "at0004.1",
+                                    "attributes": [
+                                      {
+                                        "@type": "C_ATTRIBUTE",
+                                        "rmAttributeName": "value",
+                                        "children": [
+                                          {
+                                            "@type": "C_COMPLEX_OBJECT",
+                                            "rmTypeName": "DV_QUANTITY",
+                                            "attributes": [
+                                              {
+                                                "@type": "C_ATTRIBUTE",
+                                                "rmAttributeName": "property",
+                                                "children": [
+                                                  {
+                                                    "@type": "C_TERMINOLOGY_CODE",
+                                                    "terminologyId": {
+                                                      "value": "openehr"
+                                                    },
+                                                    "constraint": [
+                                                      "122"
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ],
+                                            "attributeTuples": [
+                                              {
+                                                "@type": "C_ATTRIBUTE_TUPLE",
+                                                "members": [
+                                                  {
+                                                    "@type": "C_ATTRIBUTE",
+                                                    "rmAttributeName": "magnitude",
+                                                    "children": []
+                                                  },
+                                                  {
+                                                    "@type": "C_ATTRIBUTE",
+                                                    "rmAttributeName": "units",
+                                                    "children": []
+                                                  }
+                                                ],
+                                                "tuples": [
+                                                  {
+                                                    "@type": "C_PRIMITIVE_TUPLE",
+                                                    "members": [
+                                                      {
+                                                        "@type": "C_REAL",
+                                                        "constraint": [
+                                                          {
+                                                            "lower": 0.0,
+                                                            "upper": 1000.0,
+                                                            "lowerIncluded": true,
+                                                            "upperIncluded": true,
+                                                            "lowerUnbounded": false,
+                                                            "upperUnbounded": false
+                                                          }
+                                                        ]
+                                                      },
+                                                      {
+                                                        "@type": "C_STRING",
+                                                        "constraint": [
+                                                          "cm"
+                                                        ]
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "@type": "C_PRIMITIVE_TUPLE",
+                                                    "members": [
+                                                      {
+                                                        "@type": "C_REAL",
+                                                        "constraint": [
+                                                          {
+                                                            "lower": 0.0,
+                                                            "upper": 250.0,
+                                                            "lowerIncluded": true,
+                                                            "upperIncluded": true,
+                                                            "lowerUnbounded": false,
+                                                            "upperUnbounded": false
+                                                          }
+                                                        ]
+                                                      },
+                                                      {
+                                                        "@type": "C_STRING",
+                                                        "constraint": [
+                                                          "[in_i]"
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ],
+                                    "attributeTuples": []
+                                  },
+                                  {
+                                    "@type": "C_COMPLEX_OBJECT",
+                                    "rmTypeName": "ELEMENT",
+                                    "nodeId": "at0018.1",
+                                    "attributes": [],
+                                    "attributeTuples": []
+                                  }
+                                ]
+                              }
+                            ],
+                            "attributeTuples": []
+                          }
+                        ]
+                      },
+                      {
+                        "@type": "C_ATTRIBUTE",
+                        "rmAttributeName": "state",
+                        "children": [
+                          {
+                            "@type": "C_COMPLEX_OBJECT",
+                            "rmTypeName": "ITEM_TREE",
+                            "nodeId": "at0013.1",
+                            "attributes": [
+                              {
+                                "@type": "C_ATTRIBUTE",
+                                "rmAttributeName": "items",
+                                "children": [
+                                  {
+                                    "@type": "C_COMPLEX_OBJECT",
+                                    "rmTypeName": "ELEMENT",
+                                    "nodeId": "at0014.1",
+                                    "attributes": [
+                                      {
+                                        "@type": "C_ATTRIBUTE",
+                                        "rmAttributeName": "value",
+                                        "children": [
+                                          {
+                                            "@type": "C_COMPLEX_OBJECT",
+                                            "rmTypeName": "DV_CODED_TEXT",
+                                            "attributes": [
+                                              {
+                                                "@type": "C_ATTRIBUTE",
+                                                "rmAttributeName": "defining_code",
+                                                "children": [
+                                                  {
+                                                    "@type": "C_TERMINOLOGY_CODE",
+                                                    "rmTypeName": "TERMINOLOGY_CODE",
+                                                    "occurrences": "1..1",
+                                                    "assumedValue": {
+                                                      "terminologyId": {
+                                                        "value": "local"
+                                                      },
+                                                      "codeString": "at0016"
+                                                    },
+                                                    "terminologyId": {
+                                                      "value": "local"
+                                                    },
+                                                    "constraint": [
+                                                      "ac0.1"
+                                                    ],
+                                                    "selectedTerminologies": []
+                                                  }
+                                                ]
+                                              }
+                                            ],
+                                            "attributeTuples": []
+                                          }
+                                        ]
+                                      }
+                                    ],
+                                    "attributeTuples": []
+                                  },
+                                  {
+                                    "@type": "C_COMPLEX_OBJECT",
+                                    "rmTypeName": "ELEMENT",
+                                    "occurrences": "0..0",
+                                    "nodeId": "at0019.1",
+                                    "attributes": [],
+                                    "attributeTuples": []
+                                  }
+                                ]
+                              }
+                            ],
+                            "attributeTuples": []
+                          }
+                        ]
+                      }
+                    ],
+                    "attributeTuples": []
+                  },
+                  {
+                    "@type": "C_COMPLEX_OBJECT",
+                    "rmTypeName": "POINT_EVENT",
+                    "occurrences": "0..0",
+                    "nodeId": "at0021.1",
+                    "attributes": [
+                      {
+                        "@type": "C_ATTRIBUTE",
+                        "rmAttributeName": "data",
+                        "children": [
+                          {
+                            "@type": "C_COMPLEX_OBJECT",
+                            "rmTypeName": "ITEM_TREE",
+                            "nodeId": "at0003.2",
+                            "targetPath": "/data[at0001]/events[at0002]/data[at0003.1]",
+                            "attributes": [],
+                            "attributeTuples": []
+                          }
+                        ]
+                      },
+                      {
+                        "@type": "C_ATTRIBUTE",
+                        "rmAttributeName": "state",
+                        "children": [
+                          {
+                            "@type": "C_COMPLEX_OBJECT",
+                            "rmTypeName": "ITEM_TREE",
+                            "nodeId": "at0013.2",
+                            "targetPath": "/data[at0001]/events[at0002]/state[at0013.1]",
+                            "attributes": [],
+                            "attributeTuples": []
+                          }
+                        ]
+                      }
+                    ],
+                    "attributeTuples": []
+                  }
+                ]
+              }
+            ],
+            "attributeTuples": []
+          }
+        ]
+      }
+    ],
+    "attributeTuples": []
+  },
+  "terminology": {
+    "@type": "ARCHETYPE_TERMINOLOGY",
+    "conceptCode": "at0000",
+    "termDefinitions": {
+      "nl": {
+        "at0000.1": {
+          "@type": "ARCHETYPE_TERM",
+          "code": "at0000.1",
+          "text": "Lichaamslengte-v3.1.1(2020NL)",
+          "description": "De lichaamslengte wordt gemeten vanaf de kruin van het hoofd tot en met de voetzool. In het engelse taaldomein wordt er verschil gemaakt tussen hoogte (height) en lengte (length), waarbij hoogte staande gemeten wordt en lengte liggend.",
+          "comment": "Hoogte wordt gemeten bij een individu in een staande houding en lichaamslengte in een liggende positie."
+        },
+        "at0018.1": {
+          "@type": "ARCHETYPE_TERM",
+          "code": "at0018.1",
+          "text": "Toelichting",
+          "description": "Extra informatie over de meting, die niet past binnen andere velden."
+        },
+        "at0004.1": {
+          "@type": "ARCHETYPE_TERM",
+          "code": "at0004.1",
+          "text": "LengteWaarde",
+          "description": "De lengte van het lichaam vanaf de kruin van het hoofd tot en met de voetzool."
+        },
+        "ac0.1": {
+          "@type": "ARCHETYPE_TERM",
+          "text": "*(Synthesized) (en)",
+          "code": "ac0.1"
+        }
+      },
+      "en": {
+        "at0000.1": {
+          "@type": "ARCHETYPE_TERM",
+          "code": "at0000.1",
+          "text": "Lichaamslengte-v3.1.1(2020NL)",
+          "description": "Height, or body length, is measured from crown of head to sole of foot.",
+          "comment": "Height is measured with the individual in a standing position and body length in a recumbent position."
+        },
+        "ac0.1": {
+          "@type": "ARCHETYPE_TERM",
+          "text": "(Synthesized)",
+          "code": "ac0.1"
+        }
+      },
+      "de": {
+        "at0000.1": {
+          "@type": "ARCHETYPE_TERM",
+          "code": "at0000.1",
+          "text": "Lichaamslengte-v3.1.1(2020NL)",
+          "description": "Größe bzw. Körperlänge wird vom Scheitel bis zur Fußsohle gemessen.",
+          "comment": "Die Größe wird bei der Person in stehender Position und die Körperlänge in liegender Position gemessen."
+        },
+        "ac0.1": {
+          "@type": "ARCHETYPE_TERM",
+          "text": "*(Synthesized) (en)",
+          "code": "ac0.1"
+        }
+      },
+      "pt-br": {
+        "at0000.1": {
+          "@type": "ARCHETYPE_TERM",
+          "code": "at0000.1",
+          "text": "Lichaamslengte-v3.1.1(2020NL)",
+          "description": "Altura ou comprimento do corpo, é medida a partir da coroa da cabeça a sola do pé.\r\nA altura é medida com o indivíduo na posição de pé e comprimento do corpo na posição decúbito dorsal.",
+          "comment": "A altura é medida com o indivíduo em uma posição em pé e o comprimento do corpo em uma posição reclinada."
+        },
+        "ac0.1": {
+          "@type": "ARCHETYPE_TERM",
+          "text": "*(Synthesized) (en)",
+          "code": "ac0.1"
+        }
+      },
+      "fa": {
+        "at0000.1": {
+          "@type": "ARCHETYPE_TERM",
+          "code": "at0000.1",
+          "text": "Lichaamslengte-v3.1.1(2020NL)",
+          "description": "قد یا طول بدن از نوک سر تا کف پا اندازه گیری می شود.بلندی در حالت ایستاده و طول بدن فرد در حالت خوابیده اندازه گیری می شود "
+        },
+        "ac0.1": {
+          "@type": "ARCHETYPE_TERM",
+          "text": "*(Synthesized) (en)",
+          "code": "ac0.1"
+        }
+      },
+      "ar-sy": {
+        "at0000.1": {
+          "@type": "ARCHETYPE_TERM",
+          "code": "at0000.1",
+          "text": "Lichaamslengte-v3.1.1(2020NL)",
+          "description": "الارتفاع أو طول الجسم, يتم قياسه من تاج الرأس إلى أخمص القدم. يتم قياس الارتفاع عندما يكون الفرد واقفا, و طول الجسم عندما يكون الفرد مستلقيا."
+        },
+        "ac0.1": {
+          "@type": "ARCHETYPE_TERM",
+          "text": "*(Synthesized) (en)",
+          "code": "ac0.1"
+        }
+      },
+      "es-ar": {
+        "at0000.1": {
+          "@type": "ARCHETYPE_TERM",
+          "code": "at0000.1",
+          "text": "Lichaamslengte-v3.1.1(2020NL)",
+          "description": "La altura o longitud corporal es medida desde la coronilla de la cabeza hasta la planta de los pies. La altura es medida con el individuo en posición erguida y la longitud corporal, en posición recostada."
+        },
+        "ac0.1": {
+          "@type": "ARCHETYPE_TERM",
+          "text": "*(Synthesized) (en)",
+          "code": "ac0.1"
+        }
+      },
+      "ru": {
+        "at0000.1": {
+          "@type": "ARCHETYPE_TERM",
+          "code": "at0000.1",
+          "text": "Lichaamslengte-v3.1.1(2020NL)",
+          "description": "Рост или длина тела. Измеряется от макушки до пяток, стоя, или в вытянутом положении."
+        },
+        "ac0.1": {
+          "@type": "ARCHETYPE_TERM",
+          "text": "*(Synthesized) (en)",
+          "code": "ac0.1"
+        }
+      },
+      "zh-cn": {
+        "at0000.1": {
+          "@type": "ARCHETYPE_TERM",
+          "code": "at0000.1",
+          "text": "Lichaamslengte-v3.1.1(2020NL)",
+          "description": "从头顶至脚底（足底）所测得的身高（高度）/身长（长度）。身高测量采用直立位，而身长测量则采用的是卧位（平卧位）。"
+        },
+        "ac0.1": {
+          "@type": "ARCHETYPE_TERM",
+          "text": "*(Synthesized) (en)",
+          "code": "ac0.1"
+        }
+      },
+      "sv": {
+        "at0000.1": {
+          "@type": "ARCHETYPE_TERM",
+          "code": "at0000.1",
+          "text": "Lichaamslengte-v3.1.1(2020NL)",
+          "description": "Kroppslängd mäts från hjässa till fotsula.",
+          "comment": "Kroppslängd mäts med individen stående eller liggande."
+        },
+        "ac0.1": {
+          "@type": "ARCHETYPE_TERM",
+          "text": "*(Synthesized) (en)",
+          "code": "ac0.1"
+        }
+      },
+      "fi": {
+        "at0000.1": {
+          "@type": "ARCHETYPE_TERM",
+          "code": "at0000.1",
+          "text": "Lichaamslengte-v3.1.1(2020NL)",
+          "description": "Kehon pituus mitataan päälaesta jalkapohjaan.",
+          "comment": "Height is measured with the individual in a standing position and body length in a recumbent position."
+        },
+        "ac0.1": {
+          "@type": "ARCHETYPE_TERM",
+          "text": "*(Synthesized) (en)",
+          "code": "ac0.1"
+        }
+      },
+      "nb": {
+        "at0000.1": {
+          "@type": "ARCHETYPE_TERM",
+          "code": "at0000.1",
+          "text": "Lichaamslengte-v3.1.1(2020NL)",
+          "description": "Individets høyde eller lengde målt fra isse til fotsåle.",
+          "comment": "Høyde måles stående og lengde liggende."
+        },
+        "ac0.1": {
+          "@type": "ARCHETYPE_TERM",
+          "text": "*(Synthesized) (en)",
+          "code": "ac0.1"
+        }
+      },
+      "fr": {
+        "at0000.1": {
+          "@type": "ARCHETYPE_TERM",
+          "code": "at0000.1",
+          "text": "Lichaamslengte-v3.1.1(2020NL)",
+          "description": "La hauteur, ou la longueur du corps, est mesurée de la couronne de la tête à la plante du pied.",
+          "comment": "La taille est mesurée avec l'individu en position debout et la longueur du corps en position allongée."
+        },
+        "ac0.1": {
+          "@type": "ARCHETYPE_TERM",
+          "text": "*(Synthesized) (en)",
+          "code": "ac0.1"
+        }
+      }
+    },
+    "termBindings": {
+      "LOINC": {
+        "at0004.1": "term:LOINC::8302-2"
+      }
+    },
+    "terminologyExtracts": {},
+    "valueSets": {
+      "ac0.1": {
+        "@type": "VALUE_SET",
+        "id": "ac0.1",
+        "members": [
+          "at0016",
+          "at0020"
+        ]
+      }
+    }
+  },
+  "adlVersion": "1.4",
+  "buildUid": "5d803dd2-96e1-465d-8670-75564d77a68f",
+  "rmName": "openehr",
+  "rmRelease": "1.0.3",
+  "generated": true,
+  "templateId": "Lichaamslengte-v3.1.1(2020NL)",
+  "otherMetaData": {},
+  "templateOverlays": [],
+  "originalLanguage": {
+    "terminologyId": {
+      "value": "ISO_639-1"
+    },
+    "codeString": "en"
+  },
+  "translations": [
+    {
+      "@type": "TRANSLATION_DETAILS",
+      "language": {
+        "terminologyId": {
+          "value": "ISO_639-1"
+        },
+        "codeString": "de"
+      },
+      "author": {},
+      "otherDetails": {}
+    },
+    {
+      "@type": "TRANSLATION_DETAILS",
+      "language": {
+        "terminologyId": {
+          "value": "ISO_639-1"
+        },
+        "codeString": "ru"
+      },
+      "author": {},
+      "otherDetails": {}
+    },
+    {
+      "@type": "TRANSLATION_DETAILS",
+      "language": {
+        "terminologyId": {
+          "value": "ISO_639-1"
+        },
+        "codeString": "sv"
+      },
+      "author": {},
+      "otherDetails": {}
+    },
+    {
+      "@type": "TRANSLATION_DETAILS",
+      "language": {
+        "terminologyId": {
+          "value": "ISO_639-1"
+        },
+        "codeString": "fi"
+      },
+      "author": {},
+      "otherDetails": {}
+    },
+    {
+      "@type": "TRANSLATION_DETAILS",
+      "language": {
+        "terminologyId": {
+          "value": "ISO_639-1"
+        },
+        "codeString": "es-ar"
+      },
+      "author": {},
+      "otherDetails": {}
+    },
+    {
+      "@type": "TRANSLATION_DETAILS",
+      "language": {
+        "terminologyId": {
+          "value": "ISO_639-1"
+        },
+        "codeString": "nb"
+      },
+      "author": {},
+      "otherDetails": {}
+    },
+    {
+      "@type": "TRANSLATION_DETAILS",
+      "language": {
+        "terminologyId": {
+          "value": "ISO_639-1"
+        },
+        "codeString": "pt-br"
+      },
+      "author": {},
+      "otherDetails": {}
+    },
+    {
+      "@type": "TRANSLATION_DETAILS",
+      "language": {
+        "terminologyId": {
+          "value": "ISO_639-1"
+        },
+        "codeString": "ar-sy"
+      },
+      "author": {},
+      "otherDetails": {}
+    },
+    {
+      "@type": "TRANSLATION_DETAILS",
+      "language": {
+        "terminologyId": {
+          "value": "ISO_639-1"
+        },
+        "codeString": "fa"
+      },
+      "author": {},
+      "otherDetails": {}
+    },
+    {
+      "@type": "TRANSLATION_DETAILS",
+      "language": {
+        "terminologyId": {
+          "value": "ISO_639-1"
+        },
+        "codeString": "fr"
+      },
+      "author": {},
+      "otherDetails": {}
+    },
+    {
+      "@type": "TRANSLATION_DETAILS",
+      "language": {
+        "terminologyId": {
+          "value": "ISO_639-1"
+        },
+        "codeString": "zh-cn"
+      },
+      "author": {},
+      "otherDetails": {}
+    },
+    {
+      "@type": "TRANSLATION_DETAILS",
+      "language": {
+        "terminologyId": {
+          "value": "ISO_639-1"
+        },
+        "codeString": "nl"
+      },
+      "author": {},
+      "otherDetails": {}
+    }
+  ]
+}

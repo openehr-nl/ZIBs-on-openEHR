@@ -1,0 +1,189 @@
+{
+  "templateId" : "Lichaamslengte-v3.1.1(2020NL)",
+  "version" : "2.3",
+  "defaultLanguage" : "nl",
+  "languages" : [ "nl" ],
+  "tree" : {
+    "id" : "lichaamslengte-v3.1.1_2020nl",
+    "name" : "Lichaamslengte-v3.1.1(2020NL)",
+    "localizedName" : "Lichaamslengte-v3.1.1(2020NL)",
+    "rmType" : "OBSERVATION",
+    "nodeId" : "openEHR-EHR-OBSERVATION.height.v2",
+    "min" : 1,
+    "max" : 1,
+    "localizedNames" : {
+      "nl" : "Lichaamslengte-v3.1.1(2020NL)"
+    },
+    "localizedDescriptions" : {
+      "nl" : "De lichaamslengte wordt gemeten vanaf de kruin van het hoofd tot en met de voetzool. In het engelse taaldomein wordt er verschil gemaakt tussen hoogte (height) en lengte (length), waarbij hoogte staande gemeten wordt en lengte liggend."
+    },
+    "annotations" : {
+      "comment" : "Hoogte wordt gemeten bij een individu in een staande houding en lichaamslengte in een liggende positie."
+    },
+    "aqlPath" : "",
+    "children" : [ {
+      "id" : "elke_gebeurtenis",
+      "name" : "Elke gebeurtenis",
+      "localizedName" : "Elke gebeurtenis",
+      "rmType" : "EVENT",
+      "nodeId" : "at0002",
+      "min" : 0,
+      "max" : -1,
+      "localizedNames" : {
+        "nl" : "Elke gebeurtenis"
+      },
+      "localizedDescriptions" : {
+        "nl" : "*Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time.(en)"
+      },
+      "aqlPath" : "/data[at0001]/events[at0002]",
+      "children" : [ {
+        "id" : "lengtewaarde",
+        "name" : "LengteWaarde",
+        "localizedName" : "LengteWaarde",
+        "rmType" : "DV_QUANTITY",
+        "nodeId" : "at0004",
+        "min" : 1,
+        "max" : 1,
+        "localizedNames" : {
+          "nl" : "LengteWaarde"
+        },
+        "localizedDescriptions" : {
+          "nl" : "De lengte van het lichaam vanaf de kruin van het hoofd tot en met de voetzool."
+        },
+        "aqlPath" : "/data[at0001]/events[at0002]/data[at0003]/items[at0004,'LengteWaarde']/value",
+        "inputs" : [ {
+          "suffix" : "magnitude",
+          "type" : "DECIMAL"
+        }, {
+          "suffix" : "unit",
+          "type" : "CODED_TEXT",
+          "list" : [ {
+            "value" : "cm",
+            "label" : "cm",
+            "validation" : {
+              "range" : {
+                "minOp" : ">=",
+                "min" : 0.0,
+                "maxOp" : "<=",
+                "max" : 1000.0
+              }
+            }
+          }, {
+            "value" : "[in_i]",
+            "label" : "[in_i]",
+            "localizedLabels" : {
+              "nl" : "in"
+            },
+            "validation" : {
+              "range" : {
+                "minOp" : ">=",
+                "min" : 0.0,
+                "maxOp" : "<=",
+                "max" : 250.0
+              }
+            }
+          } ]
+        } ],
+        "termBindings" : {
+          "LOINC" : {
+            "value" : "[LOINC::8302-2]",
+            "terminologyId" : "LOINC"
+          }
+        }
+      }, {
+        "id" : "toelichting",
+        "name" : "Toelichting",
+        "localizedName" : "Toelichting",
+        "rmType" : "DV_TEXT",
+        "nodeId" : "at0018",
+        "min" : 0,
+        "max" : 1,
+        "localizedNames" : {
+          "nl" : "Toelichting"
+        },
+        "localizedDescriptions" : {
+          "nl" : "Extra informatie over de meting, die niet past binnen andere velden."
+        },
+        "aqlPath" : "/data[at0001]/events[at0002]/data[at0003]/items[at0018,'Toelichting']/value",
+        "inputs" : [ {
+          "type" : "TEXT"
+        } ]
+      }, {
+        "id" : "positie",
+        "name" : "Positie",
+        "localizedName" : "Positie",
+        "rmType" : "DV_CODED_TEXT",
+        "nodeId" : "at0014",
+        "min" : 0,
+        "max" : 1,
+        "dependsOn" : [ "lengtewaarde", "toelichting" ],
+        "localizedNames" : {
+          "nl" : "Positie"
+        },
+        "localizedDescriptions" : {
+          "nl" : "Positie tijdens de meting, van de gemeten persoon."
+        },
+        "aqlPath" : "/data[at0001]/events[at0002]/state[at0013]/items[at0014]/value",
+        "inputs" : [ {
+          "suffix" : "code",
+          "type" : "CODED_TEXT",
+          "list" : [ {
+            "value" : "at0016",
+            "label" : "Staand",
+            "localizedLabels" : {
+              "nl" : "Staand"
+            },
+            "localizedDescriptions" : {
+              "nl" : "De lengte is gemeten, staand op beide voeten met het gewicht gelijkmatig verdeeld, hielen tegen elkaar en beide billen en hakken in contact met een verticale achterkant."
+            }
+          }, {
+            "value" : "at0020",
+            "label" : "Liggend",
+            "localizedLabels" : {
+              "nl" : "Liggend"
+            },
+            "localizedDescriptions" : {
+              "nl" : "De lengte is liggend gemeten, volledig uitgestrekt, plat bekken, benen gestrekt en voeten gebogen."
+            }
+          } ],
+          "defaultValue" : "at0016"
+        } ]
+      }, {
+        "id" : "time",
+        "name" : "Time",
+        "rmType" : "DV_DATE_TIME",
+        "min" : 0,
+        "max" : 1,
+        "aqlPath" : "/data[at0001]/events[at0002]/time",
+        "inputs" : [ {
+          "type" : "DATETIME"
+        } ],
+        "inContext" : true
+      } ]
+    }, {
+      "id" : "language",
+      "name" : "Language",
+      "rmType" : "CODE_PHRASE",
+      "min" : 0,
+      "max" : 1,
+      "aqlPath" : "/language",
+      "inContext" : true
+    }, {
+      "id" : "encoding",
+      "name" : "Encoding",
+      "rmType" : "CODE_PHRASE",
+      "min" : 0,
+      "max" : 1,
+      "aqlPath" : "/encoding",
+      "inContext" : true
+    }, {
+      "id" : "subject",
+      "name" : "Subject",
+      "rmType" : "PARTY_PROXY",
+      "min" : 0,
+      "max" : 1,
+      "aqlPath" : "/subject",
+      "inContext" : true
+    } ]
+  }
+}
