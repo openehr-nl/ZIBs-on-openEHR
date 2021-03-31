@@ -1,0 +1,6 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Facial muscles totally relaxed,Face1,1,CN_Gezichtsspanning,2.16.840.1.113883.2.4.3.11.60.40.4.20.6,Gezichtsspieren volkomen ontspannen,,,
+Normal facial tone,Face2,2,CN_Gezichtsspanning,2.16.840.1.113883.2.4.3.11.60.40.4.20.6,Normale spanning van het gezicht,,,
+Tension evident in some facial muscles,Face3,3,CN_Gezichtsspanning,2.16.840.1.113883.2.4.3.11.60.40.4.20.6,Spanning duidelijk in sommige gelaatsspieren (niet aanhoudend),,,
+Tension evident throughout facial muscles,Face4,4,CN_Gezichtsspanning,2.16.840.1.113883.2.4.3.11.60.40.4.20.6,Spanning duidelijk in alle gelaatsspieren (aanhoudend),,,
+Facial muscles contorted and grimacing,Face5,5,CN_Gezichtsspanning,2.16.840.1.113883.2.4.3.11.60.40.4.20.6,Gezichtsspieren verwrongen en in een grimas,,,

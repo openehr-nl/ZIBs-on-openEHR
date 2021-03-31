@@ -1,0 +1,6 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Spontaneous,E4,4,GCS_Eyes,2.16.840.1.113883.2.4.3.11.60.40.4.2.1,Spontaan [De ogen worden geopend zonder aansporing,,,
+To sound,E3,3,GCS_Eyes,2.16.840.1.113883.2.4.3.11.60.40.4.2.1,Bij aanspreken of aanroepen [De ogen worden pas geopend op aanspreken van de patiënt],,,
+To stimuli,E2,2,GCS_Eyes,2.16.840.1.113883.2.4.3.11.60.40.4.2.1,Bij een prikkel [De ogen worden pas geopend na geven van een fysieke prikkel],,,
+No response,E1,1,GCS_Eyes,2.16.840.1.113883.2.4.3.11.60.40.4.2.1,Geen reactie [De ogen blijven gesloten onder elke omstandigheid],,,
+Not applicable,NA,0,NullFlavor,2.16.840.1.113883.5.1008,Niet testbaar door een lokale beperkende factor,,,

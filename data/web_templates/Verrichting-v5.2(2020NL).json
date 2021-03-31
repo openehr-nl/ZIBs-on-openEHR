@@ -1,0 +1,695 @@
+{
+  "templateId" : "Verrichting-v5.2(2020NL)",
+  "version" : "2.3",
+  "defaultLanguage" : "en",
+  "languages" : [ "en" ],
+  "tree" : {
+    "id" : "verrichting-v5.2_2020nl",
+    "name" : "Verrichting-v5.2(2020NL)",
+    "localizedName" : "Verrichting-v5.2(2020NL)",
+    "rmType" : "ACTION",
+    "nodeId" : "openEHR-EHR-ACTION.procedure.v1",
+    "min" : 1,
+    "max" : 1,
+    "localizedNames" : {
+      "en" : "Verrichting-v5.2(2020NL)"
+    },
+    "localizedDescriptions" : {
+      "en" : "A clinical activity carried out for screening, investigative, diagnostic, curative, therapeutic, evaluative or palliative purposes."
+    },
+    "aqlPath" : "",
+    "children" : [ {
+      "id" : "ism_transition",
+      "name" : "Ism_transition",
+      "rmType" : "ISM_TRANSITION",
+      "min" : 0,
+      "max" : 1,
+      "aqlPath" : "/ism_transition",
+      "children" : [ {
+        "id" : "current_state",
+        "name" : "Current_state",
+        "rmType" : "DV_CODED_TEXT",
+        "min" : 1,
+        "max" : 1,
+        "aqlPath" : "/ism_transition/current_state",
+        "inputs" : [ {
+          "suffix" : "code",
+          "type" : "CODED_TEXT",
+          "list" : [ {
+            "value" : "530"
+          }, {
+            "value" : "245"
+          }, {
+            "value" : "531"
+          }, {
+            "value" : "532"
+          }, {
+            "value" : "524"
+          }, {
+            "value" : "526"
+          }, {
+            "value" : "527"
+          }, {
+            "value" : "528"
+          }, {
+            "value" : "529"
+          } ]
+        } ],
+        "inContext" : true
+      }, {
+        "id" : "transition",
+        "name" : "Transition",
+        "rmType" : "DV_CODED_TEXT",
+        "min" : 0,
+        "max" : 1,
+        "aqlPath" : "/ism_transition/transition",
+        "inputs" : [ {
+          "suffix" : "code",
+          "type" : "TEXT"
+        }, {
+          "suffix" : "value",
+          "type" : "TEXT"
+        } ],
+        "inContext" : true
+      }, {
+        "id" : "careflow_step",
+        "name" : "Careflow_step",
+        "rmType" : "DV_CODED_TEXT",
+        "min" : 0,
+        "max" : 1,
+        "aqlPath" : "/ism_transition/careflow_step",
+        "inputs" : [ {
+          "suffix" : "code",
+          "type" : "CODED_TEXT",
+          "list" : [ {
+            "value" : "at0004",
+            "label" : "Procedure planned",
+            "localizedLabels" : {
+              "en" : "Procedure planned"
+            },
+            "currentStates" : [ "526" ]
+          }, {
+            "value" : "at0034",
+            "label" : "X - Procedure planned",
+            "localizedLabels" : {
+              "en" : "X - Procedure planned"
+            },
+            "currentStates" : [ "524" ]
+          }, {
+            "value" : "at0007",
+            "label" : "Procedure request sent",
+            "localizedLabels" : {
+              "en" : "Procedure request sent"
+            },
+            "currentStates" : [ "526" ]
+          }, {
+            "value" : "at0035",
+            "label" : "X - Procedure request sent",
+            "localizedLabels" : {
+              "en" : "X - Procedure request sent"
+            },
+            "currentStates" : [ "524" ]
+          }, {
+            "value" : "at0038",
+            "label" : "Procedure postponed",
+            "localizedLabels" : {
+              "en" : "Procedure postponed"
+            },
+            "currentStates" : [ "527" ]
+          }, {
+            "value" : "at0039",
+            "label" : "Procedure cancelled",
+            "localizedLabels" : {
+              "en" : "Procedure cancelled"
+            },
+            "currentStates" : [ "528" ]
+          }, {
+            "value" : "at0036",
+            "label" : "Procedure scheduled",
+            "localizedLabels" : {
+              "en" : "Procedure scheduled"
+            },
+            "currentStates" : [ "529" ]
+          }, {
+            "value" : "at0068",
+            "label" : "Procedure commenced",
+            "localizedLabels" : {
+              "en" : "Procedure commenced"
+            },
+            "currentStates" : [ "245" ]
+          }, {
+            "value" : "at0047",
+            "label" : "Procedure performed",
+            "localizedLabels" : {
+              "en" : "Procedure performed"
+            },
+            "currentStates" : [ "245" ]
+          }, {
+            "value" : "at0040",
+            "label" : "Procedure suspended",
+            "localizedLabels" : {
+              "en" : "Procedure suspended"
+            },
+            "currentStates" : [ "530" ]
+          }, {
+            "value" : "at0041",
+            "label" : "Procedure aborted",
+            "localizedLabels" : {
+              "en" : "Procedure aborted"
+            },
+            "currentStates" : [ "531" ]
+          }, {
+            "value" : "at0043",
+            "label" : "Procedure completed",
+            "localizedLabels" : {
+              "en" : "Procedure completed"
+            },
+            "currentStates" : [ "532" ]
+          } ]
+        } ],
+        "inContext" : true
+      } ],
+      "inContext" : true
+    }, {
+      "id" : "procedure_name",
+      "name" : "Procedure name",
+      "localizedName" : "Procedure name",
+      "rmType" : "DV_TEXT",
+      "nodeId" : "at0002",
+      "min" : 1,
+      "max" : 1,
+      "localizedNames" : {
+        "en" : "Procedure name"
+      },
+      "localizedDescriptions" : {
+        "en" : "Identification of the procedure by name."
+      },
+      "annotations" : {
+        "comment" : "Coding of the specific procedure with a terminology is preferred, where possible."
+      },
+      "aqlPath" : "/description[at0001]/items[at0002]/value",
+      "inputs" : [ {
+        "type" : "TEXT"
+      } ]
+    }, {
+      "id" : "description",
+      "name" : "Description",
+      "localizedName" : "Description",
+      "rmType" : "DV_TEXT",
+      "nodeId" : "at0049",
+      "min" : 0,
+      "max" : 1,
+      "localizedNames" : {
+        "en" : "Description"
+      },
+      "localizedDescriptions" : {
+        "en" : "Narrative description about the procedure, as appropriate for the pathway step."
+      },
+      "annotations" : {
+        "comment" : "For example: description about the performance and findings from the the procedure, the aborted attempt or the cancellation of the procedure."
+      },
+      "aqlPath" : "/description[at0001]/items[at0049]/value",
+      "inputs" : [ {
+        "type" : "TEXT"
+      } ]
+    }, {
+      "id" : "method",
+      "name" : "Method",
+      "localizedName" : "Method",
+      "rmType" : "DV_TEXT",
+      "nodeId" : "at0065",
+      "min" : 0,
+      "max" : -1,
+      "localizedNames" : {
+        "en" : "Method"
+      },
+      "localizedDescriptions" : {
+        "en" : "Identification of specific method or technique for the procedure."
+      },
+      "annotations" : {
+        "comment" : "Use this data element to record simple terms or a narrative description. If the requirements for recording the method require more complex modelling then this can be represented by additional archetypes within the 'Procedure detail' SLOT in this archetype. If the method is included in the 'Procedure name' via precoordinated codes, this data element becomes redundant."
+      },
+      "aqlPath" : "/description[at0001]/items[at0065]/value",
+      "inputs" : [ {
+        "type" : "TEXT"
+      } ]
+    }, {
+      "id" : "urgency",
+      "name" : "Urgency",
+      "localizedName" : "Urgency",
+      "rmType" : "DV_TEXT",
+      "nodeId" : "at0058",
+      "min" : 0,
+      "max" : 1,
+      "localizedNames" : {
+        "en" : "Urgency"
+      },
+      "localizedDescriptions" : {
+        "en" : "Urgency of the procedure."
+      },
+      "annotations" : {
+        "comment" : "Coding with a terminology is preferred, where possible."
+      },
+      "aqlPath" : "/description[at0001]/items[at0058]/value",
+      "inputs" : [ {
+        "type" : "TEXT"
+      } ]
+    }, {
+      "id" : "body_site",
+      "name" : "Body site",
+      "localizedName" : "Body site",
+      "rmType" : "DV_TEXT",
+      "nodeId" : "at0063",
+      "min" : 0,
+      "max" : -1,
+      "localizedNames" : {
+        "en" : "Body site"
+      },
+      "localizedDescriptions" : {
+        "en" : "Identification of the body site for the procedure."
+      },
+      "annotations" : {
+        "comment" : "Occurrences for this data element are unbounded to allow for clinical scenarios such as removing multiple skin lesions in different places, but where all of the other attributes are identical. Use this data element to record simple terms or precoordinated anatomical locations. If the requirements for recording the anatomical location are determined at run-time by the application or require more complex modelling such as relative locations then use the CLUSTER.anatomical_location or CLUSTER.relative_location within the 'Procedure detail' SLOT in this archetype. If the anatomical location is included in the 'Procedure name' via precoordinated codes, this data element becomes redundant."
+      },
+      "aqlPath" : "/description[at0001]/items[at0063]/value",
+      "inputs" : [ {
+        "type" : "TEXT"
+      } ]
+    }, {
+      "id" : "outcome",
+      "name" : "Outcome",
+      "localizedName" : "Outcome",
+      "rmType" : "DV_TEXT",
+      "nodeId" : "at0048",
+      "min" : 0,
+      "max" : -1,
+      "localizedNames" : {
+        "en" : "Outcome"
+      },
+      "localizedDescriptions" : {
+        "en" : "Outcome of procedure performed."
+      },
+      "annotations" : {
+        "comment" : "Coding with a terminology is preferred, where possible."
+      },
+      "aqlPath" : "/description[at0001]/items[at0048]/value",
+      "inputs" : [ {
+        "type" : "TEXT"
+      } ]
+    }, {
+      "id" : "procedural_difficulty",
+      "name" : "Procedural difficulty",
+      "localizedName" : "Procedural difficulty",
+      "rmType" : "DV_TEXT",
+      "nodeId" : "at0069",
+      "min" : 0,
+      "max" : -1,
+      "localizedNames" : {
+        "en" : "Procedural difficulty"
+      },
+      "localizedDescriptions" : {
+        "en" : "Difficulties or issues encountered during performance of the procedure."
+      },
+      "annotations" : {
+        "comment" : "Examples: The patient was agitated, insufficient emptying of the stomach before gastroscopy, a tumour in the bile ducts made it impossible to pass the scope through."
+      },
+      "aqlPath" : "/description[at0001]/items[at0069]/value",
+      "inputs" : [ {
+        "type" : "TEXT"
+      } ]
+    }, {
+      "id" : "complication",
+      "name" : "Complication",
+      "localizedName" : "Complication",
+      "rmType" : "DV_TEXT",
+      "nodeId" : "at0006",
+      "min" : 0,
+      "max" : -1,
+      "localizedNames" : {
+        "en" : "Complication"
+      },
+      "localizedDescriptions" : {
+        "en" : "Details about any complication arising from the procedure."
+      },
+      "annotations" : {
+        "comment" : "Use this data element to record simple terms or precoordinated complications. If the requirements for recording complication are more complex then use of a specific CLUSTER archetype within the 'Procedure detail' SLOT in this archetype is advised and this data element becomes redundant. Examples: Hematuria after a kidney biopsy, tissue irritation after insertion of intravenous catheter."
+      },
+      "aqlPath" : "/description[at0001]/items[at0006]/value",
+      "inputs" : [ {
+        "type" : "TEXT"
+      } ]
+    }, {
+      "id" : "scheduled_date_time",
+      "name" : "Scheduled date/time",
+      "localizedName" : "Scheduled date/time",
+      "rmType" : "DV_DATE_TIME",
+      "nodeId" : "at0066",
+      "min" : 0,
+      "max" : 1,
+      "localizedNames" : {
+        "en" : "Scheduled date/time"
+      },
+      "localizedDescriptions" : {
+        "en" : "The date and/or time on which the procedure is intended to be performed."
+      },
+      "annotations" : {
+        "comment" : "Only for use in association with the 'Procedure scheduled' pathway step."
+      },
+      "aqlPath" : "/description[at0001]/items[at0066]/value",
+      "inputs" : [ {
+        "type" : "DATETIME"
+      } ]
+    }, {
+      "id" : "final_end_date_time",
+      "name" : "Final end date/time",
+      "localizedName" : "Final end date/time",
+      "rmType" : "DV_DATE_TIME",
+      "nodeId" : "at0060",
+      "min" : 0,
+      "max" : 1,
+      "localizedNames" : {
+        "en" : "Final end date/time"
+      },
+      "localizedDescriptions" : {
+        "en" : "The date and/or time when the entire procedure, or the last component of a multicomponent procedure, was finished."
+      },
+      "annotations" : {
+        "comment" : "Only for use in association with the 'Procedure performed' pathway step, and in situations where the procedure is repeated on multiple occasions before being completed or there are multiple components to the whole procedure. This may be the same as the RM time attribute for the 'Procedure completed' pathway step."
+      },
+      "aqlPath" : "/description[at0001]/items[at0060]/value",
+      "inputs" : [ {
+        "type" : "DATETIME"
+      } ]
+    }, {
+      "id" : "total_duration",
+      "name" : "Total duration",
+      "localizedName" : "Total duration",
+      "rmType" : "DV_DURATION",
+      "nodeId" : "at0061",
+      "min" : 0,
+      "max" : 1,
+      "localizedNames" : {
+        "en" : "Total duration"
+      },
+      "localizedDescriptions" : {
+        "en" : "The total amount of time taken to complete the procedure, which may include time spent during the active phase of the procedure plus time during which the procedure was suspended."
+      },
+      "annotations" : {
+        "comment" : "Only for use in association with the 'Procedure completed' pathway steps."
+      },
+      "aqlPath" : "/description[at0001]/items[at0061]/value",
+      "inputs" : [ {
+        "suffix" : "year",
+        "type" : "INTEGER",
+        "validation" : {
+          "range" : {
+            "minOp" : ">=",
+            "min" : 0
+          }
+        },
+        "defaultValue" : 0
+      }, {
+        "suffix" : "month",
+        "type" : "INTEGER",
+        "validation" : {
+          "range" : {
+            "minOp" : ">=",
+            "min" : 0
+          }
+        },
+        "defaultValue" : 0
+      }, {
+        "suffix" : "day",
+        "type" : "INTEGER",
+        "validation" : {
+          "range" : {
+            "minOp" : ">=",
+            "min" : 0
+          }
+        },
+        "defaultValue" : 0
+      }, {
+        "suffix" : "week",
+        "type" : "INTEGER",
+        "validation" : {
+          "range" : {
+            "minOp" : ">=",
+            "min" : 0
+          }
+        },
+        "defaultValue" : 0
+      }, {
+        "suffix" : "hour",
+        "type" : "INTEGER",
+        "validation" : {
+          "range" : {
+            "minOp" : ">=",
+            "min" : 0
+          }
+        },
+        "defaultValue" : 0
+      }, {
+        "suffix" : "minute",
+        "type" : "INTEGER",
+        "validation" : {
+          "range" : {
+            "minOp" : ">=",
+            "min" : 0
+          }
+        },
+        "defaultValue" : 0
+      }, {
+        "suffix" : "second",
+        "type" : "INTEGER",
+        "validation" : {
+          "range" : {
+            "minOp" : ">=",
+            "min" : 0
+          }
+        },
+        "defaultValue" : 0
+      } ]
+    }, {
+      "id" : "procedure_type",
+      "name" : "Procedure type",
+      "localizedName" : "Procedure type",
+      "rmType" : "DV_TEXT",
+      "nodeId" : "at0067",
+      "min" : 0,
+      "max" : 1,
+      "localizedNames" : {
+        "en" : "Procedure type"
+      },
+      "localizedDescriptions" : {
+        "en" : "The type of procedure."
+      },
+      "annotations" : {
+        "comment" : "This pragmatic data element may be used to support organisation within the user interface."
+      },
+      "aqlPath" : "/description[at0001]/items[at0067]/value",
+      "inputs" : [ {
+        "type" : "TEXT"
+      } ]
+    }, {
+      "id" : "reason",
+      "name" : "Reason",
+      "localizedName" : "Reason",
+      "rmType" : "DV_TEXT",
+      "nodeId" : "at0014",
+      "min" : 0,
+      "max" : -1,
+      "localizedNames" : {
+        "en" : "Reason"
+      },
+      "localizedDescriptions" : {
+        "en" : "Reason that the activity or care pathway step for the identified procedure was carried out."
+      },
+      "annotations" : {
+        "comment" : "For example: the reason for the cancellation or suspension of the procedure."
+      },
+      "aqlPath" : "/description[at0001]/items[at0014]/value",
+      "inputs" : [ {
+        "type" : "TEXT"
+      } ]
+    }, {
+      "id" : "comment",
+      "name" : "Comment",
+      "localizedName" : "Comment",
+      "rmType" : "DV_TEXT",
+      "nodeId" : "at0005",
+      "min" : 0,
+      "max" : 1,
+      "localizedNames" : {
+        "en" : "Comment"
+      },
+      "localizedDescriptions" : {
+        "en" : "Additional narrative about the activity or care pathway step not captured in other fields."
+      },
+      "aqlPath" : "/description[at0001]/items[at0005]/value",
+      "inputs" : [ {
+        "type" : "TEXT"
+      } ]
+    }, {
+      "id" : "requestor_order_identifier",
+      "name" : "Requestor order identifier",
+      "localizedName" : "Requestor order identifier",
+      "rmType" : "ELEMENT",
+      "nodeId" : "at0054",
+      "min" : 0,
+      "max" : 1,
+      "localizedNames" : {
+        "en" : "Requestor order identifier"
+      },
+      "localizedDescriptions" : {
+        "en" : "The local ID assigned to the order by the healthcare provider or organisation requesting the service."
+      },
+      "annotations" : {
+        "comment" : "This is equivalent to Placer Order Number in HL7 v2 specifications."
+      },
+      "aqlPath" : "/protocol[at0053]/items[at0054]",
+      "children" : [ {
+        "id" : "text_value",
+        "localizedName" : "Requestor order identifier",
+        "rmType" : "DV_TEXT",
+        "nodeId" : "",
+        "min" : 0,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "Requestor order identifier"
+        },
+        "localizedDescriptions" : {
+          "en" : "The local ID assigned to the order by the healthcare provider or organisation requesting the service."
+        },
+        "aqlPath" : "/protocol[at0053]/items[at0054]/value",
+        "inputs" : [ {
+          "type" : "TEXT"
+        } ]
+      }, {
+        "id" : "identifier_value",
+        "localizedName" : "Requestor order identifier",
+        "rmType" : "DV_IDENTIFIER",
+        "nodeId" : "",
+        "min" : 0,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "Requestor order identifier"
+        },
+        "localizedDescriptions" : {
+          "en" : "The local ID assigned to the order by the healthcare provider or organisation requesting the service."
+        },
+        "aqlPath" : "/protocol[at0053]/items[at0054]/value",
+        "inputs" : [ {
+          "suffix" : "id",
+          "type" : "TEXT"
+        }, {
+          "suffix" : "type",
+          "type" : "TEXT"
+        }, {
+          "suffix" : "issuer",
+          "type" : "TEXT"
+        }, {
+          "suffix" : "assigner",
+          "type" : "TEXT"
+        } ]
+      } ]
+    }, {
+      "id" : "receiver_order_identifier",
+      "name" : "Receiver order identifier",
+      "localizedName" : "Receiver order identifier",
+      "rmType" : "ELEMENT",
+      "nodeId" : "at0056",
+      "min" : 0,
+      "max" : 1,
+      "localizedNames" : {
+        "en" : "Receiver order identifier"
+      },
+      "localizedDescriptions" : {
+        "en" : "The ID assigned to the order by the healthcare provider or organisation receiving the request for service. This is also referred to as Filler Order Identifier."
+      },
+      "annotations" : {
+        "comment" : "This is equivalent to Filler Order Number in HL7 v2 specifications."
+      },
+      "aqlPath" : "/protocol[at0053]/items[at0056]",
+      "children" : [ {
+        "id" : "text_value",
+        "localizedName" : "Receiver order identifier",
+        "rmType" : "DV_TEXT",
+        "nodeId" : "",
+        "min" : 0,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "Receiver order identifier"
+        },
+        "localizedDescriptions" : {
+          "en" : "The ID assigned to the order by the healthcare provider or organisation receiving the request for service. This is also referred to as Filler Order Identifier."
+        },
+        "aqlPath" : "/protocol[at0053]/items[at0056]/value",
+        "inputs" : [ {
+          "type" : "TEXT"
+        } ]
+      }, {
+        "id" : "identifier_value",
+        "localizedName" : "Receiver order identifier",
+        "rmType" : "DV_IDENTIFIER",
+        "nodeId" : "",
+        "min" : 0,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "Receiver order identifier"
+        },
+        "localizedDescriptions" : {
+          "en" : "The ID assigned to the order by the healthcare provider or organisation receiving the request for service. This is also referred to as Filler Order Identifier."
+        },
+        "aqlPath" : "/protocol[at0053]/items[at0056]/value",
+        "inputs" : [ {
+          "suffix" : "id",
+          "type" : "TEXT"
+        }, {
+          "suffix" : "type",
+          "type" : "TEXT"
+        }, {
+          "suffix" : "issuer",
+          "type" : "TEXT"
+        }, {
+          "suffix" : "assigner",
+          "type" : "TEXT"
+        } ]
+      } ]
+    }, {
+      "id" : "time",
+      "name" : "Time",
+      "rmType" : "DV_DATE_TIME",
+      "min" : 0,
+      "max" : 1,
+      "aqlPath" : "/time",
+      "inputs" : [ {
+        "type" : "DATETIME"
+      } ],
+      "inContext" : true
+    }, {
+      "id" : "language",
+      "name" : "Language",
+      "rmType" : "CODE_PHRASE",
+      "min" : 0,
+      "max" : 1,
+      "aqlPath" : "/language",
+      "inContext" : true
+    }, {
+      "id" : "encoding",
+      "name" : "Encoding",
+      "rmType" : "CODE_PHRASE",
+      "min" : 0,
+      "max" : 1,
+      "aqlPath" : "/encoding",
+      "inContext" : true
+    }, {
+      "id" : "subject",
+      "name" : "Subject",
+      "rmType" : "PARTY_PROXY",
+      "min" : 0,
+      "max" : 1,
+      "aqlPath" : "/subject",
+      "inContext" : true
+    } ]
+  }
+}

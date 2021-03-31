@@ -1,0 +1,5 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Aterme datum berekend door middel van diagnostische ultrasonografie,31541000146106,,SNOMED CT,2.16.840.1.113883.6.96,Echoscopie,,,
+Aterme datum berekend op basis van laatste menstruatie,31521000146100,,SNOMED CT,2.16.840.1.113883.6.96,Laatste menstruatie,,,
+Aterme datum berekend op basis van ovulatie,31531000146103,,SNOMED CT,2.16.840.1.113883.6.96,Ovulatie,,,
+Other,OTH,,NullFlavor,2.16.840.1.113883.5.1008,Anders,,,

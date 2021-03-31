@@ -1,0 +1,9 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Operatiewond,112633009,,SNOMED CT,2.16.840.1.113883.6.96,Chirurgische wond,,,
+Verwonding,416462003,,SNOMED CT,2.16.840.1.113883.6.96,Traumatische wond,,,
+Ulcus van onderste extremiteit,95344007,,SNOMED CT,2.16.840.1.113883.6.96,Ulcus cruris,,,
+Metastase in huid,94579000,,SNOMED CT,2.16.840.1.113883.6.96,Oncologische ulcer,,,
+Röntgenulcus,403722002,,SNOMED CT,2.16.840.1.113883.6.96,Stralingswond,,,
+Diabetisch voetulcus,371087003,,SNOMED CT,2.16.840.1.113883.6.96,Ulcus van diabetische voet,,,
+Skin tear,428220001,,SNOMED CT,2.16.840.1.113883.6.96,Skin tear,,,
+Other,OTH,,NullFlavor,2.16.840.1.113883.5.1008,Anders,,,

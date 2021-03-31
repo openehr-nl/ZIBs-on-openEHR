@@ -1,0 +1,6 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Afwenden van crisissituatie,121491000146107,,SNOMED CT,2.16.840.1.113883.6.96,Afwenden  crisissituatie,,,
+Afwenden van situatie die kan resulteren in toebrengen van schade aan zichzelf of aan anderen,121481000146105,,SNOMED CT,2.16.840.1.113883.6.96,Afwenden  ernstig nadeel,,,
+Stabiliseren van geestelijke gezondheid,121651000146102,,SNOMED CT,2.16.840.1.113883.6.96,Stabiliseren  geestelijke gezondheid,,,
+Bevorderen van geestelijke gezondheid,385891009,,SNOMED CT,2.16.840.1.113883.6.96,Geestelijke gezondheid van betrokkene dusdanig te herstellen dat hij zijn autonomie zoveel mogelijk herwint,,,
+Bevorderen van fysieke gezondheid,121581000146106,,SNOMED CT,2.16.840.1.113883.6.96,Het stabiliseren of herstellen van de fysieke gezondheid van betrokkene in het geval diens gedrag als gevolg van zijn psychische stoornis leidt tot ernstig nadeel daarvoor,,,

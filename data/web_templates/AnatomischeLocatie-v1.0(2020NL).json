@@ -1,0 +1,97 @@
+{
+  "templateId" : "AnatomischeLocatie-v1.0(2020NL)",
+  "version" : "2.3",
+  "defaultLanguage" : "nl",
+  "languages" : [ "nl" ],
+  "tree" : {
+    "id" : "anatomische_locatie",
+    "name" : "Anatomische locatie",
+    "localizedName" : "Anatomische locatie",
+    "rmType" : "CLUSTER",
+    "nodeId" : "openEHR-EHR-CLUSTER.anatomical_location.v1",
+    "min" : 1,
+    "max" : 1,
+    "localizedNames" : {
+      "nl" : "Anatomische locatie"
+    },
+    "localizedDescriptions" : {
+      "nl" : "Een fysieke regio op of in het menselijk lichaam."
+    },
+    "aqlPath" : "",
+    "children" : [ {
+      "id" : "lichaamslocatie",
+      "name" : "Lichaamslocatie",
+      "localizedName" : "Lichaamslocatie",
+      "rmType" : "DV_TEXT",
+      "nodeId" : "at0001",
+      "min" : 1,
+      "max" : 1,
+      "localizedNames" : {
+        "nl" : "Lichaamslocatie"
+      },
+      "localizedDescriptions" : {
+        "nl" : "Identificatie van een enkele fysieke regio op of in het menselijk lichaam."
+      },
+      "aqlPath" : "/items[at0001]/value",
+      "inputs" : [ {
+        "type" : "TEXT"
+      } ]
+    }, {
+      "id" : "lateraliteit",
+      "name" : "Lateraliteit",
+      "localizedName" : "Lateraliteit",
+      "rmType" : "DV_CODED_TEXT",
+      "nodeId" : "at0002",
+      "min" : 0,
+      "max" : 1,
+      "localizedNames" : {
+        "nl" : "Lateraliteit"
+      },
+      "localizedDescriptions" : {
+        "nl" : "De zijde van het lichaam waarop de geïdentificeerde Lichaamslocatie zich bevindt."
+      },
+      "aqlPath" : "/items[at0002]/value",
+      "inputs" : [ {
+        "suffix" : "code",
+        "type" : "CODED_TEXT",
+        "list" : [ {
+          "value" : "at0003",
+          "label" : "Links",
+          "localizedLabels" : {
+            "nl" : "Links"
+          },
+          "localizedDescriptions" : {
+            "nl" : "Linkerzijde van het lichaam."
+          },
+          "termBindings" : {
+            "SNOMED-CT" : {
+              "value" : "[SNOMED-CT::7771000]",
+              "terminologyId" : "SNOMED-CT"
+            }
+          }
+        }, {
+          "value" : "at0004",
+          "label" : "Rechts",
+          "localizedLabels" : {
+            "nl" : "Rechts"
+          },
+          "localizedDescriptions" : {
+            "nl" : "Rechterzijde van het lichaam."
+          },
+          "termBindings" : {
+            "SNOMED-CT" : {
+              "value" : "[SNOMED-CT::24028007]",
+              "terminologyId" : "SNOMED-CT"
+            }
+          }
+        } ]
+      } ],
+      "termBindings" : {
+        "SNOMED-CT" : {
+          "value" : "[SNOMED-CT::272741003]",
+          "terminologyId" : "SNOMED-CT"
+        }
+      }
+    } ]
+  }
+}

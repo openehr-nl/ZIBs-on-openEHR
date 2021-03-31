@@ -1,0 +1,9 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Ambulatory,AMB,,ActCode,2.16.840.1.113883.5.4,Poliklinisch,,,
+Emergency,EMER,,ActCode,2.16.840.1.113883.5.4,SEH,,,
+Field,FLD,,ActCode,2.16.840.1.113883.5.4,Op lokatie,,,
+Home,HH,,ActCode,2.16.840.1.113883.5.4,Thuis,,,
+Inpatient,IMP,,ActCode,2.16.840.1.113883.5.4,Klinisch,,,
+Short Stay,SS,,ActCode,2.16.840.1.113883.5.4,Dagopname,,,
+Virtual,VR,,ActCode,2.16.840.1.113883.5.4,Virtueel,,,
+Other,OTH,,NullFlavor,2.16.840.1.113883.5.1008,Anders,,,

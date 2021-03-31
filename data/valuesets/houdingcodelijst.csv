@@ -1,0 +1,6 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Staande positie,10904000,,SNOMED CT,2.16.840.1.113883.6.96,Staande positie,,,
+Liggende positie,102538003,,SNOMED CT,2.16.840.1.113883.6.96,Liggende positie,,,
+Zittende positie,33586001,,SNOMED CT,2.16.840.1.113883.6.96,Zittende positie,,,
+Gekantelde positie,272587006,,SNOMED CT,2.16.840.1.113883.6.96,Achteroverleunende positie,,,
+Trendelenburg-ligging,34106002,,SNOMED CT,2.16.840.1.113883.6.96,Trendelenburgligging,,,

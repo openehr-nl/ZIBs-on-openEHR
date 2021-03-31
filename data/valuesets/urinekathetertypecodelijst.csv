@@ -1,0 +1,7 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Verblijfskatheter,23973005,,SNOMED CT,2.16.840.1.113883.6.96,Verblijfskatheter,,,
+Steriele urethrakatheter voor intermitterende katheterisatie,469715007,,SNOMED CT,2.16.840.1.113883.6.96,Eenmalige katheter,,,
+Condoomkatheter,337636000,,SNOMED CT,2.16.840.1.113883.6.96,Condoomkatheter,,,
+Suprapubische katheter,286861005,,SNOMED CT,2.16.840.1.113883.6.96,Suprapubische katheter,,,
+Dubbel-J-stent,257366006,,SNOMED CT,2.16.840.1.113883.6.96,Dubbel J catheter,,,
+Other,OTH,,NullFlavor,2.16.840.1.113883.5.1008,Anders,,,

@@ -1,0 +1,7 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Kleur van feces normaal,167605001,,SNOMED CT,2.16.840.1.113883.6.96,Normaal,,,
+Groene feces,167609007,,SNOMED CT,2.16.840.1.113883.6.96,Groen,,,
+Gele feces,167607009,,SNOMED CT,2.16.840.1.113883.6.96,Geel,,,
+Zwarte feces,267055007,,SNOMED CT,2.16.840.1.113883.6.96,Zwart,,,
+Grijswitte feces,267056008,,SNOMED CT,2.16.840.1.113883.6.96,Grijswit,,,
+Rode feces,64412006,,SNOMED CT,2.16.840.1.113883.6.96,Rood,,,

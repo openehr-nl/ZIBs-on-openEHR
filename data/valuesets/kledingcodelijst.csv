@@ -1,0 +1,5 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Undressed,UNDRESSED,,ContextKleding,2.16.840.1.113883.2.4.3.11.60.40.4.8.1,Zonder kleding.,,,
+Minimal dressed,MINIMAL,,ContextKleding,2.16.840.1.113883.2.4.3.11.60.40.4.8.1,Lichte kleding/ondergoed [Kleding die niet significant het gewicht beïnvloedt.],,,
+Fully dressed,FULL,,ContextKleding,2.16.840.1.113883.2.4.3.11.60.40.4.8.1,"Volledig gekleed, inclusief schoenen [Kleren die een significante bijdrage hebben aan het gewicht, inclusief schoenen.]",,,
+Diaper,DIAPER,,ContextKleding,2.16.840.1.113883.2.4.3.11.60.40.4.8.1,Luier [Individu draagt alleen een luier - zou significant aan het gewicht kunnen bijdragen.],,,

@@ -1,0 +1,4 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+In staat tot onafhankelijk zorgen voor persoonlijke gezondheid,27911000146108,,SNOMED CT,2.16.840.1.113883.6.96,Onafhankelijk,,,
+Heeft hulp nodig bij zorgen voor persoonlijke gezondheid,27931000146101,,SNOMED CT,2.16.840.1.113883.6.96,Hulp nodig,,,
+Niet in staat om te zorgen voor persoonlijke gezondheid,27951000146107,,SNOMED CT,2.16.840.1.113883.6.96,Volledig afhankelijk,,,

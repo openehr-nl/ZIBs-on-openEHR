@@ -1,0 +1,6 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+No spontaneous respiration,Vent1,1,CN_Ademhalingsreactie,2.16.840.1.113883.2.4.3.11.60.40.4.20.3,Geen spontane ademhaling,,,
+Spontaneous respiration on ventilator,Vent2,2,CN_Ademhalingsreactie,2.16.840.1.113883.2.4.3.11.60.40.4.20.3,Spontane ademhaling aan de beademing,,,
+Unrest or resistance to ventilator,Vent3,3,CN_Ademhalingsreactie,2.16.840.1.113883.2.4.3.11.60.40.4.20.3,Onrust of verzet tegen de beademing,,,
+Actively breathes against ventilator or coughs regularly,Vent4,4,CN_Ademhalingsreactie,2.16.840.1.113883.2.4.3.11.60.40.4.20.3,Ademt actief tegen de beademing in of hoest regelmatig,,,
+Fights ventilator,Vent5,5,CN_Ademhalingsreactie,2.16.840.1.113883.2.4.3.11.60.40.4.20.3,Vecht tegen de beademing,,,

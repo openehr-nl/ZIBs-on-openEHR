@@ -1,0 +1,9 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Responsible Party,RESP,,ParticipationType,2.16.840.1.113883.5.90,Hoofdbehandelaar,,,
+Referrer,REF,,ParticipationType,2.16.840.1.113883.5.90,Verwijzer,,,
+Performer,PRF,,ParticipationType,2.16.840.1.113883.5.90,Uitvoerder,,,
+Secondary Performer,SPRF,,ParticipationType,2.16.840.1.113883.5.90,Tweede uitvoerder,,,
+Consultant,CON,,ParticipationType,2.16.840.1.113883.5.90,Consulent,,,
+Attender,ATND,,ParticipationType,2.16.840.1.113883.5.90,Behandelaar,,,
+Casemanager,768832004,,SNOMED CT,2.16.840.1.113883.6.96,Case manager,,,
+Other,OTH,,NullFlavour,2.16.840.1.113883.5.1008,Anders,,,

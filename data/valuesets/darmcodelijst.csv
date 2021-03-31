@@ -1,0 +1,4 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Incontinent,FECAL0,0,BarthelDarm,2.16.840.1.113883.2.4.3.11.60.40.4.1.1,Incontinent,,,
+Ongelukje,FECAL1,1,BarthelDarm,2.16.840.1.113883.2.4.3.11.60.40.4.1.1,Af en toe een ongelukje,,,
+Continent,FECAL2,2,BarthelDarm,2.16.840.1.113883.2.4.3.11.60.40.4.1.1,Continent,,,

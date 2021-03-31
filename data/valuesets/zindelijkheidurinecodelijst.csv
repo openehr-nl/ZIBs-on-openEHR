@@ -1,0 +1,5 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Geen blaascontrole op kinderleeftijd,26411000146101,,SNOMED CT,2.16.840.1.113883.6.96,Niet zindelijk,,,
+Volledige blaascontrole uitsluitend overdag,29261000146107,,SNOMED CT,2.16.840.1.113883.6.96,"Zindelijk overdag, ’s nacht niet",,,
+Incidenteel urineverlies op kinderleeftijd,26431000146108,,SNOMED CT,2.16.840.1.113883.6.96,Af en toe een ongelukje,,,
+Volledige blaascontrole op kinderleeftijd,26391000146101,,SNOMED CT,2.16.840.1.113883.6.96,Volledig zindelijk,,,

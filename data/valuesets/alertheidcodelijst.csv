@@ -1,0 +1,6 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Deeply asleep,Alert1,1,CN_Alertheid,2.16.840.1.113883.2.4.3.11.60.40.4.20.1,"Diep in slaap (ogen dicht, geen reactie op omgeving)",,,
+Lightly asleep,Alert2,2,CN_Alertheid,2.16.840.1.113883.2.4.3.11.60.40.4.20.1,"Licht in slaap (ogen grotendeels gesloten, af en toe reactie)",,,
+Drowsy,Alert3,3,CN_Alertheid,2.16.840.1.113883.2.4.3.11.60.40.4.20.1,"Slaperig (kind sluit vaak zijn ogen, reageert minder op omgeving)",,,
+Awake and alert,Alert4,4,CN_Alertheid,2.16.840.1.113883.2.4.3.11.60.40.4.20.1,Wakker en alert (kind reageert op omgeving),,,
+Awake and hyperalert,Alert5,5,CN_Alertheid,2.16.840.1.113883.2.4.3.11.60.40.4.20.1,Wakker en hyper-alert (overdreven reactie op veranderingen),,,

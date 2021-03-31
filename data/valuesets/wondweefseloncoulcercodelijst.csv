@@ -1,0 +1,6 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Graad I,GRAAD1,,OncoUlcerWeefsel,2.16.840.1.113883.2.4.3.11.60.40.4.7.1,Graad I,,,
+Graad II,GRAAD2,,OncoUlcerWeefsel,2.16.840.1.113883.2.4.3.11.60.40.4.7.1,Graad II,,,
+Graad III,GRAAD3,,OncoUlcerWeefsel,2.16.840.1.113883.2.4.3.11.60.40.4.7.1,Graad III,,,
+Graad IV,GRAAD4,,OncoUlcerWeefsel,2.16.840.1.113883.2.4.3.11.60.40.4.7.1,Graad IV,,,
+Graad V,GRAAD5,,OncoUlcerWeefsel,2.16.840.1.113883.2.4.3.11.60.40.4.7.1,Graad V,,,

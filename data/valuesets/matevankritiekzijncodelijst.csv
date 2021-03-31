@@ -1,0 +1,5 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Licht,255604002,,SNOMED CT,2.16.840.1.113883.6.96,Licht,,,
+Matig,6736007,,SNOMED CT,2.16.840.1.113883.6.96,Matig,,,
+Ernstig,24484000,,SNOMED CT,2.16.840.1.113883.6.96,Ernstig,,,
+Fataal,399166001,,SNOMED CT,2.16.840.1.113883.6.96,Fataal,,,

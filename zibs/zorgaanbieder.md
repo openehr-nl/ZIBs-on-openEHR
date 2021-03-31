@@ -3,13 +3,10 @@ layout: zib
 parent: Mappings
 title: Zorgaanbieder
 version: 0.1
-zib:
-    name: Zorgaanbieder-v3.4
-    url: https://zibs.nl/wiki/Zorgaanbieder-v3.4(2020NL)
+zib: Zorgaanbieder-v3.4
 openEHR:
     templates: 
     archetypes: 
-    ckm: 
 status:
     mapping: Inrichten
     template: Inrichten

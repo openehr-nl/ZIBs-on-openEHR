@@ -1,0 +1,7 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Divorced,D,,MaritalStatus,2.16.840.1.113883.5.2,Gescheiden (huwelijk/geregistreerd partnerschap ontbonden),,,
+Married,M,,MaritalStatus,2.16.840.1.113883.5.2,Gehuwd,,,
+Never Married,S,,MaritalStatus,2.16.840.1.113883.5.2,Nooit gehuwd geweest/ geregistreerd partnerschap gehad [DISCOURAGED],,,
+Unmarried,U,,MaritalStatus,2.16.840.1.113883.5.2,Niet gehuwd,,,
+Domestic partner,T,,MaritalStatus,2.16.840.1.113883.5.2,Geregistreerd partnerschap,,,
+Widowed,W,,MaritalStatus,2.16.840.1.113883.5.2,Weduwe/weduwnaar,,,

@@ -1,0 +1,10 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+GX,GX,,G_DifferentiatiegraadTumor,2.16.840.1.113883.2.4.3.11.60.40.4.10.5,Differentiatiegraad kan niet beoordeeld worden.,,,
+G1,G1,,G_DifferentiatiegraadTumor,2.16.840.1.113883.2.4.3.11.60.40.4.10.5,Goed gedifferentieerd.,,,
+G2,G2,,G_DifferentiatiegraadTumor,2.16.840.1.113883.2.4.3.11.60.40.4.10.5,Matig gedifferentieerd.,,,
+G3,G3,,G_DifferentiatiegraadTumor,2.16.840.1.113883.2.4.3.11.60.40.4.10.5,Slecht gedifferentieerd.,,,
+G3-4,G3-4,,G_DifferentiatiegraadTumor,2.16.840.1.113883.2.4.3.11.60.40.4.10.5,Slecht gedifferentieerd of ongedifferentieerd.,,,
+G4,G4,,G_DifferentiatiegraadTumor,2.16.840.1.113883.2.4.3.11.60.40.4.10.5,Ongedifferentieerd.,,,
+G5,G5,,G_DifferentiatiegraadTumor,2.16.840.1.113883.2.4.3.11.60.40.4.10.5,Differentiatiegraad groep 5 (Gleason score: 9-10),,,
+LowMitoticRate,LowMitoticRate,,G_DifferentiatiegraadTumor,2.16.840.1.113883.2.4.3.11.60.40.4.10.5,Lage mitotische rato,,,
+HighMitoticRate,HighMitoticRate,,G_DifferentiatiegraadTumor,2.16.840.1.113883.2.4.3.11.60.40.4.10.5,Hoge mitotische rato,,,

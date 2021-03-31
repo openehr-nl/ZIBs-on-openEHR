@@ -1,0 +1,6 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+In staat om abstract te denken,281136009,,SNOMED CT,2.16.840.1.113883.6.96,Kan abstract denken,,,
+In staat om probleem op te lossen,716433009,,SNOMED CT,2.16.840.1.113883.6.96,Kan zelf problemen oplossen,,,
+Brede interesse,26381000146103,,SNOMED CT,2.16.840.1.113883.6.96,Heeft brede interesse,,,
+In staat om gevolgen van eigen gedrag te herkennen,26311000146109,,SNOMED CT,2.16.840.1.113883.6.96,Heeft inzicht in gevolgen van eigen gedrag,,,
+In staat om beredeneerde keuzes te maken,304687006,,SNOMED CT,2.16.840.1.113883.6.96,Kan beredeneerde keuzes maken,,,

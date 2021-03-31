@@ -1,0 +1,8 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+"Separate hard lumps, like nuts.",Type 1,,BristolStoolTypes,2.16.840.1.113883.2.4.3.11.60.40.4.3.1,"Losse harde keutels, zoals noten",,,
+Sausage-shaped but lumpy.,Type 2,,BristolStoolTypes,2.16.840.1.113883.2.4.3.11.60.40.4.3.1,"Als een worst, maar klonterig",,,
+Like sausage but with  cracks on its surface.,Type 3,,BristolStoolTypes,2.16.840.1.113883.2.4.3.11.60.40.4.3.1,"Als een worst, maar met barstjes aan de buitenkant",,,
+"Like sausage or snake, smooth and soft.",Type 4,,BristolStoolTypes,2.16.840.1.113883.2.4.3.11.60.40.4.3.1,"Als een worst of slang, glad en zacht",,,
+Soft blobs with clear-cut edges,Type 5,,BristolStoolTypes,2.16.840.1.113883.2.4.3.11.60.40.4.3.1,Zachte keutels met duidelijke randen,,,
+Fluffy pieces with ragged edges,Type 6,,BristolStoolTypes,2.16.840.1.113883.2.4.3.11.60.40.4.3.1,Zachte stukjes met gehavende randen,,,
+Entirely liquid,Type 7,,BristolStoolTypes,2.16.840.1.113883.2.4.3.11.60.40.4.3.1,Helemaal vloeibaar,,,

@@ -1,0 +1,6 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Gecorrigeerde visus,397536007,,SNOMED CT,2.16.840.1.113883.6.96,Gecorrigeerde visus (met eigen bril),,,
+Ongecorrigeerde visus,420050001,,SNOMED CT,2.16.840.1.113883.6.96,Ongecorrigeerde visus,,,
+Best-gecorrigeerde visus,419775003,,SNOMED CT,2.16.840.1.113883.6.96,Best gecorrigeerde visus(met optimale bril),,,
+Stereoscopic acuity,359750002,,SNOMED CT,2.16.840.1.113883.6.96,Stereoscopische visus,,,
+Other,OTH,,NullFlavor,2.16.840.1.113883.5.1008,"Anders, specificieer",,,

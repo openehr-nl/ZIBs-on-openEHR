@@ -1,0 +1,11 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Oriented [DEPRECATED],V5,5,GCS_Verbal,2.16.840.1.113883.2.4.3.11.60.40.4.2.3,Lachen en huilen [Lacht of huilt zachtjes] [DEPRECATED],,,
+Coos/babbles,V10,5,GCS_Verbal,2.16.840.1.113883.2.4.3.11.60.40.4.2.3,Kirt/brabbelt,,,
+Confused,V4,4,GCS_Verbal,2.16.840.1.113883.2.4.3.11.60.40.4.2.3,Huilen [Huilt en is onpasselijk] [DEPRECATED],,,
+Irritatable cries,V9,4,GCS_Verbal,2.16.840.1.113883.2.4.3.11.60.40.4.2.3,Huilt prikkelbaar,,,
+Inappropriate speech [DEPRECATED],V3,3,GCS_Verbal,2.16.840.1.113883.2.4.3.11.60.40.4.2.3,Niet adequaat huilen  [Aanhoudend huilen of krijsen] [DEPRECATED],,,
+Cries to pain,V8,3,GCS_Verbal,2.16.840.1.113883.2.4.3.11.60.40.4.2.3,Huilt van de pijn,,,
+Incomprehensible sounds [DEPRECATED],V2,2,GCS_Verbal,2.16.840.1.113883.2.4.3.11.60.40.4.2.3,Kreunen [Kreunen en onrustig/rusteloos] [DEPRECATED],,,
+Moans,V7,2,GCS_Verbal,2.16.840.1.113883.2.4.3.11.60.40.4.2.3,Jammert/kreunt,,,
+No response,V1,1,GCS_Verbal,2.16.840.1.113883.2.4.3.11.60.40.4.2.3,Geen reactie [Geen enkel verbale response],,,
+Not applicable,NA,0,NullFlavor,2.16.840.1.113883.5.1008,Not applicable,,,

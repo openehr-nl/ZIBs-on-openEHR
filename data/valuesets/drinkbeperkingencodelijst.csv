@@ -1,0 +1,4 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Moeite met bereiden van drank,286506008,,SNOMED CT,2.16.840.1.113883.6.96,Bereiden (openen/ uitschenken),,,
+Moeite met vastpakken van drank,307071002,,SNOMED CT,2.16.840.1.113883.6.96,Vastpakken,,,
+Moeite met naar mond brengen van drank,288876009,,SNOMED CT,2.16.840.1.113883.6.96,Naar mond brengen,,,

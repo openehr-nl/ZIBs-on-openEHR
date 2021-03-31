@@ -1,0 +1,5 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Palpatie,113011001,,SNOMED CT,2.16.840.1.113883.6.96,Palpatie (DEPRECATED),,,
+Auscultatie,37931006,,SNOMED CT,2.16.840.1.113883.6.96,Auscultatie,,,
+Bewaking met hartmonitor,88140007,,SNOMED CT,2.16.840.1.113883.6.96,Cardiale monitoring,,,
+ECG-bewaking,46825001,,SNOMED CT,2.16.840.1.113883.6.96,Electrocardiografie,,,

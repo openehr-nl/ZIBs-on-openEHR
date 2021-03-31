@@ -1,0 +1,4 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Urine-incontinentie,165232002,0,SNOMED CT,2.16.840.1.113883.6.96,Incontinent,,,
+Incidenteel urineverlies,165233007,1,SNOMED CT,2.16.840.1.113883.6.96,Af en toe een ongelukje (max. 1 keer per 24 uur),,,
+Volledig continent voor urine,165234001,2,SNOMED CT,2.16.840.1.113883.6.96,Continent (gedurende meer dan 7 dagen),,,

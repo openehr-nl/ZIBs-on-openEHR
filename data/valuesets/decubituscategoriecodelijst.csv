@@ -1,0 +1,5 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Decubitus graad 1,421076008,1,SNOMED CT,2.16.840.1.113883.6.96,Decubitus categorie 1,,,
+Decubitus graad 2,420324007,2,SNOMED CT,2.16.840.1.113883.6.96,Decubitus categorie 2,,,
+Decubitus graad 3,421927004,3,SNOMED CT,2.16.840.1.113883.6.96,Decubitus categorie 3,,,
+Decubitus graad 4,420597008,4,SNOMED CT,2.16.840.1.113883.6.96,Decubitus categorie 4,,,

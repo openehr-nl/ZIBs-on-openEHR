@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 
 public class ZibConverter {
 
-    private static final String HEADER = "ZIB_Id,ZIB_Naam,ZIB_Type,ZIB_Card,ZIB_DefCode,ZIB_Verwijzing,openEHR_Path,openEHR_Naam,openEHR_Type,openEHR_Card,openEHR_Term,Commentaar";
+    private static final String ZIB_HEADER = "ZIB_Id,ZIB_Naam,ZIB_Type,ZIB_Card,ZIB_DefCode,ZIB_Verwijzing,openEHR_Path,openEHR_Naam,openEHR_Type,openEHR_Card,openEHR_Term,Commentaar";
 
     private static final int ZIB_Id_COL = 11;
     private static final int ZIB_Naam_COL_MIN = 1;
@@ -19,6 +19,8 @@ public class ZibConverter {
     private static final int ZIB_Card_COL = 9;
     private static final int ZIB_DefCode_COL = 13;
     private static final int ZIB_Verwijzing_COL = 14;
+
+    private static final String VALUESET_HEADER = "ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar";
 
     private Workbook workbook;
 
@@ -37,6 +39,7 @@ public class ZibConverter {
             ZibConverter importer = new ZibConverter();
             importer.open(file);
             importer.convertZibToCsv(outputdir);
+            importer.convertValuesets(outputdir);
             importer.close();
         }
     }
@@ -58,9 +61,9 @@ public class ZibConverter {
 
         String zibnaam = getCellValue(sheet.getRow(rownum), ZIB_Naam_COL_MIN).toLowerCase(Locale.ROOT);
 
-        try(PrintStream out = new PrintStream(new FileOutputStream(outputdir + "/" + zibnaam + ".csv"))) {
+        try(PrintStream out = new PrintStream(new FileOutputStream(outputdir + "/mappings/" + zibnaam + ".csv"))) {
 
-            out.println(HEADER);
+            out.println(ZIB_HEADER);
 
             while (true) {
                 Row row = sheet.getRow(rownum);
@@ -94,11 +97,81 @@ public class ZibConverter {
         }
     }
 
-    private int getMergeHeight(Cell cell) {
+    private void convertValuesets(String outputdir) throws FileNotFoundException {
+        // Start after Data sheet, skip last sheet (Gebruiksvoorwaarden).
+        for(int i = workbook.getSheetIndex("Data") + 1; i < workbook.getNumberOfSheets() - 1; i++) {
+            Sheet sheet = workbook.getSheetAt(i);
+            if(sheet.getSheetName().equals("Assigning Authorities")) {
+                continue;
+            }
+            convertValueset(outputdir, sheet);
+        }
+    }
+
+    private void convertValueset(String outputdir, Sheet sheet) throws FileNotFoundException {
+        Objects.requireNonNull(sheet);
+
+        String valuesetName = getCellValue(sheet.getRow(2), 2).toLowerCase(Locale.ROOT);
+
+        Row headerRow = sheet.getRow(3);
+        final Integer VALUESET_Conceptnaam = findValue(headerRow, "Conceptnaam");
+        final Integer VALUESET_Conceptcode = findValue(headerRow, "Conceptcode");
+        final Integer VALUESET_Conceptwaarde = findValue(headerRow, "Conceptwaarde");
+        final Integer VALUESET_Codestelselnaam = findValue(headerRow, "Codestelselnaam");
+        final Integer VALUESET_Codesysteem_OID = findValue(headerRow, "Codesysteem OID");
+        final Integer VALUESET_Omschrijving = findValue(headerRow, "Omschrijving");
+        final Integer VALUESET_Extra = findValue(headerRow, "");
+
+        int rownum = 4;
+
+        try(PrintStream out = new PrintStream(new FileOutputStream(outputdir + "/valuesets/" + valuesetName + ".csv"))) {
+
+            out.println(VALUESET_HEADER);
+
+            while (true) {
+                Row row = sheet.getRow(rownum);
+                if (row == null) {
+                    break;
+                }
+
+                if(getMergeRegion(row.getCell(2)) != null) {
+                    // Comment, skip this.
+                    rownum++;
+                    continue;
+                }
+
+                String conceptnaam = escape(getOptionalCellValue(row, VALUESET_Conceptnaam));
+                String conceptcode = escape(getOptionalCellValue(row, VALUESET_Conceptcode));
+                String conceptwaarde = escape(getOptionalCellValue(row, VALUESET_Conceptwaarde));
+                String codestelselnaam = escape(getOptionalCellValue(row, VALUESET_Codestelselnaam));
+                String codesysteem_OID = escape(getOptionalCellValue(row, VALUESET_Codesysteem_OID));
+                String omschrijving = escape(getOptionalCellValue(row, VALUESET_Omschrijving));
+                // Because of a bug some rows have a value split over two columns.
+                // This affects:
+                // nl.zorg.ApgarScore-v1.0.1(2020NL).xlsx: AdemhalingScoreCodelijst, SpierspanningScoreCodelijst
+                // nl.zorg.ComfortScore-v1.1(2020NL).xlsx: SpierspanningCodelijst
+                // nl.zorg.FLACCpijnScore-v1.1(2020NL).xlsx: HuilenCodelijst, TroostbaarCodelijst
+                String extra = escape(getOptionalCellValue(row, VALUESET_Extra));
+
+                out.println(conceptnaam + "," + conceptcode + "," + conceptwaarde + "," + codestelselnaam + "," + codesysteem_OID + "," + omschrijving + (extra.equals("") ? "" : "," + extra) + ",,,");
+                rownum += 1;
+            }
+        }
+    }
+
+    private CellRangeAddress getMergeRegion(Cell cell) {
         for(CellRangeAddress region : cell.getSheet().getMergedRegions()) {
             if(region.isInRange(cell)) {
-                return region.getLastRow() - region.getFirstRow() + 1;
+                return region;
             }
+        }
+        return null;
+    }
+
+    private int getMergeHeight(Cell cell) {
+        CellRangeAddress mergeRegion = getMergeRegion(cell);
+        if(mergeRegion != null) {
+            return mergeRegion.getLastRow() - mergeRegion.getFirstRow() + 1;
         }
         return 1;
     }
@@ -124,6 +197,28 @@ public class ZibConverter {
         Cell cell = row.getCell(cellnum);
         Objects.requireNonNull(cell, "Cell " + cellnum + " of row " + row.getRowNum() + " is null");
         return cell.getStringCellValue();
+    }
+
+    private String getOptionalCellValue(Row row, Integer cellnum) {
+        if(cellnum == null) {
+            return "";
+        }
+        Cell cell = row.getCell(cellnum);
+        if(cell == null) {
+            return "";
+        }
+        return cell.getStringCellValue();
+    }
+
+    private Integer findValue(Row row, String value) {
+        for (Iterator<Cell> it = row.cellIterator(); it.hasNext(); ) {
+            Cell cell = it.next();
+
+            if(value.equals(cell.getStringCellValue())) {
+                return cell.getColumnIndex();
+            }
+        }
+        return null;
     }
 
     private String escape(String value) {

@@ -1,0 +1,5 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Vermogen om onafhankelijk te verplaatsen,714915006,,SNOMED CT,2.16.840.1.113883.6.96,Onafhankelijk,,,
+Able to transfer location with assistance,719024002,,SNOMED CT,2.16.840.1.113883.6.96,Hulp nodig,,,
+Ability to transfer location with assistance [DEPRECATED],714917003,,SNOMED CT,2.16.840.1.113883.6.96,Hulp nodig,,,
+Onvermogen om zelf te verplaatsen,714887007,,SNOMED CT,2.16.840.1.113883.6.96,Volledig afhankelijk,,,

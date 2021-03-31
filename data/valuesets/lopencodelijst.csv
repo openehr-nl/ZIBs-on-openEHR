@@ -1,0 +1,4 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+In staat tot onafhankelijk lopen,165245003,,SNOMED CT,2.16.840.1.113883.6.96,Onafhankelijk,,,
+Heeft hulp nodig bij lopen,16581000146103,,SNOMED CT,2.16.840.1.113883.6.96,Hulp nodig,,,
+Niet in staat om te lopen,282145008,,SNOMED CT,2.16.840.1.113883.6.96,Volledig afhankelijk,,,

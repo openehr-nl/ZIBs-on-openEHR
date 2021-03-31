@@ -1,0 +1,4 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+LX,LX,,L_LymfatischeInvasie,2.16.840.1.113883.2.4.3.11.60.40.4.10.9,Aanwezigheid van Lymfatische invasie kan niet beoordeeld worden,,,
+L0,L0,,L_LymfatischeInvasie,2.16.840.1.113883.2.4.3.11.60.40.4.10.9,Geen Lymfatische invasie,,,
+L1,L1,,L_LymfatischeInvasie,2.16.840.1.113883.2.4.3.11.60.40.4.10.9,Lymfatische invasie,,,

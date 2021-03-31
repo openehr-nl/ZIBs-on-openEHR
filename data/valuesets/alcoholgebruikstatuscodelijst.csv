@@ -1,0 +1,7 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Drinkt alcohol,219006,,SNOMED CT,2.16.840.1.113883.6.96,Drinkt alcohol,,,
+Drinkt momenteel geen alcohol,105542008,,SNOMED CT,2.16.840.1.113883.6.96,Niet-drinker,,,
+Dronk vroeger alcohol,82581004,,SNOMED CT,2.16.840.1.113883.6.96,Dronk vroeger alcohol,,,
+Levenslang niet-drinker [DEPRECATED],228274009,,SNOMED CT,2.16.840.1.113883.6.96,Levenslang niet drinker,,,
+Levenslange niet-drinker van alcohol,783261004,,SNOMED CT,2.16.840.1.113883.6.96,Levenslang niet drinker,,,
+Other,OTH,,NullFlavor,2.16.840.1.113883.5.1008,Anders,,,

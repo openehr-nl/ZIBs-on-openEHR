@@ -1,0 +1,4 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Niet zelfstandig,FEED0,0,BarthelEten,2.16.840.1.113883.2.4.3.11.60.40.4.1.5,Niet in staat (niet zelfstandig),,,
+Hulp,FEED1,1,BarthelEten,2.16.840.1.113883.2.4.3.11.60.40.4.1.5,"Heeft hulp nodig bij snijden, smeren van boter, enz.",,,
+Onafhankelijk,FEED2,2,BarthelEten,2.16.840.1.113883.2.4.3.11.60.40.4.1.5,Onafhankelijk,,,

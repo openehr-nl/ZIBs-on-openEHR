@@ -1,0 +1,4 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+In staat om onafhankelijk positie aan te houden,19811000146100,,SNOMED CT,2.16.840.1.113883.6.96,Onafhankelijk,,,
+Heeft hulp nodig bij behouden van positie,16601000146106,,SNOMED CT,2.16.840.1.113883.6.96,Hulp nodig,,,
+Niet in staat houding te handhaven,282848007,,SNOMED CT,2.16.840.1.113883.6.96,Volledig afhankelijk,,,

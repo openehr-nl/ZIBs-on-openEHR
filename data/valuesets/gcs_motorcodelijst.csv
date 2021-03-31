@@ -1,0 +1,9 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Obeys,M6,6,GCS_Motor,2.16.840.1.113883.2.4.3.11.60.40.4.2.2,Voert opdracht uit [Een eenvoudig bevel wordt uitgevoerd],,,
+Localises pain,M5,5,GCS_Motor,2.16.840.1.113883.2.4.3.11.60.40.4.2.2,Lokaliseren [In staat zijn de pijn duidelijk te lokaliseren],,,
+Withdrawal response,M4,4,GCS_Motor,2.16.840.1.113883.2.4.3.11.60.40.4.2.2,Terugtrekken [In staat om een afwerende of wegtrekkende beweging te maken op een pijnprikkel],,,
+Flexor response,M3,3,GCS_Motor,2.16.840.1.113883.2.4.3.11.60.40.4.2.2,Buigreactie [Armen en handen op krampachtige manier geplooid. Meestal benen gestrekt.],,,
+Extensor response,M2,2,GCS_Motor,2.16.840.1.113883.2.4.3.11.60.40.4.2.2,Strekreactie [Armen en handen op krampachtige manier geplooid met naar buitengedraaide hand. Mogelijk alle spieren van het lichaam gespannen],,,
+No response[DEPRECATED],M1,1,GCS_Motor,2.16.840.1.113883.2.4.3.11.60.40.4.2.2,Geen reactie op pijnprikkel [Geen enkele lichamelijke reactie beweging op een pijnprikkel] [DEPRECATED],,,
+No response,M7,1,GCS_Motor,2.16.840.1.113883.2.4.3.11.60.40.4.2.2,Geen beweging  op prikkel [Geen enkele beweging op een prikkel],,,
+Not applicable,NA,0,NullFlavor,2.16.840.1.113883.5.1008,Not applicable,,,

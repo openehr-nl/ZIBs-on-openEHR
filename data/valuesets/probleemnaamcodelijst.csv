@@ -1,0 +1,12 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Alle waarden [DEPRECATED],,,Omaha Systems [DEPRECATED],2.16.840.1.113883.6.98,,,,
+Alle waarden [DEPRECATED],,,G-Standaard Contra Indicaties (Tabel 40) [DEPRECATED],2.16.840.1.113883.2.4.4.1.902.40,,,,
+Alle waarden,,,DHD Diagnosethesaurus,2.16.840.1.113883.2.4.3.120.5.1,,,,
+Alle waarden,,,"ICD-10, dutch translation",2.16.840.1.113883.6.3.2,,,,
+11721000146100|Nationale kernset patiëntproblemen|,,,SNOMED CT,2.16.840.1.113883.6.96,,,,
+Alle waarden,,,NANDA-I,2.16.840.1.113883.6.20,,,,
+Alle waarden,,,ICF,2.16.840.1.113883.6.254,,,,
+Alle waarden,,,ICPC-1 NL,2.16.840.1.113883.2.4.4.31.1,,,,
+Alle waarden,,,DSM-IV,2.16.840.1.113883.6.126,,,,
+Alle waarden,,,DSM-5,2.16.840.1.113883.6.344,,,,
+Alle waarden,,,GGZ Diagnoselijst,2.16.840.1.113883.3.3210.14.2.2.35,,,,

@@ -1,0 +1,6 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Volgen van klinisch zorgpad,370858005,,SNOMED CT,2.16.840.1.113883.6.96,Behandeling conform richtlijn,,,
+Curatieve intentie,373808002,,SNOMED CT,2.16.840.1.113883.6.96,Curatieve behandeling,,,
+Palliatieve zorg,103735009,,SNOMED CT,2.16.840.1.113883.6.96,Palliatieve zorg,,,
+Beoordelen van geschiktheid voor deelname aan klinisch wetenschappelijk onderzoek,450332002,,SNOMED CT,2.16.840.1.113883.6.96,Toetsing van inclusiecriteria voor clinical trial,,,
+Other,OTH,,NullFlavor,2.16.840.1.113883.5.1008,"Anders, specificieer",,,

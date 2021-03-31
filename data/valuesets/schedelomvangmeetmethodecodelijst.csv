@@ -1,0 +1,3 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Bepalen van schedelomtrek met meetlint,31551000146109,,SNOMED CT,2.16.840.1.113883.6.96,Meten van schedelomvang m.b.v. meetlint,,,
+Bepalen van schedelomtrek met echografie,31561000146107,,SNOMED CT,2.16.840.1.113883.6.96,Meten van schedelomvang m.b.v. echografisch onderzoek,,,

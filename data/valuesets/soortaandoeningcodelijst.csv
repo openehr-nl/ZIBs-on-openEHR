@@ -1,0 +1,5 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Irritatief contacteczeem door incontinentie,402276007,,SNOMED CT,2.16.840.1.113883.6.96,Huidletsel door incontinentie,,,
+Intertrigo,58759008,,SNOMED CT,2.16.840.1.113883.6.96,Intertrigo/smetten,,,
+Eczeem,43116000,,SNOMED CT,2.16.840.1.113883.6.96,Eczeem,,,
+Other,OTH,,NullFlavor,2.16.840.1.113883.5.1008,Anders,,,

@@ -1,0 +1,6 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Muscles fully relaxed,Musc1,1,CN_Spierspanning,2.16.840.1.113883.2.4.3.11.60.40.4.20.7,Spieren volledig ontspannen,geen spierspanning,,,
+Reduced muscle tone,Musc2,2,CN_Spierspanning,2.16.840.1.113883.2.4.3.11.60.40.4.20.7,Verminderde spierspanning,minder weerstand dan normaal,,,
+Normal muscle tone,Musc3,3,CN_Spierspanning,2.16.840.1.113883.2.4.3.11.60.40.4.20.7,Normale spierspanning,,,
+Increased muscle tone,Musc4,4,CN_Spierspanning,2.16.840.1.113883.2.4.3.11.60.40.4.20.7,Toegenomen spierspanning en buiging van vingers en tenen,,,
+Extreme muscle rigidity,Musc5,5,CN_Spierspanning,2.16.840.1.113883.2.4.3.11.60.40.4.20.7,Extreme spierstijfheid en buiging van vingers en tenen,,,

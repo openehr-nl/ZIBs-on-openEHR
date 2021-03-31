@@ -1,0 +1,4 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Bradycardie,48867003,,SNOMED CT,2.16.840.1.113883.6.96,Bradycardie,,,
+Normale hartfrequentie,76863003,,SNOMED CT,2.16.840.1.113883.6.96,Normale hartfrequentie,,,
+Tachycardie,3424008,,SNOMED CT,2.16.840.1.113883.6.96,Tachycardie,,,

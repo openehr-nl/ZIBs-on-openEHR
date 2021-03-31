@@ -1,0 +1,13 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Drager van infectie,66598005,,SNOMED CT,2.16.840.1.113883.6.96,Drager van besmettelijke ziekte,,,
+Drager van carbapenemresistente Enterobacteriaceae,715881003,,SNOMED CT,2.16.840.1.113883.6.96,Drager Enterobacteriaceae – CPE,,,
+Drager van carbapenemgevoelige multiresistente Enterobacteriaceae,97961000146102,,SNOMED CT,2.16.840.1.113883.6.96,Drager Enterobacteriaceae – BRMO excl. CPE,,,
+Drager van multiresistente Stenotrophomonas maltophilia,97981000146105,,SNOMED CT,2.16.840.1.113883.6.96,Drager Stenotrophomonas maltophilia – BRMO,,,
+Drager van multiresistente Acinetobacter,97971000146108,,SNOMED CT,2.16.840.1.113883.6.96,Drager Acinetobacter spp – BRMO,,,
+Drager van multiresistente Pseudomonas aeruginosa,98001000146104,,SNOMED CT,2.16.840.1.113883.6.96,Drager Pseudomonas aeruginosa – BRMO,,,
+Drager van vancomycineresistente enterokok,431109006,,SNOMED CT,2.16.840.1.113883.6.96,Drager Enterococcus faecium – VRE,,,
+Drager van multiresistente Streptococcus pneumoniae,97991000146107,,SNOMED CT,2.16.840.1.113883.6.96,Drager Streptococcus pneumoniae – PRP,,,
+Drager van meticillineresistente Staphylococcus aureus,432415000,,SNOMED CT,2.16.840.1.113883.6.96,Drager MRSA,,,
+Drager van humaan immunodeficiëntievirus,699433000,,SNOMED CT,2.16.840.1.113883.6.96,Drager HIV,,,
+Slachtoffer van kindermishandeling,397940009,,SNOMED CT,2.16.840.1.113883.6.96,Kindermishandeling,,,
+Other,OTH,,NullFlavor,2.16.840.1.113883.5.1008,Anders,,,

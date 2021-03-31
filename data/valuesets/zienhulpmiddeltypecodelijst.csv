@@ -1,0 +1,7 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+geen,0,,eCare codes,2.16.840.1.113883.2.4.3.11.22.218,geen visuele hulpmiddelen,,,
+Enkelfocale leesbril,423013001,,SNOMED CT,2.16.840.1.113883.6.96,leesbril,,,
+Bril,50121007,,SNOMED CT,2.16.840.1.113883.6.96,bril,,,
+Contactlens,57368009,,SNOMED CT,2.16.840.1.113883.6.96,contactlenzen,,,
+Apparaat met loep,264865009,,SNOMED CT,2.16.840.1.113883.6.96,loep,,,
+other,OTH,,NullFlavor,2.16.840.1.113883.5.1008,anders,,,

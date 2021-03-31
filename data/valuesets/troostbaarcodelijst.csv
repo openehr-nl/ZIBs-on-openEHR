@@ -1,0 +1,4 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Content,Cons0,0,FLACC_Troostbaar,2.16.840.1.113883.2.4.3.11.60.40.4.21.5,"Is tevreden, ontspannen",,,
+"Consolable, distractable",Cons1,1,FLACC_Troostbaar,2.16.840.1.113883.2.4.3.11.60.40.4.21.5,"Is te troosten door af en toe aan te raken, te knuffelen of toe te spreken",laat zich afleiden,,,
+Difficult to console,Cons2,2,FLACC_Troostbaar,2.16.840.1.113883.2.4.3.11.60.40.4.21.5,Is moeilijk te troosten of op te beuren,,,

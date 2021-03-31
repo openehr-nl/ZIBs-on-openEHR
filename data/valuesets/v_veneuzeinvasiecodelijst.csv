@@ -1,0 +1,5 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+VX,VX,,V_VeneuzeInvasie,2.16.840.1.113883.2.4.3.11.60.40.5.1.4,Aanwezigheid van veneuze invasie kan niet beoordeeld worden,,,
+V0,V0,,V_VeneuzeInvasie,2.16.840.1.113883.2.4.3.11.60.40.5.1.4,Geen veneuze invasie,,,
+V1,V1,,V_VeneuzeInvasie,2.16.840.1.113883.2.4.3.11.60.40.5.1.4,Microscopische veneuze invasie,,,
+V2,V2,,V_VeneuzeInvasie,2.16.840.1.113883.2.4.3.11.60.40.5.1.4,Macroscopische veneuze invasie,,,

@@ -1,0 +1,4 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Ondergewicht,B2,2,SNAQrc_BMI,2.16.840.1.113883.2.4.3.11.60.40.4.19.3,Ondergewicht (BMI<20),,,
+TeLicht,B1,1,SNAQrc_BMI,2.16.840.1.113883.2.4.3.11.60.40.4.19.3,Te Licht (20 <=BMI <22),,,
+Gezond,B0,0,SNAQrc_BMI,2.16.840.1.113883.2.4.3.11.60.40.4.19.3,Gezond (22 <=BMI <28),,,

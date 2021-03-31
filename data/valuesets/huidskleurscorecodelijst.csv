@@ -1,0 +1,4 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+The baby''s whole body is completely bluish-gray or pale,LA6722-8,0,LOINC,2.16.840.1.113883.6.1,Een bleke of blauwe huidskleur,,,
+Good color in body with bluish hands or feet,LA6723-6,1,LOINC,2.16.840.1.113883.6.1,"Roze lijfje, maar blauwachtige armen en benen",,,
+Good color all over,LA6724-4,2,LOINC,2.16.840.1.113883.6.1,Mooie roze huidskleur,,,

@@ -1,0 +1,10 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Rectale temperatuur,307047009,,SNOMED CT,2.16.840.1.113883.6.96,Rectale temperatuur,,,
+Orale temperatuur,415945006,,SNOMED CT,2.16.840.1.113883.6.96,Orale temperatuur (onder de tong),,,
+Kerntemperatuur gemeten in axillaire regio,415882003,,SNOMED CT,2.16.840.1.113883.6.96,Axillaire temperatuur (onder de oksel),,,
+Inguinale temperatuur,415929009,,SNOMED CT,2.16.840.1.113883.6.96,Inguinale temperatuur (via de lies),,,
+Tympanische temperatuur,415974002,,SNOMED CT,2.16.840.1.113883.6.96,Tympanische temperatuur,,,
+Temporale temperatuur,415922000,,SNOMED CT,2.16.840.1.113883.6.96,Temporale temperatuur,,,
+Vaginale temperatuur,364246006,,SNOMED CT,2.16.840.1.113883.6.96,Vaginale temperatuur,,,
+Kerntemperatuur gemeten in blaas,698832009,,SNOMED CT,2.16.840.1.113883.6.96,Blaastemperatuur,,,
+Kerntemperatuur,276885007,,SNOMED CT,2.16.840.1.113883.6.96,Kern temperatuur (invasief gemeten),,,

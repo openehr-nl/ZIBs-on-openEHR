@@ -1,0 +1,6 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Voogdij,6,,JuridischeVertegenwoordiging,2.16.840.1.113883.2.4.3.11.60.40.4.23.3,Voogdij,,,
+Bewindvoering,7,,JuridischeVertegenwoordiging,2.16.840.1.113883.2.4.3.11.60.40.4.23.3,Bewindvoering,,,
+Mentorschap,8,,JuridischeVertegenwoordiging,2.16.840.1.113883.2.4.3.11.60.40.4.23.3,Mentorschap,,,
+Onder curatele stelling,9,,JuridischeVertegenwoordiging,2.16.840.1.113883.2.4.3.11.60.40.4.23.3,Onder curatele stelling,,,
+Zaakwaarneming,10,,JuridischeVertegenwoordiging,2.16.840.1.113883.2.4.3.11.60.40.4.23.3,Zaakwaarneming,,,

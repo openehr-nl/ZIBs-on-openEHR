@@ -3,13 +3,10 @@ layout: zib
 parent: Mappings
 title: Patient
 version: 0.1
-zib:
-    name: Patient-v3.2
-    url: https://zibs.nl/wiki/Patient-v3.2(2020NL)
+zib: Patient-v3.2
 openEHR:
     templates: 
     archetypes: 
-    ckm: 
 status:
     mapping: Inrichten
     template: Ontwikkelen

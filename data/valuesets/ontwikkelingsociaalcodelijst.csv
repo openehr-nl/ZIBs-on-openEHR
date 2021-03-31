@@ -1,0 +1,6 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Glimlacht terug,47041000146107,,SNOMED CT,2.16.840.1.113883.6.96,Lacht terug,,,
+In staat om te geven en nemen,26281000146106,,SNOMED CT,2.16.840.1.113883.6.96,Speelt geven en nemen,,,
+In staat om te spelen met andere kinderen,26301000146107,,SNOMED CT,2.16.840.1.113883.6.96,Kan spelen met andere kinderen,,,
+In staat om vrienden te maken,26291000146108,,SNOMED CT,2.16.840.1.113883.6.96,Kan vrienden maken,,,
+In staat zich in te leven in anderen,26321000146104,,SNOMED CT,2.16.840.1.113883.6.96,Kan zich inleven in anderen,,,

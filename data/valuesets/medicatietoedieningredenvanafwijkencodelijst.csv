@@ -1,0 +1,9 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Product discontinued,DISCONT,,ActReason,2.16.840.1.113883.5.8,Product niet meer leverbaar,,,
+Patient not available,NON-AVAIL,,ActReason,2.16.840.1.113883.5.8,Patiënt niet beschikbaar,,,
+Patient refuse,PREFUS,,ActReason,2.16.840.1.113883.5.8,Patiënt heeft geweigerd,,,
+Unable to use,UNABLE,,ActReason,2.16.840.1.113883.5.8,Toediening volgens voorschrift niet mogelijk,,,
+Order aborted,FOABORT,,ActReason,2.16.840.1.113883.5.8,Medicatieafspraak is gestopt,,,
+Forgotten to administer,FORGOT,,NL-CM-CS,2.16.840.1.113883.2.4.3.11.60.40.4,Vergeten toe te dienen,,,
+Administration performer not available,APNA,,NL-CM-CS,2.16.840.1.113883.2.4.3.11.60.40.4,Toediener niet aanwezig,,,
+No information,NI,,NullFlavor,2.16.840.1.113883.5.1008,Geen informatie,,,

@@ -1,0 +1,4 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+No heart rate,LA6716-0,0,LOINC,2.16.840.1.113883.6.1,"Geen hartslag, of een onhoorbare hartslag",,,
+Fewer than 100 beats per minute,LA6717-8,1,LOINC,2.16.840.1.113883.6.1,Een hartslag van minder dan 100 slagen per minuut,,,
+At least 100 beats per minute,LA6718-6,2,LOINC,2.16.840.1.113883.6.1,Een hartslag van meer dan 100 slagen per minuut,,,

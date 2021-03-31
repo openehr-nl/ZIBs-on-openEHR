@@ -1,0 +1,9 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Oriented,V5,5,GCS_Verbal,2.16.840.1.113883.2.4.3.11.60.40.4.2.3,Georiënteerd [Helder en duidelijk bewust van de situatie],,,
+Confused [DEPRECATED],V4,4,GCS_Verbal,2.16.840.1.113883.2.4.3.11.60.40.4.2.3,Verward [Verwarde conversatie maar wel in staat om te antwoorden op de vragen] [DEPRECATED],,,
+Confused,V7,4,GCS_Verbal,2.16.840.1.113883.2.4.3.11.60.40.4.2.3,Verward [verward maar communiceert coherent],,,
+Inappropriate speech,V3,3,GCS_Verbal,2.16.840.1.113883.2.4.3.11.60.40.4.2.3,Inadequaat [Woorden zijn te verstaan maar vormen geen zinnen],,,
+Incomprehensible sounds [DEPRECATED],V2,2,GCS_Verbal,2.16.840.1.113883.2.4.3.11.60.40.4.2.3,Onverstaanbaar [De spraak is niet te verstaan] [DEPRECATED],,,
+Kreunen,V6,2,CGS_Verbal,2.16.840.1.113883.2.4.3.11.60.40.4.2.3,"Kreunen [geen spraak, alleen kreunen]",,,
+No response,V1,1,GCS_Verbal,2.16.840.1.113883.2.4.3.11.60.40.4.2.3,Geen reactie [Geen enkel verbale respons],,,
+Not applicable,NA,0,NullFlavor,2.16.840.1.113883.5.1008,Not applicable,,,

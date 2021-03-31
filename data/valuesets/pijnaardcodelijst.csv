@@ -1,0 +1,8 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Pijnscheut,49575005,,SNOMED CT,2.16.840.1.113883.6.96,"opflikkerend, flitsend, schietend",,,
+Scherpe pijn,8708008,,SNOMED CT,2.16.840.1.113883.6.96,"prikkelend, stekend, doorborend",,,
+Knellende pijn,162505000,,SNOMED CT,2.16.840.1.113883.6.96,"drukkend, knellend, snoerend",,,
+Brandende pijn,36349006,,SNOMED CT,2.16.840.1.113883.6.96,"branderig, brandend, vlammend",,,
+Snijdende pijn,162503007,,SNOMED CT,2.16.840.1.113883.6.96,"scherp, snijdend, messcherp",,,
+Zeurende pijn,27635008,,SNOMED CT,2.16.840.1.113883.6.96,"zeurend, knagend, hardnekkig",,,
+Paresthesie,91019004,,SNOMED CT,2.16.840.1.113883.6.96,"tintelingen, doof",,,

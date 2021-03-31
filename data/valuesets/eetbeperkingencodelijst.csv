@@ -1,0 +1,4 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Moeite met naar mond brengen van voedsel,289010002,,SNOMED CT,2.16.840.1.113883.6.96,Naar de mond brengen,,,
+Moeite met hanteren van eetgerei bij zelfstandig eten,289046006,,SNOMED CT,2.16.840.1.113883.6.96,Eetgerei hanteren,,,
+Moeite met in stukken snijden van voedsel,289078003,,SNOMED CT,2.16.840.1.113883.6.96,Snijden/openen,,,

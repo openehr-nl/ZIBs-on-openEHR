@@ -1,0 +1,6 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Eigen geslachtsnaam,NL1,,NaamGebruik,2.16.840.1.113883.2.4.3.11.60.101.5.4,Eigen geslachtsnaam,,,
+Geslachtsnaam partner,NL2,,NaamGebruik,2.16.840.1.113883.2.4.3.11.60.101.5.4,Geslachtsnaam partner,,,
+Geslachtsnaam partner gevolgd door eigen geslachtsnaam,NL3,,NaamGebruik,2.16.840.1.113883.2.4.3.11.60.101.5.4,Geslachtsnaam partner gevolgd door eigen geslachtsnaam,,,
+Eigen geslachtsnaam gevolgd door geslachtsnaam partner,NL4,,NaamGebruik,2.16.840.1.113883.2.4.3.11.60.101.5.4,Eigen geslachtsnaam gevolgd door geslachtsnaam partner,,,
+Unknown,UNK,,NullFlavors,2.16.840.1.113883.5.1008,Onbekend,,,

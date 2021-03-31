@@ -1,0 +1,223 @@
+{
+  "templateId" : "Lichaamsgewicht-v3.2(2020NL)",
+  "version" : "2.3",
+  "defaultLanguage" : "nl",
+  "languages" : [ "nl" ],
+  "tree" : {
+    "id" : "lichaamsgewicht-v3.2_2020nl",
+    "name" : "Lichaamsgewicht-v3.2(2020NL)",
+    "localizedName" : "Lichaamsgewicht-v3.2(2020NL)",
+    "rmType" : "OBSERVATION",
+    "nodeId" : "openEHR-EHR-OBSERVATION.body_weight.v2",
+    "min" : 1,
+    "max" : 1,
+    "localizedNames" : {
+      "nl" : "Lichaamsgewicht-v3.2(2020NL)"
+    },
+    "localizedDescriptions" : {
+      "nl" : "Meting van het lichaamsgewicht van een individu."
+    },
+    "aqlPath" : "",
+    "children" : [ {
+      "id" : "elke_gebeurtenis",
+      "name" : "Elke gebeurtenis",
+      "localizedName" : "Elke gebeurtenis",
+      "rmType" : "EVENT",
+      "nodeId" : "at0003",
+      "min" : 0,
+      "max" : -1,
+      "localizedNames" : {
+        "nl" : "Elke gebeurtenis"
+      },
+      "localizedDescriptions" : {
+        "nl" : "Standaard, ongespecificeerd moment in de tijd of een interval dat expliciet vastgelegd kan worden in een template terwijl de applicatie draait."
+      },
+      "aqlPath" : "/data[at0002]/events[at0003]",
+      "children" : [ {
+        "id" : "gewicht",
+        "name" : "Gewicht",
+        "localizedName" : "Gewicht",
+        "rmType" : "DV_QUANTITY",
+        "nodeId" : "at0004",
+        "min" : 1,
+        "max" : 1,
+        "localizedNames" : {
+          "nl" : "Gewicht"
+        },
+        "localizedDescriptions" : {
+          "nl" : "Het gewicht van het individu."
+        },
+        "aqlPath" : "/data[at0002]/events[at0003]/data[at0001]/items[at0004]/value",
+        "inputs" : [ {
+          "suffix" : "magnitude",
+          "type" : "DECIMAL"
+        }, {
+          "suffix" : "unit",
+          "type" : "CODED_TEXT",
+          "list" : [ {
+            "value" : "kg",
+            "label" : "kg",
+            "validation" : {
+              "range" : {
+                "minOp" : ">=",
+                "min" : 0.0,
+                "maxOp" : "<=",
+                "max" : 1000.0
+              }
+            }
+          }, {
+            "value" : "[lb_av]",
+            "label" : "[lb_av]",
+            "localizedLabels" : {
+              "nl" : "lbm"
+            },
+            "validation" : {
+              "range" : {
+                "minOp" : ">=",
+                "min" : 0.0,
+                "maxOp" : "<=",
+                "max" : 2000.0
+              }
+            }
+          }, {
+            "value" : "g",
+            "label" : "g",
+            "validation" : {
+              "range" : {
+                "minOp" : ">=",
+                "min" : 0.0,
+                "maxOp" : "<=",
+                "max" : 1000000.0
+              }
+            }
+          } ]
+        } ],
+        "termBindings" : {
+          "LOINC" : {
+            "value" : "[LOINC::29463-7]",
+            "terminologyId" : "LOINC"
+          }
+        }
+      }, {
+        "id" : "opmerking",
+        "name" : "Opmerking",
+        "localizedName" : "Opmerking",
+        "rmType" : "DV_TEXT",
+        "nodeId" : "at0024",
+        "min" : 0,
+        "max" : 1,
+        "localizedNames" : {
+          "nl" : "Opmerking"
+        },
+        "localizedDescriptions" : {
+          "nl" : "Extra informatie over de meting van het lichaamsgewicht, die niet past binnen andere velden."
+        },
+        "aqlPath" : "/data[at0002]/events[at0003]/data[at0001]/items[at0024]/value",
+        "inputs" : [ {
+          "type" : "TEXT"
+        } ]
+      }, {
+        "id" : "kleding",
+        "name" : "Kleding",
+        "localizedName" : "Kleding",
+        "rmType" : "DV_CODED_TEXT",
+        "nodeId" : "at0009",
+        "min" : 0,
+        "max" : 1,
+        "dependsOn" : [ "gewicht", "opmerking" ],
+        "localizedNames" : {
+          "nl" : "Kleding"
+        },
+        "localizedDescriptions" : {
+          "nl" : "Beschrijving van de kleding die de persoon draagt op het moment van wegen."
+        },
+        "aqlPath" : "/data[at0002]/events[at0003]/state[at0008]/items[at0009]/value",
+        "inputs" : [ {
+          "suffix" : "code",
+          "type" : "CODED_TEXT",
+          "list" : [ {
+            "value" : "at0013",
+            "label" : "Naakt",
+            "localizedLabels" : {
+              "nl" : "Naakt"
+            },
+            "localizedDescriptions" : {
+              "nl" : "Zonder kleding."
+            }
+          }, {
+            "value" : "at0017",
+            "label" : "Luier",
+            "localizedLabels" : {
+              "nl" : "Luier"
+            },
+            "localizedDescriptions" : {
+              "nl" : "Individu draagt alleen een luier - die significant aan het gewicht kan bijdragen."
+            }
+          }, {
+            "value" : "at0011",
+            "label" : "Lichte kleding/ondergoed",
+            "localizedLabels" : {
+              "nl" : "Lichte kleding/ondergoed"
+            },
+            "localizedDescriptions" : {
+              "nl" : "Kleding die niet significant het gewicht beïnvloedt."
+            }
+          }, {
+            "value" : "at0028",
+            "label" : "Volledig gekleed maar, zonder schoenen.",
+            "localizedLabels" : {
+              "nl" : "Volledig gekleed maar, zonder schoenen."
+            },
+            "localizedDescriptions" : {
+              "nl" : "Kleding die het gewicht significant beïnvloedt."
+            }
+          }, {
+            "value" : "at0010",
+            "label" : "Volledig gekleed, inclusief schoenen",
+            "localizedLabels" : {
+              "nl" : "Volledig gekleed, inclusief schoenen"
+            },
+            "localizedDescriptions" : {
+              "nl" : "Kleren die een significante bijdrage hebben aan het gewicht, inclusief schoenen."
+            }
+          } ]
+        } ]
+      }, {
+        "id" : "time",
+        "name" : "Time",
+        "rmType" : "DV_DATE_TIME",
+        "min" : 0,
+        "max" : 1,
+        "aqlPath" : "/data[at0002]/events[at0003]/time",
+        "inputs" : [ {
+          "type" : "DATETIME"
+        } ],
+        "inContext" : true
+      } ]
+    }, {
+      "id" : "language",
+      "name" : "Language",
+      "rmType" : "CODE_PHRASE",
+      "min" : 0,
+      "max" : 1,
+      "aqlPath" : "/language",
+      "inContext" : true
+    }, {
+      "id" : "encoding",
+      "name" : "Encoding",
+      "rmType" : "CODE_PHRASE",
+      "min" : 0,
+      "max" : 1,
+      "aqlPath" : "/encoding",
+      "inContext" : true
+    }, {
+      "id" : "subject",
+      "name" : "Subject",
+      "rmType" : "PARTY_PROXY",
+      "min" : 0,
+      "max" : 1,
+      "aqlPath" : "/subject",
+      "inContext" : true
+    } ]
+  }
+}

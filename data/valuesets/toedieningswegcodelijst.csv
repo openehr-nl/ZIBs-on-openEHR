@@ -1,0 +1,6 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+ORAAL,9,,G-Standaard Toedieningswegen,2.16.840.1.113883.2.4.4.9,oraal,,,
+NASAAL,6,,G-Standaard Toedieningswegen,2.16.840.1.113883.2.4.4.9,nasaal (snuiven),,,
+INHALATIE,62,,G-Standaard Toedieningswegen,2.16.840.1.113883.2.4.4.9,Inhalatie (roken),,,
+INTRAVENEUS,5,,G-Standaard Toedieningswegen,2.16.840.1.113883.2.4.4.9,Intraveneus (spuiten),,,
+Other,OTH,,NullFlavor,2.16.840.1.113883.5.1008,Anders,,,

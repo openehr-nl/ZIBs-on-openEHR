@@ -1,0 +1,3 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+In staat tot onafhankelijk eten,165224005,0,SNOMED CT,2.16.840.1.113883.6.96,Onafhankelijk,,,
+Hulp nodig bij eten,129033007,1,SNOMED CT,2.16.840.1.113883.6.96,Hulp nodig,,,

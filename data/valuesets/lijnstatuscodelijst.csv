@@ -1,0 +1,4 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Lopend,LNP,,LijnStatus,2.16.840.1.113883.2.4.3.11.60.40.4.12.1,Lopend,,,
+Afgedopt,DOP,,LijnStatus,2.16.840.1.113883.2.4.3.11.60.40.4.12.1,Afgedopt,,,
+Other,OTH,,NullFlavor,2.16.840.1.113883.5.1008,Anders,,,

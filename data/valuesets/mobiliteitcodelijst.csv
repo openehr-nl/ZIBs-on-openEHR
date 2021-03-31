@@ -1,0 +1,5 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Afhankelijk,MOBIL0,0,BarthelMobiliteit,2.16.840.1.113883.2.4.3.11.60.40.4.1.7,Kan zich niet verplaatsen,,,
+Onafhankelijk met rolstoel,MOBIL1,1,BarthelMobiliteit,2.16.840.1.113883.2.4.3.11.60.40.4.1.7,"Onafhankelijk, maar maakt gebruik van rolstoel, incl. het zonder hulp nemen van hoeken en deuren.",,,
+Loopt met hulp,MOBIL2,2,BarthelMobiliteit,2.16.840.1.113883.2.4.3.11.60.40.4.1.7,Loopt met hulp van 1 persoon (hulp van woorden of lichamelijk),,,
+Onafhankelijk,MOBIL3,3,BarthelMobiliteit,2.16.840.1.113883.2.4.3.11.60.40.4.1.7,Onafhankelijk,,,

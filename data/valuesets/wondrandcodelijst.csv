@@ -1,0 +1,6 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Epithelisatie van verwonding,449743005,,SNOMED CT,2.16.840.1.113883.6.96,Epithelisatie,,,
+Irritatie van huid,367466007,,SNOMED CT,2.16.840.1.113883.6.96,Irritatie,,,
+Ondermijning van weefsel van verwonding,449752001,,SNOMED CT,2.16.840.1.113883.6.96,Ondermijning,,,
+Maceratie van huid,3644009,,SNOMED CT,2.16.840.1.113883.6.96,Verweking,,,
+Other,OTH,,NullFlavor,2.16.840.1.113883.5.1008,Anders,,,

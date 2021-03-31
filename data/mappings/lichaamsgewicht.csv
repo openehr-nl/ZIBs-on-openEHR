@@ -1,6 +1,6 @@
 ZIB_Id,ZIB_Naam,ZIB_Type,ZIB_Card,ZIB_DefCode,ZIB_Verwijzing,openEHR_Path,openEHR_Naam,openEHR_Type,openEHR_Card,openEHR_Term,Commentaar
-NL-CM:12.1.1,Lichaamsgewicht,rootconcept,,SNOMED CT: 39857003 Wegen van patiënt,,,,,,,
-NL-CM:12.1.2,GewichtWaarde,PQ,1,LOINC: 29463-7 Lichaamsgewicht [massa] in ^patiënt; SNOMED CT: 27113001 Lichaamsgewicht,,,,,,,
-NL-CM:12.1.3,Toelichting,ST,0..1,LOINC: 48767-8 Annotation comment [Interpretation] Narrative,,,,,,,
-NL-CM:12.1.4,GewichtDatumTijd,TS,1,,,,,,,,
-NL-CM:12.1.5,Kleding,CD,0..1,SNOMED CT: 248159006 State of dress,KledingCodelijst,,,,,,
+NL-CM:12.1.1,Lichaamsgewicht,rootconcept,,SNOMED CT: 39857003 Wegen van patiënt,,,Lichaamsgewicht,OBSERVATION,,,
+NL-CM:12.1.2,GewichtWaarde,PQ,1,LOINC: 29463-7 Lichaamsgewicht [massa] in ^patiënt; SNOMED CT: 27113001 Lichaamsgewicht,,/data[at0002]/events[at0003]/data[at0001.1]/items[at0004],Gewicht,DV_QAUNTITY,1..1,,
+NL-CM:12.1.3,Toelichting,ST,0..1,LOINC: 48767-8 Annotation comment [Interpretation] Narrative,,/data[at0002]/events[at0003]/data[at0001.1]/items[at0024],Opmerking,DV_TEXT,0..1,,
+NL-CM:12.1.4,GewichtDatumTijd,TS,1,,,/data[at0002]/events[at0003]/time,time,DV_DATE_TIME,1..1,,
+NL-CM:12.1.5,Kleding,CD,0..1,SNOMED CT: 248159006 State of dress,KledingCodelijst,/data[at0002]/events[at0003]/state[at0008.1]/items[at0009],Kleding,DV_CODED_TEXT,0..1,Local,Kan volledig gemapped worden ( openehr bevat 1 additionele waarde)

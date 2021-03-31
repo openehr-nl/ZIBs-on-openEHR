@@ -1,0 +1,13 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Woont met moeder,224139006,,SNOMED CT,2.16.840.1.113883.6.96,Woont bij moeder,,,
+Woont met vader,224140008,,SNOMED CT,2.16.840.1.113883.6.96,Woont bij vader,,,
+Woont met grootouders,224141007,,SNOMED CT,2.16.840.1.113883.6.96,Woont bij grootouders,,,
+Woont met ouders,224137008,,SNOMED CT,2.16.840.1.113883.6.96,Woont bij ouders,,,
+Woont met pleegouders,32331000146101,,SNOMED CT,2.16.840.1.113883.6.96,Woont bij pleegouders,,,
+Woont met familie [DEPRECATED],160756002,,SNOMED CT,2.16.840.1.113883.6.96,Woont samen met familie,,,
+Woont in gezinsvervangend tehuis,224220007,,SNOMED CT,2.16.840.1.113883.6.96,Woont in gezinsvervangend tehuis,,,
+Woonachtig in instelling voor gehandicaptenzorg,29221000146100,,SNOMED CT,2.16.840.1.113883.6.96,Woont in instelling voor gehandicaptenzorg,,,
+Woonachtig in instelling voor geestelijke gezondheidszorg,29231000146103,,SNOMED CT,2.16.840.1.113883.6.96,Woont in instelling voor geestelijke gezondheidszorg,,,
+Woont in kindertehuis,160738002,,SNOMED CT,2.16.840.1.113883.6.96,Woont in kindertehuis,,,
+Woont in internaat,307106009,,SNOMED CT,2.16.840.1.113883.6.96,Woont in internaat,,,
+Other,OTH,,NullFlavor,2.16.840.1.113883.5.1008,Anders,,,

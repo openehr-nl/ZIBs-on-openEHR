@@ -1,0 +1,6 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Pending,pending,,ResultaatStatus,2.16.840.1.113883.2.4.3.11.60.40.4.16.1,Uitslag volgt,,,
+Preliminary,preliminary,,ResultaatStatus,2.16.840.1.113883.2.4.3.11.60.40.4.16.1,Voorlopig,,,
+Final,final,,ResultaatStatus,2.16.840.1.113883.2.4.3.11.60.40.4.16.1,Definitief,,,
+Appended,appended,,ResultaatStatus,2.16.840.1.113883.2.4.3.11.60.40.4.16.1,Aanvullend,,,
+Corrected,corrected,,ResultaatStatus,2.16.840.1.113883.2.4.3.11.60.40.4.16.1,Gecorrigeerd,,,

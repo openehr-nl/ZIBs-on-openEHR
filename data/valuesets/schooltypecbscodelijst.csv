@@ -1,0 +1,13 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Basisonderwijs,111,,CBS-SOI2016AGG3,2.16.840.1.113883.2.4.3.11.60.40.4.24.1,Basisonderwijs,,,
+"Vmbo-b/k, mbo1",121,,CBS-SOI2016AGG3,2.16.840.1.113883.2.4.3.11.60.40.4.24.1,"Vmbo-b/k, mbo1",,,
+"Vmbo-g/t, havo-, vwo-onderbouw",122,,CBS-SOI2016AGG3,2.16.840.1.113883.2.4.3.11.60.40.4.24.1,"Vmbo-g/t, havo-, vwo-onderbouw",,,
+Mbo2 en mbo3,211,,CBS-SOI2016AGG3,2.16.840.1.113883.2.4.3.11.60.40.4.24.1,Mbo2 en mbo3,,,
+Mbo4,212,,CBS-SOI2016AGG3,2.16.840.1.113883.2.4.3.11.60.40.4.24.1,Mbo4,,,
+"Havo, vwo",213,,CBS-SOI2016AGG3,2.16.840.1.113883.2.4.3.11.60.40.4.24.1,"Havo, vwo",,,
+"Hbo-, wo-bachelor",311,,CBS-SOI2016AGG3,2.16.840.1.113883.2.4.3.11.60.40.4.24.1,"Hbo-, wo-bachelor",,,
+"Hbo-, wo-master, doctor",321,,CBS-SOI2016AGG3,2.16.840.1.113883.2.4.3.11.60.40.4.24.1,"Hbo-, wo-master, doctor",,,
+Speciaal (basis)onderwijs,20200,,CBS-CTO2016,2.16.840.1.113883.2.4.3.11.60.40.4.24.2,Speciaal (basis)onderwijs,,,
+Voortgezet speciaal onderwijs,01011,,CBS-CTO2016,2.16.840.1.113883.2.4.3.11.60.40.4.24.2,Voortgezet speciaal onderwijs,,,
+Onbekend,UNK,,NullFlavor,2.16.840.1.113883.5.1008,Onbekend,,,
+Anders,OTH,,NullFlavor,2.16.840.1.113883.5.1008,Anders,,,

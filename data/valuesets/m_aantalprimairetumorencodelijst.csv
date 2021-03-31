@@ -1,0 +1,13 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+(m),(m),,m_AantalPrimaireTumoren,2.16.840.1.113883.2.4.3.11.60.40.4.10.12,Meerdere primaire tumoren,,,
+(1),(1),,m_AantalPrimaireTumoren,2.16.840.1.113883.2.4.3.11.60.40.4.10.12,1 primaire tumor,,,
+(2),(2),,m_AantalPrimaireTumoren,2.16.840.1.113883.2.4.3.11.60.40.4.10.12,2 primaire tumoren,,,
+(3),(3),,m_AantalPrimaireTumoren,2.16.840.1.113883.2.4.3.11.60.40.4.10.12,3 primaire tumoren,,,
+(4),(4),,m_AantalPrimaireTumoren,2.16.840.1.113883.2.4.3.11.60.40.4.10.12,4 primaire tumoren,,,
+(5),(5),,m_AantalPrimaireTumoren,2.16.840.1.113883.2.4.3.11.60.40.4.10.12,5 primaire tumoren,,,
+(6),(6),,m_AantalPrimaireTumoren,2.16.840.1.113883.2.4.3.11.60.40.4.10.12,6 primaire tumoren,,,
+(7),(7),,m_AantalPrimaireTumoren,2.16.840.1.113883.2.4.3.11.60.40.4.10.12,7 primaire tumoren,,,
+(8),(8),,m_AantalPrimaireTumoren,2.16.840.1.113883.2.4.3.11.60.40.4.10.12,8 primaire tumoren,,,
+(9),(9),,m_AantalPrimaireTumoren,2.16.840.1.113883.2.4.3.11.60.40.4.10.12,9 primaire tumoren,,,
+(10),(10),,m_AantalPrimaireTumoren,2.16.840.1.113883.2.4.3.11.60.40.4.10.12,10 primaire tumoren,,,
+Other,OTH,,NullFlavor,2.16.840.1.113883.5.1008,"Anders, specificeer.",,,

@@ -1,0 +1,4 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Lying quiet,Act0,0,FLACC_Activiteit,2.16.840.1.113883.2.4.3.11.60.40.4.21.3,"Ligt rustig, in een normale houding, maakt rustige bewegingen",,,
+Squirming,Act1,1,FLACC_Activiteit,2.16.840.1.113883.2.4.3.11.60.40.4.21.3,"Kronkelt, wringt zich in bochten, verandert steeds van houding,is gespannen",,,
+Arched,Act2,2,FLACC_Activiteit,2.16.840.1.113883.2.4.3.11.60.40.4.21.3,"Overstrekt zich, trekt een holle rug of ligt ineengekrompen,is verstijfd of maakt schokkende bewegingen",,,

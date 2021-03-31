@@ -1,0 +1,12 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Jejunostomiesonde,126065006,,SNOMED CT,2.16.840.1.113883.6.96,Jejunostomie katheter,,,
+Gastrostomiekatheter,470571004,,SNOMED CT,2.16.840.1.113883.6.96,Gastrostomie katheter,,,
+Percutaneous endoscopic gastrostomy catheter [DEPRECATED],281414004,,SNOMED CT,2.16.840.1.113883.6.96,PEG sonde,,,
+Percutaneous endoscopic gastrostomy catheter,108541000146103,,SNOMED CT,2.16.840.1.113883.6.96,PEG sonde,,,
+Percutane radiologische gastrostomiekatheter,8921000146109,,SNOMED CT,2.16.840.1.113883.6.96,PRG sonde,,,
+Percutane endoscopische gastrojejunostomiekatheter,8851000146109,,SNOMED CT,2.16.840.1.113883.6.96,PEG-J sonde,,,
+Percutane endoscopische jejunostomiekatheter,8911000146104,,SNOMED CT,2.16.840.1.113883.6.96,PEJ sonde,,,
+Nasogastrische sonde,17102003,,SNOMED CT,2.16.840.1.113883.6.96,Neus-maagsonde,,,
+Nasojejunale sonde,8581000146101,,SNOMED CT,2.16.840.1.113883.6.96,Neus-jejunumsonde,,,
+Nasoduodenale voedingssonde,8591000146104,,SNOMED CT,2.16.840.1.113883.6.96,Neus-duodenumsonde,,,
+Other,OTH,,NullFlavor,2.16.840.1.113883.5.1008,Anders,,,

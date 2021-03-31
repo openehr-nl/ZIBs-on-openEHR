@@ -1,0 +1,8 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Bewust hoge dosering,1,,Voorlopige G-std thesaurus 2050,2.16.840.1.113883.2.4.3.11.60.20.77.5.2.3.2050,Bewust hoge dosering,,,
+Bewust lage dosering,2,,Voorlopige G-std thesaurus 2050,2.16.840.1.113883.2.4.3.11.60.20.77.5.2.3.2050,Bewust lage dosering,,,
+Bewust afwijkende toedieningsweg,3,,Voorlopige G-std thesaurus 2050,2.16.840.1.113883.2.4.3.11.60.20.77.5.2.3.2050,Bewust afwijkende toedieningsweg,,,
+Medische noodzaak,4,,Voorlopige G-std thesaurus 2050,2.16.840.1.113883.2.4.3.11.60.20.77.5.2.3.2050,Medische noodzaak,,,
+Profylaxe,5,,Voorlopige G-std thesaurus 2050,2.16.840.1.113883.2.4.3.11.60.20.77.5.2.3.2050,Profylaxe,,,
+Wijziging in GDS per direct,6,,Voorlopige G-std thesaurus 2050,2.16.840.1.113883.2.4.3.11.60.20.77.5.2.3.2050,Wijziging in GDS per direct,,,
+Wijziging in GDS per rolwissel,7,,Voorlopige G-std thesaurus 2050,2.16.840.1.113883.2.4.3.11.60.20.77.5.2.3.2050,Wijziging in GDS per rolwissel,,,

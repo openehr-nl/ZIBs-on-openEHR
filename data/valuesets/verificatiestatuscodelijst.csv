@@ -1,0 +1,6 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Vermoedelijk,415684004,,SNOMED CT,2.16.840.1.113883.6.96,Werk,,,
+Mogelijk,410590009,,SNOMED CT,2.16.840.1.113883.6.96,Differentiaal,,,
+Aanwezigheid bevestigd,410605003,,SNOMED CT,2.16.840.1.113883.6.96,Bevestigd,,,
+Afwezigheid bekend,410516002,,SNOMED CT,2.16.840.1.113883.6.96,Uitgesloten,,,
+Unknown,UNK,,NullFlavor,2.16.840.1.113883.5.1008,Onbekend,,,

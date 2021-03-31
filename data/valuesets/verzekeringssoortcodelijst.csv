@@ -1,0 +1,7 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Basis,B,,Verzekeringssoort,2.16.840.1.113883.2.4.3.11.60.101.5.1,Basis verzekerd,,,
+Aanvullend verzekerd,A,,Verzekeringssoort,2.16.840.1.113883.2.4.3.11.60.101.5.1,Aanvullend verzekerd,,,
+Basisverzekering vanuit AWBZ,BZ,,Verzekeringssoort,2.16.840.1.113883.2.4.3.11.60.101.5.1,Basisverzekering vanuit AWBZ (tegenwoordig uit Wet Langdurige Zorg),,,
+Hoofdverzekering,H,,Verzekeringssoort,2.16.840.1.113883.2.4.3.11.60.101.5.1,Een basisverzekering die geen onderdeel uitmaakt van de ZVW of AWBZ (bijvoorbeeld voor expats in het buitenland).,,,
+Tandverzekering (los),T,,Verzekeringssoort,2.16.840.1.113883.2.4.3.11.60.101.5.1,Tandverzekering,,,
+Aanvullend + tand,AT,,Verzekeringssoort,2.16.840.1.113883.2.4.3.11.60.101.5.1,Aanvullend + tand,,,

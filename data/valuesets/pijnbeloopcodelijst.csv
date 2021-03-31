@@ -1,0 +1,4 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Stable,58158008,,SNOMED CT,2.16.840.1.113883.6.96,Stabiel,,,
+Stijgend,260369004,,SNOMED CT,2.16.840.1.113883.6.96,Toenemend,,,
+Verminderend,260371004,,SNOMED CT,2.16.840.1.113883.6.96,Afnemend,,,

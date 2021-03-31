@@ -1,0 +1,9 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Woont alleen,105529008,,SNOMED CT,2.16.840.1.113883.6.96,Alleenwonend,,,
+Woont samen met partner,408821002,,SNOMED CT,2.16.840.1.113883.6.96,Samenwonend met partner,,,
+Inwonende minderjarige kinderen,8871000146101,,SNOMED CT,2.16.840.1.113883.6.96,Inwonende minderjarige kinderen,,,
+Inwonende meerderjarige kinderen,8861000146107,,SNOMED CT,2.16.840.1.113883.6.96,Inwonende meerderjarige kinderen,,,
+Woont met ouders,224137008,,SNOMED CT,2.16.840.1.113883.6.96,Woont samen met ouders,,,
+Woont met familie [DEPRECATED],160756002,,SNOMED CT,2.16.840.1.113883.6.96,Woont samen met familie,,,
+Woont samen met vrienden,224131009,,SNOMED CT,2.16.840.1.113883.6.96,Woont samen met vrienden,,,
+Other,OTH,,NullFlavor,2.16.840.1.113883.5.1008,Anders,,,

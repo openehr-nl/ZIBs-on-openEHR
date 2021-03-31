@@ -1,0 +1,8 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Opname op intensive care,305351004,,SNOMED CT,2.16.840.1.113883.6.96,Opname op intensive care,,,
+Cardiopulmonale resuscitatie,89666000,,SNOMED CT,2.16.840.1.113883.6.96,Cardiopulmonaire resuscitatie,,,
+Kunstmatige beademing,40617009,,SNOMED CT,2.16.840.1.113883.6.96,Kunstmatige beademing,,,
+Toediening van bloedproduct,116762002,,SNOMED CT,2.16.840.1.113883.6.96,Toediening van een bloedproduct,,,
+Antibiotische therapie,281789004,,SNOMED CT,2.16.840.1.113883.6.96,Toediening van antibiotica,,,
+Opname in ziekenhuis,32485007,,SNOMED CT,2.16.840.1.113883.6.96,Opname in ziekenhuis,,,
+Other,OTH,,NullFlavor,2.16.840.1.113883.5.1008,Overige behandelingen,,,

@@ -1,0 +1,6 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Quiet breathing,Cry1,1,CN_Huilen,2.16.840.1.113883.2.4.3.11.60.40.4.20.4,Geen huilgeluiden,,,
+Occasional sobbing or moaning,Cry2,2,CN_Huilen,2.16.840.1.113883.2.4.3.11.60.40.4.20.4,Af en toe snikken of kreunen (nasnikken),,,
+Whining,Cry3,3,CN_Huilen,2.16.840.1.113883.2.4.3.11.60.40.4.20.4,Jengelen of dreinen (monotoon geluid),,,
+Crying,Cry4,4,CN_Huilen,2.16.840.1.113883.2.4.3.11.60.40.4.20.4,Huilen,,,
+Screaming or shrieking,Cry5,5,CN_Huilen,2.16.840.1.113883.2.4.3.11.60.40.4.20.4,Schreeuwen of krijsen,,,

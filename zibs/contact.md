@@ -3,9 +3,7 @@ layout: zib
 parent: Mappings
 title: Contact
 version: 0.1
-zib:
-    name: Contact-v4.0.1
-    url: https://zibs.nl/wiki/Contact-v4.0.1(2020NL)
+zib: Contact-v4.0.1
 openEHR:
     templates: 
     archetypes: 
@@ -14,7 +12,6 @@ openEHR:
         - openEHR-EHR-ACTION.procedure.v1
         - openEHR-EHR-CLUSTER.anatomical_location.v1
         - openEHR-EHR-EVALUATION.problem_diagnosis.v1
-    ckm: 
 status:
     mapping: Inrichten
     template: Ontwikkelen

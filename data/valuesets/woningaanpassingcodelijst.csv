@@ -1,0 +1,7 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Badstoel en/of douchestoel,467158009,,SNOMED CT,2.16.840.1.113883.6.96,Douchestoel,,,
+Traplift,465153004,,SNOMED CT,2.16.840.1.113883.6.96,Traplift,,,
+Aangepast toilet,465302005,,SNOMED CT,2.16.840.1.113883.6.96,Aangepast toilet,,,
+Aangepast bed,705401004,,SNOMED CT,2.16.840.1.113883.6.96,Aangepast bed,,,
+Home and premises assistive furnishing/adaptation,705390009,,SNOMED CT,2.16.840.1.113883.6.96,Aangepaste woninginrichting,,,
+Wandbeugel,360303004,,SNOMED CT,2.16.840.1.113883.6.96,Wandbeugel,,,

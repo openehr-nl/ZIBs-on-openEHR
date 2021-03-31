@@ -1,0 +1,8 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Hematologisch onderzoek,252275004,,SNOMED CT,2.16.840.1.113883.6.96,Hematologie,,,
+Serumtest,275711006,,SNOMED CT,2.16.840.1.113883.6.96,Klinische chemie,,,
+Serologisch onderzoek,68793005,,SNOMED CT,2.16.840.1.113883.6.96,Serologie/ immunologie,,,
+Virologisch onderzoek,395124008,,SNOMED CT,2.16.840.1.113883.6.96,Virologie,,,
+Toxicologische test,314076009,,SNOMED CT,2.16.840.1.113883.6.96,Toxicologie,,,
+Microbiologisch onderzoek,19851009,,SNOMED CT,2.16.840.1.113883.6.96,Microbiologie,,,
+Moleculair genetisch onderzoek,405825005,,SNOMED CT,2.16.840.1.113883.6.96,Moleculaire genetica,,,

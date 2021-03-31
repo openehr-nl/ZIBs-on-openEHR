@@ -1,0 +1,4 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Afhankelijk,TOIL0,0,BarthelToiletgebruik,2.16.840.1.113883.2.4.3.11.60.40.4.1.4,Afhankelijk,,,
+Hulp,TOIL1,1,BarthelToiletgebruik,2.16.840.1.113883.2.4.3.11.60.40.4.1.4,Heeft enige hulp nodig maar kan sommige dingen zelf,,,
+Onafhankelijk,TOIL2,2,BarthelToiletgebruik,2.16.840.1.113883.2.4.3.11.60.40.4.1.4,"Onafhankelijk (op en af, uit- en aankleden, afvegen)",,,

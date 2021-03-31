@@ -1,0 +1,4 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Not breathing,LA6725-1,0,LOINC,2.16.840.1.113883.6.1,Niet op eigen kracht ademen,,,
+Weak cry,"may sound like whimpering, slow or irregular breathing",LA6726-9,1,LOINC,2.16.840.1.113883.6.1,"Zwak, onregelmatig of hijgerig ademhalen",,,
+"Good, strong cry",normal rate and effort of breathing,LA6727-7,2,LOINC,2.16.840.1.113883.6.1,Flink huilen en goed doorademen,,,

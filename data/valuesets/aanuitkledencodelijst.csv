@@ -1,0 +1,4 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Afhankelijk,DRESS0,0,BarthelAanUitkleden,2.16.840.1.113883.2.4.3.11.60.40.4.1.8,Afhankelijk,,,
+Hulp,DRESS1,1,BarthelAanUitkleden,2.16.840.1.113883.2.4.3.11.60.40.4.1.8,Heeft hulp nodig maar kan ongeveer de helft zelf,,,
+Onafhankelijk,DRESS2,2,BarthelAanUitkleden,2.16.840.1.113883.2.4.3.11.60.40.4.1.8,Onafhankelijk,,,

@@ -1,0 +1,7 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Misbruikt drugs en/of medicatie,361055000,,SNOMED CT,2.16.840.1.113883.6.96,gebruikt drugs  [DEPRECATED],,,
+Huidige drugsgebruiker,417284009,,SNOMED CT,2.16.840.1.113883.6.96,huidige drugsgebruiker,,,
+Gebruikt geen drugs,228367002,,SNOMED CT,2.16.840.1.113883.6.96,gebruikt geen drugs,,,
+Heeft nooit drugs gebruikt,228368007,,SNOMED CT,2.16.840.1.113883.6.96,heeft nooit drugs gebruikt,,,
+Heeft in het verleden drugs misbruikt,44870007,,SNOMED CT,2.16.840.1.113883.6.96,heeft in het verleden drugs gebruikt,,,
+Other,OTH,,NullFlavor,2.16.840.1.113883.5.1008,anders,,,

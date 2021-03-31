@@ -1,0 +1,9 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Urostoma,281601009,,SNOMED CT,2.16.840.1.113883.6.96,urostoma,,,
+Dubbelloops colostoma,261072008,,SNOMED CT,2.16.840.1.113883.6.96,dubbelloops colostoma,,,
+Eindstandig colostoma,261030007,,SNOMED CT,2.16.840.1.113883.6.96,eindstandige colostoma,,,
+Stoma van lis van ileum,311413000,,SNOMED CT,2.16.840.1.113883.6.96,dubbelloops ileostoma,,,
+Eindstandig ileostoma,311412005,,SNOMED CT,2.16.840.1.113883.6.96,eindstandige ileostoma,,,
+Tracheostoma,280361007,,SNOMED CT,2.16.840.1.113883.6.96,tracheostoma,,,
+Malone-stoma,29241000146106,,SNOMED CT,2.16.840.1.113883.6.96,stoma t.b.v. Malone procedure,,,
+other,OTH,,NullFlavor,2.16.840.1.113883.5.1008,anders,,,

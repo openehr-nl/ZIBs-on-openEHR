@@ -1,0 +1,9 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Perifere intraveneuze katheter,82449006,,SNOMED CT,2.16.840.1.113883.6.96,Perifeer intraveneus infuus,,,
+Centraal veneuze katheter,52124006,,SNOMED CT,2.16.840.1.113883.6.96,Centraal veneuze katheter,,,
+Epidurale katheter,30610008,,SNOMED CT,2.16.840.1.113883.6.96,Epidurale katheter,,,
+Arteriële katheter,303727009,,SNOMED CT,2.16.840.1.113883.6.96,Arteriële katheter,,,
+Implanteerbare veneuze katheter,102318003,,SNOMED CT,2.16.840.1.113883.6.96,Port-a-cath,,,
+Katheter voor hemodialyse,450866001,,SNOMED CT,2.16.840.1.113883.6.96,Hemodialyse katheter,,,
+Naald voor subcutane injectie of infusie,465504007,,SNOMED CT,2.16.840.1.113883.6.96,Subcutaan infuus,,,
+Other,OTH,,NullFlavor,2.16.840.1.113883.5.1008,Anders,,,

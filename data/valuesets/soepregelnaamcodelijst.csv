@@ -1,0 +1,5 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Subjective,255362007,,SNOMED CT,2.16.840.1.113883.6.96,Subjectief,,,
+Objective,260224007,,SNOMED CT,2.16.840.1.113883.6.96,Objectief,,,
+Evaluatie,129265001,,SNOMED CT,2.16.840.1.113883.6.96,Evaluatie,,,
+Beleid,129271007,,SNOMED CT,2.16.840.1.113883.6.96,Plan,,,

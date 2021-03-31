@@ -1,0 +1,9 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Thuis,264362003,,SNOMED CT,2.16.840.1.113883.6.96,Eigen woonomgeving,,,
+Revalidatieziekenhuis,80522000,,SNOMED CT,2.16.840.1.113883.6.96,Instelling voor revalidatie,,,
+Verpleeghuis,42665001,,SNOMED CT,2.16.840.1.113883.6.96,Instelling voor verpleging/verzorging,,,
+Psychiatrisch ziekenhuis,62480006,,SNOMED CT,2.16.840.1.113883.6.96,GGZ instelling,,,
+Ziekenhuis,22232009,,SNOMED CT,2.16.840.1.113883.6.96,Ander ziekenhuis,,,
+Levend geboren in ziekenhuis,442311008,,SNOMED CT,2.16.840.1.113883.6.96,In dit ziekenhuis geboren,,,
+Hospice,284546000,,SNOMED CT,2.16.840.1.113883.6.96,Hospice,,,
+Other,OTH,,NullFlavor,2.16.840.1.113883.5.1008,Overig,,,

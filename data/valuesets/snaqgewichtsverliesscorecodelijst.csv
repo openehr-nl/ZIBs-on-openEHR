@@ -1,0 +1,4 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+LossLow,G0,0,SNAQ_Gewichtsverlies,2.16.840.1.113883.2.4.3.11.60.40.4.5.1,Geen gewichtverlies,,,
+LossAverage,G1,2,SNAQ_Gewichtsverlies,2.16.840.1.113883.2.4.3.11.60.40.4.5.1,Meer dan 3 kg in de laatste maand,,,
+LossHigh,G2,3,SNAQ_Gewichtsverlies,2.16.840.1.113883.2.4.3.11.60.40.4.5.1,Meer dan 6 kg in de laatste 6 maanden,,,

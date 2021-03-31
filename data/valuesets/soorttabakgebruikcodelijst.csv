@@ -1,0 +1,9 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Rookt sigaretten,65568007,,SNOMED CT,2.16.840.1.113883.6.96,Rookt sigaretten,,,
+Rookt sigaren,59978006,,SNOMED CT,2.16.840.1.113883.6.96,Rookt sigaren,,,
+Pijproker,82302008,,SNOMED CT,2.16.840.1.113883.6.96,Rookt pijp,,,
+Rookt shag,160619003,,SNOMED CT,2.16.840.1.113883.6.96,Rookt shag,,,
+Gebruiker van elektronische sigaret,722499006,,SNOMED CT,2.16.840.1.113883.6.96,Rookt e-sigaret,,,
+Kauwt tabak,81703003,,SNOMED CT,2.16.840.1.113883.6.96,Gebruikt kauwtabak,,,
+Gebruikt snuiftabak,228494002,,SNOMED CT,2.16.840.1.113883.6.96,Gebruikt snuiftabak,,,
+Other,OTH,,NullFlavor,2.16.840.1.113883.5.1008,Anders,,,

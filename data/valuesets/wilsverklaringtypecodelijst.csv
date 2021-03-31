@@ -1,0 +1,12 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Niet reanimeren verklaring,NR,,WilsverklaringType,2.16.840.1.113883.2.4.3.11.60.40.4.14.1,Niet reanimeren verklaring,,,
+Volmacht,VOL,,WilsverklaringType,2.16.840.1.113883.2.4.3.11.60.40.4.14.1,Volmacht,,,
+Behandelverbod,VERB,,WilsverklaringType,2.16.840.1.113883.2.4.3.11.60.40.4.14.1,Behandelverbod,,,
+Behandelverbod met aanvulling Voltooid Leven,VERBVL,,WilsverklaringType,2.16.840.1.113883.2.4.3.11.60.40.4.14.1,Behandelverbod met aanvulling Voltooid Leven,,,
+Mondelinge afspraak,MON,,WilsverklaringType,2.16.840.1.113883.2.4.3.11.60.40.4.14.1,Mondelinge afspraak,,,
+Euthanasieverzoek,EU,,WilsverklaringType,2.16.840.1.113883.2.4.3.11.60.40.4.14.1,Euthanasieverzoek,,,
+Euthanasieverzoek met aanvulling Dementie,EUD,,WilsverklaringType,2.16.840.1.113883.2.4.3.11.60.40.4.14.1,Euthanasieverzoek met aanvulling Dementie,,,
+Levenswensverklaring,LW,,WilsverklaringType,2.16.840.1.113883.2.4.3.11.60.40.4.14.1,Levenswensverklaring,,,
+Verklaring donorschap,DO,,WilsverklaringType,2.16.840.1.113883.2.4.3.11.60.40.4.14.1,Verklaring donorschap,,,
+Zelfbindingsverklaring,ZB,,WilsverklaringType,2.16.840.1.113883.2.4.3.11.60.40.4.14.1,Zelfbindingsverklaring,,,
+Other,OTH,,NullFlavor,2.16.840.1.113883.5.1008,Anders,,,

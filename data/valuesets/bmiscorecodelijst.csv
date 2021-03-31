@@ -1,0 +1,4 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+BMIHigh,B0,0,MUST_BMI,2.16.840.1.113883.2.4.3.11.60.40.4.4.1,BMI >20 kg/m2,,,
+BMIAverage,B1,1,MUST_BMI,2.16.840.1.113883.2.4.3.11.60.40.4.4.1,"BMI tussen 18,5-20 kg/m2",,,
+BMILow,B2,2,MUST_BMI,2.16.840.1.113883.2.4.3.11.60.40.4.4.1,"BMI < 18,5 kg/m2",,,

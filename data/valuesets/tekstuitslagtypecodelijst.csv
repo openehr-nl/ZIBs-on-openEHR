@@ -1,0 +1,13 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Microbiologisch onderzoek,19851009,,SNOMED CT,2.16.840.1.113883.6.96,microbiologie,,,
+Beeldvormende verrichting,363679005,,SNOMED CT,2.16.840.1.113883.6.96,overige beeld vormende techniek,,,
+Radiografische beeldvormende verrichting,363680008,,SNOMED CT,2.16.840.1.113883.6.96,röntgen,,,
+Diagnostische echografie,16310003,,SNOMED CT,2.16.840.1.113883.6.96,echografie,,,
+Computertomografie,77477000,,SNOMED CT,2.16.840.1.113883.6.96,CT,,,
+Magnetic resonance imaging,113091000,,SNOMED CT,2.16.840.1.113883.6.96,MRI,,,
+Angiografie,77343006,,SNOMED CT,2.16.840.1.113883.6.96,angiografie,,,
+Echocardiografie,40701008,,SNOMED CT,2.16.840.1.113883.6.96,echocardiografie,,,
+Nucleair geneeskundige verrichting,371572003,,SNOMED CT,2.16.840.1.113883.6.96,nucleaire geneeskunde,,,
+Pathologisch-anatomische verrichting,108257001,,SNOMED CT,2.16.840.1.113883.6.96,pathologie,,,
+Verrichting,71388002,,SNOMED CT,2.16.840.1.113883.6.96,procedure,,,
+Positronemissietomografie met computertomografie,450436003,,SNOMED CT,2.16.840.1.113883.6.96,PET CT,,,

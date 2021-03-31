@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "1731f88df7fd1045acadbb1168f2a52f",
+      "MD5-CAM-1.0.1" : "fe7137c7c2bff443ed81672fb596df09",
       "PARENT:MD5-CAM-1.0.1" : "CEC3C36E4EA4CA0958AE3C9088F4668E"
     },
     "details" : {
@@ -182,8 +182,9 @@
           "rmAttributeName" : "events",
           "children" : [ {
             "@type" : "C_COMPLEX_OBJECT",
-            "rmTypeName" : "EVENT",
-            "nodeId" : "at0003",
+            "rmTypeName" : "POINT_EVENT",
+            "occurrences" : "1..1",
+            "nodeId" : "at0003.1",
             "attributes" : [ {
               "@type" : "C_ATTRIBUTE",
               "rmAttributeName" : "data",
@@ -226,6 +227,79 @@
                   }, {
                     "@type" : "C_COMPLEX_OBJECT",
                     "rmTypeName" : "ELEMENT",
+                    "occurrences" : "1..1",
+                    "nodeId" : "at0004.2",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "value",
+                      "children" : [ {
+                        "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "DV_QUANTITY",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "property",
+                          "children" : [ {
+                            "@type" : "C_TERMINOLOGY_CODE",
+                            "rmTypeName" : "TERMINOLOGY_CODE",
+                            "occurrences" : "1..1",
+                            "terminologyId" : {
+                              "value" : "openehr"
+                            },
+                            "constraint" : [ "382" ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ {
+                          "@type" : "C_ATTRIBUTE_TUPLE",
+                          "members" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "units",
+                            "children" : [ ]
+                          }, {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "magnitude",
+                            "children" : [ ]
+                          }, {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "precision",
+                            "children" : [ ]
+                          } ],
+                          "tuples" : [ {
+                            "@type" : "C_PRIMITIVE_TUPLE",
+                            "members" : [ {
+                              "@type" : "C_STRING",
+                              "rmTypeName" : "STRING",
+                              "constraint" : [ "/min" ]
+                            }, {
+                              "@type" : "C_REAL",
+                              "rmTypeName" : "REAL",
+                              "constraint" : [ {
+                                "lower" : 0.0,
+                                "upper" : 1000.0,
+                                "lowerIncluded" : true,
+                                "upperIncluded" : false,
+                                "lowerUnbounded" : false,
+                                "upperUnbounded" : false
+                              } ]
+                            }, {
+                              "@type" : "C_INTEGER",
+                              "rmTypeName" : "INTEGER",
+                              "constraint" : [ {
+                                "lower" : 0,
+                                "upper" : 0,
+                                "lowerIncluded" : true,
+                                "upperIncluded" : true,
+                                "lowerUnbounded" : false,
+                                "upperUnbounded" : false
+                              } ]
+                            } ]
+                          } ]
+                        } ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  }, {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "ELEMENT",
                     "occurrences" : "0..0",
                     "nodeId" : "at1055.1",
                     "attributes" : [ {
@@ -262,13 +336,13 @@
                   }, {
                     "@type" : "C_COMPLEX_OBJECT",
                     "rmTypeName" : "ELEMENT",
-                    "occurrences" : "0..0",
                     "nodeId" : "at1022.2",
                     "attributes" : [ ],
                     "attributeTuples" : [ ]
                   }, {
                     "@type" : "C_COMPLEX_OBJECT",
                     "rmTypeName" : "ELEMENT",
+                    "occurrences" : "0..1",
                     "nodeId" : "at1023.2",
                     "attributes" : [ {
                       "@type" : "C_ATTRIBUTE",
@@ -286,13 +360,20 @@
                             "terminologyId" : {
                               "value" : "local"
                             },
-                            "constraint" : [ "ac0.14" ],
+                            "constraint" : [ "ac0.24" ],
                             "selectedTerminologies" : [ ]
                           } ]
                         } ],
                         "attributeTuples" : [ ]
                       } ]
                     } ],
+                    "attributeTuples" : [ ]
+                  }, {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "ELEMENT",
+                    "occurrences" : "0..0",
+                    "nodeId" : "at1059.2",
+                    "attributes" : [ ],
                     "attributeTuples" : [ ]
                   } ]
                 } ],
@@ -353,31 +434,9 @@
           }, {
             "@type" : "C_COMPLEX_OBJECT",
             "rmTypeName" : "INTERVAL_EVENT",
-            "nodeId" : "at1036",
+            "occurrences" : "0..0",
+            "nodeId" : "at1036.1",
             "attributes" : [ {
-              "@type" : "C_ATTRIBUTE",
-              "rmAttributeName" : "math_function",
-              "children" : [ {
-                "@type" : "C_COMPLEX_OBJECT",
-                "rmTypeName" : "DV_CODED_TEXT",
-                "occurrences" : "0..0",
-                "attributes" : [ {
-                  "@type" : "C_ATTRIBUTE",
-                  "rmAttributeName" : "defining_code",
-                  "children" : [ {
-                    "@type" : "C_TERMINOLOGY_CODE",
-                    "rmTypeName" : "TERMINOLOGY_CODE",
-                    "occurrences" : "1..1",
-                    "terminologyId" : {
-                      "value" : "openehr"
-                    },
-                    "constraint" : [ "144" ],
-                    "selectedTerminologies" : [ ]
-                  } ]
-                } ],
-                "attributeTuples" : [ ]
-              } ]
-            }, {
               "@type" : "C_ATTRIBUTE",
               "rmAttributeName" : "data",
               "children" : [ {
@@ -653,6 +712,26 @@
                 } ],
                 "attributeTuples" : [ ]
               } ]
+            }, {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "math_function",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_CODED_TEXT",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "defining_code",
+                  "children" : [ {
+                    "@type" : "C_TERMINOLOGY_CODE",
+                    "rmTypeName" : "TERMINOLOGY_CODE",
+                    "terminologyId" : {
+                      "value" : "openehr"
+                    },
+                    "constraint" : [ "144" ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              } ]
             } ],
             "attributeTuples" : [ ]
           } ]
@@ -803,16 +882,22 @@
           "code" : "ac0.10",
           "description" : ""
         },
-        "ac0.14" : {
-          "@type" : "ARCHETYPE_TERM",
-          "text" : "*(Synthesized) (en)",
-          "code" : "ac0.14",
-          "description" : ""
-        },
         "ac0.16" : {
           "@type" : "ARCHETYPE_TERM",
           "text" : "*(Synthesized) (en)",
           "code" : "ac0.16",
+          "description" : ""
+        },
+        "at1023.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at1023.2",
+          "text" : "*Clinical interpretation(en)",
+          "description" : "*Generic label to allow for any or all statements about the pulse or heart beat.(en)"
+        },
+        "ac0.24" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.24",
           "description" : ""
         }
       },
@@ -877,16 +962,22 @@
           "code" : "ac0.10",
           "description" : ""
         },
-        "ac0.14" : {
-          "@type" : "ARCHETYPE_TERM",
-          "text" : "*(Synthesized) (en)",
-          "code" : "ac0.14",
-          "description" : ""
-        },
         "ac0.16" : {
           "@type" : "ARCHETYPE_TERM",
           "text" : "*(Synthesized) (en)",
           "code" : "ac0.16",
+          "description" : ""
+        },
+        "at1023.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at1023.2",
+          "text" : "*Clinical interpretation(en)",
+          "description" : "*Generic label to allow for any or all statements about the pulse or heart beat.(en)"
+        },
+        "ac0.24" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.24",
           "description" : ""
         }
       },
@@ -951,16 +1042,22 @@
           "code" : "ac0.10",
           "description" : ""
         },
-        "ac0.14" : {
-          "@type" : "ARCHETYPE_TERM",
-          "text" : "(Synthesized)",
-          "code" : "ac0.14",
-          "description" : ""
-        },
         "ac0.16" : {
           "@type" : "ARCHETYPE_TERM",
           "text" : "(Synthesized)",
           "code" : "ac0.16",
+          "description" : ""
+        },
+        "at1023.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at1023.2",
+          "text" : "Clinical interpretation",
+          "description" : "Generic label to allow for any or all statements about the pulse or heart beat."
+        },
+        "ac0.24" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "(Synthesized)",
+          "code" : "ac0.24",
           "description" : ""
         }
       },
@@ -1025,16 +1122,22 @@
           "code" : "ac0.10",
           "description" : ""
         },
-        "ac0.14" : {
-          "@type" : "ARCHETYPE_TERM",
-          "text" : "*(Synthesized) (en)",
-          "code" : "ac0.14",
-          "description" : ""
-        },
         "ac0.16" : {
           "@type" : "ARCHETYPE_TERM",
           "text" : "*(Synthesized) (en)",
           "code" : "ac0.16",
+          "description" : ""
+        },
+        "at1023.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at1023.2",
+          "text" : "Klinische Interpretation",
+          "description" : "Eine allgemeine Bezeichnung, um alle oder einen Teil der Aussagen über die Puls- oder die Herzfrequenz zu ermöglichen."
+        },
+        "ac0.24" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.24",
           "description" : ""
         }
       },
@@ -1099,16 +1202,22 @@
           "code" : "ac0.10",
           "description" : ""
         },
-        "ac0.14" : {
-          "@type" : "ARCHETYPE_TERM",
-          "text" : "*(Synthesized) (en)",
-          "code" : "ac0.14",
-          "description" : ""
-        },
         "ac0.16" : {
           "@type" : "ARCHETYPE_TERM",
           "text" : "*(Synthesized) (en)",
           "code" : "ac0.16",
+          "description" : ""
+        },
+        "at1023.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at1023.2",
+          "text" : "*Clinical interpretation(en)",
+          "description" : "*Generic label to allow for any or all statements about the pulse or heart beat.(en)"
+        },
+        "ac0.24" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.24",
           "description" : ""
         }
       },
@@ -1173,16 +1282,22 @@
           "code" : "ac0.10",
           "description" : ""
         },
-        "ac0.14" : {
-          "@type" : "ARCHETYPE_TERM",
-          "text" : "*(Synthesized) (en)",
-          "code" : "ac0.14",
-          "description" : ""
-        },
         "ac0.16" : {
           "@type" : "ARCHETYPE_TERM",
           "text" : "*(Synthesized) (en)",
           "code" : "ac0.16",
+          "description" : ""
+        },
+        "at1023.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at1023.2",
+          "text" : "Interpretação clínica",
+          "description" : "Etiqueta genérica para permitir qualquer ou todas as declarações sobre o pulso ou batimento cardíaco."
+        },
+        "ac0.24" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.24",
           "description" : ""
         }
       },
@@ -1247,16 +1362,22 @@
           "code" : "ac0.10",
           "description" : ""
         },
-        "ac0.14" : {
-          "@type" : "ARCHETYPE_TERM",
-          "text" : "*(Synthesized) (en)",
-          "code" : "ac0.14",
-          "description" : ""
-        },
         "ac0.16" : {
           "@type" : "ARCHETYPE_TERM",
           "text" : "*(Synthesized) (en)",
           "code" : "ac0.16",
+          "description" : ""
+        },
+        "at1023.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at1023.2",
+          "text" : "Klinisk tolkning",
+          "description" : "Allmänt fält för ett enskilt eller samtliga utlåtanden om pulsen eller hjärtrytmen."
+        },
+        "ac0.24" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.24",
           "description" : ""
         }
       },
@@ -1321,16 +1442,22 @@
           "code" : "ac0.10",
           "description" : ""
         },
-        "ac0.14" : {
-          "@type" : "ARCHETYPE_TERM",
-          "text" : "*(Synthesized) (en)",
-          "code" : "ac0.14",
-          "description" : ""
-        },
         "ac0.16" : {
           "@type" : "ARCHETYPE_TERM",
           "text" : "*(Synthesized) (en)",
           "code" : "ac0.16",
+          "description" : ""
+        },
+        "at1023.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at1023.2",
+          "text" : "Interpretación clínica",
+          "description" : "Etiqueta genérica que permite registrar cualquier declaración sobre el pulso o latidos."
+        },
+        "ac0.24" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.24",
           "description" : ""
         }
       },
@@ -1395,16 +1522,22 @@
           "code" : "ac0.10",
           "description" : ""
         },
-        "ac0.14" : {
-          "@type" : "ARCHETYPE_TERM",
-          "text" : "*(Synthesized) (en)",
-          "code" : "ac0.14",
-          "description" : ""
-        },
         "ac0.16" : {
           "@type" : "ARCHETYPE_TERM",
           "text" : "*(Synthesized) (en)",
           "code" : "ac0.16",
+          "description" : ""
+        },
+        "at1023.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at1023.2",
+          "text" : "Kliininen tulkinta",
+          "description" : "Yleinen otsikko, jonka alle voidaan kirjata jokin tai kaikki lausunnot pulssista tai sykkeestä."
+        },
+        "ac0.24" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.24",
           "description" : ""
         }
       },
@@ -1469,16 +1602,22 @@
           "code" : "ac0.10",
           "description" : ""
         },
-        "ac0.14" : {
-          "@type" : "ARCHETYPE_TERM",
-          "text" : "*(Synthesized) (en)",
-          "code" : "ac0.14",
-          "description" : ""
-        },
         "ac0.16" : {
           "@type" : "ARCHETYPE_TERM",
           "text" : "*(Synthesized) (en)",
           "code" : "ac0.16",
+          "description" : ""
+        },
+        "at1023.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at1023.2",
+          "text" : "Klinisk tolkning",
+          "description" : "Generisk elementnavn for å tillate øvrige eller alle utsagn om puls og hjerteslag."
+        },
+        "ac0.24" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.24",
           "description" : ""
         }
       },
@@ -1543,16 +1682,28 @@
           "code" : "ac0.10",
           "description" : ""
         },
-        "ac0.14" : {
-          "@type" : "ARCHETYPE_TERM",
-          "text" : "*(Synthesized) (en)",
-          "code" : "ac0.14",
-          "description" : ""
-        },
         "ac0.16" : {
           "@type" : "ARCHETYPE_TERM",
           "text" : "*(Synthesized) (en)",
           "code" : "ac0.16",
+          "description" : ""
+        },
+        "at0004.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0004.2",
+          "text" : "Hartfrequentie",
+          "description" : "De frequentie van pols- of hartslag, gemeten in slagen per minuut."
+        },
+        "at1023.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at1023.2",
+          "text" : "Klinische interpretatie",
+          "description" : "Algemeen label om uitspraken over de pols- of hartslag toe te staan."
+        },
+        "ac0.24" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.24",
           "description" : ""
         }
       }
@@ -1639,6 +1790,46 @@
         "@type" : "VALUE_SET",
         "id" : "ac0.16",
         "members" : [ "at1032", "at1033", "at1034", "at1050" ]
+      },
+      "ac0.17" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.17",
+        "members" : [ "at1057", "at1058" ]
+      },
+      "ac0.18" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.18",
+        "members" : [ "at1057", "at1058" ]
+      },
+      "ac0.19" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.19",
+        "members" : [ "at1057" ]
+      },
+      "ac0.20" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.20",
+        "members" : [ "at1057" ]
+      },
+      "ac0.21" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.21",
+        "members" : [ "at1057" ]
+      },
+      "ac0.22" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.22",
+        "members" : [ "at1057" ]
+      },
+      "ac0.23" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.23",
+        "members" : [ "at1057" ]
+      },
+      "ac0.24" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.24",
+        "members" : [ "at1057" ]
       }
     }
   },

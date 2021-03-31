@@ -3,9 +3,7 @@ layout: zib
 parent: Mappings
 title: Bloeddruk
 version: 0.2
-zib:
-    name: Bloeddruk-v3.2.1
-    url: https://zibs.nl/wiki/Bloeddruk-v3.2.1(2020NL)
+zib: Bloeddruk-v3.2.1
 openEHR:
     templates: 
         - Bloeddruk-v3.2.1(2020NL) 
@@ -13,7 +11,6 @@ openEHR:
     archetypes: 
         - openEHR-EHR-COMPOSITION.report.v1
         - openEHR-EHR-OBSERVATION.blood_pressure.v2
-    ckm: 
 status:
     mapping: Concept
     template: Concept

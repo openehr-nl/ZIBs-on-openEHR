@@ -1,0 +1,5 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Logarithmic E chart,1,,VisusMeetkaart,2.16.840.1.113883.2.4.3.11.60.40.4.27,logaritmische E-hakenkaart,,,
+Snellen chart,2,,VisusMeetkaart,2.16.840.1.113883.2.4.3.11.60.40.4.27,Snellen Letterkaart,,,
+LEA Hayvarinen chart,3,,VisusMeetkaart,2.16.840.1.113883.2.4.3.11.60.40.4.27,LEA symbolen kaart,,,
+Other,OTH,,NullFlavor,2.16.840.1.113883.5.1008,Anders,,,

@@ -1,0 +1,6 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Brabbelt,258116008,,SNOMED CT,2.16.840.1.113883.6.96,Brabbelt,,,
+In staat om korte dagelijks gebruikte zinnen te begrijpen,26261000146103,,SNOMED CT,2.16.840.1.113883.6.96,Begrijpt korte dagelijks gebruikte zinnen,,,
+In staat om korte dagelijks gebruikte zinnen te spreken,26341000146105,,SNOMED CT,2.16.840.1.113883.6.96,Spreekt korte dagelijks gebruikte zinnen,,,
+Spreekt begrijpelijk voor kennissen,26361000146106,,SNOMED CT,2.16.840.1.113883.6.96,Is verstaanbaar voor bekenden,,,
+Spreekt begrijpelijk voor vreemden,26371000146100,,SNOMED CT,2.16.840.1.113883.6.96,Is verstaanbaar voor onbekenden,,,

@@ -1,0 +1,5 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Non-invasief,22762002,,SNOMED CT,2.16.840.1.113883.6.96,Niet-invasief,,,
+Bloeddrukmeting met gebruikmaking van manchet,371911009,,SNOMED CT,2.16.840.1.113883.6.96,Niet-invasief (met manchet),,,
+Bloeddrukmeting met automatische bloeddrukmeter,95691000146106,,SNOMED CT,2.16.840.1.113883.6.96,Niet-invasief (met automatische bloeddrukmeter),,,
+Invasief,10179008,,SNOMED CT,2.16.840.1.113883.6.96,Invasief,,,

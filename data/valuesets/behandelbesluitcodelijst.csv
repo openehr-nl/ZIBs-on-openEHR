@@ -1,0 +1,4 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Wel uitvoeren,0,,BehandelBesluiten,2.16.840.1.113883.2.4.3.11.60.40.4.25.1,Wel uitvoeren,,,
+Anders,1,,BehandelBesluiten,2.16.840.1.113883.2.4.3.11.60.40.4.25.1,Anders,,,
+Niet uitvoeren,2,,BehandelBesluiten,2.16.840.1.113883.2.4.3.11.60.40.4.25.1,Niet uitvoeren,,,

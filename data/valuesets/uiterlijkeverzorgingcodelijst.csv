@@ -1,0 +1,3 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Hulp,GROOM0,0,BarthelUiterlijkeVerzorging,2.16.840.1.113883.2.4.3.11.60.40.4.1.3,Heeft hulp nodig,,,
+Onafhankelijk,GROOM1,1,BarthelUiterlijkeVerzorging,2.16.840.1.113883.2.4.3.11.60.40.4.1.3,"Onafhankelijk (gezicht, haar, tanden, scheren)",,,

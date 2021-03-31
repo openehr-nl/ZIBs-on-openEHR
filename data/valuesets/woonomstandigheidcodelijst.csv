@@ -1,0 +1,10 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Huis bevat trap,160708008,,SNOMED CT,2.16.840.1.113883.6.96,Trap in woning,,,
+Woont in appartement met lift,609241003,,SNOMED CT,2.16.840.1.113883.6.96,Woning bereikbaar met lift,,,
+Toegang tot woning via trap,715758005,,SNOMED CT,2.16.840.1.113883.6.96,Woning bereikbaar met trap,,,
+Ingang van woning geblokkeerd,424948003,,SNOMED CT,2.16.840.1.113883.6.96,Woning moeilijk toegankelijk,,,
+Huis bevat structurele belemmering voor verplaatsing,423155007,,SNOMED CT,2.16.840.1.113883.6.96,Woning moeilijk doorgankelijk,,,
+Rommelige leefruimte,424661000,,SNOMED CT,2.16.840.1.113883.6.96,Overvolle leefruimte,,,
+Vieze leefomstandigheden,424415008,,SNOMED CT,2.16.840.1.113883.6.96,Vervuilde leefomstandigheden,,,
+Houdt huisdieren,224152001,,SNOMED CT,2.16.840.1.113883.6.96,Huisdieren aanwezig,,,
+Vloerbedekking onveilig,423527000,,SNOMED CT,2.16.840.1.113883.6.96,Onveilige vloerbedekking,,,

@@ -1,0 +1,6 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Boven referentiebereik,281302008,,SNOMED CT,2.16.840.1.113883.6.96,Boven referentiewaarde,,,
+Onder referentiebereik,281300000,,SNOMED CT,2.16.840.1.113883.6.96,Onder referentiewaarde,,,
+Intermediair,11896004,,SNOMED CT,2.16.840.1.113883.6.96,Intermediair,,,
+Resistent,30714006,,SNOMED CT,2.16.840.1.113883.6.96,Resistent,,,
+Ontvankelijk,131196009,,SNOMED CT,2.16.840.1.113883.6.96,Sensitief,,,

@@ -1,0 +1,6 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+No movement,Mov1,1,CN_Lichaamsbeweging,2.16.840.1.113883.2.4.3.11.60.40.4.20.5,Geen beweging,,,
+"Occasional, slight movements",Mov2,2,CN_Lichaamsbeweging,2.16.840.1.113883.2.4.3.11.60.40.4.20.5,Incidentele (3 of minder) kleine bewegingen,,,
+"Frequent, slight movements",Mov3,3,CN_Lichaamsbeweging,2.16.840.1.113883.2.4.3.11.60.40.4.20.5,Frequente (3 of meer) kleine bewegingen,,,
+Vigorous movements limited to extremities,Mov4,4,CN_Lichaamsbeweging,2.16.840.1.113883.2.4.3.11.60.40.4.20.5,Heftige bewegingen met armen en benen,,,
+Vigorous movements including torso and head,Mov5,5,CN_Lichaamsbeweging,2.16.840.1.113883.2.4.3.11.60.40.4.20.5,Heftige bewegingen ook met romp en hoofd,,,

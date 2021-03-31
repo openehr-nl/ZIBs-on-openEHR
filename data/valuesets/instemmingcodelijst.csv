@@ -1,0 +1,5 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Geen instemming patiënt,1,,InstemmingStatus,2.16.840.1.113883.2.4.3.11.60.40.4.6.1,Geen instemming patiënt,,,
+Instemming patiënt,2,,InstemmingStatus,2.16.840.1.113883.2.4.3.11.60.40.4.6.1,Instemming patiënt,,,
+Geen instemming wettelijk vertegenwoordiger,3,,InstemmingStatus,2.16.840.1.113883.2.4.3.11.60.40.4.6.1,Geen instemming wettelijk vertegenwoordiger,,,
+Instemming wettelijke vertegenwoordiger,4,,InstemmingStatus,2.16.840.1.113883.2.4.3.11.60.40.4.6.1,Instemming wettelijke vertegenwoordiger,,,

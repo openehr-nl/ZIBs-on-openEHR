@@ -3,13 +3,10 @@ layout: zib
 parent: Mappings
 title: Contactpersoon
 version: 0.1
-zib:
-    name: Contactpersoon-v3.4
-    url: https://zibs.nl/wiki/Contactpersoon-v3.4(2020NL)
+zib: Contactpersoon-v3.4
 openEHR:
     templates: 
     archetypes: 
-    ckm: 
 status:
     mapping: Inrichten
     template: Inrichten

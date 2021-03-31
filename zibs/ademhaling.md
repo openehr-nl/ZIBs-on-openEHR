@@ -3,15 +3,12 @@ layout: zib
 parent: Mappings
 title: Ademhaling
 version: 0.1
-zib:
-    name: Ademhaling-v3.2
-    url: https://zibs.nl/wiki/Ademhaling-v3.2(2020NL)
+zib: Ademhaling-v3.2
 openEHR:
     templates: 
         - Ademhaling-v3.2(2020NL)
     archetypes: 
         - openEHR-EHR-OBSERVATION.respiration.v2
-    ckm: 
 status:
     mapping: Ontwikkelen
     template: Ontwikkelen

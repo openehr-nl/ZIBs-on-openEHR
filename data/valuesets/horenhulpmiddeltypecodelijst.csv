@@ -1,0 +1,4 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Geen,0,,Hulpmiddelen gehoor,2.16.840.1.113883.2.4.3.11.22.211,Geen,,,
+Hoortoestel,6012004,,SNOMED CT,2.16.840.1.113883.6.96,Gehoorapparaat,,,
+Aid to hearing [DEPRECATED],272182005,,SNOMED CT,2.16.840.1.113883.6.96,Gehoorapparaat,,,

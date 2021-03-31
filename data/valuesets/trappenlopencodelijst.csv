@@ -1,0 +1,4 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Afhankelijk,CLIMB0,0,BarthelTrappenLopen,2.16.840.1.113883.2.4.3.11.60.40.4.1.9,Niet in staat,,,
+Hulp,CLIMB1,1,BarthelTrappenLopen,2.16.840.1.113883.2.4.3.11.60.40.4.1.9,"Heeft hulp nodig (woorden, lichamelijk of hulpmiddel)",,,
+Onafhankelijk,CLIMB2,2,BarthelTrappenLopen,2.16.840.1.113883.2.4.3.11.60.40.4.1.9,Onafhankelijk naar boven en naar beneden,,,

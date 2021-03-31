@@ -1,0 +1,4 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Limp,no movement,LA6713-7,0,LOINC,2.16.840.1.113883.6.1,Geen spierspanning aanwezig/slap,,,
+Some flexion of arms and legs,LA6714-5,1,LOINC,2.16.840.1.113883.6.1,Weinig bewegingen met armpjes en beentjes,,,
+Active motion,LA6715-2,2,LOINC,2.16.840.1.113883.6.1,Beweegt armpjes en beentjes goed,,,

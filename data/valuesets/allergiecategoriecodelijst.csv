@@ -1,0 +1,6 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Neiging tot ongewenste reactie op voedsel,418471000,,SNOMED CT,2.16.840.1.113883.6.96,Voeding,,,
+Neiging tot ongewenste reactie op geneesmiddel,419511003,,SNOMED CT,2.16.840.1.113883.6.96,Medicijn,,,
+Omgevingsgerelateerde allergie,426232007,,SNOMED CT,2.16.840.1.113883.6.96,Omgeving,,,
+Allergie voor substantie,419199007,,SNOMED CT,2.16.840.1.113883.6.96,Stof of product,,,
+Other,OTH,,NullFlavor,2.16.840.1.113883.5.1008,Anders,,,

@@ -3,15 +3,12 @@ layout: zib
 parent: Mappings
 title: Verrichting
 version: 0.1
-zib:
-    name: Verrichting-v5.2
-    url: https://zibs.nl/wiki/Verrichting-v5.2(2020NL)
+zib: Verrichting-v5.2
 openEHR:
     templates: 
         - Verrichting-v5.2(2020NL)
     archetypes: 
         - openEHR-EHR-ACTION.procedure.v1
-    ckm: 
 status:
     mapping: Inrichten
     template: Ontwikkelen

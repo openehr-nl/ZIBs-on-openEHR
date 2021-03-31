@@ -1,0 +1,5 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+'s ochtends,73775008,,SNOMED CT,2.16.840.1.113883.6.96,''s ochtends,,,
+'s middags,255213009,,SNOMED CT,2.16.840.1.113883.6.96,''s middags,,,
+'s avonds,3157002,,SNOMED CT,2.16.840.1.113883.6.96,''s avonds,,,
+'s nachts,2546009,,SNOMED CT,2.16.840.1.113883.6.96,''s nachts,,,

@@ -1,0 +1,4 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+No particular expression,Face0,0,FLACC_Gezicht,2.16.840.1.113883.2.4.3.11.60.40.4.21.1,Vertoont geen specifieke expressie of glimlach,,,
+Occasional grimace,Face1,1,FLACC_Gezicht,2.16.840.1.113883.2.4.3.11.60.40.4.21.1,"Fronst af en toe of trekt een grimas, is teruggetrokken, ongeïnteresseerd",,,
+Frequent to constant frown,Face2,2,FLACC_Gezicht,2.16.840.1.113883.2.4.3.11.60.40.4.21.1,"Fronst regelmatig tot voortdurend, klemt de kaken op elkaar, heeft een trillende kin",,,

@@ -1,0 +1,4 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Normal position,Legs0,0,FLACC_Legs,2.16.840.1.113883.2.4.3.11.60.40.4.21.2,Normale houding en/of ontspannen,,,
+Restless,Legs1,1,FLACC_Legs,2.16.840.1.113883.2.4.3.11.60.40.4.21.2,"Ongemakkelijk, onrustig, gespannen",,,
+Kicking,Legs2,2,FLACC_Legs,2.16.840.1.113883.2.4.3.11.60.40.4.21.2,Schopt of heeft opgetrokken benen,,,

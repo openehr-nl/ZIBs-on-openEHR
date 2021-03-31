@@ -1,0 +1,5 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Normale ademhalingsdiepte,301284009,,SNOMED CT,2.16.840.1.113883.6.96,Normale ademhalingsdiepte,,,
+Oppervlakkige ademhaling,386616007,,SNOMED CT,2.16.840.1.113883.6.96,Oppervlakkige ademhaling,,,
+Diepe ademhaling,289123006,,SNOMED CT,2.16.840.1.113883.6.96,Diepe ademhaling,,,
+Variërende ademhalingsdiepte,248587009,,SNOMED CT,2.16.840.1.113883.6.96,Ademhalingsdiepte varieert,,,

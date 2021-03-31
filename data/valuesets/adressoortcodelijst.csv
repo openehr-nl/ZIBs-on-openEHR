@@ -1,0 +1,7 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Postal Address,PST,,AddressUse,2.16.840.1.113883.5.1119,Postadres,,,
+Primary Home,HP,,AddressUse,2.16.840.1.113883.5.1119,Officieel adres,,,
+Visit Address,PHYS,,AddressUse,2.16.840.1.113883.5.1119,Woon-/verblijfadres,,,
+Temporary Address,TMP,,AddressUse,2.16.840.1.113883.5.1119,Tijdelijk adres,,,
+Work Place,WP,,AddressUse,2.16.840.1.113883.5.1119,Werkadres,,,
+Vacation Home,HV,,AddressUse,2.16.840.1.113883.5.1119,Vakantie adres,,,

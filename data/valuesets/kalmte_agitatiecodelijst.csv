@@ -1,0 +1,6 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Calm,Calm1,1,CN_Kalmte_Agitatie,2.16.840.1.113883.2.4.3.11.60.40.4.20.2,Kalm (kind helder en rustig),,,
+Slightly anxious,Calm2,2,CN_Kalmte_Agitatie,2.16.840.1.113883.2.4.3.11.60.40.4.20.2,Licht angstig (kind toont lichte onrust),,,
+Anxious,Calm3,3,CN_Kalmte_Agitatie,2.16.840.1.113883.2.4.3.11.60.40.4.20.2,"Angstig (kind lijkt onrustig, kan zich beheersen)",,,
+Very anxious,Calm4,4,CN_Kalmte_Agitatie,2.16.840.1.113883.2.4.3.11.60.40.4.20.2,"Zeer angstig (kind lijkt zeer onrustig, kan zich nog net beheersen)",,,
+Panicky,Calm5,5,CN_Kalmte_Agitatie,2.16.840.1.113883.2.4.3.11.60.40.4.20.2,Paniekerig (ernstige onrust met verlies van beheersing),,,

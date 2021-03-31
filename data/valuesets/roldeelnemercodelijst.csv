@@ -1,0 +1,5 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+voorzitter,VOORZ,,RolBespreking,2.16.840.1.113883.2.4.3.11.60.40.4.26.1,Voorzitter van de patiëntbespreking,,,
+aanmelder,AANM,,RolBespreking,2.16.840.1.113883.2.4.3.11.60.40.4.26.1,Aanmelder van de patiënt bij de bespreking,,,
+expert,EXPR,,RolBespreking,2.16.840.1.113883.2.4.3.11.60.40.4.26.1,Inhoudelijk expert bij de bespreking,,,
+other,OTH,,NullFlavor,2.16.840.1.113883.5.1008,"Anders, namelijk",,,

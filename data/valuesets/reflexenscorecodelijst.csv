@@ -1,0 +1,4 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+No response to airways being suctioned,LA6719-4,0,LOINC,2.16.840.1.113883.6.1,Reageert niet op prikkels/Geen reactie,,,
+Grimace during suctioning,LA6720-2,1,LOINC,2.16.840.1.113883.6.1,Reageert met kleine jammergeluidjes en zwakke bewegingen,,,
+"Grimace and pulling away, cough, or sneeze during suctioning",LA6721-0,2,LOINC,2.16.840.1.113883.6.1,"Reageert door te huilen, te hoesten of te niezen",,,

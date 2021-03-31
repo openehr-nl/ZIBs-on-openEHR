@@ -1,0 +1,4 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+PnX,PnX,,Pn_PerineuraleInvasie,2.16.840.1.113883.2.4.3.11.60.40.5.1.3,Aanwezigheid van Perineurale invasie kan niet beoordeeld worden,,,
+Pn0,Pn0,,Pn_PerineuraleInvasie,2.16.840.1.113883.2.4.3.11.60.40.5.1.3,Geen Perineurale invasie,,,
+Pn1,Pn1,,Pn_PerineuraleInvasie,2.16.840.1.113883.2.4.3.11.60.40.5.1.3,Perineurale invasie,,,

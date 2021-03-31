@@ -1,0 +1,7 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Gesedeerd,17971005,,SNOMED CT,2.16.840.1.113883.6.96,gesedeerd,,,
+Paralyse door spierrelaxans,40241000146103,,SNOMED CT,2.16.840.1.113883.6.96,spierverslappers,,,
+Afasie,87486003,,SNOMED CT,2.16.840.1.113883.6.96,afasie,,,
+Endotracheale tube aanwezig,419991009,,SNOMED CT,2.16.840.1.113883.6.96,tube aanwezig,,,
+Aanwezigheid van tracheostoma,302108003,,SNOMED CT,2.16.840.1.113883.6.96,tracheostoma aanwezig,,,
+other,OTH,,NullFlavor,2.16.840.1.113883.5.1008,anders,,,

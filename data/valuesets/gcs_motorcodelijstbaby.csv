@@ -1,0 +1,8 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Moves spontaneously and purposefully,M6,6,GCS_Motor,2.16.840.1.113883.2.4.3.11.60.40.4.2.2,Normaal [beweegt zoals verwacht],,,
+Localising,M5,5,GCS_Motor,2.16.840.1.113883.2.4.3.11.60.40.4.2.2,Terugtrekken bij aanraking [Trekt terug bij aanraken],,,
+Normal flexion,M4,4,GCS_Motor,2.16.840.1.113883.2.4.3.11.60.40.4.2.2,Terugtrekken in respons op pijn [Maakt afwerende of wegtrekkende beweging bij een pijnprikkel],,,
+Abnormal flexion,M3,3,GCS_Motor,2.16.840.1.113883.2.4.3.11.60.40.4.2.2,"Buigreactie [Langzame, buiging van armen en/of benen]",,,
+Abnormal extension,M2,2,GCS_Motor,2.16.840.1.113883.2.4.3.11.60.40.4.2.2,Decerebrale strekreactie [strekken van armen en/of benen],,,
+No response,M1,1,GCS_Motor,2.16.840.1.113883.2.4.3.11.60.40.4.2.2,Geen beweging op prikkel [Geen enkele beweging op een prikkel],,,
+Not applicable,NA,0,NullFlavor,2.16.840.1.113883.5.1008,Niet van toepassing,,,

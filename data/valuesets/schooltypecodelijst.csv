@@ -1,0 +1,11 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Geen opleiding,01,,NHG tabel 20: Code opleiding,2.16.840.1.113883.2.4.4.30.20,Geen opleiding,,,
+Lager Algemeen Onderwijs,02,,NHG tabel 20: Code opleiding,2.16.840.1.113883.2.4.4.30.20,Lager algemeen onderwijs (basisschool/lagere school),,,
+Lager Beroeps Onderwijs,03,,NHG tabel 20: Code opleiding,2.16.840.1.113883.2.4.4.30.20,"Lager beroepsonderwijs (LBO, VMBO-B, VMBO-K)",,,
+Middelbaar Algemeen Onderwijs,04,,NHG tabel 20: Code opleiding,2.16.840.1.113883.2.4.4.30.20,"Middelbaar algemeen onderwijs (MAVO, VMBO-T)",,,
+Middelbaar Beroepsonderwijs,05,,NHG tabel 20: Code opleiding,2.16.840.1.113883.2.4.4.30.20,"Middelbaar beroepsonderwijs (MBO, incl. MEAO en MTS)",,,
+Hoger Algemeen Onderwijs,08,,NHG tabel 20: Code opleiding,2.16.840.1.113883.2.4.4.30.20,"Hoger algemeen onderwijs (HAVO, VWO)",,,
+Hoger Beroepsonderwijs,09,,NHG tabel 20: Code opleiding,2.16.840.1.113883.2.4.4.30.20,"Hoger beroepsonderwijs (HBO, incl. HEAO en HTS)",,,
+Wetenschappelijk onderwijs,10,,NHG tabel 20: Code opleiding,2.16.840.1.113883.2.4.4.30.20,"Wetenschappelijk onderwijs (universiteit, hogeschool)",,,
+Onbekend,UNK,,NullFlavor,2.16.840.1.113883.5.1008,Onbekend,,,
+Anders,OTH,,NullFlavor,2.16.840.1.113883.5.1008,Anders,,,

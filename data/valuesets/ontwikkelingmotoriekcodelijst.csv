@@ -1,0 +1,6 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+In staat om van buik naar rug te draaien en andersom,282632008,,SNOMED CT,2.16.840.1.113883.6.96,Draait van buik naar rug en andersom,,,
+In staat om te kruipen,282607006,,SNOMED CT,2.16.840.1.113883.6.96,Kan kruipen,,,
+In staat om zonder steun te zitten,302040002,,SNOMED CT,2.16.840.1.113883.6.96,Kan zelfstandig zitten,,,
+In staat om zich op te trekken tot staan vanuit zithouding,282888002,,SNOMED CT,2.16.840.1.113883.6.96,Trekt zich op tot staan,,,
+In staat tot onafhankelijk lopen,165245003,,SNOMED CT,2.16.840.1.113883.6.96,Kan zonder hulp lopen,,,

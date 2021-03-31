@@ -1,0 +1,5 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Active,active,,ActStatus,2.16.840.1.113883.5.14,Actief,,,
+Completed,completed,,ActStatus,2.16.840.1.113883.5.14,Niet meer aanwezig,,,
+Obsolete,obsolete,,ActStatus,2.16.840.1.113883.5.14,Achterhaald,,,
+Nullified,nullified,,ActStatus,2.16.840.1.113883.5.14,Foutief,,,

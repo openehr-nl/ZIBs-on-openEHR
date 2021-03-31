@@ -1,0 +1,4 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Geen controle over defecatie op kinderleeftijd,26421000146106,,SNOMED CT,2.16.840.1.113883.6.96,Niet zindelijk,,,
+Incidenteel ontlastingsverlies op kinderleeftijd,26441000146100,,SNOMED CT,2.16.840.1.113883.6.96,Af en toe een ongelukje,,,
+Volledige controle over defecatie op kinderleeftijd,26401000146103,,SNOMED CT,2.16.840.1.113883.6.96,Volledig zindelijk,,,

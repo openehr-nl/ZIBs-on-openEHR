@@ -1,0 +1,4 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Incontinentie voor feces,72042002,0,SNOMED CT,2.16.840.1.113883.6.96,Incontinent,,,
+Incidenteel ontlastingsverlies,165230005,1,SNOMED CT,2.16.840.1.113883.6.96,Af en toe een ongelukje,,,
+Volledig continent voor ontlasting,24029004,2,SNOMED CT,2.16.840.1.113883.6.96,Continent,,,
