@@ -1,14 +1,14 @@
-ZIB_Id,ZIB_Naam,ZIB_Type,ZIB_Card,ZIB_DefCode,ZIB_Verwijzing,openEHR_Path,openEHR_Naam,openEHR_Type,openEHR_Card,openEHR_Term,Commentaar
-NL-CM:12.5.1,Ademhaling,rootconcept,,SNOMED CT: 422834003 Evaluatie van ademhaling,,,,,,,
-NL-CM:12.5.2,Ademfrequentie,PQ,0..1,LOINC: 9279-1 Respiratory rate,,,,,,,
-NL-CM:12.5.4,AdemhalingDatumTijd,TS,1,,,,,,,,
-NL-CM:12.5.5,Ritme,CD,0..1,SNOMED CT: 48064009 Ademhalingsritme,RitmeCodelijst,,,,,,
-NL-CM:12.5.6,Diepte,CD,0..1,SNOMED CT: 271626009 Diepte van ademhaling,DiepteCodelijst,,,,,,
-NL-CM:12.5.7,AfwijkendAdemhalingspatroon,CD,0..1,SNOMED CT: 278907009 Ademhalingspatroon,AfwijkendAdemhalingspatroonCodelijst,,,,,,
-NL-CM:12.5.12,ExtraZuurstofToediening,BL,0..1,SNOMED CT: 16206004 Zuurstoftoevoer,,,,,,,
-NL-CM:12.5.3,Toelichting,ST,0..1,LOINC: 48767-8 Annotation comment [Interpretation] Narrative,,,,,,,
-NL-CM:12.5.8,ToegediendeZuurstof,container,0..1,,,,,,,,
-NL-CM:12.5.10,FlowRate,PQ,0..1,SNOMED CT: 427081008 Stroomsnelheid van toegediende zuurstof,,,,,,,
-NL-CM:12.5.9,FiO2,PQ,0..1,SNOMED CT: 250774007 Fractionele inspiratoire zuurstofconcentratie,,,,,,,
-NL-CM:12.5.13,ToedieningHulpmiddel::MedischHulpmiddel,"data,reference",0..1,,Dit is een verwijzing naar het rootconcept van de bouwsteen MedischHulpmiddel.,,,,,,
-NL-CM:10.1.3,ProductType,CD,,,ToedieningHulpmiddelCodelijst,,,,,,
+"ZIB_Id","ZIB_Naam","ZIB_Type","ZIB_Card","ZIB_DefCode","ZIB_Verwijzing","openEHR_Path","openEHR_Naam","openEHR_Type","openEHR_Card","openEHR_Term","Commentaar","M"
+"NL-CM:12.5.1","Ademhaling","rootconcept","","","","","","","","","",""
+"NL-CM:12.5.2","Ademfrequentie","","","","","","","","","","",""
+"NL-CM:12.5.4","AdemhalingDatumTijd","fsda","","","","","","","","","",""
+"NL-CM:12.5.5","Ritme","","","","","","","","","","",""
+"NL-CM:12.5.6","Diepte","","","","","","","","","","",""
+"NL-CM:12.5.7","AfwijkendAdemhalingspatroon","","","","","","","","","","",""
+"NL-CM:12.5.12","	ExtraZuurstofToediening","","","","","","","","","","",""
+"NL-CM:12.5.3","Toelichting","","","","","","","","","","",""
+"NL-CM:12.5.8","ToegediendeZuurstof","","","","","","","","","","",""
+"NL-CM:12.5.10","FlowRate","","","","","","","","","","",""
+"NL-CM:12.5.9","FiO2","","","","","","","","","","",""
+"NL-CM:12.5.13","ToedieningHulpmiddel::MedischHulpmiddel","","","","","","","","","","",""
+"NL-CM:10.1.3","ProductType","","","","","","","","","","",""
