@@ -1,0 +1,286 @@
+{
+  "templateId" : "Vochtbalans-v1.0.1(2020NL)",
+  "version" : "2.3",
+  "defaultLanguage" : "en",
+  "languages" : [ "en" ],
+  "tree" : {
+    "id" : "vochtbalans-v1.0.1_2020nl",
+    "name" : "Vochtbalans-v1.0.1(2020NL)",
+    "localizedName" : "Vochtbalans-v1.0.1(2020NL)",
+    "rmType" : "OBSERVATION",
+    "nodeId" : "openEHR-EHR-OBSERVATION.fluid_balance.v1",
+    "min" : 1,
+    "max" : 1,
+    "localizedNames" : {
+      "en" : "Vochtbalans-v1.0.1(2020NL)"
+    },
+    "localizedDescriptions" : {
+      "en" : "The difference between fluid input and output during a specified interval of time."
+    },
+    "aqlPath" : "",
+    "children" : [ {
+      "id" : "any_interval_event",
+      "name" : "Any interval event",
+      "localizedName" : "Any interval event",
+      "rmType" : "INTERVAL_EVENT",
+      "nodeId" : "at0002",
+      "min" : 0,
+      "max" : -1,
+      "localizedNames" : {
+        "en" : "Any interval event"
+      },
+      "localizedDescriptions" : {
+        "en" : "Unspecified interval event which may be explicitly defined in a template or at run-time."
+      },
+      "aqlPath" : "/data[at0001]/events[at0002]",
+      "children" : [ {
+        "id" : "total_input",
+        "name" : "Total input",
+        "localizedName" : "Total input",
+        "rmType" : "DV_QUANTITY",
+        "nodeId" : "at0005",
+        "min" : 0,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "Total input"
+        },
+        "localizedDescriptions" : {
+          "en" : "The total amount of fluid administered or ingested during a specified interval of time."
+        },
+        "aqlPath" : "/data[at0001]/events[at0002]/data[at0003]/items[at0005]/value",
+        "inputs" : [ {
+          "suffix" : "magnitude",
+          "type" : "DECIMAL"
+        }, {
+          "suffix" : "unit",
+          "type" : "CODED_TEXT",
+          "list" : [ {
+            "value" : "ml",
+            "label" : "ml",
+            "validation" : {
+              "range" : {
+                "minOp" : ">=",
+                "min" : 0.0
+              }
+            }
+          }, {
+            "value" : "l",
+            "label" : "l",
+            "validation" : {
+              "range" : {
+                "minOp" : ">=",
+                "min" : 0.0
+              },
+              "precision" : {
+                "minOp" : ">=",
+                "min" : 3,
+                "maxOp" : "<=",
+                "max" : 3
+              }
+            }
+          }, {
+            "value" : "[foz_us]",
+            "label" : "[foz_us]",
+            "localizedLabels" : {
+              "en" : "fl oz (US)"
+            },
+            "validation" : {
+              "range" : {
+                "minOp" : ">=",
+                "min" : 0.0
+              }
+            }
+          } ]
+        } ]
+      }, {
+        "id" : "total_output",
+        "name" : "Total output",
+        "localizedName" : "Total output",
+        "rmType" : "DV_QUANTITY",
+        "nodeId" : "at0006",
+        "min" : 0,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "Total output"
+        },
+        "localizedDescriptions" : {
+          "en" : "The total amount of fluid lost or excreted during a specified interval of time."
+        },
+        "aqlPath" : "/data[at0001]/events[at0002]/data[at0003]/items[at0006]/value",
+        "inputs" : [ {
+          "suffix" : "magnitude",
+          "type" : "DECIMAL"
+        }, {
+          "suffix" : "unit",
+          "type" : "CODED_TEXT",
+          "list" : [ {
+            "value" : "ml",
+            "label" : "ml",
+            "validation" : {
+              "range" : {
+                "minOp" : ">=",
+                "min" : 0.0
+              }
+            }
+          }, {
+            "value" : "l",
+            "label" : "l",
+            "validation" : {
+              "range" : {
+                "minOp" : ">=",
+                "min" : 0.0
+              },
+              "precision" : {
+                "minOp" : ">=",
+                "min" : 3,
+                "maxOp" : "<=",
+                "max" : 3
+              }
+            }
+          }, {
+            "value" : "[foz_us]",
+            "label" : "[foz_us]",
+            "localizedLabels" : {
+              "en" : "fl oz (US)"
+            },
+            "validation" : {
+              "range" : {
+                "minOp" : ">=",
+                "min" : 0.0
+              }
+            }
+          } ]
+        } ]
+      }, {
+        "id" : "width",
+        "name" : "Width",
+        "rmType" : "DV_DURATION",
+        "min" : 0,
+        "max" : 1,
+        "aqlPath" : "/data[at0001]/events[at0002]/width",
+        "inputs" : [ {
+          "suffix" : "year",
+          "type" : "INTEGER",
+          "validation" : {
+            "range" : {
+              "minOp" : ">=",
+              "min" : 0
+            }
+          },
+          "defaultValue" : 0
+        }, {
+          "suffix" : "month",
+          "type" : "INTEGER",
+          "validation" : {
+            "range" : {
+              "minOp" : ">=",
+              "min" : 0
+            }
+          },
+          "defaultValue" : 0
+        }, {
+          "suffix" : "day",
+          "type" : "INTEGER",
+          "validation" : {
+            "range" : {
+              "minOp" : ">=",
+              "min" : 0
+            }
+          },
+          "defaultValue" : 0
+        }, {
+          "suffix" : "week",
+          "type" : "INTEGER",
+          "validation" : {
+            "range" : {
+              "minOp" : ">=",
+              "min" : 0
+            }
+          },
+          "defaultValue" : 0
+        }, {
+          "suffix" : "hour",
+          "type" : "INTEGER",
+          "validation" : {
+            "range" : {
+              "minOp" : ">=",
+              "min" : 0
+            }
+          },
+          "defaultValue" : 0
+        }, {
+          "suffix" : "minute",
+          "type" : "INTEGER",
+          "validation" : {
+            "range" : {
+              "minOp" : ">=",
+              "min" : 0
+            }
+          },
+          "defaultValue" : 0
+        }, {
+          "suffix" : "second",
+          "type" : "INTEGER",
+          "validation" : {
+            "range" : {
+              "minOp" : ">=",
+              "min" : 0
+            }
+          },
+          "defaultValue" : 0
+        } ],
+        "inContext" : true
+      }, {
+        "id" : "math_function",
+        "name" : "Math_function",
+        "rmType" : "DV_CODED_TEXT",
+        "min" : 0,
+        "max" : 1,
+        "aqlPath" : "/data[at0001]/events[at0002]/math_function",
+        "inputs" : [ {
+          "suffix" : "code",
+          "type" : "TEXT"
+        }, {
+          "suffix" : "value",
+          "type" : "TEXT"
+        } ],
+        "inContext" : true
+      }, {
+        "id" : "time",
+        "name" : "Time",
+        "rmType" : "DV_DATE_TIME",
+        "min" : 0,
+        "max" : 1,
+        "aqlPath" : "/data[at0001]/events[at0002]/time",
+        "inputs" : [ {
+          "type" : "DATETIME"
+        } ],
+        "inContext" : true
+      } ]
+    }, {
+      "id" : "language",
+      "name" : "Language",
+      "rmType" : "CODE_PHRASE",
+      "min" : 0,
+      "max" : 1,
+      "aqlPath" : "/language",
+      "inContext" : true
+    }, {
+      "id" : "encoding",
+      "name" : "Encoding",
+      "rmType" : "CODE_PHRASE",
+      "min" : 0,
+      "max" : 1,
+      "aqlPath" : "/encoding",
+      "inContext" : true
+    }, {
+      "id" : "subject",
+      "name" : "Subject",
+      "rmType" : "PARTY_PROXY",
+      "min" : 0,
+      "max" : 1,
+      "aqlPath" : "/subject",
+      "inContext" : true
+    } ]
+  }
+}
