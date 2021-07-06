@@ -1,0 +1,73 @@
+{
+  "modelVersion" : 1,
+  "sources" : [ {
+    "sourceType" : "repository",
+    "id" : "zibs",
+    "user" : "freshehr",
+    "repositoryId" : "zibs"
+  } ],
+  "entries" : [ {
+    "path" : "Templates/ZIBS - Medical device nl.zorg.MedischHulpmiddel-v3.3.1.v0.t.json",
+    "type" : "template",
+    "id" : "ZIBS - Medical device nl.zorg.MedischHulpmiddel-v3.3.1.v0",
+    "sourceId" : "zibs",
+    "lastModified" : "2021-07-06T09:50:50.109Z",
+    "dependsOn" : [ {
+      "type" : "archetype",
+      "reference" : "openEHR-EHR-CLUSTER.clinical_indication.v0"
+    }, {
+      "type" : "archetype",
+      "reference" : "openEHR-EHR-CLUSTER.device.v1"
+    }, {
+      "type" : "template",
+      "reference" : "ZIBS - Anatomical location - nl.zorg.part.AnatomischeLocatie-v1.v0"
+    }, {
+      "type" : "archetype",
+      "reference" : "openEHR-EHR-EVALUATION.device_summary.v0"
+    } ]
+  }, {
+    "path" : "Archetypes/openEHR-EHR-CLUSTER.clinical_indication.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-CLUSTER.clinical_indication.v0",
+    "sourceId" : "zibs",
+    "lastModified" : "2021-06-18T08:51:38.292Z"
+  }, {
+    "path" : "Archetypes/openEHR-EHR-CLUSTER.device.v1.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-CLUSTER.device.v1",
+    "sourceId" : "zibs",
+    "lastModified" : "2021-03-11T13:08:15.705Z"
+  }, {
+    "path" : "Templates/ZIBS - Anatomical location - nl.zorg.part.AnatomischeLocatie-v1.v0.t.json",
+    "type" : "template",
+    "id" : "ZIBS - Anatomical location - nl.zorg.part.AnatomischeLocatie-v1.v0",
+    "sourceId" : "zibs",
+    "lastModified" : "2021-03-31T12:57:44.222Z",
+    "dependsOn" : [ {
+      "type" : "archetype",
+      "reference" : "openEHR-EHR-CLUSTER.anatomical_location-zibs_nl.v1"
+    } ]
+  }, {
+    "path" : "Archetypes/openEHR-EHR-CLUSTER.anatomical_location-zibs_nl.v1.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-CLUSTER.anatomical_location-zibs_nl.v1",
+    "sourceId" : "zibs",
+    "lastModified" : "2021-03-31T12:45:40.821Z",
+    "dependsOn" : [ {
+      "type" : "archetype",
+      "reference" : "openEHR-EHR-CLUSTER.anatomical_location.v1"
+    } ]
+  }, {
+    "path" : "Archetypes/openEHR-EHR-CLUSTER.anatomical_location.v1.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-CLUSTER.anatomical_location.v1",
+    "sourceId" : "zibs",
+    "lastModified" : "2021-03-11T13:42:57.704Z"
+  }, {
+    "path" : "Archetypes/openEHR-EHR-EVALUATION.device_summary.v0.adl",
+    "type" : "archetype",
+    "id" : "openEHR-EHR-EVALUATION.device_summary.v0",
+    "sourceId" : "zibs",
+    "lastModified" : "2021-03-12T10:33:41.229Z"
+  } ]
+}
