@@ -1,0 +1,85 @@
+archetype (adl_version=1.4; uid=8a19238e-0f56-4c8d-980e-bb259329d5da)
+	openEHR-EHR-CLUSTER.time_wound_classification.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["organisation"] = <"openEHR-NL">
+		["email"] = <"info@openehr.nl">
+		["name"] = <"Stichting openEHR Nederland">
+		["date"] = <"2021-03-12">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"32f6124fde189f78e36f7e2bf8944b3a">
+		["build_uid"] = <"90208424-a207-3a39-86ca-2349e2e19468">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- TIME wound Classification
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Tissue
+				value matches {
+					DV_CODED_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0002] occurrences matches {0..1} matches {    -- Infection
+				value matches {
+					DV_CODED_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0003] occurrences matches {0..1} matches {    -- Moisture
+				value matches {
+					DV_CODED_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0004] occurrences matches {0..1} matches {    -- Edge
+				value matches {
+					DV_CODED_TEXT matches {*}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"TIME wound Classification">
+					description = <"TIME wound Classification ">
+				>
+				["at0001"] = <
+					text = <"Tissue">
+					description = <"Description of the tissue of the wound. For this, the WCS model can be used. A different classification is used for oncological ulcers.">
+				>
+				["at0002"] = <
+					text = <"Infection">
+					description = <"Indication stating whether the wound is infected.">
+				>
+				["at0003"] = <
+					text = <"Moisture">
+					description = <"Description of the moisture in the wound.">
+				>
+				["at0004"] = <
+					text = <"Edge">
+					description = <"Description of the condition of the outer edges of the wound.">
+				>
+			>
+		>
+	>

@@ -1,3 +1,4 @@
 ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
-Links,7771000,,SNOMED CT,2.16.840.1.113883.6.96,Links,,,
-Rechts,24028007,,SNOMED CT,2.16.840.1.113883.6.96,Rechts,,,
+Links,7771000,,SNOMED CT,2.16.840.1.113883.6.96,Links,at0003,Links,
+Rechts,24028007,,SNOMED CT,2.16.840.1.113883.6.96,Rechts,at0004,Rechts,
+Bilateraal,51440002,,SNOMED CT,2.16.840.1.113883.6.96,Rechts,,,geen code of waarde

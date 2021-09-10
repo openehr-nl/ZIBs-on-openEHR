@@ -1,0 +1,245 @@
+archetype (adl_version=1.4; uid=c60788d8-72e6-455b-b538-04baa61614a0)
+	openEHR-EHR-OBSERVATION.ability_to_dress_oneself.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+	translations = <
+		["nl"] = <
+			language = <[ISO_639-1::nl]>
+			author = <
+				["name"] = <"Wouter Zanen">
+				["organisation"] = <"Eurotransplant">
+				["email"] = <"w.zanen@eurotransplant.org">
+			>
+		>
+	>
+
+description
+	original_author = <
+		["date"] = <"2020-02-11">
+		["name"] = <"Heidi Koikkalainen">
+		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"heidi@freshEHR.com">
+	>
+	lifecycle_state = <"in_development">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"To record details about the practical ability of an individual to put on and remove clothing.">
+			keywords = <"dressing, undressing, clothing", ...>
+			copyright = <"© Apperta Foundation">
+			use = <"Use to record details about the practical ability of an individual to put on and remove clothing.
+
+The following text is copied from the Dutch ZIB model AbilityToDressOneself-v3.1:
+
+Being able to get dressed independently is part of self-care. Limitations in this ability indicate a reduced ability to cope for oneself.
+This activity and activities such as those including eating, drinking, and bathing are also known as activities of daily living (ADL). These are the activities people go through in daily life. The extent to which a person is able to do all these activities by themselves is a measure for their total ability to do things independently.
+
+Information on limitations in a patient’s ability to dress themselves is important in determining the nature and intensity of the care the patient needs. In a transfer situation, it gives the receiving organization the ability to anticipate the intensity of the care to be given to the patient, enabling continuity in healthcare for the patient.
+If policy has been implemented to improve a patient’s ability to do things independently, the entered extent of independence helps to determine the efficiency of the treatment.
+
+The definitions of the concepts were (partially) taken from the ICNP definitions.
+In addition to this information model, there are other tools to record independence, such as the KATZ-ADL and the BarthelIndex. The KATZ-ADL is mainly used for vulnerable seniors and the BarthelIndex is mainly used for patients who have had a stroke.
+This information model evaluates the ability to get dressed on a three-point scale. In the KATZ-ADL and in the BarthelIndex, this falls under the aspect of Dressing. In these two tools, the ability is scored on a scale with fewer points.">
+		>
+		["nl"] = <
+			language = <[ISO_639-1::nl]>
+			purpose = <"Informatie over beperkingen in het vermogen om zich zelfstandig te kunnen kleden is van belang bij het bepalen van de aard en intensiteit van de zorg die aan de patiënt geboden moet worden. In een overdrachtsituatie biedt het de ontvangende organisatie de mogelijkheid te anticiperen op de zwaarte van de te leveren zorg waardoor continuïteit van de zorgverlening gerealiseerd kan worden.
+Indien beleid is ingezet om de zelfredzaamheid te verbeteren, biedt de vastgelegde mate van zelfstandigheid de mogelijkheid de doeltreffendheid van de behandeling vast te stellen.">
+			copyright = <"© openEHR Foundation">
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"Apperta UK">
+		["references"] = <"AbilityToDressOneself-v3.1(2019EN) - Zorginformatiebouwstenen [Internet]. Zibs.nl. 2020 [cited 2020 Feb 11]. Available from: https://zibs.nl/wiki/AbilityToDressOneself-v3.1(2019EN)">
+		["current_contact"] = <"Heidi Koikkalainen, heidi@freshEHR.com">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"Apperta UK">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"6d16bfd56f8647faeb201cf7635b14d6">
+		["build_uid"] = <"053c0bf7-5f40-4627-b8db-c145f43a8903">
+		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
+		["revision"] = <"0.0.1-alpha">
+	>
+
+definition
+	OBSERVATION[at0000] matches {    -- Ability to dress oneself
+		data matches {
+			HISTORY[at0001] matches {    -- History
+				events cardinality matches {0..*; unordered} matches {
+					EVENT[at0002] occurrences matches {0..*} matches {    -- Any event
+						data matches {
+							ITEM_TREE[at0003] matches {    -- Tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0004] matches {    -- Dressing oneself
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0006,    -- Independent
+													at0007,    -- Requires assistance
+													at0008]    -- Unable to dress
+												}
+											}
+										}
+									}
+									ELEMENT[at0005] occurrences matches {0..1} matches {    -- Body part to be dressed
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0009,    -- Entire body
+													at0010,    -- Upper body
+													at0011]    -- Lower body
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0012] matches {*}    -- Item tree
+		}
+	}
+
+ontology
+	terminologies_available = <"SNOMED-CT", ...>
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Ability to dress oneself">
+					description = <"The ability of an individual to put on and remove clothing.">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"Any event.">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Dressing oneself">
+					description = <"The ability of to put on and remove clothing.">
+					comment = <"The 'Body part to be dressed' element offers the option to specify to which part of the body the limitation applies.">
+				>
+				["at0005"] = <
+					text = <"Body part to be dressed">
+					description = <"The part or parts of the body for which help getting dressed is wanted/necessary.">
+				>
+				["at0006"] = <
+					text = <"Independent">
+					description = <"The individual has the ability to put on and remove clothing independently.">
+				>
+				["at0007"] = <
+					text = <"Requires assistance">
+					description = <"The individual requires assistance with putting on and removing clothing.">
+				>
+				["at0008"] = <
+					text = <"Unable to dress">
+					description = <"The individual is unable to put on and remove clothing.">
+				>
+				["at0009"] = <
+					text = <"Entire body">
+					description = <"The individual requires assistance with dressing the whole body.">
+				>
+				["at0010"] = <
+					text = <"Upper body">
+					description = <"The individual requires assistance with dressing the upper body.">
+				>
+				["at0011"] = <
+					text = <"Lower body">
+					description = <"The individual requires assistance with dressing the lower body.">
+				>
+				["at0012"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+			>
+		>
+		["nl"] = <
+			items = <
+				["at0000"] = <
+					text = <"Vermogen tot zich kleden">
+					description = <"Het vermogen om kleding aan en uit te trekken">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Elke gebeurtenis">
+					description = <"*Any event. (en)">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Zich kleden">
+					description = <"Aan- en uittrekken van (passende) kleding.">
+					comment = <"In het concept TeKledenLichaamsdeel kan nader aangegeven worden voor welk lichaamsdeel de beperking geldt.">
+				>
+				["at0005"] = <
+					text = <"Te kleden lichaamsdeel">
+					description = <"Het lichaamsdeel of de lichaamsdelen waarvoor ondersteuning bij het zich kleden gewenst/noodzakelijk is.">
+				>
+				["at0006"] = <
+					text = <"*Independent (en)">
+					description = <"*The individual has the ability to put on and remove clothing independently. (en)">
+				>
+				["at0007"] = <
+					text = <"*Requires assistance (en)">
+					description = <"*The individual requires assistance with putting on and removing clothing. (en)">
+				>
+				["at0008"] = <
+					text = <"*Unable to dress (en)">
+					description = <"*The individual is unable to put on and remove clothing. (en)">
+				>
+				["at0009"] = <
+					text = <"*Entire body (en)">
+					description = <"*The individual requires assistance with dressing the whole body. (en)">
+				>
+				["at0010"] = <
+					text = <"*Upper body (en)">
+					description = <"*The individual requires assistance with dressing the upper body. (en)">
+				>
+				["at0011"] = <
+					text = <"*Lower body (en)">
+					description = <"*The individual requires assistance with dressing the lower body. (en)">
+				>
+				["at0012"] = <
+					text = <"*Item tree (en)">
+					description = <"@ internal @">
+				>
+			>
+		>
+	>
+	term_binding = <
+		["SNOMED-CT"] = <
+			items = <
+				["at0004"] = <[SNOMED-CT::165235000]>
+				["at0005"] = <[SNOMED-CT::38866009]>
+				["at0006"] = <[SNOMED-CT::129035000]>
+				["at0007"] = <[SNOMED-CT::129039006]>
+				["at0008"] = <[SNOMED-CT::284974001]>
+				["at0009"] = <[SNOMED-CT::38266002]>
+				["at0010"] = <[SNOMED-CT::362874006]>
+				["at0011"] = <[SNOMED-CT::362875007]>
+			>
+		>
+	>

@@ -1,6 +1,6 @@
 ZIB_Id,ZIB_Naam,ZIB_Type,ZIB_Card,ZIB_DefCode,ZIB_Verwijzing,openEHR_Path,openEHR_Naam,openEHR_Type,openEHR_Card,openEHR_Term,Commentaar
-NL-CM:12.6.1,Lichaamstemperatuur,rootconcept,,SNOMED CT: 56342008 Temperatuur meten,,,,,,,
-NL-CM:12.6.2,TemperatuurWaarde,PQ,1,LOINC: 8310-5 Lichaamstemperatuur [temperatuur] in ^patiënt,,,,,,,
-NL-CM:12.6.4,TemperatuurDatumTijd,TS,1,,,,,,,,
-NL-CM:12.6.3,Toelichting,ST,0..1,,,,,,,,
-NL-CM:12.6.5,TemperatuurType,CD,0..1,,TemperatuurTypeCodelijst,,,,,,
+NL-CM:12.6.1,Lichaamstemperatuur,rootconcept,,SNOMED CT: 56342008 Temperatuur meten,,,Lichaamstemperatuur,OBSERVATION,,,
+NL-CM:12.6.2,TemperatuurWaarde,PQ,1,LOINC: 8310-5 Lichaamstemperatuur [temperatuur] in ^patiënt,,/data[at0002]/events[at0003]/data[at0001]/items[at0004],Temperatuur,DV_QUANITY,1..1,LNC205::8310-5; SNOMED-CT::386725007,
+NL-CM:12.6.4,TemperatuurDatumTijd,TS,1,,,/data[at0002]/events[at0003]/time,,DV_DATE_TIME,1..1,,
+NL-CM:12.6.3,Toelichting,ST,0..1,,,/data[at0002]/events[at0003]/data[at0001]/items[at0063],Comment,DV_TEXT,0..1,,Moet nog vertaald worden (toelichting)
+NL-CM:12.6.5,TemperatuurType,CD,0..1,,TemperatuurTypeCodelijst,/protocol[at0020]/items[at0021],Location of Measurement,DV_CHOICE,0..1,,"Moet nog vertaald worden (locatie van meting); mapping coded text niet 1 op 1; De concepten in openEHR en de ZIB verschillen deels: openEHR is locatie, terwijl ZIB meer het type van de temperatuur aangeeft"

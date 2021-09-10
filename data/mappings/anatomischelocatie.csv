@@ -1,4 +1,4 @@
 ZIB_Id,ZIB_Naam,ZIB_Type,ZIB_Card,ZIB_DefCode,ZIB_Verwijzing,openEHR_Path,openEHR_Naam,openEHR_Type,openEHR_Card,openEHR_Term,Commentaar
 NL-CM:20.7.1,AnatomischeLocatie,rootconcept,,SNOMED CT: 123037004 Lichaamsstructuur,,,Anatomische locatie,CLUSTER,,,
-NL-CM:20.7.4,Locatie,CD,0..1,SNOMED CT: 363698007 Locatie van bevinding,LocatieCodelijst; LocatieICD-O-3Codelijst,/items[at0001],Lichaamslocatie,DV_TEXT,1..1,,dit veld is verplicht in openEHR
+NL-CM:20.7.4,Locatie,CD,0..1,SNOMED CT: 363698007 Locatie van bevinding,LocatieCodelijst; LocatieICD-O-3Codelijst,/items[at0001],Lichaamslocatie,DV_TEXT,1..1,,dit tekstveld zonder coding en is een verplicht in openEHR
 NL-CM:20.7.3,Lateraliteit,CD,0..1,SNOMED CT: 272741003 Lateraliteit,LateraliteitCodelijst,/items[at0002],Lateraliteit,DV_CODED_TEXT,0..1,272741003,openEHR heeft geen 'Links en rechts' waarde (SNOMED-CT 51440002)

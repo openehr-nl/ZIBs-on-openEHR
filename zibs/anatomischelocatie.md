@@ -2,7 +2,7 @@
 layout: zib
 parent: Mappings
 title: Anatomische locatie
-version: 0.1
+version: 0.2
 zib: AnatomischeLocatie-v1.0
 openEHR:
     templates: 
@@ -12,10 +12,10 @@ openEHR:
 status:
     mapping: Ontwikkelen
     template: Ontwikkelen
-    vertaling: Ontwikkelen
-    codelijst: Inrichten
+    vertaling: Concept
+    codelijst: Ontwikkelen
     globaal: Ontwikkelen
-date: 2021-01-21T
+date: 2021-03-11T
 authors: 
     - Joost Holslag (Nedap)
     - Sebastian Iancu (Code24) 

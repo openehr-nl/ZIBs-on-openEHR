@@ -1,0 +1,318 @@
+{
+  "templateId" : "Lichaamstemperatuur-v3.1.2(2020NL)",
+  "semVer" : "0.1.0",
+  "version" : "2.3",
+  "defaultLanguage" : "nl",
+  "languages" : [ "nl" ],
+  "tree" : {
+    "id" : "lichaamstemperatuur-v3.1.2_2020nl",
+    "name" : "Lichaamstemperatuur-v3.1.2(2020NL)",
+    "localizedName" : "Lichaamstemperatuur-v3.1.2(2020NL)",
+    "rmType" : "OBSERVATION",
+    "nodeId" : "openEHR-EHR-OBSERVATION.body_temperature.v2",
+    "min" : 1,
+    "max" : 1,
+    "localizedNames" : {
+      "nl" : "Lichaamstemperatuur-v3.1.2(2020NL)"
+    },
+    "localizedDescriptions" : {
+      "nl" : "Een meting van de lichaamstemperatuur, wat een surrogaat is van de kerntemperatuur van het lichaam van een individu. "
+    },
+    "aqlPath" : "",
+    "children" : [ {
+      "id" : "any_event_en",
+      "name" : "*Any event(en)",
+      "localizedName" : "*Any event(en)",
+      "rmType" : "EVENT",
+      "nodeId" : "at0003",
+      "min" : 0,
+      "max" : -1,
+      "localizedNames" : {
+        "nl" : "*Any event(en)"
+      },
+      "localizedDescriptions" : {
+        "nl" : "*Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time.(en)"
+      },
+      "aqlPath" : "/data[at0002]/events[at0003]",
+      "children" : [ {
+        "id" : "temperatuurwaarde",
+        "name" : "TemperatuurWaarde",
+        "localizedName" : "TemperatuurWaarde",
+        "rmType" : "DV_QUANTITY",
+        "nodeId" : "at0004",
+        "min" : 1,
+        "max" : 1,
+        "localizedNames" : {
+          "nl" : "TemperatuurWaarde"
+        },
+        "localizedDescriptions" : {
+          "nl" : "De lichaamstemperatuur is de temperatuur, gemeten in °C (graden Celsius), die binnen in het menselijk lichaam heerst. Voor een juiste interpretatie van de gemeten waarde, moet de meetmethodiek worden gespecificeerd."
+        },
+        "aqlPath" : "/data[at0002]/events[at0003]/data[at0001]/items[at0004,'TemperatuurWaarde']/value",
+        "inputs" : [ {
+          "suffix" : "magnitude",
+          "type" : "DECIMAL",
+          "validation" : {
+            "range" : {
+              "minOp" : ">=",
+              "min" : 0.0,
+              "maxOp" : "<",
+              "max" : 100.0
+            },
+            "precision" : {
+              "minOp" : ">=",
+              "min" : 1,
+              "maxOp" : "<=",
+              "max" : 1
+            }
+          }
+        }, {
+          "suffix" : "unit",
+          "type" : "CODED_TEXT",
+          "list" : [ {
+            "value" : "Cel",
+            "label" : "Cel",
+            "localizedLabels" : {
+              "nl" : "°C"
+            },
+            "validation" : {
+              "range" : {
+                "minOp" : ">=",
+                "min" : 0.0,
+                "maxOp" : "<",
+                "max" : 100.0
+              },
+              "precision" : {
+                "minOp" : ">=",
+                "min" : 1,
+                "maxOp" : "<=",
+                "max" : 1
+              }
+            }
+          } ]
+        } ],
+        "termBindings" : {
+          "LNC205" : {
+            "value" : "[LNC205::8310-5]",
+            "terminologyId" : "LNC205"
+          },
+          "SNOMED-CT" : {
+            "value" : "[SNOMED-CT::386725007]",
+            "terminologyId" : "SNOMED-CT"
+          }
+        }
+      }, {
+        "id" : "toelichting",
+        "name" : "Toelichting",
+        "localizedName" : "Toelichting",
+        "rmType" : "DV_TEXT",
+        "nodeId" : "at0063",
+        "min" : 0,
+        "max" : 1,
+        "localizedNames" : {
+          "nl" : "Toelichting"
+        },
+        "localizedDescriptions" : {
+          "nl" : "Opmerkingen of bijzonderheden, die van belang zijn om de meetwaarde te interpreteren."
+        },
+        "aqlPath" : "/data[at0002]/events[at0003]/data[at0001]/items[at0063,'Toelichting']/value",
+        "inputs" : [ {
+          "type" : "TEXT"
+        } ]
+      }, {
+        "id" : "time",
+        "name" : "Time",
+        "rmType" : "DV_DATE_TIME",
+        "min" : 1,
+        "max" : 1,
+        "annotations" : {
+          "view:VisibleInView" : "TemperatuurDatumTijd"
+        },
+        "aqlPath" : "/data[at0002]/events[at0003]/time",
+        "inputs" : [ {
+          "type" : "DATETIME"
+        } ],
+        "inContext" : true
+      } ]
+    }, {
+      "id" : "temperatuurtype",
+      "name" : "TemperatuurType",
+      "localizedName" : "TemperatuurType",
+      "rmType" : "DV_CODED_TEXT",
+      "nodeId" : "at0021",
+      "min" : 0,
+      "max" : 1,
+      "dependsOn" : [ "any_event_en" ],
+      "localizedNames" : {
+        "nl" : "TemperatuurType"
+      },
+      "localizedDescriptions" : {
+        "nl" : "Het TemperatuurType geeft aan op welke wijze en plaats de meting (temperatuur) verricht is."
+      },
+      "aqlPath" : "/protocol[at0020]/items[at0021,'TemperatuurType']/value",
+      "inputs" : [ {
+        "suffix" : "code",
+        "type" : "CODED_TEXT",
+        "list" : [ {
+          "value" : "at0025",
+          "label" : "*Rectum(en)",
+          "localizedLabels" : {
+            "nl" : "*Rectum(en)"
+          },
+          "localizedDescriptions" : {
+            "nl" : "*Temperature measured within the rectum.(en)"
+          }
+        }, {
+          "value" : "at0024",
+          "label" : "*Axilla(en)",
+          "localizedLabels" : {
+            "nl" : "*Axilla(en)"
+          },
+          "localizedDescriptions" : {
+            "nl" : "*Temperature is measured from the skin of the axilla with the arm positioned down by the side.(en)"
+          }
+        }, {
+          "value" : "at0023",
+          "label" : "*Ear canal(en)",
+          "localizedLabels" : {
+            "nl" : "*Ear canal(en)"
+          },
+          "localizedDescriptions" : {
+            "nl" : "*Temperature is measured from within the external auditory canal.(en)"
+          }
+        }, {
+          "value" : "at0061",
+          "label" : "*Forehead(en)",
+          "localizedLabels" : {
+            "nl" : "*Forehead(en)"
+          },
+          "localizedDescriptions" : {
+            "nl" : "*Temperature is measured on the forehead.(en)"
+          }
+        }, {
+          "value" : "at0022",
+          "label" : "*Mouth(en)",
+          "localizedLabels" : {
+            "nl" : "*Mouth(en)"
+          },
+          "localizedDescriptions" : {
+            "nl" : "*Temperature is measured within the mouth.(en)"
+          }
+        }, {
+          "value" : "at0026",
+          "label" : "*Nasopharynx(en)",
+          "localizedLabels" : {
+            "nl" : "*Nasopharynx(en)"
+          },
+          "localizedDescriptions" : {
+            "nl" : "*Temperature is measured within the nasopharynx.(en)"
+          }
+        }, {
+          "value" : "at0027",
+          "label" : "*Urinary bladder(en)",
+          "localizedLabels" : {
+            "nl" : "*Urinary bladder(en)"
+          },
+          "localizedDescriptions" : {
+            "nl" : "*Temperature is measured in the urinary bladder.(en)"
+          }
+        }, {
+          "value" : "at0028",
+          "label" : "*Intravascular(en)",
+          "localizedLabels" : {
+            "nl" : "*Intravascular(en)"
+          },
+          "localizedDescriptions" : {
+            "nl" : "*Temperature is measured within the vascular system.(en)"
+          }
+        }, {
+          "value" : "at0043",
+          "label" : "*Skin(en)",
+          "localizedLabels" : {
+            "nl" : "*Skin(en)"
+          },
+          "localizedDescriptions" : {
+            "nl" : "*Temperature is measured from exposed skin.(en)"
+          }
+        }, {
+          "value" : "at0051",
+          "label" : "*Vagina(en)",
+          "localizedLabels" : {
+            "nl" : "*Vagina(en)"
+          },
+          "localizedDescriptions" : {
+            "nl" : "*Temperature is measured within the vagina.(en)"
+          }
+        }, {
+          "value" : "at0054",
+          "label" : "*Oesophagus(en)",
+          "localizedLabels" : {
+            "nl" : "*Oesophagus(en)"
+          },
+          "localizedDescriptions" : {
+            "nl" : "*Temperatue is measured within the oesophagus.(en)"
+          }
+        }, {
+          "value" : "at0055",
+          "label" : "*Inguinal skin crease(en)",
+          "localizedLabels" : {
+            "nl" : "*Inguinal skin crease(en)"
+          },
+          "localizedDescriptions" : {
+            "nl" : "*Temperature is measured in the inguinal skin crease between the leg and abdominal wall.(en)"
+          }
+        }, {
+          "value" : "at0060",
+          "label" : "*Temple(en)",
+          "localizedLabels" : {
+            "nl" : "*Temple(en)"
+          },
+          "localizedDescriptions" : {
+            "nl" : "*Temperature is measured at the temple, over the superficial temporal artery.(en)"
+          }
+        } ],
+        "listOpen" : true
+      }, {
+        "suffix" : "other",
+        "type" : "TEXT"
+      } ]
+    }, {
+      "id" : "language",
+      "name" : "Language",
+      "rmType" : "CODE_PHRASE",
+      "min" : 1,
+      "max" : 1,
+      "aqlPath" : "/language",
+      "inContext" : true
+    }, {
+      "id" : "encoding",
+      "name" : "Encoding",
+      "rmType" : "CODE_PHRASE",
+      "min" : 1,
+      "max" : 1,
+      "aqlPath" : "/encoding",
+      "inContext" : true
+    }, {
+      "id" : "subject",
+      "name" : "Subject",
+      "rmType" : "PARTY_PROXY",
+      "min" : 1,
+      "max" : 1,
+      "aqlPath" : "/subject",
+      "inputs" : [ {
+        "suffix" : "id",
+        "type" : "TEXT"
+      }, {
+        "suffix" : "id_scheme",
+        "type" : "TEXT"
+      }, {
+        "suffix" : "id_namespace",
+        "type" : "TEXT"
+      }, {
+        "suffix" : "name",
+        "type" : "TEXT"
+      } ],
+      "inContext" : true
+    } ]
+  }
+}

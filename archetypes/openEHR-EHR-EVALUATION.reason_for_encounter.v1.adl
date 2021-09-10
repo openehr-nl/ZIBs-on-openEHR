@@ -118,7 +118,7 @@ No debe ser utilizado para registrar diagnósticos. Para eso utilizar el arqueti
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"fe08bb1511e092ff4ea8d7d8a958c947">
+		["MD5-CAM-1.0.1"] = <"FD987B3E266674827EB7BAA6D1ED26A8">
 		["build_uid"] = <"6daa89e2-0bc8-4f2c-807c-7c085b9d80e4">
 		["revision"] = <"1.0.1">
 	>
@@ -134,11 +134,6 @@ definition
 						}
 					}
 					ELEMENT[at0004] occurrences matches {0..*} matches {    -- Presenting problem
-						value matches {
-							DV_TEXT matches {*}
-						}
-					}
-					ELEMENT[at0006] occurrences matches {0..1} matches {    -- Deviating result
 						value matches {
 							DV_TEXT matches {*}
 						}
@@ -172,10 +167,6 @@ ontology
 					comment = <"Coding of the 'Presenting problem' with a terminology is desirable, where possible. Clinical or social reasons for seeking healthcare can include health issues, symptoms or physical signs. Examples: health issues - desire to quit smoking, domestic violence; symptoms - abdominal pain, shortness of breath; physical signs - an altered conscious state. 'Chief complaint' may be used as a valid synonym for 'Presenting problem' in templates.
  ">
 				>
-				["at0006"] = <
-					text = <"Deviating result">
-					description = <"A narrative description of a deviating result which serves as the reason for the contact.">
-				>
 			>
 		>
 		["pt-br"] = <
@@ -199,10 +190,6 @@ ontology
 					comment = <"
 Codificação do \"Problema apresentado\" com uma terminologia é desejável, quando possível. Razões clínicas ou sociais na busca de cuidado em saúde podem incluir problemas de saúde, sintomas ou sinais físicos. Exemplos: problemas de saúde - desejo de parar de fumar, violência doméstica; sintomas - dor abdominal, falta de ar; sinais físicos - um estado de consciência alterado. \"Queixa principal\" pode ser usada como um sinônimo válido para \"Problema apresentado\" nos modelos.">
 				>
-				["at0006"] = <
-					text = <"*Deviating result (en)">
-					description = <"*A narrative description of a deviating result which serves as the reason for the contact. (en)">
-				>
 			>
 		>
 		["es"] = <
@@ -224,10 +211,6 @@ Codificação do \"Problema apresentado\" com uma terminologia é desejável, qu
 					text = <"Problema presentado">
 					description = <"Problema o síntoma reportado por el paciente, que da inicio a la consulta médica">
 					comment = <"Es desable la codificación del 'Problema presentado' mediante una terminología. Motivos clínicos o sociales para buscar atención médica pueden incluir estos problemas, síntomas o signos físicos: deseo de dejar de fumar, violencia doméstica, dolor abdominal, problemas al respirar, alteración del estado de conciencia. En una plantilla, 'Problema principal' puede usarse como sinónimo al 'Problema presentado'.">
-				>
-				["at0006"] = <
-					text = <"*Deviating result (en)">
-					description = <"*A narrative description of a deviating result which serves as the reason for the contact. (en)">
 				>
 			>
 		>
@@ -251,10 +234,6 @@ Codificação do \"Problema apresentado\" com uma terminologia é desejável, qu
 					description = <"Identifikation des klinischen oder sozialen Problems, welches den Patienten motiviert die medizinische Versorgung aufzusuchen.">
 					comment = <"Die Kodierung der \"Problemdarstellung\" sollte, wenn möglich, mit einer Terminologie erfolgen. Klinische oder soziale Gründe für das Aufsuchen der Gesundheitsversorgung können u.a. Gesundheitsprobleme, Symptome oder andere körperliche Anzeichen sein. 
 Beispiele: Gesundheitsfragen - Wunsch, mit dem Rauchen aufzuhören, häusliche Gewalt; Symptome - Bauchschmerzen, Kurzatmigkeit; körperliche Zeichen - ein veränderter Bewusstseinszustand. \"Hauptbeschwerde\" kann als gültiges Synonym für \"Problemdarstellung\" in den Vorlagen verwendet werden.">
-				>
-				["at0006"] = <
-					text = <"*Deviating result (en)">
-					description = <"*A narrative description of a deviating result which serves as the reason for the contact. (en)">
 				>
 			>
 		>

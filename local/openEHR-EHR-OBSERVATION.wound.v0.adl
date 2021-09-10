@@ -1,0 +1,176 @@
+archetype (adl_version=1.4; uid=fbad64df-3d6b-446d-ad85-a39a24287165)
+	openEHR-EHR-OBSERVATION.wound.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2021-03-12">
+		["name"] = <"Stichting openEHR Nederland">
+		["organisation"] = <"openEHR-NL">
+		["email"] = <"info@openehr.nl">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"4e836fcab07ce807dfb52b7daa6a3dae">
+		["build_uid"] = <"1e5ba840-ff27-3625-baba-a29ea74f4f5f">
+	>
+
+definition
+	OBSERVATION[at0000] matches {    -- Wound
+		data matches {
+			HISTORY[at0001] matches {    -- History
+				events cardinality matches {0..*; unordered} matches {
+					EVENT[at0002] occurrences matches {0..*} matches {    -- Any event
+						data matches {
+							ITEM_TREE[at0003] matches {    -- Tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0005] matches {    -- Type
+										value matches {
+											DV_CODED_TEXT matches {*}
+										}
+									}
+									allow_archetype ELEMENT[at0006] occurrences matches {0..*} matches {    -- Classification
+										include
+											archetype_id/value matches {/.*/}
+									}
+									ELEMENT[at0007] occurrences matches {0..1} matches {    -- Length
+										value matches {
+											DV_QUANTITY matches {*}
+										}
+									}
+									ELEMENT[at0008] occurrences matches {0..1} matches {    -- Width
+										value matches {
+											DV_QUANTITY matches {*}
+										}
+									}
+									ELEMENT[at0009] occurrences matches {0..1} matches {    -- Depth
+										value matches {
+											DV_QUANTITY matches {*}
+										}
+									}
+									allow_archetype ELEMENT[at0010] occurrences matches {0..*} matches {    -- Anatomical location
+										include
+											archetype_id/value matches {/.*/}
+									}
+									ELEMENT[at0011] occurrences matches {0..1} matches {    -- Date of onset
+										value matches {
+											DV_DATE_TIME matches {*}
+										}
+									}
+									ELEMENT[at0012] occurrences matches {0..1} matches {    -- Date of last dressing change
+										value matches {
+											DV_DATE_TIME matches {*}
+										}
+									}
+									allow_archetype ELEMENT[at0014] occurrences matches {0..*} matches {    -- Drain
+										include
+											archetype_id/value matches {/.*/}
+									}
+									ELEMENT[at0015] occurrences matches {0..*} matches {    -- Multimedia
+										value matches {
+											DV_MULTIMEDIA matches {*}
+										}
+									}
+									ELEMENT[at0016] occurrences matches {0..1} matches {    -- Comment
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0004] matches {*}    -- Item tree
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Wound">
+					description = <"Wound">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0005"] = <
+					text = <"Type">
+					description = <"Description of the type of wound">
+				>
+				["at0006"] = <
+					text = <"Classification">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Length">
+					description = <"The length of the wound.">
+				>
+				["at0008"] = <
+					text = <"Width">
+					description = <"The width of the wound.">
+				>
+				["at0009"] = <
+					text = <"Depth">
+					description = <"The depth of the wound.">
+				>
+				["at0010"] = <
+					text = <"Anatomical location">
+					description = <"The location of the wound on the body.">
+				>
+				["at0011"] = <
+					text = <"Date of onset">
+					description = <"The date on which the wound appeared.">
+				>
+				["at0012"] = <
+					text = <"Date of last dressing change">
+					description = <"Date on which the dressing was last changed.">
+				>
+				["at0014"] = <
+					text = <"Drain">
+					description = <"">
+				>
+				["at0015"] = <
+					text = <"Multimedia">
+					description = <"A photo or other multimedia of the wound.">
+				>
+				["at0016"] = <
+					text = <"Comment">
+					description = <"Comment on the wound.">
+				>
+			>
+		>
+	>

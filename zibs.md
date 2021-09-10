@@ -2,6 +2,7 @@
 title: ZIBs
 layout: default
 nav_order: 2
+search_exclude: true
 
 data: 
     Administratief:

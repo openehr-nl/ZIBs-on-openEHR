@@ -1,0 +1,164 @@
+archetype (adl_version=1.4; uid=74206894-43ff-4131-8f77-face53a4f5c5)
+	openEHR-EHR-OBSERVATION.ability_to_eat.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2020-02-18">
+		["name"] = <"Heidi Koikkalainen">
+		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"heidi@freshehr.com">
+	>
+	lifecycle_state = <"in_development">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"To record details about the practical ability of an individual to prepare and consume food.">
+			keywords = <"eating, feeding, food", ...>
+			copyright = <"© Apperta Foundation">
+			use = <"Use to record details about the practical ability of an individual to prepare and consume food.
+
+The following text is copied from the Dutch ZIB model AbilityToEat-v3.1:
+
+Being able to independently prepare and consume food is part of self-care. Limitations in this ability indicate a reduced ability to cope for oneself.
+This activity and activities such as those including drinking, getting dressed and bathing are also known as activities of daily living (ADL). These are the activities people go through in daily life. The extent to which a person is able to do all these activities by themselves is a measure for their total ability to do things independently.
+
+Information on limitations in a patient’s ability to make and eat their own food is important in determining the nature and intensity of the care the patient needs. In a transfer situation, it offers the receiving organization the ability to anticipate the intensity of the care to be given to the patient, enabling continuity in healthcare for the patient.
+If policy has been implemented to improve a patient’s ability to do things independently, the entered extent of independence helps to determine the efficiency of the treatment.
+
+The definitions of the concepts were (partially) taken from the ICNP definitions.
+In addition to this information model, there are other tools to record independence, such as the KATZ-ADL and the BarthelIndex. The KATZ-ADL is mainly used for vulnerable seniors and the BarthelIndex is mainly used for patients who have had a stroke.
+This information model evaluates the ability to eat on a three-point scale. In the KATZ-ADL and in the BarthelIndex, this falls under the aspect of Self-feeding. In these two tools, the ability is scored on a scale with fewer points.">
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"Apperta UK">
+		["references"] = <"AbilityToEat-v3.1(2019EN) - Zorginformatiebouwstenen [Internet]. Zibs.nl. 2020 [cited 2020 Feb 18]. Available from: https://zibs.nl/wiki/AbilityToEat-v3.1(2019EN)">
+		["current_contact"] = <"Heidi Koikkalainen, heidi@freshehr.com">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"Apperta UK">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"3A35E4BEAF1645758284697A8E207EC4">
+		["build_uid"] = <"e687b286-84e2-42cb-9028-73ffedc2e2b5">
+		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
+		["revision"] = <"0.0.1-alpha">
+	>
+
+definition
+	OBSERVATION[at0000] matches {    -- Ability to eat
+		data matches {
+			HISTORY[at0001] matches {    -- History
+				events cardinality matches {0..*; unordered} matches {
+					EVENT[at0002] occurrences matches {0..*} matches {    -- Any event
+						data matches {
+							ITEM_TREE[at0003] matches {    -- Tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0004] matches {    -- Eating
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0006,    -- Independent
+													at0007,    -- Requires assistance
+													at0008]    -- Unable to feed self
+												}
+											}
+										}
+									}
+									ELEMENT[at0005] occurrences matches {0..*} matches {    -- Eating limitations
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0009,    -- Difficulty taking food to mouth
+													at0010,    -- Difficulty using cutlery to feed self
+													at0011]    -- Difficulty cutting up food
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	terminologies_available = <"SNOMED-CT", ...>
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Ability to eat">
+					description = <"The ability of an individual to prepare and consume food.">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"Any event.">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Eating">
+					description = <"The ability to eat.">
+				>
+				["at0005"] = <
+					text = <"Eating limitations">
+					description = <"The individual's limitations in preparing and consuming food.">
+				>
+				["at0006"] = <
+					text = <"Independent">
+					description = <"The individual has the ability to eat independently.">
+				>
+				["at0007"] = <
+					text = <"Requires assistance">
+					description = <"The individual requires assistance with eating.">
+				>
+				["at0008"] = <
+					text = <"Unable to feed self">
+					description = <"The individual is unable to feed self.">
+				>
+				["at0009"] = <
+					text = <"Difficulty taking food to mouth">
+					description = <"The individual has difficulty bringing food to the mouth.">
+				>
+				["at0010"] = <
+					text = <"Difficulty using cutlery to feed self">
+					description = <"The individual has difficulty using cutlery to feed self.">
+				>
+				["at0011"] = <
+					text = <"Difficulty cutting up food">
+					description = <"The individual has difficulty cutting up food.">
+				>
+			>
+		>
+	>
+	term_binding = <
+		["SNOMED-CT"] = <
+			items = <
+				["at0004"] = <[SNOMED-CT::288883002]>
+				["at0005"] = <[SNOMED-CT::288843005]>
+				["at0006"] = <[SNOMED-CT::165224005]>
+				["at0007"] = <[SNOMED-CT::129033007]>
+				["at0008"] = <[SNOMED-CT::289001005]>
+				["at0009"] = <[SNOMED-CT::289010002]>
+				["at0010"] = <[SNOMED-CT::289046006]>
+				["at0011"] = <[SNOMED-CT::289078003]>
+			>
+		>
+	>

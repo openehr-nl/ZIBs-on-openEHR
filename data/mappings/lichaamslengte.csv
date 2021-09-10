@@ -1,6 +1,6 @@
 ZIB_Id,ZIB_Naam,ZIB_Type,ZIB_Card,ZIB_DefCode,ZIB_Verwijzing,openEHR_Path,openEHR_Naam,openEHR_Type,openEHR_Card,openEHR_Term,Commentaar
 NL-CM:12.2.1,Lichaamslengte,rootconcept,,SNOMED CT: 248327008 General finding of height,,,,,,,
-NL-CM:12.2.2,LengteWaarde,PQ,1,LOINC: 8302-2 Lichaamslengte [lengte] in ^patiënt,,,,,,,
-NL-CM:12.2.4,LengteDatumTijd,TS,1,,,,,,,,
-NL-CM:12.2.3,Toelichting,ST,0..1,LOINC: 48767-8 Annotation comment [Interpretation] Narrative,,,,,,,
-NL-CM:12.2.5,Positie,CD,0..1,SNOMED CT: 425260001 Body position for height measurement,PositieCodelijst,,,,,,
+NL-CM:12.2.2,LengteWaarde,PQ,1,LOINC: 8302-2 Lichaamslengte [lengte] in ^patiënt,,/data[at0001]/events[at0002]/data[at0003]/items[at0004],Hoogte/Lengte,DV_QUANTITY,1..1,LOINC::8302-2,
+NL-CM:12.2.4,LengteDatumTijd,TS,1,,,/data[at0001]/events[at0002]/time,,,1..1,,
+NL-CM:12.2.3,Toelichting,ST,0..1,LOINC: 48767-8 Annotation comment [Interpretation] Narrative,,/data[at0001]/events[at0002]/data[at0003]/items[at0018],Opmerking,DV_TEXT,0..1,,
+NL-CM:12.2.5,Positie,CD,0..1,SNOMED CT: 425260001 Body position for height measurement,PositieCodelijst,/data[at0001]/events[at0002]/state[at0013]/items[at0014],Positie,DV_CODED_TEXT,0..1,,
