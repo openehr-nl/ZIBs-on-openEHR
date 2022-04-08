@@ -59,6 +59,15 @@ language
 				["email"] = <"biljana.princic@marand.si">
 			>
 		>
+		["nl"] = <
+			language = <[ISO_639-1::sl]>
+			author = <
+				["name"] = <"Wouter Zanen">
+				["organisation"] = <"openEHR NL">
+				["email"] = <"wouter@openehr.nl">
+			>
+		
+		>
 	>
 
 description
@@ -232,6 +241,46 @@ Such a record may be made to indicate the administration of a dose, dispensing o
 There is a date and time at which this ACTION took place (as there is for all ACTIONs)  and use of this archetype indicates that some action has actually occurred.">
 			misuse = <"*Do not use when recording an instruction or order (use INSTRUCTION.medication).">
 		>
+		["nl"] = <
+			language = <[ISO_639-1::nl]>
+			purpose = <"Voor het vastleggen van details over elke activiteit met betrekking tot de planning, planning, receptbeheer, verstrekking, toediening, stopzetting en ander gebruik van een medicijn, vaccin, voedingsproduct of ander therapeutisch middel.">
+			keywords = <"medicatie","voorschrijven","afgeven","toedienen","stoppen","therapeutisch middel","voorraad","geneesmiddel","geneesmiddel","preparaat","medicinaal","recept ","vaccin","vaccinatie","dosering","formulier","route","opvolging">
+			copyright = <"© openEHR Foundation">
+			use = <"Wordt gebruikt om informatie vast te leggen over de activiteiten die nodig zijn om alle aspecten van medicatiebeheer te ondersteunen, inclusief de planning, planning, opschorting, annulering en voltooiing van medicatieorders, evenals de daadwerkelijke toediening van medicatieitems. Dit gebeurt door het vastleggen van gegevens tegen specifieke activiteiten, zoals gedefinieerd door de zorgstroomstappen 'Pathway' in dit archetype.
+
+Dit archetype is bedoeld om te worden gebruikt voor elk type medicatie en gerelateerde bestelling, ongeacht of deze is voorgeschreven door een gezondheidswerker of die 'zonder recept' kan worden gekocht. De reikwijdte van dit medicatiearchetype omvat ook bestellingen voor vaccinaties, parenterale vloeistoffen of andere therapeutische goederen, zoals verbandmiddelen, voedingsproducten of andere items die worden aangebracht of toegediend om een ​​therapeutisch effect te hebben en die een gemeenschappelijk patroon hebben voor gegevensregistratie. In het kader van een Medicijnen- of Vaccinatielijst zal dit archetype alleen worden gebruikt om vast te leggen welke medicatie of vaccinatie is voorgeschreven of toegediend.
+
+Aanvullende gestructureerde en gedetailleerde informatie over de activiteit kan worden vastgelegd met behulp van doelspecifieke archetypen die indien nodig worden ingevoegd in de SLOT's 'Voorbereidingen', 'Bedrag', 'Structured body site', 'Administration device' of 'Additional details'.
+
+Timings met betrekking tot medicatiebeheer kunnen op twee manieren worden beheerd:
+- Gebruik van het referentiemodel - de tijd voor uitvoering van een trajectstap zal het ACTION time-attribuut voor elke stap gebruiken.
+- Archetype data-elementen - het data-element 'Oorspronkelijke geplande datum/tijd' is bedoeld om de tijd vast te leggen waarop het medicijn zou worden toegediend. Opmerking: het overeenkomstige ACTIE-tijdattribuut voor de stap Gepland traject zal de tijd registreren waarop de klinische activiteit was gepland in een systeem, niet de beoogde datum/tijd waarop de activiteit moet worden uitgevoerd.
+
+In de praktijk zullen sommige medicijnen (bijvoorbeeld bij reanimatie op de SEH) op basis van een protocol of mondelinge opdracht worden toegediend en niet vooraf worden besteld. De details over de medicatie zullen worden toegevoegd bij de trajectstap 'Dosis toegediend'. Voor een doorlopende medicatiekuur worden bij elke toediening gegevens over het medicatie-item bij de stap 'Dosis toegediend' geregistreerd, zodat de instructie actief blijft. Wanneer het laatste voorval is geregistreerd, wordt de stap 'Medicatiecursus voltooid' geregistreerd, waaruit blijkt dat deze bestelling nu in de voltooide staat is.
+
+In andere situaties, zoals tweedelijnszorg, kan er een formele bestelling zijn voor een medicijnitem met een overeenkomstig archetype INSTRUCTION.medication_order. Dit archetype ACTIE kan vervolgens worden gebruikt om de workflow vast te leggen van wanneer en hoe de opdracht is uitgevoerd.
+
+Het vastleggen van informatie met behulp van dit ACTIE-archetype geeft aan dat er daadwerkelijk een activiteit heeft plaatsgevonden; dit zal meestal het toedienen van het medicijn zelf zijn, maar het kan ook een uitgestelde leveringspoging zijn of een andere activiteit, zoals het opschorten van het medicijn ter voorbereiding van een procedure. Als er een formele bestelling is voor het medicijnitem, wordt de status van deze bestelling weergegeven door de Trajectstap waartegen de gegevens worden vastgelegd. Met behulp van dit archetype kan de voortgang van een paracetamol-bestelling bijvoorbeeld worden vastgelegd via afzonderlijke vermeldingen in de voortgangsnotities van het EPD bij elke 'Pathway'-stap. Bij het documenteren van de reden waarom een ​​activiteit is uitgevoerd of een trajectstap is gekozen, bijvoorbeeld waarom een ​​dosis is weggelaten of de medicatie is stopgezet, kan het element \"Reden\" worden gebruikt.
+
+Wanneer dit ACTIE-archetype wordt gebruikt met het overeenkomstige archetype INSTRUCTION.medication_order, wordt informatie die niet is gewijzigd van de bestelling naar de beheeractiviteit over het algemeen niet herhaald in de actie. Het wordt als een goede gewoonte beschouwd, hoewel niet verplicht, om het medicatie-item in de ACTIE op te nemen.
+
+De trajectstappen maken onderscheid tussen de stappen die direct betrekking hebben op de uitvoering van de bestelling, zoals goedkeuring, bereiding en toediening van de dosis, en die welke betrekking hebben op de behandeling van het recept zoals uitgifte, hernieuwde vergunningverlening, uitgifte. In sommige rechtsgebieden worden deze als één traject beschouwd, in andere kan het handig zijn om de orderafhandeling en receptuur in afzonderlijke sjablonen af ​​te handelen.
+
+De namen van de meeste trajectstappen in dit archetype beginnen met \"Medicatie\" of \"Recept\" om het gemakkelijker te maken onderscheid te maken tussen de trajectstappen die verband houden met de behandeling van recepten en de stappen die verband houden met de behandeling van de medicatie zelf bestellen.
+
+In sommige rechtsgebieden kan een recept opnieuw worden goedgekeurd om een ​​lopende medicatiebestelling voort te zetten, terwijl in andere rechtsgebieden onder deze omstandigheden een geheel nieuw recept moet worden afgegeven. In het laatste geval is de trajectstap 'Recept hernieuwde goedkeuring' niet van toepassing.">
+			
+			misuse = <"Niet te gebruiken voor het vastleggen van een medicatiebestelling of instructie. Gebruik hiervoor het archetype INSTRUCTION.medication_order.
+
+Niet gebruiken om de toediening of afgifte van bloedproducten vast te leggen, wat een fundamenteel ander klinisch proces met zich meebrengt en waarschijnlijk andere ondersteunende informatie vereist. Gebruik hiervoor een ander geschikt ACTIE-archetype.
+
+Niet gebruiken voor het vastleggen van details over therapietrouw, secundaire effecten of toxiciteit. Gebruik hiervoor andere archetypen.
+
+Niet te gebruiken voor het afstemmen van medicatie. Gebruik hiervoor andere geschikte archetypen.
+
+Niet te gebruiken voor een formele review van een volledige medicatielijst, bijvoorbeeld door een apotheker. Gebruik hiervoor andere geschikte archetypen.">
+		>
+
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"For recording details about any activity related to the planning, scheduling, prescription management, dispensing, administration, cessation and other use of a medication, vaccine, nutritional product or other therapeutic item.">
@@ -2723,6 +2772,243 @@ Es wird dringend empfohlen, dass das Element \"Arzneimittel\" mit einer Terminol
 					text = <"Kriterium des Neuanfangs">
 					description = <"Das Kriterium, das den Neustart der Arzneimitteleinnahme auslöst, gemäß dem Schritt \"Verabreichung wurde ausgesetzt\".">
 					comment = <"Zum Beispiel: \"An Tag 2 nach der OP.\"">
+				>
+			>
+		>
+		["nl"] = <
+			items = <
+				["at0000"] = <
+					text = <"Medicatiebeheer">
+					description = <"Aelke activiteit met betrekking tot de planning, planning, receptbeheer, verstrekking, toediening, stopzetting en ander gebruik van een medicijn, vaccin, voedingsproduct of ander therapeutisch middel.">
+					comment = <"Dit is niet beperkt tot activiteiten die worden uitgevoerd op basis van medicatieorders van clinici, maar kan bijvoorbeeld ook het nemen van vrij verkrijgbare medicatie omvatten.">
+				>
+				["at0002"] = <
+					text = <"Recept uitgeschreven">
+					description = <"Voor de medicatie is een recept uitgeschreven.">
+				>
+				["at0003"] = <
+					text = <"Recept verstrekt">
+					description = <"De bestelde medicatie is verstrekt, bijvoorbeeld vanuit een apotheek aan de patiënt.">
+				>
+				["at0004"] = <
+					text = <"Medicatie kuur gestart">
+					description = <"De medicatie is voor het eerst ingenomen door of toegediend aan de patiënt. Hoewel deze belangrijke datum in sommige situaties kan worden berekend als de eerste van verschillende toedieningen, zijn in andere instellingen, zoals eerstelijnszorg, specifieke toedieningsdatums niet direct beschikbaar.">
+				>
+				["at0005"] = <
+					text = <"Medicatie opnieuw beoordeeld">
+					description = <"De individuele medicatie is opnieuw beoordeeld, bijvoorbeeld of de medicatie nog ingenomen moet worden. Dit is niet bedoeld om de herziening van de medicatielijst vast te leggen.">
+				>
+				["at0006"] = <
+					text = <"Dosis toegediend">
+					description = <"Er is een enkele dosis van de medicatie toegediend.">
+				>
+				["at0007"] = <
+					text = <"Medicatie kuur afgerond">
+					description = <"De kuur is volgens plan afgerond.">
+				>
+				["at0008"] = <
+					text = <"Recept levering vertraagd">
+					description = <"Het recept is niet verstrekt vanwege een technisch of farmaceutisch leveringsprobleem.">
+				>
+				["at0009"] = <
+					text = <"Medicatie toediening opgeschort">
+					description = <"De toediening van de medicatie is tot nader order opgeschort. Er mogen geen verdere doses worden gegeven totdat de herstartdatum of de voorwaarden zijn vervuld. Bij het instellen van de datum/voorwaarden voor herstart na schorsing dient een stap te worden uitgevoerd van 'Toediening opgeschort’ en terug naar ‘Medicatie startdatum/conditie set’. ">
+				>
+				["at0010"] = <
+					text = <"Recept herhaling uigeschreven">
+					description = <"Er is herhaalrecept verstrekt voor een bestaande medicatiebestelling.">
+				>
+				["at0011"] = <
+					text = <"Recept hernieuwde goedkeuring in behandeling">
+					description = <"De uitgifte van het recept wacht op hernieuwde goedkeuring door een arts.">
+				>
+				["at0012"] = <
+					text = <"Medicatie kuur geannuleerd">
+					description = <"De geplande medicatiekuur is geannuleerd voordat enige toediening is gestart.">
+				>
+				["at0013"] = <
+					text = <"Medicatie kuur uitgesteld">
+					description = <"De geplande medicatiekuur is uitgesteld voordat enige toediening is gestart.">
+				>
+				["at0015"] = <
+					text = <"Medicatie kuur gestopt">
+					description = <"De toediening van de medicatie is gestaakt tijdens de periode van de beoogde kuur.">
+				>
+				["at0016"] = <
+					text = <"Medicatie startdatum/voorwaarde ingesteld">
+					description = <"De tijd om de medicatie te starten, of een andere startvoorwaarde, is ingesteld.">
+				>
+				["at0017"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0018"] = <
+					text = <"Toediening dosis overgeslagen">
+					description = <"Een toediening van de medicatie is overgeslagen en niet gegeven. Er is geen verwachting dat het later zal worden gegeven, hoewel de volgende dosis (indien aanwezig) volgens de oorspronkelijke volgorde moet worden toegediend.">
+				>
+				["at0020"] = <
+					text = <"Geneesmiddel">
+					description = <"Naam van het medicijn, vaccin of ander therapeutisch/voorschrijfbaar item waarop de activiteit was gericht.">
+					comment = <"Bijvoorbeeld: 'Atenolol 100 mg' of 'Tenormin tabletten 100 mg'.
+Het wordt sterk aanbevolen om het 'Medicatie-item' te coderen met een terminologie die, waar mogelijk, beslissingsondersteuning kan activeren. De mate van codering kan variëren van de eenvoudige naam van het medicatie-item tot gestructureerde details over het daadwerkelijk gebruikte medicatiepakket. Vrije tekstinvoer mag alleen worden gebruikt als er geen geschikte terminologie beschikbaar is.">
+				>
+				["at0021"] = <
+					text = <"Reden">
+					description = <"Reden dat de trajectstap voor de geïdentificeerde medicatie is uitgevoerd.">
+					comment = <"Bijvoorbeeld: 'Uitgesteld - Patiënt niet beschikbaar op toedieningstijdstip', 'Geannuleerd - Bijwerking'. Opmerking: dit is niet de reden voor de medicatie-instructie, maar eerder de specifieke reden dat een zorgstap is uitgevoerd, en zal vaak worden gebruikt om enige afwijking van de oorspronkelijke bestelling te documenteren.">
+				>
+				["at0024"] = <
+					text = <"Opmerking">
+					description = <"Aanvullend verhaal over de activiteit of stap in het traject dat niet in andere velden is vastgelegd, inclusief details over eventuele afwijkingen tussen de beoogde actie en de daadwerkelijk uitgevoerde actie.">
+					comment = <"Bijvoorbeeld: 'Patiënt was op de afdeling radiologie', 'Onbedoelde injectie in bloedvat tijdens IM-toediening'.">
+				>
+				["at0025"] = <
+					text = <"Volgnummer">
+					description = <"Het volgnummer dat specifiek is voor de trajectstap die wordt vastgelegd.">
+				>
+				["at0030"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0033"] = <
+					text = <"Instructie voor patient">
+					description = <"Alle begeleiding, instructies of adviezen die op het moment van de trajectstap aan het onderwerp van zorg of persoonlijke verzorger worden gegeven.">
+					comment = <"Bijvoorbeeld: 'Vermijd grapefruit' , 'Tenminste 2 uur voor het slapengaan innemen', 'Innemen met voedsel'. Kan worden gecodeerd met een terminologie indien klinisch aangewezen.">
+				>
+				["at0039"] = <
+					text = <"Grote wijziging in bestelling">
+					description = <"Er was een grote wijziging in de bestelling nodig, waardoor deze bestelling werd stopgezet en een vervangende bestelling werd gestart.">
+				>
+				["at0041"] = <
+					text = <"Kleine wijziging in bestelling">
+					description = <"De medicatieorder is zodanig gewijzigd dat er geen nieuwe instructie/order hoeft te worden gegeven, volgens de lokale klinische regels.">
+				>
+				["at0043"] = <
+					text = <"Oorspronkelijke geplande datum/tijd">
+					description = <"De datum/tijd waarop de medicatieactie gepland was.">
+					comment = <"Wordt gebruikt om de afwijking van de werkelijke actietijd te vergelijken waar deze niet gemakkelijk kan worden berekend uit de oorspronkelijke instructie.">
+				>
+				["at0044"] = <
+					text = <"Dosistoediening uitgesteld">
+					description = <"Een toediening van een dosis van de medicatie is uitgesteld, maar zal naar verwachting zo snel mogelijk worden gegeven.">
+				>
+				["at0053"] = <
+					text = <"Additional details">
+					description = <"Further structured details of the action, possibly specific to a pathway step.">
+				>
+				["at0085"] = <
+					text = <"Extension">
+					description = <"Additional information required to capture local content or to align with other reference models/formalisms.">
+					comment = <"For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents.">
+				>
+				["at0103"] = <
+					text = <"Order ID">
+					description = <"Unique identifier for the medication order.">
+					comment = <"Comment: This data element allows for multiple occurrences to be defined more explicitly at run-time, if required.">
+				>
+				["at0104"] = <
+					text = <"Medication details">
+					description = <"Structured details about the medication including strength, form and constituent substances.">
+					comment = <"Use this SLOT where the detailed description of the dispensed, authorised or administered item needs to be explicitly stated. For example: the form, strength, any diluents or mixture of ingredients.">
+				>
+				["at0106"] = <
+					text = <"Prescription re-authorised">
+					description = <"The original medication order has been re-authorised to allow repeat prescription or dispensing. In some jurisdictions an entirely new order must be issued in these circumstances.">
+				>
+				["at0109"] = <
+					text = <"Medication recommended">
+					description = <"The medication has been recommended but no steps have been taken to initiate prescribing.">
+				>
+				["at0131"] = <
+					text = <"Amount">
+					description = <"Specific details about the amount of the medication item.">
+					comment = <"CLUSTER.dosage is intended to carry details of medication order changes or dose administrations, whilst CLUSTER.medication_supply_amount is intended for details of dispensing-related activity.">
+				>
+				["at0132"] = <
+					text = <"Substitution">
+					description = <"Subsitution action taken by the person administering or dispensing the drug.">
+					comment = <"In many jurisdictions, substitution of an ordered item as a generic form or with a different brand name, which has been determined as bioequivalent, is allowed at the point of dispense or supply. In other cases substitution is assumed and the clinician has to explicitly request non-substitution.">
+				>
+				["at0133"] = <
+					text = <"Substitution reason">
+					description = <"The reason or justification for the substitution action taken.">
+					comment = <"For example: \"Generic alternative contains a substance that is not tolerated by the patient.\" May be coded with a terminology when clinically appropriate">
+				>
+				["at0138"] = <
+					text = <"Substitution performed">
+					description = <"A medication was substituted which is bioequivalent to that ordered.">
+				>
+				["at0139"] = <
+					text = <"Substitution not performed">
+					description = <"Although allowed by the medication order a bioequvalent medication was not substituted.">
+				>
+				["at0140"] = <
+					text = <"Administration details">
+					description = <"Details of body site and administration of the medication.">
+				>
+				["at0141"] = <
+					text = <"Body site">
+					description = <"Structured description of the site of administration of the ordered item.">
+					comment = <"For example: 'left upper arm', 'intravenous catheter right hand'. 
+Coding of the body site with a terminology is preferred, where possible.">
+				>
+				["at0142"] = <
+					text = <"Structured body site">
+					description = <"Structured description of the site of administration of the medication, vaccine or therapeutic good.">
+					comment = <"For example: \"On the medial skin surface of the left forearm, from 10 cm to 20 cm distally from the point of the elbow\".">
+				>
+				["at0143"] = <
+					text = <"Administration method">
+					description = <"The technique or device by which the ordered item was, or is to be, administered.">
+					comment = <"Comment: For example: ' via Z-track injection'; 'via nebuliser'. Coding of the method with a terminology is preferred, where possible.">
+				>
+				["at0144"] = <
+					text = <"Administration device">
+					description = <"Details of the medical device used to assist administration of the medication.">
+				>
+				["at0145"] = <
+					text = <"Prescription awaiting authorisation">
+					description = <"Draft prescription has been prepared and is awaiting confirmation from an authorised clinician. May be used where reauthorisations are performed as a batch. This careflow_step may have a status of 'planned' or 'active', reflecting the need to to handle new orders as well as re-authorised orders.">
+				>
+				["at0147"] = <
+					text = <"Route">
+					description = <"The route by which the ordered item was, or is to be, administered into the subject's body.">
+					comment = <"Comment: For example: 'oral', 'intravenous', or 'topical'. Coding of the route with a terminology is preferred, where possible. Multiple potential routes may be specified.">
+				>
+				["at0148"] = <
+					text = <"Medication prepared">
+					description = <"The medication has been physically prepared. For example: preparation of an intravenous mixture.">
+				>
+				["at0149"] = <
+					text = <"Double-checked?">
+					description = <"The pathway step has been checked by a separate individual.">
+					comment = <"Details of the individual performing the double-check can be carried in the Reference Model element \"Participation\".">
+				>
+				["at0150"] = <
+					text = <"Prescription cancelled">
+					description = <"The prescription was cancelled prior to being issued.">
+				>
+				["at0151"] = <
+					text = <"Prescription invalid or expired">
+					description = <"Prescription has been invalidated or has expired without being fulfilled.">
+				>
+				["at0152"] = <
+					text = <"Prescription fulfilled">
+					description = <"The prescription has been fulfilled successfully.">
+				>
+				["at0153"] = <
+					text = <"Medication authorised">
+					description = <"The medication has been formally authorised for use.">
+				>
+				["at0154"] = <
+					text = <"Restart date/time">
+					description = <"The date/time on which the medication course is set to restart, as per the \"Administrations suspended\" pathway step.">
+					comment = <"For example: 2017-10-29">
+				>
+				["at0155"] = <
+					text = <"Restart criterion">
+					description = <"The criterion which triggers the medication course to restart, as per the \"Administrations suspended\" pathway step.">
+					comment = <"For example: \"On day 2 after surgery\".">
 				>
 			>
 		>

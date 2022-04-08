@@ -9508,6 +9508,114 @@
             "text" : "Quantidade de medicamento a ser fornecida",
             "description" : "Detalhes relacionados à quantidade de medicamento, vacina ou outro item terapêutico a ser fornecido ao paciente, como parte da autorização, distribuição ou administração."
           }
+        },
+        "nl" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Dosis toegediend",
+            "description" : "Details over de dosis medicatie, vaccin of ander therapeutich middel dat wordt toegediend of toegediend is aan de patient, als onderdeel van autorisatie, afgifte of toediening."
+          },
+          "at0000" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Medicatie dosis",
+            "description" : "Details over de dosis medicatie, vaccin of ander therapeutich middel dat wordt toegediend of toegediend is aan de patient, als onderdeel van autorisatie, afgifte of toediening."
+          },
+          "at0131" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0131",
+            "text" : "Dosis",
+            "description" : "De hoeveelheid medicatie, vaccin of therapeutisch middel die bedoeld is om te worden geleverd of daadwerkelijk wordt geleverd.",
+            "comment" : "Bijvoorbeeld: 1, 1,5 of 0,125."
+          },
+          "at0142" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0142",
+            "text" : "Leveringsduur",
+            "description" : "De periode waarvoor de medicatie moet worden verstrekt of waarvoor een middel is verstrekt.",
+            "comment" : "De leverancier wordt gevraagd om voldoende medicatie te verstrekken om de gedefinieerde periode te overbruggen."
+          },
+          "at0147" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0147",
+            "text" : "Eenheid",
+            "description" : "De dosiseenheid of verpakkingseenheid die is gekoppeld aan de gedoseerde hoeveelheid.",
+            "comment" : "Bijvoorbeeld: 'tabletten', 'verpakkingen', ml'."
+          },
+          "at0158" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0158",
+            "text" : "Aantal verpakkingen",
+            "description" : "Het aantal verpakkingen gespecificeerd door de voorschrijver of afgegeven door de dispenser."
+          },
+          "at0159" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0159",
+            "text" : "Verpakkingsgrootte",
+            "description" : "De verpakkingsgrootte gespecificeerd door de voorschrijver of afgegeven door de dispenser.",
+            "comment" : "Bijvoorbeeld: '300', '28'."
+          },
+          "at0160" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0160",
+            "text" : "Verpakkings Eenheid",
+            "description" : "De meet eenheden die zijn gekoppeld aan de verpakkingsgrootte.",
+            "comment" : "Bijvoorbeeld: 'pillen', 'mls'."
+          },
+          "at0161" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0161",
+            "text" : "Dosis beschrijving",
+            "description" : "Een verhalende weergave van de hoeveelheid De hoeveelheid medicatie, vaccin of therapeutisch goed die bedoeld is om te worden geleverd of daadwerkelijk wordt geleverd."
+          },
+          "at0131.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0131",
+            "text" : "Dosis",
+            "description" : "De hoeveelheid medicatie, vaccin of therapeutisch middel die bedoeld is om te worden geleverd of daadwerkelijk wordt geleverd.",
+            "comment" : "Bijvoorbeeld: 1, 1,5 of 0,125."
+          },
+          "at0142.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0142",
+            "text" : "Leveringsduur",
+            "description" : "De periode waarvoor de medicatie moet worden verstrekt of waarvoor een middel is verstrekt.",
+            "comment" : "De leverancier wordt gevraagd om voldoende medicatie te verstrekken om de gedefinieerde periode te overbruggen."
+          },
+          "at0147.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0147",
+            "text" : "Eenheid",
+            "description" : "De dosiseenheid of verpakkingseenheid die is gekoppeld aan de gedoseerde hoeveelheid.",
+            "comment" : "Bijvoorbeeld: 'tabletten', 'verpakkingen', ml'."
+          },
+          "at0158.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0158",
+            "text" : "Aantal verpakkingen",
+            "description" : "Het aantal verpakkingen gespecificeerd door de voorschrijver of afgegeven door de dispenser."
+          },
+          "at0159.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0159",
+            "text" : "Verpakkingsgrootte",
+            "description" : "De verpakkingsgrootte gespecificeerd door de voorschrijver of afgegeven door de dispenser.",
+            "comment" : "Bijvoorbeeld: '300', '28'."
+          },
+          "at0160.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0160",
+            "text" : "Verpakkings Eenheid",
+            "description" : "De meet eenheden die zijn gekoppeld aan de verpakkingsgrootte.",
+            "comment" : "Bijvoorbeeld: 'pillen', 'mls'."
+          },
+          "at0161.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0161",
+            "text" : "Dosis beschrijving",
+            "description" : "Een verhalende weergave van de hoeveelheid De hoeveelheid medicatie, vaccin of therapeutisch goed die bedoeld is om te worden geleverd of daadwerkelijk wordt geleverd."
+          }
         }
       },
       "termBindings" : { },
@@ -9553,6 +9661,21 @@
         "email" : "bfleao@terra.com.br"
       },
       "accreditation" : "MD, PhD",
+      "otherDetails" : { }
+    },
+    {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nl"
+      },
+      "author" : {
+        "name" : "Wouter Zanen",
+        "organisation" : "openEHR NL",
+        "email" : "wouter@openehr.nl"
+      },
       "otherDetails" : { }
     } ]
   } ],
