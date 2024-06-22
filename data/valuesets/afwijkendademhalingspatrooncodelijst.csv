@@ -1,10 +1,10 @@
-ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
-Kussmaul-ademhaling,414563008,,SNOMED CT,2.16.840.1.113883.6.96,Ademhaling volgens Kussmaul,,,
-Cheyne-Stokes-ademhaling,309155007,,SNOMED CT,2.16.840.1.113883.6.96,Ademhaling volgens Cheyne-Stokes,,,
-Atactische ademhaling,39106000,,SNOMED CT,2.16.840.1.113883.6.96,Atactische ademhaling,,,
-Apneuse,70185004,,SNOMED CT,2.16.840.1.113883.6.96,Apneustische ademhaling,,,
-Clusterademhaling,7013003,,SNOMED CT,2.16.840.1.113883.6.96,Cluster ademhaling,,,
-Apneu,1023001,,SNOMED CT,2.16.840.1.113883.6.96,Apneu,,,
-Verlengd exspirium,248586000,,SNOMED CT,2.16.840.1.113883.6.96,Verlengde expiratoire fase,,,
-Happende ademhaling,23141003,,SNOMED CT,2.16.840.1.113883.6.96,Happende ademhaling,,,
-Other,OTH,,NullFlavor,2.16.840.1.113883.5.1008,Anders,,,
+"ZIB_Conceptnaam","ZIB_Conceptcode","ZIB_Conceptwaarde","ZIB_Codestelselnaam","ZIB_Codesysteem_OID","ZIB_Omschrijving","openEHR_Code","openEHR_Text","Commentaar"
+"Kussmaul-ademhaling","414563008","","SNOMED CT","2.16.840.1.113883.6.96","Ademhaling volgens Kussmaul","","","Geen valueset in openEHR, daar toevoegen, of in template defineeren? Of enkel wegs mappen? Mappen via snomed?"
+"Cheyne-Stokes-ademhaling","309155007","","SNOMED CT","2.16.840.1.113883.6.96","Ademhaling volgens Cheyne-Stokes","","",""
+"Atactische ademhaling","39106000","","SNOMED CT","2.16.840.1.113883.6.96","Atactische ademhaling","","",""
+"Apneuse","70185004","","SNOMED CT","2.16.840.1.113883.6.96","Apneustische ademhaling","","",""
+"Clusterademhaling","7013003","","SNOMED CT","2.16.840.1.113883.6.96","Cluster ademhaling","","",""
+"Apneu","1023001","","SNOMED CT","2.16.840.1.113883.6.96","Apneu","","",""
+"Verlengd exspirium","248586000","","SNOMED CT","2.16.840.1.113883.6.96","Verlengde expiratoire fase","","",""
+"Happende ademhaling","23141003","","SNOMED CT","2.16.840.1.113883.6.96","Happende ademhaling","","",""
+"Other","OTH","","NullFlavor","2.16.840.1.113883.5.1008","Anders","","","openEHR ongecodeerd hierheen mappen?"

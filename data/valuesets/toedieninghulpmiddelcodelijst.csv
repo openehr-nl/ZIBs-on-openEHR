@@ -1,5 +1,5 @@
-ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
-Neusbril,336623009,,SNOMED CT,2.16.840.1.113883.6.96,Neusbril,,,
-Venturi-masker,428285009,,SNOMED CT,2.16.840.1.113883.6.96,Venturi masker,,,
-Non-rebreathing mask,427591007,,SNOMED CT,2.16.840.1.113883.6.96,Non-rebreathing masker,,,
-Other,OTH,,NullFlavor,2.16.840.1.113883.5.1008,Anders,,,
+"ZIB_Conceptnaam","ZIB_Conceptcode","ZIB_Conceptwaarde","ZIB_Codestelselnaam","ZIB_Codesysteem_OID","ZIB_Omschrijving","openEHR_Code","openEHR_Text","Commentaar"
+"Neusbril","336623009","","SNOMED CT","2.16.840.1.113883.6.96","Neusbril","","","geen valueset hiervoor in openEHR. Wel een slot voor een cluster inspired oxygen met een slot oxygen delivery detail"
+"Venturi-masker","428285009","","SNOMED CT","2.16.840.1.113883.6.96","Venturi masker","","",""
+"Non-rebreathing mask","427591007","","SNOMED CT","2.16.840.1.113883.6.96","Non-rebreathing masker","","",""
+"Other","OTH","","NullFlavor","2.16.840.1.113883.5.1008","Anders","","",""
