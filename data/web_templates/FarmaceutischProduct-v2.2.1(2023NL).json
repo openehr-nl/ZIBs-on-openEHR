@@ -1,0 +1,275 @@
+{
+  "templateId" : "FarmaceutischProduct-v2.2.1(2023NL)",
+  "semVer" : "0.1.4",
+  "version" : "2.3",
+  "defaultLanguage" : "en",
+  "languages" : [ "en" ],
+  "tree" : {
+    "id" : "farmaceutischproduct-v2.2.1_2023nl",
+    "name" : "FarmaceutischProduct-v2.2.1(2023NL)",
+    "localizedName" : "FarmaceutischProduct-v2.2.1(2023NL)",
+    "rmType" : "CLUSTER",
+    "nodeId" : "openEHR-EHR-CLUSTER.medication.v2",
+    "min" : 0,
+    "max" : 1,
+    "localizedNames" : {
+      "en" : "FarmaceutischProduct-v2.2.1(2023NL)"
+    },
+    "localizedDescriptions" : {
+      "en" : "Details about a medication or component of a medication, including strength, form and details of any specific constituents."
+    },
+    "aqlPath" : "",
+    "children" : [ {
+      "id" : "productcode",
+      "name" : "ProductCode",
+      "localizedName" : "ProductCode",
+      "rmType" : "DV_TEXT",
+      "nodeId" : "at0132",
+      "min" : 0,
+      "max" : 1,
+      "localizedNames" : {
+        "en" : "ProductCode"
+      },
+      "localizedDescriptions" : {
+        "en" : "The name of the medication or medication component."
+      },
+      "annotations" : {
+        "comment" : "For example: 'Zinacef 750 mg powder' or 'cefuroxim'. This item should be coded if possible, using for example, RxNorm, DM+D, Australian Medicines Terminology or FEST. Usage of this element will vary according to context of use. This element may be omitted where the name of the medication is recorded in the parent INSTRUCTION or ACTION archetype, and this archetype is only used to record that the form must be or was 'liquid'."
+      },
+      "aqlPath" : "/items[at0132,'ProductCode']/value",
+      "inputs" : [ {
+        "type" : "TEXT"
+      } ]
+    }, {
+      "id" : "productspecificatie_farmaceutischproduct-v2.2.1_2023nl",
+      "name" : "ProductSpecificatie_FarmaceutischProduct-v2.2.1(2023NL)",
+      "localizedName" : "ProductSpecificatie_FarmaceutischProduct-v2.2.1(2023NL)",
+      "rmType" : "CLUSTER",
+      "nodeId" : "openEHR-EHR-CLUSTER.medication.v2",
+      "min" : 0,
+      "max" : 1,
+      "localizedNames" : {
+        "en" : "ProductSpecificatie_FarmaceutischProduct-v2.2.1(2023NL)"
+      },
+      "localizedDescriptions" : {
+        "en" : "Details about a medication or component of a medication, including strength, form and details of any specific constituents."
+      },
+      "aqlPath" : "/items[openEHR-EHR-CLUSTER.medication.v2,'ProductSpecificatie_FarmaceutischProduct-v2.2.1(2023NL)']",
+      "children" : [ {
+        "id" : "productnaam",
+        "name" : "ProductNaam",
+        "localizedName" : "ProductNaam",
+        "rmType" : "DV_CODED_TEXT",
+        "nodeId" : "at0132",
+        "min" : 0,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "ProductNaam"
+        },
+        "localizedDescriptions" : {
+          "en" : "The name of the medication or medication component."
+        },
+        "annotations" : {
+          "comment" : "For example: 'Zinacef 750 mg powder' or 'cefuroxim'. This item should be coded if possible, using for example, RxNorm, DM+D, Australian Medicines Terminology or FEST. Usage of this element will vary according to context of use. This element may be omitted where the name of the medication is recorded in the parent INSTRUCTION or ACTION archetype, and this archetype is only used to record that the form must be or was 'liquid'."
+        },
+        "aqlPath" : "/items[openEHR-EHR-CLUSTER.medication.v2,'ProductSpecificatie_FarmaceutischProduct-v2.2.1(2023NL)']/items[at0132,'ProductNaam']/value",
+        "inputs" : [ {
+          "suffix" : "code",
+          "type" : "TEXT"
+        }, {
+          "suffix" : "value",
+          "type" : "TEXT"
+        } ]
+      }, {
+        "id" : "farmeceutischevorm",
+        "name" : "FarmeceutischeVorm",
+        "localizedName" : "FarmeceutischeVorm",
+        "rmType" : "DV_CODED_TEXT",
+        "nodeId" : "at0071",
+        "min" : 0,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "FarmeceutischeVorm"
+        },
+        "localizedDescriptions" : {
+          "en" : "The formulation or presentation of the medication or medication component."
+        },
+        "annotations" : {
+          "comment" : "For example: 'tablet', 'capsule', 'cream', 'infusion fluid' or 'inhalation powder'. Coding of the form with a terminology is preferred, where possible. Medicines catalogues may differentiate between administrable form 'solution for injection' and product form 'powder for solution for injection'. The recorded form will depend on the exact context of use but administrable form is likely to be used in most instances."
+        },
+        "aqlPath" : "/items[openEHR-EHR-CLUSTER.medication.v2,'ProductSpecificatie_FarmaceutischProduct-v2.2.1(2023NL)']/items[at0071,'FarmeceutischeVorm']/value",
+        "inputs" : [ {
+          "suffix" : "code",
+          "type" : "TEXT"
+        }, {
+          "suffix" : "value",
+          "type" : "TEXT"
+        } ]
+      }, {
+        "id" : "batch_lotnummer",
+        "name" : "Batch/lotNummer",
+        "localizedName" : "Batch/lotNummer",
+        "rmType" : "DV_TEXT",
+        "nodeId" : "at0150",
+        "min" : 0,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "Batch/lotNummer"
+        },
+        "localizedDescriptions" : {
+          "en" : "The identifier assigned to the origin of the dose itself."
+        },
+        "aqlPath" : "/items[openEHR-EHR-CLUSTER.medication.v2,'ProductSpecificatie_FarmaceutischProduct-v2.2.1(2023NL)']/items[at0150,'Batch/lotNummer']/value",
+        "inputs" : [ {
+          "type" : "TEXT"
+        } ]
+      }, {
+        "id" : "serienummer",
+        "name" : "SerieNummer",
+        "localizedName" : "SerieNummer",
+        "rmType" : "DV_TEXT",
+        "nodeId" : "at0150",
+        "min" : 0,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "SerieNummer"
+        },
+        "localizedDescriptions" : {
+          "en" : "The identifier assigned to the origin of the dose itself."
+        },
+        "aqlPath" : "/items[openEHR-EHR-CLUSTER.medication.v2,'ProductSpecificatie_FarmaceutischProduct-v2.2.1(2023NL)']/items[at0150,'SerieNummer']/value",
+        "inputs" : [ {
+          "type" : "TEXT"
+        } ]
+      }, {
+        "id" : "ingredient",
+        "name" : "Ingredient",
+        "localizedName" : "Ingredient",
+        "rmType" : "CLUSTER",
+        "nodeId" : "openEHR-EHR-CLUSTER.medication.v2",
+        "min" : 0,
+        "max" : -1,
+        "localizedNames" : {
+          "en" : "Ingredient"
+        },
+        "localizedDescriptions" : {
+          "en" : "Details about a medication or component of a medication, including strength, form and details of any specific constituents."
+        },
+        "aqlPath" : "/items[openEHR-EHR-CLUSTER.medication.v2,'ProductSpecificatie_FarmaceutischProduct-v2.2.1(2023NL)']/items[openEHR-EHR-CLUSTER.medication.v2,'Ingredient']",
+        "children" : [ {
+          "id" : "ingredientcode",
+          "name" : "IngredientCode",
+          "localizedName" : "IngredientCode",
+          "rmType" : "DV_CODED_TEXT",
+          "nodeId" : "at0132",
+          "min" : 0,
+          "max" : 1,
+          "localizedNames" : {
+            "en" : "IngredientCode"
+          },
+          "localizedDescriptions" : {
+            "en" : "The name of the medication or medication component."
+          },
+          "annotations" : {
+            "comment" : "For example: 'Zinacef 750 mg powder' or 'cefuroxim'. This item should be coded if possible, using for example, RxNorm, DM+D, Australian Medicines Terminology or FEST. Usage of this element will vary according to context of use. This element may be omitted where the name of the medication is recorded in the parent INSTRUCTION or ACTION archetype, and this archetype is only used to record that the form must be or was 'liquid'."
+          },
+          "aqlPath" : "/items[openEHR-EHR-CLUSTER.medication.v2,'ProductSpecificatie_FarmaceutischProduct-v2.2.1(2023NL)']/items[openEHR-EHR-CLUSTER.medication.v2,'Ingredient']/items[at0132,'IngredientCode']/value",
+          "inputs" : [ {
+            "suffix" : "code",
+            "type" : "TEXT"
+          }, {
+            "suffix" : "value",
+            "type" : "TEXT"
+          } ]
+        }, {
+          "id" : "sterkte",
+          "name" : "Sterkte",
+          "localizedName" : "Sterkte",
+          "rmType" : "CLUSTER",
+          "nodeId" : "at0152",
+          "min" : 0,
+          "max" : 1,
+          "localizedNames" : {
+            "en" : "Sterkte"
+          },
+          "localizedDescriptions" : {
+            "en" : "The strength of the medication or medication component, expressed as a ratio."
+          },
+          "annotations" : {
+            "comment" : "In some cases, as for liquid or semisolid medications, the denominator of the strength ratio is a physical quantity, for example 2 mg/5 ml. In some of these cases the denominator also reflects the actual volume of the component: 5 ml in the previous example. In this case the 'Strength (concentration)' would be 0.4 mg/ml. In other cases, where the strength involves a denominator which is not a physical quantity, for example 4 mg/tablet, the denominator is expressed as a unitary value '1' with a unit of 'tablet'. This arrangement was chosen to align with the approach adopted by the ISO IDMP standard for medication catalogues. If the 'Strength (concentration)' element is used, this cluster becomes redundant."
+          },
+          "aqlPath" : "/items[openEHR-EHR-CLUSTER.medication.v2,'ProductSpecificatie_FarmaceutischProduct-v2.2.1(2023NL)']/items[openEHR-EHR-CLUSTER.medication.v2,'Ingredient']/items[at0152,'Sterkte']",
+          "children" : [ {
+            "id" : "ingredienthoeveelheid",
+            "name" : "IngredientHoeveelheid",
+            "localizedName" : "IngredientHoeveelheid",
+            "rmType" : "DV_QUANTITY",
+            "nodeId" : "at0153",
+            "min" : 1,
+            "max" : 1,
+            "localizedNames" : {
+              "en" : "IngredientHoeveelheid"
+            },
+            "localizedDescriptions" : {
+              "en" : "The numerator of the strength fraction."
+            },
+            "annotations" : {
+              "comment" : "For example: For a presentation strength of '300 µg/0.3 ml', the strength numerator is '300 µg'. For a presentation strength of '100 mg/tablet', the strength numerator value is '100 mg'."
+            },
+            "aqlPath" : "/items[openEHR-EHR-CLUSTER.medication.v2,'ProductSpecificatie_FarmaceutischProduct-v2.2.1(2023NL)']/items[openEHR-EHR-CLUSTER.medication.v2,'Ingredient']/items[at0152,'Sterkte']/items[at0153,'IngredientHoeveelheid']/value",
+            "inputs" : [ {
+              "suffix" : "magnitude",
+              "type" : "DECIMAL"
+            }, {
+              "suffix" : "unit",
+              "type" : "CODED_TEXT"
+            } ]
+          }, {
+            "id" : "producthoeveelheid",
+            "name" : "ProductHoeveelheid",
+            "localizedName" : "ProductHoeveelheid",
+            "rmType" : "DV_QUANTITY",
+            "nodeId" : "at0157",
+            "min" : 1,
+            "max" : 1,
+            "localizedNames" : {
+              "en" : "ProductHoeveelheid"
+            },
+            "localizedDescriptions" : {
+              "en" : "The denominator of the strength fraction."
+            },
+            "annotations" : {
+              "comment" : "For example: For a presentation strength of '300 µg/0.3 ml', the strength denominator value is '0.3 ml'. For a presentation strength of '100 mg/tablet', the strength denominator value is '1 tablet'."
+            },
+            "aqlPath" : "/items[openEHR-EHR-CLUSTER.medication.v2,'ProductSpecificatie_FarmaceutischProduct-v2.2.1(2023NL)']/items[openEHR-EHR-CLUSTER.medication.v2,'Ingredient']/items[at0152,'Sterkte']/items[at0157,'ProductHoeveelheid']/value",
+            "inputs" : [ {
+              "suffix" : "magnitude",
+              "type" : "DECIMAL"
+            }, {
+              "suffix" : "unit",
+              "type" : "CODED_TEXT"
+            } ]
+          } ]
+        } ]
+      }, {
+        "id" : "omschrijving",
+        "name" : "Omschrijving",
+        "localizedName" : "Omschrijving",
+        "rmType" : "DV_TEXT",
+        "nodeId" : "at0133",
+        "min" : 0,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "Omschrijving"
+        },
+        "localizedDescriptions" : {
+          "en" : "Narrative description of the medication or medication component where it is not possible to describe this fully using structured elements."
+        },
+        "aqlPath" : "/items[openEHR-EHR-CLUSTER.medication.v2,'ProductSpecificatie_FarmaceutischProduct-v2.2.1(2023NL)']/items[at0133,'Omschrijving']/value",
+        "inputs" : [ {
+          "type" : "TEXT"
+        } ]
+      } ]
+    } ]
+  }
+}
