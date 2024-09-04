@@ -1,0 +1,7 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Interpretatie van diagnose,282291009,,SNOMED CT,2.16.840.1.113883.6.96,Diagnose,,,
+Bevinding gerapporteerd door patiënt of andere bron van voorgeschiedenis,418799008,,SNOMED CT,2.16.840.1.113883.6.96,Symptoom,,,
+Klinische bevinding,404684003,,SNOMED CT,2.16.840.1.113883.6.96,Bevinding,,,
+Klacht [DEPRECATED],409586006,,SNOMED CT,2.16.840.1.113883.6.96,Klacht,,,
+Bevinding van functionele prestatie en activiteit,248536006,,SNOMED CT,2.16.840.1.113883.6.96,Functionele Beperking,,,
+Complicatie [DEPRECATED],116223007,,SNOMED CT,2.16.840.1.113883.6.96,Complicatie,,,

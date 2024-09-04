@@ -1,0 +1,440 @@
+{
+  "templateId" : "Probleem-v4.6.1(2023NL)",
+  "semVer" : "0.1.6",
+  "version" : "2.3",
+  "defaultLanguage" : "en",
+  "languages" : [ "en" ],
+  "tree" : {
+    "id" : "probleem-v4.6.1_2023nl",
+    "name" : "Probleem-v4.6.1(2023NL)",
+    "localizedName" : "Probleem-v4.6.1(2023NL)",
+    "rmType" : "EVALUATION",
+    "nodeId" : "openEHR-EHR-EVALUATION.problem_diagnosis.v1",
+    "min" : 1,
+    "max" : 1,
+    "localizedNames" : {
+      "en" : "Probleem-v4.6.1(2023NL)"
+    },
+    "localizedDescriptions" : {
+      "en" : "Details about a single identified health condition, injury, disability or any other issue which impacts on the physical, mental and/or social well-being of an individual."
+    },
+    "annotations" : {
+      "comment" : "Clear delineation between the scope of a problem versus a diagnosis is not easy to achieve in practice. For the purposes of clinical documentation with this archetype, problem and diagnosis are regarded as a continuum, with increasing levels of detail and supportive evidence usually providing weight towards the label of 'diagnosis'."
+    },
+    "aqlPath" : "",
+    "children" : [ {
+      "id" : "probleemnaam",
+      "name" : "ProbleemNaam",
+      "localizedName" : "ProbleemNaam",
+      "rmType" : "DV_CODED_TEXT",
+      "nodeId" : "at0002",
+      "min" : 1,
+      "max" : 1,
+      "localizedNames" : {
+        "en" : "ProbleemNaam"
+      },
+      "localizedDescriptions" : {
+        "en" : "Identification of the problem or diagnosis, by name."
+      },
+      "annotations" : {
+        "comment" : "Coding of the name of the problem or diagnosis with a terminology is preferred, where possible."
+      },
+      "aqlPath" : "/data[at0001]/items[at0002,'ProbleemNaam']/value",
+      "inputs" : [ {
+        "suffix" : "code",
+        "type" : "TEXT"
+      }, {
+        "suffix" : "value",
+        "type" : "TEXT"
+      } ]
+    }, {
+      "id" : "naderespecificatieprobleemnaam",
+      "name" : "NadereSpecificatieProbleemNaam",
+      "localizedName" : "NadereSpecificatieProbleemNaam",
+      "rmType" : "DV_TEXT",
+      "nodeId" : "at0079",
+      "min" : 0,
+      "max" : 1,
+      "localizedNames" : {
+        "en" : "NadereSpecificatieProbleemNaam"
+      },
+      "localizedDescriptions" : {
+        "en" : "Specific variant or subtype of the Diagnosis, if relevant."
+      },
+      "annotations" : {
+        "comment" : "For example: 'acute motor axonal neuropathy' as a variant of Guillain-Barre Syndrome. Coding of the name of the variant with a terminology is preferred, where possible. "
+      },
+      "aqlPath" : "/data[at0001]/items[at0079,'NadereSpecificatieProbleemNaam']/value",
+      "inputs" : [ {
+        "type" : "TEXT"
+      } ]
+    }, {
+      "id" : "anatomischelocatie-v1.0.3_2023nl",
+      "name" : "AnatomischeLocatie-v1.0.3(2023NL)",
+      "localizedName" : "AnatomischeLocatie-v1.0.3(2023NL)",
+      "rmType" : "CLUSTER",
+      "nodeId" : "openEHR-EHR-CLUSTER.anatomical_location.v1",
+      "min" : 0,
+      "max" : -1,
+      "localizedNames" : {
+        "en" : "AnatomischeLocatie-v1.0.3(2023NL)"
+      },
+      "localizedDescriptions" : {
+        "en" : "A physical site on or within the human body."
+      },
+      "annotations" : {
+        "123037004" : "Lichaamsstructuur"
+      },
+      "aqlPath" : "/data[at0001]/items[openEHR-EHR-CLUSTER.anatomical_location.v1,'AnatomischeLocatie-v1.0.3(2023NL)']",
+      "children" : [ {
+        "id" : "locatie",
+        "name" : "Locatie",
+        "localizedName" : "Locatie",
+        "rmType" : "DV_CODED_TEXT",
+        "nodeId" : "at0001",
+        "min" : 1,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "Locatie"
+        },
+        "localizedDescriptions" : {
+          "en" : "Identification of a single physical site either on, or within, the human body."
+        },
+        "annotations" : {
+          "363698007" : "Locatie van bevinding",
+          "comment" : "This data element is the only mandated data point in this archetype and should be used as the primary data point to record an anatomical location with a commonly used name. It is strongly recommended that 'Body site name' be recorded as specifically as is anatomically possible. For example: record 'upper eyelid' rather than recording 'eyelid' with 'upper' as a qualifier; 'fifth rib' rather than 'rib' with a numeric qualifier. Use the other data elements for laterality, aspect, region and anatomical line to provide more detail.\r\n\r\nThis data element should be coded with a terminology capable of triggering decision support, where possible - an appropriate termset for use here could comprise individual concepts or a list of precoordinated terms. Free text should be used only if there is no appropriate terminology available.\r\n\r\nIf body site name is already identified in the parent archetype, then this data element may be redundant. Alternatively, a use case has been identified where the value may be duplicated into this element to support semantic querying using this archetype, rather than the data element within the parent."
+        },
+        "aqlPath" : "/data[at0001]/items[openEHR-EHR-CLUSTER.anatomical_location.v1,'AnatomischeLocatie-v1.0.3(2023NL)']/items[at0001,'Locatie']/value",
+        "inputs" : [ {
+          "suffix" : "code",
+          "type" : "TEXT"
+        }, {
+          "suffix" : "value",
+          "type" : "TEXT"
+        } ]
+      }, {
+        "id" : "lateraliteit",
+        "name" : "Lateraliteit",
+        "localizedName" : "Lateraliteit",
+        "rmType" : "DV_CODED_TEXT",
+        "nodeId" : "at0002",
+        "min" : 0,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "Lateraliteit"
+        },
+        "localizedDescriptions" : {
+          "en" : "The side of the body on which the identified  body site is located."
+        },
+        "annotations" : {
+          "272741003" : "Lateraliteit",
+          "comment" : "If the identified body site has no laterality, this data element should not have a value. \r\nIf the 'Body site name' data element uses pre-coordinated terms that include laterality, then this data element is redundant."
+        },
+        "aqlPath" : "/data[at0001]/items[openEHR-EHR-CLUSTER.anatomical_location.v1,'AnatomischeLocatie-v1.0.3(2023NL)']/items[at0002,'Lateraliteit']/value",
+        "inputs" : [ {
+          "suffix" : "code",
+          "type" : "CODED_TEXT",
+          "list" : [ {
+            "value" : "7771000",
+            "label" : "Links",
+            "localizedLabels" : {
+              "en" : "Links"
+            }
+          }, {
+            "value" : "24028007",
+            "label" : "Rechts",
+            "localizedLabels" : {
+              "en" : "Rechts"
+            }
+          }, {
+            "value" : "51440002",
+            "label" : "Bilateraal",
+            "localizedLabels" : {
+              "en" : "Bilateraal"
+            }
+          } ],
+          "terminology" : "SNOMED CT"
+        } ],
+        "termBindings" : {
+          "SNOMED-CT" : {
+            "value" : "[SNOMED-CT::272741003]",
+            "terminologyId" : "SNOMED-CT"
+          }
+        }
+      } ]
+    }, {
+      "id" : "probleembegindatum",
+      "name" : "ProbleemBeginDatum",
+      "localizedName" : "ProbleemBeginDatum",
+      "rmType" : "DV_DATE_TIME",
+      "nodeId" : "at0077",
+      "min" : 0,
+      "max" : 1,
+      "localizedNames" : {
+        "en" : "ProbleemBeginDatum"
+      },
+      "localizedDescriptions" : {
+        "en" : "Estimated or actual date/time that signs or symptoms of the problem/diagnosis were first observed."
+      },
+      "annotations" : {
+        "comment" : "Data captured/imported as \"Age at onset\" should be converted to a date using the subject's date of birth."
+      },
+      "aqlPath" : "/data[at0001]/items[at0077,'ProbleemBeginDatum']/value",
+      "inputs" : [ {
+        "type" : "DATETIME",
+        "validation" : {
+          "pattern" : "yyyy-??-??TXX:XX:XX"
+        }
+      } ]
+    }, {
+      "id" : "problem_diagnosis_qualifier",
+      "name" : "Problem/Diagnosis qualifier",
+      "localizedName" : "Problem/Diagnosis qualifier",
+      "rmType" : "CLUSTER",
+      "nodeId" : "openEHR-EHR-CLUSTER.problem_qualifier.v2",
+      "min" : 0,
+      "max" : 1,
+      "localizedNames" : {
+        "en" : "Problem/Diagnosis qualifier"
+      },
+      "localizedDescriptions" : {
+        "en" : "Contextual or temporal qualifier for a specified problem or diagnosis."
+      },
+      "aqlPath" : "/data[at0001]/items[openEHR-EHR-CLUSTER.problem_qualifier.v2]",
+      "children" : [ {
+        "id" : "probleemstatus",
+        "name" : "ProbleemStatus",
+        "localizedName" : "ProbleemStatus",
+        "rmType" : "DV_CODED_TEXT",
+        "nodeId" : "at0003",
+        "min" : 1,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "ProbleemStatus"
+        },
+        "localizedDescriptions" : {
+          "en" : "Category that supports division of problems and diagnoses into Active or Inactive problem lists."
+        },
+        "annotations" : {
+          "comment" : "The Active/Inactive and Current/Past data elements have similar clinical impact but represent slightly different semantics. Both are actively used in different clinical settings, but usually not together. If a Current/Past qualifier is recorded, then this data element is likely to be redundant. An exception where a condition can be current but inactive is asthma that is not causing acute symptoms."
+        },
+        "aqlPath" : "/data[at0001]/items[openEHR-EHR-CLUSTER.problem_qualifier.v2]/items[at0003,'ProbleemStatus']/value",
+        "inputs" : [ {
+          "suffix" : "code",
+          "type" : "CODED_TEXT",
+          "list" : [ {
+            "value" : "55561003",
+            "label" : "Actief",
+            "localizedLabels" : {
+              "en" : "Actief"
+            }
+          }, {
+            "value" : "73425007",
+            "label" : "Inactief",
+            "localizedLabels" : {
+              "en" : "Inactief"
+            }
+          } ],
+          "terminology" : "SNOMED CT"
+        } ]
+      }, {
+        "id" : "probleemtype",
+        "name" : "ProbleemType",
+        "localizedName" : "ProbleemType",
+        "rmType" : "DV_CODED_TEXT",
+        "nodeId" : "at0063",
+        "min" : 0,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "ProbleemType"
+        },
+        "localizedDescriptions" : {
+          "en" : "Category of the problem or diagnosis within a specified episode of care and/or local care context."
+        },
+        "annotations" : {
+          "comment" : "This data element contains a value set commonly used in diagnostic categorisation. In episodic care contexts (commonly secondary care) it is common to categorise/organise diagnoses according to their relationship to the principal diagnosis being addressed during that episode of care. These categories may also be used for clinical coding, reporting and billing purposes. In some countries the diagnostic category may be known as a DRG.\r\n In addition, the free text choice permits use of other local value sets, as required."
+        },
+        "aqlPath" : "/data[at0001]/items[openEHR-EHR-CLUSTER.problem_qualifier.v2]/items[at0063,'ProbleemType']/value",
+        "inputs" : [ {
+          "suffix" : "code",
+          "type" : "CODED_TEXT",
+          "list" : [ {
+            "value" : "282291009",
+            "label" : "Diagnose",
+            "localizedLabels" : {
+              "en" : "Diagnose"
+            }
+          }, {
+            "value" : "418799008",
+            "label" : "Symptoom",
+            "localizedLabels" : {
+              "en" : "Symptoom"
+            }
+          }, {
+            "value" : "404684003",
+            "label" : "Bevinding",
+            "localizedLabels" : {
+              "en" : "Bevinding"
+            }
+          }, {
+            "value" : "409586006",
+            "label" : "Klacht",
+            "localizedLabels" : {
+              "en" : "Klacht"
+            }
+          }, {
+            "value" : "248536006",
+            "label" : "Functionele Beperking",
+            "localizedLabels" : {
+              "en" : "Functionele Beperking"
+            }
+          }, {
+            "value" : "116223007",
+            "label" : "Complicatie",
+            "localizedLabels" : {
+              "en" : "Complicatie"
+            }
+          } ],
+          "terminology" : "SNOMED CT"
+        } ]
+      } ]
+    }, {
+      "id" : "probleemeinddatum",
+      "name" : "ProbleemEindDatum",
+      "localizedName" : "ProbleemEindDatum",
+      "rmType" : "DV_DATE_TIME",
+      "nodeId" : "at0030",
+      "min" : 0,
+      "max" : 1,
+      "localizedNames" : {
+        "en" : "ProbleemEindDatum"
+      },
+      "localizedDescriptions" : {
+        "en" : "Estimated or actual date/time of resolution or remission for this problem or diagnosis, as determined by a healthcare professional."
+      },
+      "annotations" : {
+        "comment" : "Partial dates are acceptable. If the subject of care is under the age of one year, then the complete date or a minimum of the month and year is necessary to enable accurate age calculations - for example, if used to drive decision support. Data captured/imported as \"Age at time of resolution\" should be converted to a date using the subject's date of birth.\r\n"
+      },
+      "aqlPath" : "/data[at0001]/items[at0030,'ProbleemEindDatum']/value",
+      "inputs" : [ {
+        "type" : "DATETIME",
+        "validation" : {
+          "pattern" : "yyyy-??-??TXX:XX:XX"
+        }
+      } ]
+    }, {
+      "id" : "verificatiestatus",
+      "name" : "VerificatieStatus",
+      "localizedName" : "VerificatieStatus",
+      "rmType" : "DV_CODED_TEXT",
+      "nodeId" : "at0073",
+      "min" : 0,
+      "max" : 1,
+      "localizedNames" : {
+        "en" : "VerificatieStatus"
+      },
+      "localizedDescriptions" : {
+        "en" : "The level of confidence in the identification of the diagnosis."
+      },
+      "annotations" : {
+        "408729009" : "Context van bevinding",
+        "comment" : "If an alternative valueset is required, these values can be added to the DV_TEXT data type in a template."
+      },
+      "aqlPath" : "/data[at0001]/items[at0073,'VerificatieStatus']/value",
+      "inputs" : [ {
+        "suffix" : "code",
+        "type" : "CODED_TEXT",
+        "list" : [ {
+          "value" : "415684004",
+          "label" : "Vermoedelijk",
+          "localizedLabels" : {
+            "en" : "Vermoedelijk"
+          }
+        }, {
+          "value" : "410590009",
+          "label" : "Mogelijk",
+          "localizedLabels" : {
+            "en" : "Mogelijk"
+          }
+        }, {
+          "value" : "410605003",
+          "label" : "Aanwezigheid bevestigd",
+          "localizedLabels" : {
+            "en" : "Aanwezigheid bevestigd"
+          }
+        }, {
+          "value" : "410516002",
+          "label" : "Afwezigheid bekend",
+          "localizedLabels" : {
+            "en" : "Afwezigheid bekend"
+          }
+        }, {
+          "value" : "UNK",
+          "label" : "Unknown",
+          "localizedLabels" : {
+            "en" : "Unknown"
+          }
+        } ],
+        "terminology" : "SNOMED CT"
+      } ]
+    }, {
+      "id" : "toelichting",
+      "name" : "Toelichting",
+      "localizedName" : "Toelichting",
+      "rmType" : "DV_TEXT",
+      "nodeId" : "at0069",
+      "min" : 0,
+      "max" : 1,
+      "localizedNames" : {
+        "en" : "Toelichting"
+      },
+      "localizedDescriptions" : {
+        "en" : "Additional narrative about the problem or diagnosis not captured in other fields."
+      },
+      "annotations" : {
+        " 48767-8" : "Verklarend commentaar"
+      },
+      "aqlPath" : "/data[at0001]/items[at0069,'Toelichting']/value",
+      "inputs" : [ {
+        "type" : "TEXT"
+      } ]
+    }, {
+      "id" : "language",
+      "name" : "Language",
+      "rmType" : "CODE_PHRASE",
+      "min" : 1,
+      "max" : 1,
+      "aqlPath" : "/language",
+      "inContext" : true
+    }, {
+      "id" : "encoding",
+      "name" : "Encoding",
+      "rmType" : "CODE_PHRASE",
+      "min" : 1,
+      "max" : 1,
+      "aqlPath" : "/encoding",
+      "inContext" : true
+    }, {
+      "id" : "subject",
+      "name" : "Subject",
+      "rmType" : "PARTY_PROXY",
+      "min" : 1,
+      "max" : 1,
+      "aqlPath" : "/subject",
+      "inputs" : [ {
+        "suffix" : "id",
+        "type" : "TEXT"
+      }, {
+        "suffix" : "id_scheme",
+        "type" : "TEXT"
+      }, {
+        "suffix" : "id_namespace",
+        "type" : "TEXT"
+      }, {
+        "suffix" : "name",
+        "type" : "TEXT"
+      } ],
+      "inContext" : true
+    } ]
+  }
+}
