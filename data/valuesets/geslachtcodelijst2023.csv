@@ -1,0 +1,5 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Undifferentiated,UN,,AdministrativeGender,2.16.840.1.113883.5.1,Ongedifferentieerd,,,
+Male,M,,AdministrativeGender,2.16.840.1.113883.5.1,Man,,,
+Female,F,,AdministrativeGender,2.16.840.1.113883.5.1,"Vrouw, V",,,
+Unknown,UNK,,NullFlavor,2.16.840.1.113883.5.1008,"Onbekend, Genderneutraal, X",,,

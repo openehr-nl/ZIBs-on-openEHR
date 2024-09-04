@@ -1,0 +1,469 @@
+{
+  "templateId" : "Patient-v4.2(2023NL)",
+  "semVer" : "0.1.5",
+  "version" : "2.3",
+  "defaultLanguage" : "en",
+  "languages" : [ "en" ],
+  "tree" : {
+    "id" : "patient-v4.2_2023nl",
+    "name" : "Patient-v4.2(2023NL)",
+    "localizedName" : "Patient-v4.2(2023NL)",
+    "rmType" : "SECTION",
+    "nodeId" : "openEHR-EHR-SECTION.adhoc.v1",
+    "min" : 1,
+    "max" : 1,
+    "localizedNames" : {
+      "en" : "Patient-v4.2(2023NL)"
+    },
+    "localizedDescriptions" : {
+      "en" : "A generic section header which should be renamed in a template to suit a specific clinical context."
+    },
+    "annotations" : {
+      "116154003" : "Patient"
+    },
+    "aqlPath" : "",
+    "children" : [ {
+      "id" : "geboorte",
+      "name" : "Geboorte",
+      "localizedName" : "Geboorte",
+      "rmType" : "EVALUATION",
+      "nodeId" : "openEHR-EHR-EVALUATION.birth_summary.v0",
+      "min" : 1,
+      "max" : 1,
+      "localizedNames" : {
+        "en" : "Geboorte"
+      },
+      "localizedDescriptions" : {
+        "en" : "Overview or summary record of the pregnancy and birth of an individual."
+      },
+      "aqlPath" : "/items[openEHR-EHR-EVALUATION.birth_summary.v0,'Geboorte']",
+      "children" : [ {
+        "id" : "geboortedatum",
+        "name" : "Geboortedatum",
+        "localizedName" : "Geboortedatum",
+        "rmType" : "DV_DATE_TIME",
+        "nodeId" : "at0004",
+        "min" : 1,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "Geboortedatum"
+        },
+        "localizedDescriptions" : {
+          "en" : "The date/time of birth of the individual."
+        },
+        "annotations" : {
+          "21112-8" : "Geboortedatum",
+          "comment" : "May also be used to record the assumed or agreed date/time of birth for operational purposes, if the actual date/time is not formally recorded. Possible alternatives for the date/time of birth of the individual can be recorded using the CLUSTER.DOB_alternative archetype 'Date of birth details' SLOT. Partial dates are allowed."
+        },
+        "aqlPath" : "/items[openEHR-EHR-EVALUATION.birth_summary.v0,'Geboorte']/data[at0001]/items[at0004,'Geboortedatum']/value",
+        "inputs" : [ {
+          "type" : "DATETIME",
+          "validation" : {
+            "pattern" : "yyyy-??-??TXX:XX:XX"
+          }
+        } ]
+      }, {
+        "id" : "meerlingindicator",
+        "name" : "MeerlingIndicator",
+        "localizedName" : "MeerlingIndicator",
+        "rmType" : "DV_TEXT",
+        "nodeId" : "at0007",
+        "min" : 1,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "MeerlingIndicator"
+        },
+        "localizedDescriptions" : {
+          "en" : "Term representing the total number of live births and stillbirths resulting from the pregnancy."
+        },
+        "annotations" : {
+          "comment" : "Coding of the 'birth plurality' term is recommended. For example: singleton; twins; triplets; or quadruplets.The definition of 'stillbirth' may vary in different locations. "
+        },
+        "aqlPath" : "/items[openEHR-EHR-EVALUATION.birth_summary.v0,'Geboorte']/data[at0001]/items[at0007,'MeerlingIndicator']/value",
+        "inputs" : [ {
+          "type" : "TEXT",
+          "list" : [ {
+            "value" : "True",
+            "label" : "True"
+          }, {
+            "value" : "False",
+            "label" : "False"
+          } ],
+          "listOpen" : false
+        } ]
+      }, {
+        "id" : "language",
+        "name" : "Language",
+        "rmType" : "CODE_PHRASE",
+        "min" : 1,
+        "max" : 1,
+        "aqlPath" : "/items[openEHR-EHR-EVALUATION.birth_summary.v0,'Geboorte']/language",
+        "inContext" : true
+      }, {
+        "id" : "encoding",
+        "name" : "Encoding",
+        "rmType" : "CODE_PHRASE",
+        "min" : 1,
+        "max" : 1,
+        "aqlPath" : "/items[openEHR-EHR-EVALUATION.birth_summary.v0,'Geboorte']/encoding",
+        "inContext" : true
+      }, {
+        "id" : "subject",
+        "name" : "Subject",
+        "rmType" : "PARTY_PROXY",
+        "min" : 1,
+        "max" : 1,
+        "aqlPath" : "/items[openEHR-EHR-EVALUATION.birth_summary.v0,'Geboorte']/subject",
+        "inputs" : [ {
+          "suffix" : "id",
+          "type" : "TEXT"
+        }, {
+          "suffix" : "id_scheme",
+          "type" : "TEXT"
+        }, {
+          "suffix" : "id_namespace",
+          "type" : "TEXT"
+        }, {
+          "suffix" : "name",
+          "type" : "TEXT"
+        } ],
+        "inContext" : true
+      } ]
+    }, {
+      "id" : "geslacht",
+      "name" : "Geslacht",
+      "localizedName" : "Geslacht",
+      "rmType" : "EVALUATION",
+      "nodeId" : "openEHR-EHR-EVALUATION.gender.v1",
+      "min" : 1,
+      "max" : 1,
+      "localizedNames" : {
+        "en" : "Geslacht"
+      },
+      "localizedDescriptions" : {
+        "en" : "Details about the gender of an individual."
+      },
+      "aqlPath" : "/items[openEHR-EHR-EVALUATION.gender.v1,'Geslacht']",
+      "children" : [ {
+        "id" : "geslacht",
+        "name" : "Geslacht",
+        "localizedName" : "Geslacht",
+        "rmType" : "DV_CODED_TEXT",
+        "nodeId" : "at0022",
+        "min" : 1,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "Geslacht"
+        },
+        "localizedDescriptions" : {
+          "en" : "The gender of an individual used for administrative purposes."
+        },
+        "annotations" : {
+          "33821000087103" : "Genderidentiteit",
+          "comment" : "This element is what most systems today describes as 'Sex' or 'Gender'. For example 'Male', 'Female', 'Other'. This aligns with HL7 FHIR 'Person.gender'. Coding with a terminology is recommended, where possible."
+        },
+        "aqlPath" : "/items[openEHR-EHR-EVALUATION.gender.v1,'Geslacht']/data[at0002]/items[at0022,'Geslacht']/value",
+        "inputs" : [ {
+          "suffix" : "code",
+          "type" : "CODED_TEXT",
+          "list" : [ {
+            "value" : "UN",
+            "label" : "Undifferentiated",
+            "localizedLabels" : {
+              "en" : "Undifferentiated"
+            }
+          }, {
+            "value" : "M",
+            "label" : "Male",
+            "localizedLabels" : {
+              "en" : "Male"
+            }
+          }, {
+            "value" : "F",
+            "label" : "Female",
+            "localizedLabels" : {
+              "en" : "Female"
+            }
+          }, {
+            "value" : "UNK",
+            "label" : "Unknown",
+            "localizedLabels" : {
+              "en" : "Unknown"
+            }
+          } ],
+          "terminology" : "AdministrativeGender"
+        } ]
+      }, {
+        "id" : "genderidentiteit",
+        "name" : "Genderidentiteit",
+        "localizedName" : "Genderidentiteit",
+        "rmType" : "DV_CODED_TEXT",
+        "nodeId" : "at0001",
+        "min" : 0,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "Genderidentiteit"
+        },
+        "localizedDescriptions" : {
+          "en" : "The individual's perception of their own gender."
+        },
+        "annotations" : {
+          "33821000087103" : "Genderidentiteit",
+          "comment" : "For example: 'male'; 'female'; or 'non-binary'. Coding with a terminology is recommended, where possible."
+        },
+        "aqlPath" : "/items[openEHR-EHR-EVALUATION.gender.v1,'Geslacht']/data[at0002]/items[at0001,'Genderidentiteit']/value",
+        "inputs" : [ {
+          "suffix" : "code",
+          "type" : "CODED_TEXT",
+          "list" : [ {
+            "value" : "446151000124109",
+            "label" : "Mannelijke genderidentiteit",
+            "localizedLabels" : {
+              "en" : "Mannelijke genderidentiteit"
+            }
+          }, {
+            "value" : "446141000124107",
+            "label" : "Vrouwelijke genderidentiteit",
+            "localizedLabels" : {
+              "en" : "Vrouwelijke genderidentiteit"
+            }
+          }, {
+            "value" : "33791000087105",
+            "label" : "Non-binaire genderidentiteit",
+            "localizedLabels" : {
+              "en" : "Non-binaire genderidentiteit"
+            }
+          }, {
+            "value" : "OTH",
+            "label" : "Other",
+            "localizedLabels" : {
+              "en" : "Other"
+            }
+          } ],
+          "terminology" : "SNOMED CT"
+        } ]
+      }, {
+        "id" : "language",
+        "name" : "Language",
+        "rmType" : "CODE_PHRASE",
+        "min" : 1,
+        "max" : 1,
+        "aqlPath" : "/items[openEHR-EHR-EVALUATION.gender.v1,'Geslacht']/language",
+        "inContext" : true
+      }, {
+        "id" : "encoding",
+        "name" : "Encoding",
+        "rmType" : "CODE_PHRASE",
+        "min" : 1,
+        "max" : 1,
+        "aqlPath" : "/items[openEHR-EHR-EVALUATION.gender.v1,'Geslacht']/encoding",
+        "inContext" : true
+      }, {
+        "id" : "subject",
+        "name" : "Subject",
+        "rmType" : "PARTY_PROXY",
+        "min" : 1,
+        "max" : 1,
+        "aqlPath" : "/items[openEHR-EHR-EVALUATION.gender.v1,'Geslacht']/subject",
+        "inputs" : [ {
+          "suffix" : "id",
+          "type" : "TEXT"
+        }, {
+          "suffix" : "id_scheme",
+          "type" : "TEXT"
+        }, {
+          "suffix" : "id_namespace",
+          "type" : "TEXT"
+        }, {
+          "suffix" : "name",
+          "type" : "TEXT"
+        } ],
+        "inContext" : true
+      } ]
+    }, {
+      "id" : "overlijden",
+      "name" : "Overlijden",
+      "localizedName" : "Overlijden",
+      "rmType" : "EVALUATION",
+      "nodeId" : "openEHR-EHR-EVALUATION.death_summary.v1",
+      "min" : 0,
+      "max" : 1,
+      "localizedNames" : {
+        "en" : "Overlijden"
+      },
+      "localizedDescriptions" : {
+        "en" : "Summary information about the circumstances and context of the death of an individual, excluding the cause(s) of death."
+      },
+      "aqlPath" : "/items[openEHR-EHR-EVALUATION.death_summary.v1,'Overlijden']",
+      "children" : [ {
+        "id" : "datumoverlijden",
+        "name" : "DatumOverlijden",
+        "localizedName" : "DatumOverlijden",
+        "rmType" : "DV_DATE_TIME",
+        "nodeId" : "at0092",
+        "min" : 0,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "DatumOverlijden"
+        },
+        "localizedDescriptions" : {
+          "en" : "The known, or assumed, date and time of death."
+        },
+        "annotations" : {
+          "81954-0" : "DatumOverlijden",
+          "comment" : "Partial dates and an absence of time of death are allowed, if necessary. For example: based on findings pertaining to examination of the body and the pathologist's reconstruction of time of death based on post-mortem changes, temperature, etc. May also be known as DOD (date of death). If more than one 'Date of death alternatives' have been proposed, this data element could be renamed in a template as the 'Confirmed/Agreed date of death'."
+        },
+        "aqlPath" : "/items[openEHR-EHR-EVALUATION.death_summary.v1,'Overlijden']/data[at0001]/items[at0092,'DatumOverlijden']/value",
+        "inputs" : [ {
+          "type" : "DATETIME",
+          "validation" : {
+            "pattern" : "yyyy-??-??TXX:XX:XX"
+          }
+        } ]
+      }, {
+        "id" : "language",
+        "name" : "Language",
+        "rmType" : "CODE_PHRASE",
+        "min" : 1,
+        "max" : 1,
+        "aqlPath" : "/items[openEHR-EHR-EVALUATION.death_summary.v1,'Overlijden']/language",
+        "inContext" : true
+      }, {
+        "id" : "encoding",
+        "name" : "Encoding",
+        "rmType" : "CODE_PHRASE",
+        "min" : 1,
+        "max" : 1,
+        "aqlPath" : "/items[openEHR-EHR-EVALUATION.death_summary.v1,'Overlijden']/encoding",
+        "inContext" : true
+      }, {
+        "id" : "subject",
+        "name" : "Subject",
+        "rmType" : "PARTY_PROXY",
+        "min" : 1,
+        "max" : 1,
+        "aqlPath" : "/items[openEHR-EHR-EVALUATION.death_summary.v1,'Overlijden']/subject",
+        "inputs" : [ {
+          "suffix" : "id",
+          "type" : "TEXT"
+        }, {
+          "suffix" : "id_scheme",
+          "type" : "TEXT"
+        }, {
+          "suffix" : "id_namespace",
+          "type" : "TEXT"
+        }, {
+          "suffix" : "name",
+          "type" : "TEXT"
+        } ],
+        "inContext" : true
+      } ]
+    }, {
+      "id" : "overlijdensindicator",
+      "name" : "OverlijdensIndicator",
+      "localizedName" : "OverlijdensIndicator",
+      "rmType" : "OBSERVATION",
+      "nodeId" : "openEHR-EHR-OBSERVATION.vital_status.v0",
+      "min" : 1,
+      "max" : 1,
+      "localizedNames" : {
+        "en" : "OverlijdensIndicator"
+      },
+      "localizedDescriptions" : {
+        "en" : "Status of an individual as alive or dead."
+      },
+      "aqlPath" : "/items[openEHR-EHR-OBSERVATION.vital_status.v0,'OverlijdensIndicator']",
+      "children" : [ {
+        "id" : "overlijdensindicator",
+        "name" : "OverlijdensIndicator",
+        "localizedName" : "OverlijdensIndicator",
+        "rmType" : "DV_CODED_TEXT",
+        "nodeId" : "at0004",
+        "min" : 1,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "OverlijdensIndicator"
+        },
+        "localizedDescriptions" : {
+          "en" : "Whether an individual is alive or dead."
+        },
+        "annotations" : {
+          "419099009" : "Overleden",
+          "comment" : "Usually only relevant at a specified point in time. For example: record as alive or dead at the time of recording information within a disease registry."
+        },
+        "aqlPath" : "/items[openEHR-EHR-OBSERVATION.vital_status.v0,'OverlijdensIndicator']/data[at0001]/events[at0002]/data[at0003]/items[at0004,'OverlijdensIndicator']/value",
+        "inputs" : [ {
+          "suffix" : "code",
+          "type" : "CODED_TEXT",
+          "list" : [ {
+            "value" : "at0005",
+            "label" : "Alive",
+            "localizedLabels" : {
+              "en" : "Alive"
+            },
+            "localizedDescriptions" : {
+              "en" : "The individual is not dead."
+            }
+          }, {
+            "value" : "at0006",
+            "label" : "Dead",
+            "localizedLabels" : {
+              "en" : "Dead"
+            },
+            "localizedDescriptions" : {
+              "en" : "The individual is no longer alive."
+            }
+          } ]
+        } ]
+      }, {
+        "id" : "time",
+        "name" : "Time",
+        "rmType" : "DV_DATE_TIME",
+        "min" : 1,
+        "max" : 1,
+        "aqlPath" : "/items[openEHR-EHR-OBSERVATION.vital_status.v0,'OverlijdensIndicator']/data[at0001]/events[at0002]/time",
+        "inputs" : [ {
+          "type" : "DATETIME"
+        } ],
+        "inContext" : true
+      }, {
+        "id" : "language",
+        "name" : "Language",
+        "rmType" : "CODE_PHRASE",
+        "min" : 1,
+        "max" : 1,
+        "aqlPath" : "/items[openEHR-EHR-OBSERVATION.vital_status.v0,'OverlijdensIndicator']/language",
+        "inContext" : true
+      }, {
+        "id" : "encoding",
+        "name" : "Encoding",
+        "rmType" : "CODE_PHRASE",
+        "min" : 1,
+        "max" : 1,
+        "aqlPath" : "/items[openEHR-EHR-OBSERVATION.vital_status.v0,'OverlijdensIndicator']/encoding",
+        "inContext" : true
+      }, {
+        "id" : "subject",
+        "name" : "Subject",
+        "rmType" : "PARTY_PROXY",
+        "min" : 1,
+        "max" : 1,
+        "aqlPath" : "/items[openEHR-EHR-OBSERVATION.vital_status.v0,'OverlijdensIndicator']/subject",
+        "inputs" : [ {
+          "suffix" : "id",
+          "type" : "TEXT"
+        }, {
+          "suffix" : "id_scheme",
+          "type" : "TEXT"
+        }, {
+          "suffix" : "id_namespace",
+          "type" : "TEXT"
+        }, {
+          "suffix" : "name",
+          "type" : "TEXT"
+        } ],
+        "inContext" : true
+      } ]
+    } ]
+  }
+}

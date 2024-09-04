@@ -1,0 +1,5 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Mannelijke genderidentiteit,446151000124109,SNOMED CT,  2.16.840.1.113883.6.96,Identificeert zich als man,,,,
+Vrouwelijke genderidentiteit,446141000124107,SNOMED CT,  2.16.840.1.113883.6.96,Identificeert zich als vrouw,,,,
+Non-binaire genderidentiteit,33791000087105,SNOMED CT,  2.16.840.1.113883.6.96,Identificeert zich als non-binair,,,,
+Other ,OTH,NullFlavor,2.16.840.1.113883.5.1008,Anders,,,,
