@@ -1,0 +1,10 @@
+ZIB_Id,ZIB_Naam,ZIB_Type,ZIB_Card,ZIB_DefCode,ZIB_Verwijzing,openEHR_Path,openEHR_Naam,openEHR_Type,openEHR_Card,openEHR_Term,Commentaar
+NL-CM:17.1.1,Zorgverlener,rootconcept,,SNOMED CT: 223366009 Gezondheidszorgpersoneel,,,Person,CLUSTER,,,
+NL-CM:17.1.2,ZorgverlenerIdentificatienummer,II,0..*,,BIG register inschrijvingsnummer,/items[at0003.1],identifier,IDENTIFIER,0..*,,Change IDENTIFIER to TEXT in openEHR if necessary
+NL-CM:17.1.3,Naamgegevens,"data,reference",0..1,,Dit is een verwijzing naar het rootconcept in de sub-bouwsteen Naamgegevens.,/items[at0002.1],Structured name,CLUSTER,0..1,,Refer to Naamgegevens-v1.1.1(2023NL) 
+NL-CM:17.1.4,Specialisme,CD,0..1,SNOMED CT: 394658006 Klinisch specialisme,"SpecialismeAGBCodelijst, SpecialismeUZICodelijst",/items[at0011.1],Label,CODED TEXT,0..1,,Code lists corresponding to https://decor.nictiz.nl/pub/labuitwisseling/lu-html-20190214T125930/voc-2.16.840.1.113883.2.4.3.11.60.40.2.17.1.7-2017-12-31T000000.html  and https://decor.nictiz.nl/pub/bgz2017/bgz2017-html-20190313T152910/voc-2.16.840.1.113883.2.4.3.11.60.40.2.17.1.6-2015-04-01T000000.html  (??)
+NL-CM:17.1.9,Geslacht,CD,0..1,,GeslachtCodelijst,,,,,,"Can’t fit “openEHR-EHR-EVALUATION.gender.v1"" archetype within a CLUSTER slot. One solution to know the gender of the caregiver might be using the “titles” slot such as Mr. or Miss within Naamgegevens?"
+NL-CM:17.1.7,Adresgegevens,"data,reference",0..*,,Dit is een verwijzing naar het rootconcept in de sub-bouwsteen Adresgegevens.,/items[at0005.1],Address,CLUSTER,0..*,,Refer to Adresgegevens-v1.1(2023NL)
+NL-CM:17.1.8,Contactgegevens,"data,reference",0..1,,Dit is een verwijzing naar het rootconcept in de sub-bouwsteen Contactgegevens.,/items[at0006.2],Electronic communication,CLUSTER,0..1,,Refer to Contactgegevens-v1.3.1(2023NL)
+NL-CM:17.1.6,Zorgaanbieder,"context,reference",0..1,,Dit is een verwijzing naar het rootconcept van de bouwsteen Zorgaanbieder,/items[at0007.1],Organisation,CLUSTER,0..1,,Refer to Zorgaanbieder-v3.6(2023NL)
+NL-CM:17.1.5,ZorgverlenerRol,CD,0..1,,ZorgverlenerRolCodelijst,/items[at0004.1],Role,CODED TEXT,0..1,,Case manager is the only value to have a SNOMED code 
