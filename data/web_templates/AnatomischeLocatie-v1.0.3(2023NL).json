@@ -1,0 +1,102 @@
+{
+  "templateId" : "AnatomischeLocatie-v1.0.3(2023NL)",
+  "semVer" : "0.1.3",
+  "version" : "2.3",
+  "defaultLanguage" : "en",
+  "languages" : [ "en" ],
+  "tree" : {
+    "id" : "anatomischelocatie-v1.0.3_2023nl",
+    "name" : "AnatomischeLocatie-v1.0.3(2023NL)",
+    "localizedName" : "AnatomischeLocatie-v1.0.3(2023NL)",
+    "rmType" : "CLUSTER",
+    "nodeId" : "openEHR-EHR-CLUSTER.anatomical_location.v1",
+    "min" : 1,
+    "max" : 1,
+    "localizedNames" : {
+      "en" : "AnatomischeLocatie-v1.0.3(2023NL)"
+    },
+    "localizedDescriptions" : {
+      "en" : "A physical site on or within the human body."
+    },
+    "annotations" : {
+      "123037004" : "Lichaamsstructuur"
+    },
+    "aqlPath" : "",
+    "children" : [ {
+      "id" : "locatie",
+      "name" : "Locatie",
+      "localizedName" : "Locatie",
+      "rmType" : "DV_CODED_TEXT",
+      "nodeId" : "at0001",
+      "min" : 1,
+      "max" : 1,
+      "localizedNames" : {
+        "en" : "Locatie"
+      },
+      "localizedDescriptions" : {
+        "en" : "Identification of a single physical site either on, or within, the human body."
+      },
+      "annotations" : {
+        "363698007" : "Locatie van bevinding",
+        "comment" : "This data element is the only mandated data point in this archetype and should be used as the primary data point to record an anatomical location with a commonly used name. It is strongly recommended that 'Body site name' be recorded as specifically as is anatomically possible. For example: record 'upper eyelid' rather than recording 'eyelid' with 'upper' as a qualifier; 'fifth rib' rather than 'rib' with a numeric qualifier. Use the other data elements for laterality, aspect, region and anatomical line to provide more detail.\r\n\r\nThis data element should be coded with a terminology capable of triggering decision support, where possible - an appropriate termset for use here could comprise individual concepts or a list of precoordinated terms. Free text should be used only if there is no appropriate terminology available.\r\n\r\nIf body site name is already identified in the parent archetype, then this data element may be redundant. Alternatively, a use case has been identified where the value may be duplicated into this element to support semantic querying using this archetype, rather than the data element within the parent."
+      },
+      "aqlPath" : "/items[at0001,'Locatie']/value",
+      "inputs" : [ {
+        "suffix" : "code",
+        "type" : "TEXT"
+      }, {
+        "suffix" : "value",
+        "type" : "TEXT"
+      } ]
+    }, {
+      "id" : "lateraliteit",
+      "name" : "Lateraliteit",
+      "localizedName" : "Lateraliteit",
+      "rmType" : "DV_CODED_TEXT",
+      "nodeId" : "at0002",
+      "min" : 0,
+      "max" : 1,
+      "localizedNames" : {
+        "en" : "Lateraliteit"
+      },
+      "localizedDescriptions" : {
+        "en" : "The side of the body on which the identified  body site is located."
+      },
+      "annotations" : {
+        "272741003" : "Lateraliteit",
+        "comment" : "If the identified body site has no laterality, this data element should not have a value. \r\nIf the 'Body site name' data element uses pre-coordinated terms that include laterality, then this data element is redundant."
+      },
+      "aqlPath" : "/items[at0002,'Lateraliteit']/value",
+      "inputs" : [ {
+        "suffix" : "code",
+        "type" : "CODED_TEXT",
+        "list" : [ {
+          "value" : "7771000",
+          "label" : "Links",
+          "localizedLabels" : {
+            "en" : "Links"
+          }
+        }, {
+          "value" : "24028007",
+          "label" : "Rechts",
+          "localizedLabels" : {
+            "en" : "Rechts"
+          }
+        }, {
+          "value" : "51440002",
+          "label" : "Bilateraal",
+          "localizedLabels" : {
+            "en" : "Bilateraal"
+          }
+        } ],
+        "terminology" : "SNOMED CT"
+      } ],
+      "termBindings" : {
+        "SNOMED-CT" : {
+          "value" : "[SNOMED-CT::272741003]",
+          "terminologyId" : "SNOMED-CT"
+        }
+      }
+    } ]
+  }
+}
