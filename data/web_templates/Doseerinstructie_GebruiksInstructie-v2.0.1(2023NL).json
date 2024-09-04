@@ -1,0 +1,1479 @@
+{
+  "templateId" : "Doseerinstructie_GebruiksInstructie-v2.0.1(2023NL)",
+  "semVer" : "0.1.0",
+  "version" : "2.3",
+  "defaultLanguage" : "en",
+  "languages" : [ "en" ],
+  "tree" : {
+    "id" : "doseerinstructie_gebruiksinstructie-v2.0.1_2023nl",
+    "name" : "Doseerinstructie_GebruiksInstructie-v2.0.1(2023NL)",
+    "localizedName" : "Doseerinstructie_GebruiksInstructie-v2.0.1(2023NL)",
+    "rmType" : "CLUSTER",
+    "nodeId" : "openEHR-EHR-CLUSTER.therapeutic_direction.v1",
+    "min" : 1,
+    "max" : 1,
+    "localizedNames" : {
+      "en" : "Doseerinstructie_GebruiksInstructie-v2.0.1(2023NL)"
+    },
+    "localizedDescriptions" : {
+      "en" : "Structured details of a single therapeutic direction for an ordered item, such as a medication or blood transfusion order."
+    },
+    "aqlPath" : "",
+    "children" : [ {
+      "id" : "volgnummer",
+      "name" : "Volgnummer",
+      "localizedName" : "Volgnummer",
+      "rmType" : "DV_COUNT",
+      "nodeId" : "at0057",
+      "min" : 0,
+      "max" : 1,
+      "localizedNames" : {
+        "en" : "Volgnummer"
+      },
+      "localizedDescriptions" : {
+        "en" : "The intended position of this direction within the overall sequence of directions."
+      },
+      "annotations" : {
+        "comment" : "For example: ''1' '2', '3'.\r\nWhere multiple dosage directions are expressed, the 'Direction sequence' makes the order in which they should be executed explicit. For example: (1) 1 tab daily for 3 days, (2) 1 tab twice daily for 4 days, (3) 1 tablet for 7 days.  "
+      },
+      "aqlPath" : "/items[at0057,'Volgnummer']/value",
+      "inputs" : [ {
+        "type" : "INTEGER",
+        "validation" : {
+          "range" : {
+            "minOp" : ">=",
+            "min" : 1
+          }
+        }
+      } ]
+    }, {
+      "id" : "dosering",
+      "name" : "Dosering",
+      "localizedName" : "Dosering",
+      "rmType" : "CLUSTER",
+      "nodeId" : "openEHR-EHR-CLUSTER.dosage.v2",
+      "min" : 0,
+      "max" : -1,
+      "localizedNames" : {
+        "en" : "Dosering"
+      },
+      "localizedDescriptions" : {
+        "en" : "The combination of a medication amount and administration timing for a single day, in the context of a medication order or medication management."
+      },
+      "annotations" : {
+        "comment" : "For example: '2 tablets at 6pm' or '20 mg three times per day'. Please note: this cluster allows multiple occurrences to enable representation of a complete set of dose patterns for a single dose direction."
+      },
+      "aqlPath" : "/items[openEHR-EHR-CLUSTER.dosage.v2,'Dosering']",
+      "children" : [ {
+        "id" : "keerdosis",
+        "name" : "Keerdosis",
+        "localizedName" : "Keerdosis",
+        "rmType" : "ELEMENT",
+        "nodeId" : "at0144",
+        "min" : 0,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "Keerdosis"
+        },
+        "localizedDescriptions" : {
+          "en" : "The amount of medication administered at one time."
+        },
+        "annotations" : {
+          "comment" : "For example: 1 mg, 1.5 ml, 0.125 g; or 1-2 ml, 12.5-20.5 mg."
+        },
+        "aqlPath" : "/items[openEHR-EHR-CLUSTER.dosage.v2,'Dosering']/items[at0144,'Keerdosis']",
+        "children" : [ {
+          "id" : "quantity_value",
+          "localizedName" : "Keerdosis",
+          "rmType" : "DV_QUANTITY",
+          "nodeId" : "",
+          "min" : 0,
+          "max" : 1,
+          "localizedNames" : {
+            "en" : "Keerdosis"
+          },
+          "localizedDescriptions" : {
+            "en" : "The amount of medication administered at one time."
+          },
+          "aqlPath" : "/items[openEHR-EHR-CLUSTER.dosage.v2,'Dosering']/items[at0144,'Keerdosis']/value",
+          "inputs" : [ {
+            "suffix" : "magnitude",
+            "type" : "DECIMAL"
+          }, {
+            "suffix" : "unit",
+            "type" : "CODED_TEXT"
+          } ]
+        }, {
+          "id" : "interval_of_quantity_value",
+          "localizedName" : "Keerdosis",
+          "rmType" : "DV_INTERVAL<DV_QUANTITY>",
+          "nodeId" : "",
+          "min" : 0,
+          "max" : 1,
+          "localizedNames" : {
+            "en" : "Keerdosis"
+          },
+          "localizedDescriptions" : {
+            "en" : "The amount of medication administered at one time."
+          },
+          "aqlPath" : "/items[openEHR-EHR-CLUSTER.dosage.v2,'Dosering']/items[at0144,'Keerdosis']/value",
+          "children" : [ {
+            "id" : "lower",
+            "rmType" : "DV_QUANTITY",
+            "nodeId" : "",
+            "min" : 1,
+            "max" : 1,
+            "aqlPath" : "/items[openEHR-EHR-CLUSTER.dosage.v2,'Dosering']/items[at0144,'Keerdosis']/value/lower",
+            "inputs" : [ {
+              "suffix" : "magnitude",
+              "type" : "DECIMAL"
+            }, {
+              "suffix" : "unit",
+              "type" : "CODED_TEXT"
+            } ]
+          }, {
+            "id" : "upper",
+            "rmType" : "DV_QUANTITY",
+            "nodeId" : "",
+            "min" : 1,
+            "max" : 1,
+            "aqlPath" : "/items[openEHR-EHR-CLUSTER.dosage.v2,'Dosering']/items[at0144,'Keerdosis']/value/upper",
+            "inputs" : [ {
+              "suffix" : "magnitude",
+              "type" : "DECIMAL"
+            }, {
+              "suffix" : "unit",
+              "type" : "CODED_TEXT"
+            } ]
+          } ]
+        } ]
+      }, {
+        "id" : "toedieningsschema_-_dagelijks",
+        "name" : "Toedieningsschema - dagelijks",
+        "localizedName" : "Toedieningsschema - dagelijks",
+        "rmType" : "CLUSTER",
+        "nodeId" : "openEHR-EHR-CLUSTER.timing_daily.v1",
+        "min" : 0,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "Toedieningsschema - dagelijks"
+        },
+        "localizedDescriptions" : {
+          "en" : "Structured information about the intended timing of a therapeutic or diagnostic activity within any 24 hour period."
+        },
+        "aqlPath" : "/items[openEHR-EHR-CLUSTER.dosage.v2,'Dosering']/items[openEHR-EHR-CLUSTER.timing_daily.v1,'Toedieningsschema - dagelijks']",
+        "children" : [ {
+          "id" : "frequentie",
+          "name" : "Frequentie",
+          "localizedName" : "Frequentie",
+          "rmType" : "ELEMENT",
+          "nodeId" : "at0003",
+          "min" : 0,
+          "max" : 1,
+          "localizedNames" : {
+            "en" : "Frequentie"
+          },
+          "localizedDescriptions" : {
+            "en" : "The frequency as number of times per time period that the activity is to take place."
+          },
+          "annotations" : {
+            "comment" : "For example: \"4 times per day\" or \"3 to 4 times per hour\"."
+          },
+          "aqlPath" : "/items[openEHR-EHR-CLUSTER.dosage.v2,'Dosering']/items[openEHR-EHR-CLUSTER.timing_daily.v1,'Toedieningsschema - dagelijks']/items[at0003,'Frequentie']",
+          "children" : [ {
+            "id" : "quantity_value",
+            "localizedName" : "Frequentie",
+            "rmType" : "DV_QUANTITY",
+            "nodeId" : "",
+            "min" : 0,
+            "max" : 1,
+            "localizedNames" : {
+              "en" : "Frequentie"
+            },
+            "localizedDescriptions" : {
+              "en" : "The frequency as number of times per time period that the activity is to take place."
+            },
+            "aqlPath" : "/items[openEHR-EHR-CLUSTER.dosage.v2,'Dosering']/items[openEHR-EHR-CLUSTER.timing_daily.v1,'Toedieningsschema - dagelijks']/items[at0003,'Frequentie']/value",
+            "inputs" : [ {
+              "suffix" : "magnitude",
+              "type" : "DECIMAL"
+            }, {
+              "suffix" : "unit",
+              "type" : "CODED_TEXT",
+              "list" : [ {
+                "value" : "1/d",
+                "label" : "1/d",
+                "validation" : {
+                  "range" : {
+                    "minOp" : ">=",
+                    "min" : 1.0
+                  },
+                  "precision" : {
+                    "minOp" : ">=",
+                    "min" : 0,
+                    "maxOp" : "<=",
+                    "max" : 0
+                  }
+                }
+              }, {
+                "value" : "1/min",
+                "label" : "1/min",
+                "validation" : {
+                  "range" : {
+                    "minOp" : ">=",
+                    "min" : 1.0
+                  },
+                  "precision" : {
+                    "minOp" : ">=",
+                    "min" : 0,
+                    "maxOp" : "<=",
+                    "max" : 0
+                  }
+                }
+              }, {
+                "value" : "1/s",
+                "label" : "1/s",
+                "validation" : {
+                  "range" : {
+                    "minOp" : ">=",
+                    "min" : 1.0
+                  },
+                  "precision" : {
+                    "minOp" : ">=",
+                    "min" : 0,
+                    "maxOp" : "<=",
+                    "max" : 0
+                  }
+                }
+              }, {
+                "value" : "1/h",
+                "label" : "1/h",
+                "validation" : {
+                  "range" : {
+                    "minOp" : ">=",
+                    "min" : 1.0
+                  },
+                  "precision" : {
+                    "minOp" : ">=",
+                    "min" : 0,
+                    "maxOp" : "<=",
+                    "max" : 0
+                  }
+                }
+              } ]
+            } ]
+          }, {
+            "id" : "interval_of_quantity_value",
+            "localizedName" : "Frequentie",
+            "rmType" : "DV_INTERVAL<DV_QUANTITY>",
+            "nodeId" : "",
+            "min" : 0,
+            "max" : 1,
+            "localizedNames" : {
+              "en" : "Frequentie"
+            },
+            "localizedDescriptions" : {
+              "en" : "The frequency as number of times per time period that the activity is to take place."
+            },
+            "aqlPath" : "/items[openEHR-EHR-CLUSTER.dosage.v2,'Dosering']/items[openEHR-EHR-CLUSTER.timing_daily.v1,'Toedieningsschema - dagelijks']/items[at0003,'Frequentie']/value",
+            "children" : [ {
+              "id" : "upper",
+              "rmType" : "DV_QUANTITY",
+              "nodeId" : "",
+              "min" : 1,
+              "max" : 1,
+              "aqlPath" : "/items[openEHR-EHR-CLUSTER.dosage.v2,'Dosering']/items[openEHR-EHR-CLUSTER.timing_daily.v1,'Toedieningsschema - dagelijks']/items[at0003,'Frequentie']/value/upper",
+              "inputs" : [ {
+                "suffix" : "magnitude",
+                "type" : "DECIMAL"
+              }, {
+                "suffix" : "unit",
+                "type" : "CODED_TEXT",
+                "list" : [ {
+                  "value" : "1/d",
+                  "label" : "1/d",
+                  "validation" : {
+                    "range" : {
+                      "minOp" : ">=",
+                      "min" : 1.0
+                    },
+                    "precision" : {
+                      "minOp" : ">=",
+                      "min" : 0,
+                      "maxOp" : "<=",
+                      "max" : 0
+                    }
+                  }
+                }, {
+                  "value" : "1/min",
+                  "label" : "1/min",
+                  "validation" : {
+                    "range" : {
+                      "minOp" : ">=",
+                      "min" : 1.0
+                    },
+                    "precision" : {
+                      "minOp" : ">=",
+                      "min" : 0,
+                      "maxOp" : "<=",
+                      "max" : 0
+                    }
+                  }
+                }, {
+                  "value" : "1/s",
+                  "label" : "1/s",
+                  "validation" : {
+                    "range" : {
+                      "minOp" : ">=",
+                      "min" : 1.0
+                    },
+                    "precision" : {
+                      "minOp" : ">=",
+                      "min" : 0,
+                      "maxOp" : "<=",
+                      "max" : 0
+                    }
+                  }
+                }, {
+                  "value" : "1/h",
+                  "label" : "1/h",
+                  "validation" : {
+                    "range" : {
+                      "minOp" : ">=",
+                      "min" : 1.0
+                    },
+                    "precision" : {
+                      "minOp" : ">=",
+                      "min" : 0,
+                      "maxOp" : "<=",
+                      "max" : 0
+                    }
+                  }
+                } ]
+              } ]
+            }, {
+              "id" : "lower",
+              "rmType" : "DV_QUANTITY",
+              "nodeId" : "",
+              "min" : 1,
+              "max" : 1,
+              "aqlPath" : "/items[openEHR-EHR-CLUSTER.dosage.v2,'Dosering']/items[openEHR-EHR-CLUSTER.timing_daily.v1,'Toedieningsschema - dagelijks']/items[at0003,'Frequentie']/value/lower",
+              "inputs" : [ {
+                "suffix" : "magnitude",
+                "type" : "DECIMAL"
+              }, {
+                "suffix" : "unit",
+                "type" : "CODED_TEXT",
+                "list" : [ {
+                  "value" : "1/d",
+                  "label" : "1/d",
+                  "validation" : {
+                    "range" : {
+                      "minOp" : ">=",
+                      "min" : 1.0
+                    },
+                    "precision" : {
+                      "minOp" : ">=",
+                      "min" : 0,
+                      "maxOp" : "<=",
+                      "max" : 0
+                    }
+                  }
+                }, {
+                  "value" : "1/min",
+                  "label" : "1/min",
+                  "validation" : {
+                    "range" : {
+                      "minOp" : ">=",
+                      "min" : 1.0
+                    },
+                    "precision" : {
+                      "minOp" : ">=",
+                      "min" : 0,
+                      "maxOp" : "<=",
+                      "max" : 0
+                    }
+                  }
+                }, {
+                  "value" : "1/s",
+                  "label" : "1/s",
+                  "validation" : {
+                    "range" : {
+                      "minOp" : ">=",
+                      "min" : 1.0
+                    },
+                    "precision" : {
+                      "minOp" : ">=",
+                      "min" : 0,
+                      "maxOp" : "<=",
+                      "max" : 0
+                    }
+                  }
+                }, {
+                  "value" : "1/h",
+                  "label" : "1/h",
+                  "validation" : {
+                    "range" : {
+                      "minOp" : ">=",
+                      "min" : 1.0
+                    },
+                    "precision" : {
+                      "minOp" : ">=",
+                      "min" : 0,
+                      "maxOp" : "<=",
+                      "max" : 0
+                    }
+                  }
+                } ]
+              } ]
+            } ]
+          } ]
+        }, {
+          "id" : "interval",
+          "name" : "Interval",
+          "localizedName" : "Interval",
+          "rmType" : "DV_DURATION",
+          "nodeId" : "at0014",
+          "min" : 0,
+          "max" : 1,
+          "localizedNames" : {
+            "en" : "Interval"
+          },
+          "localizedDescriptions" : {
+            "en" : "The time interval or minimum and maximum range of an interval between each scheduled activity."
+          },
+          "annotations" : {
+            "comment" : "For example: \"Every 4 hours\" or \"Every 4 to 6 hours\"."
+          },
+          "aqlPath" : "/items[openEHR-EHR-CLUSTER.dosage.v2,'Dosering']/items[openEHR-EHR-CLUSTER.timing_daily.v1,'Toedieningsschema - dagelijks']/items[at0014]/value",
+          "inputs" : [ {
+            "suffix" : "hour",
+            "type" : "INTEGER",
+            "validation" : {
+              "range" : {
+                "minOp" : ">=",
+                "min" : 0,
+                "maxOp" : "<=",
+                "max" : 24
+              }
+            }
+          }, {
+            "suffix" : "minute",
+            "type" : "INTEGER",
+            "validation" : {
+              "range" : {
+                "minOp" : ">=",
+                "min" : 0
+              }
+            }
+          }, {
+            "suffix" : "second",
+            "type" : "INTEGER",
+            "validation" : {
+              "range" : {
+                "minOp" : ">=",
+                "min" : 0
+              }
+            }
+          } ]
+        }, {
+          "id" : "toedientijd",
+          "name" : "Toedientijd",
+          "localizedName" : "Toedientijd",
+          "rmType" : "DV_TIME",
+          "nodeId" : "at0004",
+          "min" : 0,
+          "max" : -1,
+          "localizedNames" : {
+            "en" : "Toedientijd"
+          },
+          "localizedDescriptions" : {
+            "en" : "A specific time or interval of time when the activity should occur."
+          },
+          "annotations" : {
+            "comment" : "For example: \"08:00\" or \"15:00-16:00\"."
+          },
+          "aqlPath" : "/items[openEHR-EHR-CLUSTER.dosage.v2,'Dosering']/items[openEHR-EHR-CLUSTER.timing_daily.v1,'Toedieningsschema - dagelijks']/items[at0004,'Toedientijd']/value",
+          "inputs" : [ {
+            "type" : "TIME"
+          } ]
+        }, {
+          "id" : "dagdeel",
+          "name" : "Dagdeel",
+          "localizedName" : "Dagdeel",
+          "rmType" : "DV_TEXT",
+          "nodeId" : "at0027",
+          "min" : 0,
+          "max" : 1,
+          "localizedNames" : {
+            "en" : "Dagdeel"
+          },
+          "localizedDescriptions" : {
+            "en" : "Text description of the daily timing. This element is intended to allow implementers to use the structures for different timings without necessarily specifying the timings in a structured way."
+          },
+          "annotations" : {
+            "comment" : "For example: \"Take morning and evening\"."
+          },
+          "aqlPath" : "/items[openEHR-EHR-CLUSTER.dosage.v2,'Dosering']/items[openEHR-EHR-CLUSTER.timing_daily.v1,'Toedieningsschema - dagelijks']/items[at0027,'Dagdeel']/value",
+          "inputs" : [ {
+            "type" : "TEXT"
+          } ]
+        } ]
+      }, {
+        "id" : "toedieningssnelheid",
+        "name" : "Toedieningssnelheid",
+        "localizedName" : "Toedieningssnelheid",
+        "rmType" : "DV_QUANTITY",
+        "nodeId" : "at0134",
+        "min" : 0,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "Toedieningssnelheid"
+        },
+        "localizedDescriptions" : {
+          "en" : "The rate at which the medication, such as an infusion, is to be administered."
+        },
+        "annotations" : {
+          "comment" : "For example: '200 ml/h'. Use the text data type to record non- or semi-quantifiable instructions."
+        },
+        "aqlPath" : "/items[openEHR-EHR-CLUSTER.dosage.v2,'Dosering']/items[at0134,'Toedieningssnelheid']/value",
+        "inputs" : [ {
+          "suffix" : "magnitude",
+          "type" : "DECIMAL",
+          "defaultValue" : 0.0
+        }, {
+          "suffix" : "unit",
+          "type" : "CODED_TEXT",
+          "list" : [ {
+            "value" : "l/h",
+            "label" : "l/h",
+            "validation" : {
+              "range" : {
+                "minOp" : ">=",
+                "min" : 0.0
+              }
+            }
+          }, {
+            "value" : "ml/min",
+            "label" : "ml/min",
+            "validation" : {
+              "range" : {
+                "minOp" : ">=",
+                "min" : 0.0
+              }
+            }
+          }, {
+            "value" : "ml/s",
+            "label" : "ml/s",
+            "validation" : {
+              "range" : {
+                "minOp" : ">=",
+                "min" : 0.0
+              }
+            }
+          }, {
+            "value" : "ml/h",
+            "label" : "ml/h",
+            "validation" : {
+              "range" : {
+                "minOp" : ">=",
+                "min" : 0.0
+              }
+            }
+          } ],
+          "defaultValue" : "ml/h"
+        } ]
+      }, {
+        "id" : "toedieningsduur",
+        "name" : "Toedieningsduur",
+        "localizedName" : "Toedieningsduur",
+        "rmType" : "ELEMENT",
+        "nodeId" : "at0102",
+        "min" : 0,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "Toedieningsduur"
+        },
+        "localizedDescriptions" : {
+          "en" : "The period of time over which a single dose of the medication or vaccine should be administered."
+        },
+        "annotations" : {
+          "comment" : "For example: 'Administer over 10 minutes'."
+        },
+        "aqlPath" : "/items[openEHR-EHR-CLUSTER.dosage.v2,'Dosering']/items[at0102,'Toedieningsduur']",
+        "children" : [ {
+          "id" : "duration_value",
+          "localizedName" : "Toedieningsduur",
+          "rmType" : "DV_DURATION",
+          "nodeId" : "",
+          "min" : 0,
+          "max" : 1,
+          "localizedNames" : {
+            "en" : "Toedieningsduur"
+          },
+          "localizedDescriptions" : {
+            "en" : "The period of time over which a single dose of the medication or vaccine should be administered."
+          },
+          "aqlPath" : "/items[openEHR-EHR-CLUSTER.dosage.v2,'Dosering']/items[at0102,'Toedieningsduur']/value",
+          "inputs" : [ {
+            "suffix" : "day",
+            "type" : "INTEGER",
+            "validation" : {
+              "range" : {
+                "minOp" : ">=",
+                "min" : 0
+              }
+            }
+          }, {
+            "suffix" : "hour",
+            "type" : "INTEGER",
+            "validation" : {
+              "range" : {
+                "minOp" : ">=",
+                "min" : 0
+              }
+            }
+          }, {
+            "suffix" : "minute",
+            "type" : "INTEGER",
+            "validation" : {
+              "range" : {
+                "minOp" : ">=",
+                "min" : 0
+              }
+            }
+          }, {
+            "suffix" : "second",
+            "type" : "INTEGER",
+            "validation" : {
+              "range" : {
+                "minOp" : ">=",
+                "min" : 0
+              }
+            }
+          } ]
+        }, {
+          "id" : "interval_of_duration_value",
+          "localizedName" : "Toedieningsduur",
+          "rmType" : "DV_INTERVAL<DV_DURATION>",
+          "nodeId" : "",
+          "min" : 0,
+          "max" : 1,
+          "localizedNames" : {
+            "en" : "Toedieningsduur"
+          },
+          "localizedDescriptions" : {
+            "en" : "The period of time over which a single dose of the medication or vaccine should be administered."
+          },
+          "aqlPath" : "/items[openEHR-EHR-CLUSTER.dosage.v2,'Dosering']/items[at0102,'Toedieningsduur']/value",
+          "children" : [ {
+            "id" : "lower",
+            "rmType" : "DV_DURATION",
+            "nodeId" : "",
+            "min" : 1,
+            "max" : 1,
+            "aqlPath" : "/items[openEHR-EHR-CLUSTER.dosage.v2,'Dosering']/items[at0102,'Toedieningsduur']/value/lower",
+            "inputs" : [ {
+              "suffix" : "day",
+              "type" : "INTEGER",
+              "validation" : {
+                "range" : {
+                  "minOp" : ">=",
+                  "min" : 0
+                }
+              }
+            }, {
+              "suffix" : "hour",
+              "type" : "INTEGER",
+              "validation" : {
+                "range" : {
+                  "minOp" : ">=",
+                  "min" : 0
+                }
+              }
+            }, {
+              "suffix" : "minute",
+              "type" : "INTEGER",
+              "validation" : {
+                "range" : {
+                  "minOp" : ">=",
+                  "min" : 0
+                }
+              }
+            }, {
+              "suffix" : "second",
+              "type" : "INTEGER",
+              "validation" : {
+                "range" : {
+                  "minOp" : ">=",
+                  "min" : 0
+                }
+              }
+            } ]
+          }, {
+            "id" : "upper",
+            "rmType" : "DV_DURATION",
+            "nodeId" : "",
+            "min" : 1,
+            "max" : 1,
+            "aqlPath" : "/items[openEHR-EHR-CLUSTER.dosage.v2,'Dosering']/items[at0102,'Toedieningsduur']/value/upper",
+            "inputs" : [ {
+              "suffix" : "day",
+              "type" : "INTEGER",
+              "validation" : {
+                "range" : {
+                  "minOp" : ">=",
+                  "min" : 0
+                }
+              }
+            }, {
+              "suffix" : "hour",
+              "type" : "INTEGER",
+              "validation" : {
+                "range" : {
+                  "minOp" : ">=",
+                  "min" : 0
+                }
+              }
+            }, {
+              "suffix" : "minute",
+              "type" : "INTEGER",
+              "validation" : {
+                "range" : {
+                  "minOp" : ">=",
+                  "min" : 0
+                }
+              }
+            }, {
+              "suffix" : "second",
+              "type" : "INTEGER",
+              "validation" : {
+                "range" : {
+                  "minOp" : ">=",
+                  "min" : 0
+                }
+              }
+            } ]
+          } ]
+        } ]
+      } ]
+    }, {
+      "id" : "doseerduur",
+      "name" : "Doseerduur",
+      "localizedName" : "Doseerduur",
+      "rmType" : "ELEMENT",
+      "nodeId" : "at0066",
+      "min" : 0,
+      "max" : 1,
+      "localizedNames" : {
+        "en" : "Doseerduur"
+      },
+      "localizedDescriptions" : {
+        "en" : "The length of time for which this direction should be applied."
+      },
+      "annotations" : {
+        "comment" : "For example: 'for 7 days','Indefinite'. An example of a set of multiple directions, with varying durations might be ... '1 tablet daily for 3 days, 2 tablets daily for 4 days, then 3 tablets Indefinite'."
+      },
+      "aqlPath" : "/items[at0066,'Doseerduur']",
+      "children" : [ {
+        "id" : "coded_text_value",
+        "localizedName" : "Doseerduur",
+        "rmType" : "DV_CODED_TEXT",
+        "nodeId" : "",
+        "min" : 0,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "Doseerduur"
+        },
+        "localizedDescriptions" : {
+          "en" : "The length of time for which this direction should be applied."
+        },
+        "aqlPath" : "/items[at0066,'Doseerduur']/value",
+        "inputs" : [ {
+          "suffix" : "code",
+          "type" : "CODED_TEXT",
+          "list" : [ {
+            "value" : "at0067",
+            "label" : "Indefinite",
+            "localizedLabels" : {
+              "en" : "Indefinite"
+            },
+            "localizedDescriptions" : {
+              "en" : "The direction should be continued indefinitely."
+            }
+          } ]
+        } ]
+      }, {
+        "id" : "duration_value",
+        "localizedName" : "Doseerduur",
+        "rmType" : "DV_DURATION",
+        "nodeId" : "",
+        "min" : 0,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "Doseerduur"
+        },
+        "localizedDescriptions" : {
+          "en" : "The length of time for which this direction should be applied."
+        },
+        "aqlPath" : "/items[at0066,'Doseerduur']/value",
+        "inputs" : [ {
+          "suffix" : "year",
+          "type" : "INTEGER",
+          "validation" : {
+            "range" : {
+              "minOp" : ">=",
+              "min" : 0
+            }
+          }
+        }, {
+          "suffix" : "month",
+          "type" : "INTEGER",
+          "validation" : {
+            "range" : {
+              "minOp" : ">=",
+              "min" : 0
+            }
+          }
+        }, {
+          "suffix" : "day",
+          "type" : "INTEGER",
+          "validation" : {
+            "range" : {
+              "minOp" : ">=",
+              "min" : 0
+            }
+          }
+        }, {
+          "suffix" : "week",
+          "type" : "INTEGER",
+          "validation" : {
+            "range" : {
+              "minOp" : ">=",
+              "min" : 0
+            }
+          }
+        }, {
+          "suffix" : "hour",
+          "type" : "INTEGER",
+          "validation" : {
+            "range" : {
+              "minOp" : ">=",
+              "min" : 0
+            }
+          }
+        }, {
+          "suffix" : "minute",
+          "type" : "INTEGER",
+          "validation" : {
+            "range" : {
+              "minOp" : ">=",
+              "min" : 0
+            }
+          }
+        }, {
+          "suffix" : "second",
+          "type" : "INTEGER",
+          "validation" : {
+            "range" : {
+              "minOp" : ">=",
+              "min" : 0
+            }
+          }
+        } ]
+      } ]
+    }, {
+      "id" : "toedieningsschema_-_niet-dagelijks",
+      "name" : "Toedieningsschema - niet-dagelijks",
+      "localizedName" : "Toedieningsschema - niet-dagelijks",
+      "rmType" : "CLUSTER",
+      "nodeId" : "openEHR-EHR-CLUSTER.timing_nondaily.v1",
+      "min" : 0,
+      "max" : 1,
+      "localizedNames" : {
+        "en" : "Toedieningsschema - niet-dagelijks"
+      },
+      "localizedDescriptions" : {
+        "en" : "Structured information about the intended timing pattern for a therapeutic or diagnostic activity occurring over days, weeks, months or years."
+      },
+      "aqlPath" : "/items[openEHR-EHR-CLUSTER.timing_nondaily.v1,'Toedieningsschema - niet-dagelijks']",
+      "children" : [ {
+        "id" : "interval",
+        "name" : "Interval",
+        "localizedName" : "Interval",
+        "rmType" : "DV_DURATION",
+        "nodeId" : "at0002",
+        "min" : 0,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "Interval"
+        },
+        "localizedDescriptions" : {
+          "en" : "The interval between repetitions of the activity."
+        },
+        "annotations" : {
+          "comment" : "For example: 'Every 3 weeks'. If necessary, this element can be used to explicity specify that an activity is to take place every single day, by setting it to \"1 day\"."
+        },
+        "aqlPath" : "/items[openEHR-EHR-CLUSTER.timing_nondaily.v1,'Toedieningsschema - niet-dagelijks']/items[at0002,'Interval']/value",
+        "inputs" : [ {
+          "suffix" : "year",
+          "type" : "INTEGER",
+          "validation" : {
+            "range" : {
+              "minOp" : ">=",
+              "min" : 0
+            }
+          }
+        }, {
+          "suffix" : "month",
+          "type" : "INTEGER",
+          "validation" : {
+            "range" : {
+              "minOp" : ">=",
+              "min" : 0
+            }
+          }
+        }, {
+          "suffix" : "week",
+          "type" : "INTEGER",
+          "validation" : {
+            "range" : {
+              "minOp" : ">=",
+              "min" : 0
+            }
+          }
+        }, {
+          "suffix" : "day",
+          "type" : "INTEGER",
+          "validation" : {
+            "range" : {
+              "minOp" : ">=",
+              "min" : 0
+            }
+          }
+        } ]
+      }, {
+        "id" : "frequentie",
+        "name" : "Frequentie",
+        "localizedName" : "Frequentie",
+        "rmType" : "ELEMENT",
+        "nodeId" : "at0014",
+        "min" : 0,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "Frequentie"
+        },
+        "localizedDescriptions" : {
+          "en" : "The number of days per time period on which the activity takes place."
+        },
+        "annotations" : {
+          "comment" : "For example: '3 days per week', '2-4 days per month'. Specific details about the timing within each 24 hour period is specified within the CLUSTER.timing_daily archetype."
+        },
+        "aqlPath" : "/items[openEHR-EHR-CLUSTER.timing_nondaily.v1,'Toedieningsschema - niet-dagelijks']/items[at0014,'Frequentie']",
+        "children" : [ {
+          "id" : "quantity_value",
+          "localizedName" : "Frequentie",
+          "rmType" : "DV_QUANTITY",
+          "nodeId" : "",
+          "min" : 0,
+          "max" : 1,
+          "localizedNames" : {
+            "en" : "Frequentie"
+          },
+          "localizedDescriptions" : {
+            "en" : "The number of days per time period on which the activity takes place."
+          },
+          "aqlPath" : "/items[openEHR-EHR-CLUSTER.timing_nondaily.v1,'Toedieningsschema - niet-dagelijks']/items[at0014,'Frequentie']/value",
+          "inputs" : [ {
+            "suffix" : "magnitude",
+            "type" : "DECIMAL"
+          }, {
+            "suffix" : "unit",
+            "type" : "CODED_TEXT",
+            "list" : [ {
+              "value" : "1/wk",
+              "label" : "1/wk",
+              "validation" : {
+                "range" : {
+                  "minOp" : ">=",
+                  "min" : 1.0,
+                  "maxOp" : "<=",
+                  "max" : 7.0
+                },
+                "precision" : {
+                  "minOp" : ">=",
+                  "min" : 0,
+                  "maxOp" : "<=",
+                  "max" : 0
+                }
+              }
+            }, {
+              "value" : "1/mo",
+              "label" : "1/mo",
+              "validation" : {
+                "range" : {
+                  "minOp" : ">=",
+                  "min" : 1.0,
+                  "maxOp" : "<=",
+                  "max" : 31.0
+                },
+                "precision" : {
+                  "minOp" : ">=",
+                  "min" : 0,
+                  "maxOp" : "<=",
+                  "max" : 0
+                }
+              }
+            }, {
+              "value" : "1/a",
+              "label" : "1/a",
+              "validation" : {
+                "range" : {
+                  "minOp" : ">=",
+                  "min" : 1.0,
+                  "maxOp" : "<=",
+                  "max" : 366.0
+                },
+                "precision" : {
+                  "minOp" : ">=",
+                  "min" : 0,
+                  "maxOp" : "<=",
+                  "max" : 0
+                }
+              }
+            } ]
+          } ]
+        }, {
+          "id" : "interval_of_quantity_value",
+          "localizedName" : "Frequentie",
+          "rmType" : "DV_INTERVAL<DV_QUANTITY>",
+          "nodeId" : "",
+          "min" : 0,
+          "max" : 1,
+          "localizedNames" : {
+            "en" : "Frequentie"
+          },
+          "localizedDescriptions" : {
+            "en" : "The number of days per time period on which the activity takes place."
+          },
+          "aqlPath" : "/items[openEHR-EHR-CLUSTER.timing_nondaily.v1,'Toedieningsschema - niet-dagelijks']/items[at0014,'Frequentie']/value",
+          "children" : [ {
+            "id" : "lower",
+            "rmType" : "DV_QUANTITY",
+            "nodeId" : "",
+            "min" : 1,
+            "max" : 1,
+            "aqlPath" : "/items[openEHR-EHR-CLUSTER.timing_nondaily.v1,'Toedieningsschema - niet-dagelijks']/items[at0014,'Frequentie']/value/lower",
+            "inputs" : [ {
+              "suffix" : "magnitude",
+              "type" : "DECIMAL"
+            }, {
+              "suffix" : "unit",
+              "type" : "CODED_TEXT",
+              "list" : [ {
+                "value" : "1/wk",
+                "label" : "1/wk",
+                "validation" : {
+                  "range" : {
+                    "minOp" : ">=",
+                    "min" : 1.0,
+                    "maxOp" : "<=",
+                    "max" : 7.0
+                  },
+                  "precision" : {
+                    "minOp" : ">=",
+                    "min" : 0,
+                    "maxOp" : "<=",
+                    "max" : 0
+                  }
+                }
+              }, {
+                "value" : "1/mo",
+                "label" : "1/mo",
+                "validation" : {
+                  "range" : {
+                    "minOp" : ">=",
+                    "min" : 1.0,
+                    "maxOp" : "<=",
+                    "max" : 31.0
+                  },
+                  "precision" : {
+                    "minOp" : ">=",
+                    "min" : 0,
+                    "maxOp" : "<=",
+                    "max" : 0
+                  }
+                }
+              }, {
+                "value" : "1/a",
+                "label" : "1/a",
+                "validation" : {
+                  "range" : {
+                    "minOp" : ">=",
+                    "min" : 1.0,
+                    "maxOp" : "<=",
+                    "max" : 366.0
+                  },
+                  "precision" : {
+                    "minOp" : ">=",
+                    "min" : 0,
+                    "maxOp" : "<=",
+                    "max" : 0
+                  }
+                }
+              } ]
+            } ]
+          }, {
+            "id" : "upper",
+            "rmType" : "DV_QUANTITY",
+            "nodeId" : "",
+            "min" : 1,
+            "max" : 1,
+            "aqlPath" : "/items[openEHR-EHR-CLUSTER.timing_nondaily.v1,'Toedieningsschema - niet-dagelijks']/items[at0014,'Frequentie']/value/upper",
+            "inputs" : [ {
+              "suffix" : "magnitude",
+              "type" : "DECIMAL"
+            }, {
+              "suffix" : "unit",
+              "type" : "CODED_TEXT",
+              "list" : [ {
+                "value" : "1/wk",
+                "label" : "1/wk",
+                "validation" : {
+                  "range" : {
+                    "minOp" : ">=",
+                    "min" : 1.0,
+                    "maxOp" : "<=",
+                    "max" : 7.0
+                  },
+                  "precision" : {
+                    "minOp" : ">=",
+                    "min" : 0,
+                    "maxOp" : "<=",
+                    "max" : 0
+                  }
+                }
+              }, {
+                "value" : "1/mo",
+                "label" : "1/mo",
+                "validation" : {
+                  "range" : {
+                    "minOp" : ">=",
+                    "min" : 1.0,
+                    "maxOp" : "<=",
+                    "max" : 31.0
+                  },
+                  "precision" : {
+                    "minOp" : ">=",
+                    "min" : 0,
+                    "maxOp" : "<=",
+                    "max" : 0
+                  }
+                }
+              }, {
+                "value" : "1/a",
+                "label" : "1/a",
+                "validation" : {
+                  "range" : {
+                    "minOp" : ">=",
+                    "min" : 1.0,
+                    "maxOp" : "<=",
+                    "max" : 366.0
+                  },
+                  "precision" : {
+                    "minOp" : ">=",
+                    "min" : 0,
+                    "maxOp" : "<=",
+                    "max" : 0
+                  }
+                }
+              } ]
+            } ]
+          } ]
+        } ]
+      }, {
+        "id" : "weekdag",
+        "name" : "Weekdag",
+        "localizedName" : "Weekdag",
+        "rmType" : "DV_CODED_TEXT",
+        "nodeId" : "at0003",
+        "min" : 0,
+        "max" : 7,
+        "localizedNames" : {
+          "en" : "Weekdag"
+        },
+        "localizedDescriptions" : {
+          "en" : "The activity should take place on a specific day of the week."
+        },
+        "annotations" : {
+          "comment" : "For example: 'On Monday, Wednesday and Friday'."
+        },
+        "aqlPath" : "/items[openEHR-EHR-CLUSTER.timing_nondaily.v1,'Toedieningsschema - niet-dagelijks']/items[at0003,'Weekdag']/value",
+        "inputs" : [ {
+          "suffix" : "code",
+          "type" : "CODED_TEXT",
+          "list" : [ {
+            "value" : "at0007",
+            "label" : "Monday",
+            "localizedLabels" : {
+              "en" : "Monday"
+            },
+            "localizedDescriptions" : {
+              "en" : "The activity should take place on Monday."
+            }
+          }, {
+            "value" : "at0008",
+            "label" : "Tuesday",
+            "localizedLabels" : {
+              "en" : "Tuesday"
+            },
+            "localizedDescriptions" : {
+              "en" : "The activity should take place on Tuesday."
+            }
+          }, {
+            "value" : "at0016",
+            "label" : "Wednesday",
+            "localizedLabels" : {
+              "en" : "Wednesday"
+            },
+            "localizedDescriptions" : {
+              "en" : "The activity should take place on Wednesday."
+            }
+          }, {
+            "value" : "at0017",
+            "label" : "Thursday",
+            "localizedLabels" : {
+              "en" : "Thursday"
+            },
+            "localizedDescriptions" : {
+              "en" : "The activity should take place on Thursday."
+            }
+          }, {
+            "value" : "at0018",
+            "label" : "Friday",
+            "localizedLabels" : {
+              "en" : "Friday"
+            },
+            "localizedDescriptions" : {
+              "en" : "The activity should take place on Friday."
+            }
+          }, {
+            "value" : "at0019",
+            "label" : "Saturday",
+            "localizedLabels" : {
+              "en" : "Saturday"
+            },
+            "localizedDescriptions" : {
+              "en" : "The activity should take place on Saturday."
+            }
+          }, {
+            "value" : "at0020",
+            "label" : "Sunday",
+            "localizedLabels" : {
+              "en" : "Sunday"
+            },
+            "localizedDescriptions" : {
+              "en" : "The activity should take place on Sunday."
+            }
+          } ]
+        } ]
+      }, {
+        "id" : "herhaalperiodecyclischschema",
+        "name" : "HerhaalperiodeCyclischSchema",
+        "localizedName" : "HerhaalperiodeCyclischSchema",
+        "rmType" : "DV_TEXT",
+        "nodeId" : "at0021",
+        "min" : 0,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "HerhaalperiodeCyclischSchema"
+        },
+        "localizedDescriptions" : {
+          "en" : "Text description of the timing."
+        },
+        "annotations" : {
+          "comment" : "For example: 'Use for one week, then stop for two weeks, then repeat'. This element is intended to allow implementers to use the structures for daily timings without necessarily specifying the non-daily timings in a structured way."
+        },
+        "aqlPath" : "/items[openEHR-EHR-CLUSTER.timing_nondaily.v1,'Toedieningsschema - niet-dagelijks']/items[at0021,'HerhaalperiodeCyclischSchema']/value",
+        "inputs" : [ {
+          "type" : "TEXT"
+        } ]
+      } ]
+    }, {
+      "id" : "zonodig",
+      "name" : "Zonodig",
+      "localizedName" : "Zonodig",
+      "rmType" : "CLUSTER",
+      "nodeId" : "openEHR-EHR-CLUSTER.conditional_medication_rules.v0",
+      "min" : 0,
+      "max" : 1,
+      "localizedNames" : {
+        "en" : "Zonodig"
+      },
+      "localizedDescriptions" : {
+        "en" : "Details of conditions on which determine the dose amount or administration rate."
+      },
+      "aqlPath" : "/items[openEHR-EHR-CLUSTER.conditional_medication_rules.v0,'Zonodig']",
+      "children" : [ {
+        "id" : "condition_rule",
+        "name" : "Condition rule",
+        "localizedName" : "Condition rule",
+        "rmType" : "CLUSTER",
+        "nodeId" : "at0005",
+        "min" : 0,
+        "max" : -1,
+        "localizedNames" : {
+          "en" : "Condition rule"
+        },
+        "localizedDescriptions" : {
+          "en" : "Details of the condition and associated dose amount or administration rate."
+        },
+        "aqlPath" : "/items[openEHR-EHR-CLUSTER.conditional_medication_rules.v0,'Zonodig']/items[at0005]",
+        "children" : [ {
+          "id" : "criterium",
+          "name" : "Criterium",
+          "localizedName" : "Criterium",
+          "rmType" : "DV_CODED_TEXT",
+          "nodeId" : "at0002",
+          "min" : 0,
+          "max" : 1,
+          "localizedNames" : {
+            "en" : "Criterium"
+          },
+          "localizedDescriptions" : {
+            "en" : "The value which is required for the associated dose amount or administration to be applied."
+          },
+          "aqlPath" : "/items[openEHR-EHR-CLUSTER.conditional_medication_rules.v0,'Zonodig']/items[at0005]/items[at0002,'Criterium']/value",
+          "inputs" : [ {
+            "suffix" : "code",
+            "type" : "CODED_TEXT",
+            "list" : [ {
+              "value" : "1022",
+              "label" : "Bij een aanval",
+              "localizedLabels" : {
+                "en" : "Bij een aanval"
+              }
+            }, {
+              "value" : "1023",
+              "label" : "Bij benauwdheid",
+              "localizedLabels" : {
+                "en" : "Bij benauwdheid"
+              }
+            }, {
+              "value" : "1024",
+              "label" : "Bij diarree",
+              "localizedLabels" : {
+                "en" : "Bij diarree"
+              }
+            }, {
+              "value" : "1028",
+              "label" : "Bij pijn",
+              "localizedLabels" : {
+                "en" : "Bij pijn"
+              }
+            }, {
+              "value" : "1121",
+              "label" : "Bij jeuk",
+              "localizedLabels" : {
+                "en" : "Bij jeuk"
+              }
+            }, {
+              "value" : "1137",
+              "label" : "Zo nodig",
+              "localizedLabels" : {
+                "en" : "Zo nodig"
+              }
+            }, {
+              "value" : "1144",
+              "label" : "Bij hoofdpijn",
+              "localizedLabels" : {
+                "en" : "Bij hoofdpijn"
+              }
+            }, {
+              "value" : "1145",
+              "label" : "Bij koorts",
+              "localizedLabels" : {
+                "en" : "Bij koorts"
+              }
+            }, {
+              "value" : "1146",
+              "label" : "Bij hoge koorts",
+              "localizedLabels" : {
+                "en" : "Bij hoge koorts"
+              }
+            }, {
+              "value" : "1147",
+              "label" : "Bij koorts en/of pijn",
+              "localizedLabels" : {
+                "en" : "Bij koorts en/of pijn"
+              }
+            }, {
+              "value" : "1387",
+              "label" : "Bij hoest",
+              "localizedLabels" : {
+                "en" : "Bij hoest"
+              }
+            }, {
+              "value" : "1540",
+              "label" : "Bij menstruatiepijnen",
+              "localizedLabels" : {
+                "en" : "Bij menstruatiepijnen"
+              }
+            }, {
+              "value" : "OTH",
+              "label" : "Overig",
+              "localizedLabels" : {
+                "en" : "Overig"
+              }
+            }, {
+              "value" : "NI",
+              "label" : "Geen Informatie",
+              "localizedLabels" : {
+                "en" : "Geen Informatie"
+              }
+            } ],
+            "terminology" : "GSt bst362"
+          } ]
+        }, {
+          "id" : "maximaledosering",
+          "name" : "MaximaleDosering",
+          "localizedName" : "MaximaleDosering",
+          "rmType" : "DV_QUANTITY",
+          "nodeId" : "at0004",
+          "min" : 0,
+          "max" : 1,
+          "localizedNames" : {
+            "en" : "MaximaleDosering"
+          },
+          "localizedDescriptions" : {
+            "en" : "The dose amount to be administered if the condition applies."
+          },
+          "aqlPath" : "/items[openEHR-EHR-CLUSTER.conditional_medication_rules.v0,'Zonodig']/items[at0005]/items[at0004,'MaximaleDosering']/value",
+          "inputs" : [ {
+            "suffix" : "magnitude",
+            "type" : "DECIMAL",
+            "validation" : {
+              "range" : {
+                "minOp" : ">=",
+                "min" : 0.0
+              }
+            }
+          }, {
+            "suffix" : "unit",
+            "type" : "CODED_TEXT",
+            "list" : [ {
+              "value" : "1",
+              "label" : "1",
+              "validation" : {
+                "range" : {
+                  "minOp" : ">=",
+                  "min" : 0.0
+                }
+              }
+            } ]
+          } ]
+        } ]
+      } ]
+    } ]
+  }
+}

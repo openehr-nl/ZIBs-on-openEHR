@@ -1,0 +1,2819 @@
+{
+  "templateId" : "GebruiksInstructie-v2.0.1(2023NL)",
+  "semVer" : "0.1.0",
+  "version" : "2.3",
+  "defaultLanguage" : "en",
+  "languages" : [ "en" ],
+  "tree" : {
+    "id" : "gebruiksinstructie-v2.0.1_2023nl",
+    "name" : "GebruiksInstructie-v2.0.1(2023NL)",
+    "localizedName" : "GebruiksInstructie-v2.0.1(2023NL)",
+    "rmType" : "INSTRUCTION",
+    "nodeId" : "openEHR-EHR-INSTRUCTION.medication_order.v3",
+    "min" : 1,
+    "max" : 1,
+    "localizedNames" : {
+      "en" : "GebruiksInstructie-v2.0.1(2023NL)"
+    },
+    "localizedDescriptions" : {
+      "en" : "An order for a medication, vaccine, nutritional product or other therapeutic item for an identified individual."
+    },
+    "aqlPath" : "",
+    "children" : [ {
+      "id" : "order",
+      "name" : "Order",
+      "localizedName" : "Order",
+      "rmType" : "ACTIVITY",
+      "nodeId" : "at0001",
+      "min" : 0,
+      "max" : 1,
+      "localizedNames" : {
+        "en" : "Order"
+      },
+      "localizedDescriptions" : {
+        "en" : "Details of the requested order."
+      },
+      "aqlPath" : "/activities[at0001]",
+      "children" : [ {
+        "id" : "medication_item",
+        "name" : "Medication item",
+        "localizedName" : "Medication item",
+        "rmType" : "DV_TEXT",
+        "nodeId" : "at0070",
+        "min" : 1,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "Medication item"
+        },
+        "localizedDescriptions" : {
+          "en" : "Name of the medication, vaccine or other therapeutic/prescribable item being ordered."
+        },
+        "annotations" : {
+          "comment" : "Depending on the prescribing context this field could be used for either generic- or product-based prescribing. This data field can be used to record tightly bound orders of different medications when they are prescribed as a single pack. It is strongly recommended that the 'Medication item' be coded with a terminology capable of triggering decision support, where possible. The extent of coding may vary from the simple name of the medication item through to structured details about the actual medication pack to be used. Free text entry should only be used if there is no appropriate terminology available."
+        },
+        "aqlPath" : "/activities[at0001]/description[at0002]/items[at0070]/value",
+        "inputs" : [ {
+          "type" : "TEXT"
+        } ]
+      }, {
+        "id" : "toedieningsweg",
+        "name" : "Toedieningsweg",
+        "localizedName" : "Toedieningsweg",
+        "rmType" : "DV_CODED_TEXT",
+        "nodeId" : "at0091",
+        "min" : 0,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "Toedieningsweg"
+        },
+        "localizedDescriptions" : {
+          "en" : "The route by which the ordered item is to be administered into the subject's body."
+        },
+        "annotations" : {
+          "comment" : "For example: 'oral', 'intravenous', or 'topical'.\r\nCoding of the route with a terminology is preferred, where possible. Multiple potential routes may be specified."
+        },
+        "aqlPath" : "/activities[at0001]/description[at0002]/items[at0091,'Toedieningsweg']/value",
+        "inputs" : [ {
+          "suffix" : "code",
+          "type" : "CODED_TEXT",
+          "list" : [ {
+            "value" : "9",
+            "label" : "Oral",
+            "localizedLabels" : {
+              "en" : "Oral"
+            }
+          }, {
+            "value" : "6",
+            "label" : "Nasal",
+            "localizedLabels" : {
+              "en" : "Nasal"
+            }
+          }, {
+            "value" : "62",
+            "label" : "Inhalation",
+            "localizedLabels" : {
+              "en" : "Inhalation"
+            }
+          }, {
+            "value" : "5",
+            "label" : "Intravenous",
+            "localizedLabels" : {
+              "en" : "Intravenous"
+            }
+          }, {
+            "value" : "OTH",
+            "label" : "Other",
+            "localizedLabels" : {
+              "en" : "Other"
+            }
+          } ],
+          "terminology" : "G-Standaard Toedieningswegen"
+        } ]
+      }, {
+        "id" : "omschrijving",
+        "name" : "Omschrijving",
+        "localizedName" : "Omschrijving",
+        "rmType" : "DV_TEXT",
+        "nodeId" : "at0009",
+        "min" : 0,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "Omschrijving"
+        },
+        "localizedDescriptions" : {
+          "en" : "Complete narrative description about how the ordered item is to be used."
+        },
+        "annotations" : {
+          "comment" : "This narrative should normally subsume data captured in 'Dose amount', 'Dose timing' and any additional instructions for use. Where the medication dose directions are fully carried by the structured, computable dose directions, this element should carry the narrative equivalent, generally auto-generated. If it is not possible to represent the intended 'Dose direction' fully in computable form, partial representation is not recommended, and the directions should be only recorded in narrative form using this data element."
+        },
+        "aqlPath" : "/activities[at0001]/description[at0002]/items[at0009,'Omschrijving']/value",
+        "inputs" : [ {
+          "type" : "TEXT"
+        } ]
+      }, {
+        "id" : "doseerinstructie_gebruiksinstructie-v2.0.1_2023nl",
+        "name" : "Doseerinstructie_GebruiksInstructie-v2.0.1(2023NL)",
+        "localizedName" : "Doseerinstructie_GebruiksInstructie-v2.0.1(2023NL)",
+        "rmType" : "CLUSTER",
+        "nodeId" : "openEHR-EHR-CLUSTER.therapeutic_direction.v1",
+        "min" : 0,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "Doseerinstructie_GebruiksInstructie-v2.0.1(2023NL)"
+        },
+        "localizedDescriptions" : {
+          "en" : "Structured details of a single therapeutic direction for an ordered item, such as a medication or blood transfusion order."
+        },
+        "aqlPath" : "/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.therapeutic_direction.v1,'Doseerinstructie_GebruiksInstructie-v2.0.1(2023NL)']",
+        "children" : [ {
+          "id" : "volgnummer",
+          "name" : "Volgnummer",
+          "localizedName" : "Volgnummer",
+          "rmType" : "DV_COUNT",
+          "nodeId" : "at0057",
+          "min" : 0,
+          "max" : 1,
+          "localizedNames" : {
+            "en" : "Volgnummer"
+          },
+          "localizedDescriptions" : {
+            "en" : "The intended position of this direction within the overall sequence of directions."
+          },
+          "annotations" : {
+            "comment" : "For example: ''1' '2', '3'.\r\nWhere multiple dosage directions are expressed, the 'Direction sequence' makes the order in which they should be executed explicit. For example: (1) 1 tab daily for 3 days, (2) 1 tab twice daily for 4 days, (3) 1 tablet for 7 days.  "
+          },
+          "aqlPath" : "/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.therapeutic_direction.v1,'Doseerinstructie_GebruiksInstructie-v2.0.1(2023NL)']/items[at0057,'Volgnummer']/value",
+          "inputs" : [ {
+            "type" : "INTEGER",
+            "validation" : {
+              "range" : {
+                "minOp" : ">=",
+                "min" : 1
+              }
+            }
+          } ]
+        }, {
+          "id" : "dosering",
+          "name" : "Dosering",
+          "localizedName" : "Dosering",
+          "rmType" : "CLUSTER",
+          "nodeId" : "openEHR-EHR-CLUSTER.dosage.v2",
+          "min" : 0,
+          "max" : -1,
+          "localizedNames" : {
+            "en" : "Dosering"
+          },
+          "localizedDescriptions" : {
+            "en" : "The combination of a medication amount and administration timing for a single day, in the context of a medication order or medication management."
+          },
+          "annotations" : {
+            "comment" : "For example: '2 tablets at 6pm' or '20 mg three times per day'. Please note: this cluster allows multiple occurrences to enable representation of a complete set of dose patterns for a single dose direction."
+          },
+          "aqlPath" : "/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.therapeutic_direction.v1,'Doseerinstructie_GebruiksInstructie-v2.0.1(2023NL)']/items[openEHR-EHR-CLUSTER.dosage.v2,'Dosering']",
+          "children" : [ {
+            "id" : "keerdosis",
+            "name" : "Keerdosis",
+            "localizedName" : "Keerdosis",
+            "rmType" : "ELEMENT",
+            "nodeId" : "at0144",
+            "min" : 0,
+            "max" : 1,
+            "localizedNames" : {
+              "en" : "Keerdosis"
+            },
+            "localizedDescriptions" : {
+              "en" : "The amount of medication administered at one time."
+            },
+            "annotations" : {
+              "comment" : "For example: 1 mg, 1.5 ml, 0.125 g; or 1-2 ml, 12.5-20.5 mg."
+            },
+            "aqlPath" : "/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.therapeutic_direction.v1,'Doseerinstructie_GebruiksInstructie-v2.0.1(2023NL)']/items[openEHR-EHR-CLUSTER.dosage.v2,'Dosering']/items[at0144,'Keerdosis']",
+            "children" : [ {
+              "id" : "quantity_value",
+              "localizedName" : "Keerdosis",
+              "rmType" : "DV_QUANTITY",
+              "nodeId" : "",
+              "min" : 0,
+              "max" : 1,
+              "localizedNames" : {
+                "en" : "Keerdosis"
+              },
+              "localizedDescriptions" : {
+                "en" : "The amount of medication administered at one time."
+              },
+              "aqlPath" : "/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.therapeutic_direction.v1,'Doseerinstructie_GebruiksInstructie-v2.0.1(2023NL)']/items[openEHR-EHR-CLUSTER.dosage.v2,'Dosering']/items[at0144,'Keerdosis']/value",
+              "inputs" : [ {
+                "suffix" : "magnitude",
+                "type" : "DECIMAL"
+              }, {
+                "suffix" : "unit",
+                "type" : "CODED_TEXT"
+              } ]
+            }, {
+              "id" : "interval_of_quantity_value",
+              "localizedName" : "Keerdosis",
+              "rmType" : "DV_INTERVAL<DV_QUANTITY>",
+              "nodeId" : "",
+              "min" : 0,
+              "max" : 1,
+              "localizedNames" : {
+                "en" : "Keerdosis"
+              },
+              "localizedDescriptions" : {
+                "en" : "The amount of medication administered at one time."
+              },
+              "aqlPath" : "/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.therapeutic_direction.v1,'Doseerinstructie_GebruiksInstructie-v2.0.1(2023NL)']/items[openEHR-EHR-CLUSTER.dosage.v2,'Dosering']/items[at0144,'Keerdosis']/value",
+              "children" : [ {
+                "id" : "lower",
+                "rmType" : "DV_QUANTITY",
+                "nodeId" : "",
+                "min" : 1,
+                "max" : 1,
+                "aqlPath" : "/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.therapeutic_direction.v1,'Doseerinstructie_GebruiksInstructie-v2.0.1(2023NL)']/items[openEHR-EHR-CLUSTER.dosage.v2,'Dosering']/items[at0144,'Keerdosis']/value/lower",
+                "inputs" : [ {
+                  "suffix" : "magnitude",
+                  "type" : "DECIMAL"
+                }, {
+                  "suffix" : "unit",
+                  "type" : "CODED_TEXT"
+                } ]
+              }, {
+                "id" : "upper",
+                "rmType" : "DV_QUANTITY",
+                "nodeId" : "",
+                "min" : 1,
+                "max" : 1,
+                "aqlPath" : "/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.therapeutic_direction.v1,'Doseerinstructie_GebruiksInstructie-v2.0.1(2023NL)']/items[openEHR-EHR-CLUSTER.dosage.v2,'Dosering']/items[at0144,'Keerdosis']/value/upper",
+                "inputs" : [ {
+                  "suffix" : "magnitude",
+                  "type" : "DECIMAL"
+                }, {
+                  "suffix" : "unit",
+                  "type" : "CODED_TEXT"
+                } ]
+              } ]
+            } ]
+          }, {
+            "id" : "toedieningsschema_-_dagelijks",
+            "name" : "Toedieningsschema - dagelijks",
+            "localizedName" : "Toedieningsschema - dagelijks",
+            "rmType" : "CLUSTER",
+            "nodeId" : "openEHR-EHR-CLUSTER.timing_daily.v1",
+            "min" : 0,
+            "max" : 1,
+            "localizedNames" : {
+              "en" : "Toedieningsschema - dagelijks"
+            },
+            "localizedDescriptions" : {
+              "en" : "Structured information about the intended timing of a therapeutic or diagnostic activity within any 24 hour period."
+            },
+            "aqlPath" : "/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.therapeutic_direction.v1,'Doseerinstructie_GebruiksInstructie-v2.0.1(2023NL)']/items[openEHR-EHR-CLUSTER.dosage.v2,'Dosering']/items[openEHR-EHR-CLUSTER.timing_daily.v1,'Toedieningsschema - dagelijks']",
+            "children" : [ {
+              "id" : "frequentie",
+              "name" : "Frequentie",
+              "localizedName" : "Frequentie",
+              "rmType" : "ELEMENT",
+              "nodeId" : "at0003",
+              "min" : 0,
+              "max" : 1,
+              "localizedNames" : {
+                "en" : "Frequentie"
+              },
+              "localizedDescriptions" : {
+                "en" : "The frequency as number of times per time period that the activity is to take place."
+              },
+              "annotations" : {
+                "comment" : "For example: \"4 times per day\" or \"3 to 4 times per hour\"."
+              },
+              "aqlPath" : "/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.therapeutic_direction.v1,'Doseerinstructie_GebruiksInstructie-v2.0.1(2023NL)']/items[openEHR-EHR-CLUSTER.dosage.v2,'Dosering']/items[openEHR-EHR-CLUSTER.timing_daily.v1,'Toedieningsschema - dagelijks']/items[at0003,'Frequentie']",
+              "children" : [ {
+                "id" : "quantity_value",
+                "localizedName" : "Frequentie",
+                "rmType" : "DV_QUANTITY",
+                "nodeId" : "",
+                "min" : 0,
+                "max" : 1,
+                "localizedNames" : {
+                  "en" : "Frequentie"
+                },
+                "localizedDescriptions" : {
+                  "en" : "The frequency as number of times per time period that the activity is to take place."
+                },
+                "aqlPath" : "/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.therapeutic_direction.v1,'Doseerinstructie_GebruiksInstructie-v2.0.1(2023NL)']/items[openEHR-EHR-CLUSTER.dosage.v2,'Dosering']/items[openEHR-EHR-CLUSTER.timing_daily.v1,'Toedieningsschema - dagelijks']/items[at0003,'Frequentie']/value",
+                "inputs" : [ {
+                  "suffix" : "magnitude",
+                  "type" : "DECIMAL"
+                }, {
+                  "suffix" : "unit",
+                  "type" : "CODED_TEXT",
+                  "list" : [ {
+                    "value" : "1/d",
+                    "label" : "1/d",
+                    "validation" : {
+                      "range" : {
+                        "minOp" : ">=",
+                        "min" : 1.0
+                      },
+                      "precision" : {
+                        "minOp" : ">=",
+                        "min" : 0,
+                        "maxOp" : "<=",
+                        "max" : 0
+                      }
+                    }
+                  }, {
+                    "value" : "1/min",
+                    "label" : "1/min",
+                    "validation" : {
+                      "range" : {
+                        "minOp" : ">=",
+                        "min" : 1.0
+                      },
+                      "precision" : {
+                        "minOp" : ">=",
+                        "min" : 0,
+                        "maxOp" : "<=",
+                        "max" : 0
+                      }
+                    }
+                  }, {
+                    "value" : "1/s",
+                    "label" : "1/s",
+                    "validation" : {
+                      "range" : {
+                        "minOp" : ">=",
+                        "min" : 1.0
+                      },
+                      "precision" : {
+                        "minOp" : ">=",
+                        "min" : 0,
+                        "maxOp" : "<=",
+                        "max" : 0
+                      }
+                    }
+                  }, {
+                    "value" : "1/h",
+                    "label" : "1/h",
+                    "validation" : {
+                      "range" : {
+                        "minOp" : ">=",
+                        "min" : 1.0
+                      },
+                      "precision" : {
+                        "minOp" : ">=",
+                        "min" : 0,
+                        "maxOp" : "<=",
+                        "max" : 0
+                      }
+                    }
+                  } ]
+                } ]
+              }, {
+                "id" : "interval_of_quantity_value",
+                "localizedName" : "Frequentie",
+                "rmType" : "DV_INTERVAL<DV_QUANTITY>",
+                "nodeId" : "",
+                "min" : 0,
+                "max" : 1,
+                "localizedNames" : {
+                  "en" : "Frequentie"
+                },
+                "localizedDescriptions" : {
+                  "en" : "The frequency as number of times per time period that the activity is to take place."
+                },
+                "aqlPath" : "/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.therapeutic_direction.v1,'Doseerinstructie_GebruiksInstructie-v2.0.1(2023NL)']/items[openEHR-EHR-CLUSTER.dosage.v2,'Dosering']/items[openEHR-EHR-CLUSTER.timing_daily.v1,'Toedieningsschema - dagelijks']/items[at0003,'Frequentie']/value",
+                "children" : [ {
+                  "id" : "upper",
+                  "rmType" : "DV_QUANTITY",
+                  "nodeId" : "",
+                  "min" : 1,
+                  "max" : 1,
+                  "aqlPath" : "/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.therapeutic_direction.v1,'Doseerinstructie_GebruiksInstructie-v2.0.1(2023NL)']/items[openEHR-EHR-CLUSTER.dosage.v2,'Dosering']/items[openEHR-EHR-CLUSTER.timing_daily.v1,'Toedieningsschema - dagelijks']/items[at0003,'Frequentie']/value/upper",
+                  "inputs" : [ {
+                    "suffix" : "magnitude",
+                    "type" : "DECIMAL"
+                  }, {
+                    "suffix" : "unit",
+                    "type" : "CODED_TEXT",
+                    "list" : [ {
+                      "value" : "1/d",
+                      "label" : "1/d",
+                      "validation" : {
+                        "range" : {
+                          "minOp" : ">=",
+                          "min" : 1.0
+                        },
+                        "precision" : {
+                          "minOp" : ">=",
+                          "min" : 0,
+                          "maxOp" : "<=",
+                          "max" : 0
+                        }
+                      }
+                    }, {
+                      "value" : "1/min",
+                      "label" : "1/min",
+                      "validation" : {
+                        "range" : {
+                          "minOp" : ">=",
+                          "min" : 1.0
+                        },
+                        "precision" : {
+                          "minOp" : ">=",
+                          "min" : 0,
+                          "maxOp" : "<=",
+                          "max" : 0
+                        }
+                      }
+                    }, {
+                      "value" : "1/s",
+                      "label" : "1/s",
+                      "validation" : {
+                        "range" : {
+                          "minOp" : ">=",
+                          "min" : 1.0
+                        },
+                        "precision" : {
+                          "minOp" : ">=",
+                          "min" : 0,
+                          "maxOp" : "<=",
+                          "max" : 0
+                        }
+                      }
+                    }, {
+                      "value" : "1/h",
+                      "label" : "1/h",
+                      "validation" : {
+                        "range" : {
+                          "minOp" : ">=",
+                          "min" : 1.0
+                        },
+                        "precision" : {
+                          "minOp" : ">=",
+                          "min" : 0,
+                          "maxOp" : "<=",
+                          "max" : 0
+                        }
+                      }
+                    } ]
+                  } ]
+                }, {
+                  "id" : "lower",
+                  "rmType" : "DV_QUANTITY",
+                  "nodeId" : "",
+                  "min" : 1,
+                  "max" : 1,
+                  "aqlPath" : "/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.therapeutic_direction.v1,'Doseerinstructie_GebruiksInstructie-v2.0.1(2023NL)']/items[openEHR-EHR-CLUSTER.dosage.v2,'Dosering']/items[openEHR-EHR-CLUSTER.timing_daily.v1,'Toedieningsschema - dagelijks']/items[at0003,'Frequentie']/value/lower",
+                  "inputs" : [ {
+                    "suffix" : "magnitude",
+                    "type" : "DECIMAL"
+                  }, {
+                    "suffix" : "unit",
+                    "type" : "CODED_TEXT",
+                    "list" : [ {
+                      "value" : "1/d",
+                      "label" : "1/d",
+                      "validation" : {
+                        "range" : {
+                          "minOp" : ">=",
+                          "min" : 1.0
+                        },
+                        "precision" : {
+                          "minOp" : ">=",
+                          "min" : 0,
+                          "maxOp" : "<=",
+                          "max" : 0
+                        }
+                      }
+                    }, {
+                      "value" : "1/min",
+                      "label" : "1/min",
+                      "validation" : {
+                        "range" : {
+                          "minOp" : ">=",
+                          "min" : 1.0
+                        },
+                        "precision" : {
+                          "minOp" : ">=",
+                          "min" : 0,
+                          "maxOp" : "<=",
+                          "max" : 0
+                        }
+                      }
+                    }, {
+                      "value" : "1/s",
+                      "label" : "1/s",
+                      "validation" : {
+                        "range" : {
+                          "minOp" : ">=",
+                          "min" : 1.0
+                        },
+                        "precision" : {
+                          "minOp" : ">=",
+                          "min" : 0,
+                          "maxOp" : "<=",
+                          "max" : 0
+                        }
+                      }
+                    }, {
+                      "value" : "1/h",
+                      "label" : "1/h",
+                      "validation" : {
+                        "range" : {
+                          "minOp" : ">=",
+                          "min" : 1.0
+                        },
+                        "precision" : {
+                          "minOp" : ">=",
+                          "min" : 0,
+                          "maxOp" : "<=",
+                          "max" : 0
+                        }
+                      }
+                    } ]
+                  } ]
+                } ]
+              } ]
+            }, {
+              "id" : "interval",
+              "name" : "Interval",
+              "localizedName" : "Interval",
+              "rmType" : "DV_DURATION",
+              "nodeId" : "at0014",
+              "min" : 0,
+              "max" : 1,
+              "localizedNames" : {
+                "en" : "Interval"
+              },
+              "localizedDescriptions" : {
+                "en" : "The time interval or minimum and maximum range of an interval between each scheduled activity."
+              },
+              "annotations" : {
+                "comment" : "For example: \"Every 4 hours\" or \"Every 4 to 6 hours\"."
+              },
+              "aqlPath" : "/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.therapeutic_direction.v1,'Doseerinstructie_GebruiksInstructie-v2.0.1(2023NL)']/items[openEHR-EHR-CLUSTER.dosage.v2,'Dosering']/items[openEHR-EHR-CLUSTER.timing_daily.v1,'Toedieningsschema - dagelijks']/items[at0014]/value",
+              "inputs" : [ {
+                "suffix" : "hour",
+                "type" : "INTEGER",
+                "validation" : {
+                  "range" : {
+                    "minOp" : ">=",
+                    "min" : 0,
+                    "maxOp" : "<=",
+                    "max" : 24
+                  }
+                }
+              }, {
+                "suffix" : "minute",
+                "type" : "INTEGER",
+                "validation" : {
+                  "range" : {
+                    "minOp" : ">=",
+                    "min" : 0
+                  }
+                }
+              }, {
+                "suffix" : "second",
+                "type" : "INTEGER",
+                "validation" : {
+                  "range" : {
+                    "minOp" : ">=",
+                    "min" : 0
+                  }
+                }
+              } ]
+            }, {
+              "id" : "toedientijd",
+              "name" : "Toedientijd",
+              "localizedName" : "Toedientijd",
+              "rmType" : "DV_TIME",
+              "nodeId" : "at0004",
+              "min" : 0,
+              "max" : -1,
+              "localizedNames" : {
+                "en" : "Toedientijd"
+              },
+              "localizedDescriptions" : {
+                "en" : "A specific time or interval of time when the activity should occur."
+              },
+              "annotations" : {
+                "comment" : "For example: \"08:00\" or \"15:00-16:00\"."
+              },
+              "aqlPath" : "/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.therapeutic_direction.v1,'Doseerinstructie_GebruiksInstructie-v2.0.1(2023NL)']/items[openEHR-EHR-CLUSTER.dosage.v2,'Dosering']/items[openEHR-EHR-CLUSTER.timing_daily.v1,'Toedieningsschema - dagelijks']/items[at0004,'Toedientijd']/value",
+              "inputs" : [ {
+                "type" : "TIME"
+              } ]
+            }, {
+              "id" : "dagdeel",
+              "name" : "Dagdeel",
+              "localizedName" : "Dagdeel",
+              "rmType" : "DV_TEXT",
+              "nodeId" : "at0027",
+              "min" : 0,
+              "max" : 1,
+              "localizedNames" : {
+                "en" : "Dagdeel"
+              },
+              "localizedDescriptions" : {
+                "en" : "Text description of the daily timing. This element is intended to allow implementers to use the structures for different timings without necessarily specifying the timings in a structured way."
+              },
+              "annotations" : {
+                "comment" : "For example: \"Take morning and evening\"."
+              },
+              "aqlPath" : "/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.therapeutic_direction.v1,'Doseerinstructie_GebruiksInstructie-v2.0.1(2023NL)']/items[openEHR-EHR-CLUSTER.dosage.v2,'Dosering']/items[openEHR-EHR-CLUSTER.timing_daily.v1,'Toedieningsschema - dagelijks']/items[at0027,'Dagdeel']/value",
+              "inputs" : [ {
+                "type" : "TEXT"
+              } ]
+            } ]
+          }, {
+            "id" : "toedieningssnelheid",
+            "name" : "Toedieningssnelheid",
+            "localizedName" : "Toedieningssnelheid",
+            "rmType" : "DV_QUANTITY",
+            "nodeId" : "at0134",
+            "min" : 0,
+            "max" : 1,
+            "localizedNames" : {
+              "en" : "Toedieningssnelheid"
+            },
+            "localizedDescriptions" : {
+              "en" : "The rate at which the medication, such as an infusion, is to be administered."
+            },
+            "annotations" : {
+              "comment" : "For example: '200 ml/h'. Use the text data type to record non- or semi-quantifiable instructions."
+            },
+            "aqlPath" : "/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.therapeutic_direction.v1,'Doseerinstructie_GebruiksInstructie-v2.0.1(2023NL)']/items[openEHR-EHR-CLUSTER.dosage.v2,'Dosering']/items[at0134,'Toedieningssnelheid']/value",
+            "inputs" : [ {
+              "suffix" : "magnitude",
+              "type" : "DECIMAL",
+              "defaultValue" : 0.0
+            }, {
+              "suffix" : "unit",
+              "type" : "CODED_TEXT",
+              "list" : [ {
+                "value" : "l/h",
+                "label" : "l/h",
+                "validation" : {
+                  "range" : {
+                    "minOp" : ">=",
+                    "min" : 0.0
+                  }
+                }
+              }, {
+                "value" : "ml/min",
+                "label" : "ml/min",
+                "validation" : {
+                  "range" : {
+                    "minOp" : ">=",
+                    "min" : 0.0
+                  }
+                }
+              }, {
+                "value" : "ml/s",
+                "label" : "ml/s",
+                "validation" : {
+                  "range" : {
+                    "minOp" : ">=",
+                    "min" : 0.0
+                  }
+                }
+              }, {
+                "value" : "ml/h",
+                "label" : "ml/h",
+                "validation" : {
+                  "range" : {
+                    "minOp" : ">=",
+                    "min" : 0.0
+                  }
+                }
+              } ],
+              "defaultValue" : "ml/h"
+            } ]
+          }, {
+            "id" : "toedieningsduur",
+            "name" : "Toedieningsduur",
+            "localizedName" : "Toedieningsduur",
+            "rmType" : "ELEMENT",
+            "nodeId" : "at0102",
+            "min" : 0,
+            "max" : 1,
+            "localizedNames" : {
+              "en" : "Toedieningsduur"
+            },
+            "localizedDescriptions" : {
+              "en" : "The period of time over which a single dose of the medication or vaccine should be administered."
+            },
+            "annotations" : {
+              "comment" : "For example: 'Administer over 10 minutes'."
+            },
+            "aqlPath" : "/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.therapeutic_direction.v1,'Doseerinstructie_GebruiksInstructie-v2.0.1(2023NL)']/items[openEHR-EHR-CLUSTER.dosage.v2,'Dosering']/items[at0102,'Toedieningsduur']",
+            "children" : [ {
+              "id" : "duration_value",
+              "localizedName" : "Toedieningsduur",
+              "rmType" : "DV_DURATION",
+              "nodeId" : "",
+              "min" : 0,
+              "max" : 1,
+              "localizedNames" : {
+                "en" : "Toedieningsduur"
+              },
+              "localizedDescriptions" : {
+                "en" : "The period of time over which a single dose of the medication or vaccine should be administered."
+              },
+              "aqlPath" : "/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.therapeutic_direction.v1,'Doseerinstructie_GebruiksInstructie-v2.0.1(2023NL)']/items[openEHR-EHR-CLUSTER.dosage.v2,'Dosering']/items[at0102,'Toedieningsduur']/value",
+              "inputs" : [ {
+                "suffix" : "day",
+                "type" : "INTEGER",
+                "validation" : {
+                  "range" : {
+                    "minOp" : ">=",
+                    "min" : 0
+                  }
+                }
+              }, {
+                "suffix" : "hour",
+                "type" : "INTEGER",
+                "validation" : {
+                  "range" : {
+                    "minOp" : ">=",
+                    "min" : 0
+                  }
+                }
+              }, {
+                "suffix" : "minute",
+                "type" : "INTEGER",
+                "validation" : {
+                  "range" : {
+                    "minOp" : ">=",
+                    "min" : 0
+                  }
+                }
+              }, {
+                "suffix" : "second",
+                "type" : "INTEGER",
+                "validation" : {
+                  "range" : {
+                    "minOp" : ">=",
+                    "min" : 0
+                  }
+                }
+              } ]
+            }, {
+              "id" : "interval_of_duration_value",
+              "localizedName" : "Toedieningsduur",
+              "rmType" : "DV_INTERVAL<DV_DURATION>",
+              "nodeId" : "",
+              "min" : 0,
+              "max" : 1,
+              "localizedNames" : {
+                "en" : "Toedieningsduur"
+              },
+              "localizedDescriptions" : {
+                "en" : "The period of time over which a single dose of the medication or vaccine should be administered."
+              },
+              "aqlPath" : "/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.therapeutic_direction.v1,'Doseerinstructie_GebruiksInstructie-v2.0.1(2023NL)']/items[openEHR-EHR-CLUSTER.dosage.v2,'Dosering']/items[at0102,'Toedieningsduur']/value",
+              "children" : [ {
+                "id" : "lower",
+                "rmType" : "DV_DURATION",
+                "nodeId" : "",
+                "min" : 1,
+                "max" : 1,
+                "aqlPath" : "/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.therapeutic_direction.v1,'Doseerinstructie_GebruiksInstructie-v2.0.1(2023NL)']/items[openEHR-EHR-CLUSTER.dosage.v2,'Dosering']/items[at0102,'Toedieningsduur']/value/lower",
+                "inputs" : [ {
+                  "suffix" : "day",
+                  "type" : "INTEGER",
+                  "validation" : {
+                    "range" : {
+                      "minOp" : ">=",
+                      "min" : 0
+                    }
+                  }
+                }, {
+                  "suffix" : "hour",
+                  "type" : "INTEGER",
+                  "validation" : {
+                    "range" : {
+                      "minOp" : ">=",
+                      "min" : 0
+                    }
+                  }
+                }, {
+                  "suffix" : "minute",
+                  "type" : "INTEGER",
+                  "validation" : {
+                    "range" : {
+                      "minOp" : ">=",
+                      "min" : 0
+                    }
+                  }
+                }, {
+                  "suffix" : "second",
+                  "type" : "INTEGER",
+                  "validation" : {
+                    "range" : {
+                      "minOp" : ">=",
+                      "min" : 0
+                    }
+                  }
+                } ]
+              }, {
+                "id" : "upper",
+                "rmType" : "DV_DURATION",
+                "nodeId" : "",
+                "min" : 1,
+                "max" : 1,
+                "aqlPath" : "/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.therapeutic_direction.v1,'Doseerinstructie_GebruiksInstructie-v2.0.1(2023NL)']/items[openEHR-EHR-CLUSTER.dosage.v2,'Dosering']/items[at0102,'Toedieningsduur']/value/upper",
+                "inputs" : [ {
+                  "suffix" : "day",
+                  "type" : "INTEGER",
+                  "validation" : {
+                    "range" : {
+                      "minOp" : ">=",
+                      "min" : 0
+                    }
+                  }
+                }, {
+                  "suffix" : "hour",
+                  "type" : "INTEGER",
+                  "validation" : {
+                    "range" : {
+                      "minOp" : ">=",
+                      "min" : 0
+                    }
+                  }
+                }, {
+                  "suffix" : "minute",
+                  "type" : "INTEGER",
+                  "validation" : {
+                    "range" : {
+                      "minOp" : ">=",
+                      "min" : 0
+                    }
+                  }
+                }, {
+                  "suffix" : "second",
+                  "type" : "INTEGER",
+                  "validation" : {
+                    "range" : {
+                      "minOp" : ">=",
+                      "min" : 0
+                    }
+                  }
+                } ]
+              } ]
+            } ]
+          } ]
+        }, {
+          "id" : "doseerduur",
+          "name" : "Doseerduur",
+          "localizedName" : "Doseerduur",
+          "rmType" : "ELEMENT",
+          "nodeId" : "at0066",
+          "min" : 0,
+          "max" : 1,
+          "localizedNames" : {
+            "en" : "Doseerduur"
+          },
+          "localizedDescriptions" : {
+            "en" : "The length of time for which this direction should be applied."
+          },
+          "annotations" : {
+            "comment" : "For example: 'for 7 days','Indefinite'. An example of a set of multiple directions, with varying durations might be ... '1 tablet daily for 3 days, 2 tablets daily for 4 days, then 3 tablets Indefinite'."
+          },
+          "aqlPath" : "/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.therapeutic_direction.v1,'Doseerinstructie_GebruiksInstructie-v2.0.1(2023NL)']/items[at0066,'Doseerduur']",
+          "children" : [ {
+            "id" : "coded_text_value",
+            "localizedName" : "Doseerduur",
+            "rmType" : "DV_CODED_TEXT",
+            "nodeId" : "",
+            "min" : 0,
+            "max" : 1,
+            "localizedNames" : {
+              "en" : "Doseerduur"
+            },
+            "localizedDescriptions" : {
+              "en" : "The length of time for which this direction should be applied."
+            },
+            "aqlPath" : "/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.therapeutic_direction.v1,'Doseerinstructie_GebruiksInstructie-v2.0.1(2023NL)']/items[at0066,'Doseerduur']/value",
+            "inputs" : [ {
+              "suffix" : "code",
+              "type" : "CODED_TEXT",
+              "list" : [ {
+                "value" : "at0067",
+                "label" : "Indefinite",
+                "localizedLabels" : {
+                  "en" : "Indefinite"
+                },
+                "localizedDescriptions" : {
+                  "en" : "The direction should be continued indefinitely."
+                }
+              } ]
+            } ]
+          }, {
+            "id" : "duration_value",
+            "localizedName" : "Doseerduur",
+            "rmType" : "DV_DURATION",
+            "nodeId" : "",
+            "min" : 0,
+            "max" : 1,
+            "localizedNames" : {
+              "en" : "Doseerduur"
+            },
+            "localizedDescriptions" : {
+              "en" : "The length of time for which this direction should be applied."
+            },
+            "aqlPath" : "/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.therapeutic_direction.v1,'Doseerinstructie_GebruiksInstructie-v2.0.1(2023NL)']/items[at0066,'Doseerduur']/value",
+            "inputs" : [ {
+              "suffix" : "year",
+              "type" : "INTEGER",
+              "validation" : {
+                "range" : {
+                  "minOp" : ">=",
+                  "min" : 0
+                }
+              }
+            }, {
+              "suffix" : "month",
+              "type" : "INTEGER",
+              "validation" : {
+                "range" : {
+                  "minOp" : ">=",
+                  "min" : 0
+                }
+              }
+            }, {
+              "suffix" : "day",
+              "type" : "INTEGER",
+              "validation" : {
+                "range" : {
+                  "minOp" : ">=",
+                  "min" : 0
+                }
+              }
+            }, {
+              "suffix" : "week",
+              "type" : "INTEGER",
+              "validation" : {
+                "range" : {
+                  "minOp" : ">=",
+                  "min" : 0
+                }
+              }
+            }, {
+              "suffix" : "hour",
+              "type" : "INTEGER",
+              "validation" : {
+                "range" : {
+                  "minOp" : ">=",
+                  "min" : 0
+                }
+              }
+            }, {
+              "suffix" : "minute",
+              "type" : "INTEGER",
+              "validation" : {
+                "range" : {
+                  "minOp" : ">=",
+                  "min" : 0
+                }
+              }
+            }, {
+              "suffix" : "second",
+              "type" : "INTEGER",
+              "validation" : {
+                "range" : {
+                  "minOp" : ">=",
+                  "min" : 0
+                }
+              }
+            } ]
+          } ]
+        }, {
+          "id" : "toedieningsschema_-_niet-dagelijks",
+          "name" : "Toedieningsschema - niet-dagelijks",
+          "localizedName" : "Toedieningsschema - niet-dagelijks",
+          "rmType" : "CLUSTER",
+          "nodeId" : "openEHR-EHR-CLUSTER.timing_nondaily.v1",
+          "min" : 0,
+          "max" : 1,
+          "localizedNames" : {
+            "en" : "Toedieningsschema - niet-dagelijks"
+          },
+          "localizedDescriptions" : {
+            "en" : "Structured information about the intended timing pattern for a therapeutic or diagnostic activity occurring over days, weeks, months or years."
+          },
+          "aqlPath" : "/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.therapeutic_direction.v1,'Doseerinstructie_GebruiksInstructie-v2.0.1(2023NL)']/items[openEHR-EHR-CLUSTER.timing_nondaily.v1,'Toedieningsschema - niet-dagelijks']",
+          "children" : [ {
+            "id" : "interval",
+            "name" : "Interval",
+            "localizedName" : "Interval",
+            "rmType" : "DV_DURATION",
+            "nodeId" : "at0002",
+            "min" : 0,
+            "max" : 1,
+            "localizedNames" : {
+              "en" : "Interval"
+            },
+            "localizedDescriptions" : {
+              "en" : "The interval between repetitions of the activity."
+            },
+            "annotations" : {
+              "comment" : "For example: 'Every 3 weeks'. If necessary, this element can be used to explicity specify that an activity is to take place every single day, by setting it to \"1 day\"."
+            },
+            "aqlPath" : "/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.therapeutic_direction.v1,'Doseerinstructie_GebruiksInstructie-v2.0.1(2023NL)']/items[openEHR-EHR-CLUSTER.timing_nondaily.v1,'Toedieningsschema - niet-dagelijks']/items[at0002,'Interval']/value",
+            "inputs" : [ {
+              "suffix" : "year",
+              "type" : "INTEGER",
+              "validation" : {
+                "range" : {
+                  "minOp" : ">=",
+                  "min" : 0
+                }
+              }
+            }, {
+              "suffix" : "month",
+              "type" : "INTEGER",
+              "validation" : {
+                "range" : {
+                  "minOp" : ">=",
+                  "min" : 0
+                }
+              }
+            }, {
+              "suffix" : "week",
+              "type" : "INTEGER",
+              "validation" : {
+                "range" : {
+                  "minOp" : ">=",
+                  "min" : 0
+                }
+              }
+            }, {
+              "suffix" : "day",
+              "type" : "INTEGER",
+              "validation" : {
+                "range" : {
+                  "minOp" : ">=",
+                  "min" : 0
+                }
+              }
+            } ]
+          }, {
+            "id" : "frequentie",
+            "name" : "Frequentie",
+            "localizedName" : "Frequentie",
+            "rmType" : "ELEMENT",
+            "nodeId" : "at0014",
+            "min" : 0,
+            "max" : 1,
+            "localizedNames" : {
+              "en" : "Frequentie"
+            },
+            "localizedDescriptions" : {
+              "en" : "The number of days per time period on which the activity takes place."
+            },
+            "annotations" : {
+              "comment" : "For example: '3 days per week', '2-4 days per month'. Specific details about the timing within each 24 hour period is specified within the CLUSTER.timing_daily archetype."
+            },
+            "aqlPath" : "/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.therapeutic_direction.v1,'Doseerinstructie_GebruiksInstructie-v2.0.1(2023NL)']/items[openEHR-EHR-CLUSTER.timing_nondaily.v1,'Toedieningsschema - niet-dagelijks']/items[at0014,'Frequentie']",
+            "children" : [ {
+              "id" : "quantity_value",
+              "localizedName" : "Frequentie",
+              "rmType" : "DV_QUANTITY",
+              "nodeId" : "",
+              "min" : 0,
+              "max" : 1,
+              "localizedNames" : {
+                "en" : "Frequentie"
+              },
+              "localizedDescriptions" : {
+                "en" : "The number of days per time period on which the activity takes place."
+              },
+              "aqlPath" : "/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.therapeutic_direction.v1,'Doseerinstructie_GebruiksInstructie-v2.0.1(2023NL)']/items[openEHR-EHR-CLUSTER.timing_nondaily.v1,'Toedieningsschema - niet-dagelijks']/items[at0014,'Frequentie']/value",
+              "inputs" : [ {
+                "suffix" : "magnitude",
+                "type" : "DECIMAL"
+              }, {
+                "suffix" : "unit",
+                "type" : "CODED_TEXT",
+                "list" : [ {
+                  "value" : "1/wk",
+                  "label" : "1/wk",
+                  "validation" : {
+                    "range" : {
+                      "minOp" : ">=",
+                      "min" : 1.0,
+                      "maxOp" : "<=",
+                      "max" : 7.0
+                    },
+                    "precision" : {
+                      "minOp" : ">=",
+                      "min" : 0,
+                      "maxOp" : "<=",
+                      "max" : 0
+                    }
+                  }
+                }, {
+                  "value" : "1/mo",
+                  "label" : "1/mo",
+                  "validation" : {
+                    "range" : {
+                      "minOp" : ">=",
+                      "min" : 1.0,
+                      "maxOp" : "<=",
+                      "max" : 31.0
+                    },
+                    "precision" : {
+                      "minOp" : ">=",
+                      "min" : 0,
+                      "maxOp" : "<=",
+                      "max" : 0
+                    }
+                  }
+                }, {
+                  "value" : "1/a",
+                  "label" : "1/a",
+                  "validation" : {
+                    "range" : {
+                      "minOp" : ">=",
+                      "min" : 1.0,
+                      "maxOp" : "<=",
+                      "max" : 366.0
+                    },
+                    "precision" : {
+                      "minOp" : ">=",
+                      "min" : 0,
+                      "maxOp" : "<=",
+                      "max" : 0
+                    }
+                  }
+                } ]
+              } ]
+            }, {
+              "id" : "interval_of_quantity_value",
+              "localizedName" : "Frequentie",
+              "rmType" : "DV_INTERVAL<DV_QUANTITY>",
+              "nodeId" : "",
+              "min" : 0,
+              "max" : 1,
+              "localizedNames" : {
+                "en" : "Frequentie"
+              },
+              "localizedDescriptions" : {
+                "en" : "The number of days per time period on which the activity takes place."
+              },
+              "aqlPath" : "/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.therapeutic_direction.v1,'Doseerinstructie_GebruiksInstructie-v2.0.1(2023NL)']/items[openEHR-EHR-CLUSTER.timing_nondaily.v1,'Toedieningsschema - niet-dagelijks']/items[at0014,'Frequentie']/value",
+              "children" : [ {
+                "id" : "lower",
+                "rmType" : "DV_QUANTITY",
+                "nodeId" : "",
+                "min" : 1,
+                "max" : 1,
+                "aqlPath" : "/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.therapeutic_direction.v1,'Doseerinstructie_GebruiksInstructie-v2.0.1(2023NL)']/items[openEHR-EHR-CLUSTER.timing_nondaily.v1,'Toedieningsschema - niet-dagelijks']/items[at0014,'Frequentie']/value/lower",
+                "inputs" : [ {
+                  "suffix" : "magnitude",
+                  "type" : "DECIMAL"
+                }, {
+                  "suffix" : "unit",
+                  "type" : "CODED_TEXT",
+                  "list" : [ {
+                    "value" : "1/wk",
+                    "label" : "1/wk",
+                    "validation" : {
+                      "range" : {
+                        "minOp" : ">=",
+                        "min" : 1.0,
+                        "maxOp" : "<=",
+                        "max" : 7.0
+                      },
+                      "precision" : {
+                        "minOp" : ">=",
+                        "min" : 0,
+                        "maxOp" : "<=",
+                        "max" : 0
+                      }
+                    }
+                  }, {
+                    "value" : "1/mo",
+                    "label" : "1/mo",
+                    "validation" : {
+                      "range" : {
+                        "minOp" : ">=",
+                        "min" : 1.0,
+                        "maxOp" : "<=",
+                        "max" : 31.0
+                      },
+                      "precision" : {
+                        "minOp" : ">=",
+                        "min" : 0,
+                        "maxOp" : "<=",
+                        "max" : 0
+                      }
+                    }
+                  }, {
+                    "value" : "1/a",
+                    "label" : "1/a",
+                    "validation" : {
+                      "range" : {
+                        "minOp" : ">=",
+                        "min" : 1.0,
+                        "maxOp" : "<=",
+                        "max" : 366.0
+                      },
+                      "precision" : {
+                        "minOp" : ">=",
+                        "min" : 0,
+                        "maxOp" : "<=",
+                        "max" : 0
+                      }
+                    }
+                  } ]
+                } ]
+              }, {
+                "id" : "upper",
+                "rmType" : "DV_QUANTITY",
+                "nodeId" : "",
+                "min" : 1,
+                "max" : 1,
+                "aqlPath" : "/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.therapeutic_direction.v1,'Doseerinstructie_GebruiksInstructie-v2.0.1(2023NL)']/items[openEHR-EHR-CLUSTER.timing_nondaily.v1,'Toedieningsschema - niet-dagelijks']/items[at0014,'Frequentie']/value/upper",
+                "inputs" : [ {
+                  "suffix" : "magnitude",
+                  "type" : "DECIMAL"
+                }, {
+                  "suffix" : "unit",
+                  "type" : "CODED_TEXT",
+                  "list" : [ {
+                    "value" : "1/wk",
+                    "label" : "1/wk",
+                    "validation" : {
+                      "range" : {
+                        "minOp" : ">=",
+                        "min" : 1.0,
+                        "maxOp" : "<=",
+                        "max" : 7.0
+                      },
+                      "precision" : {
+                        "minOp" : ">=",
+                        "min" : 0,
+                        "maxOp" : "<=",
+                        "max" : 0
+                      }
+                    }
+                  }, {
+                    "value" : "1/mo",
+                    "label" : "1/mo",
+                    "validation" : {
+                      "range" : {
+                        "minOp" : ">=",
+                        "min" : 1.0,
+                        "maxOp" : "<=",
+                        "max" : 31.0
+                      },
+                      "precision" : {
+                        "minOp" : ">=",
+                        "min" : 0,
+                        "maxOp" : "<=",
+                        "max" : 0
+                      }
+                    }
+                  }, {
+                    "value" : "1/a",
+                    "label" : "1/a",
+                    "validation" : {
+                      "range" : {
+                        "minOp" : ">=",
+                        "min" : 1.0,
+                        "maxOp" : "<=",
+                        "max" : 366.0
+                      },
+                      "precision" : {
+                        "minOp" : ">=",
+                        "min" : 0,
+                        "maxOp" : "<=",
+                        "max" : 0
+                      }
+                    }
+                  } ]
+                } ]
+              } ]
+            } ]
+          }, {
+            "id" : "weekdag",
+            "name" : "Weekdag",
+            "localizedName" : "Weekdag",
+            "rmType" : "DV_CODED_TEXT",
+            "nodeId" : "at0003",
+            "min" : 0,
+            "max" : 7,
+            "localizedNames" : {
+              "en" : "Weekdag"
+            },
+            "localizedDescriptions" : {
+              "en" : "The activity should take place on a specific day of the week."
+            },
+            "annotations" : {
+              "comment" : "For example: 'On Monday, Wednesday and Friday'."
+            },
+            "aqlPath" : "/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.therapeutic_direction.v1,'Doseerinstructie_GebruiksInstructie-v2.0.1(2023NL)']/items[openEHR-EHR-CLUSTER.timing_nondaily.v1,'Toedieningsschema - niet-dagelijks']/items[at0003,'Weekdag']/value",
+            "inputs" : [ {
+              "suffix" : "code",
+              "type" : "CODED_TEXT",
+              "list" : [ {
+                "value" : "at0007",
+                "label" : "Monday",
+                "localizedLabels" : {
+                  "en" : "Monday"
+                },
+                "localizedDescriptions" : {
+                  "en" : "The activity should take place on Monday."
+                }
+              }, {
+                "value" : "at0008",
+                "label" : "Tuesday",
+                "localizedLabels" : {
+                  "en" : "Tuesday"
+                },
+                "localizedDescriptions" : {
+                  "en" : "The activity should take place on Tuesday."
+                }
+              }, {
+                "value" : "at0016",
+                "label" : "Wednesday",
+                "localizedLabels" : {
+                  "en" : "Wednesday"
+                },
+                "localizedDescriptions" : {
+                  "en" : "The activity should take place on Wednesday."
+                }
+              }, {
+                "value" : "at0017",
+                "label" : "Thursday",
+                "localizedLabels" : {
+                  "en" : "Thursday"
+                },
+                "localizedDescriptions" : {
+                  "en" : "The activity should take place on Thursday."
+                }
+              }, {
+                "value" : "at0018",
+                "label" : "Friday",
+                "localizedLabels" : {
+                  "en" : "Friday"
+                },
+                "localizedDescriptions" : {
+                  "en" : "The activity should take place on Friday."
+                }
+              }, {
+                "value" : "at0019",
+                "label" : "Saturday",
+                "localizedLabels" : {
+                  "en" : "Saturday"
+                },
+                "localizedDescriptions" : {
+                  "en" : "The activity should take place on Saturday."
+                }
+              }, {
+                "value" : "at0020",
+                "label" : "Sunday",
+                "localizedLabels" : {
+                  "en" : "Sunday"
+                },
+                "localizedDescriptions" : {
+                  "en" : "The activity should take place on Sunday."
+                }
+              } ]
+            } ]
+          }, {
+            "id" : "herhaalperiodecyclischschema",
+            "name" : "HerhaalperiodeCyclischSchema",
+            "localizedName" : "HerhaalperiodeCyclischSchema",
+            "rmType" : "DV_TEXT",
+            "nodeId" : "at0021",
+            "min" : 0,
+            "max" : 1,
+            "localizedNames" : {
+              "en" : "HerhaalperiodeCyclischSchema"
+            },
+            "localizedDescriptions" : {
+              "en" : "Text description of the timing."
+            },
+            "annotations" : {
+              "comment" : "For example: 'Use for one week, then stop for two weeks, then repeat'. This element is intended to allow implementers to use the structures for daily timings without necessarily specifying the non-daily timings in a structured way."
+            },
+            "aqlPath" : "/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.therapeutic_direction.v1,'Doseerinstructie_GebruiksInstructie-v2.0.1(2023NL)']/items[openEHR-EHR-CLUSTER.timing_nondaily.v1,'Toedieningsschema - niet-dagelijks']/items[at0021,'HerhaalperiodeCyclischSchema']/value",
+            "inputs" : [ {
+              "type" : "TEXT"
+            } ]
+          } ]
+        }, {
+          "id" : "zonodig",
+          "name" : "Zonodig",
+          "localizedName" : "Zonodig",
+          "rmType" : "CLUSTER",
+          "nodeId" : "openEHR-EHR-CLUSTER.conditional_medication_rules.v0",
+          "min" : 0,
+          "max" : 1,
+          "localizedNames" : {
+            "en" : "Zonodig"
+          },
+          "localizedDescriptions" : {
+            "en" : "Details of conditions on which determine the dose amount or administration rate."
+          },
+          "aqlPath" : "/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.therapeutic_direction.v1,'Doseerinstructie_GebruiksInstructie-v2.0.1(2023NL)']/items[openEHR-EHR-CLUSTER.conditional_medication_rules.v0,'Zonodig']",
+          "children" : [ {
+            "id" : "condition_rule",
+            "name" : "Condition rule",
+            "localizedName" : "Condition rule",
+            "rmType" : "CLUSTER",
+            "nodeId" : "at0005",
+            "min" : 0,
+            "max" : -1,
+            "localizedNames" : {
+              "en" : "Condition rule"
+            },
+            "localizedDescriptions" : {
+              "en" : "Details of the condition and associated dose amount or administration rate."
+            },
+            "aqlPath" : "/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.therapeutic_direction.v1,'Doseerinstructie_GebruiksInstructie-v2.0.1(2023NL)']/items[openEHR-EHR-CLUSTER.conditional_medication_rules.v0,'Zonodig']/items[at0005]",
+            "children" : [ {
+              "id" : "criterium",
+              "name" : "Criterium",
+              "localizedName" : "Criterium",
+              "rmType" : "DV_CODED_TEXT",
+              "nodeId" : "at0002",
+              "min" : 0,
+              "max" : 1,
+              "localizedNames" : {
+                "en" : "Criterium"
+              },
+              "localizedDescriptions" : {
+                "en" : "The value which is required for the associated dose amount or administration to be applied."
+              },
+              "aqlPath" : "/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.therapeutic_direction.v1,'Doseerinstructie_GebruiksInstructie-v2.0.1(2023NL)']/items[openEHR-EHR-CLUSTER.conditional_medication_rules.v0,'Zonodig']/items[at0005]/items[at0002,'Criterium']/value",
+              "inputs" : [ {
+                "suffix" : "code",
+                "type" : "CODED_TEXT",
+                "list" : [ {
+                  "value" : "1022",
+                  "label" : "Bij een aanval",
+                  "localizedLabels" : {
+                    "en" : "Bij een aanval"
+                  }
+                }, {
+                  "value" : "1023",
+                  "label" : "Bij benauwdheid",
+                  "localizedLabels" : {
+                    "en" : "Bij benauwdheid"
+                  }
+                }, {
+                  "value" : "1024",
+                  "label" : "Bij diarree",
+                  "localizedLabels" : {
+                    "en" : "Bij diarree"
+                  }
+                }, {
+                  "value" : "1028",
+                  "label" : "Bij pijn",
+                  "localizedLabels" : {
+                    "en" : "Bij pijn"
+                  }
+                }, {
+                  "value" : "1121",
+                  "label" : "Bij jeuk",
+                  "localizedLabels" : {
+                    "en" : "Bij jeuk"
+                  }
+                }, {
+                  "value" : "1137",
+                  "label" : "Zo nodig",
+                  "localizedLabels" : {
+                    "en" : "Zo nodig"
+                  }
+                }, {
+                  "value" : "1144",
+                  "label" : "Bij hoofdpijn",
+                  "localizedLabels" : {
+                    "en" : "Bij hoofdpijn"
+                  }
+                }, {
+                  "value" : "1145",
+                  "label" : "Bij koorts",
+                  "localizedLabels" : {
+                    "en" : "Bij koorts"
+                  }
+                }, {
+                  "value" : "1146",
+                  "label" : "Bij hoge koorts",
+                  "localizedLabels" : {
+                    "en" : "Bij hoge koorts"
+                  }
+                }, {
+                  "value" : "1147",
+                  "label" : "Bij koorts en/of pijn",
+                  "localizedLabels" : {
+                    "en" : "Bij koorts en/of pijn"
+                  }
+                }, {
+                  "value" : "1387",
+                  "label" : "Bij hoest",
+                  "localizedLabels" : {
+                    "en" : "Bij hoest"
+                  }
+                }, {
+                  "value" : "1540",
+                  "label" : "Bij menstruatiepijnen",
+                  "localizedLabels" : {
+                    "en" : "Bij menstruatiepijnen"
+                  }
+                }, {
+                  "value" : "OTH",
+                  "label" : "Overig",
+                  "localizedLabels" : {
+                    "en" : "Overig"
+                  }
+                }, {
+                  "value" : "NI",
+                  "label" : "Geen Informatie",
+                  "localizedLabels" : {
+                    "en" : "Geen Informatie"
+                  }
+                } ],
+                "terminology" : "GSt bst362"
+              } ]
+            }, {
+              "id" : "maximaledosering",
+              "name" : "MaximaleDosering",
+              "localizedName" : "MaximaleDosering",
+              "rmType" : "DV_QUANTITY",
+              "nodeId" : "at0004",
+              "min" : 0,
+              "max" : 1,
+              "localizedNames" : {
+                "en" : "MaximaleDosering"
+              },
+              "localizedDescriptions" : {
+                "en" : "The dose amount to be administered if the condition applies."
+              },
+              "aqlPath" : "/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.therapeutic_direction.v1,'Doseerinstructie_GebruiksInstructie-v2.0.1(2023NL)']/items[openEHR-EHR-CLUSTER.conditional_medication_rules.v0,'Zonodig']/items[at0005]/items[at0004,'MaximaleDosering']/value",
+              "inputs" : [ {
+                "suffix" : "magnitude",
+                "type" : "DECIMAL",
+                "validation" : {
+                  "range" : {
+                    "minOp" : ">=",
+                    "min" : 0.0
+                  }
+                }
+              }, {
+                "suffix" : "unit",
+                "type" : "CODED_TEXT",
+                "list" : [ {
+                  "value" : "1",
+                  "label" : "1",
+                  "validation" : {
+                    "range" : {
+                      "minOp" : ">=",
+                      "min" : 0.0
+                    }
+                  }
+                } ]
+              } ]
+            } ]
+          } ]
+        } ]
+      }, {
+        "id" : "aanvullendeinstructies",
+        "name" : "AanvullendeInstructies",
+        "localizedName" : "AanvullendeInstructies",
+        "rmType" : "DV_CODED_TEXT",
+        "nodeId" : "at0044",
+        "min" : 0,
+        "max" : -1,
+        "localizedNames" : {
+          "en" : "AanvullendeInstructies"
+        },
+        "localizedDescriptions" : {
+          "en" : "An additional instruction on how to use or store the ordered item."
+        },
+        "annotations" : {
+          "comment" : "For example: precautions as 'take with food', 'Avoid grapefruit', 'Dissolve in water', 'store in a cool, dry place'. This data element allows multiple occurrences and should be coded with a reference terminology, where possible."
+        },
+        "aqlPath" : "/activities[at0001]/description[at0002]/items[at0044,'AanvullendeInstructies']/value",
+        "inputs" : [ {
+          "suffix" : "code",
+          "type" : "CODED_TEXT",
+          "list" : [ {
+            "value" : "9",
+            "label" : "Na gebruik handen wassen",
+            "localizedLabels" : {
+              "en" : "Na gebruik handen wassen"
+            }
+          }, {
+            "value" : "10",
+            "label" : "Goed fijnkauwen voor het doorslikken",
+            "localizedLabels" : {
+              "en" : "Goed fijnkauwen voor het doorslikken"
+            }
+          }, {
+            "value" : "11",
+            "label" : "Heel doorslikken, niet kauwen",
+            "localizedLabels" : {
+              "en" : "Heel doorslikken, niet kauwen"
+            }
+          }, {
+            "value" : "13",
+            "label" : "Met water innemen, niet met melk",
+            "localizedLabels" : {
+              "en" : "Met water innemen, niet met melk"
+            }
+          }, {
+            "value" : "14",
+            "label" : "Omschudden vlak voor gebruik",
+            "localizedLabels" : {
+              "en" : "Omschudden vlak voor gebruik"
+            }
+          }, {
+            "value" : "17",
+            "label" : "Zittend of staand innemen met veel water",
+            "localizedLabels" : {
+              "en" : "Zittend of staand innemen met veel water"
+            }
+          }, {
+            "value" : "21",
+            "label" : "Ten minste een half uur VOOR het eten",
+            "localizedLabels" : {
+              "en" : "Ten minste een half uur VOOR het eten"
+            }
+          }, {
+            "value" : "22",
+            "label" : "TIJDENS of vlak NA het eten innemen",
+            "localizedLabels" : {
+              "en" : "TIJDENS of vlak NA het eten innemen"
+            }
+          }, {
+            "value" : "23",
+            "label" : "TIJDENS de warme maaltijd innemen",
+            "localizedLabels" : {
+              "en" : "TIJDENS de warme maaltijd innemen"
+            }
+          }, {
+            "value" : "24",
+            "label" : "Bij maagklachten NA het eten innemen",
+            "localizedLabels" : {
+              "en" : "Bij maagklachten NA het eten innemen"
+            }
+          }, {
+            "value" : "26",
+            "label" : "Innemen met veel vocht",
+            "localizedLabels" : {
+              "en" : "Innemen met veel vocht"
+            }
+          }, {
+            "value" : "27",
+            "label" : "Eerst oplossen in water",
+            "localizedLabels" : {
+              "en" : "Eerst oplossen in water"
+            }
+          }, {
+            "value" : "28",
+            "label" : "Eerst uiteen laten vallen in water",
+            "localizedLabels" : {
+              "en" : "Eerst uiteen laten vallen in water"
+            }
+          }, {
+            "value" : "33",
+            "label" : "Innemen met melk",
+            "localizedLabels" : {
+              "en" : "Innemen met melk"
+            }
+          }, {
+            "value" : "34",
+            "label" : "Bij voorkeur een half uur VOOR het eten",
+            "localizedLabels" : {
+              "en" : "Bij voorkeur een half uur VOOR het eten"
+            }
+          }, {
+            "value" : "35",
+            "label" : "TIJDENS het eten innemen",
+            "localizedLabels" : {
+              "en" : "TIJDENS het eten innemen"
+            }
+          }, {
+            "value" : "45",
+            "label" : "Omroeren voor gebruik",
+            "localizedLabels" : {
+              "en" : "Omroeren voor gebruik"
+            }
+          }, {
+            "value" : "51",
+            "label" : "Vlak VOOR het eten innemen",
+            "localizedLabels" : {
+              "en" : "Vlak VOOR het eten innemen"
+            }
+          }, {
+            "value" : "52",
+            "label" : "Kauwen of fijngemaakt met vocht innemen",
+            "localizedLabels" : {
+              "en" : "Kauwen of fijngemaakt met vocht innemen"
+            }
+          }, {
+            "value" : "62",
+            "label" : "Dun op de huid aanbrengen",
+            "localizedLabels" : {
+              "en" : "Dun op de huid aanbrengen"
+            }
+          }, {
+            "value" : "65",
+            "label" : "Ten minste half uur VOOR ontbijt innemen",
+            "localizedLabels" : {
+              "en" : "Ten minste half uur VOOR ontbijt innemen"
+            }
+          }, {
+            "value" : "67",
+            "label" : "Tablet ONDER de tong laten oplossen",
+            "localizedLabels" : {
+              "en" : "Tablet ONDER de tong laten oplossen"
+            }
+          }, {
+            "value" : "68",
+            "label" : "Gorgelen, daarna uitspugen",
+            "localizedLabels" : {
+              "en" : "Gorgelen, daarna uitspugen"
+            }
+          }, {
+            "value" : "69",
+            "label" : "Mond spoelen, daarna uitspugen",
+            "localizedLabels" : {
+              "en" : "Mond spoelen, daarna uitspugen"
+            }
+          }, {
+            "value" : "70",
+            "label" : "Tablet langzaam opzuigen",
+            "localizedLabels" : {
+              "en" : "Tablet langzaam opzuigen"
+            }
+          }, {
+            "value" : "71",
+            "label" : "Ter inhalatie via de mond",
+            "localizedLabels" : {
+              "en" : "Ter inhalatie via de mond"
+            }
+          }, {
+            "value" : "72",
+            "label" : "Ter inhalatie via de neus",
+            "localizedLabels" : {
+              "en" : "Ter inhalatie via de neus"
+            }
+          }, {
+            "value" : "73",
+            "label" : "Tot 20 druppels op 1 l heet water stomen",
+            "localizedLabels" : {
+              "en" : "Tot 20 druppels op 1 l heet water stomen"
+            }
+          }, {
+            "value" : "74",
+            "label" : "Na gebruik mond spoelen",
+            "localizedLabels" : {
+              "en" : "Na gebruik mond spoelen"
+            }
+          }, {
+            "value" : "75",
+            "label" : "Op lichaamstemperatuur brengen voor gebr",
+            "localizedLabels" : {
+              "en" : "Op lichaamstemperatuur brengen voor gebr"
+            }
+          }, {
+            "value" : "77",
+            "label" : "Op de tong laten smelten, wegslikken",
+            "localizedLabels" : {
+              "en" : "Op de tong laten smelten, wegslikken"
+            }
+          }, {
+            "value" : "78",
+            "label" : "Kort voor of tijdens het eten",
+            "localizedLabels" : {
+              "en" : "Kort voor of tijdens het eten"
+            }
+          }, {
+            "value" : "81",
+            "label" : "Ten minste 1 uur VOOR het eten innemen",
+            "localizedLabels" : {
+              "en" : "Ten minste 1 uur VOOR het eten innemen"
+            }
+          }, {
+            "value" : "84",
+            "label" : "1 uur voor of 2 uur na het eten innemen",
+            "localizedLabels" : {
+              "en" : "1 uur voor of 2 uur na het eten innemen"
+            }
+          }, {
+            "value" : "85",
+            "label" : "VOOR het ontbijt innemen",
+            "localizedLabels" : {
+              "en" : "VOOR het ontbijt innemen"
+            }
+          }, {
+            "value" : "95",
+            "label" : "Eerst mengen met water of zacht voedsel",
+            "localizedLabels" : {
+              "en" : "Eerst mengen met water of zacht voedsel"
+            }
+          }, {
+            "value" : "97",
+            "label" : "Ten minste 15 minuten VOOR het eten",
+            "localizedLabels" : {
+              "en" : "Ten minste 15 minuten VOOR het eten"
+            }
+          }, {
+            "value" : "104",
+            "label" : "ca 20 sec in de mond houden, doorslikken",
+            "localizedLabels" : {
+              "en" : "ca 20 sec in de mond houden, doorslikken"
+            }
+          }, {
+            "value" : "109",
+            "label" : "TIJDENS het eten of binnen 1 uur erna",
+            "localizedLabels" : {
+              "en" : "TIJDENS het eten of binnen 1 uur erna"
+            }
+          }, {
+            "value" : "111",
+            "label" : "Voor gebruik ten minste 10x omzwenken",
+            "localizedLabels" : {
+              "en" : "Voor gebruik ten minste 10x omzwenken"
+            }
+          }, {
+            "value" : "114",
+            "label" : "Ten minste 1 uur VOOR het ontbijt",
+            "localizedLabels" : {
+              "en" : "Ten minste 1 uur VOOR het ontbijt"
+            }
+          }, {
+            "value" : "124",
+            "label" : "Capsule mag open,korrels heel doorslikken",
+            "localizedLabels" : {
+              "en" : "Capsule mag open,korrels heel doorslikken"
+            }
+          }, {
+            "value" : "125",
+            "label" : "Een half uur voor of na het eten innemen",
+            "localizedLabels" : {
+              "en" : "Een half uur voor of na het eten innemen"
+            }
+          }, {
+            "value" : "126",
+            "label" : "1 uur voor of half uur na eten innemen",
+            "localizedLabels" : {
+              "en" : "1 uur voor of half uur na eten innemen"
+            }
+          }, {
+            "value" : "140",
+            "label" : "Niet kauwen",
+            "localizedLabels" : {
+              "en" : "Niet kauwen"
+            }
+          }, {
+            "value" : "141",
+            "label" : "'s Avonds innemen bij de maaltijd",
+            "localizedLabels" : {
+              "en" : "'s Avonds innemen bij de maaltijd"
+            }
+          }, {
+            "value" : "159",
+            "label" : "Innemen op nuchtere maag",
+            "localizedLabels" : {
+              "en" : "Innemen op nuchtere maag"
+            }
+          }, {
+            "value" : "167",
+            "label" : "Innemen na de maaltijd",
+            "localizedLabels" : {
+              "en" : "Innemen na de maaltijd"
+            }
+          }, {
+            "value" : "169",
+            "label" : "Voor gebruik mengen door te rollen",
+            "localizedLabels" : {
+              "en" : "Voor gebruik mengen door te rollen"
+            }
+          }, {
+            "value" : "173",
+            "label" : "Gemengd met water of melkproduct innemen",
+            "localizedLabels" : {
+              "en" : "Gemengd met water of melkproduct innemen"
+            }
+          }, {
+            "value" : "175",
+            "label" : "1 uur voor de warme maaltijd innemen",
+            "localizedLabels" : {
+              "en" : "1 uur voor de warme maaltijd innemen"
+            }
+          }, {
+            "value" : "179",
+            "label" : "Binnen 30 minuten na het eten innemen",
+            "localizedLabels" : {
+              "en" : "Binnen 30 minuten na het eten innemen"
+            }
+          }, {
+            "value" : "183",
+            "label" : "Dosis verdunnen in een glas water",
+            "localizedLabels" : {
+              "en" : "Dosis verdunnen in een glas water"
+            }
+          }, {
+            "value" : "184",
+            "label" : "Voor gebruik 1:1 verdunnen met water",
+            "localizedLabels" : {
+              "en" : "Voor gebruik 1:1 verdunnen met water"
+            }
+          }, {
+            "value" : "189",
+            "label" : "Voor gebruik op kamertemperatuur brengen",
+            "localizedLabels" : {
+              "en" : "Voor gebruik op kamertemperatuur brengen"
+            }
+          }, {
+            "value" : "193",
+            "label" : "De tablet mag worden fijngemalen",
+            "localizedLabels" : {
+              "en" : "De tablet mag worden fijngemalen"
+            }
+          }, {
+            "value" : "195",
+            "label" : "Innemen met wat voedsel",
+            "localizedLabels" : {
+              "en" : "Innemen met wat voedsel"
+            }
+          }, {
+            "value" : "196",
+            "label" : "In de mond laten smelten, doorslikken",
+            "localizedLabels" : {
+              "en" : "In de mond laten smelten, doorslikken"
+            }
+          }, {
+            "value" : "198",
+            "label" : "Voor gebruik flacon enkele malen omkeren",
+            "localizedLabels" : {
+              "en" : "Voor gebruik flacon enkele malen omkeren"
+            }
+          }, {
+            "value" : "204",
+            "label" : "Heel doorslikken i.v.m. vieze smaak",
+            "localizedLabels" : {
+              "en" : "Heel doorslikken i.v.m. vieze smaak"
+            }
+          }, {
+            "value" : "205",
+            "label" : "Bij voorkeur 1 uur voor het eten innemen",
+            "localizedLabels" : {
+              "en" : "Bij voorkeur 1 uur voor het eten innemen"
+            }
+          }, {
+            "value" : "1002",
+            "label" : "10e tot 25e dag van de cyclus",
+            "localizedLabels" : {
+              "en" : "10e tot 25e dag van de cyclus"
+            }
+          }, {
+            "value" : "1003",
+            "label" : "16e tot 25e dag van de cyclus",
+            "localizedLabels" : {
+              "en" : "16e tot 25e dag van de cyclus"
+            }
+          }, {
+            "value" : "1004",
+            "label" : "19e tot 25e dag van de cyclus",
+            "localizedLabels" : {
+              "en" : "19e tot 25e dag van de cyclus"
+            }
+          }, {
+            "value" : "1005",
+            "label" : "1 uur voor of 2 uur na de maaltijd",
+            "localizedLabels" : {
+              "en" : "1 uur voor of 2 uur na de maaltijd"
+            }
+          }, {
+            "value" : "1006",
+            "label" : "1 uur voor de maaltijd en voor de nacht",
+            "localizedLabels" : {
+              "en" : "1 uur voor de maaltijd en voor de nacht"
+            }
+          }, {
+            "value" : "1007",
+            "label" : "1 uur voor de maaltijd met water",
+            "localizedLabels" : {
+              "en" : "1 uur voor de maaltijd met water"
+            }
+          }, {
+            "value" : "1008",
+            "label" : "1 uur na de maaltijd",
+            "localizedLabels" : {
+              "en" : "1 uur na de maaltijd"
+            }
+          }, {
+            "value" : "1010",
+            "label" : "1 uur voor de maaltijd",
+            "localizedLabels" : {
+              "en" : "1 uur voor de maaltijd"
+            }
+          }, {
+            "value" : "1012",
+            "label" : "2 dagen voor de menstruatie beginnen",
+            "localizedLabels" : {
+              "en" : "2 dagen voor de menstruatie beginnen"
+            }
+          }, {
+            "value" : "1013",
+            "label" : "2 uur voor of 2 uur na de maaltijd",
+            "localizedLabels" : {
+              "en" : "2 uur voor of 2 uur na de maaltijd"
+            }
+          }, {
+            "value" : "1017",
+            "label" : "6 uur voor de reis aanbrengen",
+            "localizedLabels" : {
+              "en" : "6 uur voor de reis aanbrengen"
+            }
+          }, {
+            "value" : "1018",
+            "label" : "aanbrengen",
+            "localizedLabels" : {
+              "en" : "aanbrengen"
+            }
+          }, {
+            "value" : "1020",
+            "label" : "aanstippen",
+            "localizedLabels" : {
+              "en" : "aanstippen"
+            }
+          }, {
+            "value" : "1025",
+            "label" : "bij het ontbijt",
+            "localizedLabels" : {
+              "en" : "bij het ontbijt"
+            }
+          }, {
+            "value" : "1026",
+            "label" : "in beide ogen",
+            "localizedLabels" : {
+              "en" : "in beide ogen"
+            }
+          }, {
+            "value" : "1027",
+            "label" : "in beide oren",
+            "localizedLabels" : {
+              "en" : "in beide oren"
+            }
+          }, {
+            "value" : "1029",
+            "label" : "met 1 druppel bedekken, laten drogen",
+            "localizedLabels" : {
+              "en" : "met 1 druppel bedekken, laten drogen"
+            }
+          }, {
+            "value" : "1030",
+            "label" : "na de ontlasting",
+            "localizedLabels" : {
+              "en" : "na de ontlasting"
+            }
+          }, {
+            "value" : "1031",
+            "label" : "deppen",
+            "localizedLabels" : {
+              "en" : "deppen"
+            }
+          }, {
+            "value" : "1033",
+            "label" : "dun aanbrengen",
+            "localizedLabels" : {
+              "en" : "dun aanbrengen"
+            }
+          }, {
+            "value" : "1034",
+            "label" : "goed fijnkauwen",
+            "localizedLabels" : {
+              "en" : "goed fijnkauwen"
+            }
+          }, {
+            "value" : "1035",
+            "label" : "gebruik bekend",
+            "localizedLabels" : {
+              "en" : "gebruik bekend"
+            }
+          }, {
+            "value" : "1036",
+            "label" : "gorgelen",
+            "localizedLabels" : {
+              "en" : "gorgelen"
+            }
+          }, {
+            "value" : "1040",
+            "label" : "in zijn geheel met water innemen",
+            "localizedLabels" : {
+              "en" : "in zijn geheel met water innemen"
+            }
+          }, {
+            "value" : "1041",
+            "label" : "in de haren en op de hoofdhuid",
+            "localizedLabels" : {
+              "en" : "in de haren en op de hoofdhuid"
+            }
+          }, {
+            "value" : "1042",
+            "label" : "een half uur voor de maaltijd en de nacht",
+            "localizedLabels" : {
+              "en" : "een half uur voor de maaltijd en de nacht"
+            }
+          }, {
+            "value" : "1043",
+            "label" : "op de hoofdhuid",
+            "localizedLabels" : {
+              "en" : "op de hoofdhuid"
+            }
+          }, {
+            "value" : "1044",
+            "label" : "op de huid",
+            "localizedLabels" : {
+              "en" : "op de huid"
+            }
+          }, {
+            "value" : "1045",
+            "label" : "een half uur voor de maaltijd",
+            "localizedLabels" : {
+              "en" : "een half uur voor de maaltijd"
+            }
+          }, {
+            "value" : "1046",
+            "label" : "een half uur voor het ontbijt",
+            "localizedLabels" : {
+              "en" : "een half uur voor het ontbijt"
+            }
+          }, {
+            "value" : "1047",
+            "label" : "een half uur voor 't slapen",
+            "localizedLabels" : {
+              "en" : "een half uur voor 't slapen"
+            }
+          }, {
+            "value" : "1048",
+            "label" : "in het aangedane neusgat",
+            "localizedLabels" : {
+              "en" : "in het aangedane neusgat"
+            }
+          }, {
+            "value" : "1049",
+            "label" : "in beide neusgaten hoog opsnuiven",
+            "localizedLabels" : {
+              "en" : "in beide neusgaten hoog opsnuiven"
+            }
+          }, {
+            "value" : "1050",
+            "label" : "in beide neusgaten",
+            "localizedLabels" : {
+              "en" : "in beide neusgaten"
+            }
+          }, {
+            "value" : "1051",
+            "label" : "in het badwater",
+            "localizedLabels" : {
+              "en" : "in het badwater"
+            }
+          }, {
+            "value" : "1052",
+            "label" : "voor i.m. injectie",
+            "localizedLabels" : {
+              "en" : "voor i.m. injectie"
+            }
+          }, {
+            "value" : "1054",
+            "label" : "inhaleren",
+            "localizedLabels" : {
+              "en" : "inhaleren"
+            }
+          }, {
+            "value" : "1055",
+            "label" : "injecteren",
+            "localizedLabels" : {
+              "en" : "injecteren"
+            }
+          }, {
+            "value" : "1056",
+            "label" : "inmasseren",
+            "localizedLabels" : {
+              "en" : "inmasseren"
+            }
+          }, {
+            "value" : "1057",
+            "label" : "insmeren",
+            "localizedLabels" : {
+              "en" : "insmeren"
+            }
+          }, {
+            "value" : "1058",
+            "label" : "inwrijven",
+            "localizedLabels" : {
+              "en" : "inwrijven"
+            }
+          }, {
+            "value" : "1059",
+            "label" : "intraveneus injecteren",
+            "localizedLabels" : {
+              "en" : "intraveneus injecteren"
+            }
+          }, {
+            "value" : "1060",
+            "label" : "in vernevelapparaat",
+            "localizedLabels" : {
+              "en" : "in vernevelapparaat"
+            }
+          }, {
+            "value" : "1061",
+            "label" : "in water oplossen",
+            "localizedLabels" : {
+              "en" : "in water oplossen"
+            }
+          }, {
+            "value" : "1063",
+            "label" : "in het linker oog",
+            "localizedLabels" : {
+              "en" : "in het linker oog"
+            }
+          }, {
+            "value" : "1064",
+            "label" : "in het linker oor",
+            "localizedLabels" : {
+              "en" : "in het linker oor"
+            }
+          }, {
+            "value" : "1067",
+            "label" : "1 uur na de maaltijd, goed fijnkauwen",
+            "localizedLabels" : {
+              "en" : "1 uur na de maaltijd, goed fijnkauwen"
+            }
+          }, {
+            "value" : "1071",
+            "label" : "met water innemen",
+            "localizedLabels" : {
+              "en" : "met water innemen"
+            }
+          }, {
+            "value" : "1073",
+            "label" : "na de maaltijd",
+            "localizedLabels" : {
+              "en" : "na de maaltijd"
+            }
+          }, {
+            "value" : "1074",
+            "label" : "na de maaltijd innemen",
+            "localizedLabels" : {
+              "en" : "na de maaltijd innemen"
+            }
+          }, {
+            "value" : "1077",
+            "label" : "na het ontbijt",
+            "localizedLabels" : {
+              "en" : "na het ontbijt"
+            }
+          }, {
+            "value" : "1078",
+            "label" : "na het ontbijt met water innemen",
+            "localizedLabels" : {
+              "en" : "na het ontbijt met water innemen"
+            }
+          }, {
+            "value" : "1079",
+            "label" : "nuchter (voor het ontbijt) innemen",
+            "localizedLabels" : {
+              "en" : "nuchter (voor het ontbijt) innemen"
+            }
+          }, {
+            "value" : "1086",
+            "label" : "onder occlusie",
+            "localizedLabels" : {
+              "en" : "onder occlusie"
+            }
+          }, {
+            "value" : "1088",
+            "label" : "op het ooglid aanbrengen",
+            "localizedLabels" : {
+              "en" : "op het ooglid aanbrengen"
+            }
+          }, {
+            "value" : "1089",
+            "label" : "in het aangedane oog",
+            "localizedLabels" : {
+              "en" : "in het aangedane oog"
+            }
+          }, {
+            "value" : "1090",
+            "label" : "onder het ooglid aanbrengen",
+            "localizedLabels" : {
+              "en" : "onder het ooglid aanbrengen"
+            }
+          }, {
+            "value" : "1091",
+            "label" : "in het aangedane oor",
+            "localizedLabels" : {
+              "en" : "in het aangedane oor"
+            }
+          }, {
+            "value" : "1092",
+            "label" : "opkauwen",
+            "localizedLabels" : {
+              "en" : "opkauwen"
+            }
+          }, {
+            "value" : "1093",
+            "label" : "oplossen",
+            "localizedLabels" : {
+              "en" : "oplossen"
+            }
+          }, {
+            "value" : "1094",
+            "label" : "opsnuiven",
+            "localizedLabels" : {
+              "en" : "opsnuiven"
+            }
+          }, {
+            "value" : "1095",
+            "label" : "opzuigen",
+            "localizedLabels" : {
+              "en" : "opzuigen"
+            }
+          }, {
+            "value" : "1096",
+            "label" : "onder de tong",
+            "localizedLabels" : {
+              "en" : "onder de tong"
+            }
+          }, {
+            "value" : "1099",
+            "label" : "oplossen in water of limonade",
+            "localizedLabels" : {
+              "en" : "oplossen in water of limonade"
+            }
+          }, {
+            "value" : "1100",
+            "label" : "omroeren in water, melk of sap",
+            "localizedLabels" : {
+              "en" : "omroeren in water, melk of sap"
+            }
+          }, {
+            "value" : "1101",
+            "label" : "met penseel aanbrengen",
+            "localizedLabels" : {
+              "en" : "met penseel aanbrengen"
+            }
+          }, {
+            "value" : "1102",
+            "label" : "rectaal inbrengen",
+            "localizedLabels" : {
+              "en" : "rectaal inbrengen"
+            }
+          }, {
+            "value" : "1104",
+            "label" : "rechtop innemen met ruim water",
+            "localizedLabels" : {
+              "en" : "rechtop innemen met ruim water"
+            }
+          }, {
+            "value" : "1105",
+            "label" : "in het rechter oog",
+            "localizedLabels" : {
+              "en" : "in het rechter oog"
+            }
+          }, {
+            "value" : "1106",
+            "label" : "in het rechter oor",
+            "localizedLabels" : {
+              "en" : "in het rechter oor"
+            }
+          }, {
+            "value" : "1107",
+            "label" : "in het rechter neusgat",
+            "localizedLabels" : {
+              "en" : "in het rechter neusgat"
+            }
+          }, {
+            "value" : "1109",
+            "label" : "spoelen",
+            "localizedLabels" : {
+              "en" : "spoelen"
+            }
+          }, {
+            "value" : "1110",
+            "label" : "spoelen en doorslikken",
+            "localizedLabels" : {
+              "en" : "spoelen en doorslikken"
+            }
+          }, {
+            "value" : "1112",
+            "label" : "in het linker neusgat",
+            "localizedLabels" : {
+              "en" : "in het linker neusgat"
+            }
+          }, {
+            "value" : "1113",
+            "label" : "tijdens de maaltijd",
+            "localizedLabels" : {
+              "en" : "tijdens de maaltijd"
+            }
+          }, {
+            "value" : "1114",
+            "label" : "tijdens de maaltijd met melk innemen",
+            "localizedLabels" : {
+              "en" : "tijdens de maaltijd met melk innemen"
+            }
+          }, {
+            "value" : "1115",
+            "label" : "tijdens of na de maaltijd",
+            "localizedLabels" : {
+              "en" : "tijdens of na de maaltijd"
+            }
+          }, {
+            "value" : "1116",
+            "label" : "tussen de maaltijden door",
+            "localizedLabels" : {
+              "en" : "tussen de maaltijden door"
+            }
+          }, {
+            "value" : "1117",
+            "label" : "20 minuten voor de maaltijd",
+            "localizedLabels" : {
+              "en" : "20 minuten voor de maaltijd"
+            }
+          }, {
+            "value" : "1118",
+            "label" : "voor uitwendig gebruik",
+            "localizedLabels" : {
+              "en" : "voor uitwendig gebruik"
+            }
+          }, {
+            "value" : "1120",
+            "label" : "vaginaal aanbrengen",
+            "localizedLabels" : {
+              "en" : "vaginaal aanbrengen"
+            }
+          }, {
+            "value" : "1122",
+            "label" : "voor 't examen",
+            "localizedLabels" : {
+              "en" : "voor 't examen"
+            }
+          }, {
+            "value" : "1123",
+            "label" : "diep vaginaal inbrengen",
+            "localizedLabels" : {
+              "en" : "diep vaginaal inbrengen"
+            }
+          }, {
+            "value" : "1124",
+            "label" : "voor inwendig gebruik",
+            "localizedLabels" : {
+              "en" : "voor inwendig gebruik"
+            }
+          }, {
+            "value" : "1127",
+            "label" : "voor de maaltijd",
+            "localizedLabels" : {
+              "en" : "voor de maaltijd"
+            }
+          }, {
+            "value" : "1128",
+            "label" : "voor de nacht",
+            "localizedLabels" : {
+              "en" : "voor de nacht"
+            }
+          }, {
+            "value" : "1129",
+            "label" : "voor het ontbijt",
+            "localizedLabels" : {
+              "en" : "voor het ontbijt"
+            }
+          }, {
+            "value" : "1130",
+            "label" : "voor het slapen",
+            "localizedLabels" : {
+              "en" : "voor het slapen"
+            }
+          }, {
+            "value" : "1132",
+            "label" : "verstuiven",
+            "localizedLabels" : {
+              "en" : "verstuiven"
+            }
+          }, {
+            "value" : "1134",
+            "label" : "mee wassen",
+            "localizedLabels" : {
+              "en" : "mee wassen"
+            }
+          }, {
+            "value" : "1135",
+            "label" : "na het ontbijt, goed fijnkauwen",
+            "localizedLabels" : {
+              "en" : "na het ontbijt, goed fijnkauwen"
+            }
+          }, {
+            "value" : "1141",
+            "label" : "zo nodig voor de nacht",
+            "localizedLabels" : {
+              "en" : "zo nodig voor de nacht"
+            }
+          }, {
+            "value" : "1142",
+            "label" : "zo nodig voor het slapen",
+            "localizedLabels" : {
+              "en" : "zo nodig voor het slapen"
+            }
+          }, {
+            "value" : "1143",
+            "label" : "op de plekjes aanbrengen",
+            "localizedLabels" : {
+              "en" : "op de plekjes aanbrengen"
+            }
+          }, {
+            "value" : "1148",
+            "label" : "inbrengen",
+            "localizedLabels" : {
+              "en" : "inbrengen"
+            }
+          }, {
+            "value" : "1149",
+            "label" : "bij iedere luierwisseling",
+            "localizedLabels" : {
+              "en" : "bij iedere luierwisseling"
+            }
+          }, {
+            "value" : "1155",
+            "label" : "sprayen",
+            "localizedLabels" : {
+              "en" : "sprayen"
+            }
+          }, {
+            "value" : "1156",
+            "label" : "voor s.c. injectie",
+            "localizedLabels" : {
+              "en" : "voor s.c. injectie"
+            }
+          }, {
+            "value" : "1157",
+            "label" : "tijdens het ontbijt",
+            "localizedLabels" : {
+              "en" : "tijdens het ontbijt"
+            }
+          }, {
+            "value" : "1197",
+            "label" : "na het avondeten",
+            "localizedLabels" : {
+              "en" : "na het avondeten"
+            }
+          }, {
+            "value" : "1199",
+            "label" : "3 maal daags 1, 2 voor de nacht",
+            "localizedLabels" : {
+              "en" : "3 maal daags 1, 2 voor de nacht"
+            }
+          }, {
+            "value" : "1201",
+            "label" : "een half uur voor zonnebaden aanbrengen",
+            "localizedLabels" : {
+              "en" : "een half uur voor zonnebaden aanbrengen"
+            }
+          }, {
+            "value" : "1206",
+            "label" : "tenminste 1 week voor aankomst beginnen",
+            "localizedLabels" : {
+              "en" : "tenminste 1 week voor aankomst beginnen"
+            }
+          }, {
+            "value" : "1207",
+            "label" : "nog 4 weken na vertrek doorgebruiken",
+            "localizedLabels" : {
+              "en" : "nog 4 weken na vertrek doorgebruiken"
+            }
+          }, {
+            "value" : "1213",
+            "label" : "1e, 3e en 5e dag 1 capsule, voor het eten",
+            "localizedLabels" : {
+              "en" : "1e, 3e en 5e dag 1 capsule, voor het eten"
+            }
+          }, {
+            "value" : "1214",
+            "label" : "fors laxeren 1-2 uur na de kuur",
+            "localizedLabels" : {
+              "en" : "fors laxeren 1-2 uur na de kuur"
+            }
+          }, {
+            "value" : "1215",
+            "label" : "3 weken voor aankomst beginnen",
+            "localizedLabels" : {
+              "en" : "3 weken voor aankomst beginnen"
+            }
+          }, {
+            "value" : "1226",
+            "label" : "1-2 weken voor de verwachte menstruatie",
+            "localizedLabels" : {
+              "en" : "1-2 weken voor de verwachte menstruatie"
+            }
+          }, {
+            "value" : "1239",
+            "label" : "15e tot 25e dag van de cyclus",
+            "localizedLabels" : {
+              "en" : "15e tot 25e dag van de cyclus"
+            }
+          }, {
+            "value" : "1245",
+            "label" : "zo spoedig mogelijk; max 72 uur na coitus",
+            "localizedLabels" : {
+              "en" : "zo spoedig mogelijk; max 72 uur na coitus"
+            }
+          }, {
+            "value" : "1251",
+            "label" : "per dag dosering met 2 stuks verminderen",
+            "localizedLabels" : {
+              "en" : "per dag dosering met 2 stuks verminderen"
+            }
+          }, {
+            "value" : "1253",
+            "label" : "en na iedere ontlasting",
+            "localizedLabels" : {
+              "en" : "en na iedere ontlasting"
+            }
+          }, {
+            "value" : "1266",
+            "label" : "15 minuten voor de inspanning",
+            "localizedLabels" : {
+              "en" : "15 minuten voor de inspanning"
+            }
+          }, {
+            "value" : "1352",
+            "label" : "Gebruik met voorzetkamer met masker",
+            "localizedLabels" : {
+              "en" : "Gebruik met voorzetkamer met masker"
+            }
+          }, {
+            "value" : "1353",
+            "label" : "Gebruik met voorzetkamer met mondstuk",
+            "localizedLabels" : {
+              "en" : "Gebruik met voorzetkamer met mondstuk"
+            }
+          }, {
+            "value" : "1354",
+            "label" : "Gebruik met voorzetkamer",
+            "localizedLabels" : {
+              "en" : "Gebruik met voorzetkamer"
+            }
+          }, {
+            "value" : "1359",
+            "label" : "Na 24 uur lichaam wassen",
+            "localizedLabels" : {
+              "en" : "Na 24 uur lichaam wassen"
+            }
+          }, {
+            "value" : "1360",
+            "label" : "Capsule open maken",
+            "localizedLabels" : {
+              "en" : "Capsule open maken"
+            }
+          }, {
+            "value" : "1366",
+            "label" : "3-5 min. laten intrekken, daarna wassen",
+            "localizedLabels" : {
+              "en" : "3-5 min. laten intrekken, daarna wassen"
+            }
+          }, {
+            "value" : "1369",
+            "label" : "Achter het oor aanbrengen",
+            "localizedLabels" : {
+              "en" : "Achter het oor aanbrengen"
+            }
+          }, {
+            "value" : "1371",
+            "label" : "1e tot en met 4e dag van de menstruatie",
+            "localizedLabels" : {
+              "en" : "1e tot en met 4e dag van de menstruatie"
+            }
+          }, {
+            "value" : "1375",
+            "label" : "17e tot 28e dag van de cyclus",
+            "localizedLabels" : {
+              "en" : "17e tot 28e dag van de cyclus"
+            }
+          }, {
+            "value" : "OTH",
+            "label" : "overig",
+            "localizedLabels" : {
+              "en" : "overig"
+            }
+          } ],
+          "terminology" : "G-Standaard Gebruiksvoorschrift"
+        } ]
+      }, {
+        "id" : "timing",
+        "name" : "Timing",
+        "rmType" : "DV_PARSABLE",
+        "min" : 1,
+        "max" : 1,
+        "aqlPath" : "/activities[at0001]/timing",
+        "inputs" : [ {
+          "suffix" : "value",
+          "type" : "TEXT"
+        }, {
+          "suffix" : "formalism",
+          "type" : "TEXT"
+        } ],
+        "inContext" : true
+      }, {
+        "id" : "action_archetype_id",
+        "name" : "Action_archetype_id",
+        "rmType" : "STRING",
+        "min" : 1,
+        "max" : 1,
+        "aqlPath" : "/activities[at0001]/action_archetype_id",
+        "inputs" : [ {
+          "type" : "TEXT"
+        } ],
+        "inContext" : true
+      } ]
+    }, {
+      "id" : "expiry_time",
+      "name" : "expiry_time",
+      "rmType" : "DV_DATE_TIME",
+      "min" : 0,
+      "max" : 1,
+      "aqlPath" : "/expiry_time",
+      "inputs" : [ {
+        "type" : "DATETIME"
+      } ]
+    }, {
+      "id" : "narrative",
+      "name" : "Narrative",
+      "rmType" : "DV_TEXT",
+      "min" : 1,
+      "max" : 1,
+      "aqlPath" : "/narrative",
+      "inputs" : [ {
+        "type" : "TEXT"
+      } ],
+      "inContext" : true
+    }, {
+      "id" : "language",
+      "name" : "Language",
+      "rmType" : "CODE_PHRASE",
+      "min" : 1,
+      "max" : 1,
+      "aqlPath" : "/language",
+      "inContext" : true
+    }, {
+      "id" : "encoding",
+      "name" : "Encoding",
+      "rmType" : "CODE_PHRASE",
+      "min" : 1,
+      "max" : 1,
+      "aqlPath" : "/encoding",
+      "inContext" : true
+    }, {
+      "id" : "subject",
+      "name" : "Subject",
+      "rmType" : "PARTY_PROXY",
+      "min" : 1,
+      "max" : 1,
+      "aqlPath" : "/subject",
+      "inputs" : [ {
+        "suffix" : "id",
+        "type" : "TEXT"
+      }, {
+        "suffix" : "id_scheme",
+        "type" : "TEXT"
+      }, {
+        "suffix" : "id_namespace",
+        "type" : "TEXT"
+      }, {
+        "suffix" : "name",
+        "type" : "TEXT"
+      } ],
+      "inContext" : true
+    } ]
+  }
+}
