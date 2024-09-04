@@ -1,0 +1,447 @@
+{
+  "templateId" : "TabakGebruik-v3.5(2023NL)",
+  "semVer" : "0.1.5",
+  "version" : "2.3",
+  "defaultLanguage" : "nl",
+  "languages" : [ "nl" ],
+  "tree" : {
+    "id" : "tabakgebruik",
+    "name" : "TabakGebruik",
+    "localizedName" : "TabakGebruik",
+    "rmType" : "EVALUATION",
+    "nodeId" : "openEHR-EHR-EVALUATION.tobacco_smoking_summary.v1",
+    "min" : 1,
+    "max" : 1,
+    "localizedNames" : {
+      "nl" : "TabakGebruik"
+    },
+    "localizedDescriptions" : {
+      "nl" : "Samenvatting van de aanhoudende informatie over het tabak rookgedrag van een individu."
+    },
+    "aqlPath" : "",
+    "children" : [ {
+      "id" : "tabakgebruikstatus",
+      "name" : "TabakGebruikstatus",
+      "localizedName" : "TabakGebruikstatus",
+      "rmType" : "DV_CODED_TEXT",
+      "nodeId" : "at0089",
+      "min" : 1,
+      "max" : 1,
+      "localizedNames" : {
+        "nl" : "TabakGebruikstatus"
+      },
+      "localizedDescriptions" : {
+        "nl" : "Uitspraak over het huidige rookgedrag voor alle typen tabak."
+      },
+      "annotations" : {
+        "229819007" : "Tabaksgebruik en blootstelling aan tabaksrook"
+      },
+      "aqlPath" : "/data[at0001]/items[at0089,'TabakGebruikstatus']/value",
+      "inputs" : [ {
+        "suffix" : "code",
+        "type" : "CODED_TEXT",
+        "list" : [ {
+          "value" : "449868002",
+          "label" : "Rookt dagelijks tabak",
+          "localizedLabels" : {
+            "nl" : "Rookt dagelijks tabak"
+          }
+        }, {
+          "value" : "428041000124106",
+          "label" : "Rookt soms tabak",
+          "localizedLabels" : {
+            "nl" : "Rookt soms tabak"
+          }
+        }, {
+          "value" : "43381005",
+          "label" : "Rookt passief tabak",
+          "localizedLabels" : {
+            "nl" : "Rookt passief tabak"
+          }
+        }, {
+          "value" : "8517006",
+          "label" : "Rookte vroeger",
+          "localizedLabels" : {
+            "nl" : "Rookte vroeger"
+          }
+        }, {
+          "value" : "405746006",
+          "label" : "Niet-roker, maar rookgedrag in verleden onbekend",
+          "localizedLabels" : {
+            "nl" : "Niet-roker, maar rookgedrag in verleden onbekend"
+          }
+        }, {
+          "value" : "266919005",
+          "label" : "Heeft nooit gerookt",
+          "localizedLabels" : {
+            "nl" : "Heeft nooit gerookt"
+          }
+        }, {
+          "value" : "OTH",
+          "label" : "Anders",
+          "localizedLabels" : {
+            "nl" : "Anders"
+          }
+        } ],
+        "terminology" : "SNOMED CT"
+      } ]
+    }, {
+      "id" : "startdatum",
+      "name" : "StartDatum",
+      "localizedName" : "StartDatum",
+      "rmType" : "DV_DATE",
+      "nodeId" : "at0015",
+      "min" : 0,
+      "max" : 1,
+      "localizedNames" : {
+        "nl" : "StartDatum"
+      },
+      "localizedDescriptions" : {
+        "nl" : "De datum of gedeeltelijke datum waarop het individu begon met frequent of regelmatig, maar doorgaans niet dagelijks, tabak van enig type te roken."
+      },
+      "annotations" : {
+        "comment" : "Kan een gedeeltelijke datum zijn, zoals een jaartal. Bijvoorbeeld, deze datum kan het moment vertegenwoordigen waarop het individu iedere vrijdag of op feestjes begon te roken."
+      },
+      "aqlPath" : "/data[at0001]/items[at0015,'StartDatum']/value",
+      "inputs" : [ {
+        "type" : "DATE",
+        "validation" : {
+          "pattern" : "yyyy-??-??"
+        }
+      } ]
+    }, {
+      "id" : "per_type",
+      "name" : "Per type",
+      "localizedName" : "Per type",
+      "rmType" : "CLUSTER",
+      "nodeId" : "at0029",
+      "min" : 0,
+      "max" : -1,
+      "localizedNames" : {
+        "nl" : "Per type"
+      },
+      "localizedDescriptions" : {
+        "nl" : "Details over het rookgedrag voor een bepaalde vorm van gerookte tabak."
+      },
+      "aqlPath" : "/data[at0001]/items[at0029]",
+      "children" : [ {
+        "id" : "soorttabakgebruik",
+        "name" : "SoortTabakGebruik",
+        "localizedName" : "SoortTabakGebruik",
+        "rmType" : "DV_CODED_TEXT",
+        "nodeId" : "at0095",
+        "min" : 1,
+        "max" : 1,
+        "localizedNames" : {
+          "nl" : "SoortTabakGebruik"
+        },
+        "localizedDescriptions" : {
+          "nl" : "The type tabak gerookt door het individu."
+        },
+        "annotations" : {
+          "53661000146106" : "Type tabak gebruikt"
+        },
+        "aqlPath" : "/data[at0001]/items[at0029]/items[at0095,'SoortTabakGebruik']/value",
+        "inputs" : [ {
+          "suffix" : "code",
+          "type" : "CODED_TEXT",
+          "list" : [ {
+            "value" : "65568007",
+            "label" : "Rookt sigaretten",
+            "localizedLabels" : {
+              "nl" : "Rookt sigaretten"
+            }
+          }, {
+            "value" : "59978006",
+            "label" : "Rookt sigaren",
+            "localizedLabels" : {
+              "nl" : "Rookt sigaren"
+            }
+          }, {
+            "value" : "82302008",
+            "label" : "Pijproker",
+            "localizedLabels" : {
+              "nl" : "Pijproker"
+            }
+          }, {
+            "value" : "160619003",
+            "label" : "Rookt shag",
+            "localizedLabels" : {
+              "nl" : "Rookt shag"
+            }
+          }, {
+            "value" : "722499006",
+            "label" : "Gebruiker van elektronische sigaret",
+            "localizedLabels" : {
+              "nl" : "Gebruiker van elektronische sigaret"
+            }
+          }, {
+            "value" : "81703003",
+            "label" : "Kauwt tabak",
+            "localizedLabels" : {
+              "nl" : "Kauwt tabak"
+            }
+          }, {
+            "value" : "698289004",
+            "label" : "Roker van waterpijp",
+            "localizedLabels" : {
+              "nl" : "Roker van waterpijp"
+            }
+          }, {
+            "value" : "228494002",
+            "label" : "Gebruikt snuiftabak",
+            "localizedLabels" : {
+              "nl" : "Gebruikt snuiftabak"
+            }
+          }, {
+            "value" : "OTH",
+            "label" : "Anders",
+            "localizedLabels" : {
+              "nl" : "Anders"
+            }
+          } ],
+          "terminology" : "SNOMED CT"
+        } ]
+      }, {
+        "id" : "per_episode",
+        "name" : "Per episode",
+        "localizedName" : "Per episode",
+        "rmType" : "CLUSTER",
+        "nodeId" : "at0064",
+        "min" : 0,
+        "max" : 1,
+        "localizedNames" : {
+          "nl" : "Per episode"
+        },
+        "localizedDescriptions" : {
+          "nl" : "Details over een discrete periode van rookactiviteit voor dit type tabak."
+        },
+        "aqlPath" : "/data[at0001]/items[at0029]/items[at0064]",
+        "children" : [ {
+          "id" : "hoeveelheid_units",
+          "name" : "Hoeveelheid (units)",
+          "localizedName" : "Hoeveelheid (units)",
+          "rmType" : "DV_QUANTITY",
+          "nodeId" : "at0023",
+          "min" : 0,
+          "max" : 1,
+          "localizedNames" : {
+            "nl" : "Hoeveelheid (units)"
+          },
+          "localizedDescriptions" : {
+            "nl" : "Geschatte aantal genuttigde eenheden van dit type tabak."
+          },
+          "annotations" : {
+            "comment" : "Bijvoorbeeld: het aantal sigaretten of volle pijpen per dag of per week. Dit data element is redundant als er een waarde is vastgelegd in \"Typische gebruik (massa)\"."
+          },
+          "aqlPath" : "/data[at0001]/items[at0029]/items[at0064]/items[at0023,'Hoeveelheid (units)']/value",
+          "inputs" : [ {
+            "suffix" : "magnitude",
+            "type" : "DECIMAL"
+          }, {
+            "suffix" : "unit",
+            "type" : "CODED_TEXT",
+            "list" : [ {
+              "value" : "1/d",
+              "label" : "1/d",
+              "validation" : {
+                "range" : {
+                  "minOp" : ">=",
+                  "min" : 0.0
+                },
+                "precision" : {
+                  "minOp" : ">=",
+                  "min" : 1,
+                  "maxOp" : "<=",
+                  "max" : 1
+                }
+              }
+            }, {
+              "value" : "1/wk",
+              "label" : "1/wk",
+              "validation" : {
+                "range" : {
+                  "minOp" : ">=",
+                  "min" : 0.0
+                },
+                "precision" : {
+                  "minOp" : ">=",
+                  "min" : 1,
+                  "maxOp" : "<=",
+                  "max" : 1
+                }
+              }
+            } ]
+          } ]
+        }, {
+          "id" : "hoeveelheid_grams",
+          "name" : "Hoeveelheid (grams)",
+          "localizedName" : "Hoeveelheid (grams)",
+          "rmType" : "DV_QUANTITY",
+          "nodeId" : "at0065",
+          "min" : 0,
+          "max" : 1,
+          "localizedNames" : {
+            "nl" : "Hoeveelheid (grams)"
+          },
+          "localizedDescriptions" : {
+            "nl" : "Geschatte gewicht van de losse tabaksbladen die gerookt zijn."
+          },
+          "annotations" : {
+            "comment" : "Dit data element zal doorgaans gebruikt worden voor pijpen en hand-gerolde sigaretten en is redundant als er een waarde is vastgelegd in \"Typische gebruik (eenheden)\"."
+          },
+          "aqlPath" : "/data[at0001]/items[at0029]/items[at0064]/items[at0065,'Hoeveelheid (grams)']/value",
+          "inputs" : [ {
+            "suffix" : "magnitude",
+            "type" : "DECIMAL"
+          }, {
+            "suffix" : "unit",
+            "type" : "CODED_TEXT",
+            "list" : [ {
+              "value" : "g/d",
+              "label" : "g/d",
+              "validation" : {
+                "range" : {
+                  "minOp" : ">=",
+                  "min" : 0.0
+                },
+                "precision" : {
+                  "minOp" : ">=",
+                  "min" : 1,
+                  "maxOp" : "<=",
+                  "max" : 1
+                }
+              }
+            }, {
+              "value" : "g/wk",
+              "label" : "g/wk",
+              "validation" : {
+                "range" : {
+                  "minOp" : ">=",
+                  "min" : 0.0
+                },
+                "precision" : {
+                  "minOp" : ">=",
+                  "min" : 1,
+                  "maxOp" : "<=",
+                  "max" : 1
+                }
+              }
+            } ]
+          } ]
+        } ]
+      }, {
+        "id" : "packyears",
+        "name" : "PackYears",
+        "localizedName" : "PackYears",
+        "rmType" : "DV_COUNT",
+        "nodeId" : "at0017",
+        "min" : 0,
+        "max" : 1,
+        "localizedNames" : {
+          "nl" : "PackYears"
+        },
+        "localizedDescriptions" : {
+          "nl" : "Geschatte cumulatieve hoeveelheid tabak gerookt voor dit type tabak."
+        },
+        "annotations" : {
+          "comment" : "Meestal gebruikt in de beoordeling van sigaretgebruik. Het is berekend door het aantal pakjes sigaretten gerookt per dag te vermenigvuldigen met het aantal jaren dat het individu gerookt heeft. Een 'pack' is 365 pakjes sigaretten. Details over hoe packyears berekend kunnen worden voor overige typen tabak kunnen gevonden worden op http://smokingpackyears.com. De definitie van een 'pack' kan vastgelegd worden in de Protocol sectie van dit archetype met het 'Pack definitie' data element.",
+          "401201003" : "Pakjaren"
+        },
+        "aqlPath" : "/data[at0001]/items[at0029]/items[at0017,'PackYears']/value",
+        "inputs" : [ {
+          "type" : "INTEGER",
+          "validation" : {
+            "range" : {
+              "minOp" : ">=",
+              "min" : 0
+            }
+          }
+        } ]
+      } ]
+    }, {
+      "id" : "stopdatum",
+      "name" : "StopDatum",
+      "localizedName" : "StopDatum",
+      "rmType" : "DV_DATE",
+      "nodeId" : "at0016",
+      "min" : 0,
+      "max" : 1,
+      "localizedNames" : {
+        "nl" : "StopDatum"
+      },
+      "localizedDescriptions" : {
+        "nl" : "De datum waarop het individu het laatst gestopt is met het gebruik van tabak van welk type dan ook."
+      },
+      "annotations" : {
+        "comment" : "Kan een gedeeltelijke datum zijn, zoals een jaartal. Deze datum kan gebruikt worden in beslissingsondersteuning om te bepalen of het individu risico loopt op terugval, bijvoorbeeld in de eerste 12 maanden na stoppen."
+      },
+      "aqlPath" : "/data[at0001]/items[at0016,'StopDatum']/value",
+      "inputs" : [ {
+        "type" : "DATE",
+        "validation" : {
+          "pattern" : "yyyy-??-??"
+        }
+      } ]
+    }, {
+      "id" : "toelichting",
+      "name" : "Toelichting",
+      "localizedName" : "Toelichting",
+      "rmType" : "DV_TEXT",
+      "nodeId" : "at0019",
+      "min" : 0,
+      "max" : 1,
+      "localizedNames" : {
+        "nl" : "Toelichting"
+      },
+      "localizedDescriptions" : {
+        "nl" : "Aanvullende opmerkingen over het roken van tabak die niet vastgelegd zijn in overige velden."
+      },
+      "annotations" : {
+        "48767-8" : "Verklarend commentaar [interpretatie] in {systeem}",
+        "comment" : "Bijvoorbeeld: gestopt met roken or minder gaan roken bij aanvang zwangerschap."
+      },
+      "aqlPath" : "/data[at0001]/items[at0019,'Toelichting']/value",
+      "inputs" : [ {
+        "type" : "TEXT"
+      } ]
+    }, {
+      "id" : "language",
+      "name" : "Language",
+      "rmType" : "CODE_PHRASE",
+      "min" : 1,
+      "max" : 1,
+      "aqlPath" : "/language",
+      "inContext" : true
+    }, {
+      "id" : "encoding",
+      "name" : "Encoding",
+      "rmType" : "CODE_PHRASE",
+      "min" : 1,
+      "max" : 1,
+      "aqlPath" : "/encoding",
+      "inContext" : true
+    }, {
+      "id" : "subject",
+      "name" : "Subject",
+      "rmType" : "PARTY_PROXY",
+      "min" : 1,
+      "max" : 1,
+      "aqlPath" : "/subject",
+      "inputs" : [ {
+        "suffix" : "id",
+        "type" : "TEXT"
+      }, {
+        "suffix" : "id_scheme",
+        "type" : "TEXT"
+      }, {
+        "suffix" : "id_namespace",
+        "type" : "TEXT"
+      }, {
+        "suffix" : "name",
+        "type" : "TEXT"
+      } ],
+      "inContext" : true
+    } ]
+  }
+}

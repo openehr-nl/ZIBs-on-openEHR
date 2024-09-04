@@ -1,0 +1,10 @@
+ZIB_Id,ZIB_Naam,ZIB_Type,ZIB_Card,ZIB_DefCode,ZIB_Verwijzing,openEHR_Path,openEHR_Naam,openEHR_Type,openEHR_Card,openEHR_Term,Commentaar
+NL-CM:7.2.1,TabakGebruik,rootconcept,,,,,Tabak rookgedrag samenvatting,EVALUATION,,,
+NL-CM:7.2.3,Toelichting,ST,0..1,LOINC: 48767-8 Annotation comment [Interpretation] Narrative,,/data[at0001]/items[at0019.1],Algemene opmerkingen,DV_TEXT,0..1,,
+NL-CM:7.2.9,SoortTabakGebruik,CD,0..1,SNOMED CT: 53661000146106 Type tabak gebruikt,SoortTabakGebruikCodelijst,/data[at0001]/items[at0029]/items[at0095.1],Type,DV_CODED_TEXT,1,,Mandatory variable of the archetype. Refer to soorttabakgebruikcodelijst2023.csv value set
+NL-CM:7.2.10,TabakGebruikStatus,CD,1,SNOMED CT: 229819007 Tabaksgebruik en blootstelling aan tabaksrook,TabakGebruikStatusCodelijst,/data[at0001]/items[at0089.1],Algemene status,DV_CODED_TEXT,1,,"Refer to tabakgebruikstatuscodelijst2023.csv value set "
+NL-CM:7.2.2,WaarnemingGebruik,container,0..1,,,,,,,,
+NL-CM:7.2.4,StartDatum,TS,0..1,,,/data[at0001]/items[at0015.1],Regelmatig roken gestart,DV_DATE,0..1,,"year optional month, day"
+NL-CM:7.2.5,StopDatum,TS,0..1,,,/data[at0001]/items[at0016.1],Algemene stopdatum,DV_DATE,0..1,,"year optional month, day"
+NL-CM:7.2.6,Hoeveelheid,PQ,0..1,,,"/data[at0001]/items[at0029]/items[at0064.1]/items[at0065.1] AND /data[at0001]/items[at0029]/items[at0064.1]/items[at0023.1] ",Typische gebruik (eenheden) AND Typische gebruik (massa),DV_QUANTITY,0..1,,"Amount is initially in grams (definition from the ZIB variable), but we added a variable to allow recording the amount in units (ex: number of cigarette)"
+NL-CM:7.2.7,PackYears,INT,0..1,SNOMED CT: 401201003 Pakjaren,,/data[at0001]/items[at0029]/items[at0017.1],Packyears,DV_COUNT,0..1,,

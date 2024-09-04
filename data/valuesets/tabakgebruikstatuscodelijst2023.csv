@@ -1,0 +1,8 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Rookt dagelijks tabak,449868002,,SNOMED CT,2.16.840.1.113883.6.96,Rookt dagelijks,,,
+Rookt soms tabak,428041000124106,,SNOMED CT,2.16.840.1.113883.6.96,Rookt soms,,,
+Rookt passief tabak,43381005,,SNOMED CT,2.16.840.1.113883.6.96,Rookt passief,,,
+Rookte vroeger,8517006,,SNOMED CT,2.16.840.1.113883.6.96,Ex-roker,,,
+"Niet-roker, maar rookgedrag in verleden onbekend",405746006,,SNOMED CT,2.16.840.1.113883.6.96,"Niet-roker, maar rookgedrag in verleden onbekend",,,
+Heeft nooit gerookt,266919005,,SNOMED CT,2.16.840.1.113883.6.96,Nooit gerookt,,,
+Other,OTH,,NullFlavor,2.16.840.1.113883.5.1008,Anders,,,
