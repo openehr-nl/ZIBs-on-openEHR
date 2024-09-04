@@ -1,0 +1,11 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Bewust hoge dosering,1,,G-std thesaurus 2050,2.16.840.1.113883.2.4.3.11.60.20.77.5.2.14.2050,Bewust hoge dosering,,,
+Bewust lage dosering,2,,G-std thesaurus 2050,2.16.840.1.113883.2.4.3.11.60.20.77.5.2.14.2050,Bewust lage dosering,,,
+Bewust afwijkende toedieningsweg,3,,G-std thesaurus 2050,2.16.840.1.113883.2.4.3.11.60.20.77.5.2.14.2050,Bewust afwijkende toedieningsweg,,,
+Medische noodzaak,4,,G-std thesaurus 2050,2.16.840.1.113883.2.4.3.11.60.20.77.5.2.14.2050,Medische noodzaak,,,
+Profylaxe,5,,G-std thesaurus 2050,2.16.840.1.113883.2.4.3.11.60.20.77.5.2.14.2050,Profylaxe,,,
+Wijziging in GDS per direct,6,,G-std thesaurus 2050,2.16.840.1.113883.2.4.3.11.60.20.77.5.2.14.2050,Wijziging in GDS per direct,,,
+Wijziging in GDS per rolwissel,7,,G-std thesaurus 2050,2.16.840.1.113883.2.4.3.11.60.20.77.5.2.14.2050,Wijziging in GDS per rolwissel,,,
+Bewust afwijken van leeftijdsgrenzen,8,,G-std thesaurus 2050,2.16.840.1.113883.2.4.3.11.60.20.77.5.2.14.2050,Bewust afwijken van leeftijdsgrenzen,,,
+Bewust van te lage nierfunctie voor deze dosering ,9,,G-std thesaurus 2050,2.16.840.1.113883.2.4.3.11.60.20.77.5.2.14.2050,Bewust van te lage nierfunctie voor deze dosering,,,
+Bewust van eerder gemelde overgevoeligheid,10,,G-std thesaurus 2050,2.16.840.1.113883.2.4.3.11.60.20.77.5.2.14.2050,Bewust van eerder gemelde overgevoeligheid,,,

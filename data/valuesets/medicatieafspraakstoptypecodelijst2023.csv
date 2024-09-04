@@ -1,0 +1,3 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Tijdelijk gestopt met medicatie,113381000146106,,SNOMED CT ,2.16.840.1.113883.6.96 ,Tijdelijke onderbreking van medicamenteuze behandeling (bijvoorbeeld tijdelijk stoppen gebruik vanwege operatie).,at0026,Suspended,"Actions resulting from the order are to be temporarily halted, but are expected to continue later. May also be called 'on-hold'."
+Definitief gestopt met medicatie,113371000146109,,SNOMED CT,2.16.840.1.113883.6.96,Het staken van een bestaande medicamenteuze behandeling.,at0022,Stopped,"This is a medication that has previously been issued, dispensed or administered but has now been discontinued."
