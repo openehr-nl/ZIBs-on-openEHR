@@ -1,0 +1,483 @@
+{
+  "templateId" : "DrugsGebruik-v3.4.1(2023NL)",
+  "semVer" : "0.1.0",
+  "version" : "2.3",
+  "defaultLanguage" : "en",
+  "languages" : [ "en" ],
+  "tree" : {
+    "id" : "drugsgebruik-v3.4.1_2023nl",
+    "name" : "DrugsGebruik-v3.4.1(2023NL)",
+    "localizedName" : "DrugsGebruik-v3.4.1(2023NL)",
+    "rmType" : "EVALUATION",
+    "nodeId" : "openEHR-EHR-EVALUATION.substance_use_summary.v1",
+    "min" : 1,
+    "max" : 1,
+    "localizedNames" : {
+      "en" : "DrugsGebruik-v3.4.1(2023NL)"
+    },
+    "localizedDescriptions" : {
+      "en" : "Summary or persistent information about typical use of a specific substance or class of substances that may harm an individual's health or social well-being."
+    },
+    "annotations" : {
+      "228366006" : "Bevinding betreffende drugsgebruik",
+      "comment" : "Tobacco smoking, smokeless tobacco use, alcohol consumption, vaping and medication administration according to established medical guidelines and standards, are intentionally excluded from the scope of this archetype and recorded using other purpose-specific archetypes."
+    },
+    "aqlPath" : "",
+    "children" : [ {
+      "id" : "drugsofgeneesmiddelsoort",
+      "name" : "DrugsOfGeneesmiddelSoort",
+      "localizedName" : "DrugsOfGeneesmiddelSoort",
+      "rmType" : "DV_CODED_TEXT",
+      "nodeId" : "at0002",
+      "min" : 1,
+      "max" : 1,
+      "localizedNames" : {
+        "en" : "DrugsOfGeneesmiddelSoort"
+      },
+      "localizedDescriptions" : {
+        "en" : "The name of the substance or class of substance."
+      },
+      "annotations" : {
+        "comment" : "Coding with an external terminology is preferred, where possible."
+      },
+      "aqlPath" : "/data[at0001]/items[at0002,'DrugsOfGeneesmiddelSoort']/value",
+      "inputs" : [ {
+        "suffix" : "code",
+        "type" : "CODED_TEXT",
+        "list" : [ {
+          "value" : "387341002",
+          "label" : "Heroïne",
+          "localizedLabels" : {
+            "en" : "Heroïne"
+          }
+        }, {
+          "value" : "372664007",
+          "label" : "Benzodiazepine",
+          "localizedLabels" : {
+            "en" : "Benzodiazepine"
+          }
+        }, {
+          "value" : "387286002",
+          "label" : "Methadon",
+          "localizedLabels" : {
+            "en" : "Methadon"
+          }
+        }, {
+          "value" : "62821004",
+          "label" : "Hydroxyboterzuur",
+          "localizedLabels" : {
+            "en" : "Hydroxyboterzuur"
+          }
+        }, {
+          "value" : "387085005",
+          "label" : "Cocaïne",
+          "localizedLabels" : {
+            "en" : "Cocaïne"
+          }
+        }, {
+          "value" : "288459003",
+          "label" : "Methyleendioxymethamfetamine",
+          "localizedLabels" : {
+            "en" : "Methyleendioxymethamfetamine"
+          }
+        }, {
+          "value" : "703842006",
+          "label" : "Amfetamine",
+          "localizedLabels" : {
+            "en" : "Amfetamine"
+          }
+        }, {
+          "value" : "398705004",
+          "label" : "Cannabis",
+          "localizedLabels" : {
+            "en" : "Cannabis"
+          }
+        }, {
+          "value" : "229006007",
+          "label" : "Paddo",
+          "localizedLabels" : {
+            "en" : "Paddo"
+          }
+        }, {
+          "value" : "15698006",
+          "label" : "LSD",
+          "localizedLabels" : {
+            "en" : "LSD"
+          }
+        }, {
+          "value" : "373464007",
+          "label" : "Ketamine",
+          "localizedLabels" : {
+            "en" : "Ketamine"
+          }
+        }, {
+          "value" : "9721008",
+          "label" : "Fencyclidine",
+          "localizedLabels" : {
+            "en" : "Fencyclidine"
+          }
+        }, {
+          "value" : "387499002",
+          "label" : "Methamfetamine",
+          "localizedLabels" : {
+            "en" : "Methamfetamine"
+          }
+        }, {
+          "value" : "111151007",
+          "label" : "Anabool steroïd",
+          "localizedLabels" : {
+            "en" : "Anabool steroïd"
+          }
+        }, {
+          "value" : "372800002",
+          "label" : "Laxans",
+          "localizedLabels" : {
+            "en" : "Laxans"
+          }
+        }, {
+          "value" : "387173000",
+          "label" : "Buprenorfine",
+          "localizedLabels" : {
+            "en" : "Buprenorfine"
+          }
+        }, {
+          "value" : "373492002",
+          "label" : "Fentanyl",
+          "localizedLabels" : {
+            "en" : "Fentanyl"
+          }
+        }, {
+          "value" : "372798009",
+          "label" : "Barbituraat",
+          "localizedLabels" : {
+            "en" : "Barbituraat"
+          }
+        }, {
+          "value" : "404642006",
+          "label" : "Opioïdreceptoragonist",
+          "localizedLabels" : {
+            "en" : "Opioïdreceptoragonist"
+          }
+        }, {
+          "value" : "33471000146101",
+          "label" : "4-fluoramfetamine",
+          "localizedLabels" : {
+            "en" : "4-fluoramfetamine"
+          }
+        }, {
+          "value" : "55452001",
+          "label" : "Oxycodon",
+          "localizedLabels" : {
+            "en" : "Oxycodon"
+          }
+        }, {
+          "value" : "111132001",
+          "label" : "Distikstofmonoxide",
+          "localizedLabels" : {
+            "en" : "Distikstofmonoxide"
+          }
+        }, {
+          "value" : "OTH",
+          "label" : "Anders",
+          "localizedLabels" : {
+            "en" : "Anders"
+          }
+        } ],
+        "terminology" : "SNOMED CT"
+      } ]
+    }, {
+      "id" : "drugsgebruikstatus",
+      "name" : "DrugsGebruikStatus",
+      "localizedName" : "DrugsGebruikStatus",
+      "rmType" : "DV_CODED_TEXT",
+      "nodeId" : "at0003",
+      "min" : 1,
+      "max" : 1,
+      "localizedNames" : {
+        "en" : "DrugsGebruikStatus"
+      },
+      "localizedDescriptions" : {
+        "en" : "Statement about current use of the substance, by all routes."
+      },
+      "annotations" : {
+        "228366006" : "Bevinding betreffende drugsgebruik"
+      },
+      "aqlPath" : "/data[at0001]/items[at0003,'DrugsGebruikStatus']/value",
+      "inputs" : [ {
+        "suffix" : "code",
+        "type" : "CODED_TEXT",
+        "list" : [ {
+          "value" : "417284009",
+          "label" : "Huidige drugsgebruiker",
+          "localizedLabels" : {
+            "en" : "Huidige drugsgebruiker"
+          }
+        }, {
+          "value" : "228367002",
+          "label" : "Gebruikt geen drugs",
+          "localizedLabels" : {
+            "en" : "Gebruikt geen drugs"
+          }
+        }, {
+          "value" : "228368007",
+          "label" : "Heeft nooit drugs gebruikt",
+          "localizedLabels" : {
+            "en" : "Heeft nooit drugs gebruikt"
+          }
+        }, {
+          "value" : "44870007",
+          "label" : "Heeft in verleden drugs gebruikt",
+          "localizedLabels" : {
+            "en" : "Heeft in verleden drugs gebruikt"
+          }
+        }, {
+          "value" : "OTH",
+          "label" : "Anders",
+          "localizedLabels" : {
+            "en" : "Anders"
+          }
+        } ],
+        "terminology" : "SNOMED CT"
+      } ]
+    }, {
+      "id" : "startdatum",
+      "name" : "StartDatum",
+      "localizedName" : "StartDatum",
+      "rmType" : "DV_DATE_TIME",
+      "nodeId" : "at0009",
+      "min" : 0,
+      "max" : 1,
+      "localizedNames" : {
+        "en" : "StartDatum"
+      },
+      "localizedDescriptions" : {
+        "en" : "The date when the individual first started frequent or regular, but usually non-daily, use of the substance."
+      },
+      "annotations" : {
+        "comment" : "Can be a partial date, for example, only a year. For example, this date could represent when the individual commenced using the substance every Friday night or at parties."
+      },
+      "aqlPath" : "/data[at0001]/items[at0009,'StartDatum']/value",
+      "inputs" : [ {
+        "type" : "DATETIME",
+        "validation" : {
+          "pattern" : "yyyy-??-??TXX:XX:XX"
+        }
+      } ]
+    }, {
+      "id" : "per_episode",
+      "name" : "Per episode",
+      "localizedName" : "Per episode",
+      "rmType" : "CLUSTER",
+      "nodeId" : "at0012",
+      "min" : 0,
+      "max" : -1,
+      "localizedNames" : {
+        "en" : "Per episode"
+      },
+      "localizedDescriptions" : {
+        "en" : "Details about a period of use of the substance identified in 'Substance name' or, if a class of substance is used in 'Substance name, to provide details about the use of a specific substance."
+      },
+      "aqlPath" : "/data[at0001]/items[at0012]",
+      "children" : [ {
+        "id" : "hoeveelheid",
+        "name" : "Hoeveelheid",
+        "localizedName" : "Hoeveelheid",
+        "rmType" : "DV_QUANTITY",
+        "nodeId" : "at0019",
+        "min" : 0,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "Hoeveelheid"
+        },
+        "localizedDescriptions" : {
+          "en" : "The typical pattern of frequency of use of the specific substance during the episode."
+        },
+        "annotations" : {
+          "comment" : "This element is repeatable to allow multiple ways of recording the pattern of use. The typical pattern of use can be made more granular by coding with a terminology or a local value set, or using the quantity data type, in a template."
+        },
+        "aqlPath" : "/data[at0001]/items[at0012]/items[at0019,'Hoeveelheid']/value",
+        "inputs" : [ {
+          "suffix" : "magnitude",
+          "type" : "DECIMAL"
+        }, {
+          "suffix" : "unit",
+          "type" : "CODED_TEXT",
+          "list" : [ {
+            "value" : "1/d",
+            "label" : "1/d",
+            "validation" : {
+              "range" : {
+                "minOp" : ">=",
+                "min" : 0.0
+              }
+            }
+          }, {
+            "value" : "1/wk",
+            "label" : "1/wk",
+            "validation" : {
+              "range" : {
+                "minOp" : ">=",
+                "min" : 0.0
+              }
+            }
+          }, {
+            "value" : "1/mo",
+            "label" : "1/mo",
+            "validation" : {
+              "range" : {
+                "minOp" : ">=",
+                "min" : 0.0
+              }
+            }
+          }, {
+            "value" : "1/a",
+            "label" : "1/a",
+            "validation" : {
+              "range" : {
+                "minOp" : ">=",
+                "min" : 0.0
+              }
+            }
+          } ]
+        } ]
+      }, {
+        "id" : "toedieningsweg",
+        "name" : "Toedieningsweg",
+        "localizedName" : "Toedieningsweg",
+        "rmType" : "DV_CODED_TEXT",
+        "nodeId" : "at0036",
+        "min" : 1,
+        "max" : -1,
+        "localizedNames" : {
+          "en" : "Toedieningsweg"
+        },
+        "localizedDescriptions" : {
+          "en" : "The name of the route of administration of the specified substance during the episode."
+        },
+        "annotations" : {
+          "410675002" : "Toedieningsweg",
+          "comment" : "Coding with an external terminology is preferred, where possible."
+        },
+        "aqlPath" : "/data[at0001]/items[at0012]/items[at0036,'Toedieningsweg']/value",
+        "inputs" : [ {
+          "suffix" : "code",
+          "type" : "CODED_TEXT",
+          "list" : [ {
+            "value" : "9",
+            "label" : "ORAAL",
+            "localizedLabels" : {
+              "en" : "ORAAL"
+            }
+          }, {
+            "value" : "6",
+            "label" : "NASAAL",
+            "localizedLabels" : {
+              "en" : "NASAAL"
+            }
+          }, {
+            "value" : "62",
+            "label" : "INHALATIE",
+            "localizedLabels" : {
+              "en" : "INHALATIE"
+            }
+          }, {
+            "value" : "5",
+            "label" : "INTRAVENEUS",
+            "localizedLabels" : {
+              "en" : "INTRAVENEUS"
+            }
+          }, {
+            "value" : "OTH",
+            "label" : "Anders",
+            "localizedLabels" : {
+              "en" : "Anders"
+            }
+          } ],
+          "terminology" : "G-Standaard Toedieningswegen"
+        } ]
+      } ]
+    }, {
+      "id" : "stopdatum",
+      "name" : "StopDatum",
+      "localizedName" : "StopDatum",
+      "rmType" : "DV_DATE_TIME",
+      "nodeId" : "at0028",
+      "min" : 0,
+      "max" : 1,
+      "localizedNames" : {
+        "en" : "StopDatum"
+      },
+      "localizedDescriptions" : {
+        "en" : "The date when the individual last used the substance."
+      },
+      "annotations" : {
+        "comment" : "Can be a partial date, for example, only a year."
+      },
+      "aqlPath" : "/data[at0001]/items[at0028,'StopDatum']/value",
+      "inputs" : [ {
+        "type" : "DATETIME",
+        "validation" : {
+          "pattern" : "yyyy-??-??TXX:XX:XX"
+        }
+      } ]
+    }, {
+      "id" : "toelichting",
+      "name" : "Toelichting",
+      "localizedName" : "Toelichting",
+      "rmType" : "DV_TEXT",
+      "nodeId" : "at0030",
+      "min" : 0,
+      "max" : 1,
+      "localizedNames" : {
+        "en" : "Toelichting"
+      },
+      "localizedDescriptions" : {
+        "en" : "Additional narrative about the overall use of the substance that has not been captured in other fields."
+      },
+      "annotations" : {
+        "48767-8" : "Verklarend commentaar [interpretatie] in {systeem}"
+      },
+      "aqlPath" : "/data[at0001]/items[at0030,'Toelichting']/value",
+      "inputs" : [ {
+        "type" : "TEXT"
+      } ]
+    }, {
+      "id" : "language",
+      "name" : "Language",
+      "rmType" : "CODE_PHRASE",
+      "min" : 1,
+      "max" : 1,
+      "aqlPath" : "/language",
+      "inContext" : true
+    }, {
+      "id" : "encoding",
+      "name" : "Encoding",
+      "rmType" : "CODE_PHRASE",
+      "min" : 1,
+      "max" : 1,
+      "aqlPath" : "/encoding",
+      "inContext" : true
+    }, {
+      "id" : "subject",
+      "name" : "Subject",
+      "rmType" : "PARTY_PROXY",
+      "min" : 1,
+      "max" : 1,
+      "aqlPath" : "/subject",
+      "inputs" : [ {
+        "suffix" : "id",
+        "type" : "TEXT"
+      }, {
+        "suffix" : "id_scheme",
+        "type" : "TEXT"
+      }, {
+        "suffix" : "id_namespace",
+        "type" : "TEXT"
+      }, {
+        "suffix" : "name",
+        "type" : "TEXT"
+      } ],
+      "inContext" : true
+    } ]
+  }
+}

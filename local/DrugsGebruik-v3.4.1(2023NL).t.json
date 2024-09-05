@@ -1,0 +1,950 @@
+{
+  "@type" : "TEMPLATE",
+  "uid" : "160ce671-2d90-4d81-b58d-2f6670acfc2e",
+  "description" : {
+    "@type" : "RESOURCE_DESCRIPTION",
+    "originalAuthor" : {
+      "name" : "Helene Kabbech",
+      "organisation" : "DataHub Maastricht",
+      "email" : "helene.kabbech@maastrichtuniversity.nl",
+      "date" : "2024-09-04"
+    },
+    "otherContributors" : [ ],
+    "lifecycleState" : {
+      "codeString" : "unmanaged"
+    },
+    "ipAcknowledgements" : { },
+    "references" : { },
+    "conversionDetails" : { },
+    "otherDetails" : {
+      "licence" : "",
+      "custodian_organisation" : "",
+      "original_namespace" : "",
+      "original_publisher" : "",
+      "custodian_namespace" : "",
+      "sem_ver" : "0.1.0",
+      "build_uid" : "",
+      "MD5-CAM-1.0.1" : "a8105aafc44566925893a8513e960804",
+      "PARENT:MD5-CAM-1.0.1" : "871F6A0869B1769754FFE382C7D24243"
+    },
+    "details" : {
+      "nb" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "nb"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "en" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "en"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      }
+    }
+  },
+  "annotations" : {
+    "@type" : "RESOURCE_ANNOTATIONS",
+    "documentation" : {
+      "en" : {
+        "/data[at0001]/items[at0030.1]" : {
+          "48767-8" : "Verklarend commentaar [interpretatie] in {systeem}"
+        },
+        "" : {
+          "228366006" : "Bevinding betreffende drugsgebruik"
+        },
+        "/data[at0001]/items[at0003.1]" : {
+          "228366006" : "Bevinding betreffende drugsgebruik"
+        },
+        "/data[at0001]/items[at0012]/items[at0036.1]" : {
+          "410675002" : "Toedieningsweg"
+        }
+      }
+    }
+  },
+  "parentArchetypeId" : "openEHR-EHR-EVALUATION.substance_use_summary.v1",
+  "differential" : true,
+  "archetypeId" : {
+    "@type" : "ARCHETYPE_HRID",
+    "value" : "openEHR-EHR-EVALUATION.t_substance_use_summary.v1"
+  },
+  "definition" : {
+    "@type" : "C_COMPLEX_OBJECT",
+    "rmTypeName" : "EVALUATION",
+    "nodeId" : "at0000.1",
+    "attributes" : [ {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "data",
+      "children" : [ {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "ITEM_TREE",
+        "nodeId" : "at0001",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "items",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "nodeId" : "at0002.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_CODED_TEXT",
+                "occurrences" : "1..1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "defining_code",
+                  "children" : [ {
+                    "@type" : "C_TERMINOLOGY_CODE",
+                    "rmTypeName" : "TERMINOLOGY_CODE",
+                    "occurrences" : "0..1",
+                    "terminologyId" : {
+                      "value" : "SNOMED CT"
+                    },
+                    "constraint" : [ ],
+                    "selectedTerminologies" : [ "SNOMED CT" ],
+                    "includedExternalTerminologyCodes" : [ {
+                      "terminologyId" : "SNOMED CT",
+                      "code" : "387341002",
+                      "value" : "Heroïne"
+                    }, {
+                      "terminologyId" : "SNOMED CT",
+                      "code" : "372664007",
+                      "value" : "Benzodiazepine"
+                    }, {
+                      "terminologyId" : "SNOMED CT",
+                      "code" : "387286002",
+                      "value" : "Methadon"
+                    }, {
+                      "terminologyId" : "SNOMED CT",
+                      "code" : "62821004",
+                      "value" : "Hydroxyboterzuur"
+                    }, {
+                      "terminologyId" : "SNOMED CT",
+                      "code" : "387085005",
+                      "value" : "Cocaïne"
+                    }, {
+                      "terminologyId" : "SNOMED CT",
+                      "code" : "288459003",
+                      "value" : "Methyleendioxymethamfetamine"
+                    }, {
+                      "terminologyId" : "SNOMED CT",
+                      "code" : "703842006",
+                      "value" : "Amfetamine"
+                    }, {
+                      "terminologyId" : "SNOMED CT",
+                      "code" : "398705004",
+                      "value" : "Cannabis"
+                    }, {
+                      "terminologyId" : "SNOMED CT",
+                      "code" : "229006007",
+                      "value" : "Paddo"
+                    }, {
+                      "terminologyId" : "SNOMED CT",
+                      "code" : "15698006",
+                      "value" : "LSD"
+                    }, {
+                      "terminologyId" : "SNOMED CT",
+                      "code" : "373464007",
+                      "value" : "Ketamine"
+                    }, {
+                      "terminologyId" : "SNOMED CT",
+                      "code" : "9721008",
+                      "value" : "Fencyclidine"
+                    }, {
+                      "terminologyId" : "SNOMED CT",
+                      "code" : "387499002",
+                      "value" : "Methamfetamine"
+                    }, {
+                      "terminologyId" : "SNOMED CT",
+                      "code" : "111151007",
+                      "value" : "Anabool steroïd"
+                    }, {
+                      "terminologyId" : "SNOMED CT",
+                      "code" : "372800002",
+                      "value" : "Laxans"
+                    }, {
+                      "terminologyId" : "SNOMED CT",
+                      "code" : "387173000",
+                      "value" : "Buprenorfine"
+                    }, {
+                      "terminologyId" : "SNOMED CT",
+                      "code" : "373492002",
+                      "value" : "Fentanyl"
+                    }, {
+                      "terminologyId" : "SNOMED CT",
+                      "code" : "372798009",
+                      "value" : "Barbituraat"
+                    }, {
+                      "terminologyId" : "SNOMED CT",
+                      "code" : "404642006",
+                      "value" : "Opioïdreceptoragonist"
+                    }, {
+                      "terminologyId" : "SNOMED CT",
+                      "code" : "33471000146101",
+                      "value" : "4-fluoramfetamine"
+                    }, {
+                      "terminologyId" : "SNOMED CT",
+                      "code" : "55452001",
+                      "value" : "Oxycodon"
+                    }, {
+                      "terminologyId" : "SNOMED CT",
+                      "code" : "111132001",
+                      "value" : "Distikstofmonoxide"
+                    }, {
+                      "terminologyId" : "SNOMED CT",
+                      "code" : "OTH",
+                      "value" : "Anders"
+                    } ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "1..1",
+            "nodeId" : "at0003.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_CODED_TEXT",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "defining_code",
+                  "children" : [ {
+                    "@type" : "C_TERMINOLOGY_CODE",
+                    "rmTypeName" : "TERMINOLOGY_CODE",
+                    "occurrences" : "1..1",
+                    "terminologyId" : {
+                      "value" : "SNOMED CT"
+                    },
+                    "constraint" : [ ],
+                    "selectedTerminologies" : [ "SNOMED CT" ],
+                    "includedExternalTerminologyCodes" : [ {
+                      "terminologyId" : "SNOMED CT",
+                      "code" : "417284009",
+                      "value" : "Huidige drugsgebruiker"
+                    }, {
+                      "terminologyId" : "SNOMED CT",
+                      "code" : "228367002",
+                      "value" : "Gebruikt geen drugs"
+                    }, {
+                      "terminologyId" : "SNOMED CT",
+                      "code" : "228368007",
+                      "value" : "Heeft nooit drugs gebruikt"
+                    }, {
+                      "terminologyId" : "SNOMED CT",
+                      "code" : "44870007",
+                      "value" : "Heeft in verleden drugs gebruikt"
+                    }, {
+                      "terminologyId" : "SNOMED CT",
+                      "code" : "OTH",
+                      "value" : "Anders"
+                    } ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0007.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0008.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "nodeId" : "at0009.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_DATE_TIME",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_DATE_TIME",
+                    "rmTypeName" : "DATE_TIME",
+                    "patternedConstraint" : "yyyy-??-??TXX:XX:XX",
+                    "constraint" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0010.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "CLUSTER",
+            "nodeId" : "at0012",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "items",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0013.1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_COUNT",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "magnitude",
+                      "children" : [ {
+                        "@type" : "C_INTEGER",
+                        "rmTypeName" : "Integer",
+                        "occurrences" : "1..1",
+                        "constraint" : [ {
+                          "lower" : 0,
+                          "lowerIncluded" : true,
+                          "upperIncluded" : false,
+                          "lowerUnbounded" : false,
+                          "upperUnbounded" : true
+                        } ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  }, {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_TEXT",
+                    "attributes" : [ ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0014.1",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0016.1",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0017.1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_CODED_TEXT",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "defining_code",
+                      "children" : [ {
+                        "@type" : "C_TERMINOLOGY_CODE",
+                        "rmTypeName" : "CODE_PHRASE",
+                        "occurrences" : "1..1",
+                        "terminologyId" : {
+                          "value" : "local"
+                        },
+                        "constraint" : [ "at0042", "at0043" ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0018.1",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..1",
+                "nodeId" : "at0019.1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_QUANTITY",
+                    "attributes" : [ ],
+                    "attributeTuples" : [ {
+                      "@type" : "C_ATTRIBUTE_TUPLE",
+                      "members" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "units",
+                        "children" : [ ]
+                      }, {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "magnitude",
+                        "children" : [ ]
+                      } ],
+                      "tuples" : [ {
+                        "@type" : "C_PRIMITIVE_TUPLE",
+                        "members" : [ {
+                          "@type" : "C_STRING",
+                          "rmTypeName" : "STRING",
+                          "constraint" : [ "1/d" ]
+                        }, {
+                          "@type" : "C_REAL",
+                          "rmTypeName" : "REAL",
+                          "constraint" : [ {
+                            "lower" : 0.0,
+                            "lowerIncluded" : true,
+                            "upperIncluded" : false,
+                            "lowerUnbounded" : false,
+                            "upperUnbounded" : true
+                          } ]
+                        } ]
+                      }, {
+                        "@type" : "C_PRIMITIVE_TUPLE",
+                        "members" : [ {
+                          "@type" : "C_STRING",
+                          "rmTypeName" : "STRING",
+                          "constraint" : [ "1/wk" ]
+                        }, {
+                          "@type" : "C_REAL",
+                          "rmTypeName" : "REAL",
+                          "constraint" : [ {
+                            "lower" : 0.0,
+                            "lowerIncluded" : true,
+                            "upperIncluded" : false,
+                            "lowerUnbounded" : false,
+                            "upperUnbounded" : true
+                          } ]
+                        } ]
+                      }, {
+                        "@type" : "C_PRIMITIVE_TUPLE",
+                        "members" : [ {
+                          "@type" : "C_STRING",
+                          "rmTypeName" : "STRING",
+                          "constraint" : [ "1/mo" ]
+                        }, {
+                          "@type" : "C_REAL",
+                          "rmTypeName" : "REAL",
+                          "constraint" : [ {
+                            "lower" : 0.0,
+                            "lowerIncluded" : true,
+                            "upperIncluded" : false,
+                            "lowerUnbounded" : false,
+                            "upperUnbounded" : true
+                          } ]
+                        } ]
+                      }, {
+                        "@type" : "C_PRIMITIVE_TUPLE",
+                        "members" : [ {
+                          "@type" : "C_STRING",
+                          "rmTypeName" : "STRING",
+                          "constraint" : [ "1/a" ]
+                        }, {
+                          "@type" : "C_REAL",
+                          "rmTypeName" : "REAL",
+                          "constraint" : [ {
+                            "lower" : 0.0,
+                            "lowerIncluded" : true,
+                            "upperIncluded" : false,
+                            "lowerUnbounded" : false,
+                            "upperUnbounded" : true
+                          } ]
+                        } ]
+                      } ]
+                    } ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0023.1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_QUANTITY",
+                    "attributes" : [ ],
+                    "attributeTuples" : [ {
+                      "@type" : "C_ATTRIBUTE_TUPLE",
+                      "members" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "magnitude",
+                        "children" : [ ]
+                      }, {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "units",
+                        "children" : [ ]
+                      } ],
+                      "tuples" : [ {
+                        "@type" : "C_PRIMITIVE_TUPLE",
+                        "members" : [ {
+                          "@type" : "C_REAL",
+                          "constraint" : [ {
+                            "lower" : 0.0,
+                            "lowerIncluded" : true,
+                            "upperIncluded" : false,
+                            "lowerUnbounded" : false,
+                            "upperUnbounded" : true
+                          } ]
+                        }, {
+                          "@type" : "C_STRING",
+                          "constraint" : [ "mg/d" ]
+                        } ]
+                      }, {
+                        "@type" : "C_PRIMITIVE_TUPLE",
+                        "members" : [ {
+                          "@type" : "C_REAL",
+                          "constraint" : [ {
+                            "lower" : 0.0,
+                            "lowerIncluded" : true,
+                            "upperIncluded" : false,
+                            "lowerUnbounded" : false,
+                            "upperUnbounded" : true
+                          } ]
+                        }, {
+                          "@type" : "C_STRING",
+                          "constraint" : [ "g/d" ]
+                        } ]
+                      }, {
+                        "@type" : "C_PRIMITIVE_TUPLE",
+                        "members" : [ {
+                          "@type" : "C_REAL",
+                          "constraint" : [ {
+                            "lower" : 0.0,
+                            "lowerIncluded" : true,
+                            "upperIncluded" : false,
+                            "lowerUnbounded" : false,
+                            "upperUnbounded" : true
+                          } ]
+                        }, {
+                          "@type" : "C_STRING",
+                          "constraint" : [ "mg/wk" ]
+                        } ]
+                      }, {
+                        "@type" : "C_PRIMITIVE_TUPLE",
+                        "members" : [ {
+                          "@type" : "C_REAL",
+                          "constraint" : [ {
+                            "lower" : 0.0,
+                            "lowerIncluded" : true,
+                            "upperIncluded" : false,
+                            "lowerUnbounded" : false,
+                            "upperUnbounded" : true
+                          } ]
+                        }, {
+                          "@type" : "C_STRING",
+                          "constraint" : [ "g/wk" ]
+                        } ]
+                      }, {
+                        "@type" : "C_PRIMITIVE_TUPLE",
+                        "members" : [ {
+                          "@type" : "C_REAL",
+                          "constraint" : [ {
+                            "lower" : 0.0,
+                            "lowerIncluded" : true,
+                            "upperIncluded" : false,
+                            "lowerUnbounded" : false,
+                            "upperUnbounded" : true
+                          } ]
+                        }, {
+                          "@type" : "C_STRING",
+                          "constraint" : [ "mg/mo" ]
+                        } ]
+                      }, {
+                        "@type" : "C_PRIMITIVE_TUPLE",
+                        "members" : [ {
+                          "@type" : "C_REAL",
+                          "constraint" : [ {
+                            "lower" : 0.0,
+                            "lowerIncluded" : true,
+                            "upperIncluded" : false,
+                            "lowerUnbounded" : false,
+                            "upperUnbounded" : true
+                          } ]
+                        }, {
+                          "@type" : "C_STRING",
+                          "constraint" : [ "g/mo" ]
+                        } ]
+                      }, {
+                        "@type" : "C_PRIMITIVE_TUPLE",
+                        "members" : [ {
+                          "@type" : "C_REAL",
+                          "constraint" : [ {
+                            "lower" : 0.0,
+                            "lowerIncluded" : true,
+                            "upperIncluded" : false,
+                            "lowerUnbounded" : false,
+                            "upperUnbounded" : true
+                          } ]
+                        }, {
+                          "@type" : "C_STRING",
+                          "constraint" : [ "ug/d" ]
+                        } ]
+                      }, {
+                        "@type" : "C_PRIMITIVE_TUPLE",
+                        "members" : [ {
+                          "@type" : "C_REAL",
+                          "constraint" : [ {
+                            "lower" : 0.0,
+                            "lowerIncluded" : true,
+                            "upperIncluded" : false,
+                            "lowerUnbounded" : false,
+                            "upperUnbounded" : true
+                          } ]
+                        }, {
+                          "@type" : "C_STRING",
+                          "constraint" : [ "ug/wk" ]
+                        } ]
+                      }, {
+                        "@type" : "C_PRIMITIVE_TUPLE",
+                        "members" : [ {
+                          "@type" : "C_REAL",
+                          "constraint" : [ {
+                            "lower" : 0.0,
+                            "lowerIncluded" : true,
+                            "upperIncluded" : false,
+                            "lowerUnbounded" : false,
+                            "upperUnbounded" : true
+                          } ]
+                        }, {
+                          "@type" : "C_STRING",
+                          "constraint" : [ "ug/mo" ]
+                        } ]
+                      } ]
+                    } ]
+                  }, {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_TEXT",
+                    "attributes" : [ ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0036.1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_CODED_TEXT",
+                    "occurrences" : "1..1",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "defining_code",
+                      "children" : [ {
+                        "@type" : "C_TERMINOLOGY_CODE",
+                        "rmTypeName" : "TERMINOLOGY_CODE",
+                        "occurrences" : "0..1",
+                        "terminologyId" : {
+                          "value" : "G-Standaard Toedieningswegen"
+                        },
+                        "constraint" : [ ],
+                        "selectedTerminologies" : [ "G-Standaard Toedieningswegen" ],
+                        "includedExternalTerminologyCodes" : [ {
+                          "terminologyId" : "G-Standaard Toedieningswegen",
+                          "code" : "9",
+                          "value" : "ORAAL"
+                        }, {
+                          "terminologyId" : "G-Standaard Toedieningswegen",
+                          "code" : "6",
+                          "value" : "NASAAL"
+                        }, {
+                          "terminologyId" : "G-Standaard Toedieningswegen",
+                          "code" : "62",
+                          "value" : "INHALATIE"
+                        }, {
+                          "terminologyId" : "G-Standaard Toedieningswegen",
+                          "code" : "5",
+                          "value" : "INTRAVENEUS"
+                        }, {
+                          "terminologyId" : "G-Standaard Toedieningswegen",
+                          "code" : "OTH",
+                          "value" : "Anders"
+                        } ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0015.1",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0024.1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_COUNT",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "magnitude",
+                      "children" : [ {
+                        "@type" : "C_INTEGER",
+                        "rmTypeName" : "Integer",
+                        "occurrences" : "1..1",
+                        "constraint" : [ {
+                          "lower" : 0,
+                          "lowerIncluded" : true,
+                          "upperIncluded" : false,
+                          "lowerUnbounded" : false,
+                          "upperUnbounded" : true
+                        } ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0026.1",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "nodeId" : "at0028.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_DATE_TIME",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_DATE_TIME",
+                    "rmTypeName" : "DATE_TIME",
+                    "patternedConstraint" : "yyyy-??-??TXX:XX:XX",
+                    "constraint" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "nodeId" : "at0030.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      } ]
+    }, {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "protocol",
+      "children" : [ {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "ITEM_TREE",
+        "nodeId" : "at0029",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "items",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0031.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      } ]
+    } ],
+    "attributeTuples" : [ ]
+  },
+  "terminology" : {
+    "@type" : "ARCHETYPE_TERMINOLOGY",
+    "conceptCode" : "at0000",
+    "termDefinitions" : {
+      "en" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "DrugsGebruik-v3.4.1(2023NL)",
+          "description" : "Summary or persistent information about typical use of a specific substance or class of substances that may harm an individual's health or social well-being.",
+          "comment" : "Tobacco smoking, smokeless tobacco use, alcohol consumption, vaping and medication administration according to established medical guidelines and standards, are intentionally excluded from the scope of this archetype and recorded using other purpose-specific archetypes."
+        },
+        "at0003.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0003.1",
+          "text" : "DrugsGebruikStatus",
+          "description" : "Statement about current use of the substance, by all routes."
+        },
+        "at0009.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0009.1",
+          "text" : "StartDatum",
+          "description" : "The date when the individual first started frequent or regular, but usually non-daily, use of the substance.",
+          "comment" : "Can be a partial date, for example, only a year. For example, this date could represent when the individual commenced using the substance every Friday night or at parties."
+        },
+        "at0019.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0019.1",
+          "text" : "Hoeveelheid",
+          "description" : "The typical pattern of frequency of use of the specific substance during the episode.",
+          "comment" : "This element is repeatable to allow multiple ways of recording the pattern of use. The typical pattern of use can be made more granular by coding with a terminology or a local value set, or using the quantity data type, in a template."
+        },
+        "at0028.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0028.1",
+          "text" : "StopDatum",
+          "description" : "The date when the individual last used the substance.",
+          "comment" : "Can be a partial date, for example, only a year."
+        },
+        "at0030.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0030.1",
+          "text" : "Toelichting",
+          "description" : "Additional narrative about the overall use of the substance that has not been captured in other fields."
+        },
+        "at0002.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0002.1",
+          "text" : "DrugsOfGeneesmiddelSoort",
+          "description" : "The name of the substance or class of substance.",
+          "comment" : "Coding with an external terminology is preferred, where possible."
+        },
+        "at0036.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0036.1",
+          "text" : "Toedieningsweg",
+          "description" : "The name of the route of administration of the specified substance during the episode.",
+          "comment" : "Coding with an external terminology is preferred, where possible."
+        }
+      },
+      "nb" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "DrugsGebruik-v3.4.1(2023NL)",
+          "description" : "Sammendrag eller varig (persistent) informasjon om bruksmønsteret individet vanligvis har av en spesifikk substans eller klasse av substanser som kan ha skadelige effekter på individets helse eller sosiale velferd.",
+          "comment" : "Tobakksrøyking, bruk av røykfri tobakk, alkoholbruk, damping (vaping) og administrasjon av medikamenter i henhold til etablerte medisinske retningslinjer og standarder er bevisst holdt utenfor konseptet, og skal registreres ved å bruke andre arketyper laget for formålet."
+        }
+      }
+    },
+    "termBindings" : { },
+    "terminologyExtracts" : { },
+    "valueSets" : {
+      "ac0.1" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.1",
+        "members" : [ "at0004", "at0005", "at0006" ]
+      },
+      "ac0.2" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.2",
+        "members" : [ "at0020", "at0021" ]
+      },
+      "ac0.4" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.4",
+        "members" : [ "at0004", "at0005", "at0006" ]
+      },
+      "ac0.5" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.5",
+        "members" : [ ]
+      },
+      "ac0.6" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.6",
+        "members" : [ ]
+      }
+    }
+  },
+  "adlVersion" : "1.4",
+  "buildUid" : "09737c37-d267-3f1d-a9ae-4b37b67914d5",
+  "rmName" : "openehr",
+  "rmRelease" : "1.1.0",
+  "generated" : true,
+  "templateId" : "DrugsGebruik-v3.4.1(2023NL)",
+  "otherMetaData" : { },
+  "templateOverlays" : [ ],
+  "originalLanguage" : {
+    "terminologyId" : {
+      "value" : "ISO_639-1"
+    },
+    "codeString" : "en"
+  },
+  "translations" : [ {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nb"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  } ]
+}
