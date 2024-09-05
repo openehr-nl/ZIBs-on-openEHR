@@ -1,0 +1,18 @@
+ZIB_Id,ZIB_Naam,ZIB_Type,ZIB_Card,ZIB_DefCode,ZIB_Verwijzing,openEHR_Path,openEHR_Naam,openEHR_Type,openEHR_Card,openEHR_Term,Commentaar
+NL-CM:20.5.1,Adresgegevens,rootconcept,,,,,Address,CLUSTER,,,
+NL-CM:20.5.2,Straat,ST,0..1,,,/items[at0001.1],Address line,DV_TEXT,0..*,,"ZIB variables Straat, Huisnummer, Huisnummerletter, Huisnummertoevoeging and AanduidingBijNummer, all fit within the Address line variable.
+
+Comment from the archetype: “Occurrences for this data element is set to 0..* to allow one or more free text 'Address line' data elements to represent the huge variety of ways that ‘street-level' details may need to be recorded within the context of a specified 'Town'.”"
+NL-CM:20.5.12,Huisnummer,ST,0..1,,,,,,,,See comment in “Straat”
+NL-CM:20.5.11,Huisnummerletter,ST,0..1,,,,,,,,See comment in “Straat”
+NL-CM:20.5.10,Huisnummertoevoeging,ST,0..1,,,,,,,,See comment in “Straat”
+NL-CM:20.5.9,AanduidingBijNummer,CD,0..1,,AanduidingBijNummerCodelijst,,,,,,See comment in “Straat”
+NL-CM:20.5.6,Postcode,ST,0..1,,,/items[at0005.1],Postal code,DV_TEXT,0..1,,
+NL-CM:20.5.3,Woonplaats,ST,0..1,,,/items[at0002.1],City/Town,DV_TEXT,0..1,,
+NL-CM:20.5.4,Gemeente,ST,0..1,,,/items[at0003.1],District/County,DV_TEXT,0..1,,
+NL-CM:20.5.5,Land,CD,0..1,,LandGBACodelijst; LandISOCodelijst,/items[at0006.1],Country,DV_CODED_TEXT,0..1,,"The code list values were not available in the wiki page of the ZIB.
+
+We found a list of all country names in Dutch from ISO 3166-1 alpha-2 (corresponding to LandISOCodelijst):
+https://nl.wikipedia.org/wiki/ISO_3166-1_alpha-2 "
+NL-CM:20.5.7,AdditioneleInformatie,ST,0..1,,,/items[at0018.1],Comment,DV_TEXT,0..1,,
+NL-CM:20.5.8,AdresSoort,CD,0..1,,AdresSoortCodelijst,/items[at0010.1],Type,DV_CODED_TEXT,0..1,,
