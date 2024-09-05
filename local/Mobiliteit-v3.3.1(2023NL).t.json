@@ -1,0 +1,865 @@
+{
+  "@type" : "TEMPLATE",
+  "uid" : "d1d268cf-866f-4d65-a16d-f5d3cc2bdfd2",
+  "description" : {
+    "@type" : "RESOURCE_DESCRIPTION",
+    "originalAuthor" : {
+      "name" : "Helene Kabbech",
+      "organisation" : "DataHub Maastricht",
+      "email" : "helene.kabbech@maastrichtuniversity.nl",
+      "date" : "2024-04-17"
+    },
+    "otherContributors" : [ ],
+    "lifecycleState" : {
+      "codeString" : "unmanaged"
+    },
+    "ipAcknowledgements" : { },
+    "references" : { },
+    "conversionDetails" : { },
+    "otherDetails" : {
+      "licence" : "",
+      "custodian_organisation" : "",
+      "original_namespace" : "",
+      "original_publisher" : "",
+      "custodian_namespace" : "",
+      "sem_ver" : "0.1.10",
+      "build_uid" : "47cd5c31-5347-414d-ae22-b85acbf62d07",
+      "MD5-CAM-1.0.1" : "2858959b5a88e8c7c875e2977784a54a",
+      "PARENT:MD5-CAM-1.0.1" : "D0FAB6715F1DF1D308A5529460DA77B4"
+    },
+    "details" : {
+      "de" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "de"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "nb" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "nb"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "en" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "en"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "nl" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "nl"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      }
+    }
+  },
+  "annotations" : {
+    "@type" : "RESOURCE_ANNOTATIONS",
+    "documentation" : {
+      "en" : {
+        "" : {
+          "301438001" : "Vermogen om zich te mobiliseren"
+        },
+        "/data[at0001]/events[at0002.1]/data[at0003]/items[at0028.1]" : {
+          "282097004" : "Vermogen om te lopen"
+        },
+        "/data[at0001]/events[at0002.1]/data[at0003]/items[at0028.2]" : {
+          "301587001" : "Vermogen om trap te lopen"
+        },
+        "/data[at0001]/events[at0002.1]/data[at0003]/items[at0028.3]" : {
+          "282869009" : "Vermogen om van positie te veranderen"
+        },
+        "/data[at0001]/events[at0002.1]/data[at0003]/items[at0028.4]" : {
+          "249868004" : "Vermogen om positie te handhaven"
+        },
+        "/data[at0001]/events[at0002.1]/data[at0003]/items[at0028.5]" : {
+          "364666007" : "Vermogen tot transfer"
+        },
+        "/data[at0001]/events[at0002.1]/data[at0003]/items[at0043.1]" : {
+          "48767-8" : "Toelichting"
+        }
+      },
+      "nl" : {
+        "/data[at0001]/events[at0002.1]/data[at0003]/items[at0028.1]" : {
+          "282097004" : "Vermogen om te lopen"
+        },
+        "/data[at0001]/events[at0002.1]/data[at0003]/items[at0028.2]" : {
+          "301587001" : "Vermogen om trap te lopen"
+        },
+        "/data[at0001]/events[at0002.1]/data[at0003]/items[at0028.3]" : {
+          "282869009" : "Vermogen om van positie te veranderen"
+        },
+        "/data[at0001]/events[at0002.1]/data[at0003]/items[at0028.4]" : {
+          "249868004" : "Vermogen om positie te handhaven"
+        },
+        "/data[at0001]/events[at0002.1]/data[at0003]/items[at0028.5]" : {
+          "364666007" : "Vermogen tot transfer"
+        },
+        "/data[at0001]/events[at0002.1]/data[at0003]/items[at0043.1]" : {
+          "48767-8" : "Verklarend commentaar [interpretatie] in {systeem}"
+        }
+      }
+    }
+  },
+  "parentArchetypeId" : "openEHR-EHR-OBSERVATION.problem_screening.v1",
+  "differential" : true,
+  "archetypeId" : {
+    "@type" : "ARCHETYPE_HRID",
+    "value" : "openEHR-EHR-OBSERVATION.t_problem_screening.v1"
+  },
+  "definition" : {
+    "@type" : "C_COMPLEX_OBJECT",
+    "rmTypeName" : "OBSERVATION",
+    "nodeId" : "at0000.1",
+    "attributes" : [ {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "data",
+      "children" : [ {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "HISTORY",
+        "nodeId" : "at0001",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "events",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "POINT_EVENT",
+            "nodeId" : "at0002.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "data",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ITEM_TREE",
+                "nodeId" : "at0003",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "items",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "ELEMENT",
+                    "occurrences" : "0..0",
+                    "nodeId" : "at0034.1",
+                    "attributes" : [ ],
+                    "attributeTuples" : [ ]
+                  }, {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "ELEMENT",
+                    "occurrences" : "0..1",
+                    "nodeId" : "at0028.1",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "value",
+                      "children" : [ {
+                        "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "DV_CODED_TEXT",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "defining_code",
+                          "children" : [ {
+                            "@type" : "C_TERMINOLOGY_CODE",
+                            "rmTypeName" : "TERMINOLOGY_CODE",
+                            "occurrences" : "1..1",
+                            "terminologyId" : {
+                              "value" : "SNOMED CT"
+                            },
+                            "constraint" : [ ],
+                            "selectedTerminologies" : [ "SNOMED CT" ],
+                            "includedExternalTerminologyCodes" : [ {
+                              "terminologyId" : "SNOMED CT",
+                              "code" : "165245003",
+                              "value" : "In staat om zelfstandig te lopen"
+                            }, {
+                              "terminologyId" : "SNOMED CT",
+                              "code" : "16581000146103",
+                              "value" : "Hulp nodig bij lopen"
+                            }, {
+                              "terminologyId" : "SNOMED CT",
+                              "code" : "282145008",
+                              "value" : "Niet in staat om te lopen"
+                            } ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  }, {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "ELEMENT",
+                    "occurrences" : "0..1",
+                    "nodeId" : "at0028.2",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "value",
+                      "children" : [ {
+                        "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "DV_CODED_TEXT",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "defining_code",
+                          "children" : [ {
+                            "@type" : "C_TERMINOLOGY_CODE",
+                            "rmTypeName" : "TERMINOLOGY_CODE",
+                            "occurrences" : "1..1",
+                            "terminologyId" : {
+                              "value" : "SNOMED CT"
+                            },
+                            "constraint" : [ ],
+                            "selectedTerminologies" : [ "SNOMED CT" ],
+                            "includedExternalTerminologyCodes" : [ {
+                              "terminologyId" : "SNOMED CT",
+                              "code" : "165249009",
+                              "value" : "In staat om zelfstandig trap te lopen"
+                            }, {
+                              "terminologyId" : "SNOMED CT",
+                              "code" : "165248001",
+                              "value" : "Hulp nodig bij traplopen"
+                            }, {
+                              "terminologyId" : "SNOMED CT",
+                              "code" : "301589003",
+                              "value" : "Niet in staat trap te lopen"
+                            } ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  }, {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "ELEMENT",
+                    "occurrences" : "0..1",
+                    "nodeId" : "at0028.3",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "value",
+                      "children" : [ {
+                        "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "DV_CODED_TEXT",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "defining_code",
+                          "children" : [ {
+                            "@type" : "C_TERMINOLOGY_CODE",
+                            "rmTypeName" : "TERMINOLOGY_CODE",
+                            "occurrences" : "1..1",
+                            "terminologyId" : {
+                              "value" : "SNOMED CT"
+                            },
+                            "constraint" : [ ],
+                            "selectedTerminologies" : [ "SNOMED CT" ],
+                            "includedExternalTerminologyCodes" : [ {
+                              "terminologyId" : "SNOMED CT",
+                              "code" : "19821000146105",
+                              "value" : "In staat om zelfstandig van positie te veranderen"
+                            }, {
+                              "terminologyId" : "SNOMED CT",
+                              "code" : "16611000146108",
+                              "value" : "Hulp nodig bij veranderen van positie"
+                            }, {
+                              "terminologyId" : "SNOMED CT",
+                              "code" : "303384002",
+                              "value" : "Niet in staat van positie te veranderen"
+                            } ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  }, {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "ELEMENT",
+                    "occurrences" : "0..1",
+                    "nodeId" : "at0028.4",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "value",
+                      "children" : [ {
+                        "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "DV_CODED_TEXT",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "defining_code",
+                          "children" : [ {
+                            "@type" : "C_TERMINOLOGY_CODE",
+                            "rmTypeName" : "TERMINOLOGY_CODE",
+                            "occurrences" : "1..1",
+                            "terminologyId" : {
+                              "value" : "SNOMED CT"
+                            },
+                            "constraint" : [ ],
+                            "selectedTerminologies" : [ "SNOMED CT" ],
+                            "includedExternalTerminologyCodes" : [ {
+                              "terminologyId" : "SNOMED CT",
+                              "code" : "19811000146100",
+                              "value" : "In staat om zelfstandig positie aan te houden"
+                            }, {
+                              "terminologyId" : "SNOMED CT",
+                              "code" : "16601000146106",
+                              "value" : "Hulp nodig bij behouden van positie"
+                            }, {
+                              "terminologyId" : "SNOMED CT",
+                              "code" : "282848007",
+                              "value" : "Niet in staat positie te handhaven"
+                            } ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  }, {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "ELEMENT",
+                    "occurrences" : "0..1",
+                    "nodeId" : "at0028.5",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "value",
+                      "children" : [ {
+                        "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "DV_CODED_TEXT",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "defining_code",
+                          "children" : [ {
+                            "@type" : "C_TERMINOLOGY_CODE",
+                            "rmTypeName" : "TERMINOLOGY_CODE",
+                            "occurrences" : "1..1",
+                            "terminologyId" : {
+                              "value" : "SNOMED CT"
+                            },
+                            "constraint" : [ ],
+                            "selectedTerminologies" : [ "SNOMED CT" ],
+                            "includedExternalTerminologyCodes" : [ {
+                              "terminologyId" : "SNOMED CT",
+                              "code" : "714915006",
+                              "value" : "In staat om transfer zelfstandig uit te voeren"
+                            }, {
+                              "terminologyId" : "SNOMED CT",
+                              "code" : "719024002",
+                              "value" : "Hulp nodig bij transfer"
+                            }, {
+                              "terminologyId" : "SNOMED CT",
+                              "code" : "714887007",
+                              "value" : "Niet in staat om transfer onafhankelijk uit te voeren"
+                            } ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  }, {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "ELEMENT",
+                    "nodeId" : "at0043.1",
+                    "attributes" : [ ],
+                    "attributeTuples" : [ ]
+                  }, {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "CLUSTER",
+                    "occurrences" : "0..0",
+                    "nodeId" : "at0022.1",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "items",
+                      "children" : [ {
+                        "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "ELEMENT",
+                        "occurrences" : "0..0",
+                        "nodeId" : "at0005.1",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "value",
+                          "children" : [ {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "DV_CODED_TEXT",
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "defining_code",
+                              "children" : [ {
+                                "@type" : "C_TERMINOLOGY_CODE",
+                                "rmTypeName" : "CODE_PHRASE",
+                                "occurrences" : "1..1",
+                                "terminologyId" : {
+                                  "value" : "local"
+                                },
+                                "constraint" : [ "at0023", "at0024", "at0027" ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
+                          }, {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "DV_TEXT",
+                            "attributes" : [ ],
+                            "attributeTuples" : [ ]
+                          }, {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "DV_BOOLEAN",
+                            "attributes" : [ ],
+                            "attributeTuples" : [ ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ ]
+                      }, {
+                        "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "ELEMENT",
+                        "occurrences" : "0..0",
+                        "nodeId" : "at0040.1",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "value",
+                          "children" : [ {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "DV_TEXT",
+                            "attributes" : [ ],
+                            "attributeTuples" : [ ]
+                          }, {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "DV_INTERVAL<DV_DURATION>",
+                            "attributes" : [ ],
+                            "attributeTuples" : [ ]
+                          }, {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "DV_DURATION",
+                            "attributes" : [ ],
+                            "attributeTuples" : [ ]
+                          }, {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "DV_DATE_TIME",
+                            "attributes" : [ ],
+                            "attributeTuples" : [ ]
+                          }, {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "DV_INTERVAL<DV_DATE_TIME>",
+                            "attributes" : [ ],
+                            "attributeTuples" : [ ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ ]
+                      }, {
+                        "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "ELEMENT",
+                        "occurrences" : "0..0",
+                        "nodeId" : "at0025.1",
+                        "attributes" : [ ],
+                        "attributeTuples" : [ ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  }, {
+                    "@type" : "C_ARCHETYPE_ROOT",
+                    "rmTypeName" : "CLUSTER",
+                    "occurrences" : "0..*",
+                    "nodeId" : "at0042.1",
+                    "attributes" : [ ],
+                    "attributeTuples" : [ ],
+                    "archetypeRef" : "MedischHulpmiddel-v4.0(2023NL)",
+                    "referenceType" : "templateId"
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      } ]
+    } ],
+    "attributeTuples" : [ ]
+  },
+  "terminology" : {
+    "@type" : "ARCHETYPE_TERMINOLOGY",
+    "conceptCode" : "at0000",
+    "termDefinitions" : {
+      "en" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Mobiliteit-v3.3.1(2023NL)",
+          "description" : "Series of questions and associated answers used to screen for issues, problems or diagnoses.",
+          "comment" : "The answers may be self-reported."
+        },
+        "at0002.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0002.1",
+          "text" : "Point in time",
+          "description" : "Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."
+        },
+        "at0028.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0028.1",
+          "text" : "Lopen",
+          "description" : "Is there a history of any issues, problems or diagnoses relevant for the screening purpose?",
+          "comment" : "In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case."
+        },
+        "at0028.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0028.2",
+          "text" : "Traplopen",
+          "description" : "Is there a history of any issues, problems or diagnoses relevant for the screening purpose?",
+          "comment" : "In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case."
+        },
+        "at0028.3" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0028.3",
+          "text" : "HoudingVeranderen",
+          "description" : "Is there a history of any issues, problems or diagnoses relevant for the screening purpose?",
+          "comment" : "In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case."
+        },
+        "at0028.4" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0028.4",
+          "text" : "HoudingHandhaven",
+          "description" : "Is there a history of any issues, problems or diagnoses relevant for the screening purpose?",
+          "comment" : "In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case."
+        },
+        "at0028.5" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0028.5",
+          "text" : "UitvoerenTransfer",
+          "description" : "Is there a history of any issues, problems or diagnoses relevant for the screening purpose?",
+          "comment" : "In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case."
+        },
+        "at0043.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0043.1",
+          "text" : "Toelichting",
+          "description" : "Narrative description about the history of any issues, problems or diagnoses relevant for the screening purpose."
+        }
+      },
+      "nb" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Mobiliteit",
+          "description" : "Spørsmål og tilhørende svar som brukes til å kartlegge bekymringer, plager, problemer eller diagnoser.",
+          "comment" : "Svarene kan være selvrapporterte."
+        },
+        "at0028.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0028.1",
+          "text" : "Problemer eller diagnoser? (2)",
+          "description" : "Finnes det noen bekymringer, plager, problemer eller diagnoser. som er innenfor kartleggingsformålet?",
+          "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
+        },
+        "at0028.3" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0028.1",
+          "text" : "Problemer eller diagnoser? (3)",
+          "description" : "Finnes det noen bekymringer, plager, problemer eller diagnoser. som er innenfor kartleggingsformålet?",
+          "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
+        },
+        "at0028.4" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0028.1",
+          "text" : "Problemer eller diagnoser? (4)",
+          "description" : "Finnes det noen bekymringer, plager, problemer eller diagnoser. som er innenfor kartleggingsformålet?",
+          "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
+        },
+        "at0028.5" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0028.1",
+          "text" : "Problemer eller diagnoser? (5)",
+          "description" : "Finnes det noen bekymringer, plager, problemer eller diagnoser. som er innenfor kartleggingsformålet?",
+          "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
+        }
+      },
+      "de" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Mobiliteit",
+          "description" : "Eine Reihe von Fragen und zugehörigen Antworten, die zum Screening auf Vorhandensein von Beschwerden, Problemen oder Diagnosen verwendet werden.",
+          "comment" : "Die Antworten können selbst berichtet werden."
+        },
+        "at0028.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0028.1",
+          "text" : "Irgendwelche Probleme oder Diagnosen? (2)",
+          "description" : "Gibt es eine Vorgeschichte an Beschwerden, Problemen oder Diagnosen im Zusammenhang mit dem Screening-Zweck?",
+          "comment" : "In einem Template würde das Datenelement normalerweise in die spezifische gestellte Frage umbenannt. Der vorgeschlagene Wertesatz kann für die lokale Verwendung angepasst werden, indem die Datentypauswahl DV_TEXT oder DV_BOOLEAN verwendet wird, um jedem spezifischen Anwendungsfall zu entsprechen."
+        },
+        "at0028.3" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0028.1",
+          "text" : "Irgendwelche Probleme oder Diagnosen? (3)",
+          "description" : "Gibt es eine Vorgeschichte an Beschwerden, Problemen oder Diagnosen im Zusammenhang mit dem Screening-Zweck?",
+          "comment" : "In einem Template würde das Datenelement normalerweise in die spezifische gestellte Frage umbenannt. Der vorgeschlagene Wertesatz kann für die lokale Verwendung angepasst werden, indem die Datentypauswahl DV_TEXT oder DV_BOOLEAN verwendet wird, um jedem spezifischen Anwendungsfall zu entsprechen."
+        },
+        "at0028.4" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0028.1",
+          "text" : "Irgendwelche Probleme oder Diagnosen? (4)",
+          "description" : "Gibt es eine Vorgeschichte an Beschwerden, Problemen oder Diagnosen im Zusammenhang mit dem Screening-Zweck?",
+          "comment" : "In einem Template würde das Datenelement normalerweise in die spezifische gestellte Frage umbenannt. Der vorgeschlagene Wertesatz kann für die lokale Verwendung angepasst werden, indem die Datentypauswahl DV_TEXT oder DV_BOOLEAN verwendet wird, um jedem spezifischen Anwendungsfall zu entsprechen."
+        },
+        "at0028.5" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0028.1",
+          "text" : "Irgendwelche Probleme oder Diagnosen? (5)",
+          "description" : "Gibt es eine Vorgeschichte an Beschwerden, Problemen oder Diagnosen im Zusammenhang mit dem Screening-Zweck?",
+          "comment" : "In einem Template würde das Datenelement normalerweise in die spezifische gestellte Frage umbenannt. Der vorgeschlagene Wertesatz kann für die lokale Verwendung angepasst werden, indem die Datentypauswahl DV_TEXT oder DV_BOOLEAN verwendet wird, um jedem spezifischen Anwendungsfall zu entsprechen."
+        }
+      },
+      "nl" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Mobiliteit",
+          "description" : "*Series of questions and associated answers used to screen for issues, problems or diagnoses. (en)",
+          "comment" : "*The answers may be self-reported.(en)"
+        },
+        "at0028.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0028.2",
+          "text" : "Traplopen",
+          "description" : "*Is there a history of any issues, problems or diagnoses relevant for the screening purpose? (en)",
+          "comment" : "*In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the 'text' choice to match each specific use case. (en)"
+        },
+        "at0028.3" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0028.3",
+          "text" : "HoudingVeranderen",
+          "description" : "*Is there a history of any issues, problems or diagnoses relevant for the screening purpose? (en)",
+          "comment" : "*In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the 'text' choice to match each specific use case. (en)"
+        },
+        "at0028.4" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0028.4",
+          "text" : "HoudingHandhaven",
+          "description" : "*Is there a history of any issues, problems or diagnoses relevant for the screening purpose? (en)",
+          "comment" : "*In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the 'text' choice to match each specific use case. (en)"
+        },
+        "at0028.5" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0028.5",
+          "text" : "UitvoerenTransfer",
+          "description" : "*Is there a history of any issues, problems or diagnoses relevant for the screening purpose? (en)",
+          "comment" : "*In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the 'text' choice to match each specific use case. (en)"
+        },
+        "at0028.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0028.1",
+          "text" : "Lopen",
+          "description" : "*Is there a history of any issues, problems or diagnoses relevant for the screening purpose? (en)",
+          "comment" : "*In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the 'text' choice to match each specific use case. (en)"
+        },
+        "at0043.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0043.1",
+          "text" : "Toelichting",
+          "description" : "*Narrative description about the history of any issues, problems or diagnoses relevant for the screening purpose. (en)"
+        }
+      }
+    },
+    "termBindings" : { },
+    "terminologyExtracts" : { },
+    "valueSets" : {
+      "ac0.1" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.1",
+        "members" : [ "at0031", "at0032", "at0033" ]
+      },
+      "ac0.2" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.2",
+        "members" : [ "at0031", "at0032", "at0033" ]
+      },
+      "ac0.3" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.3",
+        "members" : [ "at0031", "at0032", "at0033" ]
+      },
+      "ac0.4" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.4",
+        "members" : [ "at0031", "at0032", "at0033" ]
+      },
+      "ac0.5" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.5",
+        "members" : [ "at0031", "at0032", "at0033" ]
+      },
+      "ac0.6" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.6",
+        "members" : [ "at0031", "at0032", "at0033" ]
+      },
+      "ac0.7" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.7",
+        "members" : [ "at0031", "at0032", "at0033" ]
+      },
+      "ac0.8" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.8",
+        "members" : [ "at0031", "at0032", "at0033" ]
+      },
+      "ac0.9" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.9",
+        "members" : [ "at0031", "at0032", "at0033" ]
+      },
+      "ac0.10" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.10",
+        "members" : [ "at0031", "at0032", "at0033" ]
+      },
+      "ac0.11" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.11",
+        "members" : [ "at0031", "at0032", "at0033" ]
+      },
+      "ac0.13" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.13",
+        "members" : [ "at0031", "at0032", "at0033" ]
+      },
+      "ac0.14" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.14",
+        "members" : [ ]
+      },
+      "ac0.15" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.15",
+        "members" : [ ]
+      },
+      "ac0.17" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.17",
+        "members" : [ "at0031", "at0032", "at0033" ]
+      },
+      "ac0.18" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.18",
+        "members" : [ ]
+      },
+      "ac0.19" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.19",
+        "members" : [ ]
+      },
+      "ac0.21" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.21",
+        "members" : [ "at0031", "at0032", "at0033" ]
+      },
+      "ac0.22" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.22",
+        "members" : [ ]
+      },
+      "ac0.23" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.23",
+        "members" : [ ]
+      },
+      "ac0.25" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.25",
+        "members" : [ "at0031", "at0032", "at0033" ]
+      },
+      "ac0.26" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.26",
+        "members" : [ ]
+      },
+      "ac0.27" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.27",
+        "members" : [ ]
+      },
+      "ac0.29" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.29",
+        "members" : [ "at0031", "at0032", "at0033" ]
+      },
+      "ac0.30" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.30",
+        "members" : [ ]
+      },
+      "ac0.31" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.31",
+        "members" : [ ]
+      }
+    }
+  },
+  "adlVersion" : "1.4",
+  "buildUid" : "97538659-9cca-3d19-a0bc-13b46b81ede5",
+  "rmName" : "openehr",
+  "rmRelease" : "1.1.0",
+  "generated" : true,
+  "templateId" : "Mobiliteit-v3.3.1(2023NL)",
+  "otherMetaData" : { },
+  "templateOverlays" : [ ],
+  "originalLanguage" : {
+    "terminologyId" : {
+      "value" : "ISO_639-1"
+    },
+    "codeString" : "en"
+  },
+  "translations" : [ {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "de"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nb"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nl"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  } ]
+}

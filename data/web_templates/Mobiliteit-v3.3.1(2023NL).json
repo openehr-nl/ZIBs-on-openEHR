@@ -1,0 +1,365 @@
+{
+  "templateId" : "Mobiliteit-v3.3.1(2023NL)",
+  "semVer" : "0.1.6",
+  "version" : "2.3",
+  "defaultLanguage" : "en",
+  "languages" : [ "en" ],
+  "tree" : {
+    "id" : "mobiliteit-v3.3.1_2023nl",
+    "name" : "Mobiliteit-v3.3.1(2023NL)",
+    "localizedName" : "Mobiliteit-v3.3.1(2023NL)",
+    "rmType" : "OBSERVATION",
+    "nodeId" : "openEHR-EHR-OBSERVATION.problem_screening.v1",
+    "min" : 1,
+    "max" : 1,
+    "localizedNames" : {
+      "en" : "Mobiliteit-v3.3.1(2023NL)"
+    },
+    "localizedDescriptions" : {
+      "en" : "Series of questions and associated answers used to screen for issues, problems or diagnoses."
+    },
+    "annotations" : {
+      "comment" : "The answers may be self-reported.",
+      "301438001" : "Vermogen om zich te mobiliseren"
+    },
+    "aqlPath" : "",
+    "children" : [ {
+      "id" : "point_in_time",
+      "name" : "Point in time",
+      "localizedName" : "Point in time",
+      "rmType" : "POINT_EVENT",
+      "nodeId" : "at0002",
+      "min" : 0,
+      "max" : -1,
+      "localizedNames" : {
+        "en" : "Point in time"
+      },
+      "localizedDescriptions" : {
+        "en" : "Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."
+      },
+      "aqlPath" : "/data[at0001]/events[at0002,'Point in time']",
+      "children" : [ {
+        "id" : "lopen",
+        "name" : "Lopen",
+        "localizedName" : "Lopen",
+        "rmType" : "DV_CODED_TEXT",
+        "nodeId" : "at0028",
+        "min" : 0,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "Lopen"
+        },
+        "localizedDescriptions" : {
+          "en" : "Is there a history of any issues, problems or diagnoses relevant for the screening purpose?"
+        },
+        "annotations" : {
+          "comment" : "In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case.",
+          "282097004" : "Vermogen om te lopen"
+        },
+        "aqlPath" : "/data[at0001]/events[at0002,'Point in time']/data[at0003]/items[at0028,'Lopen']/value",
+        "inputs" : [ {
+          "suffix" : "code",
+          "type" : "CODED_TEXT",
+          "list" : [ {
+            "value" : "165245003",
+            "label" : "In staat om zelfstandig te lopen",
+            "localizedLabels" : {
+              "en" : "In staat om zelfstandig te lopen"
+            }
+          }, {
+            "value" : "16581000146103",
+            "label" : "Hulp nodig bij lopen",
+            "localizedLabels" : {
+              "en" : "Hulp nodig bij lopen"
+            }
+          }, {
+            "value" : "282145008",
+            "label" : "Niet in staat om te lopen",
+            "localizedLabels" : {
+              "en" : "Niet in staat om te lopen"
+            }
+          } ],
+          "terminology" : "SNOMED CT"
+        } ]
+      }, {
+        "id" : "traplopen",
+        "name" : "Traplopen",
+        "localizedName" : "Traplopen",
+        "rmType" : "DV_CODED_TEXT",
+        "nodeId" : "at0028",
+        "min" : 0,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "Traplopen"
+        },
+        "localizedDescriptions" : {
+          "en" : "Is there a history of any issues, problems or diagnoses relevant for the screening purpose?"
+        },
+        "annotations" : {
+          "comment" : "In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case.",
+          "301587001" : "Vermogen om trap te lopen"
+        },
+        "aqlPath" : "/data[at0001]/events[at0002,'Point in time']/data[at0003]/items[at0028,'Traplopen']/value",
+        "inputs" : [ {
+          "suffix" : "code",
+          "type" : "CODED_TEXT",
+          "list" : [ {
+            "value" : "165249009",
+            "label" : "In staat om zelfstandig trap te lopen",
+            "localizedLabels" : {
+              "en" : "In staat om zelfstandig trap te lopen"
+            }
+          }, {
+            "value" : "165248001",
+            "label" : "Hulp nodig bij traplopen",
+            "localizedLabels" : {
+              "en" : "Hulp nodig bij traplopen"
+            }
+          }, {
+            "value" : "301589003",
+            "label" : "Niet in staat trap te lopen",
+            "localizedLabels" : {
+              "en" : "Niet in staat trap te lopen"
+            }
+          } ],
+          "terminology" : "SNOMED CT"
+        } ]
+      }, {
+        "id" : "houdingveranderen",
+        "name" : "HoudingVeranderen",
+        "localizedName" : "HoudingVeranderen",
+        "rmType" : "DV_CODED_TEXT",
+        "nodeId" : "at0028",
+        "min" : 0,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "HoudingVeranderen"
+        },
+        "localizedDescriptions" : {
+          "en" : "Is there a history of any issues, problems or diagnoses relevant for the screening purpose?"
+        },
+        "annotations" : {
+          "282869009" : "Vermogen om van positie te veranderen",
+          "comment" : "In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case."
+        },
+        "aqlPath" : "/data[at0001]/events[at0002,'Point in time']/data[at0003]/items[at0028,'HoudingVeranderen']/value",
+        "inputs" : [ {
+          "suffix" : "code",
+          "type" : "CODED_TEXT",
+          "list" : [ {
+            "value" : "19821000146105",
+            "label" : "In staat om zelfstandig van positie te veranderen",
+            "localizedLabels" : {
+              "en" : "In staat om zelfstandig van positie te veranderen"
+            }
+          }, {
+            "value" : "16611000146108",
+            "label" : "Hulp nodig bij veranderen van positie",
+            "localizedLabels" : {
+              "en" : "Hulp nodig bij veranderen van positie"
+            }
+          }, {
+            "value" : "303384002",
+            "label" : "Niet in staat van positie te veranderen",
+            "localizedLabels" : {
+              "en" : "Niet in staat van positie te veranderen"
+            }
+          } ],
+          "terminology" : "SNOMED CT"
+        } ]
+      }, {
+        "id" : "houdinghandhaven",
+        "name" : "HoudingHandhaven",
+        "localizedName" : "HoudingHandhaven",
+        "rmType" : "DV_CODED_TEXT",
+        "nodeId" : "at0028",
+        "min" : 0,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "HoudingHandhaven"
+        },
+        "localizedDescriptions" : {
+          "en" : "Is there a history of any issues, problems or diagnoses relevant for the screening purpose?"
+        },
+        "annotations" : {
+          "249868004" : "Vermogen om positie te handhaven",
+          "comment" : "In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case."
+        },
+        "aqlPath" : "/data[at0001]/events[at0002,'Point in time']/data[at0003]/items[at0028,'HoudingHandhaven']/value",
+        "inputs" : [ {
+          "suffix" : "code",
+          "type" : "CODED_TEXT",
+          "list" : [ {
+            "value" : "19811000146100",
+            "label" : "In staat om zelfstandig positie aan te houden",
+            "localizedLabels" : {
+              "en" : "In staat om zelfstandig positie aan te houden"
+            }
+          }, {
+            "value" : "16601000146106",
+            "label" : "Hulp nodig bij behouden van positie",
+            "localizedLabels" : {
+              "en" : "Hulp nodig bij behouden van positie"
+            }
+          }, {
+            "value" : "282848007",
+            "label" : "Niet in staat positie te handhaven",
+            "localizedLabels" : {
+              "en" : "Niet in staat positie te handhaven"
+            }
+          } ],
+          "terminology" : "SNOMED CT"
+        } ]
+      }, {
+        "id" : "uitvoerentransfer",
+        "name" : "UitvoerenTransfer",
+        "localizedName" : "UitvoerenTransfer",
+        "rmType" : "DV_CODED_TEXT",
+        "nodeId" : "at0028",
+        "min" : 0,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "UitvoerenTransfer"
+        },
+        "localizedDescriptions" : {
+          "en" : "Is there a history of any issues, problems or diagnoses relevant for the screening purpose?"
+        },
+        "annotations" : {
+          "comment" : "In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case.",
+          "364666007" : "Vermogen tot transfer"
+        },
+        "aqlPath" : "/data[at0001]/events[at0002,'Point in time']/data[at0003]/items[at0028,'UitvoerenTransfer']/value",
+        "inputs" : [ {
+          "suffix" : "code",
+          "type" : "CODED_TEXT",
+          "list" : [ {
+            "value" : "714915006",
+            "label" : "In staat om transfer zelfstandig uit te voeren",
+            "localizedLabels" : {
+              "en" : "In staat om transfer zelfstandig uit te voeren"
+            }
+          }, {
+            "value" : "719024002",
+            "label" : "Hulp nodig bij transfer",
+            "localizedLabels" : {
+              "en" : "Hulp nodig bij transfer"
+            }
+          }, {
+            "value" : "714887007",
+            "label" : "Niet in staat om transfer onafhankelijk uit te voeren",
+            "localizedLabels" : {
+              "en" : "Niet in staat om transfer onafhankelijk uit te voeren"
+            }
+          } ],
+          "terminology" : "SNOMED CT"
+        } ]
+      }, {
+        "id" : "toelichting",
+        "name" : "Toelichting",
+        "localizedName" : "Toelichting",
+        "rmType" : "DV_TEXT",
+        "nodeId" : "at0043",
+        "min" : 0,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "Toelichting"
+        },
+        "localizedDescriptions" : {
+          "en" : "Narrative description about the history of any issues, problems or diagnoses relevant for the screening purpose."
+        },
+        "annotations" : {
+          "48767-8" : "Toelichting"
+        },
+        "aqlPath" : "/data[at0001]/events[at0002,'Point in time']/data[at0003]/items[at0043,'Toelichting']/value",
+        "inputs" : [ {
+          "type" : "TEXT"
+        } ]
+      }, {
+        "id" : "medischhulpmiddel-v4.0_2023nl",
+        "name" : "MedischHulpmiddel-v4.0(2023NL)",
+        "localizedName" : "MedischHulpmiddel-v4.0(2023NL)",
+        "rmType" : "CLUSTER",
+        "nodeId" : "openEHR-EHR-CLUSTER.device.v1",
+        "min" : 0,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "MedischHulpmiddel-v4.0(2023NL)"
+        },
+        "localizedDescriptions" : {
+          "en" : "An instrument, apparatus, implant, material or similar, used in the provision of healthcare. In this context, a medical device includes a broad range of devices which act through a variety of physical, mechanical, thermal or similar means but specifically excludes devices which act through medicinal means such as pharmacological, metabolic or immunological methods.  The scope is inclusive of disposable devices as well as durable or persisting devices that require tracking, maintenance activities or regular calibration, recognising that each type of device has specific data recording requirements."
+        },
+        "aqlPath" : "/data[at0001]/events[at0002,'Point in time']/data[at0003]/items[openEHR-EHR-CLUSTER.device.v1,'MedischHulpmiddel-v4.0(2023NL)']",
+        "children" : [ {
+          "id" : "device_name",
+          "name" : "Device name",
+          "localizedName" : "Device name",
+          "rmType" : "DV_TEXT",
+          "nodeId" : "at0001",
+          "min" : 1,
+          "max" : 1,
+          "localizedNames" : {
+            "en" : "Device name"
+          },
+          "localizedDescriptions" : {
+            "en" : "Identification of the medical device, preferably by a common name, a formal fully descriptive name or, if required, by class or category of device."
+          },
+          "annotations" : {
+            "comment" : "This data element will capture the term, phrase or category used in clinical practice. For example: <brand name><machine> (XYZ Audiometer); <size> <brand name> <intravenous catheter> (14G Jelco IV catheter); or <brand name/type> <implant>. Coding with a terminology is desirable, where possible, although this may be local and depending on local supplies available.\r\n"
+          },
+          "aqlPath" : "/data[at0001]/events[at0002,'Point in time']/data[at0003]/items[openEHR-EHR-CLUSTER.device.v1,'MedischHulpmiddel-v4.0(2023NL)']/items[at0001]/value",
+          "inputs" : [ {
+            "type" : "TEXT"
+          } ]
+        } ]
+      }, {
+        "id" : "time",
+        "name" : "Time",
+        "rmType" : "DV_DATE_TIME",
+        "min" : 1,
+        "max" : 1,
+        "aqlPath" : "/data[at0001]/events[at0002,'Point in time']/time",
+        "inputs" : [ {
+          "type" : "DATETIME"
+        } ],
+        "inContext" : true
+      } ]
+    }, {
+      "id" : "language",
+      "name" : "Language",
+      "rmType" : "CODE_PHRASE",
+      "min" : 1,
+      "max" : 1,
+      "aqlPath" : "/language",
+      "inContext" : true
+    }, {
+      "id" : "encoding",
+      "name" : "Encoding",
+      "rmType" : "CODE_PHRASE",
+      "min" : 1,
+      "max" : 1,
+      "aqlPath" : "/encoding",
+      "inContext" : true
+    }, {
+      "id" : "subject",
+      "name" : "Subject",
+      "rmType" : "PARTY_PROXY",
+      "min" : 1,
+      "max" : 1,
+      "aqlPath" : "/subject",
+      "inputs" : [ {
+        "suffix" : "id",
+        "type" : "TEXT"
+      }, {
+        "suffix" : "id_scheme",
+        "type" : "TEXT"
+      }, {
+        "suffix" : "id_namespace",
+        "type" : "TEXT"
+      }, {
+        "suffix" : "name",
+        "type" : "TEXT"
+      } ],
+      "inContext" : true
+    } ]
+  }
+}
