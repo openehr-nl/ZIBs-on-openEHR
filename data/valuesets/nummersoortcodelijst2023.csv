@@ -1,0 +1,5 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+Primary Home,HP,,AddressUse,2.16.840.1.113883.5.1119,Telefoonnummer thuis,,,
+Temporary Address,TMP,,AddressUse,2.16.840.1.113883.5.1119,Tijdelijk telefoonnummer,,,
+Work Place,WP,,AddressUse,2.16.840.1.113883.5.1119,Zakelijk telefoonnummer,,,
+Emergencycontact,EC,,AddressUse,"2.16.840.1.113883.5.1119 ",Spoednummer,,,

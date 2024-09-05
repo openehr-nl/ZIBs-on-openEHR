@@ -1,0 +1,10 @@
+ZIB_Id,ZIB_Naam,ZIB_Type,ZIB_Card,ZIB_DefCode,ZIB_Verwijzing,openEHR_Path,openEHR_Naam,openEHR_Type,openEHR_Card,openEHR_Term,Commentaar
+NL-CM:20.6.1,Contactgegevens,rootconcept,,,,,Adhoc cluster heading,CLUSTER,,,Special CLUSTER archetype for adhoc heading
+NL-CM:20.6.2,Telefoonnummers,container,0..*,,,"/items[openEHR-EHR-CLUSTER.electronic_communication.v1, 'Telefoonnummers']",Electronic communication,CLUSTER,0..*,,
+NL-CM:20.6.4,Telefoonnummer,ST,1,,,"/items[openEHR-EHR-CLUSTER.electronic_communication.v1, 'Telefoonnummers']/items[at0002.1]",Value,DV_TEXT,1..1,,
+NL-CM:20.6.5,TelecomType,CD,1,,TelecomTypeCodelijst,"/items[openEHR-EHR-CLUSTER.electronic_communication.v1, 'Telefoonnummers']/items[at0001.1]",Type,DV_CODED_TEXT,1..1,,Refer to TelecomTypeCodelijst 2023 value set
+NL-CM:20.6.6,NummerSoort,CD,1,,NummerSoortCodelijst,"/items[openEHR-EHR-CLUSTER.electronic_communication.v1, 'Telefoonnummers']/items[at0003.1]",Purpose,DV_CODED_TEXT,1..1,,Refer to NummerSoortCodelijst 2023 value set
+NL-CM:20.6.9,Toelichting,ST,0..1,LOINC: 48767-8 Annotation comment [Interpretation] Narrative,,"/items[openEHR-EHR-CLUSTER.electronic_communication.v1, 'Telefoonnummers']/items[at0004.1]",Comment,DV_TEXT,0..1,,
+NL-CM:20.6.3,EmailAdressen,container,0..*,,,"/items[openEHR-EHR-CLUSTER.electronic_communication.v1, 'EmailAdressen']",Electronic communication,CLUSTER,0..*,,
+NL-CM:20.6.7,EmailAdres,ST,1,,,"/items[openEHR-EHR-CLUSTER.electronic_communication.v1, 'EmailAdressen']/items[at0002.1]",Value,DV_TEXT,1..1,,
+NL-CM:20.6.8,EmailSoort,CD,1,,EmailSoortCodelijst,"/items[openEHR-EHR-CLUSTER.electronic_communication.v1, 'EmailAdressen']/items[at0003.1]",Purpose,DV_CODED_TEXT,1..1,,

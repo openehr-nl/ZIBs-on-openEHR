@@ -1,0 +1,245 @@
+{
+  "templateId" : "Contactgegevens-v1.3.1(2023NL)",
+  "semVer" : "0.1.0",
+  "version" : "2.3",
+  "defaultLanguage" : "en",
+  "languages" : [ "en" ],
+  "tree" : {
+    "id" : "contactgegevens-v1.3.1_2023nl",
+    "name" : "Contactgegevens-v1.3.1(2023NL)",
+    "localizedName" : "Contactgegevens-v1.3.1(2023NL)",
+    "rmType" : "CLUSTER",
+    "nodeId" : "openEHR-EHR-CLUSTER.adhoc_cluster_heading.v0",
+    "min" : 1,
+    "max" : 1,
+    "localizedNames" : {
+      "en" : "Contactgegevens-v1.3.1(2023NL)"
+    },
+    "localizedDescriptions" : {
+      "en" : "A generic cluster heading for contextual renaming within a template."
+    },
+    "aqlPath" : "",
+    "children" : [ {
+      "id" : "telefoonnummers",
+      "name" : "Telefoonnummers",
+      "localizedName" : "Telefoonnummers",
+      "rmType" : "CLUSTER",
+      "nodeId" : "openEHR-EHR-CLUSTER.electronic_communication.v1",
+      "min" : 0,
+      "max" : -1,
+      "localizedNames" : {
+        "en" : "Telefoonnummers"
+      },
+      "localizedDescriptions" : {
+        "en" : "Details about a specified type of electronic communication."
+      },
+      "aqlPath" : "/items[openEHR-EHR-CLUSTER.electronic_communication.v1,'Telefoonnummers']",
+      "children" : [ {
+        "id" : "telecomtype",
+        "name" : "TelecomType",
+        "localizedName" : "TelecomType",
+        "rmType" : "DV_CODED_TEXT",
+        "nodeId" : "at0001",
+        "min" : 1,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "TelecomType"
+        },
+        "localizedDescriptions" : {
+          "en" : "The type or form of electronic communication."
+        },
+        "annotations" : {
+          "comment" : "The DV_CODED_TEXT value set supports recording of the most common electronic communications used in health. If other alternatives are required the DV_TEXT data type can be used to record other types of electronic communication such as social media or video conferencing URLs within a template."
+        },
+        "aqlPath" : "/items[openEHR-EHR-CLUSTER.electronic_communication.v1,'Telefoonnummers']/items[at0001,'TelecomType']/value",
+        "inputs" : [ {
+          "suffix" : "code",
+          "type" : "CODED_TEXT",
+          "list" : [ {
+            "value" : "LL",
+            "label" : "Vaste lijn",
+            "localizedLabels" : {
+              "en" : "Vaste lijn"
+            }
+          }, {
+            "value" : "FAX",
+            "label" : "Fax",
+            "localizedLabels" : {
+              "en" : "Fax"
+            }
+          }, {
+            "value" : "MC",
+            "label" : "Mobile Contact",
+            "localizedLabels" : {
+              "en" : "Mobile Contact"
+            }
+          }, {
+            "value" : "PG",
+            "label" : "Pager",
+            "localizedLabels" : {
+              "en" : "Pager"
+            }
+          } ],
+          "terminology" : "TelecomDeviceTypes & AddressUse"
+        } ]
+      }, {
+        "id" : "telefoonnummer",
+        "name" : "Telefoonnummer",
+        "localizedName" : "Telefoonnummer",
+        "rmType" : "DV_TEXT",
+        "nodeId" : "at0002",
+        "min" : 1,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "Telefoonnummer"
+        },
+        "localizedDescriptions" : {
+          "en" : "The unique combination of alphanumeric characters, relevant for representation of 'Type'."
+        },
+        "annotations" : {
+          "comment" : "For example: area code + landline phone/pager number; country code + mobile phone number; or email address."
+        },
+        "aqlPath" : "/items[openEHR-EHR-CLUSTER.electronic_communication.v1,'Telefoonnummers']/items[at0002,'Telefoonnummer']/value",
+        "inputs" : [ {
+          "type" : "TEXT"
+        } ]
+      }, {
+        "id" : "nummersoort",
+        "name" : "NummerSoort",
+        "localizedName" : "NummerSoort",
+        "rmType" : "DV_CODED_TEXT",
+        "nodeId" : "at0003",
+        "min" : 1,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "NummerSoort"
+        },
+        "localizedDescriptions" : {
+          "en" : "The purpose or use for the identified type of electronic communication."
+        },
+        "aqlPath" : "/items[openEHR-EHR-CLUSTER.electronic_communication.v1,'Telefoonnummers']/items[at0003,'NummerSoort']/value",
+        "inputs" : [ {
+          "suffix" : "code",
+          "type" : "CODED_TEXT",
+          "list" : [ {
+            "value" : "HP",
+            "label" : "Privé telefoonnummer",
+            "localizedLabels" : {
+              "en" : "Privé telefoonnummer"
+            }
+          }, {
+            "value" : "TMP",
+            "label" : "Tijdelijk telefoonnummer",
+            "localizedLabels" : {
+              "en" : "Tijdelijk telefoonnummer"
+            }
+          }, {
+            "value" : "WP",
+            "label" : "Zakelijk telefoonnummer",
+            "localizedLabels" : {
+              "en" : "Zakelijk telefoonnummer"
+            }
+          }, {
+            "value" : "EC",
+            "label" : "Spoednummer",
+            "localizedLabels" : {
+              "en" : "Spoednummer"
+            }
+          } ],
+          "terminology" : "local_terms"
+        } ]
+      }, {
+        "id" : "toelichting",
+        "name" : "Toelichting",
+        "localizedName" : "Toelichting",
+        "rmType" : "DV_TEXT",
+        "nodeId" : "at0004",
+        "min" : 0,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "Toelichting"
+        },
+        "localizedDescriptions" : {
+          "en" : "Additional narrative about the electronic communication not captured in other fields."
+        },
+        "annotations" : {
+          "48767-8" : "Toelichting"
+        },
+        "aqlPath" : "/items[openEHR-EHR-CLUSTER.electronic_communication.v1,'Telefoonnummers']/items[at0004,'Toelichting']/value",
+        "inputs" : [ {
+          "type" : "TEXT"
+        } ]
+      } ]
+    }, {
+      "id" : "emailadressen",
+      "name" : "EmailAdressen",
+      "localizedName" : "EmailAdressen",
+      "rmType" : "CLUSTER",
+      "nodeId" : "openEHR-EHR-CLUSTER.electronic_communication.v1",
+      "min" : 0,
+      "max" : -1,
+      "localizedNames" : {
+        "en" : "EmailAdressen"
+      },
+      "localizedDescriptions" : {
+        "en" : "Details about a specified type of electronic communication."
+      },
+      "aqlPath" : "/items[openEHR-EHR-CLUSTER.electronic_communication.v1,'EmailAdressen']",
+      "children" : [ {
+        "id" : "emailadres",
+        "name" : "EmailAdres",
+        "localizedName" : "EmailAdres",
+        "rmType" : "DV_TEXT",
+        "nodeId" : "at0002",
+        "min" : 1,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "EmailAdres"
+        },
+        "localizedDescriptions" : {
+          "en" : "The unique combination of alphanumeric characters, relevant for representation of 'Type'."
+        },
+        "annotations" : {
+          "comment" : "For example: area code + landline phone/pager number; country code + mobile phone number; or email address."
+        },
+        "aqlPath" : "/items[openEHR-EHR-CLUSTER.electronic_communication.v1,'EmailAdressen']/items[at0002,'EmailAdres']/value",
+        "inputs" : [ {
+          "type" : "TEXT"
+        } ]
+      }, {
+        "id" : "emailsoort",
+        "name" : "EmailSoort",
+        "localizedName" : "EmailSoort",
+        "rmType" : "DV_CODED_TEXT",
+        "nodeId" : "at0003",
+        "min" : 1,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "EmailSoort"
+        },
+        "localizedDescriptions" : {
+          "en" : "The purpose or use for the identified type of electronic communication."
+        },
+        "aqlPath" : "/items[openEHR-EHR-CLUSTER.electronic_communication.v1,'EmailAdressen']/items[at0003,'EmailSoort']/value",
+        "inputs" : [ {
+          "suffix" : "code",
+          "type" : "CODED_TEXT",
+          "list" : [ {
+            "value" : "HP",
+            "label" : "Privé e-mailadres",
+            "localizedLabels" : {
+              "en" : "Privé e-mailadres"
+            }
+          }, {
+            "value" : "WP",
+            "label" : "Zakelijk e-mailadres",
+            "localizedLabels" : {
+              "en" : "Zakelijk e-mailadres"
+            }
+          } ],
+          "terminology" : "AddressUse"
+        } ]
+      } ]
+    } ]
+  }
+}
