@@ -1,0 +1,2641 @@
+{
+  "templateId" : "Contactpersoon-v4.0(2023NL)",
+  "semVer" : "0.1.8",
+  "version" : "2.3",
+  "defaultLanguage" : "en",
+  "languages" : [ "en" ],
+  "tree" : {
+    "id" : "contactpersoon-v4.0_2023nl",
+    "name" : "Contactpersoon-v4.0(2023NL)",
+    "localizedName" : "Contactpersoon-v4.0(2023NL)",
+    "rmType" : "EVALUATION",
+    "nodeId" : "openEHR-EHR-EVALUATION.social_network.v1",
+    "min" : 1,
+    "max" : 1,
+    "localizedNames" : {
+      "en" : "Contactpersoon-v4.0(2023NL)"
+    },
+    "localizedDescriptions" : {
+      "en" : "Group of individuals connected by social interactions and personal relationships."
+    },
+    "annotations" : {
+      "70862002" : "Contactpersoon"
+    },
+    "aqlPath" : "",
+    "children" : [ {
+      "id" : "person",
+      "name" : "Person",
+      "localizedName" : "Person",
+      "rmType" : "CLUSTER",
+      "nodeId" : "openEHR-EHR-CLUSTER.person.v1",
+      "min" : 0,
+      "max" : 1,
+      "localizedNames" : {
+        "en" : "Person"
+      },
+      "localizedDescriptions" : {
+        "en" : "An individual human being."
+      },
+      "aqlPath" : "/data[at0001]/items[openEHR-EHR-CLUSTER.person.v1]",
+      "children" : [ {
+        "id" : "relatie",
+        "name" : "Relatie",
+        "localizedName" : "Relatie",
+        "rmType" : "DV_CODED_TEXT",
+        "nodeId" : "at0011",
+        "min" : 0,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "Relatie"
+        },
+        "localizedDescriptions" : {
+          "en" : "A label for the individual."
+        },
+        "annotations" : {
+          "comment" : "For example: 'Neighbour in the house with the red door'."
+        },
+        "aqlPath" : "/data[at0001]/items[openEHR-EHR-CLUSTER.person.v1]/items[at0011,'Relatie']/value",
+        "inputs" : [ {
+          "suffix" : "code",
+          "type" : "CODED_TEXT",
+          "list" : [ {
+            "value" : "17925003",
+            "label" : "Adoptiebroer",
+            "localizedLabels" : {
+              "en" : "Adoptiebroer"
+            }
+          }, {
+            "value" : "393547004",
+            "label" : "Geadopteerd kind",
+            "localizedLabels" : {
+              "en" : "Geadopteerd kind"
+            }
+          }, {
+            "value" : "609005",
+            "label" : "Adoptievader",
+            "localizedLabels" : {
+              "en" : "Adoptievader"
+            }
+          }, {
+            "value" : "21464003",
+            "label" : "Adoptiemoeder",
+            "localizedLabels" : {
+              "en" : "Adoptiemoeder"
+            }
+          }, {
+            "value" : "41953004",
+            "label" : "Adoptieouder",
+            "localizedLabels" : {
+              "en" : "Adoptieouder"
+            }
+          }, {
+            "value" : "79508001",
+            "label" : "Adoptiebroer of adoptiezus",
+            "localizedLabels" : {
+              "en" : "Adoptiebroer of adoptiezus"
+            }
+          }, {
+            "value" : "76022008",
+            "label" : "Adoptiezus",
+            "localizedLabels" : {
+              "en" : "Adoptiezus"
+            }
+          }, {
+            "value" : "25211005",
+            "label" : "Tante",
+            "localizedLabels" : {
+              "en" : "Tante"
+            }
+          }, {
+            "value" : "70924004",
+            "label" : "Broer",
+            "localizedLabels" : {
+              "en" : "Broer"
+            }
+          }, {
+            "value" : "300461000146105",
+            "label" : "Zwager",
+            "localizedLabels" : {
+              "en" : "Zwager"
+            }
+          }, {
+            "value" : "55538000",
+            "label" : "Neef of nicht",
+            "localizedLabels" : {
+              "en" : "Neef of nicht"
+            }
+          }, {
+            "value" : "66089001",
+            "label" : "Dochter",
+            "localizedLabels" : {
+              "en" : "Dochter"
+            }
+          }, {
+            "value" : "1258961002",
+            "label" : "Schoondochter",
+            "localizedLabels" : {
+              "en" : "Schoondochter"
+            }
+          }, {
+            "value" : "262043009",
+            "label" : "Levenspartner",
+            "localizedLabels" : {
+              "en" : "Levenspartner"
+            }
+          }, {
+            "value" : "414043009",
+            "label" : "Geregistreerde partner",
+            "localizedLabels" : {
+              "en" : "Geregistreerde partner"
+            }
+          }, {
+            "value" : "300761000146104",
+            "label" : "Ex-partner",
+            "localizedLabels" : {
+              "en" : "Ex-partner"
+            }
+          }, {
+            "value" : "66839005",
+            "label" : "Vader",
+            "localizedLabels" : {
+              "en" : "Vader"
+            }
+          }, {
+            "value" : "5171000124108",
+            "label" : "Schoonvader",
+            "localizedLabels" : {
+              "en" : "Schoonvader"
+            }
+          }, {
+            "value" : "31831004",
+            "label" : "Pleegdochter",
+            "localizedLabels" : {
+              "en" : "Pleegdochter"
+            }
+          }, {
+            "value" : "8458002",
+            "label" : "Pleegvader",
+            "localizedLabels" : {
+              "en" : "Pleegvader"
+            }
+          }, {
+            "value" : "38265003",
+            "label" : "Pleegmoeder",
+            "localizedLabels" : {
+              "en" : "Pleegmoeder"
+            }
+          }, {
+            "value" : "12241003",
+            "label" : "Pleegzoon",
+            "localizedLabels" : {
+              "en" : "Pleegzoon"
+            }
+          }, {
+            "value" : "39062003",
+            "label" : "Pleegkind",
+            "localizedLabels" : {
+              "en" : "Pleegkind"
+            }
+          }, {
+            "value" : "90921004",
+            "label" : "Pleegouder",
+            "localizedLabels" : {
+              "en" : "Pleegouder"
+            }
+          }, {
+            "value" : "48385004",
+            "label" : "Kennis",
+            "localizedLabels" : {
+              "en" : "Kennis"
+            }
+          }, {
+            "value" : "86372007",
+            "label" : "Kleinkind",
+            "localizedLabels" : {
+              "en" : "Kleinkind"
+            }
+          }, {
+            "value" : "44181008",
+            "label" : "Kleindochter",
+            "localizedLabels" : {
+              "en" : "Kleindochter"
+            }
+          }, {
+            "value" : "34871008",
+            "label" : "Grootvader",
+            "localizedLabels" : {
+              "en" : "Grootvader"
+            }
+          }, {
+            "value" : "113157001",
+            "label" : "Grootmoeder",
+            "localizedLabels" : {
+              "en" : "Grootmoeder"
+            }
+          }, {
+            "value" : "38312007",
+            "label" : "Grootouder",
+            "localizedLabels" : {
+              "en" : "Grootouder"
+            }
+          }, {
+            "value" : "70578009",
+            "label" : "Kleinzoon",
+            "localizedLabels" : {
+              "en" : "Kleinzoon"
+            }
+          }, {
+            "value" : "50261002",
+            "label" : "Overgrootvader",
+            "localizedLabels" : {
+              "en" : "Overgrootvader"
+            }
+          }, {
+            "value" : "78652007",
+            "label" : "Overgrootmoeder",
+            "localizedLabels" : {
+              "en" : "Overgrootmoeder"
+            }
+          }, {
+            "value" : "127849001",
+            "label" : "Echtgenoot",
+            "localizedLabels" : {
+              "en" : "Echtgenoot"
+            }
+          }, {
+            "value" : "72705000",
+            "label" : "Moeder",
+            "localizedLabels" : {
+              "en" : "Moeder"
+            }
+          }, {
+            "value" : "5181000124106",
+            "label" : "Schoonmoeder",
+            "localizedLabels" : {
+              "en" : "Schoonmoeder"
+            }
+          }, {
+            "value" : "427568008",
+            "label" : "Buurman of buurvrouw",
+            "localizedLabels" : {
+              "en" : "Buurman of buurvrouw"
+            }
+          }, {
+            "value" : "47801002",
+            "label" : "Neef",
+            "localizedLabels" : {
+              "en" : "Neef"
+            }
+          }, {
+            "value" : "2959006",
+            "label" : "Nicht",
+            "localizedLabels" : {
+              "en" : "Nicht"
+            }
+          }, {
+            "value" : "40683002",
+            "label" : "Ouder",
+            "localizedLabels" : {
+              "en" : "Ouder"
+            }
+          }, {
+            "value" : "5161000124101",
+            "label" : "Schoonouder",
+            "localizedLabels" : {
+              "en" : "Schoonouder"
+            }
+          }, {
+            "value" : "300521000146102",
+            "label" : "Huisgenoot",
+            "localizedLabels" : {
+              "en" : "Huisgenoot"
+            }
+          }, {
+            "value" : "375005",
+            "label" : "Broer of zus",
+            "localizedLabels" : {
+              "en" : "Broer of zus"
+            }
+          }, {
+            "value" : "27733009",
+            "label" : "Zus",
+            "localizedLabels" : {
+              "en" : "Zus"
+            }
+          }, {
+            "value" : "300471000146104",
+            "label" : "Schoonzus",
+            "localizedLabels" : {
+              "en" : "Schoonzus"
+            }
+          }, {
+            "value" : "65616008",
+            "label" : "Zoon",
+            "localizedLabels" : {
+              "en" : "Zoon"
+            }
+          }, {
+            "value" : "1258960001",
+            "label" : "Schoonzoon",
+            "localizedLabels" : {
+              "en" : "Schoonzoon"
+            }
+          }, {
+            "value" : "127848009",
+            "label" : "Echtgenoot of echtgenote",
+            "localizedLabels" : {
+              "en" : "Echtgenoot of echtgenote"
+            }
+          }, {
+            "value" : "76087000",
+            "label" : "Stiefbroer",
+            "localizedLabels" : {
+              "en" : "Stiefbroer"
+            }
+          }, {
+            "value" : "86764008",
+            "label" : "Stiefkind",
+            "localizedLabels" : {
+              "en" : "Stiefkind"
+            }
+          }, {
+            "value" : "22573006",
+            "label" : "Stiefdochter",
+            "localizedLabels" : {
+              "en" : "Stiefdochter"
+            }
+          }, {
+            "value" : "30578000",
+            "label" : "Stiefvader",
+            "localizedLabels" : {
+              "en" : "Stiefvader"
+            }
+          }, {
+            "value" : "65412001",
+            "label" : "Stiefmoeder",
+            "localizedLabels" : {
+              "en" : "Stiefmoeder"
+            }
+          }, {
+            "value" : "74128007",
+            "label" : "Stiefouder",
+            "localizedLabels" : {
+              "en" : "Stiefouder"
+            }
+          }, {
+            "value" : "88510002",
+            "label" : "Stiefbroer of stiefzus",
+            "localizedLabels" : {
+              "en" : "Stiefbroer of stiefzus"
+            }
+          }, {
+            "value" : "46363003",
+            "label" : "Stiefzus",
+            "localizedLabels" : {
+              "en" : "Stiefzus"
+            }
+          }, {
+            "value" : "8674003",
+            "label" : "Stiefzoon",
+            "localizedLabels" : {
+              "en" : "Stiefzoon"
+            }
+          }, {
+            "value" : "38048003",
+            "label" : "Oom",
+            "localizedLabels" : {
+              "en" : "Oom"
+            }
+          }, {
+            "value" : "127850001",
+            "label" : "Echtgenote",
+            "localizedLabels" : {
+              "en" : "Echtgenote"
+            }
+          }, {
+            "value" : "OTH",
+            "label" : "Anders",
+            "localizedLabels" : {
+              "en" : "Anders"
+            }
+          } ],
+          "terminology" : "SNOMED CT"
+        } ]
+      }, {
+        "id" : "naamgegevens-v1.1.1_2023nl",
+        "name" : "Naamgegevens-v1.1.1(2023NL)",
+        "localizedName" : "Naamgegevens-v1.1.1(2023NL)",
+        "rmType" : "CLUSTER",
+        "nodeId" : "openEHR-EHR-CLUSTER.structured_name.v1",
+        "min" : 0,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "Naamgegevens-v1.1.1(2023NL)"
+        },
+        "localizedDescriptions" : {
+          "en" : "Discrete components of an individual's name."
+        },
+        "aqlPath" : "/data[at0001]/items[openEHR-EHR-CLUSTER.person.v1]/items[openEHR-EHR-CLUSTER.structured_name.v1,'Naamgegevens-v1.1.1(2023NL)']",
+        "children" : [ {
+          "id" : "titels",
+          "name" : "Titels",
+          "localizedName" : "Titels",
+          "rmType" : "DV_TEXT",
+          "nodeId" : "at0001",
+          "min" : 0,
+          "max" : -1,
+          "localizedNames" : {
+            "en" : "Titels"
+          },
+          "localizedDescriptions" : {
+            "en" : "One or more honorific form(s) of address commencing a name."
+          },
+          "annotations" : {
+            "comment" : "Occurrences for this data element are set to 0..* to allow for more than one Title to be recorded. Coding with an external terminology is preferred, where possible. For example: 'Doctor'; 'Ms'; 'Mx'; or 'Professor Dr'."
+          },
+          "aqlPath" : "/data[at0001]/items[openEHR-EHR-CLUSTER.person.v1]/items[openEHR-EHR-CLUSTER.structured_name.v1,'Naamgegevens-v1.1.1(2023NL)']/items[at0001,'Titels']/value",
+          "inputs" : [ {
+            "type" : "TEXT"
+          } ]
+        }, {
+          "id" : "voornamen",
+          "name" : "Voornamen",
+          "localizedName" : "Voornamen",
+          "rmType" : "DV_TEXT",
+          "nodeId" : "at0002",
+          "min" : 0,
+          "max" : -1,
+          "localizedNames" : {
+            "en" : "Voornamen"
+          },
+          "localizedDescriptions" : {
+            "en" : "One or more unique name(s) used to identify an individual within a family group."
+          },
+          "annotations" : {
+            "comment" : "Occurrences for this data element are set to 0..* to allow for more than one Given name to be recorded. In addition, this data element may be cloned and renamed within a template to allow discrete recording of different types of Given name - for example 'First name', 'Middle name', 'Preferred name' or 'Nickname', as required for a specific use case."
+          },
+          "aqlPath" : "/data[at0001]/items[openEHR-EHR-CLUSTER.person.v1]/items[openEHR-EHR-CLUSTER.structured_name.v1,'Naamgegevens-v1.1.1(2023NL)']/items[at0002,'Voornamen']/value",
+          "inputs" : [ {
+            "type" : "TEXT"
+          } ]
+        }, {
+          "id" : "achternaam",
+          "name" : "Achternaam",
+          "localizedName" : "Achternaam",
+          "rmType" : "DV_TEXT",
+          "nodeId" : "at0005",
+          "min" : 0,
+          "max" : -1,
+          "localizedNames" : {
+            "en" : "Achternaam"
+          },
+          "localizedDescriptions" : {
+            "en" : "One or more name(s) that an individual has in common with a family group."
+          },
+          "annotations" : {
+            "comment" : "Also known as 'Last name' or 'Surname'. Occurrences for this data element are set to 0..* to allow for more than one Family name to be recorded. Complex names such as 'El Haddad' or 'van der Heyden' can be recorded using this naming pattern, as identified in ISO 22220 (Annex F), but for the intended use case for this archetype it is most likely that the full family name will be recorded as a string."
+          },
+          "aqlPath" : "/data[at0001]/items[openEHR-EHR-CLUSTER.person.v1]/items[openEHR-EHR-CLUSTER.structured_name.v1,'Naamgegevens-v1.1.1(2023NL)']/items[at0005,'Achternaam']/value",
+          "inputs" : [ {
+            "type" : "TEXT"
+          } ]
+        } ]
+      }, {
+        "id" : "rol",
+        "name" : "Rol",
+        "localizedName" : "Rol",
+        "rmType" : "DV_CODED_TEXT",
+        "nodeId" : "at0004",
+        "min" : 0,
+        "max" : -1,
+        "localizedNames" : {
+          "en" : "Rol"
+        },
+        "localizedDescriptions" : {
+          "en" : "The relationship or role of the individual to the subject of the health record."
+        },
+        "annotations" : {
+          "comment" : "For example - the copyholder of an advance care record; contact person in an organisation; relative in a family history entry; specimen collector; or witness to a fall or accident. If the individual being described using this archetype is the subject of the health record, then this data element is redundant."
+        },
+        "aqlPath" : "/data[at0001]/items[openEHR-EHR-CLUSTER.person.v1]/items[at0004,'Rol']/value",
+        "inputs" : [ {
+          "suffix" : "code",
+          "type" : "CODED_TEXT",
+          "list" : [ {
+            "value" : "300481000146102",
+            "label" : "Eerste contactpersoon",
+            "localizedLabels" : {
+              "en" : "Eerste contactpersoon"
+            }
+          }, {
+            "value" : "300531000146100",
+            "label" : "Secundair contactpersoon",
+            "localizedLabels" : {
+              "en" : "Secundair contactpersoon"
+            }
+          }, {
+            "value" : "1269519005",
+            "label" : "Curator",
+            "localizedLabels" : {
+              "en" : "Curator"
+            }
+          }, {
+            "value" : "300561000146109",
+            "label" : "Mentor",
+            "localizedLabels" : {
+              "en" : "Mentor"
+            }
+          }, {
+            "value" : "310141000146103",
+            "label" : "Schriftelijk gemachtigde zorg en behandeling",
+            "localizedLabels" : {
+              "en" : "Schriftelijk gemachtigde zorg en behandeling"
+            }
+          }, {
+            "value" : "300551000146106",
+            "label" : "Bewindvoerder",
+            "localizedLabels" : {
+              "en" : "Bewindvoerder"
+            }
+          }, {
+            "value" : "300591000146104",
+            "label" : "Zaakwaarnemer",
+            "localizedLabels" : {
+              "en" : "Zaakwaarnemer"
+            }
+          }, {
+            "value" : "300581000146101",
+            "label" : "Schriftelijk gemachtigde financieel",
+            "localizedLabels" : {
+              "en" : "Schriftelijk gemachtigde financieel"
+            }
+          }, {
+            "value" : "310371000146106",
+            "label" : "Vertegenwoordiger bij wilsonbekwaamheid",
+            "localizedLabels" : {
+              "en" : "Vertegenwoordiger bij wilsonbekwaamheid"
+            }
+          }, {
+            "value" : "394619001",
+            "label" : "Voogd",
+            "localizedLabels" : {
+              "en" : "Voogd"
+            }
+          }, {
+            "value" : "310361000146100",
+            "label" : "Wettelijk vertegenwoordiger op grond van ouderlijk gezag",
+            "localizedLabels" : {
+              "en" : "Wettelijk vertegenwoordiger op grond van ouderlijk gezag"
+            }
+          }, {
+            "value" : "407542009",
+            "label" : "Mantelzorger",
+            "localizedLabels" : {
+              "en" : "Mantelzorger"
+            }
+          }, {
+            "value" : "768733004",
+            "label" : "Geestelijk verzorger",
+            "localizedLabels" : {
+              "en" : "Geestelijk verzorger"
+            }
+          }, {
+            "value" : "40570005",
+            "label" : "Tolk",
+            "localizedLabels" : {
+              "en" : "Tolk"
+            }
+          }, {
+            "value" : "12877000",
+            "label" : "Advocaat",
+            "localizedLabels" : {
+              "en" : "Advocaat"
+            }
+          }, {
+            "value" : "106304008",
+            "label" : "Docent",
+            "localizedLabels" : {
+              "en" : "Docent"
+            }
+          }, {
+            "value" : "300601000146109",
+            "label" : "Patiëntvertrouwenspersoon",
+            "localizedLabels" : {
+              "en" : "Patiëntvertrouwenspersoon"
+            }
+          }, {
+            "value" : "394571004",
+            "label" : "Werkgever",
+            "localizedLabels" : {
+              "en" : "Werkgever"
+            }
+          }, {
+            "value" : "300491000146100",
+            "label" : "Begeleider",
+            "localizedLabels" : {
+              "en" : "Begeleider"
+            }
+          }, {
+            "value" : "OTH",
+            "label" : "Anders",
+            "localizedLabels" : {
+              "en" : "Anders"
+            }
+          } ],
+          "terminology" : "SNOMED CT"
+        } ]
+      }, {
+        "id" : "adresgegevens-v1.1_2023nl",
+        "name" : "Adresgegevens-v1.1(2023NL)",
+        "localizedName" : "Adresgegevens-v1.1(2023NL)",
+        "rmType" : "CLUSTER",
+        "nodeId" : "openEHR-EHR-CLUSTER.address.v1",
+        "min" : 0,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "Adresgegevens-v1.1(2023NL)"
+        },
+        "localizedDescriptions" : {
+          "en" : "Details about the location of a person, physical building or landmark."
+        },
+        "aqlPath" : "/data[at0001]/items[openEHR-EHR-CLUSTER.person.v1]/items[openEHR-EHR-CLUSTER.address.v1,'Adresgegevens-v1.1(2023NL)']",
+        "children" : [ {
+          "id" : "adresregel",
+          "name" : "Adresregel",
+          "localizedName" : "Adresregel",
+          "rmType" : "DV_TEXT",
+          "nodeId" : "at0001",
+          "min" : 0,
+          "max" : -1,
+          "localizedNames" : {
+            "en" : "Adresregel"
+          },
+          "localizedDescriptions" : {
+            "en" : "An unstructured address line representing all relevant street-level or post-box details that would support the identification of a location."
+          },
+          "annotations" : {
+            "comment" : "Occurrences for this data element is set to 0..* to allow one or more free text 'Address line' data elements to represent the huge variety of ways that ‘street-level' details may need to be recorded within the context of a specified 'Town'. Multiple address lines can be represented in a template, renamed as 'Address line 1', 'Address line 2,' etc. For example: '7A/52 Davis Street' or 'Apartment 7A' as Address line 1 with '52 Davis Street' as Address line 2; a roadside mail box location, such as 'RMB 725, Princes Highway'; or using a descriptive landmark, such as or 'Corner of Smith & Brown Streets' or 'Second house north of the general store with the red door'."
+          },
+          "aqlPath" : "/data[at0001]/items[openEHR-EHR-CLUSTER.person.v1]/items[openEHR-EHR-CLUSTER.address.v1,'Adresgegevens-v1.1(2023NL)']/items[at0001,'Adresregel']/value",
+          "inputs" : [ {
+            "type" : "TEXT"
+          } ]
+        }, {
+          "id" : "woonplaats",
+          "name" : "Woonplaats",
+          "localizedName" : "Woonplaats",
+          "rmType" : "DV_TEXT",
+          "nodeId" : "at0002",
+          "min" : 0,
+          "max" : 1,
+          "localizedNames" : {
+            "en" : "Woonplaats"
+          },
+          "localizedDescriptions" : {
+            "en" : "The name of the lowest level locality that contains the address."
+          },
+          "annotations" : {
+            "comment" : "For example: suburb, town, city, settlement, village, or community. Coding with an external terminology is preferred, where possible. For example: 'Fitzroy'; 'Manchester'; 'Kingston' or 'Bergen'."
+          },
+          "aqlPath" : "/data[at0001]/items[openEHR-EHR-CLUSTER.person.v1]/items[openEHR-EHR-CLUSTER.address.v1,'Adresgegevens-v1.1(2023NL)']/items[at0002,'Woonplaats']/value",
+          "inputs" : [ {
+            "type" : "TEXT"
+          } ]
+        }, {
+          "id" : "gemeente",
+          "name" : "Gemeente",
+          "localizedName" : "Gemeente",
+          "rmType" : "DV_TEXT",
+          "nodeId" : "at0003",
+          "min" : 0,
+          "max" : 1,
+          "localizedNames" : {
+            "en" : "Gemeente"
+          },
+          "localizedDescriptions" : {
+            "en" : "The name of a local government district or geographical area that contains the address."
+          },
+          "annotations" : {
+            "comment" : "Coding with an external terminology is preferred, where possible. For example: 'Surf Coast' and 'Yarra' local government councils in Victoria, Australia;and the Parishes of 'Saint Andrew' and 'Kingston' in Jamaica.."
+          },
+          "aqlPath" : "/data[at0001]/items[openEHR-EHR-CLUSTER.person.v1]/items[openEHR-EHR-CLUSTER.address.v1,'Adresgegevens-v1.1(2023NL)']/items[at0003,'Gemeente']/value",
+          "inputs" : [ {
+            "type" : "TEXT"
+          } ]
+        }, {
+          "id" : "postcode",
+          "name" : "Postcode",
+          "localizedName" : "Postcode",
+          "rmType" : "DV_TEXT",
+          "nodeId" : "at0005",
+          "min" : 0,
+          "max" : 1,
+          "localizedNames" : {
+            "en" : "Postcode"
+          },
+          "localizedDescriptions" : {
+            "en" : "The code for a postal delivery area containing the address, as defined by the relevant postal delivery service."
+          },
+          "annotations" : {
+            "comment" : "Also known as a postcode or ZIP code.\r\n"
+          },
+          "aqlPath" : "/data[at0001]/items[openEHR-EHR-CLUSTER.person.v1]/items[openEHR-EHR-CLUSTER.address.v1,'Adresgegevens-v1.1(2023NL)']/items[at0005,'Postcode']/value",
+          "inputs" : [ {
+            "type" : "TEXT"
+          } ]
+        }, {
+          "id" : "land",
+          "name" : "Land",
+          "localizedName" : "Land",
+          "rmType" : "DV_CODED_TEXT",
+          "nodeId" : "at0006",
+          "min" : 0,
+          "max" : 1,
+          "localizedNames" : {
+            "en" : "Land"
+          },
+          "localizedDescriptions" : {
+            "en" : "The name of the country containing the address."
+          },
+          "annotations" : {
+            "comment" : "For example: Australia; Canada; Jamaica; or Norway. Coding with an external terminology, such as EN ISO 3166–1 Alpha 2 country code, is recommended."
+          },
+          "aqlPath" : "/data[at0001]/items[openEHR-EHR-CLUSTER.person.v1]/items[openEHR-EHR-CLUSTER.address.v1,'Adresgegevens-v1.1(2023NL)']/items[at0006,'Land']/value",
+          "inputs" : [ {
+            "suffix" : "code",
+            "type" : "CODED_TEXT",
+            "list" : [ {
+              "value" : "AF",
+              "label" : "Afghanistan",
+              "localizedLabels" : {
+                "en" : "Afghanistan"
+              }
+            }, {
+              "value" : "AX",
+              "label" : "Åland",
+              "localizedLabels" : {
+                "en" : "Åland"
+              }
+            }, {
+              "value" : "AL",
+              "label" : "Albanië",
+              "localizedLabels" : {
+                "en" : "Albanië"
+              }
+            }, {
+              "value" : "DZ",
+              "label" : "Algerije",
+              "localizedLabels" : {
+                "en" : "Algerije"
+              }
+            }, {
+              "value" : "AS",
+              "label" : "Amerikaans-Samoa",
+              "localizedLabels" : {
+                "en" : "Amerikaans-Samoa"
+              }
+            }, {
+              "value" : "UM",
+              "label" : "Amerikaanse Kleinere Afgelegen Eilanden",
+              "localizedLabels" : {
+                "en" : "Amerikaanse Kleinere Afgelegen Eilanden"
+              }
+            }, {
+              "value" : "VI",
+              "label" : "Amerikaanse Maagdeneilanden",
+              "localizedLabels" : {
+                "en" : "Amerikaanse Maagdeneilanden"
+              }
+            }, {
+              "value" : "AD",
+              "label" : "Andorra",
+              "localizedLabels" : {
+                "en" : "Andorra"
+              }
+            }, {
+              "value" : "AO",
+              "label" : "Angola",
+              "localizedLabels" : {
+                "en" : "Angola"
+              }
+            }, {
+              "value" : "AI",
+              "label" : "Anguilla",
+              "localizedLabels" : {
+                "en" : "Anguilla"
+              }
+            }, {
+              "value" : "AQ",
+              "label" : "Antarctica",
+              "localizedLabels" : {
+                "en" : "Antarctica"
+              }
+            }, {
+              "value" : "AG",
+              "label" : "Antigua en Barbuda",
+              "localizedLabels" : {
+                "en" : "Antigua en Barbuda"
+              }
+            }, {
+              "value" : "AR",
+              "label" : "Argentinië",
+              "localizedLabels" : {
+                "en" : "Argentinië"
+              }
+            }, {
+              "value" : "AM",
+              "label" : "Armenië",
+              "localizedLabels" : {
+                "en" : "Armenië"
+              }
+            }, {
+              "value" : "AW",
+              "label" : "Aruba",
+              "localizedLabels" : {
+                "en" : "Aruba"
+              }
+            }, {
+              "value" : "AU",
+              "label" : "Australië",
+              "localizedLabels" : {
+                "en" : "Australië"
+              }
+            }, {
+              "value" : "AZ",
+              "label" : "Azerbeidzjan",
+              "localizedLabels" : {
+                "en" : "Azerbeidzjan"
+              }
+            }, {
+              "value" : "BS",
+              "label" : "Bahama's",
+              "localizedLabels" : {
+                "en" : "Bahama's"
+              }
+            }, {
+              "value" : "BH",
+              "label" : "Bahrein",
+              "localizedLabels" : {
+                "en" : "Bahrein"
+              }
+            }, {
+              "value" : "BD",
+              "label" : "Bangladesh",
+              "localizedLabels" : {
+                "en" : "Bangladesh"
+              }
+            }, {
+              "value" : "BB",
+              "label" : "Barbados",
+              "localizedLabels" : {
+                "en" : "Barbados"
+              }
+            }, {
+              "value" : "BE",
+              "label" : "België",
+              "localizedLabels" : {
+                "en" : "België"
+              }
+            }, {
+              "value" : "BZ",
+              "label" : "Belize",
+              "localizedLabels" : {
+                "en" : "Belize"
+              }
+            }, {
+              "value" : "BJ",
+              "label" : "Benin",
+              "localizedLabels" : {
+                "en" : "Benin"
+              }
+            }, {
+              "value" : "BM",
+              "label" : "Bermuda",
+              "localizedLabels" : {
+                "en" : "Bermuda"
+              }
+            }, {
+              "value" : "BT",
+              "label" : "Bhutan",
+              "localizedLabels" : {
+                "en" : "Bhutan"
+              }
+            }, {
+              "value" : "BO",
+              "label" : "Bolivia",
+              "localizedLabels" : {
+                "en" : "Bolivia"
+              }
+            }, {
+              "value" : "BQ",
+              "label" : "Bonaire, Sint Eustatius en Saba",
+              "localizedLabels" : {
+                "en" : "Bonaire, Sint Eustatius en Saba"
+              }
+            }, {
+              "value" : "BA",
+              "label" : "Bosnië en Herzegovina",
+              "localizedLabels" : {
+                "en" : "Bosnië en Herzegovina"
+              }
+            }, {
+              "value" : "BW",
+              "label" : "Botswana",
+              "localizedLabels" : {
+                "en" : "Botswana"
+              }
+            }, {
+              "value" : "BV",
+              "label" : "Bouvet",
+              "localizedLabels" : {
+                "en" : "Bouvet"
+              }
+            }, {
+              "value" : "BR",
+              "label" : "Brazilië",
+              "localizedLabels" : {
+                "en" : "Brazilië"
+              }
+            }, {
+              "value" : "IO",
+              "label" : "Brits Indische Oceaanterritorium",
+              "localizedLabels" : {
+                "en" : "Brits Indische Oceaanterritorium"
+              }
+            }, {
+              "value" : "VG",
+              "label" : "Britse Maagdeneilanden",
+              "localizedLabels" : {
+                "en" : "Britse Maagdeneilanden"
+              }
+            }, {
+              "value" : "BN",
+              "label" : "Brunei",
+              "localizedLabels" : {
+                "en" : "Brunei"
+              }
+            }, {
+              "value" : "BG",
+              "label" : "Bulgarije",
+              "localizedLabels" : {
+                "en" : "Bulgarije"
+              }
+            }, {
+              "value" : "BF",
+              "label" : "Burkina Faso",
+              "localizedLabels" : {
+                "en" : "Burkina Faso"
+              }
+            }, {
+              "value" : "BI",
+              "label" : "Burundi",
+              "localizedLabels" : {
+                "en" : "Burundi"
+              }
+            }, {
+              "value" : "KH",
+              "label" : "Cambodja",
+              "localizedLabels" : {
+                "en" : "Cambodja"
+              }
+            }, {
+              "value" : "CA",
+              "label" : "Canada",
+              "localizedLabels" : {
+                "en" : "Canada"
+              }
+            }, {
+              "value" : "CF",
+              "label" : "Centraal-Afrikaanse Republiek",
+              "localizedLabels" : {
+                "en" : "Centraal-Afrikaanse Republiek"
+              }
+            }, {
+              "value" : "CL",
+              "label" : "Chili",
+              "localizedLabels" : {
+                "en" : "Chili"
+              }
+            }, {
+              "value" : "CN",
+              "label" : "China",
+              "localizedLabels" : {
+                "en" : "China"
+              }
+            }, {
+              "value" : "CX",
+              "label" : "Christmaseiland",
+              "localizedLabels" : {
+                "en" : "Christmaseiland"
+              }
+            }, {
+              "value" : "CC",
+              "label" : "Cocoseilanden",
+              "localizedLabels" : {
+                "en" : "Cocoseilanden"
+              }
+            }, {
+              "value" : "CO",
+              "label" : "Colombia",
+              "localizedLabels" : {
+                "en" : "Colombia"
+              }
+            }, {
+              "value" : "KM",
+              "label" : "Comoren",
+              "localizedLabels" : {
+                "en" : "Comoren"
+              }
+            }, {
+              "value" : "CG",
+              "label" : "Congo",
+              "localizedLabels" : {
+                "en" : "Congo"
+              }
+            }, {
+              "value" : "CK",
+              "label" : "Cookeilanden",
+              "localizedLabels" : {
+                "en" : "Cookeilanden"
+              }
+            }, {
+              "value" : "CR",
+              "label" : "Costa Rica",
+              "localizedLabels" : {
+                "en" : "Costa Rica"
+              }
+            }, {
+              "value" : "CU",
+              "label" : "Cuba",
+              "localizedLabels" : {
+                "en" : "Cuba"
+              }
+            }, {
+              "value" : "CW",
+              "label" : "Curaçao",
+              "localizedLabels" : {
+                "en" : "Curaçao"
+              }
+            }, {
+              "value" : "CY",
+              "label" : "Cyprus",
+              "localizedLabels" : {
+                "en" : "Cyprus"
+              }
+            }, {
+              "value" : "CD",
+              "label" : "Democratische republiek Congo",
+              "localizedLabels" : {
+                "en" : "Democratische republiek Congo"
+              }
+            }, {
+              "value" : "DK",
+              "label" : "Denemarken",
+              "localizedLabels" : {
+                "en" : "Denemarken"
+              }
+            }, {
+              "value" : "DJ",
+              "label" : "Djibouti",
+              "localizedLabels" : {
+                "en" : "Djibouti"
+              }
+            }, {
+              "value" : "DM",
+              "label" : "Dominica",
+              "localizedLabels" : {
+                "en" : "Dominica"
+              }
+            }, {
+              "value" : "DO",
+              "label" : "Dominicaanse Republiek",
+              "localizedLabels" : {
+                "en" : "Dominicaanse Republiek"
+              }
+            }, {
+              "value" : "DE",
+              "label" : "Duitsland",
+              "localizedLabels" : {
+                "en" : "Duitsland"
+              }
+            }, {
+              "value" : "EC",
+              "label" : "Ecuador",
+              "localizedLabels" : {
+                "en" : "Ecuador"
+              }
+            }, {
+              "value" : "EG",
+              "label" : "Egypte",
+              "localizedLabels" : {
+                "en" : "Egypte"
+              }
+            }, {
+              "value" : "SV",
+              "label" : "El Salvador",
+              "localizedLabels" : {
+                "en" : "El Salvador"
+              }
+            }, {
+              "value" : "GQ",
+              "label" : "Equatoriaal-Guinea",
+              "localizedLabels" : {
+                "en" : "Equatoriaal-Guinea"
+              }
+            }, {
+              "value" : "ER",
+              "label" : "Eritrea",
+              "localizedLabels" : {
+                "en" : "Eritrea"
+              }
+            }, {
+              "value" : "EE",
+              "label" : "Estland",
+              "localizedLabels" : {
+                "en" : "Estland"
+              }
+            }, {
+              "value" : "SZ",
+              "label" : "Eswatini",
+              "localizedLabels" : {
+                "en" : "Eswatini"
+              }
+            }, {
+              "value" : "ET",
+              "label" : "Ethiopië",
+              "localizedLabels" : {
+                "en" : "Ethiopië"
+              }
+            }, {
+              "value" : "FO",
+              "label" : "Faeröer",
+              "localizedLabels" : {
+                "en" : "Faeröer"
+              }
+            }, {
+              "value" : "FK",
+              "label" : "Falklandeilanden",
+              "localizedLabels" : {
+                "en" : "Falklandeilanden"
+              }
+            }, {
+              "value" : "FJ",
+              "label" : "Fiji",
+              "localizedLabels" : {
+                "en" : "Fiji"
+              }
+            }, {
+              "value" : "PH",
+              "label" : "Filipijnen",
+              "localizedLabels" : {
+                "en" : "Filipijnen"
+              }
+            }, {
+              "value" : "FI",
+              "label" : "Finland",
+              "localizedLabels" : {
+                "en" : "Finland"
+              }
+            }, {
+              "value" : "FR",
+              "label" : "Frankrijk",
+              "localizedLabels" : {
+                "en" : "Frankrijk"
+              }
+            }, {
+              "value" : "GF",
+              "label" : "Frans-Guyana",
+              "localizedLabels" : {
+                "en" : "Frans-Guyana"
+              }
+            }, {
+              "value" : "PF",
+              "label" : "Frans-Polynesië",
+              "localizedLabels" : {
+                "en" : "Frans-Polynesië"
+              }
+            }, {
+              "value" : "TF",
+              "label" : "Franse Zuidelijke Gebieden",
+              "localizedLabels" : {
+                "en" : "Franse Zuidelijke Gebieden"
+              }
+            }, {
+              "value" : "GA",
+              "label" : "Gabon",
+              "localizedLabels" : {
+                "en" : "Gabon"
+              }
+            }, {
+              "value" : "GM",
+              "label" : "Gambia",
+              "localizedLabels" : {
+                "en" : "Gambia"
+              }
+            }, {
+              "value" : "GE",
+              "label" : "Georgië",
+              "localizedLabels" : {
+                "en" : "Georgië"
+              }
+            }, {
+              "value" : "GH",
+              "label" : "Ghana",
+              "localizedLabels" : {
+                "en" : "Ghana"
+              }
+            }, {
+              "value" : "GI",
+              "label" : "Gibraltar",
+              "localizedLabels" : {
+                "en" : "Gibraltar"
+              }
+            }, {
+              "value" : "GD",
+              "label" : "Grenada",
+              "localizedLabels" : {
+                "en" : "Grenada"
+              }
+            }, {
+              "value" : "GR",
+              "label" : "Griekenland",
+              "localizedLabels" : {
+                "en" : "Griekenland"
+              }
+            }, {
+              "value" : "GL",
+              "label" : "Groenland",
+              "localizedLabels" : {
+                "en" : "Groenland"
+              }
+            }, {
+              "value" : "GP",
+              "label" : "Guadeloupe",
+              "localizedLabels" : {
+                "en" : "Guadeloupe"
+              }
+            }, {
+              "value" : "GU",
+              "label" : "Guam",
+              "localizedLabels" : {
+                "en" : "Guam"
+              }
+            }, {
+              "value" : "GT",
+              "label" : "Guatemala",
+              "localizedLabels" : {
+                "en" : "Guatemala"
+              }
+            }, {
+              "value" : "GG",
+              "label" : "Guernsey",
+              "localizedLabels" : {
+                "en" : "Guernsey"
+              }
+            }, {
+              "value" : "GN",
+              "label" : "Guinee",
+              "localizedLabels" : {
+                "en" : "Guinee"
+              }
+            }, {
+              "value" : "GW",
+              "label" : "Guinee-Bissau",
+              "localizedLabels" : {
+                "en" : "Guinee-Bissau"
+              }
+            }, {
+              "value" : "GY",
+              "label" : "Guyana",
+              "localizedLabels" : {
+                "en" : "Guyana"
+              }
+            }, {
+              "value" : "HT",
+              "label" : "Haïti",
+              "localizedLabels" : {
+                "en" : "Haïti"
+              }
+            }, {
+              "value" : "HM",
+              "label" : "Heard en McDonaldeilanden",
+              "localizedLabels" : {
+                "en" : "Heard en McDonaldeilanden"
+              }
+            }, {
+              "value" : "HN",
+              "label" : "Honduras",
+              "localizedLabels" : {
+                "en" : "Honduras"
+              }
+            }, {
+              "value" : "HU",
+              "label" : "Hongarije",
+              "localizedLabels" : {
+                "en" : "Hongarije"
+              }
+            }, {
+              "value" : "HK",
+              "label" : "Hongkong",
+              "localizedLabels" : {
+                "en" : "Hongkong"
+              }
+            }, {
+              "value" : "IE",
+              "label" : "Ierland",
+              "localizedLabels" : {
+                "en" : "Ierland"
+              }
+            }, {
+              "value" : "IS",
+              "label" : "IJsland",
+              "localizedLabels" : {
+                "en" : "IJsland"
+              }
+            }, {
+              "value" : "IN",
+              "label" : "India",
+              "localizedLabels" : {
+                "en" : "India"
+              }
+            }, {
+              "value" : "ID",
+              "label" : "Indonesië",
+              "localizedLabels" : {
+                "en" : "Indonesië"
+              }
+            }, {
+              "value" : "IQ",
+              "label" : "Irak",
+              "localizedLabels" : {
+                "en" : "Irak"
+              }
+            }, {
+              "value" : "IR",
+              "label" : "Iran",
+              "localizedLabels" : {
+                "en" : "Iran"
+              }
+            }, {
+              "value" : "IL",
+              "label" : "Israël",
+              "localizedLabels" : {
+                "en" : "Israël"
+              }
+            }, {
+              "value" : "IT",
+              "label" : "Italië",
+              "localizedLabels" : {
+                "en" : "Italië"
+              }
+            }, {
+              "value" : "CI",
+              "label" : "Ivoorkust",
+              "localizedLabels" : {
+                "en" : "Ivoorkust"
+              }
+            }, {
+              "value" : "JM",
+              "label" : "Jamaica",
+              "localizedLabels" : {
+                "en" : "Jamaica"
+              }
+            }, {
+              "value" : "JP",
+              "label" : "Japan",
+              "localizedLabels" : {
+                "en" : "Japan"
+              }
+            }, {
+              "value" : "YE",
+              "label" : "Jemen",
+              "localizedLabels" : {
+                "en" : "Jemen"
+              }
+            }, {
+              "value" : "JE",
+              "label" : "Jersey",
+              "localizedLabels" : {
+                "en" : "Jersey"
+              }
+            }, {
+              "value" : "JO",
+              "label" : "Jordanië",
+              "localizedLabels" : {
+                "en" : "Jordanië"
+              }
+            }, {
+              "value" : "KY",
+              "label" : "Kaaimaneilanden",
+              "localizedLabels" : {
+                "en" : "Kaaimaneilanden"
+              }
+            }, {
+              "value" : "CV",
+              "label" : "Kaapverdië",
+              "localizedLabels" : {
+                "en" : "Kaapverdië"
+              }
+            }, {
+              "value" : "CM",
+              "label" : "Kameroen",
+              "localizedLabels" : {
+                "en" : "Kameroen"
+              }
+            }, {
+              "value" : "KZ",
+              "label" : "Kazachstan",
+              "localizedLabels" : {
+                "en" : "Kazachstan"
+              }
+            }, {
+              "value" : "KE",
+              "label" : "Kenia",
+              "localizedLabels" : {
+                "en" : "Kenia"
+              }
+            }, {
+              "value" : "KG",
+              "label" : "Kirgizië",
+              "localizedLabels" : {
+                "en" : "Kirgizië"
+              }
+            }, {
+              "value" : "KI",
+              "label" : "Kiribati",
+              "localizedLabels" : {
+                "en" : "Kiribati"
+              }
+            }, {
+              "value" : "KW",
+              "label" : "Koeweit",
+              "localizedLabels" : {
+                "en" : "Koeweit"
+              }
+            }, {
+              "value" : "HR",
+              "label" : "Kroatië",
+              "localizedLabels" : {
+                "en" : "Kroatië"
+              }
+            }, {
+              "value" : "LA",
+              "label" : "Laos",
+              "localizedLabels" : {
+                "en" : "Laos"
+              }
+            }, {
+              "value" : "LS",
+              "label" : "Lesotho",
+              "localizedLabels" : {
+                "en" : "Lesotho"
+              }
+            }, {
+              "value" : "LV",
+              "label" : "Letland",
+              "localizedLabels" : {
+                "en" : "Letland"
+              }
+            }, {
+              "value" : "LB",
+              "label" : "Libanon",
+              "localizedLabels" : {
+                "en" : "Libanon"
+              }
+            }, {
+              "value" : "LR",
+              "label" : "Liberia",
+              "localizedLabels" : {
+                "en" : "Liberia"
+              }
+            }, {
+              "value" : "LY",
+              "label" : "Libië",
+              "localizedLabels" : {
+                "en" : "Libië"
+              }
+            }, {
+              "value" : "LI",
+              "label" : "Liechtenstein",
+              "localizedLabels" : {
+                "en" : "Liechtenstein"
+              }
+            }, {
+              "value" : "LT",
+              "label" : "Litouwen",
+              "localizedLabels" : {
+                "en" : "Litouwen"
+              }
+            }, {
+              "value" : "LU",
+              "label" : "Luxemburg",
+              "localizedLabels" : {
+                "en" : "Luxemburg"
+              }
+            }, {
+              "value" : "MO",
+              "label" : "Macau",
+              "localizedLabels" : {
+                "en" : "Macau"
+              }
+            }, {
+              "value" : "MG",
+              "label" : "Madagaskar",
+              "localizedLabels" : {
+                "en" : "Madagaskar"
+              }
+            }, {
+              "value" : "MW",
+              "label" : "Malawi",
+              "localizedLabels" : {
+                "en" : "Malawi"
+              }
+            }, {
+              "value" : "MV",
+              "label" : "Malediven",
+              "localizedLabels" : {
+                "en" : "Malediven"
+              }
+            }, {
+              "value" : "MY",
+              "label" : "Maleisië",
+              "localizedLabels" : {
+                "en" : "Maleisië"
+              }
+            }, {
+              "value" : "ML",
+              "label" : "Mali",
+              "localizedLabels" : {
+                "en" : "Mali"
+              }
+            }, {
+              "value" : "MT",
+              "label" : "Malta",
+              "localizedLabels" : {
+                "en" : "Malta"
+              }
+            }, {
+              "value" : "IM",
+              "label" : "Man",
+              "localizedLabels" : {
+                "en" : "Man"
+              }
+            }, {
+              "value" : "MA",
+              "label" : "Marokko",
+              "localizedLabels" : {
+                "en" : "Marokko"
+              }
+            }, {
+              "value" : "MH",
+              "label" : "Marshalleilanden",
+              "localizedLabels" : {
+                "en" : "Marshalleilanden"
+              }
+            }, {
+              "value" : "MQ",
+              "label" : "Martinique",
+              "localizedLabels" : {
+                "en" : "Martinique"
+              }
+            }, {
+              "value" : "MR",
+              "label" : "Mauritanië",
+              "localizedLabels" : {
+                "en" : "Mauritanië"
+              }
+            }, {
+              "value" : "MU",
+              "label" : "Mauritius",
+              "localizedLabels" : {
+                "en" : "Mauritius"
+              }
+            }, {
+              "value" : "YT",
+              "label" : "Mayotte",
+              "localizedLabels" : {
+                "en" : "Mayotte"
+              }
+            }, {
+              "value" : "MX",
+              "label" : "Mexico",
+              "localizedLabels" : {
+                "en" : "Mexico"
+              }
+            }, {
+              "value" : "FM",
+              "label" : "Micronesië",
+              "localizedLabels" : {
+                "en" : "Micronesië"
+              }
+            }, {
+              "value" : "MD",
+              "label" : "Moldavië",
+              "localizedLabels" : {
+                "en" : "Moldavië"
+              }
+            }, {
+              "value" : "MC",
+              "label" : "Monaco",
+              "localizedLabels" : {
+                "en" : "Monaco"
+              }
+            }, {
+              "value" : "MN",
+              "label" : "Mongolië",
+              "localizedLabels" : {
+                "en" : "Mongolië"
+              }
+            }, {
+              "value" : "ME",
+              "label" : "Montenegro",
+              "localizedLabels" : {
+                "en" : "Montenegro"
+              }
+            }, {
+              "value" : "MS",
+              "label" : "Montserrat",
+              "localizedLabels" : {
+                "en" : "Montserrat"
+              }
+            }, {
+              "value" : "MZ",
+              "label" : "Mozambique",
+              "localizedLabels" : {
+                "en" : "Mozambique"
+              }
+            }, {
+              "value" : "MM",
+              "label" : "Myanmar",
+              "localizedLabels" : {
+                "en" : "Myanmar"
+              }
+            }, {
+              "value" : "NA",
+              "label" : "Namibië",
+              "localizedLabels" : {
+                "en" : "Namibië"
+              }
+            }, {
+              "value" : "NR",
+              "label" : "Nauru",
+              "localizedLabels" : {
+                "en" : "Nauru"
+              }
+            }, {
+              "value" : "NL",
+              "label" : "Nederland",
+              "localizedLabels" : {
+                "en" : "Nederland"
+              }
+            }, {
+              "value" : "NP",
+              "label" : "Nepal",
+              "localizedLabels" : {
+                "en" : "Nepal"
+              }
+            }, {
+              "value" : "NI",
+              "label" : "Nicaragua",
+              "localizedLabels" : {
+                "en" : "Nicaragua"
+              }
+            }, {
+              "value" : "NC",
+              "label" : "Nieuw-Caledonië",
+              "localizedLabels" : {
+                "en" : "Nieuw-Caledonië"
+              }
+            }, {
+              "value" : "NZ",
+              "label" : "Nieuw-Zeeland",
+              "localizedLabels" : {
+                "en" : "Nieuw-Zeeland"
+              }
+            }, {
+              "value" : "NE",
+              "label" : "Niger",
+              "localizedLabels" : {
+                "en" : "Niger"
+              }
+            }, {
+              "value" : "NG",
+              "label" : "Nigeria",
+              "localizedLabels" : {
+                "en" : "Nigeria"
+              }
+            }, {
+              "value" : "NU",
+              "label" : "Niue",
+              "localizedLabels" : {
+                "en" : "Niue"
+              }
+            }, {
+              "value" : "KP",
+              "label" : "Noord-Korea",
+              "localizedLabels" : {
+                "en" : "Noord-Korea"
+              }
+            }, {
+              "value" : "MK",
+              "label" : "Noord-Macedonië",
+              "localizedLabels" : {
+                "en" : "Noord-Macedonië"
+              }
+            }, {
+              "value" : "MP",
+              "label" : "Noordelijke Marianen",
+              "localizedLabels" : {
+                "en" : "Noordelijke Marianen"
+              }
+            }, {
+              "value" : "NO",
+              "label" : "Noorwegen",
+              "localizedLabels" : {
+                "en" : "Noorwegen"
+              }
+            }, {
+              "value" : "NF",
+              "label" : "Norfolk",
+              "localizedLabels" : {
+                "en" : "Norfolk"
+              }
+            }, {
+              "value" : "UG",
+              "label" : "Oeganda",
+              "localizedLabels" : {
+                "en" : "Oeganda"
+              }
+            }, {
+              "value" : "UA",
+              "label" : "Oekraïne",
+              "localizedLabels" : {
+                "en" : "Oekraïne"
+              }
+            }, {
+              "value" : "UZ",
+              "label" : "Oezbekistan",
+              "localizedLabels" : {
+                "en" : "Oezbekistan"
+              }
+            }, {
+              "value" : "OM",
+              "label" : "Oman",
+              "localizedLabels" : {
+                "en" : "Oman"
+              }
+            }, {
+              "value" : "TL",
+              "label" : "Oost-Timor",
+              "localizedLabels" : {
+                "en" : "Oost-Timor"
+              }
+            }, {
+              "value" : "AT",
+              "label" : "Oostenrijk",
+              "localizedLabels" : {
+                "en" : "Oostenrijk"
+              }
+            }, {
+              "value" : "PK",
+              "label" : "Pakistan",
+              "localizedLabels" : {
+                "en" : "Pakistan"
+              }
+            }, {
+              "value" : "PW",
+              "label" : "Palau",
+              "localizedLabels" : {
+                "en" : "Palau"
+              }
+            }, {
+              "value" : "PS",
+              "label" : "Palestina",
+              "localizedLabels" : {
+                "en" : "Palestina"
+              }
+            }, {
+              "value" : "PA",
+              "label" : "Panama",
+              "localizedLabels" : {
+                "en" : "Panama"
+              }
+            }, {
+              "value" : "PG",
+              "label" : "Papoea-Nieuw-Guinea",
+              "localizedLabels" : {
+                "en" : "Papoea-Nieuw-Guinea"
+              }
+            }, {
+              "value" : "PY",
+              "label" : "Paraguay",
+              "localizedLabels" : {
+                "en" : "Paraguay"
+              }
+            }, {
+              "value" : "PE",
+              "label" : "Peru",
+              "localizedLabels" : {
+                "en" : "Peru"
+              }
+            }, {
+              "value" : "PN",
+              "label" : "Pitcairn",
+              "localizedLabels" : {
+                "en" : "Pitcairn"
+              }
+            }, {
+              "value" : "PL",
+              "label" : "Polen",
+              "localizedLabels" : {
+                "en" : "Polen"
+              }
+            }, {
+              "value" : "PT",
+              "label" : "Portugal",
+              "localizedLabels" : {
+                "en" : "Portugal"
+              }
+            }, {
+              "value" : "PR",
+              "label" : "Puerto Rico",
+              "localizedLabels" : {
+                "en" : "Puerto Rico"
+              }
+            }, {
+              "value" : "QA",
+              "label" : "Qatar",
+              "localizedLabels" : {
+                "en" : "Qatar"
+              }
+            }, {
+              "value" : "RE",
+              "label" : "Réunion",
+              "localizedLabels" : {
+                "en" : "Réunion"
+              }
+            }, {
+              "value" : "RO",
+              "label" : "Roemenië",
+              "localizedLabels" : {
+                "en" : "Roemenië"
+              }
+            }, {
+              "value" : "RU",
+              "label" : "Rusland",
+              "localizedLabels" : {
+                "en" : "Rusland"
+              }
+            }, {
+              "value" : "RW",
+              "label" : "Rwanda",
+              "localizedLabels" : {
+                "en" : "Rwanda"
+              }
+            }, {
+              "value" : "KN",
+              "label" : "Saint Kitts en Nevis",
+              "localizedLabels" : {
+                "en" : "Saint Kitts en Nevis"
+              }
+            }, {
+              "value" : "LC",
+              "label" : "Saint Lucia",
+              "localizedLabels" : {
+                "en" : "Saint Lucia"
+              }
+            }, {
+              "value" : "VC",
+              "label" : "Saint Vincent en de Grenadines",
+              "localizedLabels" : {
+                "en" : "Saint Vincent en de Grenadines"
+              }
+            }, {
+              "value" : "BL",
+              "label" : "Saint-Barthélemy",
+              "localizedLabels" : {
+                "en" : "Saint-Barthélemy"
+              }
+            }, {
+              "value" : "PM",
+              "label" : "Saint-Pierre en Miquelon",
+              "localizedLabels" : {
+                "en" : "Saint-Pierre en Miquelon"
+              }
+            }, {
+              "value" : "SB",
+              "label" : "Salomonseilanden",
+              "localizedLabels" : {
+                "en" : "Salomonseilanden"
+              }
+            }, {
+              "value" : "WS",
+              "label" : "Samoa",
+              "localizedLabels" : {
+                "en" : "Samoa"
+              }
+            }, {
+              "value" : "SM",
+              "label" : "San Marino",
+              "localizedLabels" : {
+                "en" : "San Marino"
+              }
+            }, {
+              "value" : "ST",
+              "label" : "Sao Tomé en Principe",
+              "localizedLabels" : {
+                "en" : "Sao Tomé en Principe"
+              }
+            }, {
+              "value" : "SA",
+              "label" : "Saoedi-Arabië",
+              "localizedLabels" : {
+                "en" : "Saoedi-Arabië"
+              }
+            }, {
+              "value" : "SN",
+              "label" : "Senegal",
+              "localizedLabels" : {
+                "en" : "Senegal"
+              }
+            }, {
+              "value" : "RS",
+              "label" : "Servië",
+              "localizedLabels" : {
+                "en" : "Servië"
+              }
+            }, {
+              "value" : "SC",
+              "label" : "Seychellen",
+              "localizedLabels" : {
+                "en" : "Seychellen"
+              }
+            }, {
+              "value" : "SL",
+              "label" : "Sierra Leone",
+              "localizedLabels" : {
+                "en" : "Sierra Leone"
+              }
+            }, {
+              "value" : "SG",
+              "label" : "Singapore",
+              "localizedLabels" : {
+                "en" : "Singapore"
+              }
+            }, {
+              "value" : "SX",
+              "label" : "Sint Maarten",
+              "localizedLabels" : {
+                "en" : "Sint Maarten"
+              }
+            }, {
+              "value" : "MF",
+              "label" : "Sint Maarten (Frans deel)",
+              "localizedLabels" : {
+                "en" : "Sint Maarten (Frans deel)"
+              }
+            }, {
+              "value" : "SH",
+              "label" : "Sint-Helena, Ascension en Tristan da Cunha",
+              "localizedLabels" : {
+                "en" : "Sint-Helena, Ascension en Tristan da Cunha"
+              }
+            }, {
+              "value" : "SI",
+              "label" : "Slovenië",
+              "localizedLabels" : {
+                "en" : "Slovenië"
+              }
+            }, {
+              "value" : "SK",
+              "label" : "Slowakije",
+              "localizedLabels" : {
+                "en" : "Slowakije"
+              }
+            }, {
+              "value" : "SD",
+              "label" : "Soedan",
+              "localizedLabels" : {
+                "en" : "Soedan"
+              }
+            }, {
+              "value" : "SO",
+              "label" : "Somalië",
+              "localizedLabels" : {
+                "en" : "Somalië"
+              }
+            }, {
+              "value" : "ES",
+              "label" : "Spanje",
+              "localizedLabels" : {
+                "en" : "Spanje"
+              }
+            }, {
+              "value" : "SJ",
+              "label" : "Spitsbergen en Jan Mayen",
+              "localizedLabels" : {
+                "en" : "Spitsbergen en Jan Mayen"
+              }
+            }, {
+              "value" : "LK",
+              "label" : "Sri Lanka",
+              "localizedLabels" : {
+                "en" : "Sri Lanka"
+              }
+            }, {
+              "value" : "SR",
+              "label" : "Suriname",
+              "localizedLabels" : {
+                "en" : "Suriname"
+              }
+            }, {
+              "value" : "SY",
+              "label" : "Syrië",
+              "localizedLabels" : {
+                "en" : "Syrië"
+              }
+            }, {
+              "value" : "TJ",
+              "label" : "Tadzjikistan",
+              "localizedLabels" : {
+                "en" : "Tadzjikistan"
+              }
+            }, {
+              "value" : "TW",
+              "label" : "Taiwan",
+              "localizedLabels" : {
+                "en" : "Taiwan"
+              }
+            }, {
+              "value" : "TZ",
+              "label" : "Tanzania",
+              "localizedLabels" : {
+                "en" : "Tanzania"
+              }
+            }, {
+              "value" : "TH",
+              "label" : "Thailand",
+              "localizedLabels" : {
+                "en" : "Thailand"
+              }
+            }, {
+              "value" : "TG",
+              "label" : "Togo",
+              "localizedLabels" : {
+                "en" : "Togo"
+              }
+            }, {
+              "value" : "TK",
+              "label" : "Tokelau",
+              "localizedLabels" : {
+                "en" : "Tokelau"
+              }
+            }, {
+              "value" : "TO",
+              "label" : "Tonga",
+              "localizedLabels" : {
+                "en" : "Tonga"
+              }
+            }, {
+              "value" : "TT",
+              "label" : "Trinidad en Tobago",
+              "localizedLabels" : {
+                "en" : "Trinidad en Tobago"
+              }
+            }, {
+              "value" : "TD",
+              "label" : "Tsjaad",
+              "localizedLabels" : {
+                "en" : "Tsjaad"
+              }
+            }, {
+              "value" : "CZ",
+              "label" : "Tsjechië",
+              "localizedLabels" : {
+                "en" : "Tsjechië"
+              }
+            }, {
+              "value" : "TN",
+              "label" : "Tunesië",
+              "localizedLabels" : {
+                "en" : "Tunesië"
+              }
+            }, {
+              "value" : "TR",
+              "label" : "Turkije",
+              "localizedLabels" : {
+                "en" : "Turkije"
+              }
+            }, {
+              "value" : "TM",
+              "label" : "Turkmenistan",
+              "localizedLabels" : {
+                "en" : "Turkmenistan"
+              }
+            }, {
+              "value" : "TC",
+              "label" : "Turks- en Caicoseilanden",
+              "localizedLabels" : {
+                "en" : "Turks- en Caicoseilanden"
+              }
+            }, {
+              "value" : "TV",
+              "label" : "Tuvalu",
+              "localizedLabels" : {
+                "en" : "Tuvalu"
+              }
+            }, {
+              "value" : "UY",
+              "label" : "Uruguay",
+              "localizedLabels" : {
+                "en" : "Uruguay"
+              }
+            }, {
+              "value" : "VU",
+              "label" : "Vanuatu",
+              "localizedLabels" : {
+                "en" : "Vanuatu"
+              }
+            }, {
+              "value" : "VA",
+              "label" : "Vaticaanstad",
+              "localizedLabels" : {
+                "en" : "Vaticaanstad"
+              }
+            }, {
+              "value" : "VE",
+              "label" : "Venezuela",
+              "localizedLabels" : {
+                "en" : "Venezuela"
+              }
+            }, {
+              "value" : "GB",
+              "label" : "Verenigd Koninkrijk",
+              "localizedLabels" : {
+                "en" : "Verenigd Koninkrijk"
+              }
+            }, {
+              "value" : "AE",
+              "label" : "Verenigde Arabische Emiraten",
+              "localizedLabels" : {
+                "en" : "Verenigde Arabische Emiraten"
+              }
+            }, {
+              "value" : "US",
+              "label" : "Verenigde Staten",
+              "localizedLabels" : {
+                "en" : "Verenigde Staten"
+              }
+            }, {
+              "value" : "VN",
+              "label" : "Vietnam",
+              "localizedLabels" : {
+                "en" : "Vietnam"
+              }
+            }, {
+              "value" : "WF",
+              "label" : "Wallis en Futuna",
+              "localizedLabels" : {
+                "en" : "Wallis en Futuna"
+              }
+            }, {
+              "value" : "EH",
+              "label" : "Westelijke Sahara",
+              "localizedLabels" : {
+                "en" : "Westelijke Sahara"
+              }
+            }, {
+              "value" : "BY",
+              "label" : "Wit-Rusland",
+              "localizedLabels" : {
+                "en" : "Wit-Rusland"
+              }
+            }, {
+              "value" : "ZM",
+              "label" : "Zambia",
+              "localizedLabels" : {
+                "en" : "Zambia"
+              }
+            }, {
+              "value" : "ZW",
+              "label" : "Zimbabwe",
+              "localizedLabels" : {
+                "en" : "Zimbabwe"
+              }
+            }, {
+              "value" : "ZA",
+              "label" : "Zuid-Afrika",
+              "localizedLabels" : {
+                "en" : "Zuid-Afrika"
+              }
+            }, {
+              "value" : "GS",
+              "label" : "Zuid-Georgia en de Zuidelijke Sandwicheilanden",
+              "localizedLabels" : {
+                "en" : "Zuid-Georgia en de Zuidelijke Sandwicheilanden"
+              }
+            }, {
+              "value" : "KR",
+              "label" : "Zuid-Korea",
+              "localizedLabels" : {
+                "en" : "Zuid-Korea"
+              }
+            }, {
+              "value" : "SS",
+              "label" : "Zuid-Soedan",
+              "localizedLabels" : {
+                "en" : "Zuid-Soedan"
+              }
+            }, {
+              "value" : "SE",
+              "label" : "Zweden",
+              "localizedLabels" : {
+                "en" : "Zweden"
+              }
+            }, {
+              "value" : "CH",
+              "label" : "Zwitserland",
+              "localizedLabels" : {
+                "en" : "Zwitserland"
+              }
+            } ],
+            "terminology" : "ISO 3166-1 alpha-2"
+          } ]
+        }, {
+          "id" : "adressoort",
+          "name" : "AdresSoort",
+          "localizedName" : "AdresSoort",
+          "rmType" : "DV_CODED_TEXT",
+          "nodeId" : "at0010",
+          "min" : 0,
+          "max" : 1,
+          "localizedNames" : {
+            "en" : "AdresSoort"
+          },
+          "localizedDescriptions" : {
+            "en" : "The type of address."
+          },
+          "annotations" : {
+            "comment" : "For example: physical or postal."
+          },
+          "aqlPath" : "/data[at0001]/items[openEHR-EHR-CLUSTER.person.v1]/items[openEHR-EHR-CLUSTER.address.v1,'Adresgegevens-v1.1(2023NL)']/items[at0010,'AdresSoort']/value",
+          "inputs" : [ {
+            "suffix" : "code",
+            "type" : "CODED_TEXT",
+            "list" : [ {
+              "value" : "PST",
+              "label" : "Postadres",
+              "localizedLabels" : {
+                "en" : "Postadres"
+              }
+            }, {
+              "value" : "HP",
+              "label" : "Officieel adres",
+              "localizedLabels" : {
+                "en" : "Officieel adres"
+              }
+            }, {
+              "value" : "PHYS",
+              "label" : "Woon-/verblijfadres",
+              "localizedLabels" : {
+                "en" : "Woon-/verblijfadres"
+              }
+            }, {
+              "value" : "TMP",
+              "label" : "Tijdelijk adres",
+              "localizedLabels" : {
+                "en" : "Tijdelijk adres"
+              }
+            }, {
+              "value" : "WP",
+              "label" : "Werkadres",
+              "localizedLabels" : {
+                "en" : "Werkadres"
+              }
+            }, {
+              "value" : "HV",
+              "label" : "Vakantie adres",
+              "localizedLabels" : {
+                "en" : "Vakantie adres"
+              }
+            } ],
+            "terminology" : "AddressUse"
+          } ]
+        }, {
+          "id" : "additioneleinformatie",
+          "name" : "AdditioneleInformatie",
+          "localizedName" : "AdditioneleInformatie",
+          "rmType" : "DV_TEXT",
+          "nodeId" : "at0018",
+          "min" : 0,
+          "max" : 1,
+          "localizedNames" : {
+            "en" : "AdditioneleInformatie"
+          },
+          "localizedDescriptions" : {
+            "en" : "Additional narrative about the address not captured in other fields."
+          },
+          "aqlPath" : "/data[at0001]/items[openEHR-EHR-CLUSTER.person.v1]/items[openEHR-EHR-CLUSTER.address.v1,'Adresgegevens-v1.1(2023NL)']/items[at0018,'AdditioneleInformatie']/value",
+          "inputs" : [ {
+            "type" : "TEXT"
+          } ]
+        } ]
+      }, {
+        "id" : "contactgegevens-v1.3.1_2023nl",
+        "name" : "Contactgegevens-v1.3.1(2023NL)",
+        "localizedName" : "Contactgegevens-v1.3.1(2023NL)",
+        "rmType" : "CLUSTER",
+        "nodeId" : "openEHR-EHR-CLUSTER.adhoc_cluster_heading.v0",
+        "min" : 0,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "Contactgegevens-v1.3.1(2023NL)"
+        },
+        "localizedDescriptions" : {
+          "en" : "A generic cluster heading for contextual renaming within a template."
+        },
+        "aqlPath" : "/data[at0001]/items[openEHR-EHR-CLUSTER.person.v1]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v0,'Contactgegevens-v1.3.1(2023NL)']",
+        "children" : [ {
+          "id" : "telefoonnummers",
+          "name" : "Telefoonnummers",
+          "localizedName" : "Telefoonnummers",
+          "rmType" : "CLUSTER",
+          "nodeId" : "openEHR-EHR-CLUSTER.electronic_communication.v1",
+          "min" : 0,
+          "max" : -1,
+          "localizedNames" : {
+            "en" : "Telefoonnummers"
+          },
+          "localizedDescriptions" : {
+            "en" : "Details about a specified type of electronic communication."
+          },
+          "aqlPath" : "/data[at0001]/items[openEHR-EHR-CLUSTER.person.v1]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v0,'Contactgegevens-v1.3.1(2023NL)']/items[openEHR-EHR-CLUSTER.electronic_communication.v1,'Telefoonnummers']",
+          "children" : [ {
+            "id" : "telecomtype",
+            "name" : "TelecomType",
+            "localizedName" : "TelecomType",
+            "rmType" : "DV_CODED_TEXT",
+            "nodeId" : "at0001",
+            "min" : 1,
+            "max" : 1,
+            "localizedNames" : {
+              "en" : "TelecomType"
+            },
+            "localizedDescriptions" : {
+              "en" : "The type or form of electronic communication."
+            },
+            "annotations" : {
+              "comment" : "The DV_CODED_TEXT value set supports recording of the most common electronic communications used in health. If other alternatives are required the DV_TEXT data type can be used to record other types of electronic communication such as social media or video conferencing URLs within a template."
+            },
+            "aqlPath" : "/data[at0001]/items[openEHR-EHR-CLUSTER.person.v1]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v0,'Contactgegevens-v1.3.1(2023NL)']/items[openEHR-EHR-CLUSTER.electronic_communication.v1,'Telefoonnummers']/items[at0001,'TelecomType']/value",
+            "inputs" : [ {
+              "suffix" : "code",
+              "type" : "CODED_TEXT",
+              "list" : [ {
+                "value" : "LL",
+                "label" : "Vaste lijn",
+                "localizedLabels" : {
+                  "en" : "Vaste lijn"
+                }
+              }, {
+                "value" : "FAX",
+                "label" : "Fax",
+                "localizedLabels" : {
+                  "en" : "Fax"
+                }
+              }, {
+                "value" : "MC",
+                "label" : "Mobile Contact",
+                "localizedLabels" : {
+                  "en" : "Mobile Contact"
+                }
+              }, {
+                "value" : "PG",
+                "label" : "Pager",
+                "localizedLabels" : {
+                  "en" : "Pager"
+                }
+              } ],
+              "terminology" : "TelecomDeviceTypes & AddressUse"
+            } ]
+          }, {
+            "id" : "telefoonnummer",
+            "name" : "Telefoonnummer",
+            "localizedName" : "Telefoonnummer",
+            "rmType" : "DV_TEXT",
+            "nodeId" : "at0002",
+            "min" : 1,
+            "max" : 1,
+            "localizedNames" : {
+              "en" : "Telefoonnummer"
+            },
+            "localizedDescriptions" : {
+              "en" : "The unique combination of alphanumeric characters, relevant for representation of 'Type'."
+            },
+            "annotations" : {
+              "comment" : "For example: area code + landline phone/pager number; country code + mobile phone number; or email address."
+            },
+            "aqlPath" : "/data[at0001]/items[openEHR-EHR-CLUSTER.person.v1]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v0,'Contactgegevens-v1.3.1(2023NL)']/items[openEHR-EHR-CLUSTER.electronic_communication.v1,'Telefoonnummers']/items[at0002,'Telefoonnummer']/value",
+            "inputs" : [ {
+              "type" : "TEXT"
+            } ]
+          }, {
+            "id" : "nummersoort",
+            "name" : "NummerSoort",
+            "localizedName" : "NummerSoort",
+            "rmType" : "DV_CODED_TEXT",
+            "nodeId" : "at0003",
+            "min" : 1,
+            "max" : 1,
+            "localizedNames" : {
+              "en" : "NummerSoort"
+            },
+            "localizedDescriptions" : {
+              "en" : "The purpose or use for the identified type of electronic communication."
+            },
+            "aqlPath" : "/data[at0001]/items[openEHR-EHR-CLUSTER.person.v1]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v0,'Contactgegevens-v1.3.1(2023NL)']/items[openEHR-EHR-CLUSTER.electronic_communication.v1,'Telefoonnummers']/items[at0003,'NummerSoort']/value",
+            "inputs" : [ {
+              "suffix" : "code",
+              "type" : "CODED_TEXT",
+              "list" : [ {
+                "value" : "HP",
+                "label" : "Privé telefoonnummer",
+                "localizedLabels" : {
+                  "en" : "Privé telefoonnummer"
+                }
+              }, {
+                "value" : "TMP",
+                "label" : "Tijdelijk telefoonnummer",
+                "localizedLabels" : {
+                  "en" : "Tijdelijk telefoonnummer"
+                }
+              }, {
+                "value" : "WP",
+                "label" : "Zakelijk telefoonnummer",
+                "localizedLabels" : {
+                  "en" : "Zakelijk telefoonnummer"
+                }
+              }, {
+                "value" : "EC",
+                "label" : "Spoednummer",
+                "localizedLabels" : {
+                  "en" : "Spoednummer"
+                }
+              } ],
+              "terminology" : "local_terms"
+            } ]
+          }, {
+            "id" : "toelichting",
+            "name" : "Toelichting",
+            "localizedName" : "Toelichting",
+            "rmType" : "DV_TEXT",
+            "nodeId" : "at0004",
+            "min" : 0,
+            "max" : 1,
+            "localizedNames" : {
+              "en" : "Toelichting"
+            },
+            "localizedDescriptions" : {
+              "en" : "Additional narrative about the electronic communication not captured in other fields."
+            },
+            "annotations" : {
+              "48767-8" : "Toelichting"
+            },
+            "aqlPath" : "/data[at0001]/items[openEHR-EHR-CLUSTER.person.v1]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v0,'Contactgegevens-v1.3.1(2023NL)']/items[openEHR-EHR-CLUSTER.electronic_communication.v1,'Telefoonnummers']/items[at0004,'Toelichting']/value",
+            "inputs" : [ {
+              "type" : "TEXT"
+            } ]
+          } ]
+        }, {
+          "id" : "emailadressen",
+          "name" : "EmailAdressen",
+          "localizedName" : "EmailAdressen",
+          "rmType" : "CLUSTER",
+          "nodeId" : "openEHR-EHR-CLUSTER.electronic_communication.v1",
+          "min" : 0,
+          "max" : -1,
+          "localizedNames" : {
+            "en" : "EmailAdressen"
+          },
+          "localizedDescriptions" : {
+            "en" : "Details about a specified type of electronic communication."
+          },
+          "aqlPath" : "/data[at0001]/items[openEHR-EHR-CLUSTER.person.v1]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v0,'Contactgegevens-v1.3.1(2023NL)']/items[openEHR-EHR-CLUSTER.electronic_communication.v1,'EmailAdressen']",
+          "children" : [ {
+            "id" : "emailadres",
+            "name" : "EmailAdres",
+            "localizedName" : "EmailAdres",
+            "rmType" : "DV_TEXT",
+            "nodeId" : "at0002",
+            "min" : 1,
+            "max" : 1,
+            "localizedNames" : {
+              "en" : "EmailAdres"
+            },
+            "localizedDescriptions" : {
+              "en" : "The unique combination of alphanumeric characters, relevant for representation of 'Type'."
+            },
+            "annotations" : {
+              "comment" : "For example: area code + landline phone/pager number; country code + mobile phone number; or email address."
+            },
+            "aqlPath" : "/data[at0001]/items[openEHR-EHR-CLUSTER.person.v1]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v0,'Contactgegevens-v1.3.1(2023NL)']/items[openEHR-EHR-CLUSTER.electronic_communication.v1,'EmailAdressen']/items[at0002,'EmailAdres']/value",
+            "inputs" : [ {
+              "type" : "TEXT"
+            } ]
+          }, {
+            "id" : "emailsoort",
+            "name" : "EmailSoort",
+            "localizedName" : "EmailSoort",
+            "rmType" : "DV_CODED_TEXT",
+            "nodeId" : "at0003",
+            "min" : 1,
+            "max" : 1,
+            "localizedNames" : {
+              "en" : "EmailSoort"
+            },
+            "localizedDescriptions" : {
+              "en" : "The purpose or use for the identified type of electronic communication."
+            },
+            "aqlPath" : "/data[at0001]/items[openEHR-EHR-CLUSTER.person.v1]/items[openEHR-EHR-CLUSTER.adhoc_cluster_heading.v0,'Contactgegevens-v1.3.1(2023NL)']/items[openEHR-EHR-CLUSTER.electronic_communication.v1,'EmailAdressen']/items[at0003,'EmailSoort']/value",
+            "inputs" : [ {
+              "suffix" : "code",
+              "type" : "CODED_TEXT",
+              "list" : [ {
+                "value" : "HP",
+                "label" : "Privé e-mailadres",
+                "localizedLabels" : {
+                  "en" : "Privé e-mailadres"
+                }
+              }, {
+                "value" : "WP",
+                "label" : "Zakelijk e-mailadres",
+                "localizedLabels" : {
+                  "en" : "Zakelijk e-mailadres"
+                }
+              } ],
+              "terminology" : "AddressUse"
+            } ]
+          } ]
+        } ]
+      }, {
+        "id" : "toelichting",
+        "name" : "Toelichting",
+        "localizedName" : "Toelichting",
+        "rmType" : "DV_TEXT",
+        "nodeId" : "at0010",
+        "min" : 0,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "Toelichting"
+        },
+        "localizedDescriptions" : {
+          "en" : "Additional narrative about the individual not captured in other fields."
+        },
+        "annotations" : {
+          "48767-8" : "Toelichting"
+        },
+        "aqlPath" : "/data[at0001]/items[openEHR-EHR-CLUSTER.person.v1]/items[at0010,'Toelichting']/value",
+        "inputs" : [ {
+          "type" : "TEXT"
+        } ]
+      } ]
+    }, {
+      "id" : "language",
+      "name" : "Language",
+      "rmType" : "CODE_PHRASE",
+      "min" : 1,
+      "max" : 1,
+      "aqlPath" : "/language",
+      "inContext" : true
+    }, {
+      "id" : "encoding",
+      "name" : "Encoding",
+      "rmType" : "CODE_PHRASE",
+      "min" : 1,
+      "max" : 1,
+      "aqlPath" : "/encoding",
+      "inContext" : true
+    }, {
+      "id" : "subject",
+      "name" : "Subject",
+      "rmType" : "PARTY_PROXY",
+      "min" : 1,
+      "max" : 1,
+      "aqlPath" : "/subject",
+      "inputs" : [ {
+        "suffix" : "id",
+        "type" : "TEXT"
+      }, {
+        "suffix" : "id_scheme",
+        "type" : "TEXT"
+      }, {
+        "suffix" : "id_namespace",
+        "type" : "TEXT"
+      }, {
+        "suffix" : "name",
+        "type" : "TEXT"
+      } ],
+      "inContext" : true
+    } ]
+  }
+}
