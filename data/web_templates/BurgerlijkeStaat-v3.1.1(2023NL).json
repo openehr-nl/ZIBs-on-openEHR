@@ -1,0 +1,121 @@
+{
+  "templateId" : "BurgerlijkeStaat-v3.1.1(2023NL)",
+  "semVer" : "0.1.4",
+  "version" : "2.3",
+  "defaultLanguage" : "en",
+  "languages" : [ "en" ],
+  "tree" : {
+    "id" : "burgerlijkestaat-v3.1.1_2023nl",
+    "name" : "BurgerlijkeStaat-v3.1.1(2023NL)",
+    "localizedName" : "BurgerlijkeStaat-v3.1.1(2023NL)",
+    "rmType" : "EVALUATION",
+    "nodeId" : "openEHR-EHR-EVALUATION.social_network.v1",
+    "min" : 1,
+    "max" : 1,
+    "localizedNames" : {
+      "en" : "BurgerlijkeStaat-v3.1.1(2023NL)"
+    },
+    "localizedDescriptions" : {
+      "en" : "Group of individuals connected by social interactions and personal relationships."
+    },
+    "aqlPath" : "",
+    "children" : [ {
+      "id" : "burgerlijkestaat",
+      "name" : "BurgerlijkeStaat",
+      "localizedName" : "BurgerlijkeStaat",
+      "rmType" : "DV_CODED_TEXT",
+      "nodeId" : "at0002",
+      "min" : 0,
+      "max" : 1,
+      "localizedNames" : {
+        "en" : "BurgerlijkeStaat"
+      },
+      "localizedDescriptions" : {
+        "en" : "Single word or phrase that describes an individual's current relationship with a life partner."
+      },
+      "annotations" : {
+        "comment" : "Coding of the partnership status with a terminology is preferred, where possible. There is a huge variation in the value sets used across jurisdictions. Many have local, government-mandated value sets rather than using SNOMED CT or similar. For example: a 'marital status' value set including 'never married' or 'single'; 'married'; 'divorced'; or 'widowed'. Also known as 'civil status', 'union status', or 'relationship status'."
+      },
+      "aqlPath" : "/data[at0001]/items[at0002,'BurgerlijkeStaat']/value",
+      "inputs" : [ {
+        "suffix" : "code",
+        "type" : "CODED_TEXT",
+        "list" : [ {
+          "value" : "D",
+          "label" : "Gescheiden (huwelijk/geregistreerd partnerschap ontbonden)",
+          "localizedLabels" : {
+            "en" : "Gescheiden (huwelijk/geregistreerd partnerschap ontbonden)"
+          }
+        }, {
+          "value" : "M",
+          "label" : "Gehuwd",
+          "localizedLabels" : {
+            "en" : "Gehuwd"
+          }
+        }, {
+          "value" : "S",
+          "label" : "Nooit gehuwd geweest/ geregistreerd partnerschap gehad",
+          "localizedLabels" : {
+            "en" : "Nooit gehuwd geweest/ geregistreerd partnerschap gehad"
+          }
+        }, {
+          "value" : "U",
+          "label" : "Niet gehuwd",
+          "localizedLabels" : {
+            "en" : "Niet gehuwd"
+          }
+        }, {
+          "value" : "T",
+          "label" : "Geregistreerd partnerschap",
+          "localizedLabels" : {
+            "en" : "Geregistreerd partnerschap"
+          }
+        }, {
+          "value" : "W",
+          "label" : "Weduwe/weduwnaar",
+          "localizedLabels" : {
+            "en" : "Weduwe/weduwnaar"
+          }
+        } ],
+        "terminology" : "MaritalStatus[2.16.840.1.113883.5.2]"
+      } ]
+    }, {
+      "id" : "language",
+      "name" : "Language",
+      "rmType" : "CODE_PHRASE",
+      "min" : 1,
+      "max" : 1,
+      "aqlPath" : "/language",
+      "inContext" : true
+    }, {
+      "id" : "encoding",
+      "name" : "Encoding",
+      "rmType" : "CODE_PHRASE",
+      "min" : 1,
+      "max" : 1,
+      "aqlPath" : "/encoding",
+      "inContext" : true
+    }, {
+      "id" : "subject",
+      "name" : "Subject",
+      "rmType" : "PARTY_PROXY",
+      "min" : 1,
+      "max" : 1,
+      "aqlPath" : "/subject",
+      "inputs" : [ {
+        "suffix" : "id",
+        "type" : "TEXT"
+      }, {
+        "suffix" : "id_scheme",
+        "type" : "TEXT"
+      }, {
+        "suffix" : "id_namespace",
+        "type" : "TEXT"
+      }, {
+        "suffix" : "name",
+        "type" : "TEXT"
+      } ],
+      "inContext" : true
+    } ]
+  }
+}
