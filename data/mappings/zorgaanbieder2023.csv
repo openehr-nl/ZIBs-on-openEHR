@@ -1,0 +1,11 @@
+ZIB_Id,ZIB_Naam,ZIB_Type,ZIB_Card,ZIB_DefCode,ZIB_Verwijzing,openEHR_Path,openEHR_Naam,openEHR_Type,openEHR_Card,openEHR_Term,Commentaar
+NL-CM:17.2.1,Zorgaanbieder,rootconcept,,SNOMED CT: 257622000 Zorginstelling,,,Organisation,CLUSTER,,,
+NL-CM:17.2.2,ZorgaanbiederIdentificatienummer,II,0..*,,UZI register abonneenummer (URA), Vektis AGB-zorgverlener tabel,Identifier,IDENTIFIER,0..*,,The variable type in openEHR can be changed to TEXT if necessary
+NL-CM:17.2.3,OrganisatieNaam,ST,0..1,,,/items[at0001.1],Name,TEXT,0..1,,
+NL-CM:17.2.7,AfdelingSpecialisme,CD,0..1,,AfdelingSpecialismeCodelijst,/items[at0019.1],Comment,CODED TEXT,0..1,,Source code list: https://www.vektis.nl/standaardisatie/codelijsten/COD016-VEKT Include full list? Not everything seems relevant
+NL-CM:17.2.6,Contactgegevens,"data,reference",0..1,,Dit is een verwijzing naar het rootconcept van de sub-bouwsteen Contactgegevens.,/items[at0022.2],Electronic communication,CLUSTER,0..1,,Refer to Contactgegevens-v1.3.1(2023NL)
+NL-CM:17.2.5,Adresgegevens,"data,reference",0..*,,Dit is een verwijzing naar het rootconcept in de sub-bouwsteen Adresgegevens,/items[at0005.1],Address,CLUSTER,0..*,,Refer to Adresgegevens-v1.1(2023NL)
+NL-CM:17.2.4,OrganisatieType,CD,0..1,,OrganisatieTypeCodelijst,/items[at0004.1],Role,CODED TEXT,0..1,,
+NL-CM:17.2.9,OrganisatieLocatie,container,0..1,,,"/items[openEHR-EHR-CLUSTER.organisation.v1, 'OrganisatieLocatie']",Additional details/Organisation,CLUSTER,0..1,,
+NL-CM:17.2.8,LocatieNaam,ST,0..1,,,"/items[openEHR-EHR-CLUSTER.organisation.v1, 'OrganisatieLocatie']/items[at0001.1]",Additional details/Organisation/Name,TEXT,0..1,,"”Name of the location, in case a healthcare organization has more than one location.”"
+NL-CM:17.2.10,LocatieNummer,INT,0..1,,,"/items[openEHR-EHR-CLUSTER.organisation.v1, 'OrganisatieLocatie']/items[at0003.1]",Additional details/Organisation/Identifier,TEXT,0..1,,"Type  “integer” is not available, it can be either IDENTIFIER or TEXT in this archetype. We selected TEXT only."
