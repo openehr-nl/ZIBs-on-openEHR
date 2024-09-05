@@ -1,0 +1,271 @@
+{
+  "templateId" : "AlcoholGebruik-v3.3(2023NL)",
+  "semVer" : "0.1.6",
+  "version" : "2.3",
+  "defaultLanguage" : "nl",
+  "languages" : [ "nl" ],
+  "tree" : {
+    "id" : "alcoholgebruik",
+    "name" : "Alcoholgebruik",
+    "localizedName" : "Alcoholgebruik",
+    "rmType" : "EVALUATION",
+    "nodeId" : "openEHR-EHR-EVALUATION.alcohol_consumption_summary.v1",
+    "min" : 1,
+    "max" : 1,
+    "localizedNames" : {
+      "nl" : "Alcoholgebruik"
+    },
+    "localizedDescriptions" : {
+      "nl" : "Overzicht van aanhoudende informatie over het typische alcoholgebruik van een individu."
+    },
+    "aqlPath" : "",
+    "children" : [ {
+      "id" : "alcohol_gebruikstatus",
+      "name" : "Alcohol gebruikstatus",
+      "localizedName" : "Alcohol gebruikstatus",
+      "rmType" : "DV_CODED_TEXT",
+      "nodeId" : "at0089",
+      "min" : 1,
+      "max" : 1,
+      "localizedNames" : {
+        "nl" : "Alcohol gebruikstatus"
+      },
+      "localizedDescriptions" : {
+        "nl" : "Uitspraak over huidige consumptie van alle typen alcohol."
+      },
+      "annotations" : {
+        "228273003" : "Bevinding betreffende alcoholgebruik"
+      },
+      "aqlPath" : "/data[at0001]/items[at0089,'Alcohol gebruikstatus']/value",
+      "inputs" : [ {
+        "suffix" : "code",
+        "type" : "CODED_TEXT",
+        "list" : [ {
+          "value" : "219006",
+          "label" : "Drinkt alcohol",
+          "localizedLabels" : {
+            "nl" : "Drinkt alcohol"
+          }
+        }, {
+          "value" : "105542008",
+          "label" : "Drinkt momenteel geen alcohol",
+          "localizedLabels" : {
+            "nl" : "Drinkt momenteel geen alcohol"
+          }
+        }, {
+          "value" : "82581004",
+          "label" : "Dronk vroeger alcohol",
+          "localizedLabels" : {
+            "nl" : "Dronk vroeger alcohol"
+          }
+        }, {
+          "value" : "783261004",
+          "label" : "Levenslange niet-drinker van alcohol",
+          "localizedLabels" : {
+            "nl" : "Levenslange niet-drinker van alcohol"
+          }
+        }, {
+          "value" : "OTH",
+          "label" : "Anders",
+          "localizedLabels" : {
+            "nl" : "Anders"
+          }
+        } ],
+        "terminology" : "SNOMED CT"
+      } ]
+    }, {
+      "id" : "startdatum",
+      "name" : "StartDatum",
+      "localizedName" : "StartDatum",
+      "rmType" : "DV_DATE",
+      "nodeId" : "at0015",
+      "min" : 0,
+      "max" : 1,
+      "localizedNames" : {
+        "nl" : "StartDatum"
+      },
+      "localizedDescriptions" : {
+        "nl" : "De datum of gedeeltelijke datum waarop het individu begon regelmatig, maar doorgaans niet dagelijks, alcohol te drinken."
+      },
+      "annotations" : {
+        "comment" : "Dit data element legt vast wanneer een regelmatig patroon van drinken begon, niet de eerste slok alcohol ooit. De eerste slok kan op erg jonge leeftijd plaatsvinden gevolgd door niet drinken tot halverwege de tienerjaren. In dit geval is het patroon vanaf halverwege de tienerjaren klinisch significant. Gebruik om onderscheid te maken tussen patronen van drinken andere elementen in dit archetype, zoals de 'Per episode' sectie."
+      },
+      "aqlPath" : "/data[at0001]/items[at0015,'StartDatum']/value",
+      "inputs" : [ {
+        "type" : "DATE",
+        "validation" : {
+          "pattern" : "yyyy-??-??"
+        }
+      } ]
+    }, {
+      "id" : "per_episode",
+      "name" : "Per episode",
+      "localizedName" : "Per episode",
+      "rmType" : "CLUSTER",
+      "nodeId" : "at0064",
+      "min" : 0,
+      "max" : 1,
+      "localizedNames" : {
+        "nl" : "Per episode"
+      },
+      "localizedDescriptions" : {
+        "nl" : "Details over een discrete periode met een consistent patroon van typische consumptie."
+      },
+      "aqlPath" : "/data[at0001]/items[at0064]",
+      "children" : [ {
+        "id" : "hoeveelheid",
+        "name" : "Hoeveelheid",
+        "localizedName" : "Hoeveelheid",
+        "rmType" : "DV_QUANTITY",
+        "nodeId" : "at0023",
+        "min" : 0,
+        "max" : 1,
+        "localizedNames" : {
+          "nl" : "Hoeveelheid"
+        },
+        "localizedDescriptions" : {
+          "nl" : "Geschatte aantal alcohol eenheden geconsumeerd in de bepaalde periode."
+        },
+        "annotations" : {
+          "897148007" : "Inname van alcoholische drank"
+        },
+        "aqlPath" : "/data[at0001]/items[at0064]/items[at0023,'Hoeveelheid']/value",
+        "inputs" : [ {
+          "suffix" : "magnitude",
+          "type" : "DECIMAL"
+        }, {
+          "suffix" : "unit",
+          "type" : "CODED_TEXT",
+          "list" : [ {
+            "value" : "1/d",
+            "label" : "1/d",
+            "validation" : {
+              "range" : {
+                "minOp" : ">=",
+                "min" : 0.0
+              },
+              "precision" : {
+                "minOp" : ">=",
+                "min" : 1,
+                "maxOp" : "<=",
+                "max" : 1
+              }
+            }
+          }, {
+            "value" : "1/wk",
+            "label" : "1/wk",
+            "validation" : {
+              "range" : {
+                "minOp" : ">=",
+                "min" : 0.0
+              },
+              "precision" : {
+                "minOp" : ">=",
+                "min" : 1,
+                "maxOp" : "<=",
+                "max" : 1
+              }
+            }
+          }, {
+            "value" : "1/mo",
+            "label" : "1/mo",
+            "validation" : {
+              "range" : {
+                "minOp" : ">=",
+                "min" : 0.0
+              },
+              "precision" : {
+                "minOp" : ">=",
+                "min" : 1,
+                "maxOp" : "<=",
+                "max" : 1
+              }
+            }
+          } ]
+        } ]
+      } ]
+    }, {
+      "id" : "stopdatum",
+      "name" : "StopDatum",
+      "localizedName" : "StopDatum",
+      "rmType" : "DV_DATE",
+      "nodeId" : "at0016",
+      "min" : 0,
+      "max" : 1,
+      "localizedNames" : {
+        "nl" : "StopDatum"
+      },
+      "localizedDescriptions" : {
+        "nl" : "De datum waarop het individu voor het laatst stopte met het drinken van alcohol van welk type dan ook."
+      },
+      "annotations" : {
+        "comment" : "Kan een gedeeltelijke datum zijn, bijvoorbeeld een jaartal. Deze datum kan gebruikt worden in beslissingondersteuning om vast te stellen of het individu risico op terugval heeft, bijvoorbeeld in de eerste 12 maanden na het stoppen."
+      },
+      "aqlPath" : "/data[at0001]/items[at0016,'StopDatum']/value",
+      "inputs" : [ {
+        "type" : "DATE",
+        "validation" : {
+          "pattern" : "yyyy-??-??"
+        }
+      } ]
+    }, {
+      "id" : "toelichting",
+      "name" : "Toelichting",
+      "localizedName" : "Toelichting",
+      "rmType" : "DV_TEXT",
+      "nodeId" : "at0019",
+      "min" : 0,
+      "max" : 1,
+      "localizedNames" : {
+        "nl" : "Toelichting"
+      },
+      "localizedDescriptions" : {
+        "nl" : "Aanvullende opmerkingen over alcohol consumptie die niet vastgelegd zijn in andere velden."
+      },
+      "annotations" : {
+        "48767-8" : "erklarend commentaar [interpretatie] in {systeem}"
+      },
+      "aqlPath" : "/data[at0001]/items[at0019,'Toelichting']/value",
+      "inputs" : [ {
+        "type" : "TEXT"
+      } ]
+    }, {
+      "id" : "language",
+      "name" : "Language",
+      "rmType" : "CODE_PHRASE",
+      "min" : 1,
+      "max" : 1,
+      "aqlPath" : "/language",
+      "inContext" : true
+    }, {
+      "id" : "encoding",
+      "name" : "Encoding",
+      "rmType" : "CODE_PHRASE",
+      "min" : 1,
+      "max" : 1,
+      "aqlPath" : "/encoding",
+      "inContext" : true
+    }, {
+      "id" : "subject",
+      "name" : "Subject",
+      "rmType" : "PARTY_PROXY",
+      "min" : 1,
+      "max" : 1,
+      "aqlPath" : "/subject",
+      "inputs" : [ {
+        "suffix" : "id",
+        "type" : "TEXT"
+      }, {
+        "suffix" : "id_scheme",
+        "type" : "TEXT"
+      }, {
+        "suffix" : "id_namespace",
+        "type" : "TEXT"
+      }, {
+        "suffix" : "name",
+        "type" : "TEXT"
+      } ],
+      "inContext" : true
+    } ]
+  }
+}

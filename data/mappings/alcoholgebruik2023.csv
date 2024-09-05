@@ -1,0 +1,8 @@
+ZIB_Id,ZIB_Naam,ZIB_Type,ZIB_Card,ZIB_DefCode,ZIB_Verwijzing,openEHR_Path,openEHR_Naam,openEHR_Type,openEHR_Card,openEHR_Term,Commentaar
+NL-CM:7.3.1,AlcoholGebruik,rootconcept,,,,,Alcohol consumptie overzicht,EVALUATION,,,
+NL-CM:7.3.7,Toelichting,ST,0..1,LOINC: 48767-8 Annotation comment [Interpretation] Narrative,,/data[at0001]/items[at0019.1],Algemene opmerkingen,DV_TEXT,0..1,,
+NL-CM:7.3.2,AlcoholGebruikStatus,CD,1,SNOMED CT: 228273003 Bevinding betreffende alcoholgebruik,AlcoholGebruikStatusCodelijst,/data[at0001]/items[at0089.1],Algemene status,DV_CODED_TEXT,1,,
+NL-CM:7.3.3,WaarnemingGebruik,container,0..1,,,,,,,,
+NL-CM:7.3.4,StartDatum,TS,0..1,,,/data[at0001]/items[at0015.1],Regelmatige consumptie begonnen,DV_DATE,0..1,," year optional month, day"
+NL-CM:7.3.5,StopDatum,TS,0..1,,,/data[at0001]/items[at0016.1],Algemene stopdatum,DV_DATE,0..1,," year optional month, day"
+NL-CM:7.3.6,Hoeveelheid,PQ,0..1,SNOMED CT: 897148007 Inname van alcoholische drank,,/data[at0001]/items[at0064.1]/items[at0023.1],Typische consumptie (alcohol eenheden),DV_QUANTITY,0..1,,

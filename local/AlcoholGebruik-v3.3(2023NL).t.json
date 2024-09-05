@@ -1,0 +1,1589 @@
+{
+  "@type" : "TEMPLATE",
+  "uid" : "4a917085-8165-48ae-bb24-7f0d43d55956",
+  "description" : {
+    "@type" : "RESOURCE_DESCRIPTION",
+    "originalAuthor" : {
+      "date" : "2024-04-17"
+    },
+    "otherContributors" : [ ],
+    "lifecycleState" : {
+      "codeString" : "unmanaged"
+    },
+    "ipAcknowledgements" : { },
+    "references" : { },
+    "conversionDetails" : { },
+    "otherDetails" : {
+      "licence" : "",
+      "custodian_organisation" : "",
+      "original_namespace" : "",
+      "original_publisher" : "",
+      "custodian_namespace" : "",
+      "sem_ver" : "0.1.7",
+      "build_uid" : "68667ea2-0bd6-427a-a178-dc081950579d",
+      "MD5-CAM-1.0.1" : "f725ea5c272ec77958828d6d89542978",
+      "PARENT:MD5-CAM-1.0.1" : "F98919119C3453EF0E0A3286A90AA20C"
+    },
+    "details" : {
+      "de" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "de"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "sv" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "sv"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "nb" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "nb"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "en" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "en"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "fr" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "fr"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "nl" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "nl"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      }
+    }
+  },
+  "annotations" : {
+    "@type" : "RESOURCE_ANNOTATIONS",
+    "documentation" : {
+      "en" : {
+        "/data[at0001]/items[at0064.1]/items[at0029.1]/items[at0111.1]" : {
+          "897148007" : "Hoeveelheid"
+        },
+        "/data[at0001]/items[at0019.1]" : {
+          "48767-8" : "Verklarend commentaar [interpretatie] in {systeem}"
+        },
+        "/data[at0001]/items[at0064.1]/items[at0023.1]" : {
+          "897148007" : "Inname van alcoholische drank"
+        },
+        "/data[at0001]/items[at0089.1]" : {
+          "228273003" : "Bevinding betreffende alcoholgebruik"
+        }
+      },
+      "nl" : {
+        "/data[at0001]/items[at0089.1]" : {
+          "228273003" : "Bevinding betreffende alcoholgebruik"
+        },
+        "/data[at0001]/items[at0019.1]" : {
+          "48767-8" : "Verklarend commentaar [interpretatie] in {systeem}"
+        },
+        "/data[at0001]/items[at0064.1]/items[at0023.1]" : {
+          "897148007" : "Inname van alcoholische drank"
+        }
+      }
+    }
+  },
+  "parentArchetypeId" : "openEHR-EHR-EVALUATION.alcohol_consumption_summary.v1",
+  "differential" : true,
+  "archetypeId" : {
+    "@type" : "ARCHETYPE_HRID",
+    "value" : "openEHR-EHR-EVALUATION.t_alcohol_consumption_summary.v1"
+  },
+  "definition" : {
+    "@type" : "C_COMPLEX_OBJECT",
+    "rmTypeName" : "EVALUATION",
+    "nodeId" : "at0000.1",
+    "attributes" : [ {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "data",
+      "children" : [ {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "ITEM_TREE",
+        "nodeId" : "at0001",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "items",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "1..1",
+            "nodeId" : "at0089.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_CODED_TEXT",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "defining_code",
+                  "children" : [ {
+                    "@type" : "C_TERMINOLOGY_CODE",
+                    "rmTypeName" : "TERMINOLOGY_CODE",
+                    "occurrences" : "1..1",
+                    "terminologyId" : {
+                      "value" : "SNOMED CT"
+                    },
+                    "constraint" : [ ],
+                    "selectedTerminologies" : [ "SNOMED CT" ],
+                    "includedExternalTerminologyCodes" : [ {
+                      "terminologyId" : "SNOMED CT",
+                      "code" : "219006",
+                      "value" : "Drinkt alcohol"
+                    }, {
+                      "terminologyId" : "SNOMED CT",
+                      "code" : "105542008",
+                      "value" : "Drinkt momenteel geen alcohol"
+                    }, {
+                      "terminologyId" : "SNOMED CT",
+                      "code" : "82581004",
+                      "value" : "Dronk vroeger alcohol"
+                    }, {
+                      "terminologyId" : "SNOMED CT",
+                      "code" : "783261004",
+                      "value" : "Levenslange niet-drinker van alcohol"
+                    }, {
+                      "terminologyId" : "SNOMED CT",
+                      "code" : "OTH",
+                      "value" : "Anders"
+                    } ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0043.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "nodeId" : "at0015.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_DATE",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_DATE",
+                    "rmTypeName" : "DATE_TIME",
+                    "patternedConstraint" : "yyyy-??-??",
+                    "constraint" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0080.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0114.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "CLUSTER",
+            "occurrences" : "0..1",
+            "nodeId" : "at0064.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "items",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0052.1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_CODED_TEXT",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "defining_code",
+                      "children" : [ {
+                        "@type" : "C_TERMINOLOGY_CODE",
+                        "rmTypeName" : "CODE_PHRASE",
+                        "occurrences" : "1..1",
+                        "terminologyId" : {
+                          "value" : "local"
+                        },
+                        "constraint" : [ "at0061", "at0091" ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0112.1",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0081.1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_COUNT",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "magnitude",
+                      "children" : [ {
+                        "@type" : "C_INTEGER",
+                        "rmTypeName" : "Integer",
+                        "occurrences" : "1..1",
+                        "constraint" : [ {
+                          "lower" : 1,
+                          "lowerIncluded" : true,
+                          "upperIncluded" : false,
+                          "lowerUnbounded" : false,
+                          "upperUnbounded" : true
+                        } ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  }, {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_TEXT",
+                    "attributes" : [ ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0013.1",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0082.1",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0030.1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_CODED_TEXT",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "defining_code",
+                      "children" : [ {
+                        "@type" : "C_TERMINOLOGY_CODE",
+                        "rmTypeName" : "CODE_PHRASE",
+                        "occurrences" : "1..1",
+                        "terminologyId" : {
+                          "value" : "local"
+                        },
+                        "constraint" : [ "at0083", "at0084" ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  }, {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_TEXT",
+                    "attributes" : [ ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0097.1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_QUANTITY",
+                    "attributes" : [ ],
+                    "attributeTuples" : [ {
+                      "@type" : "C_ATTRIBUTE_TUPLE",
+                      "members" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "magnitude",
+                        "children" : [ ]
+                      }, {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "units",
+                        "children" : [ ]
+                      }, {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "precision",
+                        "children" : [ ]
+                      } ],
+                      "tuples" : [ {
+                        "@type" : "C_PRIMITIVE_TUPLE",
+                        "members" : [ {
+                          "@type" : "C_REAL",
+                          "constraint" : [ {
+                            "lower" : 0.0,
+                            "upper" : 7.0,
+                            "lowerIncluded" : true,
+                            "upperIncluded" : true,
+                            "lowerUnbounded" : false,
+                            "upperUnbounded" : false
+                          } ]
+                        }, {
+                          "@type" : "C_STRING",
+                          "constraint" : [ "1/wk" ]
+                        }, {
+                          "@type" : "C_INTEGER",
+                          "constraint" : [ {
+                            "lower" : 0,
+                            "upper" : 0,
+                            "lowerIncluded" : true,
+                            "upperIncluded" : true,
+                            "lowerUnbounded" : false,
+                            "upperUnbounded" : false
+                          } ]
+                        } ]
+                      }, {
+                        "@type" : "C_PRIMITIVE_TUPLE",
+                        "members" : [ {
+                          "@type" : "C_REAL",
+                          "constraint" : [ {
+                            "lower" : 0.0,
+                            "upper" : 31.0,
+                            "lowerIncluded" : true,
+                            "upperIncluded" : true,
+                            "lowerUnbounded" : false,
+                            "upperUnbounded" : false
+                          } ]
+                        }, {
+                          "@type" : "C_STRING",
+                          "constraint" : [ "1/mo" ]
+                        }, {
+                          "@type" : "C_INTEGER",
+                          "constraint" : [ {
+                            "lower" : 0,
+                            "upper" : 0,
+                            "lowerIncluded" : true,
+                            "upperIncluded" : true,
+                            "lowerUnbounded" : false,
+                            "upperUnbounded" : false
+                          } ]
+                        } ]
+                      }, {
+                        "@type" : "C_PRIMITIVE_TUPLE",
+                        "members" : [ {
+                          "@type" : "C_REAL",
+                          "constraint" : [ {
+                            "lower" : 0.0,
+                            "upper" : 365.0,
+                            "lowerIncluded" : true,
+                            "upperIncluded" : true,
+                            "lowerUnbounded" : false,
+                            "upperUnbounded" : false
+                          } ]
+                        }, {
+                          "@type" : "C_STRING",
+                          "constraint" : [ "1/a" ]
+                        }, {
+                          "@type" : "C_INTEGER",
+                          "constraint" : [ {
+                            "lower" : 0,
+                            "upper" : 0,
+                            "lowerIncluded" : true,
+                            "upperIncluded" : true,
+                            "lowerUnbounded" : false,
+                            "upperUnbounded" : false
+                          } ]
+                        } ]
+                      } ]
+                    } ]
+                  }, {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_INTERVAL<DV_QUANTITY>",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "lower",
+                      "children" : [ {
+                        "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "DV_QUANTITY",
+                        "attributes" : [ ],
+                        "attributeTuples" : [ {
+                          "@type" : "C_ATTRIBUTE_TUPLE",
+                          "members" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "magnitude",
+                            "children" : [ ]
+                          }, {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "units",
+                            "children" : [ ]
+                          }, {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "precision",
+                            "children" : [ ]
+                          } ],
+                          "tuples" : [ {
+                            "@type" : "C_PRIMITIVE_TUPLE",
+                            "members" : [ {
+                              "@type" : "C_REAL",
+                              "constraint" : [ {
+                                "lower" : 0.0,
+                                "upper" : 7.0,
+                                "lowerIncluded" : true,
+                                "upperIncluded" : true,
+                                "lowerUnbounded" : false,
+                                "upperUnbounded" : false
+                              } ]
+                            }, {
+                              "@type" : "C_STRING",
+                              "constraint" : [ "1/wk" ]
+                            }, {
+                              "@type" : "C_INTEGER",
+                              "constraint" : [ {
+                                "lower" : 0,
+                                "upper" : 0,
+                                "lowerIncluded" : true,
+                                "upperIncluded" : true,
+                                "lowerUnbounded" : false,
+                                "upperUnbounded" : false
+                              } ]
+                            } ]
+                          }, {
+                            "@type" : "C_PRIMITIVE_TUPLE",
+                            "members" : [ {
+                              "@type" : "C_REAL",
+                              "constraint" : [ {
+                                "lower" : 0.0,
+                                "upper" : 31.0,
+                                "lowerIncluded" : true,
+                                "upperIncluded" : true,
+                                "lowerUnbounded" : false,
+                                "upperUnbounded" : false
+                              } ]
+                            }, {
+                              "@type" : "C_STRING",
+                              "constraint" : [ "1/mo" ]
+                            }, {
+                              "@type" : "C_INTEGER",
+                              "constraint" : [ {
+                                "lower" : 0,
+                                "upper" : 0,
+                                "lowerIncluded" : true,
+                                "upperIncluded" : true,
+                                "lowerUnbounded" : false,
+                                "upperUnbounded" : false
+                              } ]
+                            } ]
+                          }, {
+                            "@type" : "C_PRIMITIVE_TUPLE",
+                            "members" : [ {
+                              "@type" : "C_REAL",
+                              "constraint" : [ {
+                                "lower" : 0.0,
+                                "upper" : 365.0,
+                                "lowerIncluded" : true,
+                                "upperIncluded" : true,
+                                "lowerUnbounded" : false,
+                                "upperUnbounded" : false
+                              } ]
+                            }, {
+                              "@type" : "C_STRING",
+                              "constraint" : [ "1/a" ]
+                            }, {
+                              "@type" : "C_INTEGER",
+                              "constraint" : [ {
+                                "lower" : 0,
+                                "upper" : 0,
+                                "lowerIncluded" : true,
+                                "upperIncluded" : true,
+                                "lowerUnbounded" : false,
+                                "upperUnbounded" : false
+                              } ]
+                            } ]
+                          } ]
+                        } ]
+                      } ]
+                    }, {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "upper",
+                      "children" : [ {
+                        "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "DV_QUANTITY",
+                        "attributes" : [ ],
+                        "attributeTuples" : [ {
+                          "@type" : "C_ATTRIBUTE_TUPLE",
+                          "members" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "magnitude",
+                            "children" : [ ]
+                          }, {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "units",
+                            "children" : [ ]
+                          }, {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "precision",
+                            "children" : [ ]
+                          } ],
+                          "tuples" : [ {
+                            "@type" : "C_PRIMITIVE_TUPLE",
+                            "members" : [ {
+                              "@type" : "C_REAL",
+                              "constraint" : [ {
+                                "lower" : 0.0,
+                                "upper" : 7.0,
+                                "lowerIncluded" : true,
+                                "upperIncluded" : true,
+                                "lowerUnbounded" : false,
+                                "upperUnbounded" : false
+                              } ]
+                            }, {
+                              "@type" : "C_STRING",
+                              "constraint" : [ "1/wk" ]
+                            }, {
+                              "@type" : "C_INTEGER",
+                              "constraint" : [ {
+                                "lower" : 0,
+                                "upper" : 0,
+                                "lowerIncluded" : true,
+                                "upperIncluded" : true,
+                                "lowerUnbounded" : false,
+                                "upperUnbounded" : false
+                              } ]
+                            } ]
+                          }, {
+                            "@type" : "C_PRIMITIVE_TUPLE",
+                            "members" : [ {
+                              "@type" : "C_REAL",
+                              "constraint" : [ {
+                                "lower" : 0.0,
+                                "upper" : 31.0,
+                                "lowerIncluded" : true,
+                                "upperIncluded" : true,
+                                "lowerUnbounded" : false,
+                                "upperUnbounded" : false
+                              } ]
+                            }, {
+                              "@type" : "C_STRING",
+                              "constraint" : [ "1/mo" ]
+                            }, {
+                              "@type" : "C_INTEGER",
+                              "constraint" : [ {
+                                "lower" : 0,
+                                "upper" : 0,
+                                "lowerIncluded" : true,
+                                "upperIncluded" : true,
+                                "lowerUnbounded" : false,
+                                "upperUnbounded" : false
+                              } ]
+                            } ]
+                          }, {
+                            "@type" : "C_PRIMITIVE_TUPLE",
+                            "members" : [ {
+                              "@type" : "C_REAL",
+                              "constraint" : [ {
+                                "lower" : 0.0,
+                                "upper" : 365.0,
+                                "lowerIncluded" : true,
+                                "upperIncluded" : true,
+                                "lowerUnbounded" : false,
+                                "upperUnbounded" : false
+                              } ]
+                            }, {
+                              "@type" : "C_STRING",
+                              "constraint" : [ "1/a" ]
+                            }, {
+                              "@type" : "C_INTEGER",
+                              "constraint" : [ {
+                                "lower" : 0,
+                                "upper" : 0,
+                                "lowerIncluded" : true,
+                                "upperIncluded" : true,
+                                "lowerUnbounded" : false,
+                                "upperUnbounded" : false
+                              } ]
+                            } ]
+                          } ]
+                        } ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0113.1",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0110.1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_QUANTITY",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "property",
+                      "children" : [ {
+                        "@type" : "C_TERMINOLOGY_CODE",
+                        "terminologyId" : {
+                          "value" : "openehr"
+                        },
+                        "constraint" : [ "382" ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ {
+                      "@type" : "C_ATTRIBUTE_TUPLE",
+                      "members" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "magnitude",
+                        "children" : [ ]
+                      }, {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "units",
+                        "children" : [ ]
+                      }, {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "precision",
+                        "children" : [ ]
+                      } ],
+                      "tuples" : [ {
+                        "@type" : "C_PRIMITIVE_TUPLE",
+                        "members" : [ {
+                          "@type" : "C_REAL",
+                          "constraint" : [ {
+                            "lower" : 0.0,
+                            "upper" : 7.0,
+                            "lowerIncluded" : true,
+                            "upperIncluded" : false,
+                            "lowerUnbounded" : false,
+                            "upperUnbounded" : false
+                          } ]
+                        }, {
+                          "@type" : "C_STRING",
+                          "constraint" : [ "1/wk" ]
+                        }, {
+                          "@type" : "C_INTEGER",
+                          "constraint" : [ {
+                            "lower" : 0,
+                            "upper" : 0,
+                            "lowerIncluded" : true,
+                            "upperIncluded" : true,
+                            "lowerUnbounded" : false,
+                            "upperUnbounded" : false
+                          } ]
+                        } ]
+                      }, {
+                        "@type" : "C_PRIMITIVE_TUPLE",
+                        "members" : [ {
+                          "@type" : "C_REAL",
+                          "constraint" : [ {
+                            "lower" : 0.0,
+                            "upper" : 31.0,
+                            "lowerIncluded" : true,
+                            "upperIncluded" : false,
+                            "lowerUnbounded" : false,
+                            "upperUnbounded" : false
+                          } ]
+                        }, {
+                          "@type" : "C_STRING",
+                          "constraint" : [ "1/mo" ]
+                        }, {
+                          "@type" : "C_INTEGER",
+                          "constraint" : [ {
+                            "lower" : 0,
+                            "upper" : 0,
+                            "lowerIncluded" : true,
+                            "upperIncluded" : true,
+                            "lowerUnbounded" : false,
+                            "upperUnbounded" : false
+                          } ]
+                        } ]
+                      } ]
+                    } ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0023.1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_QUANTITY",
+                    "attributes" : [ ],
+                    "attributeTuples" : [ {
+                      "@type" : "C_ATTRIBUTE_TUPLE",
+                      "members" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "units",
+                        "children" : [ ]
+                      }, {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "magnitude",
+                        "children" : [ ]
+                      }, {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "precision",
+                        "children" : [ ]
+                      } ],
+                      "tuples" : [ {
+                        "@type" : "C_PRIMITIVE_TUPLE",
+                        "members" : [ {
+                          "@type" : "C_STRING",
+                          "rmTypeName" : "STRING",
+                          "constraint" : [ "1/d" ]
+                        }, {
+                          "@type" : "C_REAL",
+                          "rmTypeName" : "REAL",
+                          "constraint" : [ {
+                            "lower" : 0.0,
+                            "lowerIncluded" : true,
+                            "upperIncluded" : false,
+                            "lowerUnbounded" : false,
+                            "upperUnbounded" : true
+                          } ]
+                        }, {
+                          "@type" : "C_INTEGER",
+                          "rmTypeName" : "INTEGER",
+                          "constraint" : [ {
+                            "lower" : 1,
+                            "upper" : 1,
+                            "lowerIncluded" : true,
+                            "upperIncluded" : true,
+                            "lowerUnbounded" : false,
+                            "upperUnbounded" : false
+                          } ]
+                        } ]
+                      }, {
+                        "@type" : "C_PRIMITIVE_TUPLE",
+                        "members" : [ {
+                          "@type" : "C_STRING",
+                          "rmTypeName" : "STRING",
+                          "constraint" : [ "1/wk" ]
+                        }, {
+                          "@type" : "C_REAL",
+                          "rmTypeName" : "REAL",
+                          "constraint" : [ {
+                            "lower" : 0.0,
+                            "lowerIncluded" : true,
+                            "upperIncluded" : false,
+                            "lowerUnbounded" : false,
+                            "upperUnbounded" : true
+                          } ]
+                        }, {
+                          "@type" : "C_INTEGER",
+                          "rmTypeName" : "INTEGER",
+                          "constraint" : [ {
+                            "lower" : 1,
+                            "upper" : 1,
+                            "lowerIncluded" : true,
+                            "upperIncluded" : true,
+                            "lowerUnbounded" : false,
+                            "upperUnbounded" : false
+                          } ]
+                        } ]
+                      }, {
+                        "@type" : "C_PRIMITIVE_TUPLE",
+                        "members" : [ {
+                          "@type" : "C_STRING",
+                          "rmTypeName" : "STRING",
+                          "constraint" : [ "1/mo" ]
+                        }, {
+                          "@type" : "C_REAL",
+                          "rmTypeName" : "REAL",
+                          "constraint" : [ {
+                            "lower" : 0.0,
+                            "lowerIncluded" : true,
+                            "upperIncluded" : false,
+                            "lowerUnbounded" : false,
+                            "upperUnbounded" : true
+                          } ]
+                        }, {
+                          "@type" : "C_INTEGER",
+                          "rmTypeName" : "INTEGER",
+                          "constraint" : [ {
+                            "lower" : 1,
+                            "upper" : 1,
+                            "lowerIncluded" : true,
+                            "upperIncluded" : true,
+                            "lowerUnbounded" : false,
+                            "upperUnbounded" : false
+                          } ]
+                        } ]
+                      } ]
+                    } ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "CLUSTER",
+                "occurrences" : "0..0",
+                "nodeId" : "at0029.1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "items",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "ELEMENT",
+                    "nodeId" : "at0108.1",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "value",
+                      "children" : [ {
+                        "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "DV_CODED_TEXT",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "defining_code",
+                          "children" : [ {
+                            "@type" : "C_TERMINOLOGY_CODE",
+                            "rmTypeName" : "TERMINOLOGY_CODE",
+                            "occurrences" : "1..1",
+                            "terminologyId" : {
+                              "value" : "local_terms"
+                            },
+                            "constraint" : [ ],
+                            "selectedTerminologies" : [ "local_terms" ],
+                            "includedExternalTerminologyCodes" : [ {
+                              "terminologyId" : "local_terms",
+                              "code" : "at0115",
+                              "value" : "Bier"
+                            }, {
+                              "terminologyId" : "local_terms",
+                              "code" : "at0116",
+                              "value" : "Wijn"
+                            }, {
+                              "terminologyId" : "local_terms",
+                              "code" : "at0117",
+                              "value" : "Cider"
+                            }, {
+                              "terminologyId" : "local_terms",
+                              "code" : "at0118",
+                              "value" : "Mede"
+                            }, {
+                              "terminologyId" : "local_terms",
+                              "code" : "at0119",
+                              "value" : "Pulque"
+                            }, {
+                              "terminologyId" : "local_terms",
+                              "code" : "at0120",
+                              "value" : "Gedestileerde drank"
+                            }, {
+                              "terminologyId" : "local_terms",
+                              "code" : "at0121",
+                              "value" : "Versterkte wijn"
+                            } ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  }, {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "ELEMENT",
+                    "occurrences" : "0..0",
+                    "nodeId" : "at0053.1",
+                    "attributes" : [ ],
+                    "attributeTuples" : [ ]
+                  }, {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "ELEMENT",
+                    "nodeId" : "at0111.1",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "value",
+                      "children" : [ {
+                        "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "DV_QUANTITY",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "property",
+                          "children" : [ {
+                            "@type" : "C_TERMINOLOGY_CODE",
+                            "terminologyId" : {
+                              "value" : "openehr"
+                            },
+                            "constraint" : [ "382" ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ {
+                          "@type" : "C_ATTRIBUTE_TUPLE",
+                          "members" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "units",
+                            "children" : [ ]
+                          }, {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "magnitude",
+                            "children" : [ ]
+                          }, {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "precision",
+                            "children" : [ ]
+                          } ],
+                          "tuples" : [ {
+                            "@type" : "C_PRIMITIVE_TUPLE",
+                            "members" : [ {
+                              "@type" : "C_STRING",
+                              "rmTypeName" : "STRING",
+                              "constraint" : [ "1/d" ]
+                            }, {
+                              "@type" : "C_REAL",
+                              "rmTypeName" : "REAL",
+                              "constraint" : [ {
+                                "lower" : 0.0,
+                                "lowerIncluded" : true,
+                                "upperIncluded" : false,
+                                "lowerUnbounded" : false,
+                                "upperUnbounded" : true
+                              } ]
+                            }, {
+                              "@type" : "C_INTEGER",
+                              "rmTypeName" : "INTEGER",
+                              "constraint" : [ {
+                                "lower" : 1,
+                                "upper" : 1,
+                                "lowerIncluded" : true,
+                                "upperIncluded" : true,
+                                "lowerUnbounded" : false,
+                                "upperUnbounded" : false
+                              } ]
+                            } ]
+                          }, {
+                            "@type" : "C_PRIMITIVE_TUPLE",
+                            "members" : [ {
+                              "@type" : "C_STRING",
+                              "rmTypeName" : "STRING",
+                              "constraint" : [ "1/wk" ]
+                            }, {
+                              "@type" : "C_REAL",
+                              "rmTypeName" : "REAL",
+                              "constraint" : [ {
+                                "lower" : 0.0,
+                                "lowerIncluded" : true,
+                                "upperIncluded" : false,
+                                "lowerUnbounded" : false,
+                                "upperUnbounded" : true
+                              } ]
+                            }, {
+                              "@type" : "C_INTEGER",
+                              "rmTypeName" : "INTEGER",
+                              "constraint" : [ {
+                                "lower" : 1,
+                                "upper" : 1,
+                                "lowerIncluded" : true,
+                                "upperIncluded" : true,
+                                "lowerUnbounded" : false,
+                                "upperUnbounded" : false
+                              } ]
+                            } ]
+                          }, {
+                            "@type" : "C_PRIMITIVE_TUPLE",
+                            "members" : [ {
+                              "@type" : "C_STRING",
+                              "rmTypeName" : "STRING",
+                              "constraint" : [ "1/mo" ]
+                            }, {
+                              "@type" : "C_REAL",
+                              "rmTypeName" : "REAL",
+                              "constraint" : [ {
+                                "lower" : 0.0,
+                                "lowerIncluded" : true,
+                                "upperIncluded" : false,
+                                "lowerUnbounded" : false,
+                                "upperUnbounded" : true
+                              } ]
+                            }, {
+                              "@type" : "C_INTEGER",
+                              "rmTypeName" : "INTEGER",
+                              "constraint" : [ {
+                                "lower" : 1,
+                                "upper" : 1,
+                                "lowerIncluded" : true,
+                                "upperIncluded" : true,
+                                "lowerUnbounded" : false,
+                                "upperUnbounded" : false
+                              } ]
+                            } ]
+                          } ]
+                        } ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  }, {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "ELEMENT",
+                    "occurrences" : "0..0",
+                    "nodeId" : "at0069.1",
+                    "attributes" : [ ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0025.1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_COUNT",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "magnitude",
+                      "children" : [ {
+                        "@type" : "C_INTEGER",
+                        "rmTypeName" : "Integer",
+                        "occurrences" : "1..1",
+                        "constraint" : [ {
+                          "lower" : 0,
+                          "lowerIncluded" : true,
+                          "upperIncluded" : false,
+                          "lowerUnbounded" : false,
+                          "upperUnbounded" : true
+                        } ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0014.1",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0087.1",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "nodeId" : "at0016.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_DATE",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_DATE",
+                    "rmTypeName" : "DATE_TIME",
+                    "patternedConstraint" : "yyyy-??-??",
+                    "constraint" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "nodeId" : "at0019.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      } ]
+    }, {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "protocol",
+      "children" : [ {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "ITEM_TREE",
+        "nodeId" : "at0021",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "items",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0071.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0085.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0075.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0076.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0079.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0104.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_QUANTITY",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "property",
+                  "children" : [ {
+                    "@type" : "C_TERMINOLOGY_CODE",
+                    "terminologyId" : {
+                      "value" : "openehr"
+                    },
+                    "constraint" : [ "124" ]
+                  } ]
+                } ],
+                "attributeTuples" : [ {
+                  "@type" : "C_ATTRIBUTE_TUPLE",
+                  "members" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "magnitude",
+                    "children" : [ ]
+                  }, {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "units",
+                    "children" : [ ]
+                  }, {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "precision",
+                    "children" : [ ]
+                  } ],
+                  "tuples" : [ {
+                    "@type" : "C_PRIMITIVE_TUPLE",
+                    "members" : [ {
+                      "@type" : "C_REAL",
+                      "constraint" : [ {
+                        "lower" : 0.0,
+                        "lowerIncluded" : true,
+                        "upperIncluded" : false,
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : true
+                      } ]
+                    }, {
+                      "@type" : "C_STRING",
+                      "constraint" : [ "g" ]
+                    }, {
+                      "@type" : "C_INTEGER",
+                      "constraint" : [ {
+                        "lower" : 0,
+                        "upper" : 0,
+                        "lowerIncluded" : true,
+                        "upperIncluded" : true,
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : false
+                      } ]
+                    } ]
+                  }, {
+                    "@type" : "C_PRIMITIVE_TUPLE",
+                    "members" : [ {
+                      "@type" : "C_REAL",
+                      "constraint" : [ {
+                        "lower" : 0.0,
+                        "lowerIncluded" : true,
+                        "upperIncluded" : false,
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : true
+                      } ]
+                    }, {
+                      "@type" : "C_STRING",
+                      "constraint" : [ "[oz_av]" ]
+                    }, {
+                      "@type" : "C_INTEGER",
+                      "constraint" : [ {
+                        "lower" : 1,
+                        "upper" : 1,
+                        "lowerIncluded" : true,
+                        "upperIncluded" : true,
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : false
+                      } ]
+                    } ]
+                  } ]
+                } ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0022.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      } ]
+    } ],
+    "attributeTuples" : [ ]
+  },
+  "terminology" : {
+    "@type" : "ARCHETYPE_TERMINOLOGY",
+    "conceptCode" : "at0000",
+    "termDefinitions" : {
+      "en" : {
+        "at0111.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0111.1",
+          "text" : "Hoeveelheid (units)",
+          "description" : "Estimate of number of standard drinks of the specified type of alcohol consumed in the specified period.",
+          "comment" : "The definition of an Alcohol unit can be recorded in the Protocol."
+        },
+        "at0015.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0015.1",
+          "text" : "StartDatum",
+          "description" : "The date or partial date when the individual first started frequent or regular, but usually non-daily, consumption of alcohol.",
+          "comment" : "This data element is recording when a regular pattern of drinking commenced, rather than the first ever taste of alcohol. The first taste could be at a very young age and then no drinking until mid teens. In this case it is the pattern in the mid teens that is clinically significant. To differentiate between patterns of drinking, that has to be recorded in other elements in this archetype, for example in the 'Per episode' section."
+        },
+        "at0016.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.1",
+          "text" : "StopDatum",
+          "description" : "The date when the individual last ceased consuming alcohol of any type.",
+          "comment" : "Can be a partial date, for example, only a year. This date could be used by decision support guidance to determine if the individual is at risk of relapse, for example in the first 12 months since quitting."
+        },
+        "at0019.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0019.1",
+          "text" : "Toelichting",
+          "description" : "Additional narrative about all alcohol consumption that has not been captured in other fields."
+        },
+        "at0089.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0089.1",
+          "text" : "AlcoholGebruikStatus",
+          "description" : "Statement about current consumption for all types of alcohol."
+        },
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "AlcoholGebruik-v3.3(2023NL)",
+          "description" : "Summary or persistent information about the typical alcohol consumption of an individual."
+        },
+        "at0023.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0023.1",
+          "text" : "Hoeveelheid",
+          "description" : "Estimate of number of alcohol units consumed."
+        }
+      },
+      "nb" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Alcoholgebruik",
+          "description" : "Sammendrag eller detaljer om et individs tidligere og nåværende bruk av alkohol."
+        }
+      },
+      "sv" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Alcoholgebruik",
+          "description" : "Sammanfattning eller beständig information om den enskilda personens typiska alkoholkonsumtion."
+        }
+      },
+      "de" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Alcoholgebruik",
+          "description" : "Zusammenfassende oder fortdauernde Informationen über den typischen Alkoholkonsum einer Person."
+        }
+      },
+      "fr" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Alcoholgebruik",
+          "description" : "Informations sommaires ou persistantes sur la consommation d'alcool typique d'un individu."
+        }
+      },
+      "nl" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "AlcoholGebruik-v3.3(2023NL)",
+          "description" : "Overzicht van aanhoudende informatie over het typische alcoholgebruik van een individu."
+        },
+        "at0015.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0015.1",
+          "text" : "StartDatum",
+          "description" : "De datum of gedeeltelijke datum waarop het individu begon regelmatig, maar doorgaans niet dagelijks, alcohol te drinken.",
+          "comment" : "Dit data element legt vast wanneer een regelmatig patroon van drinken begon, niet de eerste slok alcohol ooit. De eerste slok kan op erg jonge leeftijd plaatsvinden gevolgd door niet drinken tot halverwege de tienerjaren. In dit geval is het patroon vanaf halverwege de tienerjaren klinisch significant. Gebruik om onderscheid te maken tussen patronen van drinken andere elementen in dit archetype, zoals de 'Per episode' sectie."
+        },
+        "at0016.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.1",
+          "text" : "StopDatum",
+          "description" : "De datum waarop het individu voor het laatst stopte met het drinken van alcohol van welk type dan ook.",
+          "comment" : "Kan een gedeeltelijke datum zijn, bijvoorbeeld een jaartal. Deze datum kan gebruikt worden in beslissingondersteuning om vast te stellen of het individu risico op terugval heeft, bijvoorbeeld in de eerste 12 maanden na het stoppen."
+        },
+        "at0019.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0019.1",
+          "text" : "Toelichting",
+          "description" : "Aanvullende opmerkingen over alcohol consumptie die niet vastgelegd zijn in andere velden."
+        },
+        "at0089.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0089.1",
+          "text" : "Alcohol gebruikstatus",
+          "description" : "Uitspraak over huidige consumptie van alle typen alcohol."
+        },
+        "at0023.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0023.1",
+          "text" : "Hoeveelheid",
+          "description" : "Geschatte aantal alcohol eenheden geconsumeerd in de bepaalde periode."
+        }
+      }
+    },
+    "termBindings" : { },
+    "terminologyExtracts" : { },
+    "valueSets" : {
+      "ac0.1" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.1",
+        "members" : [ "at0003", "at0005", "at0006" ]
+      },
+      "ac0.2" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.2",
+        "members" : [ "at0003", "at0005", "at0006" ]
+      },
+      "ac0.4" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.4",
+        "members" : [ "at0003", "at0005", "at0006" ]
+      },
+      "ac0.5" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.5",
+        "members" : [ ]
+      },
+      "ac0.6" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.6",
+        "members" : [ ]
+      },
+      "ac0.7" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.7",
+        "members" : [ "at0115", "at0116", "at0117", "at0118", "at0119", "at0120", "at0121" ]
+      },
+      "ac0.9" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.9",
+        "members" : [ "at0115", "at0116", "at0117", "at0118", "at0119", "at0120", "at0121" ]
+      },
+      "ac0.10" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.10",
+        "members" : [ ]
+      },
+      "ac0.11" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.11",
+        "members" : [ ]
+      }
+    }
+  },
+  "adlVersion" : "1.4",
+  "buildUid" : "af1d332b-faac-32d4-ba1a-3d6dc815dedc",
+  "rmName" : "openehr",
+  "rmRelease" : "1.1.0",
+  "generated" : true,
+  "templateId" : "AlcoholGebruik-v3.3(2023NL)",
+  "otherMetaData" : { },
+  "templateOverlays" : [ ],
+  "originalLanguage" : {
+    "terminologyId" : {
+      "value" : "ISO_639-1"
+    },
+    "codeString" : "en"
+  },
+  "translations" : [ {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "de"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "sv"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nb"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "fr"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nl"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  } ]
+}
