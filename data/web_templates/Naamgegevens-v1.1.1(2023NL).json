@@ -1,0 +1,87 @@
+{
+  "templateId" : "Naamgegevens-v1.1.1(2023NL)",
+  "semVer" : "0.1.1",
+  "version" : "2.3",
+  "defaultLanguage" : "en",
+  "languages" : [ "en" ],
+  "tree" : {
+    "id" : "naamgegevens-v1.1.1_2023nl",
+    "name" : "Naamgegevens-v1.1.1(2023NL)",
+    "localizedName" : "Naamgegevens-v1.1.1(2023NL)",
+    "rmType" : "CLUSTER",
+    "nodeId" : "openEHR-EHR-CLUSTER.structured_name.v1",
+    "min" : 1,
+    "max" : 1,
+    "localizedNames" : {
+      "en" : "Naamgegevens-v1.1.1(2023NL)"
+    },
+    "localizedDescriptions" : {
+      "en" : "Discrete components of an individual's name."
+    },
+    "aqlPath" : "",
+    "children" : [ {
+      "id" : "titels",
+      "name" : "Titels",
+      "localizedName" : "Titels",
+      "rmType" : "DV_TEXT",
+      "nodeId" : "at0001",
+      "min" : 0,
+      "max" : -1,
+      "localizedNames" : {
+        "en" : "Titels"
+      },
+      "localizedDescriptions" : {
+        "en" : "One or more honorific form(s) of address commencing a name."
+      },
+      "annotations" : {
+        "comment" : "Occurrences for this data element are set to 0..* to allow for more than one Title to be recorded. Coding with an external terminology is preferred, where possible. For example: 'Doctor'; 'Ms'; 'Mx'; or 'Professor Dr'."
+      },
+      "aqlPath" : "/items[at0001,'Titels']/value",
+      "inputs" : [ {
+        "type" : "TEXT"
+      } ]
+    }, {
+      "id" : "voornamen",
+      "name" : "Voornamen",
+      "localizedName" : "Voornamen",
+      "rmType" : "DV_TEXT",
+      "nodeId" : "at0002",
+      "min" : 0,
+      "max" : -1,
+      "localizedNames" : {
+        "en" : "Voornamen"
+      },
+      "localizedDescriptions" : {
+        "en" : "One or more unique name(s) used to identify an individual within a family group."
+      },
+      "annotations" : {
+        "comment" : "Occurrences for this data element are set to 0..* to allow for more than one Given name to be recorded. In addition, this data element may be cloned and renamed within a template to allow discrete recording of different types of Given name - for example 'First name', 'Middle name', 'Preferred name' or 'Nickname', as required for a specific use case."
+      },
+      "aqlPath" : "/items[at0002,'Voornamen']/value",
+      "inputs" : [ {
+        "type" : "TEXT"
+      } ]
+    }, {
+      "id" : "achternaam",
+      "name" : "Achternaam",
+      "localizedName" : "Achternaam",
+      "rmType" : "DV_TEXT",
+      "nodeId" : "at0005",
+      "min" : 1,
+      "max" : -1,
+      "localizedNames" : {
+        "en" : "Achternaam"
+      },
+      "localizedDescriptions" : {
+        "en" : "One or more name(s) that an individual has in common with a family group."
+      },
+      "annotations" : {
+        "comment" : "Also known as 'Last name' or 'Surname'. Occurrences for this data element are set to 0..* to allow for more than one Family name to be recorded. Complex names such as 'El Haddad' or 'van der Heyden' can be recorded using this naming pattern, as identified in ISO 22220 (Annex F), but for the intended use case for this archetype it is most likely that the full family name will be recorded as a string."
+      },
+      "aqlPath" : "/items[at0005,'Achternaam']/value",
+      "inputs" : [ {
+        "type" : "TEXT"
+      } ]
+    } ]
+  }
+}

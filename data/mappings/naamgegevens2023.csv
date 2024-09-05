@@ -1,0 +1,13 @@
+ZIB_Id,ZIB_Naam,ZIB_Type,ZIB_Card,ZIB_DefCode,ZIB_Verwijzing,openEHR_Path,openEHR_Naam,openEHR_Type,openEHR_Card,openEHR_Term,Commentaar
+NL-CM:20.4.1,Naamgegevens,rootconcept,,,,,Structured name of a person,CLUSTER,,,We were not able to map multiple fields described in the ZIB in this  or other archetype
+NL-CM:20.4.4,Voornamen,ST,0..1,,,/items[at0002.1],Given name,DV_TEXT,0..*,,Occurrences for this data element are set to 0..* to allow for more than one Name to be recorded
+NL-CM:20.4.5,Initialen,ST,0..1,,,,,,,,
+NL-CM:20.4.6,Roepnaam,ST,0..1,,,,,,,,
+NL-CM:20.4.7,Naamgebruik,CD,0..1,,NaamgebruikCodelijst,,,,,,
+NL-CM:20.4.2,Geslachtsnaam,container,0..1,,,,,,,,
+NL-CM:20.4.11,Voorvoegsels,ST,0..1,,,,,,,,
+NL-CM:20.4.10,Achternaam,ST,1,,,/items[at0005.1],Family name,DV_TEXT,1..*,,Occurrences for this data element are set to 1..* to allow for more than one Last name to be recorded
+NL-CM:20.4.3,GeslachtsnaamPartner,container,0..1,,,,,,,,
+NL-CM:20.4.9,VoorvoegselsPartner,ST,0..1,,,,,,,,
+NL-CM:20.4.8,AchternaamPartner,ST,1,,,,,,,,
+NL-CM:20.4.12,Titels,ST,0..1,,,/items[at0001.1],Title,DV_TEXT,0..*,,Occurrences for this data element are set to 0..* to allow for more than one Title to be recorded
