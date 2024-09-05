@@ -1,0 +1,242 @@
+{
+  "templateId" : "VermogenTotZichKleden-v3.1.1(2023NL)",
+  "semVer" : "0.1.5",
+  "version" : "2.3",
+  "defaultLanguage" : "en",
+  "languages" : [ "en" ],
+  "tree" : {
+    "id" : "vermogentotzichkleden-v3.1.1_2023nl",
+    "name" : "VermogenTotZichKleden-v3.1.1(2023NL)",
+    "localizedName" : "VermogenTotZichKleden-v3.1.1(2023NL)",
+    "rmType" : "SECTION",
+    "nodeId" : "openEHR-EHR-SECTION.adhoc.v1",
+    "min" : 1,
+    "max" : 1,
+    "localizedNames" : {
+      "en" : "VermogenTotZichKleden-v3.1.1(2023NL)"
+    },
+    "localizedDescriptions" : {
+      "en" : "A generic section header which should be renamed in a template to suit a specific clinical context."
+    },
+    "aqlPath" : "",
+    "children" : [ {
+      "id" : "zichkleden",
+      "name" : "ZichKleden",
+      "localizedName" : "ZichKleden",
+      "rmType" : "OBSERVATION",
+      "nodeId" : "openEHR-EHR-OBSERVATION.adl.v0",
+      "min" : 1,
+      "max" : 1,
+      "localizedNames" : {
+        "en" : "ZichKleden"
+      },
+      "localizedDescriptions" : {
+        "en" : "Details about an individual's ability to perform an identified activity of daily living."
+      },
+      "annotations" : {
+        "165235000" : "ZichKleden"
+      },
+      "aqlPath" : "/items[openEHR-EHR-OBSERVATION.adl.v0,'ZichKleden']",
+      "children" : [ {
+        "id" : "zichkleden",
+        "name" : "ZichKleden",
+        "localizedName" : "ZichKleden",
+        "rmType" : "DV_CODED_TEXT",
+        "nodeId" : "at0006",
+        "min" : 1,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "ZichKleden"
+        },
+        "localizedDescriptions" : {
+          "en" : "Category of the ability for the individual to perform the identified activity."
+        },
+        "annotations" : {
+          "comment" : "Aan- en uittrekken van (passende) kleding.\n\nIn het concept TeKledenLichaamsdeel kan nader aangegeven worden voor welk lichaamsdeel de beperking geldt. "
+        },
+        "aqlPath" : "/items[openEHR-EHR-OBSERVATION.adl.v0,'ZichKleden']/data[at0001]/events[at0002,'Point in time']/data[at0003]/items[at0006,'ZichKleden']/value",
+        "inputs" : [ {
+          "suffix" : "code",
+          "type" : "CODED_TEXT",
+          "list" : [ {
+            "value" : "129035000",
+            "label" : "In staat om onafhankelijk aan te kleden",
+            "localizedLabels" : {
+              "en" : "In staat om onafhankelijk aan te kleden"
+            }
+          }, {
+            "value" : "129039006",
+            "label" : "Hulp nodig bij aankleden",
+            "localizedLabels" : {
+              "en" : "Hulp nodig bij aankleden"
+            }
+          }, {
+            "value" : "284974001",
+            "label" : "Niet in staat zich aan te kleden",
+            "localizedLabels" : {
+              "en" : "Niet in staat zich aan te kleden"
+            }
+          } ],
+          "terminology" : "SNOMED CT"
+        } ]
+      }, {
+        "id" : "time",
+        "name" : "Time",
+        "rmType" : "DV_DATE_TIME",
+        "min" : 1,
+        "max" : 1,
+        "aqlPath" : "/items[openEHR-EHR-OBSERVATION.adl.v0,'ZichKleden']/data[at0001]/events[at0002,'Point in time']/time",
+        "inputs" : [ {
+          "type" : "DATETIME"
+        } ],
+        "inContext" : true
+      }, {
+        "id" : "language",
+        "name" : "Language",
+        "rmType" : "CODE_PHRASE",
+        "min" : 1,
+        "max" : 1,
+        "aqlPath" : "/items[openEHR-EHR-OBSERVATION.adl.v0,'ZichKleden']/language",
+        "inContext" : true
+      }, {
+        "id" : "encoding",
+        "name" : "Encoding",
+        "rmType" : "CODE_PHRASE",
+        "min" : 1,
+        "max" : 1,
+        "aqlPath" : "/items[openEHR-EHR-OBSERVATION.adl.v0,'ZichKleden']/encoding",
+        "inContext" : true
+      }, {
+        "id" : "subject",
+        "name" : "Subject",
+        "rmType" : "PARTY_PROXY",
+        "min" : 1,
+        "max" : 1,
+        "aqlPath" : "/items[openEHR-EHR-OBSERVATION.adl.v0,'ZichKleden']/subject",
+        "inputs" : [ {
+          "suffix" : "id",
+          "type" : "TEXT"
+        }, {
+          "suffix" : "id_scheme",
+          "type" : "TEXT"
+        }, {
+          "suffix" : "id_namespace",
+          "type" : "TEXT"
+        }, {
+          "suffix" : "name",
+          "type" : "TEXT"
+        } ],
+        "inContext" : true
+      } ]
+    }, {
+      "id" : "tekledenlichaamsdeel",
+      "name" : "TeKledenLichaamsdeel",
+      "localizedName" : "TeKledenLichaamsdeel",
+      "rmType" : "OBSERVATION",
+      "nodeId" : "openEHR-EHR-OBSERVATION.adl.v0",
+      "min" : 0,
+      "max" : -1,
+      "localizedNames" : {
+        "en" : "TeKledenLichaamsdeel"
+      },
+      "localizedDescriptions" : {
+        "en" : "Details about an individual's ability to perform an identified activity of daily living."
+      },
+      "annotations" : {
+        "38866009" : "TeKledenLichaamsdeel"
+      },
+      "aqlPath" : "/items[openEHR-EHR-OBSERVATION.adl.v0,'TeKledenLichaamsdeel']",
+      "children" : [ {
+        "id" : "tekledenlichaamsdeel",
+        "name" : "TeKledenLichaamsdeel",
+        "localizedName" : "TeKledenLichaamsdeel",
+        "rmType" : "DV_CODED_TEXT",
+        "nodeId" : "at0011",
+        "min" : 1,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "TeKledenLichaamsdeel"
+        },
+        "localizedDescriptions" : {
+          "en" : "Description about the support required to carry out the activity."
+        },
+        "annotations" : {
+          "comment" : "Het lichaamsdeel of de lichaamsdelen waarvoor ondersteuning bij het zich kleden gewenst/noodzakelijk is. "
+        },
+        "aqlPath" : "/items[openEHR-EHR-OBSERVATION.adl.v0,'TeKledenLichaamsdeel']/data[at0001]/events[at0002,'Point in time']/data[at0003]/items[at0011,'TeKledenLichaamsdeel']/value",
+        "inputs" : [ {
+          "suffix" : "code",
+          "type" : "CODED_TEXT",
+          "list" : [ {
+            "value" : "38266002",
+            "label" : "Gehele lichaam in totaliteit",
+            "localizedLabels" : {
+              "en" : "Gehele lichaam in totaliteit"
+            }
+          }, {
+            "value" : "362874006",
+            "label" : "Gehele bovenlichaam",
+            "localizedLabels" : {
+              "en" : "Gehele bovenlichaam"
+            }
+          }, {
+            "value" : "362875007",
+            "label" : "Gehele onderlichaam",
+            "localizedLabels" : {
+              "en" : "Gehele onderlichaam"
+            }
+          } ],
+          "terminology" : "SNOMED CT"
+        } ]
+      }, {
+        "id" : "time",
+        "name" : "Time",
+        "rmType" : "DV_DATE_TIME",
+        "min" : 1,
+        "max" : 1,
+        "aqlPath" : "/items[openEHR-EHR-OBSERVATION.adl.v0,'TeKledenLichaamsdeel']/data[at0001]/events[at0002,'Point in time']/time",
+        "inputs" : [ {
+          "type" : "DATETIME"
+        } ],
+        "inContext" : true
+      }, {
+        "id" : "language",
+        "name" : "Language",
+        "rmType" : "CODE_PHRASE",
+        "min" : 1,
+        "max" : 1,
+        "aqlPath" : "/items[openEHR-EHR-OBSERVATION.adl.v0,'TeKledenLichaamsdeel']/language",
+        "inContext" : true
+      }, {
+        "id" : "encoding",
+        "name" : "Encoding",
+        "rmType" : "CODE_PHRASE",
+        "min" : 1,
+        "max" : 1,
+        "aqlPath" : "/items[openEHR-EHR-OBSERVATION.adl.v0,'TeKledenLichaamsdeel']/encoding",
+        "inContext" : true
+      }, {
+        "id" : "subject",
+        "name" : "Subject",
+        "rmType" : "PARTY_PROXY",
+        "min" : 1,
+        "max" : 1,
+        "aqlPath" : "/items[openEHR-EHR-OBSERVATION.adl.v0,'TeKledenLichaamsdeel']/subject",
+        "inputs" : [ {
+          "suffix" : "id",
+          "type" : "TEXT"
+        }, {
+          "suffix" : "id_scheme",
+          "type" : "TEXT"
+        }, {
+          "suffix" : "id_namespace",
+          "type" : "TEXT"
+        }, {
+          "suffix" : "name",
+          "type" : "TEXT"
+        } ],
+        "inContext" : true
+      } ]
+    } ]
+  }
+}
