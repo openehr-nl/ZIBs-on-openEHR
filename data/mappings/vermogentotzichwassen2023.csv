@@ -1,0 +1,4 @@
+ZIB_Id,ZIB_Naam,ZIB_Type,ZIB_Card,ZIB_DefCode,ZIB_Verwijzing,openEHR_Path,openEHR_Naam,openEHR_Type,openEHR_Card,openEHR_Term,Commentaar
+NL-CM:4.10.1,VermogenTotZichWassen,rootconcept,,,,,Ad hoc heading,SECTION,,,We used a SECTION archetype as the main parent so that we could like multiple adl archetype and have correct occurrences.
+NL-CM:4.10.2,ZichWassen,CD,1,SNOMED CT: 284785009 Vermogen om zich te wassen,ZichWassenCodelijst,"/items[openEHR-EHR-OBSERVATION.adl.v0, 'ZichWassen']/data[at0001]/events[at0002, 'Point in time']/data[at0003]/items[at0006, 'ZichWassen']",Capability,DV_CODED_TEXT,1,,Refer to ZichWassenCodelijst 2023
+NL-CM:4.10.3,TeWassenLichaamsdeel,CD,0..*,SNOMED CT: 38866009 Structuur van lichaamsdeel,TeWassenLichaamsdeelCodelijst,"/items[openEHR-EHR-OBSERVATION.adl.v0, 'TeWassenLichaamsdeel']/data[at0001]/events[at0002, 'Point in time']/data[at0003]/items[at0011, 'TeWassenLichaamsdeel']",Support description,DV_CODED_TEXT,0..*,,

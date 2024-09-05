@@ -1,0 +1,250 @@
+{
+  "templateId" : "VermogenTotZichWassen-v3.1.1(2023NL)",
+  "semVer" : "0.1.6",
+  "version" : "2.3",
+  "defaultLanguage" : "en",
+  "languages" : [ "en" ],
+  "tree" : {
+    "id" : "vermogentotzichwassen-v3.1.1_2023nl",
+    "name" : "VermogenTotZichWassen-v3.1.1(2023NL)",
+    "localizedName" : "VermogenTotZichWassen-v3.1.1(2023NL)",
+    "rmType" : "SECTION",
+    "nodeId" : "openEHR-EHR-SECTION.adhoc.v1",
+    "min" : 1,
+    "max" : 1,
+    "localizedNames" : {
+      "en" : "VermogenTotZichWassen-v3.1.1(2023NL)"
+    },
+    "localizedDescriptions" : {
+      "en" : "A generic section header which should be renamed in a template to suit a specific clinical context."
+    },
+    "aqlPath" : "",
+    "children" : [ {
+      "id" : "zichwassen",
+      "name" : "ZichWassen",
+      "localizedName" : "ZichWassen",
+      "rmType" : "OBSERVATION",
+      "nodeId" : "openEHR-EHR-OBSERVATION.adl.v0",
+      "min" : 1,
+      "max" : 1,
+      "localizedNames" : {
+        "en" : "ZichWassen"
+      },
+      "localizedDescriptions" : {
+        "en" : "Details about an individual's ability to perform an identified activity of daily living."
+      },
+      "annotations" : {
+        "284785009" : "ZichWassen"
+      },
+      "aqlPath" : "/items[openEHR-EHR-OBSERVATION.adl.v0,'ZichWassen']",
+      "children" : [ {
+        "id" : "zichwassen",
+        "name" : "ZichWassen",
+        "localizedName" : "ZichWassen",
+        "rmType" : "DV_CODED_TEXT",
+        "nodeId" : "at0006",
+        "min" : 1,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "ZichWassen"
+        },
+        "localizedDescriptions" : {
+          "en" : "Category of the ability for the individual to perform the identified activity."
+        },
+        "annotations" : {
+          "comment" : "Het wassen en afdrogen van het gehele lichaam, of lichaamsdelen, waaronder baden, douchen, wassen van handen en voeten, gezicht en haar.\n\nIn het concept TeWassenLichaamsdeel kan nader aangegeven worden voor welk lichaamsdeel de beperking geldt. ",
+          "284785009" : "Vermogen om zich te wassen"
+        },
+        "aqlPath" : "/items[openEHR-EHR-OBSERVATION.adl.v0,'ZichWassen']/data[at0001]/events[at0002,'Point in time']/data[at0003]/items[at0006,'ZichWassen']/value",
+        "inputs" : [ {
+          "suffix" : "code",
+          "type" : "CODED_TEXT",
+          "list" : [ {
+            "value" : "19831000146107",
+            "label" : "In staat om zich zelfstandig te wassen",
+            "localizedLabels" : {
+              "en" : "In staat om zich zelfstandig te wassen"
+            }
+          }, {
+            "value" : "16621000146103",
+            "label" : "Hulp nodig bij zich wassen",
+            "localizedLabels" : {
+              "en" : "Hulp nodig bij zich wassen"
+            }
+          }, {
+            "value" : "284787001",
+            "label" : "Niet in staat zichzelf te wassen",
+            "localizedLabels" : {
+              "en" : "Niet in staat zichzelf te wassen"
+            }
+          } ],
+          "terminology" : "SNOMED CT"
+        } ]
+      }, {
+        "id" : "time",
+        "name" : "Time",
+        "rmType" : "DV_DATE_TIME",
+        "min" : 1,
+        "max" : 1,
+        "aqlPath" : "/items[openEHR-EHR-OBSERVATION.adl.v0,'ZichWassen']/data[at0001]/events[at0002,'Point in time']/time",
+        "inputs" : [ {
+          "type" : "DATETIME"
+        } ],
+        "inContext" : true
+      }, {
+        "id" : "language",
+        "name" : "Language",
+        "rmType" : "CODE_PHRASE",
+        "min" : 1,
+        "max" : 1,
+        "aqlPath" : "/items[openEHR-EHR-OBSERVATION.adl.v0,'ZichWassen']/language",
+        "inContext" : true
+      }, {
+        "id" : "encoding",
+        "name" : "Encoding",
+        "rmType" : "CODE_PHRASE",
+        "min" : 1,
+        "max" : 1,
+        "aqlPath" : "/items[openEHR-EHR-OBSERVATION.adl.v0,'ZichWassen']/encoding",
+        "inContext" : true
+      }, {
+        "id" : "subject",
+        "name" : "Subject",
+        "rmType" : "PARTY_PROXY",
+        "min" : 1,
+        "max" : 1,
+        "aqlPath" : "/items[openEHR-EHR-OBSERVATION.adl.v0,'ZichWassen']/subject",
+        "inputs" : [ {
+          "suffix" : "id",
+          "type" : "TEXT"
+        }, {
+          "suffix" : "id_scheme",
+          "type" : "TEXT"
+        }, {
+          "suffix" : "id_namespace",
+          "type" : "TEXT"
+        }, {
+          "suffix" : "name",
+          "type" : "TEXT"
+        } ],
+        "inContext" : true
+      } ]
+    }, {
+      "id" : "tewassenlichaamsdeel",
+      "name" : "TeWassenLichaamsdeel",
+      "localizedName" : "TeWassenLichaamsdeel",
+      "rmType" : "OBSERVATION",
+      "nodeId" : "openEHR-EHR-OBSERVATION.adl.v0",
+      "min" : 0,
+      "max" : -1,
+      "localizedNames" : {
+        "en" : "TeWassenLichaamsdeel"
+      },
+      "localizedDescriptions" : {
+        "en" : "Details about an individual's ability to perform an identified activity of daily living."
+      },
+      "annotations" : {
+        "38866009" : "TeWassenLichaamsdeel"
+      },
+      "aqlPath" : "/items[openEHR-EHR-OBSERVATION.adl.v0,'TeWassenLichaamsdeel']",
+      "children" : [ {
+        "id" : "tewassenlichaamsdeel",
+        "name" : "TeWassenLichaamsdeel",
+        "localizedName" : "TeWassenLichaamsdeel",
+        "rmType" : "DV_CODED_TEXT",
+        "nodeId" : "at0011",
+        "min" : 1,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "TeWassenLichaamsdeel"
+        },
+        "localizedDescriptions" : {
+          "en" : "Description about the support required to carry out the activity."
+        },
+        "annotations" : {
+          "38866009" : "Structuur van lichaamsdeel",
+          "comment" : "Het lichaamsdeel of de lichaamsdelen waarvoor ondersteuning bij wassen gewenst/noodzakelijk is. "
+        },
+        "aqlPath" : "/items[openEHR-EHR-OBSERVATION.adl.v0,'TeWassenLichaamsdeel']/data[at0001]/events[at0002,'Point in time']/data[at0003]/items[at0011,'TeWassenLichaamsdeel']/value",
+        "inputs" : [ {
+          "suffix" : "code",
+          "type" : "CODED_TEXT",
+          "list" : [ {
+            "value" : "38266002",
+            "label" : "Gehele lichaam in totaliteit",
+            "localizedLabels" : {
+              "en" : "Gehele lichaam in totaliteit"
+            }
+          }, {
+            "value" : "302549007",
+            "label" : "Gehele aangezicht",
+            "localizedLabels" : {
+              "en" : "Gehele aangezicht"
+            }
+          }, {
+            "value" : "362874006",
+            "label" : "Gehele bovenlichaam",
+            "localizedLabels" : {
+              "en" : "Gehele bovenlichaam"
+            }
+          }, {
+            "value" : "362875007",
+            "label" : "Gehele onderlichaam",
+            "localizedLabels" : {
+              "en" : "Gehele onderlichaam"
+            }
+          } ],
+          "terminology" : "SNOMED CT"
+        } ]
+      }, {
+        "id" : "time",
+        "name" : "Time",
+        "rmType" : "DV_DATE_TIME",
+        "min" : 1,
+        "max" : 1,
+        "aqlPath" : "/items[openEHR-EHR-OBSERVATION.adl.v0,'TeWassenLichaamsdeel']/data[at0001]/events[at0002,'Point in time']/time",
+        "inputs" : [ {
+          "type" : "DATETIME"
+        } ],
+        "inContext" : true
+      }, {
+        "id" : "language",
+        "name" : "Language",
+        "rmType" : "CODE_PHRASE",
+        "min" : 1,
+        "max" : 1,
+        "aqlPath" : "/items[openEHR-EHR-OBSERVATION.adl.v0,'TeWassenLichaamsdeel']/language",
+        "inContext" : true
+      }, {
+        "id" : "encoding",
+        "name" : "Encoding",
+        "rmType" : "CODE_PHRASE",
+        "min" : 1,
+        "max" : 1,
+        "aqlPath" : "/items[openEHR-EHR-OBSERVATION.adl.v0,'TeWassenLichaamsdeel']/encoding",
+        "inContext" : true
+      }, {
+        "id" : "subject",
+        "name" : "Subject",
+        "rmType" : "PARTY_PROXY",
+        "min" : 1,
+        "max" : 1,
+        "aqlPath" : "/items[openEHR-EHR-OBSERVATION.adl.v0,'TeWassenLichaamsdeel']/subject",
+        "inputs" : [ {
+          "suffix" : "id",
+          "type" : "TEXT"
+        }, {
+          "suffix" : "id_scheme",
+          "type" : "TEXT"
+        }, {
+          "suffix" : "id_namespace",
+          "type" : "TEXT"
+        }, {
+          "suffix" : "name",
+          "type" : "TEXT"
+        } ],
+        "inContext" : true
+      } ]
+    } ]
+  }
+}
