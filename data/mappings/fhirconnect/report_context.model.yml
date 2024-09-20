@@ -1,0 +1,18 @@
+
+
+format: "0.0.2"
+version: "0.2.0"
+
+fhirConfig:
+  resource: "Task"
+  multiple: false
+
+openEhrConfig:
+  archetype: "openEHR-EHR-EVALUATION.clinical_synopsis.v1" # doesn't really matter which one it is, as this is a context mapper
+
+mappings:
+  - name: "report id"
+    with:
+      fhir: "$fhirResource.id"
+      openehr: "$openEhrArchetype.context.report_id"
+      type: "STRING"

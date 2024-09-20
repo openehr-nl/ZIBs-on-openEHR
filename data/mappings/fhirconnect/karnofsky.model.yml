@@ -1,0 +1,36 @@
+
+
+format: "0.0.2"
+version: "0.2.0"
+
+fhirConfig:
+  resource: "QuestionnaireResponse"
+  multiple: false
+
+openEhrConfig:
+  archetype: "openEHR-EHR-OBSERVATION.karnofsky_performance_status_scale.v1"
+
+
+mappings:
+  - name: "groupMdtConclusion"
+    with:
+      fhir: "$fhirResource.item"
+      openehr: "$openEhrArchetype"
+      type: "NONE"
+    condition:
+      targetRoot: "$fhirResource.item"
+      targetAttribute: "linkId"
+      operator: "one of"
+      criteria: "[groupMdtConclusion]"
+    followedBy:
+      mappings:
+        - name: "karnofsky status"
+          with:
+            fhir: "item.answer.value"
+            openehr: "$openEhrArchetype.karnofsky_performance_status_kps_scale.karnofsky_performance_status"
+            type: "CODING"
+          condition:
+            targetRoot: "item"
+            targetAttribute: "linkId"
+            operator: "one of"
+            criteria: "[karnofsky]"
