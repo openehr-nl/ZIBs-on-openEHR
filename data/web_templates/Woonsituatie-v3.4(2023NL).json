@@ -1,0 +1,427 @@
+{
+  "templateId" : "Woonsituatie-v3.4(2023NL)",
+  "semVer" : "0.1.5",
+  "version" : "2.3",
+  "defaultLanguage" : "en",
+  "languages" : [ "en" ],
+  "tree" : {
+    "id" : "woonsituatie-v3.4_2023nl",
+    "name" : "Woonsituatie-v3.4(2023NL)",
+    "localizedName" : "Woonsituatie-v3.4(2023NL)",
+    "rmType" : "EVALUATION",
+    "nodeId" : "openEHR-EHR-EVALUATION.housing_summary.v1",
+    "min" : 1,
+    "max" : 1,
+    "localizedNames" : {
+      "en" : "Woonsituatie-v3.4(2023NL)"
+    },
+    "localizedDescriptions" : {
+      "en" : "Summary or persistent information about an individual's current and past housing or accommodation situation."
+    },
+    "annotations" : {
+      "365508006" : "Bevinding betreffende woon- en huisvestingssituatie"
+    },
+    "aqlPath" : "",
+    "children" : [ {
+      "id" : "woonsituatie",
+      "name" : "Woonsituatie",
+      "localizedName" : "Woonsituatie",
+      "rmType" : "CLUSTER",
+      "nodeId" : "openEHR-EHR-CLUSTER.housing_record.v1",
+      "min" : 0,
+      "max" : 1,
+      "localizedNames" : {
+        "en" : "Woonsituatie"
+      },
+      "localizedDescriptions" : {
+        "en" : "Details about a single home or other residential setting of an individual during a specified period of time."
+      },
+      "aqlPath" : "/data[at0001]/items[openEHR-EHR-CLUSTER.housing_record.v1,'Woonsituatie']",
+      "children" : [ {
+        "id" : "datum",
+        "name" : "Datum",
+        "localizedName" : "Datum",
+        "rmType" : "DV_DATE_TIME",
+        "nodeId" : "at0007",
+        "min" : 0,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "Datum"
+        },
+        "localizedDescriptions" : {
+          "en" : "The date when an individual commenced living in the home or residential setting."
+        },
+        "aqlPath" : "/data[at0001]/items[openEHR-EHR-CLUSTER.housing_record.v1,'Woonsituatie']/items[at0007,'Datum']/value",
+        "inputs" : [ {
+          "type" : "DATETIME",
+          "validation" : {
+            "pattern" : "yyyy-??-??TXX:XX:XX"
+          }
+        } ]
+      }, {
+        "id" : "woningtype",
+        "name" : "WoningType",
+        "localizedName" : "WoningType",
+        "rmType" : "DV_CODED_TEXT",
+        "nodeId" : "at0001",
+        "min" : 0,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "WoningType"
+        },
+        "localizedDescriptions" : {
+          "en" : "The category that describes the place where an individual lives."
+        },
+        "annotations" : {
+          "comment" : "Coding of the residential setting with a terminology is preferred, where possible. The value sets for this data element are likely to vary between jurisdictions - it is anticipated that they will usually be set within a use-case specific template. For example: 'private residence'; supported accommodation facility'; 'residential aged care facility'; 'short term crisis accommodation facility; or 'public place/temporary shelter'."
+        },
+        "aqlPath" : "/data[at0001]/items[openEHR-EHR-CLUSTER.housing_record.v1,'Woonsituatie']/items[at0001,'WoningType']/value",
+        "inputs" : [ {
+          "suffix" : "code",
+          "type" : "CODED_TEXT",
+          "list" : [ {
+            "value" : "BOVENW",
+            "label" : "Bovenwoning",
+            "localizedLabels" : {
+              "en" : "Bovenwoning"
+            }
+          }, {
+            "value" : "BENEDENW",
+            "label" : "Benedenwoning",
+            "localizedLabels" : {
+              "en" : "Benedenwoning"
+            }
+          }, {
+            "value" : "EENGEZW",
+            "label" : "Eengezinswoning",
+            "localizedLabels" : {
+              "en" : "Eengezinswoning"
+            }
+          }, {
+            "value" : "FLATW",
+            "label" : "Appartement of flatwoning",
+            "localizedLabels" : {
+              "en" : "Appartement of flatwoning"
+            }
+          }, {
+            "value" : "AANLW",
+            "label" : "Aanleunwoning",
+            "localizedLabels" : {
+              "en" : "Aanleunwoning"
+            }
+          }, {
+            "value" : "WOONB",
+            "label" : "Woonboot",
+            "localizedLabels" : {
+              "en" : "Woonboot"
+            }
+          }, {
+            "value" : "WOONW",
+            "label" : "Woonwagen",
+            "localizedLabels" : {
+              "en" : "Woonwagen"
+            }
+          }, {
+            "value" : "WLZIN",
+            "label" : "Instelling WLZ",
+            "localizedLabels" : {
+              "en" : "Instelling WLZ"
+            }
+          }, {
+            "value" : "ZVWIN",
+            "label" : "Instelling ZVW",
+            "localizedLabels" : {
+              "en" : "Instelling ZVW"
+            }
+          }, {
+            "value" : "WMOIN",
+            "label" : "Instelling WMO",
+            "localizedLabels" : {
+              "en" : "Instelling WMO"
+            }
+          }, {
+            "value" : "AZC",
+            "label" : "Asielzoekers-centrum",
+            "localizedLabels" : {
+              "en" : "Asielzoekers-centrum"
+            }
+          }, {
+            "value" : "DAKLOO",
+            "label" : "Dakloos",
+            "localizedLabels" : {
+              "en" : "Dakloos"
+            }
+          }, {
+            "value" : "JSTINR",
+            "label" : "Justitiële Inrichting",
+            "localizedLabels" : {
+              "en" : "Justitiële Inrichting"
+            }
+          }, {
+            "value" : "OTH",
+            "label" : "Anders",
+            "localizedLabels" : {
+              "en" : "Anders"
+            }
+          } ],
+          "terminology" : "WoningType"
+        } ]
+      }, {
+        "id" : "woonomstandigheid",
+        "name" : "WoonOmstandigheid",
+        "localizedName" : "WoonOmstandigheid",
+        "rmType" : "CLUSTER",
+        "nodeId" : "openEHR-EHR-CLUSTER.dwelling.v0",
+        "min" : 0,
+        "max" : -1,
+        "localizedNames" : {
+          "en" : "WoonOmstandigheid"
+        },
+        "localizedDescriptions" : {
+          "en" : "An overview about the properties of a single structure, or a discrete space within a structure, and associated spaces in which an individual lives."
+        },
+        "annotations" : {
+          "comment" : "The intended scope of dwelling includes, but is not limited to: a building; part of a building; house; apartment; prison; houseboat; mobile home; or vehicle. It can also include the spaces associated with a structure or property, including the basement or yard."
+        },
+        "aqlPath" : "/data[at0001]/items[openEHR-EHR-CLUSTER.housing_record.v1,'Woonsituatie']/items[openEHR-EHR-CLUSTER.dwelling.v0,'WoonOmstandigheid']",
+        "children" : [ {
+          "id" : "woonomstandigheid",
+          "name" : "WoonOmstandigheid",
+          "localizedName" : "WoonOmstandigheid",
+          "rmType" : "DV_CODED_TEXT",
+          "nodeId" : "at0036",
+          "min" : 0,
+          "max" : 1,
+          "localizedNames" : {
+            "en" : "WoonOmstandigheid"
+          },
+          "localizedDescriptions" : {
+            "en" : "Narrative description about the overall condition of the dwelling."
+          },
+          "annotations" : {
+            "comment" : "For example: leaking roof; rising damp; mould in the bathroom; broken floorboards; or holes in the walls.",
+            "224249004" : "Kenmerk van thuisomgeving"
+          },
+          "aqlPath" : "/data[at0001]/items[openEHR-EHR-CLUSTER.housing_record.v1,'Woonsituatie']/items[openEHR-EHR-CLUSTER.dwelling.v0,'WoonOmstandigheid']/items[at0036,'WoonOmstandigheid']/value",
+          "inputs" : [ {
+            "suffix" : "code",
+            "type" : "CODED_TEXT",
+            "list" : [ {
+              "value" : "160708008",
+              "label" : "Huis bevat trap",
+              "localizedLabels" : {
+                "en" : "Huis bevat trap"
+              }
+            }, {
+              "value" : "609241003",
+              "label" : "Woont in appartement met lift",
+              "localizedLabels" : {
+                "en" : "Woont in appartement met lift"
+              }
+            }, {
+              "value" : "715758005",
+              "label" : "Toegang tot woning via trap",
+              "localizedLabels" : {
+                "en" : "Toegang tot woning via trap"
+              }
+            }, {
+              "value" : "424948003",
+              "label" : "Ingang van woning geblokkeerd",
+              "localizedLabels" : {
+                "en" : "Ingang van woning geblokkeerd"
+              }
+            }, {
+              "value" : "423155007",
+              "label" : "Huis bevat structurele belemmering voor verplaatsing",
+              "localizedLabels" : {
+                "en" : "Huis bevat structurele belemmering voor verplaatsing"
+              }
+            }, {
+              "value" : "424661000",
+              "label" : "Rommelige leefruimte",
+              "localizedLabels" : {
+                "en" : "Rommelige leefruimte"
+              }
+            }, {
+              "value" : "424415008",
+              "label" : "Vieze leefomstandigheden",
+              "localizedLabels" : {
+                "en" : "Vieze leefomstandigheden"
+              }
+            }, {
+              "value" : "224152001",
+              "label" : "Houdt huisdieren",
+              "localizedLabels" : {
+                "en" : "Houdt huisdieren"
+              }
+            }, {
+              "value" : "423527000",
+              "label" : "Vloerbedekking onveilig",
+              "localizedLabels" : {
+                "en" : "Vloerbedekking onveilig"
+              }
+            } ],
+            "terminology" : "SNOMED CT"
+          } ]
+        } ]
+      }, {
+        "id" : "woningaanpassing",
+        "name" : "WoningAanpassing",
+        "localizedName" : "WoningAanpassing",
+        "rmType" : "CLUSTER",
+        "nodeId" : "openEHR-EHR-CLUSTER.dwelling.v0",
+        "min" : 0,
+        "max" : -1,
+        "localizedNames" : {
+          "en" : "WoningAanpassing"
+        },
+        "localizedDescriptions" : {
+          "en" : "An overview about the properties of a single structure, or a discrete space within a structure, and associated spaces in which an individual lives."
+        },
+        "annotations" : {
+          "comment" : "The intended scope of dwelling includes, but is not limited to: a building; part of a building; house; apartment; prison; houseboat; mobile home; or vehicle. It can also include the spaces associated with a structure or property, including the basement or yard."
+        },
+        "aqlPath" : "/data[at0001]/items[openEHR-EHR-CLUSTER.housing_record.v1,'Woonsituatie']/items[openEHR-EHR-CLUSTER.dwelling.v0,'WoningAanpassing']",
+        "children" : [ {
+          "id" : "woningaanpassing",
+          "name" : "WoningAanpassing",
+          "localizedName" : "WoningAanpassing",
+          "rmType" : "CLUSTER",
+          "nodeId" : "at0048",
+          "min" : 0,
+          "max" : 1,
+          "localizedNames" : {
+            "en" : "WoningAanpassing"
+          },
+          "localizedDescriptions" : {
+            "en" : "Availability of critical appliances or services at the dwelling, which may support use of clinical decision support."
+          },
+          "annotations" : {
+            "comment" : "For example: hot water for hygiene; a refrigerator for food hygiene and safe medication storage."
+          },
+          "aqlPath" : "/data[at0001]/items[openEHR-EHR-CLUSTER.housing_record.v1,'Woonsituatie']/items[openEHR-EHR-CLUSTER.dwelling.v0,'WoningAanpassing']/items[at0048,'WoningAanpassing']",
+          "children" : [ {
+            "id" : "woningaanpassing",
+            "name" : "WoningAanpassing",
+            "localizedName" : "WoningAanpassing",
+            "rmType" : "DV_CODED_TEXT",
+            "nodeId" : "at0049",
+            "min" : 0,
+            "max" : 1,
+            "localizedNames" : {
+              "en" : "WoningAanpassing"
+            },
+            "localizedDescriptions" : {
+              "en" : "The name of the feature."
+            },
+            "annotations" : {
+              "118871000146108" : "Type woningaanpassing",
+              "comment" : "Coding with a terminology is desirable, where possible. For example: refrigerator; hot running water; backup generator; food cooking facilities; "
+            },
+            "aqlPath" : "/data[at0001]/items[openEHR-EHR-CLUSTER.housing_record.v1,'Woonsituatie']/items[openEHR-EHR-CLUSTER.dwelling.v0,'WoningAanpassing']/items[at0048,'WoningAanpassing']/items[at0049,'WoningAanpassing']/value",
+            "inputs" : [ {
+              "suffix" : "code",
+              "type" : "CODED_TEXT",
+              "list" : [ {
+                "value" : "467158009",
+                "label" : "Badstoel en/of douchestoel",
+                "localizedLabels" : {
+                  "en" : "Badstoel en/of douchestoel"
+                }
+              }, {
+                "value" : "465153004",
+                "label" : "Traplift",
+                "localizedLabels" : {
+                  "en" : "Traplift"
+                }
+              }, {
+                "value" : "465302005",
+                "label" : "Aangepast toilet",
+                "localizedLabels" : {
+                  "en" : "Aangepast toilet"
+                }
+              }, {
+                "value" : "705401004",
+                "label" : "Aangepast bed",
+                "localizedLabels" : {
+                  "en" : "Aangepast bed"
+                }
+              }, {
+                "value" : "705390009",
+                "label" : "Woningaanpassing",
+                "localizedLabels" : {
+                  "en" : "Woningaanpassing"
+                }
+              }, {
+                "value" : "360303004",
+                "label" : "Wandbeugel",
+                "localizedLabels" : {
+                  "en" : "Wandbeugel"
+                }
+              } ],
+              "terminology" : "SNOMED CT"
+            } ]
+          } ]
+        } ]
+      }, {
+        "id" : "toelichting",
+        "name" : "Toelichting",
+        "localizedName" : "Toelichting",
+        "rmType" : "DV_TEXT",
+        "nodeId" : "at0014",
+        "min" : 0,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "Toelichting"
+        },
+        "localizedDescriptions" : {
+          "en" : "Additional narrative about the home or residential setting not captured in other fields."
+        },
+        "annotations" : {
+          "48767-8" : "Verklarend commentaar"
+        },
+        "aqlPath" : "/data[at0001]/items[openEHR-EHR-CLUSTER.housing_record.v1,'Woonsituatie']/items[at0014,'Toelichting']/value",
+        "inputs" : [ {
+          "type" : "TEXT"
+        } ]
+      } ]
+    }, {
+      "id" : "language",
+      "name" : "Language",
+      "rmType" : "CODE_PHRASE",
+      "min" : 1,
+      "max" : 1,
+      "aqlPath" : "/language",
+      "inContext" : true
+    }, {
+      "id" : "encoding",
+      "name" : "Encoding",
+      "rmType" : "CODE_PHRASE",
+      "min" : 1,
+      "max" : 1,
+      "aqlPath" : "/encoding",
+      "inContext" : true
+    }, {
+      "id" : "subject",
+      "name" : "Subject",
+      "rmType" : "PARTY_PROXY",
+      "min" : 1,
+      "max" : 1,
+      "aqlPath" : "/subject",
+      "inputs" : [ {
+        "suffix" : "id",
+        "type" : "TEXT"
+      }, {
+        "suffix" : "id_scheme",
+        "type" : "TEXT"
+      }, {
+        "suffix" : "id_namespace",
+        "type" : "TEXT"
+      }, {
+        "suffix" : "name",
+        "type" : "TEXT"
+      } ],
+      "inContext" : true
+    } ]
+  }
+}
