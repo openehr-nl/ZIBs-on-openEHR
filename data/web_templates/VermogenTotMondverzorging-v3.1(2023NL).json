@@ -1,0 +1,166 @@
+{
+  "templateId" : "VermogenTotMondverzorging-v3.1(2023NL)",
+  "semVer" : "0.1.3",
+  "version" : "2.3",
+  "defaultLanguage" : "en",
+  "languages" : [ "en" ],
+  "tree" : {
+    "id" : "vermogentotmondverzorging-v3.1_2023nl",
+    "name" : "VermogenTotMondverzorging-v3.1(2023NL)",
+    "localizedName" : "VermogenTotMondverzorging-v3.1(2023NL)",
+    "rmType" : "OBSERVATION",
+    "nodeId" : "openEHR-EHR-OBSERVATION.adl.v0",
+    "min" : 1,
+    "max" : 1,
+    "localizedNames" : {
+      "en" : "VermogenTotMondverzorging-v3.1(2023NL)"
+    },
+    "localizedDescriptions" : {
+      "en" : "Details about an individual's ability to perform an identified activity of daily living."
+    },
+    "aqlPath" : "",
+    "children" : [ {
+      "id" : "verzorgentanden",
+      "name" : "VerzorgenTanden",
+      "localizedName" : "VerzorgenTanden",
+      "rmType" : "DV_CODED_TEXT",
+      "nodeId" : "at0006",
+      "min" : 1,
+      "max" : 1,
+      "localizedNames" : {
+        "en" : "VerzorgenTanden"
+      },
+      "localizedDescriptions" : {
+        "en" : "Category of the ability for the individual to perform the identified activity."
+      },
+      "annotations" : {
+        "288470005" : "Vermogen tot mondverzorging"
+      },
+      "aqlPath" : "/data[at0001]/events[at0002,'Point in time']/data[at0003]/items[at0006,'VerzorgenTanden']/value",
+      "inputs" : [ {
+        "suffix" : "code",
+        "type" : "CODED_TEXT",
+        "list" : [ {
+          "value" : "19861000146103",
+          "label" : "In staat tot zelfstandige mondverzorging",
+          "localizedLabels" : {
+            "en" : "In staat tot zelfstandige mondverzorging"
+          }
+        }, {
+          "value" : "16671000146104",
+          "label" : "Hulp nodig bij mondverzorging",
+          "localizedLabels" : {
+            "en" : "Hulp nodig bij mondverzorging"
+          }
+        }, {
+          "value" : "289125004",
+          "label" : "Niet in staat tot mondverzorging",
+          "localizedLabels" : {
+            "en" : "Niet in staat tot mondverzorging"
+          }
+        } ],
+        "terminology" : "SNOMED CT"
+      } ]
+    }, {
+      "id" : "medischhulpmiddel-v4.0_2023nl",
+      "name" : "MedischHulpmiddel-v4.0(2023NL)",
+      "localizedName" : "MedischHulpmiddel-v4.0(2023NL)",
+      "rmType" : "CLUSTER",
+      "nodeId" : "openEHR-EHR-CLUSTER.device.v1",
+      "min" : 0,
+      "max" : -1,
+      "localizedNames" : {
+        "en" : "MedischHulpmiddel-v4.0(2023NL)"
+      },
+      "localizedDescriptions" : {
+        "en" : "An instrument, apparatus, implant, material or similar, used in the provision of healthcare. In this context, a medical device includes a broad range of devices which act through a variety of physical, mechanical, thermal or similar means but specifically excludes devices which act through medicinal means such as pharmacological, metabolic or immunological methods.  The scope is inclusive of disposable devices as well as durable or persisting devices that require tracking, maintenance activities or regular calibration, recognising that each type of device has specific data recording requirements."
+      },
+      "aqlPath" : "/data[at0001]/events[at0002,'Point in time']/data[at0003]/items[openEHR-EHR-CLUSTER.device.v1,'MedischHulpmiddel-v4.0(2023NL)']",
+      "children" : [ {
+        "id" : "producttype",
+        "name" : "ProductType",
+        "localizedName" : "ProductType",
+        "rmType" : "DV_CODED_TEXT",
+        "nodeId" : "at0001",
+        "min" : 1,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "ProductType"
+        },
+        "localizedDescriptions" : {
+          "en" : "Identification of the medical device, preferably by a common name, a formal fully descriptive name or, if required, by class or category of device."
+        },
+        "annotations" : {
+          "comment" : "This data element will capture the term, phrase or category used in clinical practice. For example: <brand name><machine> (XYZ Audiometer); <size> <brand name> <intravenous catheter> (14G Jelco IV catheter); or <brand name/type> <implant>. Coding with a terminology is desirable, where possible, although this may be local and depending on local supplies available.\r\n"
+        },
+        "aqlPath" : "/data[at0001]/events[at0002,'Point in time']/data[at0003]/items[openEHR-EHR-CLUSTER.device.v1,'MedischHulpmiddel-v4.0(2023NL)']/items[at0001,'ProductType']/value",
+        "inputs" : [ {
+          "suffix" : "code",
+          "type" : "CODED_TEXT",
+          "list" : [ {
+            "value" : "27606000",
+            "label" : "Tandheelkundige prothese",
+            "localizedLabels" : {
+              "en" : "Tandheelkundige prothese"
+            }
+          }, {
+            "value" : "261345007",
+            "label" : "Orthodontische 'bracket'",
+            "localizedLabels" : {
+              "en" : "Orthodontische 'bracket'"
+            }
+          } ],
+          "terminology" : "SNOMED CT"
+        } ]
+      } ]
+    }, {
+      "id" : "time",
+      "name" : "Time",
+      "rmType" : "DV_DATE_TIME",
+      "min" : 1,
+      "max" : 1,
+      "aqlPath" : "/data[at0001]/events[at0002,'Point in time']/time",
+      "inputs" : [ {
+        "type" : "DATETIME"
+      } ],
+      "inContext" : true
+    }, {
+      "id" : "language",
+      "name" : "Language",
+      "rmType" : "CODE_PHRASE",
+      "min" : 1,
+      "max" : 1,
+      "aqlPath" : "/language",
+      "inContext" : true
+    }, {
+      "id" : "encoding",
+      "name" : "Encoding",
+      "rmType" : "CODE_PHRASE",
+      "min" : 1,
+      "max" : 1,
+      "aqlPath" : "/encoding",
+      "inContext" : true
+    }, {
+      "id" : "subject",
+      "name" : "Subject",
+      "rmType" : "PARTY_PROXY",
+      "min" : 1,
+      "max" : 1,
+      "aqlPath" : "/subject",
+      "inputs" : [ {
+        "suffix" : "id",
+        "type" : "TEXT"
+      }, {
+        "suffix" : "id_scheme",
+        "type" : "TEXT"
+      }, {
+        "suffix" : "id_namespace",
+        "type" : "TEXT"
+      }, {
+        "suffix" : "name",
+        "type" : "TEXT"
+      } ],
+      "inContext" : true
+    } ]
+  }
+}
