@@ -1,0 +1,237 @@
+{
+  "templateId" : "VermogenTotDrinken-v3.1.2(2023NL)",
+  "semVer" : "0.1.4",
+  "version" : "2.3",
+  "defaultLanguage" : "en",
+  "languages" : [ "en" ],
+  "tree" : {
+    "id" : "vermogentotdrinken-v3.1.2_2023nl",
+    "name" : "VermogenTotDrinken-v3.1.2(2023NL)",
+    "localizedName" : "VermogenTotDrinken-v3.1.2(2023NL)",
+    "rmType" : "SECTION",
+    "nodeId" : "openEHR-EHR-SECTION.adhoc.v1",
+    "min" : 1,
+    "max" : 1,
+    "localizedNames" : {
+      "en" : "VermogenTotDrinken-v3.1.2(2023NL)"
+    },
+    "localizedDescriptions" : {
+      "en" : "A generic section header which should be renamed in a template to suit a specific clinical context."
+    },
+    "aqlPath" : "",
+    "children" : [ {
+      "id" : "drinken",
+      "name" : "Drinken",
+      "localizedName" : "Drinken",
+      "rmType" : "OBSERVATION",
+      "nodeId" : "openEHR-EHR-OBSERVATION.adl.v0",
+      "min" : 1,
+      "max" : 1,
+      "localizedNames" : {
+        "en" : "Drinken"
+      },
+      "localizedDescriptions" : {
+        "en" : "Details about an individual's ability to perform an identified activity of daily living."
+      },
+      "aqlPath" : "/items[openEHR-EHR-OBSERVATION.adl.v0,'Drinken']",
+      "children" : [ {
+        "id" : "drinken",
+        "name" : "Drinken",
+        "localizedName" : "Drinken",
+        "rmType" : "DV_CODED_TEXT",
+        "nodeId" : "at0006",
+        "min" : 1,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "Drinken"
+        },
+        "localizedDescriptions" : {
+          "en" : "Category of the ability for the individual to perform the identified activity."
+        },
+        "annotations" : {
+          "288852001" : "Vermogen om te drinken"
+        },
+        "aqlPath" : "/items[openEHR-EHR-OBSERVATION.adl.v0,'Drinken']/data[at0001]/events[at0002,'Point in time']/data[at0003]/items[at0006,'Drinken']/value",
+        "inputs" : [ {
+          "suffix" : "code",
+          "type" : "CODED_TEXT",
+          "list" : [ {
+            "value" : "19841000146104",
+            "label" : "In staat om zelfstandig te drinken",
+            "localizedLabels" : {
+              "en" : "In staat om zelfstandig te drinken"
+            }
+          }, {
+            "value" : "16681000146102",
+            "label" : "Hulp nodig bij drinken",
+            "localizedLabels" : {
+              "en" : "Hulp nodig bij drinken"
+            }
+          }, {
+            "value" : "288854000",
+            "label" : "Niet in staat te drinken",
+            "localizedLabels" : {
+              "en" : "Niet in staat te drinken"
+            }
+          } ],
+          "terminology" : "SNOMED CT"
+        } ]
+      }, {
+        "id" : "time",
+        "name" : "Time",
+        "rmType" : "DV_DATE_TIME",
+        "min" : 1,
+        "max" : 1,
+        "aqlPath" : "/items[openEHR-EHR-OBSERVATION.adl.v0,'Drinken']/data[at0001]/events[at0002,'Point in time']/time",
+        "inputs" : [ {
+          "type" : "DATETIME"
+        } ],
+        "inContext" : true
+      }, {
+        "id" : "language",
+        "name" : "Language",
+        "rmType" : "CODE_PHRASE",
+        "min" : 1,
+        "max" : 1,
+        "aqlPath" : "/items[openEHR-EHR-OBSERVATION.adl.v0,'Drinken']/language",
+        "inContext" : true
+      }, {
+        "id" : "encoding",
+        "name" : "Encoding",
+        "rmType" : "CODE_PHRASE",
+        "min" : 1,
+        "max" : 1,
+        "aqlPath" : "/items[openEHR-EHR-OBSERVATION.adl.v0,'Drinken']/encoding",
+        "inContext" : true
+      }, {
+        "id" : "subject",
+        "name" : "Subject",
+        "rmType" : "PARTY_PROXY",
+        "min" : 1,
+        "max" : 1,
+        "aqlPath" : "/items[openEHR-EHR-OBSERVATION.adl.v0,'Drinken']/subject",
+        "inputs" : [ {
+          "suffix" : "id",
+          "type" : "TEXT"
+        }, {
+          "suffix" : "id_scheme",
+          "type" : "TEXT"
+        }, {
+          "suffix" : "id_namespace",
+          "type" : "TEXT"
+        }, {
+          "suffix" : "name",
+          "type" : "TEXT"
+        } ],
+        "inContext" : true
+      } ]
+    }, {
+      "id" : "drinkbeperkingen",
+      "name" : "DrinkBeperkingen",
+      "localizedName" : "DrinkBeperkingen",
+      "rmType" : "OBSERVATION",
+      "nodeId" : "openEHR-EHR-OBSERVATION.adl.v0",
+      "min" : 0,
+      "max" : -1,
+      "localizedNames" : {
+        "en" : "DrinkBeperkingen"
+      },
+      "localizedDescriptions" : {
+        "en" : "Details about an individual's ability to perform an identified activity of daily living."
+      },
+      "aqlPath" : "/items[openEHR-EHR-OBSERVATION.adl.v0,'DrinkBeperkingen']",
+      "children" : [ {
+        "id" : "drinkbeperkingen",
+        "name" : "DrinkBeperkingen",
+        "localizedName" : "DrinkBeperkingen",
+        "rmType" : "DV_CODED_TEXT",
+        "nodeId" : "at0004",
+        "min" : 1,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "DrinkBeperkingen"
+        },
+        "localizedDescriptions" : {
+          "en" : "The name of the activity of daily living."
+        },
+        "annotations" : {
+          "comment" : "For example: movement in bed; transfers; locomotion; dressing; personal hygiene; and feeding",
+          "288851008" : "Vermogen tot drinken"
+        },
+        "aqlPath" : "/items[openEHR-EHR-OBSERVATION.adl.v0,'DrinkBeperkingen']/data[at0001]/events[at0002,'Point in time']/data[at0003]/items[at0004,'DrinkBeperkingen']/value",
+        "inputs" : [ {
+          "suffix" : "code",
+          "type" : "CODED_TEXT",
+          "list" : [ {
+            "value" : "286506008",
+            "label" : "Moeite met bereiden van drank",
+            "localizedLabels" : {
+              "en" : "Moeite met bereiden van drank"
+            }
+          }, {
+            "value" : "307071002",
+            "label" : "Moeite met vastpakken van drank",
+            "localizedLabels" : {
+              "en" : "Moeite met vastpakken van drank"
+            }
+          }, {
+            "value" : "288876009",
+            "label" : "Moeite met naar mond brengen van drank",
+            "localizedLabels" : {
+              "en" : "Moeite met naar mond brengen van drank"
+            }
+          } ],
+          "terminology" : "SNOMED CT"
+        } ]
+      }, {
+        "id" : "time",
+        "name" : "Time",
+        "rmType" : "DV_DATE_TIME",
+        "min" : 1,
+        "max" : 1,
+        "aqlPath" : "/items[openEHR-EHR-OBSERVATION.adl.v0,'DrinkBeperkingen']/data[at0001]/events[at0002,'Point in time']/time",
+        "inputs" : [ {
+          "type" : "DATETIME"
+        } ],
+        "inContext" : true
+      }, {
+        "id" : "language",
+        "name" : "Language",
+        "rmType" : "CODE_PHRASE",
+        "min" : 1,
+        "max" : 1,
+        "aqlPath" : "/items[openEHR-EHR-OBSERVATION.adl.v0,'DrinkBeperkingen']/language",
+        "inContext" : true
+      }, {
+        "id" : "encoding",
+        "name" : "Encoding",
+        "rmType" : "CODE_PHRASE",
+        "min" : 1,
+        "max" : 1,
+        "aqlPath" : "/items[openEHR-EHR-OBSERVATION.adl.v0,'DrinkBeperkingen']/encoding",
+        "inContext" : true
+      }, {
+        "id" : "subject",
+        "name" : "Subject",
+        "rmType" : "PARTY_PROXY",
+        "min" : 1,
+        "max" : 1,
+        "aqlPath" : "/items[openEHR-EHR-OBSERVATION.adl.v0,'DrinkBeperkingen']/subject",
+        "inputs" : [ {
+          "suffix" : "id",
+          "type" : "TEXT"
+        }, {
+          "suffix" : "id_scheme",
+          "type" : "TEXT"
+        }, {
+          "suffix" : "id_namespace",
+          "type" : "TEXT"
+        }, {
+          "suffix" : "name",
+          "type" : "TEXT"
+        } ],
+        "inContext" : true
+      } ]
+    } ]
+  }
+}

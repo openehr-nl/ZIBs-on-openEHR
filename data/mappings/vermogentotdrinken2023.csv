@@ -1,0 +1,6 @@
+ZIB_Id,ZIB_Naam,ZIB_Type,ZIB_Card,ZIB_DefCode,ZIB_Verwijzing,openEHR_Path,openEHR_Naam,openEHR_Type,openEHR_Card,openEHR_Term,Commentaar
+NL-CM:4.8.1,VermogenTotDrinken,rootconcept,,,,,Ad hoc heading,SECTION,,,"We used a SECTION archetype as the main parent so that we could like multiple adl archetype and have correct occurrences.
+
+We found the openEHR-EHR-OBSERVATION.ability_to_drink.v0 archetype in apperta. However, we decided to choose an archetype that is internationally approved in CKM"
+NL-CM:4.8.3,Drinken,CD,1,SNOMED CT: 288852001 Vermogen om te drinken,DrinkenCodelijst,"/items[openEHR-EHR-OBSERVATION.adl.v0, 'Drinken']/data[at0001]/events[at0002, 'Point in time']/data[at0003]/items[at0006, 'Drinken']",Capability,DV_CODED_TEXT,1,,"Refer to DrinkBeperkingenCodelijst 2032 "
+NL-CM:4.8.4,DrinkBeperkingen,CD,0..*,SNOMED CT: 288851008 Vaardigheid betreffende drinken,DrinkBeperkingenCodelijst,"/items[openEHR-EHR-OBSERVATION.adl.v0, 'DrinkBeperkingen']/data[at0001]/events[at0002, 'Point in time']/data[at0003]/items[at0004, 'DrinkBeperkingen']",Activity name,DV_CODED_TEXT,0..*,,

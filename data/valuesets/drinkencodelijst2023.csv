@@ -1,0 +1,4 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+In staat om zelfstandig te drinken,19841000146104,,SNOMED CT,2.16.840.1.113883.6.96,Onafhankelijk,,,
+"Hulp nodig bij drinken ",16681000146102,,SNOMED CT,2.16.840.1.113883.6.96,Hulp nodig,,,
+Niet in staat te drinken,288854000,,SNOMED CT,2.16.840.1.113883.6.96,Volledig afhankelijk,,,
