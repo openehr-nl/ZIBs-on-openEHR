@@ -1,0 +1,237 @@
+{
+  "templateId" : "VermogenTotEten-v3.1.1(2023NL)",
+  "semVer" : "0.1.4",
+  "version" : "2.3",
+  "defaultLanguage" : "en",
+  "languages" : [ "en" ],
+  "tree" : {
+    "id" : "vermogentoteten-v3.1.1_2023nl",
+    "name" : "VermogenTotEten-v3.1.1(2023NL)",
+    "localizedName" : "VermogenTotEten-v3.1.1(2023NL)",
+    "rmType" : "SECTION",
+    "nodeId" : "openEHR-EHR-SECTION.adhoc.v1",
+    "min" : 1,
+    "max" : 1,
+    "localizedNames" : {
+      "en" : "VermogenTotEten-v3.1.1(2023NL)"
+    },
+    "localizedDescriptions" : {
+      "en" : "A generic section header which should be renamed in a template to suit a specific clinical context."
+    },
+    "aqlPath" : "",
+    "children" : [ {
+      "id" : "eten",
+      "name" : "Eten",
+      "localizedName" : "Eten",
+      "rmType" : "OBSERVATION",
+      "nodeId" : "openEHR-EHR-OBSERVATION.adl.v0",
+      "min" : 1,
+      "max" : 1,
+      "localizedNames" : {
+        "en" : "Eten"
+      },
+      "localizedDescriptions" : {
+        "en" : "Details about an individual's ability to perform an identified activity of daily living."
+      },
+      "aqlPath" : "/items[openEHR-EHR-OBSERVATION.adl.v0,'Eten']",
+      "children" : [ {
+        "id" : "eten",
+        "name" : "Eten",
+        "localizedName" : "Eten",
+        "rmType" : "DV_CODED_TEXT",
+        "nodeId" : "at0006",
+        "min" : 1,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "Eten"
+        },
+        "localizedDescriptions" : {
+          "en" : "Category of the ability for the individual to perform the identified activity."
+        },
+        "annotations" : {
+          "288883002" : "Vermogen tot eten"
+        },
+        "aqlPath" : "/items[openEHR-EHR-OBSERVATION.adl.v0,'Eten']/data[at0001]/events[at0002,'Point in time']/data[at0003]/items[at0006,'Eten']/value",
+        "inputs" : [ {
+          "suffix" : "code",
+          "type" : "CODED_TEXT",
+          "list" : [ {
+            "value" : "165224005",
+            "label" : "In staat om zelfstandig te eten",
+            "localizedLabels" : {
+              "en" : "In staat om zelfstandig te eten"
+            }
+          }, {
+            "value" : "129033007",
+            "label" : "Hulp nodig bij eten",
+            "localizedLabels" : {
+              "en" : "Hulp nodig bij eten"
+            }
+          }, {
+            "value" : "289001005",
+            "label" : "Niet in staat zelf te eten",
+            "localizedLabels" : {
+              "en" : "Niet in staat zelf te eten"
+            }
+          } ],
+          "terminology" : "SNOMED CT"
+        } ]
+      }, {
+        "id" : "time",
+        "name" : "Time",
+        "rmType" : "DV_DATE_TIME",
+        "min" : 1,
+        "max" : 1,
+        "aqlPath" : "/items[openEHR-EHR-OBSERVATION.adl.v0,'Eten']/data[at0001]/events[at0002,'Point in time']/time",
+        "inputs" : [ {
+          "type" : "DATETIME"
+        } ],
+        "inContext" : true
+      }, {
+        "id" : "language",
+        "name" : "Language",
+        "rmType" : "CODE_PHRASE",
+        "min" : 1,
+        "max" : 1,
+        "aqlPath" : "/items[openEHR-EHR-OBSERVATION.adl.v0,'Eten']/language",
+        "inContext" : true
+      }, {
+        "id" : "encoding",
+        "name" : "Encoding",
+        "rmType" : "CODE_PHRASE",
+        "min" : 1,
+        "max" : 1,
+        "aqlPath" : "/items[openEHR-EHR-OBSERVATION.adl.v0,'Eten']/encoding",
+        "inContext" : true
+      }, {
+        "id" : "subject",
+        "name" : "Subject",
+        "rmType" : "PARTY_PROXY",
+        "min" : 1,
+        "max" : 1,
+        "aqlPath" : "/items[openEHR-EHR-OBSERVATION.adl.v0,'Eten']/subject",
+        "inputs" : [ {
+          "suffix" : "id",
+          "type" : "TEXT"
+        }, {
+          "suffix" : "id_scheme",
+          "type" : "TEXT"
+        }, {
+          "suffix" : "id_namespace",
+          "type" : "TEXT"
+        }, {
+          "suffix" : "name",
+          "type" : "TEXT"
+        } ],
+        "inContext" : true
+      } ]
+    }, {
+      "id" : "eetbeperkingen",
+      "name" : "EetBeperkingen",
+      "localizedName" : "EetBeperkingen",
+      "rmType" : "OBSERVATION",
+      "nodeId" : "openEHR-EHR-OBSERVATION.adl.v0",
+      "min" : 0,
+      "max" : -1,
+      "localizedNames" : {
+        "en" : "EetBeperkingen"
+      },
+      "localizedDescriptions" : {
+        "en" : "Details about an individual's ability to perform an identified activity of daily living."
+      },
+      "aqlPath" : "/items[openEHR-EHR-OBSERVATION.adl.v0,'EetBeperkingen']",
+      "children" : [ {
+        "id" : "eetbeperkingen",
+        "name" : "EetBeperkingen",
+        "localizedName" : "EetBeperkingen",
+        "rmType" : "DV_CODED_TEXT",
+        "nodeId" : "at0004",
+        "min" : 1,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "EetBeperkingen"
+        },
+        "localizedDescriptions" : {
+          "en" : "The name of the activity of daily living."
+        },
+        "annotations" : {
+          "288843005" : "Vaardigheid betreffende eten",
+          "comment" : "For example: movement in bed; transfers; locomotion; dressing; personal hygiene; and feeding"
+        },
+        "aqlPath" : "/items[openEHR-EHR-OBSERVATION.adl.v0,'EetBeperkingen']/data[at0001]/events[at0002,'Point in time']/data[at0003]/items[at0004,'EetBeperkingen']/value",
+        "inputs" : [ {
+          "suffix" : "code",
+          "type" : "CODED_TEXT",
+          "list" : [ {
+            "value" : "289010002",
+            "label" : "Moeite met naar mond brengen van voedsel",
+            "localizedLabels" : {
+              "en" : "Moeite met naar mond brengen van voedsel"
+            }
+          }, {
+            "value" : "289046006",
+            "label" : "Moeite met hanteren van eetgerei bij zelfstandig eten",
+            "localizedLabels" : {
+              "en" : "Moeite met hanteren van eetgerei bij zelfstandig eten"
+            }
+          }, {
+            "value" : "289078003",
+            "label" : "Moeite met in stukken snijden van voedsel",
+            "localizedLabels" : {
+              "en" : "Moeite met in stukken snijden van voedsel"
+            }
+          } ],
+          "terminology" : "SNOMED CT"
+        } ]
+      }, {
+        "id" : "time",
+        "name" : "Time",
+        "rmType" : "DV_DATE_TIME",
+        "min" : 1,
+        "max" : 1,
+        "aqlPath" : "/items[openEHR-EHR-OBSERVATION.adl.v0,'EetBeperkingen']/data[at0001]/events[at0002,'Point in time']/time",
+        "inputs" : [ {
+          "type" : "DATETIME"
+        } ],
+        "inContext" : true
+      }, {
+        "id" : "language",
+        "name" : "Language",
+        "rmType" : "CODE_PHRASE",
+        "min" : 1,
+        "max" : 1,
+        "aqlPath" : "/items[openEHR-EHR-OBSERVATION.adl.v0,'EetBeperkingen']/language",
+        "inContext" : true
+      }, {
+        "id" : "encoding",
+        "name" : "Encoding",
+        "rmType" : "CODE_PHRASE",
+        "min" : 1,
+        "max" : 1,
+        "aqlPath" : "/items[openEHR-EHR-OBSERVATION.adl.v0,'EetBeperkingen']/encoding",
+        "inContext" : true
+      }, {
+        "id" : "subject",
+        "name" : "Subject",
+        "rmType" : "PARTY_PROXY",
+        "min" : 1,
+        "max" : 1,
+        "aqlPath" : "/items[openEHR-EHR-OBSERVATION.adl.v0,'EetBeperkingen']/subject",
+        "inputs" : [ {
+          "suffix" : "id",
+          "type" : "TEXT"
+        }, {
+          "suffix" : "id_scheme",
+          "type" : "TEXT"
+        }, {
+          "suffix" : "id_namespace",
+          "type" : "TEXT"
+        }, {
+          "suffix" : "name",
+          "type" : "TEXT"
+        } ],
+        "inContext" : true
+      } ]
+    } ]
+  }
+}
