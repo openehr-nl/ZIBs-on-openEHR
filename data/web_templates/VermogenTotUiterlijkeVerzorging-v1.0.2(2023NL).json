@@ -1,0 +1,117 @@
+{
+  "templateId" : "VermogenTotUiterlijkeVerzorging-v1.0.2(2023NL)",
+  "semVer" : "0.1.5",
+  "version" : "2.3",
+  "defaultLanguage" : "en",
+  "languages" : [ "en" ],
+  "tree" : {
+    "id" : "vermogentotuiterlijkeverzorging-v1.0.2_2023nl",
+    "name" : "VermogenTotUiterlijkeVerzorging-v1.0.2(2023NL)",
+    "localizedName" : "VermogenTotUiterlijkeVerzorging-v1.0.2(2023NL)",
+    "rmType" : "OBSERVATION",
+    "nodeId" : "openEHR-EHR-OBSERVATION.adl.v0",
+    "min" : 1,
+    "max" : 1,
+    "localizedNames" : {
+      "en" : "VermogenTotUiterlijkeVerzorging-v1.0.2(2023NL)"
+    },
+    "localizedDescriptions" : {
+      "en" : "Details about an individual's ability to perform an identified activity of daily living."
+    },
+    "annotations" : {
+      "704434006" : "UiterlijkeVerzorging"
+    },
+    "aqlPath" : "",
+    "children" : [ {
+      "id" : "uiterlijkeverzorging",
+      "name" : "UiterlijkeVerzorging",
+      "localizedName" : "UiterlijkeVerzorging",
+      "rmType" : "DV_CODED_TEXT",
+      "nodeId" : "at0006",
+      "min" : 1,
+      "max" : 1,
+      "localizedNames" : {
+        "en" : "UiterlijkeVerzorging"
+      },
+      "localizedDescriptions" : {
+        "en" : "Category of the ability for the individual to perform the identified activity."
+      },
+      "annotations" : {
+        "704434006" : "Vermogen tot uiterlijke verzorging"
+      },
+      "aqlPath" : "/data[at0001]/events[at0002,'Point in time']/data[at0003]/items[at0006,'UiterlijkeVerzorging']/value",
+      "inputs" : [ {
+        "suffix" : "code",
+        "type" : "CODED_TEXT",
+        "list" : [ {
+          "value" : "704437004",
+          "label" : "In staat tot zelfstandige uiterlijke verzorging",
+          "localizedLabels" : {
+            "en" : "In staat tot zelfstandige uiterlijke verzorging"
+          }
+        }, {
+          "value" : "27941000146109",
+          "label" : "Hulp nodig bij uiterlijke verzorging",
+          "localizedLabels" : {
+            "en" : "Hulp nodig bij uiterlijke verzorging"
+          }
+        }, {
+          "value" : "704436008",
+          "label" : "Niet in staat tot uiterlijke verzorging",
+          "localizedLabels" : {
+            "en" : "Niet in staat tot uiterlijke verzorging"
+          }
+        } ],
+        "terminology" : "SNOMED CT"
+      } ]
+    }, {
+      "id" : "time",
+      "name" : "Time",
+      "rmType" : "DV_DATE_TIME",
+      "min" : 1,
+      "max" : 1,
+      "aqlPath" : "/data[at0001]/events[at0002,'Point in time']/time",
+      "inputs" : [ {
+        "type" : "DATETIME"
+      } ],
+      "inContext" : true
+    }, {
+      "id" : "language",
+      "name" : "Language",
+      "rmType" : "CODE_PHRASE",
+      "min" : 1,
+      "max" : 1,
+      "aqlPath" : "/language",
+      "inContext" : true
+    }, {
+      "id" : "encoding",
+      "name" : "Encoding",
+      "rmType" : "CODE_PHRASE",
+      "min" : 1,
+      "max" : 1,
+      "aqlPath" : "/encoding",
+      "inContext" : true
+    }, {
+      "id" : "subject",
+      "name" : "Subject",
+      "rmType" : "PARTY_PROXY",
+      "min" : 1,
+      "max" : 1,
+      "aqlPath" : "/subject",
+      "inputs" : [ {
+        "suffix" : "id",
+        "type" : "TEXT"
+      }, {
+        "suffix" : "id_scheme",
+        "type" : "TEXT"
+      }, {
+        "suffix" : "id_namespace",
+        "type" : "TEXT"
+      }, {
+        "suffix" : "name",
+        "type" : "TEXT"
+      } ],
+      "inContext" : true
+    } ]
+  }
+}
