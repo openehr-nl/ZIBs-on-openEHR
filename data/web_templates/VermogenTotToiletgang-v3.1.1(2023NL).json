@@ -1,0 +1,239 @@
+{
+  "templateId" : "VermogenTotToiletgang-v3.1.1(2023NL)",
+  "semVer" : "0.1.5",
+  "version" : "2.3",
+  "defaultLanguage" : "en",
+  "languages" : [ "en" ],
+  "tree" : {
+    "id" : "vermogentottoiletgang-v3.1.1_2023nl",
+    "name" : "VermogenTotToiletgang-v3.1.1(2023NL)",
+    "localizedName" : "VermogenTotToiletgang-v3.1.1(2023NL)",
+    "rmType" : "SECTION",
+    "nodeId" : "openEHR-EHR-SECTION.adhoc.v1",
+    "min" : 1,
+    "max" : 1,
+    "localizedNames" : {
+      "en" : "VermogenTotToiletgang-v3.1.1(2023NL)"
+    },
+    "localizedDescriptions" : {
+      "en" : "A generic section header which should be renamed in a template to suit a specific clinical context."
+    },
+    "annotations" : {
+      "284779002" : "Vermogen tot persoonlijke hygiëne"
+    },
+    "aqlPath" : "",
+    "children" : [ {
+      "id" : "toiletgebruik",
+      "name" : "Toiletgebruik",
+      "localizedName" : "Toiletgebruik",
+      "rmType" : "OBSERVATION",
+      "nodeId" : "openEHR-EHR-OBSERVATION.adl.v0",
+      "min" : 0,
+      "max" : 1,
+      "localizedNames" : {
+        "en" : "Toiletgebruik"
+      },
+      "localizedDescriptions" : {
+        "en" : "Details about an individual's ability to perform an identified activity of daily living."
+      },
+      "aqlPath" : "/items[openEHR-EHR-OBSERVATION.adl.v0,'Toiletgebruik']",
+      "children" : [ {
+        "id" : "toiletgebruik",
+        "name" : "Toiletgebruik",
+        "localizedName" : "Toiletgebruik",
+        "rmType" : "DV_CODED_TEXT",
+        "nodeId" : "at0006",
+        "min" : 0,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "Toiletgebruik"
+        },
+        "localizedDescriptions" : {
+          "en" : "Category of the ability for the individual to perform the identified activity."
+        },
+        "annotations" : {
+          "284899001" : "Vermogen tot toiletgang"
+        },
+        "aqlPath" : "/items[openEHR-EHR-OBSERVATION.adl.v0,'Toiletgebruik']/data[at0001]/events[at0002,'Point in time']/data[at0003]/items[at0006,'Toiletgebruik']/value",
+        "inputs" : [ {
+          "suffix" : "code",
+          "type" : "CODED_TEXT",
+          "list" : [ {
+            "value" : "129062008",
+            "label" : "In staat om zelfstandig naar toilet te gaan",
+            "localizedLabels" : {
+              "en" : "In staat om zelfstandig naar toilet te gaan"
+            }
+          }, {
+            "value" : "129045003",
+            "label" : "Hulp nodig bij toiletgang",
+            "localizedLabels" : {
+              "en" : "Hulp nodig bij toiletgang"
+            }
+          }, {
+            "value" : "284901005",
+            "label" : "Niet in staat tot toiletgang",
+            "localizedLabels" : {
+              "en" : "Niet in staat tot toiletgang"
+            }
+          } ],
+          "terminology" : "SNOMED CT"
+        } ]
+      }, {
+        "id" : "time",
+        "name" : "Time",
+        "rmType" : "DV_DATE_TIME",
+        "min" : 1,
+        "max" : 1,
+        "aqlPath" : "/items[openEHR-EHR-OBSERVATION.adl.v0,'Toiletgebruik']/data[at0001]/events[at0002,'Point in time']/time",
+        "inputs" : [ {
+          "type" : "DATETIME"
+        } ],
+        "inContext" : true
+      }, {
+        "id" : "language",
+        "name" : "Language",
+        "rmType" : "CODE_PHRASE",
+        "min" : 1,
+        "max" : 1,
+        "aqlPath" : "/items[openEHR-EHR-OBSERVATION.adl.v0,'Toiletgebruik']/language",
+        "inContext" : true
+      }, {
+        "id" : "encoding",
+        "name" : "Encoding",
+        "rmType" : "CODE_PHRASE",
+        "min" : 1,
+        "max" : 1,
+        "aqlPath" : "/items[openEHR-EHR-OBSERVATION.adl.v0,'Toiletgebruik']/encoding",
+        "inContext" : true
+      }, {
+        "id" : "subject",
+        "name" : "Subject",
+        "rmType" : "PARTY_PROXY",
+        "min" : 1,
+        "max" : 1,
+        "aqlPath" : "/items[openEHR-EHR-OBSERVATION.adl.v0,'Toiletgebruik']/subject",
+        "inputs" : [ {
+          "suffix" : "id",
+          "type" : "TEXT"
+        }, {
+          "suffix" : "id_scheme",
+          "type" : "TEXT"
+        }, {
+          "suffix" : "id_namespace",
+          "type" : "TEXT"
+        }, {
+          "suffix" : "name",
+          "type" : "TEXT"
+        } ],
+        "inContext" : true
+      } ]
+    }, {
+      "id" : "zorg_bij_menstruatie",
+      "name" : "Zorg bij menstruatie",
+      "localizedName" : "Zorg bij menstruatie",
+      "rmType" : "OBSERVATION",
+      "nodeId" : "openEHR-EHR-OBSERVATION.adl.v0",
+      "min" : 0,
+      "max" : 1,
+      "localizedNames" : {
+        "en" : "Zorg bij menstruatie"
+      },
+      "localizedDescriptions" : {
+        "en" : "Details about an individual's ability to perform an identified activity of daily living."
+      },
+      "aqlPath" : "/items[openEHR-EHR-OBSERVATION.adl.v0,'Zorg bij menstruatie']",
+      "children" : [ {
+        "id" : "zorgbijmenstruatie",
+        "name" : "ZorgBijMenstruatie",
+        "localizedName" : "ZorgBijMenstruatie",
+        "rmType" : "DV_CODED_TEXT",
+        "nodeId" : "at0006",
+        "min" : 0,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "ZorgBijMenstruatie"
+        },
+        "localizedDescriptions" : {
+          "en" : "Category of the ability for the individual to perform the identified activity."
+        },
+        "annotations" : {
+          "284955009" : "Vermogen tot menstruatiehygiëne"
+        },
+        "aqlPath" : "/items[openEHR-EHR-OBSERVATION.adl.v0,'Zorg bij menstruatie']/data[at0001]/events[at0002,'Point in time']/data[at0003]/items[at0006,'ZorgBijMenstruatie']/value",
+        "inputs" : [ {
+          "suffix" : "code",
+          "type" : "CODED_TEXT",
+          "list" : [ {
+            "value" : "19851000146101",
+            "label" : "In staat om zelfstandig te zorgen voor menstruatiehygiëne",
+            "localizedLabels" : {
+              "en" : "In staat om zelfstandig te zorgen voor menstruatiehygiëne"
+            }
+          }, {
+            "value" : "16661000146105",
+            "label" : "Hulp nodig bij zorgen voor menstruatiehygiëne",
+            "localizedLabels" : {
+              "en" : "Hulp nodig bij zorgen voor menstruatiehygiëne"
+            }
+          }, {
+            "value" : "284957001",
+            "label" : "Niet in staat zorg te dragen voor menstruatiehygiëne",
+            "localizedLabels" : {
+              "en" : "Niet in staat zorg te dragen voor menstruatiehygiëne"
+            }
+          } ],
+          "terminology" : "SNOMED CT"
+        } ]
+      }, {
+        "id" : "time",
+        "name" : "Time",
+        "rmType" : "DV_DATE_TIME",
+        "min" : 1,
+        "max" : 1,
+        "aqlPath" : "/items[openEHR-EHR-OBSERVATION.adl.v0,'Zorg bij menstruatie']/data[at0001]/events[at0002,'Point in time']/time",
+        "inputs" : [ {
+          "type" : "DATETIME"
+        } ],
+        "inContext" : true
+      }, {
+        "id" : "language",
+        "name" : "Language",
+        "rmType" : "CODE_PHRASE",
+        "min" : 1,
+        "max" : 1,
+        "aqlPath" : "/items[openEHR-EHR-OBSERVATION.adl.v0,'Zorg bij menstruatie']/language",
+        "inContext" : true
+      }, {
+        "id" : "encoding",
+        "name" : "Encoding",
+        "rmType" : "CODE_PHRASE",
+        "min" : 1,
+        "max" : 1,
+        "aqlPath" : "/items[openEHR-EHR-OBSERVATION.adl.v0,'Zorg bij menstruatie']/encoding",
+        "inContext" : true
+      }, {
+        "id" : "subject",
+        "name" : "Subject",
+        "rmType" : "PARTY_PROXY",
+        "min" : 1,
+        "max" : 1,
+        "aqlPath" : "/items[openEHR-EHR-OBSERVATION.adl.v0,'Zorg bij menstruatie']/subject",
+        "inputs" : [ {
+          "suffix" : "id",
+          "type" : "TEXT"
+        }, {
+          "suffix" : "id_scheme",
+          "type" : "TEXT"
+        }, {
+          "suffix" : "id_namespace",
+          "type" : "TEXT"
+        }, {
+          "suffix" : "name",
+          "type" : "TEXT"
+        } ],
+        "inContext" : true
+      } ]
+    } ]
+  }
+}

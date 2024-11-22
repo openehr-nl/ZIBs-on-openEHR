@@ -1,0 +1,4 @@
+ZIB_Conceptnaam,ZIB_Conceptcode,ZIB_Conceptwaarde,ZIB_Codestelselnaam,ZIB_Codesysteem_OID,ZIB_Omschrijving,openEHR_Code,openEHR_Text,Commentaar
+In staat om zelfstandig te zorgen voor menstruatiehygiëne,19851000146101,,SNOMED CT,2.16.840.1.113883.6.96,Onafhankelijk,,,
+Hulp nodig bij zorgen voor menstruatiehygiëne,16661000146105,,SNOMED CT,2.16.840.1.113883.6.96,Hulp nodig,,,
+Niet in staat zorg te dragen voor menstruatiehygiëne,284957001,,SNOMED CT,2.16.840.1.113883.6.96,Volledig afhankelijk,,,
